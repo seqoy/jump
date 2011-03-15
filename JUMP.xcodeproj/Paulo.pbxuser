@@ -74,12 +74,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321153145;
-			PBXWorkspaceStateSaveDate = 321153145;
+			PBXPerProjectTemplateStateSaveDate = 321845240;
+			PBXWorkspaceStateSaveDate = 321845240;
 		};
 		perUserProjectItems = {
-			3A7843DA1324688800C3374A /* PBXTextBookmark */ = 3A7843DA1324688800C3374A /* PBXTextBookmark */;
-			3A7843E513246B3C00C3374A /* PBXTextBookmark */ = 3A7843E513246B3C00C3374A /* PBXTextBookmark */;
+			3A7843DA1324688800C3374A = 3A7843DA1324688800C3374A /* PBXTextBookmark */;
+			3A7843E513246B3C00C3374A = 3A7843E513246B3C00C3374A /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3AEF14F5131826AD00BC3759 /* Source Control */;
 		userBuildSettings = {
@@ -100,6 +100,12 @@
 		indexTemplatePath = "";
 	};
 	3AEF158D131829AC00BC3759 /* JUMPFramework.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = JUMPFramework.h;
+		path = /Users/Paulo/Projects/JUMP/Headers/JUMPFramework.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 390}}";
 			sepNavSelRange = "{752, 0}";
