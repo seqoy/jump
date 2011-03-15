@@ -1,11 +1,9 @@
 JUMP Framework
 ==============
 
-
 JUMP Framework is a collection of classes in Objective-C to perform a series of tasks on iOS or
 Mac OS applications. From Network libraries until User Interface libraries. The framework have
 classes to accomplish day by day taks until very complex applications.  
-
 
 Modules
 -------
