@@ -1,0 +1,14 @@
+There are two types of errors that the \hyperlink{interface_j_p_d_b_manager}{Database Manager} let you known.\hypertarget{errors_fatal_errors}{}\section{Fatal Errors or Exceptions}\label{errors_fatal_errors}
+This is are errors that will prevent the {\bfseries Database Manager} or your application to work correctly. On most part of cases you're trying to retrieve some data that doesn't exist or something like that. So an exception ({\bfseries NSException}) is raised and if isn't catched will interrupt your application. You always can use an {\bfseries try..catch} block to avoid that.
+
+This is are the exceptions raised by the Manager. This exceptions are defined on \hyperlink{_j_p_d_b_manager_definitions_8h_source}{JPDBManagerDefinitions.h} file.\hypertarget{errors_JPDBManagerActionException}{}\subsection{JPDBManagerActionException}\label{errors_JPDBManagerActionException}
+This kind of exception is raised when is impossible to perform an \hyperlink{interface_j_p_d_b_manager_action}{Database Action}.\hypertarget{errors_JPDBManagerStartException}{}\subsection{JPDBManagerStartException}\label{errors_JPDBManagerStartException}
+This kind of exception is raised when is impossible to start the {\bfseries Core Data} environment.\hypertarget{errors_JPDBInvalidInitiator}{}\subsection{JPDBInvalidInitiator}\label{errors_JPDBInvalidInitiator}
+This kind of exception is raised when you try to use some 'init' method that is protected. From an Abstract or an Singleton Class for example.\hypertarget{errors_errors_section}{}\section{Errors}\label{errors_errors_section}
+This is are errors that doesn't prevent the {\bfseries Database Manager} or your application to work correctly. If you doesn't handle this errors they will be logged to the console, nothing else.
+
+To handle this errors you should sign to the {\bfseries NSNotificationCenter} with the {\bfseries JPDBManagerErrorNotification} Key to receive detailed information. This Key is defined in \hyperlink{_j_p_d_b_manager_definitions_8h_source}{JPDBManagerDefinitions.h} file.\par
+ \par
+ The {\bfseries Database Manager} post an {\bfseries NSNotification} when some error ocurr performing one operation. \par
+ \par
+ The {\bfseries NSNotification} object encapsulate an {\bfseries NSError} with the cause and description. You can retrieve the manager that generates the error acessing the {\bfseries JPDBManagerErrorNotification} Key on the {\bfseries userInfo} dictionary. 

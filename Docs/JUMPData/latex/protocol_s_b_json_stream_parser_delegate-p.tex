@@ -1,0 +1,73 @@
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p}{
+\section{$<$SBJsonStreamParserDelegate$>$ Protocol Reference}
+\label{protocol_s_b_json_stream_parser_delegate-p}\index{SBJsonStreamParserDelegate-\/p@{SBJsonStreamParserDelegate-\/p}}
+}
+
+
+Delegate for interacting directly with the stream parser.  
+
+
+
+
+{\ttfamily \#import $<$SBJsonStreamParser.h$>$}
+
+
+
+Inherited by SBJsonStreamParserAdapter.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_accb014b3ef7b32c586a75079f3cab367}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_accb014b3ef7b32c586a75079f3cab367}{parserFoundObjectStart:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_accb014b3ef7b32c586a75079f3cab367}
+
+\begin{DoxyCompactList}\small\item\em Called when object start is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a18975a826b2ff00319f1d788a75b6d7b}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a18975a826b2ff00319f1d788a75b6d7b}{parser:foundObjectKey:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a18975a826b2ff00319f1d788a75b6d7b}
+
+\begin{DoxyCompactList}\small\item\em Called when object key is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a13429add866e9e1c3eabab341f748800}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a13429add866e9e1c3eabab341f748800}{parserFoundObjectEnd:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a13429add866e9e1c3eabab341f748800}
+
+\begin{DoxyCompactList}\small\item\em Called when object end is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a5df332aa4a2532e7ba1a4010ec8cf1e3}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a5df332aa4a2532e7ba1a4010ec8cf1e3}{parserFoundArrayStart:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a5df332aa4a2532e7ba1a4010ec8cf1e3}
+
+\begin{DoxyCompactList}\small\item\em Called when array start is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a21ba17ae268498c59ec5ae6025afaaa5}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a21ba17ae268498c59ec5ae6025afaaa5}{parserFoundArrayEnd:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a21ba17ae268498c59ec5ae6025afaaa5}
+
+\begin{DoxyCompactList}\small\item\em Called when array end is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a2716ab1638f392e8d2385f76ae247bf5}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a2716ab1638f392e8d2385f76ae247bf5}{parser:foundBoolean:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a2716ab1638f392e8d2385f76ae247bf5}
+
+\begin{DoxyCompactList}\small\item\em Called when a boolean value is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a1ea6ceaebfe810df145095efb30999da}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a1ea6ceaebfe810df145095efb30999da}{parserFoundNull:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a1ea6ceaebfe810df145095efb30999da}
+
+\begin{DoxyCompactList}\small\item\em Called when a null value is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_a798584d13a4f59fd4b3db823f7012a7f}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_a798584d13a4f59fd4b3db823f7012a7f}{parser:foundNumber:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_a798584d13a4f59fd4b3db823f7012a7f}
+
+\begin{DoxyCompactList}\small\item\em Called when a number is found. \item\end{DoxyCompactList}\item 
+\hypertarget{protocol_s_b_json_stream_parser_delegate-p_ae23bb7064b2543902499a748da668114}{
+(void) -\/ \hyperlink{protocol_s_b_json_stream_parser_delegate-p_ae23bb7064b2543902499a748da668114}{parser:foundString:}}
+\label{protocol_s_b_json_stream_parser_delegate-p_ae23bb7064b2543902499a748da668114}
+
+\begin{DoxyCompactList}\small\item\em Called when a string is found. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Delegate for interacting directly with the stream parser. You will most likely find it much more convenient to implement the \hyperlink{protocol_s_b_json_stream_parser_adapter_delegate-p}{SBJsonStreamParserAdapterDelegate} protocol instead. 
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPData/Third-\/Part Libraries/JSON Framework/Headers/SBJsonStreamParser.h\end{DoxyCompactItemize}

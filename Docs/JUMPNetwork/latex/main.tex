@@ -1,0 +1,29 @@
+{\bfseries JUMP Network Module} is an collection of classes that perform I/O network operations.\par
+ \par
+ His core component is based on a implementation of the \href{http://java.sun.com/blueprints/corej2eepatterns/Patterns/InterceptingFilter.html}{\tt Intercepting Filter Pattern} that is an presentation-\/tier request handling mechanism to receive many different types of requests, which require varied types of processing. Giving the power to analyze each request and simply forward to the appropriate handler component, while other requests must be modified, audited, or uncompressed before being further processed.\par
+ \par
+ This module also pack many pre-\/builded components to handle many types of messages, such as JSON and XML encoders and decoders.\par
+ \par
+ The {\bfseries Pipeline} design model was inspired on the excelent \href{http://www.jboss.org/netty}{\tt Netty} project from \href{http://gleamynode.net/}{\tt Trustin Lee}. If you're familiar with this framework use the JUMP Network components will be a breeze. {\bfseries Thanks Trustin} by his wonderful code.\par
+ \par
+ This module was designed to be as more flexible as posible. So you can design and/or reuse your components, like an HTTP transporter class or an JSON parser. This module provides this components, but you can use your own.
+
+\subsection*{Learn more about this module in the following sections:}
+
+
+\begin{DoxyItemize}
+\item \hyperlink{a00001}{The Pipeline}
+\item \hyperlink{a00003}{Handlers}
+\item \hyperlink{a00005}{Event}
+\item \hyperlink{a00006}{Event Message}
+\item \hyperlink{a00002}{I$|$O Transporter}
+\item \hyperlink{a00004}{Using Factories}
+\end{DoxyItemize}
+
+\subsection*{Also consult the documentation of this classes for further information}
+
+
+\begin{DoxyItemize}
+\item \hyperlink{a00084}{Pipeline Handlers}
+\item \hyperlink{a00085}{Pipeline Events} 
+\end{DoxyItemize}

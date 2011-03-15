@@ -1,0 +1,81 @@
+\hyperlink{a00006}{Event Message} are some kind of data that is transported by an \hyperlink{a00005}{Event}. \hyperlink{a00006}{Event Message} doesn't have an defined type on the \hyperlink{a00001}{The Pipeline}. The {\bfseries type} of the \hyperlink{a00006}{Event Message} concern to the \hyperlink{a00003}{Handlers}. They use the {\bfseries Message Type} to known if they can handle or not. 
+
+Also the \hyperlink{a00003}{Handlers} usually transform the message on his way through the \hyperlink{a00001}{The Pipeline}. 
+
+{\bfseries JUMP Network} come with a bundled collection of \hyperlink{a00006}{Event Message} that you can use or reuse in your own subclasses.\par
+ These are the main groups of this messages:
+\begin{DoxyItemize}
+\item \hyperlink{a00007}{HTTP Event Messages}
+\item \hyperlink{a00008}{JSON-\/RPC Event Messages} 
+\end{DoxyItemize}\hypertarget{http_messages_page}{}\section{HTTP Event Messages}\label{http_messages_page}
+\hyperlink{a00012}{JPDefaultHTTPMessage} is an implementaton of the \hyperlink{a00040}{JPTransporterHTTPMessage} protocol. It is an type of \hyperlink{a00006}{Event Message} that encapsulate the HTTP data to be transported by the \hyperlink{a00014}{JPHTTPTransporter} \hyperlink{a00002}{I$|$O implementation}. You can use this class directly, create your own subclass of this event or create your own implementation of the \hyperlink{a00040}{JPTransporterHTTPMessage} protocol. 
+
+An simply code to illustrate how to send an \hyperlink{a00012}{JPDefaultHTTPMessage} downstream: 
+\begin{DoxyCode}
+ JPDefaultHTTPMessage *eventMessage = [JPDefaultHTTPMessage initWithData:dataToTr
+      ansport withMethod:@"POST"]
+ eventMessage.transportURL = [NSURL URLWithString:@"http://seqoy.org/httpgateway"
+      ];
+ 
+ [pipeline sendDownstream:[JPPipelineMessageEvent initWithMessage:eventMessage]];
+      
+\end{DoxyCode}
+ Of course this example require a big boilerplate for a simple operation. See \hyperlink{a00004}{Using Factories} for more information to how configure and automate boilerplates using \href{http://en.wikipedia.org/wiki/Factory_method_pattern}{\tt Factory Patterns}.
+
+\subsection*{Additional resources worth reading}
+
+See \hyperlink{a00008}{JSON-\/RPC Event Messages} to learn about \hyperlink{a00006}{Event Message} that use HTTP components as basis.
+
+\par
+ \par
+  \hypertarget{jsonrpc_messages_page}{}\section{JSON-\/RPC Event Messages}\label{jsonrpc_messages_page}
+\hyperlink{a00018}{JPJSONRPCMessage} is an subclass of \hyperlink{a00012}{JPDefaultHTTPMessage} and implements the \hyperlink{a00041}{JPTransporterJSONRPCMessage} protocol, it is designed to transport \hyperlink{a00008}{JSON-\/RPC Event Messages} on top of the HTTP protocol. 
+
+You can use this class directly, create your own subclass of this event or create your own implementation of the \hyperlink{a00041}{JPTransporterJSONRPCMessage} protocol. 
+
+An simply code to illustrate how to send an \hyperlink{a00041}{JPTransporterJSONRPCMessage} downstream: 
+\begin{DoxyCode}
+ JPJSONRPCMessage *eventMessage = [JPJSONRPCMessage initWithMethod:@"POST"]
+ eventMessage.transportURL = [NSURL URLWithString:@"http://seqoy.org/httpgateway"
+      ];
+ [eventMessage setMethod:@"someCall" 
+           andParameters:[NSArray arrayWithObjects:@"parameter1", @"parameter2", 
+      nil]
+                   andId:[NSNumber numberWithInt:2]];
+ 
+ [pipeline sendDownstream:[JPPipelineMessageEvent initWithMessage:eventMessage]];
+      
+\end{DoxyCode}
+ Of course this example require a big boilerplate for a simple operation. See \hyperlink{a00004}{Using Factories} for more information to how configure and automate boilerplates using \href{http://en.wikipedia.org/wiki/Factory_method_pattern}{\tt Factory Patterns}. \par
+ \par
+ 
+
+\subsection*{JSON-\/RPC Encoder and Decoder}
+
+\hyperlink{a00008}{JSON-\/RPC Event Messages} are processed by they respectives JSON-\/RPC \hyperlink{a00003}{Handlers} that \hyperlink{a00015}{decode} and \hyperlink{a00016}{encode} the \hyperlink{a00006}{Event Message} upstream or downstream respectively.
+
+\subsection*{Encoder}
+
+\hyperlink{a00016}{JPJSONRPCEncoderHandler} intercepts {\bfseries downstream} \hyperlink{a00018}{JPJSONRPCMessage} and encode his RPC properties, fisrt on a JSON String and later on {\bfseries NSData} to be sent by a \hyperlink{a00002}{I$|$O Transporter}. Other types of messages are ignored and sented downstream to the next handler on the \hyperlink{a00001}{The Pipeline}. 
+
+Here an example that how you assign the \hyperlink{a00016}{JPJSONRPCEncoderHandler} to the pipeline: 
+\begin{DoxyCode}
+ [pipeline addLast:@"JSONRPCEncoder" withHandler:[JPJSONRPCEncoderHandler initWit
+      hJSONEncoderClass:[JSONEncoder class]]];
+\end{DoxyCode}
+ The \hyperlink{a00016}{JPJSONRPCEncoderHandler} doesn't have an embedded JSON Encoder. You have to inform one JSON Processer Class that conform with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. See the {\bfseries JUMP Data Module} to find an default implementation of this protocol that you can use or you can implement your own. 
+
+\subsection*{Decoder}
+
+\hyperlink{a00015}{JPJSONRPCDecoderHandler} intercepts any {\bfseries upstream} \hyperlink{a00006}{Event Message} and try to decode as a {\bfseries JSON Object} first, and then to interpret the JSON-\/RPC properties. 
+
+If \hyperlink{a00015}{JPJSONRPCDecoderHandler} can't decode to JSON Object or can't found the RPC properties will send an \hyperlink{a00013}{JPDefaultPipelineExceptionEvent} upstream as a warning error, you can catch this exception and process it as an decode error. Refer to \hyperlink{a00015_aba2b766c1b7742f5c636bbbd578df618}{JPJSONRPCDecoderErrors} to known the proper {\bfseries error code}. 
+
+You also can ignore this exception and let the next handler (if exist) continue the processing, because the unmodified \hyperlink{a00006}{Event Message} are sent upstream to the next handler even when an error ocurrs. This is useful if you have an \hyperlink{a00001}{pipeline} that decode differents types of \hyperlink{a00006}{Event Message} ({\itshape e.g. XML and JSON\/}) at the same time. 
+
+Here an example that how you assign the \hyperlink{a00015}{JPJSONRPCDecoderHandler} to the pipeline: 
+\begin{DoxyCode}
+ [pipeline addLast:@"JSONRPCDecoder" withHandler:[JPJSONRPCDecoderHandler initWit
+      hJSONDecoderClass:[JSONEncoder class]]];
+\end{DoxyCode}
+ The \hyperlink{a00015}{JPJSONRPCDecoderHandler} doesn't have an embedded JSON Decoder. You have to inform one JSON Processer Class that conform with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. See the {\bfseries JUMP Data Module} to find an default implementation of this protocol that you can use or you can implement your own.  

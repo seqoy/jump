@@ -1,0 +1,66 @@
+This page show some basic examples of usage for the {\bfseries JUMP Database Module}.\par
+ \par
+ On our examples we presume that you have your Core Data models created. See \href{http://developer.apple.com/library/mac/#documentation/cocoa/conceptual/CoreData/cdProgrammingGuide.html}{\tt Introduction to Core Data Programming Guide} \par
+ to learn more about it.\par
+ \par
+\hypertarget{basic_uses_init_manager}{}\section{Initializing the Database Manager}\label{basic_uses_init_manager}
+The first step to start to work with the \hyperlink{interface_j_p_d_b_manager}{Database Manager} is initialize the all system. 
+\begin{DoxyCode}
+ [[JPDBManagerSingleton sharedInstance] startCoreData];
+\end{DoxyCode}
+ The above code perform a lot of tasks. He initiate the full Core Data model and create the persistent stores if needed. We're using an {\bfseries Singleton Instance} of the Manager. You always can initiate one regular instance, but in the most common cases you will use this way.\hypertarget{basic_uses_db_action}{}\section{Performing Database Actions}\label{basic_uses_db_action}
+Database operations isn't called directy to the manager. Instead we create one instance of the \hyperlink{interface_j_p_d_b_manager_action}{JPDBManagerAction} class, configure the data and settings to perform some \href{http://en.wikipedia.org/wiki/Create,_read,_update_and_delete}{\tt CRUD} operation and finally run this action. Yes, looks like a lot of work, but actually is not. Let's see some examples: 
+\begin{DoxyCode}
+ id newRecord = [JPDatabaseManager createNewRecordForEntity:@"MyEntity"];
+\end{DoxyCode}
+ This is was really simple, isn't? Let's see this same operation on a more custom fashion: 
+\begin{DoxyCode}
+ JPDBManagerAction *anAction = [[JPDBManagerSingleton sharedInstance] 
+      getDatabaseAction];
+ [anAction setCommitTransaction:YES];
+ id newRecord = [anAction createNewRecordForEntity:@"MyEntity"];
+\end{DoxyCode}
+ Well this looks a litle bit more complicated. Let's understand this two processes: The first one uses the {\bfseries JPDatabaseManager} convenient macro shortcut that returns an \hyperlink{interface_j_p_d_b_manager_action}{JPDBManagerAction} instance and perform this method in only one pass, is pure convenience. This macro is declared in the \hyperlink{_j_p_d_b_manager_definitions_8h_source}{JPDBManagerDefinitions.h} file. \par
+ \par
+ The second way needs more steps, but you should use that way when you need more control of the all process, for example, you can configure if you want to automatically commit the operation or create some more dinamically code on your database operations. \par
+ \hypertarget{basic_uses_commit_operation}{}\section{Commiting operations}\label{basic_uses_commit_operation}
+{\bfseries Core Data} never perform operations directly to the {\bfseries Persistent Store}. It maintains one memory model and you need to save (commit) your changes. You can configure the {\bfseries Database Manager} to automatically commit every operation as default and also you can configure each {\bfseries Database Action} case by case. 
+\begin{DoxyCode}
+ [[JPDBManagerSingleton sharedInstance] setAutomaticallyCommit:YES];
+\end{DoxyCode}
+ Now all {\bfseries Database Action} will be committed immediattelly. This is means that every {\bfseries Database Action} instance returned by the {\bfseries getDatabaseAction:} method will be configured with this setting. Now you can use the approach showed in the \hyperlink{basic_uses_db_action}{Performing Database Actions} section to configure some specific action with different setting.\par
+ \par
+ To manually commit all pending operations to the {\bfseries Persistent Store} is very simple: 
+\begin{DoxyCode}
+ [[JPDBManagerSingleton sharedInstance] commit];
+\end{DoxyCode}
+ If fore some reason the commit operation fails one {\bfseries NSNotificaton} is posted. See \hyperlink{errors}{Handling Errors} for more inforation.\hypertarget{basic_uses_query_operation}{}\section{Querying Database}\label{basic_uses_query_operation}
+You will enconter a huge number of convenient methods to perform simple and very complex queries to the database. See \hyperlink{queries}{Performing Queries} for more information. Here are some examples of some query operations: 
+\begin{DoxyCode}
+ // Query all data from 'MyEntity'.
+ NSArray *allData = [JPDatabaseManager queryAllDataFromEntity:@"MyEntity"];
+ 
+ // Query data using the 'MyFilter" Fetch Template and ordering by 'id'.
+ NSArray *allData = [JPDatabaseManager queryEntity:@"MyEntity" withFetchTemplate:
+      @"MyFilter" orderWithKey:@"id"];
+\end{DoxyCode}
+ You can also mount your {\bfseries Database Actions} on a more custom fashion: 
+\begin{DoxyCode}
+ JPDBManagerAction *anAction = [[JPDBManagerSingleton sharedInstance] 
+      getDatabaseAction];
+ 
+ // Apply the Entity.
+ [anAction applyEntity:@"MyEntity"];
+ 
+ // Limit to 20 rows.
+ [anAction setStartFetchInLine:0 setLimitFetchResults:20];
+ 
+ // Order by 'name' in desceding order.
+ [[anAction applyOrderKey:@"id"] setAscendingOrder:NO];
+ 
+ // Perform the action.
+ NSArray *first20rows = [anAction runAction];
+\end{DoxyCode}
+ There you go, the {\bfseries Database Action} is very flexible to configure and also very convenient to use. Note that all {\bfseries apply...} methods return the {\bfseries self} instance. So you can nest many apply methods on the same line.\par
+ \par
+ 

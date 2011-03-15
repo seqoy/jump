@@ -1,0 +1,138 @@
+\hypertarget{interface_j_p_math}{
+\section{JPMath Class Reference}
+\label{interface_j_p_math}\index{JPMath@{JPMath}}
+}
+
+
+A collection of math helper methods to perform different operations.  
+
+
+
+
+{\ttfamily \#import $<$JPMath.h$>$}
+
+\subsection*{Random Numbers Methods}
+\begin{DoxyCompactItemize}
+\item 
+(int) + \hyperlink{interface_j_p_math_a3271deb629cc152722aabb43bb749b80}{generateRandomNumber}
+\begin{DoxyCompactList}\small\item\em Generate an random Int number. \item\end{DoxyCompactList}\item 
+(int) + \hyperlink{interface_j_p_math_afdd0777fd27b0ff9787bf4e09822c769}{generateAnRandomMaxNumber:excluding:}
+\begin{DoxyCompactList}\small\item\em Generate an random Int number. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Angles and Diameter Methods}
+\begin{DoxyCompactItemize}
+\item 
+(float) + \hyperlink{interface_j_p_math_aa356b5edaf9ec72b7929071612ca2bc3}{degreesToRadians:}
+\begin{DoxyCompactList}\small\item\em Convert an degree angle to an radian angle. \item\end{DoxyCompactList}\item 
+(float) + \hyperlink{interface_j_p_math_a68d0c7874a7899db9ad4fe82bd35b088}{radiansToDegrees:}
+\begin{DoxyCompactList}\small\item\em Convert an radian angle to an degree angle. \item\end{DoxyCompactList}\item 
+(float) + \hyperlink{interface_j_p_math_a0a765cfa2822265d1cf34741c1225a66}{diameterToRadius:}
+\begin{DoxyCompactList}\small\item\em Convert diameter value to radius value. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of math helper methods to perform different operations. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_j_p_math_a3271deb629cc152722aabb43bb749b80}{
+\index{JPMath@{JPMath}!generateRandomNumber@{generateRandomNumber}}
+\index{generateRandomNumber@{generateRandomNumber}!JPMath@{JPMath}}
+\subsubsection[{generateRandomNumber}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) generateRandomNumber 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_math_a3271deb629cc152722aabb43bb749b80}
+
+
+Generate an random Int number. 
+
+This method use the {\bfseries arc4random()} function. The generator employed by the arc4 cipher, which uses 8$\ast$8 8 bit S-\/Boxes. The S-\/Boxes can be in about (2$\ast$$\ast$1700) states. The arc4random() function returns pseudo-\/ random numbers in the range of 0 to (2$\ast$$\ast$32)-\/1, and therefore has twice the range of rand(3) and random(3).
+
+The arc4random\_\-stir() function reads data from /dev/urandom and uses it to permute the S-\/Boxes via arc4random\_\-addrandom().
+
+That's not guarantee that generated numbers doesn't repeat itself on a short period of time between calls. \begin{DoxyReturn}{Returns}
+An {\bfseries int} genereated number. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_math_afdd0777fd27b0ff9787bf4e09822c769}{
+\index{JPMath@{JPMath}!generateAnRandomMaxNumber:excluding:@{generateAnRandomMaxNumber:excluding:}}
+\index{generateAnRandomMaxNumber:excluding:@{generateAnRandomMaxNumber:excluding:}!JPMath@{JPMath}}
+\subsubsection[{generateAnRandomMaxNumber:excluding:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) generateAnRandomMaxNumber: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{anNumber}
+\item[{excluding:(int)}]{anExcludeNumber}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_math_afdd0777fd27b0ff9787bf4e09822c769}
+
+
+Generate an random Int number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anNumber} & Max number starting at 0. \\
+\hline
+{\em anExcludeNumber} & Doesn't return this number on this particular generation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An {\bfseries int} genereated number. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_math_aa356b5edaf9ec72b7929071612ca2bc3}{
+\index{JPMath@{JPMath}!degreesToRadians:@{degreesToRadians:}}
+\index{degreesToRadians:@{degreesToRadians:}!JPMath@{JPMath}}
+\subsubsection[{degreesToRadians:}]{\setlength{\rightskip}{0pt plus 5cm}+ (float) degreesToRadians: 
+\begin{DoxyParamCaption}
+\item[{dummy(float)}]{degrees}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_math_aa356b5edaf9ec72b7929071612ca2bc3}
+
+
+Convert an degree angle to an radian angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & Degrees value to convert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_p_math_a68d0c7874a7899db9ad4fe82bd35b088}{
+\index{JPMath@{JPMath}!radiansToDegrees:@{radiansToDegrees:}}
+\index{radiansToDegrees:@{radiansToDegrees:}!JPMath@{JPMath}}
+\subsubsection[{radiansToDegrees:}]{\setlength{\rightskip}{0pt plus 5cm}+ (float) radiansToDegrees: 
+\begin{DoxyParamCaption}
+\item[{dummy(float)}]{radians}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_math_a68d0c7874a7899db9ad4fe82bd35b088}
+
+
+Convert an radian angle to an degree angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radians} & Radians value to convert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_p_math_a0a765cfa2822265d1cf34741c1225a66}{
+\index{JPMath@{JPMath}!diameterToRadius:@{diameterToRadius:}}
+\index{diameterToRadius:@{diameterToRadius:}!JPMath@{JPMath}}
+\subsubsection[{diameterToRadius:}]{\setlength{\rightskip}{0pt plus 5cm}+ (float) diameterToRadius: 
+\begin{DoxyParamCaption}
+\item[{dummy(float)}]{diameter}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_math_a0a765cfa2822265d1cf34741c1225a66}
+
+
+Convert diameter value to radius value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diameter} & Diameter value to convert. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPData/Headers/JPMath.h\end{DoxyCompactItemize}

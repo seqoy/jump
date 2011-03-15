@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$a00009.html" title="An Pipeline Downstream Event that represent one Cancel Event." alt="" coords="5,494,152,575"/>
+<area shape="rect" id="node9" href="$a00041.html" title="JPTransporterHTTPEventMessage is an special type of Events that encapsulate the HTTP data to be trans..." alt="" coords="176,430,419,639"/>
+<area shape="rect" id="node2" href="$a00032.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="85,137,291,234"/>
+<area shape="rect" id="node4" href="$a00030.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="95,6,281,87"/>
+<area shape="rect" id="node11" href="$a00029.html" title="The default upstream Message Event implementation." alt="" coords="180,689,415,802"/>
+</map>

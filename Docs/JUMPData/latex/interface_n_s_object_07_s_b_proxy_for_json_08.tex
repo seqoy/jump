@@ -1,0 +1,54 @@
+\hypertarget{interface_n_s_object_07_s_b_proxy_for_json_08}{
+\section{NSObject(SBProxyForJson) Class Reference}
+\label{interface_n_s_object_07_s_b_proxy_for_json_08}\index{NSObject(SBProxyForJson)@{NSObject(SBProxyForJson)}}
+}
+
+
+Enable JSON writing for non-\/native objects.  
+
+
+
+
+{\ttfamily \#import $<$SBJsonStreamWriter.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_n_s_object_07_s_b_proxy_for_json_08_aec56625fa41d8b6e7112e63dc298f92f}{proxyForJson}
+\begin{DoxyCompactList}\small\item\em Allows generation of JSON for otherwise unsupported classes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Enable JSON writing for non-\/native objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_n_s_object_07_s_b_proxy_for_json_08_aec56625fa41d8b6e7112e63dc298f92f}{
+\index{NSObject(SBProxyForJson)@{NSObject(SBProxyForJson)}!proxyForJson@{proxyForJson}}
+\index{proxyForJson@{proxyForJson}!NSObject(SBProxyForJson)@{NSObject(SBProxyForJson)}}
+\subsubsection[{proxyForJson}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) proxyForJson 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_n_s_object_07_s_b_proxy_for_json_08_aec56625fa41d8b6e7112e63dc298f92f}
+
+
+Allows generation of JSON for otherwise unsupported classes. 
+
+If you have a custom class that you want to create a JSON representation for you can implement this method in your class. It should return a representation of your object defined in terms of objects that can be translated into JSON. For example, a Person object might implement it like this:
+
+
+\begin{DoxyCode}
+ - (id)proxyForJson {
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+        name, @"name",
+        phone, @"phone",
+        email, @"email",
+        nil];
+ }
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPData/Third-\/Part Libraries/JSON Framework/Headers/SBJsonStreamWriter.h\end{DoxyCompactItemize}

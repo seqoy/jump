@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$interface_j_p_d_b_manager_action.html#af85b28a738631615ad0e4030500ce71a" title="Delete all records queried by the specified Fetch Template." alt="" coords="427,32,923,61"/>
+<area shape="rect" id="node5" href="$interface_j_p_d_b_manager_action.html#a7a8d41ed1791761c1996af5d031e41a7" title="Delete specified Record from his Entity on the Database." alt="" coords="992,5,1349,35"/>
+<area shape="rect" id="node7" href="$interface_j_p_d_b_manager_action.html#a37853bbac86c15f62981187bd9d7bcfc" title="Query specified Entity using one specified Fetch Template name." alt="" coords="971,59,1371,88"/>
+<area shape="rect" id="node9" href="$interface_j_p_d_b_manager_action.html#aac56b1fa8bf99688b4ea5f117036eff0" title="Query specified Entity using one specified Fetch Template name." alt="" coords="1419,59,1912,88"/>
+<area shape="rect" id="node11" href="$interface_j_p_d_b_manager_action.html#ae32ca03d7ce37116f5c9e292e368bf8f" title="Query specified Entity using one specified Fetch Template name." alt="" coords="1960,59,2555,88"/>
+<area shape="rect" id="node13" href="$interface_j_p_d_b_manager_action.html#ad9f87e94c40f183732a44fd181ec96f6" title="Query specified Entity using one specified Fetch Template name." alt="" coords="2604,59,3359,88"/>
+</map>

@@ -1,0 +1,42 @@
+\hypertarget{a00029}{
+\section{$<$JPPipelineHandler$>$ Protocol Reference}
+\label{a00029}\index{JPPipelineHandler-\/p@{JPPipelineHandler-\/p}}
+}
+
+
+Handles or intercepts a Event, and sends a Event to the next handler in a Pipeline.  
+
+
+
+
+{\ttfamily \#import $<$JPPipelineHandler.h$>$}
+
+
+
+Inheritance diagram for $<$JPPipelineHandler$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{a00140}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Handles or intercepts a Event, and sends a Event to the next handler in a Pipeline. Pipeline Handler Protocol itself does not provide any method. To handle a Event you need to implement its sub-\/interfaces. There are two sub-\/interfaces which handles a received event, one for upstream events and the other for downstream events:
+
+
+\begin{DoxyItemize}
+\item \hyperlink{a00035}{JPPipelineUpstreamHandler} handles and intercepts an upstream Event.
+\item \hyperlink{a00021}{JPPipelineDownstreamHandler} handles and intercepts a downstream Event.
+\end{DoxyItemize}
+
+You will also find more detailed explanation from the documentation of each sub-\/interface on how an event is interpreted when it goes upstream and downstream respectively.
+
+\paragraph*{The context object}
+
+A \hyperlink{a00029}{JPPipelineHandler} is provided with a \hyperlink{a00030}{JPPipelineHandlerContext} object. A \hyperlink{a00029}{JPPipelineHandler} is supposed to interact with the \hyperlink{a00019}{JPPipeline} it belongs to via a context object. Using the context object, the \hyperlink{a00029}{JPPipelineHandler} can pass events upstream or downstream, modify the pipeline dynamically, or store the information (attachment) which is specific to the handler. 
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPPipelineHandler.h\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{a00016}{
+\section{JPJSONRPCEncoderHandler Class Reference}
+\label{a00016}\index{JPJSONRPCEncoderHandler@{JPJSONRPCEncoderHandler}}
+}
+
+
+An simple JSON-\/RPC Encoder Handler.  
+
+
+
+
+{\ttfamily \#import $<$JPJSONRPCEncoderHandler.h$>$}
+
+
+
+Inheritance diagram for JPJSONRPCEncoderHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00109}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for JPJSONRPCEncoderHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=360pt]{a00110}
+\end{center}
+\end{figure}
+\subsection*{Init Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{a00016_ac232419eba6d5ad305b0412e92945dab}{initWithJSONEncoderClass:}
+\begin{DoxyCompactList}\small\item\em Init the JSON Encoder Handler. \item\end{DoxyCompactList}\item 
+\hypertarget{a00016_ac232419eba6d5ad305b0412e92945dab}{
+(id) -\/ {\bfseries initWithJSONEncoderClass:}}
+\label{a00016_ac232419eba6d5ad305b0412e92945dab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An simple JSON-\/RPC Encoder Handler. \hyperlink{a00016}{JPJSONRPCEncoderHandler} intercepts {\bfseries downstream} \hyperlink{a00018}{JPJSONRPCMessage} and encode his RPC properties, fisrt on a JSON String and later on {\bfseries NSData} to be sent by a \hyperlink{a00002}{I$|$O Transporter}. Other types of messages are ignored and sented downstream to the next handler on the \hyperlink{a00001}{The Pipeline}. 
+
+Here an example that how you assign the \hyperlink{a00016}{JPJSONRPCEncoderHandler} to the pipeline: 
+\begin{DoxyCode}
+ [pipeline addLast:@"JSONRPCEncoder" withHandler:[JPJSONRPCEncoderHandler initWit
+      hJSONEncoderClass:[JSONEncoder class]]];
+\end{DoxyCode}
+ The \hyperlink{a00016}{JPJSONRPCEncoderHandler} doesn't have an embedded JSON Encoder. You have to inform one JSON Processer Class that conform with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. See the {\bfseries JUMP Data Module} to find an default implementation of this protocol that you can use or you can implement your own. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00016_ac232419eba6d5ad305b0412e92945dab}{
+\index{JPJSONRPCEncoderHandler@{JPJSONRPCEncoderHandler}!initWithJSONEncoderClass:@{initWithJSONEncoderClass:}}
+\index{initWithJSONEncoderClass:@{initWithJSONEncoderClass:}!JPJSONRPCEncoderHandler@{JPJSONRPCEncoderHandler}}
+\subsubsection[{initWithJSONEncoderClass:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) initWithJSONEncoderClass: 
+\begin{DoxyParamCaption}
+\item[{dummy(Class$<$ {\bf JPDataProcessserJSON} $>$)}]{anJSONProcesserClass}
+\end{DoxyParamCaption}
+}}
+\label{a00016_ac232419eba6d5ad305b0412e92945dab}
+
+
+Init the JSON Encoder Handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anJSONProcesserClass} & A {\ttfamily Class} of an custom JSON Processer that conforms with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPJSONRPCEncoderHandler.h\end{DoxyCompactItemize}

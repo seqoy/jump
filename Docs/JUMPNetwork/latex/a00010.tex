@@ -1,0 +1,46 @@
+\hypertarget{a00010}{
+\section{JPDefaultCancelEvent Class Reference}
+\label{a00010}\index{JPDefaultCancelEvent@{JPDefaultCancelEvent}}
+}
+
+
+An Pipeline {\bfseries downstream} \hyperlink{a00005}{Event} that represent one {\bfseries \char`\"{}cancel\char`\"{}} action.  
+
+
+
+
+{\ttfamily \#import $<$JPDefaultCancelEvent.h$>$}
+
+
+
+Inheritance diagram for JPDefaultCancelEvent:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{a00091}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for JPDefaultCancelEvent:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{a00092}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+An Pipeline {\bfseries downstream} \hyperlink{a00005}{Event} that represent one {\bfseries \char`\"{}cancel\char`\"{}} action. You can {\bfseries cancel} an {\bfseries downstream} \hyperlink{a00005}{Event} while he is processing sending an \hyperlink{a00010}{JPDefaultCancelEvent} downstream as follow: 
+\begin{DoxyCode}
+ [pipeline sendDownstream:[JPDefaultCancelEvent init]];
+\end{DoxyCode}
+ \begin{DoxyNote}{Note}
+Instead that \hyperlink{a00001}{The Pipeline} are always an asynchronous I/O operation he process one \hyperlink{a00005}{Event} at a time, that's why you can cancel an event while he is processing or waiting for some answer. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPDefaultCancelEvent.h\end{DoxyCompactItemize}

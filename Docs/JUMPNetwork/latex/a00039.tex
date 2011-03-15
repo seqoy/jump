@@ -1,0 +1,117 @@
+\hypertarget{a00039}{
+\section{JPSimplePipelineUpstreamHandler Class Reference}
+\label{a00039}\index{JPSimplePipelineUpstreamHandler@{JPSimplePipelineUpstreamHandler}}
+}
+
+
+A \hyperlink{a00035}{JPPipelineUpstreamHandler} implementation which provides an individual handler method for each event type.  
+
+
+
+
+{\ttfamily \#import $<$JPSimplePipelineUpstreamHandler.h$>$}
+
+
+
+Inheritance diagram for JPSimplePipelineUpstreamHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{a00164}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for JPSimplePipelineUpstreamHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{a00165}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00039_ad4b20a4d32e1064cdeec4d0be6c17dd0}{messageReceived:withMessageEvent:}
+\begin{DoxyCompactList}\small\item\em Invoked when a message object was received. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00039_a4c8e469d611291abdc56a79b7056a9ff}{exceptionCaughtWithContext:withException:}
+\begin{DoxyCompactList}\small\item\em Invoked when an exception was raised. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00039_aea40026cb9a22ff89738fc57510d8aa3}{
+(id) + \hyperlink{a00039_aea40026cb9a22ff89738fc57510d8aa3}{init}}
+\label{a00039_aea40026cb9a22ff89738fc57510d8aa3}
+
+\begin{DoxyCompactList}\small\item\em Init this handler. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{a00035}{JPPipelineUpstreamHandler} implementation which provides an individual handler method for each event type. This handler down-\/casts the received upstream event into more meaningful sub-\/type event and calls an appropriate handler method with the down-\/cast event. The names of the methods are identical to the upstream event names, as introduced in the \hyperlink{a00023}{JPPipelineEvent} documentation.
+
+Please use \hyperlink{a00038}{JPSimplePipelineHandler} if you need to implement both \hyperlink{a00035}{JPPipelineUpstreamHandler} and \hyperlink{a00021}{JPPipelineDownstreamHandler}.
+
+\subsubsection*{Overriding the handleContextUpstream method}
+
+You can override the {\bfseries handleContextUpstream:withEvent:} method just like overriding an ordinary Objective-\/C method. Please make sure to call {\bfseries super} so that other handler methods are invoked properly:
+
+
+\begin{DoxyCode}
+ // Override...
+ -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<
+      JPPipelineEvent>)e {
+         ...
+         [super handleContextUpstream:ctx withEvent:e];
+         ...
+ }
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00039_ad4b20a4d32e1064cdeec4d0be6c17dd0}{
+\index{JPSimplePipelineUpstreamHandler@{JPSimplePipelineUpstreamHandler}!messageReceived:withMessageEvent:@{messageReceived:withMessageEvent:}}
+\index{messageReceived:withMessageEvent:@{messageReceived:withMessageEvent:}!JPSimplePipelineUpstreamHandler@{JPSimplePipelineUpstreamHandler}}
+\subsubsection[{messageReceived:withMessageEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) messageReceived: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ {\bf JPPipelineHandlerContext} $>$)}]{ctx}
+\item[{withMessageEvent:($<$ {\bf JPPipelineMessageEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00039_ad4b20a4d32e1064cdeec4d0be6c17dd0}
+
+
+Invoked when a message object was received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & An context. \\
+\hline
+{\em e} & The event. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00039_a4c8e469d611291abdc56a79b7056a9ff}{
+\index{JPSimplePipelineUpstreamHandler@{JPSimplePipelineUpstreamHandler}!exceptionCaughtWithContext:withException:@{exceptionCaughtWithContext:withException:}}
+\index{exceptionCaughtWithContext:withException:@{exceptionCaughtWithContext:withException:}!JPSimplePipelineUpstreamHandler@{JPSimplePipelineUpstreamHandler}}
+\subsubsection[{exceptionCaughtWithContext:withException:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) exceptionCaughtWithContext: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ {\bf JPPipelineHandlerContext} $>$)}]{ctx}
+\item[{withException:($<$ {\bf JPPipelineExceptionEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00039_a4c8e469d611291abdc56a79b7056a9ff}
+
+
+Invoked when an exception was raised. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & An context. \\
+\hline
+{\em e} & The event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPSimplePipelineUpstreamHandler.h\end{DoxyCompactItemize}

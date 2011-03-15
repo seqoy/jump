@@ -1,0 +1,96 @@
+\hypertarget{a00021}{
+\section{$<$JPPipelineDownstreamHandler$>$ Protocol Reference}
+\label{a00021}\index{JPPipelineDownstreamHandler-\/p@{JPPipelineDownstreamHandler-\/p}}
+}
+
+
+Handles or intercepts a downstream \hyperlink{a00023}{JPPipelineEvent}, and sends a \hyperlink{a00023}{JPPipelineEvent} to the next handler in a \hyperlink{a00019}{JPPipeline}.  
+
+
+
+
+{\ttfamily \#import $<$JPPipelineDownstreamHandler.h$>$}
+
+
+
+Inheritance diagram for $<$JPPipelineDownstreamHandler$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{a00124}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$JPPipelineDownstreamHandler$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{a00125}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00021_a33230f19d46ee4dfd1d200767b00ddc9}{handleContextDownstream:withEvent:}
+\begin{DoxyCompactList}\small\item\em Handles the specified downstream event. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles or intercepts a downstream \hyperlink{a00023}{JPPipelineEvent}, and sends a \hyperlink{a00023}{JPPipelineEvent} to the next handler in a \hyperlink{a00019}{JPPipeline}. The most common use case of this interface is to intercept an request.
+
+\subsubsection*{Using the Downstream Handler Class}
+
+In most cases, you will get to use a \hyperlink{a00037}{JPSimplePipelineDownstreamHandler} to implement an upstream handler because it provides an individual handler method for each event type. You might want to implement this interface directly though if you want to handle various types of events in more generic way.
+
+\paragraph*{Firing an event to the next handler}
+
+You can forward the received event upstream or downstream. In most cases, \hyperlink{a00035}{JPPipelineUpstreamHandler} will send the event upstream (i.e. inbound) although it is legal to send the event downstream (i.e. outbound):
+
+
+\begin{DoxyCode}
+ // Sending the event upstream (inbound)
+ -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<
+      JPPipelineEvent>)e {
+         ...
+         [ctx sendDownstream:e];
+         ...
+ }
+ 
+ // Sending the event downstream (outbound)
+ -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<
+      JPPipelineEvent>)e {
+         ...
+         [ctx sendUpstream:[UpstreamMessageEvent init(...)]];
+         ...
+ }
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00021_a33230f19d46ee4dfd1d200767b00ddc9}{
+\index{JPPipelineDownstreamHandler-\/p@{JPPipelineDownstreamHandler-\/p}!handleContextDownstream:withEvent:@{handleContextDownstream:withEvent:}}
+\index{handleContextDownstream:withEvent:@{handleContextDownstream:withEvent:}!JPPipelineDownstreamHandler-p@{JPPipelineDownstreamHandler-\/p}}
+\subsubsection[{handleContextDownstream:withEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) handleContextDownstream: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf JPDefaultHandlerContext} $\ast$)}]{ctx}
+\item[{withEvent:($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00021_a33230f19d46ee4dfd1d200767b00ddc9}
+
+
+Handles the specified downstream event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the context object for this handler \\
+\hline
+{\em e} & the downstream event to process or intercept \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPPipelineDownstreamHandler.h\end{DoxyCompactItemize}

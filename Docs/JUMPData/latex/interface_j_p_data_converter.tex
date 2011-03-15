@@ -1,0 +1,240 @@
+\hypertarget{interface_j_p_data_converter}{
+\section{JPDataConverter Class Reference}
+\label{interface_j_p_data_converter}\index{JPDataConverter@{JPDataConverter}}
+}
+
+
+This class contains an collection of methods to convert different Objective C objects.  
+
+
+
+
+{\ttfamily \#import $<$JPDataConverter.h$>$}
+
+\subsection*{Setters and Getters}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_j_p_data_converter_af9806e3698e497ed6ee8ba01bb155548}{setKnowedDateFormats:}
+\begin{DoxyCompactList}\small\item\em Set the collection of knowed date formats used to \char`\"{}try to convert\char`\"{}. \item\end{DoxyCompactList}\item 
+(NSMutableArray $\ast$) + \hyperlink{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}{knowedDateFormats}
+\begin{DoxyCompactList}\small\item\em Retrieve the collection of knowed date formats used to \char`\"{}try to convert\char`\"{}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Convert Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSDate $\ast$) + \hyperlink{interface_j_p_data_converter_a710a5ee9440e968389bd32cd8e9c914c}{convertToNSDateThisObject:}
+\begin{DoxyCompactList}\small\item\em Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \item\end{DoxyCompactList}\item 
+(NSDate $\ast$) + \hyperlink{interface_j_p_data_converter_a77cd52d9cdfc64f12ad531a0c52d7844}{convertToNSDateThisObject:withAdditionalDateFormat:}
+\begin{DoxyCompactList}\small\item\em Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \item\end{DoxyCompactList}\item 
+(NSDate $\ast$) + \hyperlink{interface_j_p_data_converter_a49f3512191f838b23cb57dabc8bec8f6}{convertToNSDateThisObject:withDateFormat:}
+\begin{DoxyCompactList}\small\item\em Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \item\end{DoxyCompactList}\item 
+(NSNumber $\ast$) + \hyperlink{interface_j_p_data_converter_a10057d262d500de618510d50326d0165}{convertToNSNumberThisObject:}
+\begin{DoxyCompactList}\small\item\em Take an {\bfseries NSString} Object and try to convert to {\bfseries NSNumber}. \item\end{DoxyCompactList}\item 
+(NSString $\ast$) + \hyperlink{interface_j_p_data_converter_a597e5f29b306f2bd75090de47de653f9}{convertToNSStringThisObject:}
+\begin{DoxyCompactList}\small\item\em Take an {\bfseries NSNumber} or {\bfseries NSDate} Object and try to convert to {\bfseries NSString}. \item\end{DoxyCompactList}\item 
+(id) + \hyperlink{interface_j_p_data_converter_a2601263deda1b3e95ca55969011b637f}{convertFromJavaUtilDateIfNeeded:}
+\begin{DoxyCompactList}\small\item\em This method convert an {\bfseries Java Util Date Dictionary} to {\bfseries NSDate}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class contains an collection of methods to convert different Objective C objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_j_p_data_converter_af9806e3698e497ed6ee8ba01bb155548}{
+\index{JPDataConverter@{JPDataConverter}!setKnowedDateFormats:@{setKnowedDateFormats:}}
+\index{setKnowedDateFormats:@{setKnowedDateFormats:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{setKnowedDateFormats:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) setKnowedDateFormats: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSMutableArray $\ast$)}]{knowedDateFormats}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_af9806e3698e497ed6ee8ba01bb155548}
+
+
+Set the collection of knowed date formats used to \char`\"{}try to convert\char`\"{}. 
+
+You could add new elements to this array or replace it to add your own formats. 
+\begin{DoxyParams}{Parameters}
+{\em knowedDateFormats} & An array of knowed date formats. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}{+ knowedDateFormats} 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}{
+\index{JPDataConverter@{JPDataConverter}!knowedDateFormats@{knowedDateFormats}}
+\index{knowedDateFormats@{knowedDateFormats}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{knowedDateFormats}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSMutableArray$\ast$) knowedDateFormats 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}
+
+
+Retrieve the collection of knowed date formats used to \char`\"{}try to convert\char`\"{}. 
+
+The default knowed formats are:
+\begin{DoxyItemize}
+\item "yyyy-\/MM-\/dd HH:mm:ss"\par
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item "yyyy-\/MM-\/dd"\par
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item "YYYY-\/MM-\/DD HH:MM:SS ±HHMM"\par
+ \begin{DoxyReturn}{Returns}
+An array with all setted formats. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\hypertarget{interface_j_p_data_converter_a710a5ee9440e968389bd32cd8e9c914c}{
+\index{JPDataConverter@{JPDataConverter}!convertToNSDateThisObject:@{convertToNSDateThisObject:}}
+\index{convertToNSDateThisObject:@{convertToNSDateThisObject:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertToNSDateThisObject:}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSDate$\ast$) convertToNSDateThisObject: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a710a5ee9440e968389bd32cd8e9c914c}
+
+
+Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. 
+
+The convertion is performed based on one Array of knowed formats. See \hyperlink{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}{knowedDateFormats} property for more inforation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object or if an conversion isn't possible will return {\bfseries nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_data_converter_a77cd52d9cdfc64f12ad531a0c52d7844}{
+\index{JPDataConverter@{JPDataConverter}!convertToNSDateThisObject:withAdditionalDateFormat:@{convertToNSDateThisObject:withAdditionalDateFormat:}}
+\index{convertToNSDateThisObject:withAdditionalDateFormat:@{convertToNSDateThisObject:withAdditionalDateFormat:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertToNSDateThisObject:withAdditionalDateFormat:}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSDate$\ast$) convertToNSDateThisObject: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\item[{withAdditionalDateFormat:(NSString $\ast$)}]{anDateFormatter}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a77cd52d9cdfc64f12ad531a0c52d7844}
+
+
+Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. 
+
+The convertion is performed based on one Array of knowed formats. See \hyperlink{interface_j_p_data_converter_a6ebd91ce6791893bc1a24484b083164b}{knowedDateFormats} property for more inforation.\par
+ \par
+ This method also accept one additional format that will be processed but not added to the \char`\"{}knowed formats\char`\"{} array. 
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \\
+\hline
+{\em anDateFormatter} & An additional format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object or if an conversion isn't possible will return {\bfseries nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_data_converter_a49f3512191f838b23cb57dabc8bec8f6}{
+\index{JPDataConverter@{JPDataConverter}!convertToNSDateThisObject:withDateFormat:@{convertToNSDateThisObject:withDateFormat:}}
+\index{convertToNSDateThisObject:withDateFormat:@{convertToNSDateThisObject:withDateFormat:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertToNSDateThisObject:withDateFormat:}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSDate$\ast$) convertToNSDateThisObject: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\item[{withDateFormat:(NSString $\ast$)}]{anDateFormatter}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a49f3512191f838b23cb57dabc8bec8f6}
+
+
+Take an {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. 
+
+The convertion is performed using the \char`\"{}Date Format\char`\"{} parameter informed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An {\bfseries NSNumber} or {\bfseries NSString} Object and try to convert to {\bfseries NSDate}. \\
+\hline
+{\em anDateFormatter} & An date format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object or if an conversion isn't possible will return {\bfseries nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_data_converter_a10057d262d500de618510d50326d0165}{
+\index{JPDataConverter@{JPDataConverter}!convertToNSNumberThisObject:@{convertToNSNumberThisObject:}}
+\index{convertToNSNumberThisObject:@{convertToNSNumberThisObject:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertToNSNumberThisObject:}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSNumber$\ast$) convertToNSNumberThisObject: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a10057d262d500de618510d50326d0165}
+
+
+Take an {\bfseries NSString} Object and try to convert to {\bfseries NSNumber}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An {\bfseries NSString} to try to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object or if an conversion isn't possible will return {\bfseries nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_data_converter_a597e5f29b306f2bd75090de47de653f9}{
+\index{JPDataConverter@{JPDataConverter}!convertToNSStringThisObject:@{convertToNSStringThisObject:}}
+\index{convertToNSStringThisObject:@{convertToNSStringThisObject:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertToNSStringThisObject:}]{\setlength{\rightskip}{0pt plus 5cm}+ (NSString$\ast$) convertToNSStringThisObject: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a597e5f29b306f2bd75090de47de653f9}
+
+
+Take an {\bfseries NSNumber} or {\bfseries NSDate} Object and try to convert to {\bfseries NSString}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An {\bfseries NSNumber} or {\bfseries NSDate} to try to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Converted object or if an conversion isn't possible will return {\bfseries nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_data_converter_a2601263deda1b3e95ca55969011b637f}{
+\index{JPDataConverter@{JPDataConverter}!convertFromJavaUtilDateIfNeeded:@{convertFromJavaUtilDateIfNeeded:}}
+\index{convertFromJavaUtilDateIfNeeded:@{convertFromJavaUtilDateIfNeeded:}!JPDataConverter@{JPDataConverter}}
+\subsubsection[{convertFromJavaUtilDateIfNeeded:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) convertFromJavaUtilDateIfNeeded: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anObject}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_data_converter_a2601263deda1b3e95ca55969011b637f}
+
+
+This method convert an {\bfseries Java Util Date Dictionary} to {\bfseries NSDate}. 
+
+Usually used to decode this kind of date paserd from a {\bfseries JSON Object}.\par
+ \par
+ Check this post for more information: \href{http://weblogs.asp.net/bleroy/archive/2008/01/18/dates-and-json.asp}{\tt http://weblogs.asp.net/bleroy/archive/2008/01/18/dates-\/and-\/json.asp} \par
+ 
+\begin{DoxyParams}{Parameters}
+{\em anObject} & An object to try to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This method actually test if needs an conversion and converts if needed. If no convertion is needed will return the object passed as parameter with no changes. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPData/Headers/JPDataConverter.h\end{DoxyCompactItemize}

@@ -1,0 +1,300 @@
+\hypertarget{interface_j_p_d_b_manager}{
+\section{JPDBManager Class Reference}
+\label{interface_j_p_d_b_manager}\index{JPDBManager@{JPDBManager}}
+}
+
+
+Database Manager are one Facade around {\bfseries Core Data} classes that facilitate the main operations around the {\bfseries Core Data Framework{\bfseries . }} 
+
+
+
+
+{\ttfamily \#import $<$JPDBManager.h$>$}
+
+
+
+Inheritance diagram for JPDBManager:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{interface_j_p_d_b_manager__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_j_p_d_b_manager_a1325c5adbfd7d1952cdf0352fb064ba0}{
+NSManagedObjectModel $\ast$ \hyperlink{interface_j_p_d_b_manager_a1325c5adbfd7d1952cdf0352fb064ba0}{managedObjectModel}}
+\label{interface_j_p_d_b_manager_a1325c5adbfd7d1952cdf0352fb064ba0}
+
+\begin{DoxyCompactList}\small\item\em Core Data Managed Object Model. \item\end{DoxyCompactList}\item 
+\hypertarget{interface_j_p_d_b_manager_a29cf121d302956111efcc92ef6ebeb46}{
+NSManagedObjectContext $\ast$ \hyperlink{interface_j_p_d_b_manager_a29cf121d302956111efcc92ef6ebeb46}{managedObjectContext}}
+\label{interface_j_p_d_b_manager_a29cf121d302956111efcc92ef6ebeb46}
+
+\begin{DoxyCompactList}\small\item\em Core Data Managed Object Context. \item\end{DoxyCompactList}\item 
+\hypertarget{interface_j_p_d_b_manager_ac208712a609c528d79e7073211e4e658}{
+NSPersistentStoreCoordinator $\ast$ \hyperlink{interface_j_p_d_b_manager_ac208712a609c528d79e7073211e4e658}{persistentStoreCoordinator}}
+\label{interface_j_p_d_b_manager_ac208712a609c528d79e7073211e4e658}
+
+\begin{DoxyCompactList}\small\item\em Core Data Persistent Store Coordinator. \item\end{DoxyCompactList}\item 
+BOOL \hyperlink{interface_j_p_d_b_manager_a572163d38a033f106375cabe7b7748fa}{automaticallyCommit}
+\begin{DoxyCompactList}\small\item\em Configure the manager to automatically commit every operation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Init Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_j_p_d_b_manager_ad0fb072393aa238cb15f0fe71cae5034}{init}
+\begin{DoxyCompactList}\small\item\em Init and Alloc the Database Manager Class. \item\end{DoxyCompactList}\item 
+(id) + \hyperlink{interface_j_p_d_b_manager_add8b93f9565ad8b497a81d2cbdaa4301}{initAndStartCoreData}
+\begin{DoxyCompactList}\small\item\em Init and Alloc the Database Manager Class. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Start and Stop Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_j_p_d_b_manager_aef389466245327a533a7881fd2d54c52}{startCoreData}
+\begin{DoxyCompactList}\small\item\em Start Core Data Databases. \item\end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_j_p_d_b_manager_a3bf67f7522015669b34c6368bc836c55}{startCoreDataWithModel:}
+\begin{DoxyCompactList}\small\item\em Start Core Data Databases. \item\end{DoxyCompactList}\item 
+\hypertarget{interface_j_p_d_b_manager_ae3c82e3fa6e7da50efbd34357c5ddee4}{
+(void) -\/ \hyperlink{interface_j_p_d_b_manager_ae3c82e3fa6e7da50efbd34357c5ddee4}{closeCoreData}}
+\label{interface_j_p_d_b_manager_ae3c82e3fa6e7da50efbd34357c5ddee4}
+
+\begin{DoxyCompactList}\small\item\em Close Core Data Databases, commit pendent updates and release resources. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Get Info Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \hyperlink{interface_j_p_d_b_manager_a1d4236b0c842126f9ad6d30f53258a9f}{existEntity:}
+\begin{DoxyCompactList}\small\item\em Test if specified Entity exist on the model. \item\end{DoxyCompactList}\item 
+(BOOL) -\/ \hyperlink{interface_j_p_d_b_manager_a273547b21cbb031a49c35747e9240560}{existAttribute:inEntity:}
+\begin{DoxyCompactList}\small\item\em Test if specified Attribute exist on specified Entity. \item\end{DoxyCompactList}\item 
+(\hyperlink{interface_j_p_d_b_manager_action}{JPDBManagerAction} $\ast$) -\/ \hyperlink{interface_j_p_d_b_manager_a9eb7b1ed5ff3667b54a35a8d315cf689}{getDatabaseAction}
+\begin{DoxyCompactList}\small\item\em Helper method to retrieve an \hyperlink{interface_j_p_d_b_manager_action}{Database Action} object. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Write Data Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_j_p_d_b_manager_ada5bce4a83f780c43da549468e1872dd}{
+(void) -\/ \hyperlink{interface_j_p_d_b_manager_ada5bce4a83f780c43da549468e1872dd}{commit}}
+\label{interface_j_p_d_b_manager_ada5bce4a83f780c43da549468e1872dd}
+
+\begin{DoxyCompactList}\small\item\em Commit al pendent operations to the persistent store. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Database Manager are one Facade around {\bfseries Core Data} classes that facilitate the main operations around the {\bfseries Core Data Framework{\bfseries . }}See the \hyperlink{basic_uses}{Basic Uses} to learn the basic concepts about this class. Also consult \hyperlink{errors}{Handling Errors} and \hyperlink{queries}{Performing Queries}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_j_p_d_b_manager_ad0fb072393aa238cb15f0fe71cae5034}{
+\index{JPDBManager@{JPDBManager}!init@{init}}
+\index{init@{init}!JPDBManager@{JPDBManager}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_ad0fb072393aa238cb15f0fe71cae5034}
+
+
+Init and Alloc the Database Manager Class. 
+
+\begin{DoxyReturn}{Returns}
+One autoreleseable instance. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{interface_j_p_d_b_manager_ad0fb072393aa238cb15f0fe71cae5034_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{interface_j_p_d_b_manager_add8b93f9565ad8b497a81d2cbdaa4301}{
+\index{JPDBManager@{JPDBManager}!initAndStartCoreData@{initAndStartCoreData}}
+\index{initAndStartCoreData@{initAndStartCoreData}!JPDBManager@{JPDBManager}}
+\subsubsection[{initAndStartCoreData}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) initAndStartCoreData 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_add8b93f9565ad8b497a81d2cbdaa4301}
+
+
+Init and Alloc the Database Manager Class. 
+
+Automatically Start all Core Data Engine. \begin{DoxyReturn}{Returns}
+One autoreleseable instance. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{interface_j_p_d_b_manager_add8b93f9565ad8b497a81d2cbdaa4301_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{interface_j_p_d_b_manager_aef389466245327a533a7881fd2d54c52}{
+\index{JPDBManager@{JPDBManager}!startCoreData@{startCoreData}}
+\index{startCoreData@{startCoreData}!JPDBManager@{JPDBManager}}
+\subsubsection[{startCoreData}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) startCoreData 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_aef389466245327a533a7881fd2d54c52}
+
+
+Start Core Data Databases. 
+
+Will merge ALL models in your bundle and try to recreate missed parameters. Use \hyperlink{interface_j_p_d_b_manager_a3bf67f7522015669b34c6368bc836c55}{startCoreDataWithModel:} if you need to use an specific model. 
+\begin{DoxyExceptions}{Exceptions}
+{\em An} & \hyperlink{errors_JPDBManagerStartException}{JPDBManagerStartException} exception is raised if some error ocurrs. See \hyperlink{errors}{Handling Errors} for more informations. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return itself. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{interface_j_p_d_b_manager_aef389466245327a533a7881fd2d54c52_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{interface_j_p_d_b_manager_a3bf67f7522015669b34c6368bc836c55}{
+\index{JPDBManager@{JPDBManager}!startCoreDataWithModel:@{startCoreDataWithModel:}}
+\index{startCoreDataWithModel:@{startCoreDataWithModel:}!JPDBManager@{JPDBManager}}
+\subsubsection[{startCoreDataWithModel:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) startCoreDataWithModel: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString$\ast$)}]{modelName}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_a3bf67f7522015669b34c6368bc836c55}
+
+
+Start Core Data Databases. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelName} & Specific Model Name. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em An} & \hyperlink{errors_JPDBManagerStartException}{JPDBManagerStartException} exception is raised if some error ocurrs. See \hyperlink{errors}{Handling Errors} for more informations. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return itself. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{interface_j_p_d_b_manager_a3bf67f7522015669b34c6368bc836c55_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{interface_j_p_d_b_manager_a1d4236b0c842126f9ad6d30f53258a9f}{
+\index{JPDBManager@{JPDBManager}!existEntity:@{existEntity:}}
+\index{existEntity:@{existEntity:}!JPDBManager@{JPDBManager}}
+\subsubsection[{existEntity:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) existEntity: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString$\ast$)}]{anEntityName}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_a1d4236b0c842126f9ad6d30f53258a9f}
+
+
+Test if specified Entity exist on the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anEntityName} & The Entity Name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if specified Entity exist on the model. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_d_b_manager_a273547b21cbb031a49c35747e9240560}{
+\index{JPDBManager@{JPDBManager}!existAttribute:inEntity:@{existAttribute:inEntity:}}
+\index{existAttribute:inEntity:@{existAttribute:inEntity:}!JPDBManager@{JPDBManager}}
+\subsubsection[{existAttribute:inEntity:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) existAttribute: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString$\ast$)}]{anAttributeName}
+\item[{inEntity:(NSString$\ast$)}]{anEntityName}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_a273547b21cbb031a49c35747e9240560}
+
+
+Test if specified Attribute exist on specified Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anAttributeName} & The Attribute name. \\
+\hline
+{\em anEntityName} & The Entity name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\bfseries YES} if specified Attribute exist on specified Entity. 
+\end{DoxyReturn}
+\hypertarget{interface_j_p_d_b_manager_a9eb7b1ed5ff3667b54a35a8d315cf689}{
+\index{JPDBManager@{JPDBManager}!getDatabaseAction@{getDatabaseAction}}
+\index{getDatabaseAction@{getDatabaseAction}!JPDBManager@{JPDBManager}}
+\subsubsection[{getDatabaseAction}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf JPDBManagerAction} $\ast$) getDatabaseAction 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_j_p_d_b_manager_a9eb7b1ed5ff3667b54a35a8d315cf689}
+
+
+Helper method to retrieve an \hyperlink{interface_j_p_d_b_manager_action}{Database Action} object. 
+
+The manager is automatically associcated to this object. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{interface_j_p_d_b_manager_a9eb7b1ed5ff3667b54a35a8d315cf689_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_p_d_b_manager_a572163d38a033f106375cabe7b7748fa}{
+\index{JPDBManager@{JPDBManager}!automaticallyCommit@{automaticallyCommit}}
+\index{automaticallyCommit@{automaticallyCommit}!JPDBManager@{JPDBManager}}
+\subsubsection[{automaticallyCommit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) automaticallyCommit\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_j_p_d_b_manager_a572163d38a033f106375cabe7b7748fa}
+
+
+Configure the manager to automatically commit every operation. 
+
+Default value is {\bfseries NO}. See \hyperlink{basic_uses}{Basic Uses} for more information. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPDatabase/Headers/JPDBManager.h\item 
+/Users/Paulo/Projects/JUMP/JUMPDatabase/Sources/JPDBManager.m\end{DoxyCompactItemize}

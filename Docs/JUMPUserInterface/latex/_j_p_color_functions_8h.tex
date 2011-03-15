@@ -1,0 +1,146 @@
+\hypertarget{_j_p_color_functions_8h}{
+\section{/Users/Paulo/Projects/JUMP/JUMPUserInterface/Headers/JPColorFunctions.h File Reference}
+\label{_j_p_color_functions_8h}\index{/Users/Paulo/Projects/JUMP/JUMPUserInterface/Headers/JPColorFunctions.h@{/Users/Paulo/Projects/JUMP/JUMPUserInterface/Headers/JPColorFunctions.h}}
+}
+
+
+\hyperlink{interface_j_p_color}{JPColor} utility and helper functions.  
+
+
+{\ttfamily \#import \char`\"{}JPColorTypes.h\char`\"{}}\par
+{\ttfamily \#import $<$Foundation/Foundation.h$>$}\par
+{\ttfamily \#import $<$CoreGraphics/CoreGraphics.h$>$}\par
+Include dependency graph for JPColorFunctions.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_j_p_color_functions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_j_p_color_functions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_j_p_color_functions_8h_a41c757dadd61fafc580a4ac21b2c34de}{
+\#define \hyperlink{_j_p_color_functions_8h_a41c757dadd61fafc580a4ac21b2c34de}{JPConvertAlpha}(alpha)~( (float)alpha / 100.0 )}
+\label{_j_p_color_functions_8h_a41c757dadd61fafc580a4ac21b2c34de}
+
+\begin{DoxyCompactList}\small\item\em Convert a Quartz Alpha Percent (0.0 -\/ 1.0) to Photoshop-\/like Alpha Percent (0 -\/ 100). \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_a57bdba7b6ff34e900244d883d5ef8e92}{
+\#define \hyperlink{_j_p_color_functions_8h_a57bdba7b6ff34e900244d883d5ef8e92}{JPPSToQuartz}(color)~(float)( color / 255.0 )}
+\label{_j_p_color_functions_8h_a57bdba7b6ff34e900244d883d5ef8e92}
+
+\begin{DoxyCompactList}\small\item\em Convert a Photoshop Color Percent (0 -\/ 255) to a Quartz Color Percent (0.0 -\/ 1.0). \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_ac8bcc1fdbf3dfe6c27084df45a42e8b7}{
+\#define \hyperlink{_j_p_color_functions_8h_ac8bcc1fdbf3dfe6c27084df45a42e8b7}{JPQuartzToPS}(\_\-\_\-color\_\-\_\-)~(int)roundf( \_\-\_\-color\_\-\_\-  $\ast$ 255 )}
+\label{_j_p_color_functions_8h_ac8bcc1fdbf3dfe6c27084df45a42e8b7}
+
+\begin{DoxyCompactList}\small\item\em Convert a Quartz Color Percent (0.0 -\/ 1.0) to a Photoshop-\/like Color Percent (0 -\/ 255). \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_a279f0819120931b0413f5fcb2e3e8c04}{
+\#define \hyperlink{_j_p_color_functions_8h_a279f0819120931b0413f5fcb2e3e8c04}{JPCreateUIColor}(r, g, b, alpha)~( \mbox{[}UIColor colorWithCGColor:JPCreateRGBColor( (float)r, (float)g, (float)b, (float)alpha) \mbox{]}  )}
+\label{_j_p_color_functions_8h_a279f0819120931b0413f5fcb2e3e8c04}
+
+\begin{DoxyCompactList}\small\item\em Return a UIColor based on a Photoshop Color Percent (0 -\/ 255) for Red, Green and Blue. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_ad3b58eeaceba397fc605d21b8f9a0c41}{
+\#define \hyperlink{_j_p_color_functions_8h_ad3b58eeaceba397fc605d21b8f9a0c41}{JPNormalizeUp}(color)~((int)roundf( color $\ast$ 100 ))}
+\label{_j_p_color_functions_8h_ad3b58eeaceba397fc605d21b8f9a0c41}
+
+\begin{DoxyCompactList}\small\item\em Normalize some value to 0-\/1;. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_aba20205288ce7f0cdb7618aa6af36e8a}{
+\#define \hyperlink{_j_p_color_functions_8h_aba20205288ce7f0cdb7618aa6af36e8a}{JPNormalizeDown}(\_\-\_\-color\_\-\_\-)~((float)\_\-\_\-color\_\-\_\- / 100)}
+\label{_j_p_color_functions_8h_aba20205288ce7f0cdb7618aa6af36e8a}
+
+\begin{DoxyCompactList}\small\item\em Normalize some value to 0-\/100;. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+CGColorRef \hyperlink{_j_p_color_functions_8h_a4a5f10912287a18d4d079db2473f1e5a}{JPCreateRGBColor} (float r, float g, float b, float alpha)
+\begin{DoxyCompactList}\small\item\em Create a Quartz CGColor based on a Photoshop-\/like Color Percent (0 -\/ 255) for Red, Green and Blue. \item\end{DoxyCompactList}\item 
+CGColorRef \hyperlink{_j_p_color_functions_8h_adfd936f6725e5d8047fb95fbb0882e4b}{JPCreateColorWithJPrgb} (\hyperlink{struct_j_prgb}{JPrgb} RGB, float alpha)
+\begin{DoxyCompactList}\small\item\em Create a Quartz CGColor based on a \hyperlink{struct_j_prgb}{JPrgb} Type. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_a1eda119ff0f5566f886a81a784c67388}{
+\hyperlink{struct_j_prgb}{JPrgb} \hyperlink{_j_p_color_functions_8h_a1eda119ff0f5566f886a81a784c67388}{JPCreateRGBType} (int r, int g, int b)}
+\label{_j_p_color_functions_8h_a1eda119ff0f5566f886a81a784c67388}
+
+\begin{DoxyCompactList}\small\item\em Create an \hyperlink{struct_j_prgb}{JPrgb} structure type. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_ace4eb5bbf6392366d0cc6ae57313d6d8}{
+\hyperlink{struct_j_pcmyk}{JPcmyk} \hyperlink{_j_p_color_functions_8h_ace4eb5bbf6392366d0cc6ae57313d6d8}{JPCreateCMYKType} (int C, int M, int Y, int K)}
+\label{_j_p_color_functions_8h_ace4eb5bbf6392366d0cc6ae57313d6d8}
+
+\begin{DoxyCompactList}\small\item\em Create an \hyperlink{struct_j_pcmyk}{JPcmyk} structure type. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_ab10ba17e60d2703b7cd09c7737467062}{
+\hyperlink{struct_j_plab}{JPlab} \hyperlink{_j_p_color_functions_8h_ab10ba17e60d2703b7cd09c7737467062}{JPCreateLABType} (int L, int A, int B)}
+\label{_j_p_color_functions_8h_ab10ba17e60d2703b7cd09c7737467062}
+
+\begin{DoxyCompactList}\small\item\em Create an \hyperlink{struct_j_plab}{JPlab} structure type. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_color_functions_8h_ac6031c5fd2d719a6b618d030c86cc6ac}{
+\hyperlink{struct_j_phsv}{JPhsv} \hyperlink{_j_p_color_functions_8h_ac6031c5fd2d719a6b618d030c86cc6ac}{JPCreateHSVType} (int H, int S, int B)}
+\label{_j_p_color_functions_8h_ac6031c5fd2d719a6b618d030c86cc6ac}
+
+\begin{DoxyCompactList}\small\item\em Create an \hyperlink{struct_j_phsv}{JPhsv} structure type. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_j_p_color}{JPColor} utility and helper functions. 
+
+\subsection{Function Documentation}
+\hypertarget{_j_p_color_functions_8h_a4a5f10912287a18d4d079db2473f1e5a}{
+\index{JPColorFunctions.h@{JPColorFunctions.h}!JPCreateRGBColor@{JPCreateRGBColor}}
+\index{JPCreateRGBColor@{JPCreateRGBColor}!JPColorFunctions.h@{JPColorFunctions.h}}
+\subsubsection[{JPCreateRGBColor}]{\setlength{\rightskip}{0pt plus 5cm}CGColorRef JPCreateRGBColor (
+\begin{DoxyParamCaption}
+\item[{float}]{r, }
+\item[{float}]{g, }
+\item[{float}]{b, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}
+\label{_j_p_color_functions_8h_a4a5f10912287a18d4d079db2473f1e5a}
+
+
+Create a Quartz CGColor based on a Photoshop-\/like Color Percent (0 -\/ 255) for Red, Green and Blue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & An Red value from 0 to 255. \\
+\hline
+{\em g} & An Green value from 0 to 255. \\
+\hline
+{\em b} & An Blue value from 0 to 255. \\
+\hline
+{\em alpha} & An opacity value from 0 to 100. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained Quartz CGColorRef object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_color_functions_8h_adfd936f6725e5d8047fb95fbb0882e4b}{
+\index{JPColorFunctions.h@{JPColorFunctions.h}!JPCreateColorWithJPrgb@{JPCreateColorWithJPrgb}}
+\index{JPCreateColorWithJPrgb@{JPCreateColorWithJPrgb}!JPColorFunctions.h@{JPColorFunctions.h}}
+\subsubsection[{JPCreateColorWithJPrgb}]{\setlength{\rightskip}{0pt plus 5cm}CGColorRef JPCreateColorWithJPrgb (
+\begin{DoxyParamCaption}
+\item[{{\bf JPrgb}}]{RGB, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}
+\label{_j_p_color_functions_8h_adfd936f6725e5d8047fb95fbb0882e4b}
+
+
+Create a Quartz CGColor based on a \hyperlink{struct_j_prgb}{JPrgb} Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em RGB} & An \hyperlink{struct_j_prgb}{JPrgb} type with values. \\
+\hline
+{\em alpha} & An opacity value from 0 to 100. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained Quartz CGColorRef object. 
+\end{DoxyReturn}

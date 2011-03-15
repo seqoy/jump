@@ -1,0 +1,272 @@
+\hypertarget{_j_p_n_s_objects_shortcuts_8h}{
+\section{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPNSObjectsShortcuts.h File Reference}
+\label{_j_p_n_s_objects_shortcuts_8h}\index{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPNSObjectsShortcuts.h@{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPNSObjectsShortcuts.h}}
+}
+
+
+Collection of convenient Macro-\/Functions that are shortcut to {\bfseries NSObjects} initiators.  
+
+
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a7b79ac37c8a17466bf9c0ff29416de0b}{NSReleaseSafely}(\_\-\_\-POINTER)~\{ \mbox{[}\_\-\_\-POINTER release\mbox{]}; \_\-\_\-POINTER = nil; \}
+\begin{DoxyCompactList}\small\item\em Shortcut to safely release an object. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Retained initiators.}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a9f1bb181c0a0f0bed7a69222808928f8}{NSInt}(\_\-\_\-anValue\_\-\_\-)~(  \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithInt:\_\-\_\-anValue\_\-\_\- \mbox{]}  )
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an retained NSNumber. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_ad1f7250ddcb50fe74388051951999eab}{NSDouble}(\_\-\_\-anValue\_\-\_\-)~(  \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithDouble:\_\-\_\-anValue\_\-\_\- \mbox{]}  )
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an retained NSDouble. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a2dca4ba3d6c7193f17d61e1c0ed80cb5}{NSDecimal}(\_\-\_\-anValue\_\-\_\-)~( \mbox{[}\mbox{[}NSDecimalNumber alloc\mbox{]} initWithFloat:\_\-\_\-anValue\_\-\_\-\mbox{]} )
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an retained NSDecimal. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a6091138b8702c9abc6bb13c46a9bb3f6}{NSFloat}(\_\-\_\-anValue\_\-\_\-)~( \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithFloat:\_\-\_\-anValue\_\-\_\- \mbox{]} )
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an retained NSNumber. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a7d90322b9e5bc5b3e8d5c2a1deb7af49}{NSBOOL}(\_\-\_\-anValue\_\-\_\-)~( \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithBool:\_\-\_\-anValue\_\-\_\- \mbox{]}  )
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an retained NSNumber boolean representation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Auto releseable initiators.}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_aba3a3229abde07e16c9c53c2a4ef5633}{NSAInt}(\_\-\_\-anValue\_\-\_\-)~`\mbox{[}NSInt( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an autoreleseable NSNumber. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a84d2ba9d743076d8fb6de2282d906dbc}{NSADouble}(\_\-\_\-anValue\_\-\_\-)~\mbox{[}NSDouble( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an autoreleseable NSDouble. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_affd04234915e9c9c1f23662056ff8ea9}{NSADecimal}(\_\-\_\-anValue\_\-\_\-)~\mbox{[}NSDecimal( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an autoreleseable NSDecimal. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_a00557dd8a6fc3bd8773655b91ecc8a50}{NSAFloat}(\_\-\_\-anValue\_\-\_\-)~\mbox{[}NSFloat( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an autoreleseable NSNumber. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_j_p_n_s_objects_shortcuts_8h_ab625199e259d7013210540e89ab11506}{NSABOOL}(\_\-\_\-anValue\_\-\_\-)~\mbox{[}NSBOOL( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}
+\begin{DoxyCompactList}\small\item\em Shortcut to initiate an autoreleseable NSNumber boolean representation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Collection of convenient Macro-\/Functions that are shortcut to {\bfseries NSObjects} initiators. 
+
+\subsection{Define Documentation}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a9f1bb181c0a0f0bed7a69222808928f8}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSInt@{NSInt}}
+\index{NSInt@{NSInt}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSInt}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSInt(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~(  \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithInt:\_\-\_\-anValue\_\-\_\- \mbox{]}  )}}
+\label{_j_p_n_s_objects_shortcuts_8h_a9f1bb181c0a0f0bed7a69222808928f8}
+
+
+Shortcut to initiate an retained NSNumber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries int} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_ad1f7250ddcb50fe74388051951999eab}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSDouble@{NSDouble}}
+\index{NSDouble@{NSDouble}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSDouble}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSDouble(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~(  \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithDouble:\_\-\_\-anValue\_\-\_\- \mbox{]}  )}}
+\label{_j_p_n_s_objects_shortcuts_8h_ad1f7250ddcb50fe74388051951999eab}
+
+
+Shortcut to initiate an retained NSDouble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries double} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSDouble object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a2dca4ba3d6c7193f17d61e1c0ed80cb5}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSDecimal@{NSDecimal}}
+\index{NSDecimal@{NSDecimal}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSDecimal}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSDecimal(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~( \mbox{[}\mbox{[}NSDecimalNumber alloc\mbox{]} initWithFloat:\_\-\_\-anValue\_\-\_\-\mbox{]} )}}
+\label{_j_p_n_s_objects_shortcuts_8h_a2dca4ba3d6c7193f17d61e1c0ed80cb5}
+
+
+Shortcut to initiate an retained NSDecimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries float} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSDecimal object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a6091138b8702c9abc6bb13c46a9bb3f6}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSFloat@{NSFloat}}
+\index{NSFloat@{NSFloat}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSFloat}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSFloat(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~( \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithFloat:\_\-\_\-anValue\_\-\_\- \mbox{]} )}}
+\label{_j_p_n_s_objects_shortcuts_8h_a6091138b8702c9abc6bb13c46a9bb3f6}
+
+
+Shortcut to initiate an retained NSNumber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries float} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a7d90322b9e5bc5b3e8d5c2a1deb7af49}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSBOOL@{NSBOOL}}
+\index{NSBOOL@{NSBOOL}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSBOOL}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSBOOL(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~( \mbox{[}\mbox{[}NSNumber alloc\mbox{]} initWithBool:\_\-\_\-anValue\_\-\_\- \mbox{]}  )}}
+\label{_j_p_n_s_objects_shortcuts_8h_a7d90322b9e5bc5b3e8d5c2a1deb7af49}
+
+
+Shortcut to initiate an retained NSNumber boolean representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries BOOL} value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_aba3a3229abde07e16c9c53c2a4ef5633}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSAInt@{NSAInt}}
+\index{NSAInt@{NSAInt}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSAInt}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSAInt(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~`\mbox{[}NSInt( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}}}
+\label{_j_p_n_s_objects_shortcuts_8h_aba3a3229abde07e16c9c53c2a4ef5633}
+
+
+Shortcut to initiate an autoreleseable NSNumber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries int} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a84d2ba9d743076d8fb6de2282d906dbc}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSADouble@{NSADouble}}
+\index{NSADouble@{NSADouble}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSADouble}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSADouble(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~\mbox{[}NSDouble( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}}}
+\label{_j_p_n_s_objects_shortcuts_8h_a84d2ba9d743076d8fb6de2282d906dbc}
+
+
+Shortcut to initiate an autoreleseable NSDouble. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries double} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSDouble object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_affd04234915e9c9c1f23662056ff8ea9}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSADecimal@{NSADecimal}}
+\index{NSADecimal@{NSADecimal}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSADecimal}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSADecimal(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~\mbox{[}NSDecimal( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}}}
+\label{_j_p_n_s_objects_shortcuts_8h_affd04234915e9c9c1f23662056ff8ea9}
+
+
+Shortcut to initiate an autoreleseable NSDecimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries float} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSDecimal object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a00557dd8a6fc3bd8773655b91ecc8a50}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSAFloat@{NSAFloat}}
+\index{NSAFloat@{NSAFloat}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSAFloat}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSAFloat(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~\mbox{[}NSFloat( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}}}
+\label{_j_p_n_s_objects_shortcuts_8h_a00557dd8a6fc3bd8773655b91ecc8a50}
+
+
+Shortcut to initiate an autoreleseable NSNumber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries float} number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_ab625199e259d7013210540e89ab11506}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSABOOL@{NSABOOL}}
+\index{NSABOOL@{NSABOOL}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSABOOL}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSABOOL(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-anValue\_\-\_\-}
+\end{DoxyParamCaption}
+)~\mbox{[}NSBOOL( \_\-\_\-anValue\_\-\_\- ) autorelease\mbox{]}}}
+\label{_j_p_n_s_objects_shortcuts_8h_ab625199e259d7013210540e89ab11506}
+
+
+Shortcut to initiate an autoreleseable NSNumber boolean representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-\_\-anValue\_\-\_\-} & an {\bfseries BOOL} value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An retained NSNumber object. 
+\end{DoxyReturn}
+\hypertarget{_j_p_n_s_objects_shortcuts_8h_a7b79ac37c8a17466bf9c0ff29416de0b}{
+\index{JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}!NSReleaseSafely@{NSReleaseSafely}}
+\index{NSReleaseSafely@{NSReleaseSafely}!JPNSObjectsShortcuts.h@{JPNSObjectsShortcuts.h}}
+\subsubsection[{NSReleaseSafely}]{\setlength{\rightskip}{0pt plus 5cm}\#define NSReleaseSafely(
+\begin{DoxyParamCaption}
+\item[{}]{\_\-\_\-POINTER}
+\end{DoxyParamCaption}
+)~\{ \mbox{[}\_\-\_\-POINTER release\mbox{]}; \_\-\_\-POINTER = nil; \}}}
+\label{_j_p_n_s_objects_shortcuts_8h_a7b79ac37c8a17466bf9c0ff29416de0b}
+
+
+Shortcut to safely release an object. 
+
+This macro function send an {\bfseries release} message to the object and then nullify him. This is a safe technique because when we release an Objective-\/C object and then call him you have an exception. 

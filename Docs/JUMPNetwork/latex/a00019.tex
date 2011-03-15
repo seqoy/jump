@@ -1,0 +1,558 @@
+\hypertarget{a00019}{
+\section{JPPipeline Class Reference}
+\label{a00019}\index{JPPipeline@{JPPipeline}}
+}
+
+
+\hyperlink{a00019}{JPPipeline} is implementation of an presentation-\/tier request handling mechanism to receive many different types of requests.  
+
+
+
+
+{\ttfamily \#import $<$JPPipeline.h$>$}
+
+
+
+Collaboration diagram for JPPipeline:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=600pt]{a00118}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+$<$ \hyperlink{a00034}{JPPipelineSink} $>$ \hyperlink{a00019_a7bc8e0fa419b8dc01cf9e61ae59226ba}{sink}
+\begin{DoxyCompactList}\small\item\em An \hyperlink{a00002}{I$|$O Transporter} implementation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Init Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00019_a848d7d1c1a53feff8ab706b5e1d06248}{
+(id) + \hyperlink{a00019_a848d7d1c1a53feff8ab706b5e1d06248}{init}}
+\label{a00019_a848d7d1c1a53feff8ab706b5e1d06248}
+
+\begin{DoxyCompactList}\small\item\em Init the pipeline. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Add Handler Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00019_afe5f3b70a073f7e45d32ad6b0dcd4473}{addFirst:withHandler:}
+\begin{DoxyCompactList}\small\item\em Inserts a Handler at the first position of this pipeline. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_a7a3cb65c4e376339b36fad298fb4674d}{addLast:withHandler:}
+\begin{DoxyCompactList}\small\item\em Appends a Handler at the last position of this pipeline. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_a707e571dbe7a0d4011a32681d6c8b79d}{addBefore:withName:withHandler:}
+\begin{DoxyCompactList}\small\item\em Inserts a \hyperlink{a00029}{JPPipelineHandler} before an existing handler of this pipeline. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_ace4814f6f5dc4e7cc0931af2a041eb7a}{addAfter:withName:withHandler:}
+\begin{DoxyCompactList}\small\item\em Inserts a \hyperlink{a00029}{JPPipelineHandler} after an existing handler of this pipeline. \item\end{DoxyCompactList}\item 
+\hypertarget{a00019_ac3feebdba37c2134e856e7a5ab02e434}{
+(void) -\/ \hyperlink{a00019_ac3feebdba37c2134e856e7a5ab02e434}{removeByHandler:}}
+\label{a00019_ac3feebdba37c2134e856e7a5ab02e434}
+
+\begin{DoxyCompactList}\small\item\em Removes the specified \hyperlink{a00029}{JPPipelineHandler} from this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_aa7e27fa3a179bac1ab1aabaf779242b2}{removeByName:}
+\begin{DoxyCompactList}\small\item\em Removes the \hyperlink{a00029}{JPPipelineHandler} with the specified name from this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_a81f7fa81d3aa6ad17e6129aa43ffe50e}{removeFirst}
+\begin{DoxyCompactList}\small\item\em Removes the first \hyperlink{a00029}{JPPipelineHandler} in this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_a5d37aad9a88aa1da1505551c7c016e31}{removeLast}
+\begin{DoxyCompactList}\small\item\em Removes the last \hyperlink{a00029}{JPPipelineHandler} in this pipeline. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Replace Handler Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00019_a62c67fe5640ae0c53d564c945c77cde4}{
+(void) -\/ \hyperlink{a00019_a62c67fe5640ae0c53d564c945c77cde4}{replaceByHandler:withName:andHandler:}}
+\label{a00019_a62c67fe5640ae0c53d564c945c77cde4}
+
+\begin{DoxyCompactList}\small\item\em Replaces the specified \hyperlink{a00029}{JPPipelineHandler} with a new handler in this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_a0030320bff9a07a4bda92076de0331e7}{replaceByName:withName:andHandler:}
+\begin{DoxyCompactList}\small\item\em Replaces the \hyperlink{a00029}{JPPipelineHandler} of the specified name with a new handler in this pipeline. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Get Handler Methods}
+\begin{DoxyCompactItemize}
+\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_ab61ee133cd37d7b7ea31664a50f90beb}{first}
+\begin{DoxyCompactList}\small\item\em Returns the first \hyperlink{a00029}{JPPipelineHandler} in this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_a8b3571a4e858f1b4a5ac659f5353a6ff}{last}
+\begin{DoxyCompactList}\small\item\em Returns the last \hyperlink{a00029}{JPPipelineHandler} in this pipeline. \item\end{DoxyCompactList}\item 
+($<$ \hyperlink{a00029}{JPPipelineHandler} $>$) -\/ \hyperlink{a00019_a08dc74fe2d73596ecda94f10ed3989f2}{get:}
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{a00029}{JPPipelineHandler} with the specified name in this pipeline. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_ad50160ab12c1c622a29d70fce1a58496}{setAsFinal:}
+\begin{DoxyCompactList}\small\item\em Set handler as final, so he can't be removed or replaced. \item\end{DoxyCompactList}\item 
+\hypertarget{a00019_a935af33ba729edcfe3781c6287ed3038}{
+(\hyperlink{a00011}{JPDefaultHandlerContext} $\ast$) -\/ {\bfseries getActualUpstreamContext:}}
+\label{a00019_a935af33ba729edcfe3781c6287ed3038}
+
+\item 
+\hypertarget{a00019_a02f42359af0eb3069c19768edd21731f}{
+(\hyperlink{a00011}{JPDefaultHandlerContext} $\ast$) -\/ {\bfseries getActualDownstreamContext:}}
+\label{a00019_a02f42359af0eb3069c19768edd21731f}
+
+\end{DoxyCompactItemize}
+\subsection*{Send Events Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00019_a2de87f8bb472f56d138e2862e88a5227}{sendUpstream:}
+\begin{DoxyCompactList}\small\item\em Sends the specified \hyperlink{a00023}{JPPipelineEvent} to the first \hyperlink{a00035}{JPPipelineUpstreamHandler} in this pipeline. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_afa14dd597bfe8dee4e0621cd4e47a41c}{sendDownstream:}
+\begin{DoxyCompactList}\small\item\em Sends the specified \hyperlink{a00023}{JPPipelineEvent} to the last \hyperlink{a00021}{JPPipelineDownstreamHandler} in this pipeline. \item\end{DoxyCompactList}\item 
+\hypertarget{a00019_a120641c4888a9315350f2df2f1a93674}{
+(void) -\/ {\bfseries sendContextUpstream:withEvent:}}
+\label{a00019_a120641c4888a9315350f2df2f1a93674}
+
+\item 
+\hypertarget{a00019_a37d6a16b98ac9c7ab3d8d1b054ea2d17}{
+(void) -\/ {\bfseries sendContextDownstream:withEvent:}}
+\label{a00019_a37d6a16b98ac9c7ab3d8d1b054ea2d17}
+
+\end{DoxyCompactItemize}
+\subsection*{Listener Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00019_a80a40b033f9cb8c7f824c8dec2ef77d1}{addListener:}
+\begin{DoxyCompactList}\small\item\em Adds one. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_a68ebd93ad1d12386be9c2a15cea7f02e}{removeListener:}
+\begin{DoxyCompactList}\small\item\em Removes the specified listener. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_ae5febca680fe89e98ed28152a9d1f817}{notifyListeners:}
+\begin{DoxyCompactList}\small\item\em Notify Some Action. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00019_a189266004e4fd48d0da86ed2f7ea5bc2}{notifyHandlerException:withEvent:}
+\begin{DoxyCompactList}\small\item\em Send an \hyperlink{a00026}{JPPipelineException} when some exception is raised on a \hyperlink{a00023}{JPPipelineEvent}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{a00019}{JPPipeline} is implementation of an presentation-\/tier request handling mechanism to receive many different types of requests. \hyperlink{a00019}{JPPipeline} implements an advanced form of the \href{http://java.sun.com/blueprints/corej2eepatterns/Patterns/InterceptingFilter.html}{\tt Intercepting Filter Pattern} to give a user full control over how an event is handled and how the \hyperlink{a00029}{JPPipelineHandler} in the pipeline interact with each other.
+
+\subsubsection*{How an event flows in a pipeline}
+
+The following diagram describes how a \hyperlink{a00023}{Event} are processed by an \hyperlink{a00029}{Handler} in a \hyperlink{a00019}{Pipeline}. 
+
+A \hyperlink{a00023}{JPPipelineEvent} can be handled by either a \hyperlink{a00035}{JPPipelineUpstreamHandler} or a \hyperlink{a00021}{JPPipelineDownstreamHandler} and be forwarded to the closest handler by calling \hyperlink{a00030_a9ab02ec0933865652634c54595ff7dd7}{sendUpstream: (JPPipelineHandlerContext-\/p)} or \hyperlink{a00030_a292ed51fe0b2e1ce6b2ed517be5fa5e8}{sendDownstream: (JPPipelineHandlerContext-\/p)}. The meaning of the event is interpreted somewhat differently depending on whether it is going upstream or going downstream. Please refer to \hyperlink{a00023}{JPPipelineEvent} for more information.
+
+
+
+An upstream event is handled by the upstream handlers in the bottom-\/up direction as shown on the left side of the diagram. An upstream handler usually handles the inbound data on the bottom of the diagram. The inbound data is often read from a remote peer via the actual input operation. If an upstream event goes beyond the top upstream handler, it is discarded silently. 
+
+A downstream event is handled by the downstream handler in the top-\/down direction as shown on the right side of the diagram. A downstream handler usually generates or transforms the outbound traffic such as write requests. If a downstream event goes beyond the bottom downstream handler, it is handled by an transporter object associated with the \hyperlink{a00019}{JPPipeline}. The transporter often performs the actual output operation. 
+
+For example, let us assume that we created the following pipeline: 
+\begin{DoxyCode}
+ JPPipeline *p = [[JPPipeline init] retain];
+ [p addLast:@"1" withHandler:[UpstreamHandlerA init]];
+ [p addLast:@"2" withHandler:[UpstreamHandlerB init]];
+ [p addLast:@"3" withHandler:[DownstreamHandlerA init]];
+ [p addLast:@"4" withHandler:[DownstreamHandlerB init]];
+ [p addLast:@"5" withHandler:[UpstreamHandlerX init]];
+\end{DoxyCode}
+
+
+In the example above, the class whose name starts with {\bfseries Upstream} means it is an upstream handler. The class whose name starts with {\bfseries Downstream} means it is a downstream handler. 
+
+In the given example configuration, the handler evaluation order is 1, 2, 3, 4, 5 when an event goes upstream. When an event goes downstream, the order is 5, 4, 3, 2, 1. On top of this principle, \hyperlink{a00019}{JPPipeline} skips the evaluation of certain handlers to shorten the stack depth: 
+\begin{DoxyItemize}
+\item 3 and 4 don't implement \hyperlink{a00035}{JPPipelineUpstreamHandler}, and therefore the actual evaluation order of an upstream event will be: 1, 2, and 5. 
+\item 1, 2, and 5 don't implement \hyperlink{a00021}{JPPipelineDownstreamHandler}, and therefore the actual evaluation order of a downstream event will be: 4 and 3. 
+\item If 5 extended \hyperlink{a00038}{JPSimplePipelineHandler} which implements both \hyperlink{a00035}{JPPipelineUpstreamHandler} and \hyperlink{a00021}{JPPipelineDownstreamHandler}, the evaluation order of an upstream and a downstream event could be 1, 2, 5 and 5, 4, 3 respectively. 
+\end{DoxyItemize}
+
+\subsubsection*{Building a pipeline}
+
+A user is supposed to have one or more \hyperlink{a00029}{JPPipelineHandler} in a pipeline to receive I/O events (e.g. read) and to request I/O operations (e.g. write). For example, a typical application will have the following handlers in each channel's pipeline, but your mileage may vary depending on the complexity and characteristics of the protocol and business logic:
+
+
+\begin{DoxyEnumerate}
+\item Protocol Decoder -\/ translates binary data into a Objective-\/C object. 
+\item Protocol Encoder -\/ translates a Objective-\/C object into binary data. 
+\item Business Logic Handler -\/ performs the actual business logic (e.g. database access). 
+\end{DoxyEnumerate}
+
+and it could be represented as shown in the following example:
+
+
+\begin{DoxyCode}
+ JPPipeline* pipeline = [[JPPipeline init] retain];
+ [p addLast:@"decoder" withHandler:[MyProtocolDecoder init]];
+ [p addLast:@"encoder" withHandler:[MyProtocolEncoder init]];
+ [p addLast:@"handler" withHandler:[MyBusinessLogicHandler init]];
+\end{DoxyCode}
+
+
+\subsubsection*{Thread safety}
+
+A \hyperlink{a00029}{JPPipelineHandler} can be added or removed at any time because a \hyperlink{a00019}{JPPipeline} is thread safe. For example, you can insert a {\bfseries SslHandler} when sensitive information is about to be exchanged, and remove it after the exchange.
+
+\subsubsection*{Pitfall}
+
+Due to the internal implementation detail of the current default \hyperlink{a00019}{JPPipeline}, the following code does not work as expected if {\ttfamily FirstHandler} is the last handler in the pipeline:
+
+
+\begin{DoxyCode}
+ @interface FirstHandler : JPSimplePipelineUpstreamHandler {}
+ @end
+ 
+ @implementation FirstHandler
+ 
+ -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<
+      JPPipelineMessageEvent>)e {
+         // Remove this handler from the pipeline,
+         [[ctx getPipeline] removeByHandler:self];
+         // And let SecondHandler handle the current event.
+         [[ctx getPipeline] addLast:@"2nd" withHandler:[SecondHandler init]];
+         [ctx sendUpstream:e];
+ }
+ @end
+\end{DoxyCode}
+
+
+To implement the expected behavior, you have to add {\ttfamily SecondHandler} before the removal or make sure there is at least one more handler between {\ttfamily FirstHandler} and {\ttfamily SecondHandler}.  
+
+\subsection{Member Function Documentation}
+\hypertarget{a00019_afe5f3b70a073f7e45d32ad6b0dcd4473}{
+\index{JPPipeline@{JPPipeline}!addFirst:withHandler:@{addFirst:withHandler:}}
+\index{addFirst:withHandler:@{addFirst:withHandler:}!JPPipeline@{JPPipeline}}
+\subsubsection[{addFirst:withHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addFirst: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{name}
+\item[{withHandler:($<$ {\bf JPPipelineHandler} $>$)}]{handler}
+\end{DoxyParamCaption}
+}}
+\label{a00019_afe5f3b70a073f7e45d32ad6b0dcd4473}
+
+
+Inserts a Handler at the first position of this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the handler to insert first \\
+\hline
+{\em handler} & the handler to insert first \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a7a3cb65c4e376339b36fad298fb4674d}{
+\index{JPPipeline@{JPPipeline}!addLast:withHandler:@{addLast:withHandler:}}
+\index{addLast:withHandler:@{addLast:withHandler:}!JPPipeline@{JPPipeline}}
+\subsubsection[{addLast:withHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addLast: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{name}
+\item[{withHandler:($<$ {\bf JPPipelineHandler} $>$)}]{handler}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a7a3cb65c4e376339b36fad298fb4674d}
+
+
+Appends a Handler at the last position of this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the handler to append \\
+\hline
+{\em handler} & the handler to append \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a707e571dbe7a0d4011a32681d6c8b79d}{
+\index{JPPipeline@{JPPipeline}!addBefore:withName:withHandler:@{addBefore:withName:withHandler:}}
+\index{addBefore:withName:withHandler:@{addBefore:withName:withHandler:}!JPPipeline@{JPPipeline}}
+\subsubsection[{addBefore:withName:withHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addBefore: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{baseName}
+\item[{withName:(NSString $\ast$)}]{name}
+\item[{withHandler:($<$ {\bf JPPipelineHandler} $>$)}]{handler}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a707e571dbe7a0d4011a32681d6c8b79d}
+
+
+Inserts a \hyperlink{a00029}{JPPipelineHandler} before an existing handler of this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em baseName} & the name of the existing handler \\
+\hline
+{\em name} & the name of the handler to insert before \\
+\hline
+{\em handler} & the handler to insert before \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_ace4814f6f5dc4e7cc0931af2a041eb7a}{
+\index{JPPipeline@{JPPipeline}!addAfter:withName:withHandler:@{addAfter:withName:withHandler:}}
+\index{addAfter:withName:withHandler:@{addAfter:withName:withHandler:}!JPPipeline@{JPPipeline}}
+\subsubsection[{addAfter:withName:withHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addAfter: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{baseName}
+\item[{withName:(NSString $\ast$)}]{name}
+\item[{withHandler:($<$ {\bf JPPipelineHandler} $>$)}]{handler}
+\end{DoxyParamCaption}
+}}
+\label{a00019_ace4814f6f5dc4e7cc0931af2a041eb7a}
+
+
+Inserts a \hyperlink{a00029}{JPPipelineHandler} after an existing handler of this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em baseName} & the name of the existing handler \\
+\hline
+{\em name} & the name of the handler to insert after \\
+\hline
+{\em handler} & the handler to insert after \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_aa7e27fa3a179bac1ab1aabaf779242b2}{
+\index{JPPipeline@{JPPipeline}!removeByName:@{removeByName:}}
+\index{removeByName:@{removeByName:}!JPPipeline@{JPPipeline}}
+\subsubsection[{removeByName:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) removeByName: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{name}
+\end{DoxyParamCaption}
+}}
+\label{a00019_aa7e27fa3a179bac1ab1aabaf779242b2}
+
+
+Removes the \hyperlink{a00029}{JPPipelineHandler} with the specified name from this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the removed handler 
+\end{DoxyReturn}
+\hypertarget{a00019_a81f7fa81d3aa6ad17e6129aa43ffe50e}{
+\index{JPPipeline@{JPPipeline}!removeFirst@{removeFirst}}
+\index{removeFirst@{removeFirst}!JPPipeline@{JPPipeline}}
+\subsubsection[{removeFirst}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) removeFirst 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a81f7fa81d3aa6ad17e6129aa43ffe50e}
+
+
+Removes the first \hyperlink{a00029}{JPPipelineHandler} in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the removed handler 
+\end{DoxyReturn}
+\hypertarget{a00019_a5d37aad9a88aa1da1505551c7c016e31}{
+\index{JPPipeline@{JPPipeline}!removeLast@{removeLast}}
+\index{removeLast@{removeLast}!JPPipeline@{JPPipeline}}
+\subsubsection[{removeLast}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) removeLast 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a5d37aad9a88aa1da1505551c7c016e31}
+
+
+Removes the last \hyperlink{a00029}{JPPipelineHandler} in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the removed handler 
+\end{DoxyReturn}
+\hypertarget{a00019_a0030320bff9a07a4bda92076de0331e7}{
+\index{JPPipeline@{JPPipeline}!replaceByName:withName:andHandler:@{replaceByName:withName:andHandler:}}
+\index{replaceByName:withName:andHandler:@{replaceByName:withName:andHandler:}!JPPipeline@{JPPipeline}}
+\subsubsection[{replaceByName:withName:andHandler:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) replaceByName: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{oldName}
+\item[{withName:(NSString $\ast$)}]{newName}
+\item[{andHandler:($<$ {\bf JPPipelineHandler} $>$)}]{newHandler}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a0030320bff9a07a4bda92076de0331e7}
+
+
+Replaces the \hyperlink{a00029}{JPPipelineHandler} of the specified name with a new handler in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the removed handler 
+\end{DoxyReturn}
+\hypertarget{a00019_ab61ee133cd37d7b7ea31664a50f90beb}{
+\index{JPPipeline@{JPPipeline}!first@{first}}
+\index{first@{first}!JPPipeline@{JPPipeline}}
+\subsubsection[{first}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) first 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{a00019_ab61ee133cd37d7b7ea31664a50f90beb}
+
+
+Returns the first \hyperlink{a00029}{JPPipelineHandler} in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the first handler or {\ttfamily nil} if this pipeline is empty. 
+\end{DoxyReturn}
+\hypertarget{a00019_a8b3571a4e858f1b4a5ac659f5353a6ff}{
+\index{JPPipeline@{JPPipeline}!last@{last}}
+\index{last@{last}!JPPipeline@{JPPipeline}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) last 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a8b3571a4e858f1b4a5ac659f5353a6ff}
+
+
+Returns the last \hyperlink{a00029}{JPPipelineHandler} in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the last handler or {\ttfamily nil} if this pipeline is empty. 
+\end{DoxyReturn}
+\hypertarget{a00019_a08dc74fe2d73596ecda94f10ed3989f2}{
+\index{JPPipeline@{JPPipeline}!get:@{get:}}
+\index{get:@{get:}!JPPipeline@{JPPipeline}}
+\subsubsection[{get:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<${\bf JPPipelineHandler}$>$) get: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{name}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a08dc74fe2d73596ecda94f10ed3989f2}
+
+
+Returns the \hyperlink{a00029}{JPPipelineHandler} with the specified name in this pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the handler with the specified name or {\ttfamily nil} if there's no such handler in this pipeline. 
+\end{DoxyReturn}
+\hypertarget{a00019_ad50160ab12c1c622a29d70fce1a58496}{
+\index{JPPipeline@{JPPipeline}!setAsFinal:@{setAsFinal:}}
+\index{setAsFinal:@{setAsFinal:}!JPPipeline@{JPPipeline}}
+\subsubsection[{setAsFinal:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setAsFinal: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{name}
+\end{DoxyParamCaption}
+}}
+\label{a00019_ad50160ab12c1c622a29d70fce1a58496}
+
+
+Set handler as final, so he can't be removed or replaced. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the handler to lock. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a2de87f8bb472f56d138e2862e88a5227}{
+\index{JPPipeline@{JPPipeline}!sendUpstream:@{sendUpstream:}}
+\index{sendUpstream:@{sendUpstream:}!JPPipeline@{JPPipeline}}
+\subsubsection[{sendUpstream:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sendUpstream: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a2de87f8bb472f56d138e2862e88a5227}
+
+
+Sends the specified \hyperlink{a00023}{JPPipelineEvent} to the first \hyperlink{a00035}{JPPipelineUpstreamHandler} in this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The \hyperlink{a00023}{JPPipelineEvent} to send upstream. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_afa14dd597bfe8dee4e0621cd4e47a41c}{
+\index{JPPipeline@{JPPipeline}!sendDownstream:@{sendDownstream:}}
+\index{sendDownstream:@{sendDownstream:}!JPPipeline@{JPPipeline}}
+\subsubsection[{sendDownstream:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sendDownstream: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00019_afa14dd597bfe8dee4e0621cd4e47a41c}
+
+
+Sends the specified \hyperlink{a00023}{JPPipelineEvent} to the last \hyperlink{a00021}{JPPipelineDownstreamHandler} in this pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The \hyperlink{a00023}{JPPipelineEvent} to send downstream. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a80a40b033f9cb8c7f824c8dec2ef77d1}{
+\index{JPPipeline@{JPPipeline}!addListener:@{addListener:}}
+\index{addListener:@{addListener:}!JPPipeline@{JPPipeline}}
+\subsubsection[{addListener:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addListener: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ JPPipelineListener $>$)}]{listener}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a80a40b033f9cb8c7f824c8dec2ef77d1}
+
+
+Adds one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & An \hyperlink{a00120}{JPPipelineListener} to get information about the pipeline operations. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a68ebd93ad1d12386be9c2a15cea7f02e}{
+\index{JPPipeline@{JPPipeline}!removeListener:@{removeListener:}}
+\index{removeListener:@{removeListener:}!JPPipeline@{JPPipeline}}
+\subsubsection[{removeListener:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeListener: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ JPPipelineListener $>$)}]{listener}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a68ebd93ad1d12386be9c2a15cea7f02e}
+
+
+Removes the specified listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & An \hyperlink{a00120}{JPPipelineListener} to remove. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_ae5febca680fe89e98ed28152a9d1f817}{
+\index{JPPipeline@{JPPipeline}!notifyListeners:@{notifyListeners:}}
+\index{notifyListeners:@{notifyListeners:}!JPPipeline@{JPPipeline}}
+\subsubsection[{notifyListeners:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) notifyListeners: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ JPPipelineListenerNotification $>$)}]{notification}
+\end{DoxyParamCaption}
+}}
+\label{a00019_ae5febca680fe89e98ed28152a9d1f817}
+
+
+Notify Some Action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & An \hyperlink{a00121}{JPPipelineListenerNotification} to send to all listeners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00019_a189266004e4fd48d0da86ed2f7ea5bc2}{
+\index{JPPipeline@{JPPipeline}!notifyHandlerException:withEvent:@{notifyHandlerException:withEvent:}}
+\index{notifyHandlerException:withEvent:@{notifyHandlerException:withEvent:}!JPPipeline@{JPPipeline}}
+\subsubsection[{notifyHandlerException:withEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) notifyHandlerException: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSException $\ast$)}]{exception}
+\item[{withEvent:($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00019_a189266004e4fd48d0da86ed2f7ea5bc2}
+
+
+Send an \hyperlink{a00026}{JPPipelineException} when some exception is raised on a \hyperlink{a00023}{JPPipelineEvent}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & the {\ttfamily NSException} raised. \\
+\hline
+{\em e} & The \hyperlink{a00023}{JPPipelineEvent} that raise this exception. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{a00019_a7bc8e0fa419b8dc01cf9e61ae59226ba}{
+\index{JPPipeline@{JPPipeline}!sink@{sink}}
+\index{sink@{sink}!JPPipeline@{JPPipeline}}
+\subsubsection[{sink}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ($<$ {\bf JPPipelineSink} $>$) sink\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{a00019_a7bc8e0fa419b8dc01cf9e61ae59226ba}
+
+
+An \hyperlink{a00002}{I$|$O Transporter} implementation. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{a00034}{JPPipelineSink} and \hyperlink{a00002}{I$|$O Transporter} for more information. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPPipeline.h\end{DoxyCompactItemize}

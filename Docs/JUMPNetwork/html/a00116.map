@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$a00012.html" title="JPDefaultHTTPMessage is an type of Event Message that encapsulate the HTTP data to be transported..." alt="" coords="5,353,184,578"/>
+<area shape="rect" id="node4" href="$a00040.html" title="JPTransporterHTTPMessage is an special type of Event that encapsulate the HTTP data to be transported..." alt="" coords="80,171,285,301"/>
+<area shape="rect" id="node9" href="$a00041.html" title="A Event which represent the JSON RPC Encapsulated Data." alt="" coords="304,409,531,522"/>
+<area shape="rect" id="node6" href="$a00042.html" title="A Event which represent the fundamental information to the I|O Transporter." alt="" coords="95,6,271,119"/>
+</map>

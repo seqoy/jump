@@ -1,0 +1,80 @@
+\hypertarget{_j_p_path_functions_8h}{
+\section{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPPathFunctions.h File Reference}
+\label{_j_p_path_functions_8h}\index{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPPathFunctions.h@{/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPPathFunctions.h}}
+}
+
+
+Collection of convenient Macro-\/Functions to perform different tasks.  
+
+
+{\ttfamily \#import $<$Foundation/Foundation.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_j_p_path_functions_8h_ada2abd0abbb950e27d05db60b178acd4}{JPExistFile}(anFile)
+\begin{DoxyCompactList}\small\item\em Return YES if exist the file on specified path. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_path_functions_8h_a2e937b553213d83aaa27f2ce731f0002}{
+\#define \hyperlink{_j_p_path_functions_8h_a2e937b553213d83aaa27f2ce731f0002}{JPBundlePath}()}
+\label{_j_p_path_functions_8h_a2e937b553213d83aaa27f2ce731f0002}
+
+\begin{DoxyCompactList}\small\item\em Return an {\bfseries NSString} with the Bundle Resources Path. \item\end{DoxyCompactList}\item 
+\hypertarget{_j_p_path_functions_8h_a13898a545f260d72f928ee758af8d5dd}{
+\#define \hyperlink{_j_p_path_functions_8h_a13898a545f260d72f928ee758af8d5dd}{JPDocumentsPath}()}
+\label{_j_p_path_functions_8h_a13898a545f260d72f928ee758af8d5dd}
+
+\begin{DoxyCompactList}\small\item\em Return an {\bfseries NSString} with the Documents Path. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_j_p_path_functions_8h_af03b4d6b9c88ce314c79cbba7876fb9a}{copyItemFromBundleToDocumentsPath} (NSString $\ast$anFile)
+\begin{DoxyCompactList}\small\item\em Copy the specified file from the Bundle Folder to the Documents folder if needed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of convenient Macro-\/Functions to perform different tasks. 
+
+\subsection{Define Documentation}
+\hypertarget{_j_p_path_functions_8h_ada2abd0abbb950e27d05db60b178acd4}{
+\index{JPPathFunctions.h@{JPPathFunctions.h}!JPExistFile@{JPExistFile}}
+\index{JPExistFile@{JPExistFile}!JPPathFunctions.h@{JPPathFunctions.h}}
+\subsubsection[{JPExistFile}]{\setlength{\rightskip}{0pt plus 5cm}\#define JPExistFile(
+\begin{DoxyParamCaption}
+\item[{}]{anFile}
+\end{DoxyParamCaption}
+)}}
+\label{_j_p_path_functions_8h_ada2abd0abbb950e27d05db60b178acd4}
+{\bfseries Value:}
+\begin{DoxyCode}
+\
+[[NSFileManager defaultManager] fileExistsAtPath:anFile]
+\end{DoxyCode}
+
+
+Return YES if exist the file on specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anFile} & {\bfseries NSString} parameter with the full path of the file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{_j_p_path_functions_8h_af03b4d6b9c88ce314c79cbba7876fb9a}{
+\index{JPPathFunctions.h@{JPPathFunctions.h}!copyItemFromBundleToDocumentsPath@{copyItemFromBundleToDocumentsPath}}
+\index{copyItemFromBundleToDocumentsPath@{copyItemFromBundleToDocumentsPath}!JPPathFunctions.h@{JPPathFunctions.h}}
+\subsubsection[{copyItemFromBundleToDocumentsPath}]{\setlength{\rightskip}{0pt plus 5cm}void copyItemFromBundleToDocumentsPath (
+\begin{DoxyParamCaption}
+\item[{NSString $\ast$}]{anFile}
+\end{DoxyParamCaption}
+)}}
+\label{_j_p_path_functions_8h_af03b4d6b9c88ce314c79cbba7876fb9a}
+
+
+Copy the specified file from the Bundle Folder to the Documents folder if needed. 
+
+This is useful to files thar are bundled (read-\/only) and needs to be modified. 
+\begin{DoxyParams}{Parameters}
+{\em anFile} & {\bfseries NSString} parameter with the full path of the file. \\
+\hline
+\end{DoxyParams}

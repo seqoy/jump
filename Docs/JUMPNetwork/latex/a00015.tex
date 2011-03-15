@@ -1,0 +1,110 @@
+\hypertarget{a00015}{
+\section{JPJSONRPCDecoderHandler Class Reference}
+\label{a00015}\index{JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}}
+}
+
+
+An simple JSON-\/RPC Decoder Handler.  
+
+
+
+
+{\ttfamily \#import $<$JPJSONRPCDecoderHandler.h$>$}
+
+
+
+Inheritance diagram for JPJSONRPCDecoderHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{a00106}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for JPJSONRPCDecoderHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{a00107}
+\end{center}
+\end{figure}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{a00015_aba2b766c1b7742f5c636bbbd578df618}{JPJSONRPCDecoderErrors} \{ \hyperlink{a00015_aba2b766c1b7742f5c636bbbd578df618adaa30b18406ba5a080ea1dddc621b154}{kJSONRPCCantDecode}, 
+\hyperlink{a00015_aba2b766c1b7742f5c636bbbd578df618a2500b118aeb7e1f2d305c9edaa6e3376}{kJSONRPCInvalid}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Init Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{a00015_a35ae826d8a4a5a44ffc17ed495b97bee}{initWithJSONDecoderClass:}
+\begin{DoxyCompactList}\small\item\em Init the JSON Decoder Handler. \item\end{DoxyCompactList}\item 
+\hypertarget{a00015_a35ae826d8a4a5a44ffc17ed495b97bee}{
+(id) -\/ {\bfseries initWithJSONDecoderClass:}}
+\label{a00015_a35ae826d8a4a5a44ffc17ed495b97bee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An simple JSON-\/RPC Decoder Handler. \hyperlink{a00015}{JPJSONRPCDecoderHandler} intercepts any {\bfseries upstream} \hyperlink{a00006}{Event Message} and try to decode as a {\bfseries JSON Object} first, and then to interpret the JSON-\/RPC properties. 
+
+If \hyperlink{a00015}{JPJSONRPCDecoderHandler} can't decode to JSON Object or can't found the RPC properties will send an \hyperlink{a00013}{JPDefaultPipelineExceptionEvent} upstream as a warning error, you can catch this exception and process it as an decode error. Refer to \hyperlink{a00015_aba2b766c1b7742f5c636bbbd578df618}{JPJSONRPCDecoderErrors} to known the proper {\bfseries error code}. 
+
+You also can ignore this exception and let the next handler (if exist) continue the processing, because the unmodified \hyperlink{a00006}{Event Message} are sent upstream to the next handler even when an error ocurrs. This is useful if you have an \hyperlink{a00001}{pipeline} that decode differents types of \hyperlink{a00006}{Event Message} ({\itshape e.g. XML and JSON\/}) at the same time. 
+
+Here an example that how you assign the \hyperlink{a00015}{JPJSONRPCDecoderHandler} to the pipeline: 
+\begin{DoxyCode}
+ [pipeline addLast:@"JSONRPCDecoder" withHandler:[JPJSONRPCDecoderHandler initWit
+      hJSONDecoderClass:[JSONEncoder class]]];
+\end{DoxyCode}
+ The \hyperlink{a00015}{JPJSONRPCDecoderHandler} doesn't have an embedded JSON Decoder. You have to inform one JSON Processer Class that conform with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. See the {\bfseries JUMP Data Module} to find an default implementation of this protocol that you can use or you can implement your own. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{a00015_aba2b766c1b7742f5c636bbbd578df618}{
+\index{JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}!JPJSONRPCDecoderErrors@{JPJSONRPCDecoderErrors}}
+\index{JPJSONRPCDecoderErrors@{JPJSONRPCDecoderErrors}!JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}}
+\subsubsection[{JPJSONRPCDecoderErrors}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (enum) {\bf JPJSONRPCDecoderErrors}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{a00015_aba2b766c1b7742f5c636bbbd578df618}
+Default JSON-\/RPC Decoder Errors. You can use this errors codes when you are retrieving some exception from the pipeline. Look for the {\ttfamily 'JPJSONRPCDecoderHandler'} domain an some of this errors constants. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{kJSONRPCCantDecode@{kJSONRPCCantDecode}!JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}}\index{JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}!kJSONRPCCantDecode@{kJSONRPCCantDecode}}\item[{\em 
+\hypertarget{a00015_aba2b766c1b7742f5c636bbbd578df618adaa30b18406ba5a080ea1dddc621b154}{
+kJSONRPCCantDecode}
+\label{a00015_aba2b766c1b7742f5c636bbbd578df618adaa30b18406ba5a080ea1dddc621b154}
+}]Can't decode the Response String as JSON Object. Probably isn't an JSON String or is invalid. \index{kJSONRPCInvalid@{kJSONRPCInvalid}!JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}}\index{JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}!kJSONRPCInvalid@{kJSONRPCInvalid}}\item[{\em 
+\hypertarget{a00015_aba2b766c1b7742f5c636bbbd578df618a2500b118aeb7e1f2d305c9edaa6e3376}{
+kJSONRPCInvalid}
+\label{a00015_aba2b766c1b7742f5c636bbbd578df618a2500b118aeb7e1f2d305c9edaa6e3376}
+}]Invalid JSON-\/RPC data. Is an correct JSON String, but invalid RPC format. \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00015_a35ae826d8a4a5a44ffc17ed495b97bee}{
+\index{JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}!initWithJSONDecoderClass:@{initWithJSONDecoderClass:}}
+\index{initWithJSONDecoderClass:@{initWithJSONDecoderClass:}!JPJSONRPCDecoderHandler@{JPJSONRPCDecoderHandler}}
+\subsubsection[{initWithJSONDecoderClass:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) initWithJSONDecoderClass: 
+\begin{DoxyParamCaption}
+\item[{dummy(Class$<$ {\bf JPDataProcessserJSON} $>$)}]{anJSONProcesserClass}
+\end{DoxyParamCaption}
+}}
+\label{a00015_a35ae826d8a4a5a44ffc17ed495b97bee}
+
+
+Init the JSON Decoder Handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anJSONProcesserClass} & A {\ttfamily Class} of an custom JSON Processer that conforms with the \hyperlink{a00009}{JPDataProcessserJSON} protocol. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPJSONRPCDecoderHandler.h\end{DoxyCompactItemize}

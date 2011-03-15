@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$a00033.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="20,283,225,381"/>
+<area shape="rect" id="node4" href="$a00031.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="29,137,216,234"/>
+<area shape="rect" id="node6" href="$a00023.html" title="{\&lt;JPPipelineEvent\&gt;\n||+ getFuture\l}" alt="" coords="57,6,188,87"/>
+</map>

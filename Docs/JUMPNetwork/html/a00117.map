@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$a00010.html" title="{JPDefaultHandlerContext\n|+ next\l+ prev\l+ pipeline\l# name\l# handler\l# canHandleUpstream\l# canHandleDownstream\l|* initWithPreviousContext:andNextContext:andName:andHandler:withPipeline:\l* initWithPreviousContext:andNextContext:andName:andHandler:withPipeline:\l}" alt="" coords="5,249,488,442"/>
+<area shape="rect" id="node4" href="$a00029.html" title="Enables a JPPipelineHandler to interact with its JPPipeline and other handlers." alt="" coords="57,6,247,183"/>
+<area shape="rect" id="node6" href="$a00028.html" title="Handles or intercepts a Event, and sends a Event to the next handler in a Pipeline." alt="" coords="271,54,415,135"/>
+</map>

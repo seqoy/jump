@@ -1,0 +1,85 @@
+\hypertarget{a00034}{
+\section{$<$JPPipelineSink$>$ Protocol Reference}
+\label{a00034}\index{JPPipelineSink-\/p@{JPPipelineSink-\/p}}
+}
+
+
+Receives and processes the terminal downstream Event.  
+
+
+
+
+{\ttfamily \#import $<$JPPipelineSink.h$>$}
+
+
+
+Inheritance diagram for $<$JPPipelineSink$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{a00150}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00034_a59e6e19fa75fbeff790d70d9aff76533}{eventSunk:withEvent:}
+\begin{DoxyCompactList}\small\item\em Invoked by \hyperlink{a00019}{JPPipeline} when a downstream \hyperlink{a00023}{JPPipelineEvent} has reached its terminal (the head of the pipeline). \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00034_af1cfabf45bca3d7b50af45c7c0d0323a}{exceptionCaught:withPipeline:withEvent:}
+\begin{DoxyCompactList}\small\item\em Invoked by \hyperlink{a00019}{JPPipeline} when an exception was raised while one of its Handlers process a Event. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Receives and processes the terminal downstream Event. A \hyperlink{a00034}{JPPipelineSink} is an internal component which is supposed to be implemented by a transport provider. See \hyperlink{a00002}{I$|$O Transporter} for more informations. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00034_a59e6e19fa75fbeff790d70d9aff76533}{
+\index{JPPipelineSink-\/p@{JPPipelineSink-\/p}!eventSunk:withEvent:@{eventSunk:withEvent:}}
+\index{eventSunk:withEvent:@{eventSunk:withEvent:}!JPPipelineSink-p@{JPPipelineSink-\/p}}
+\subsubsection[{eventSunk:withEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) eventSunk: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf JPPipeline} $\ast$)}]{pipeline}
+\item[{withEvent:($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily  \mbox{[}required\mbox{]}}}}
+\label{a00034_a59e6e19fa75fbeff790d70d9aff76533}
+
+
+Invoked by \hyperlink{a00019}{JPPipeline} when a downstream \hyperlink{a00023}{JPPipelineEvent} has reached its terminal (the head of the pipeline). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pipeline} & The pipeline that send the event. \\
+\hline
+{\em e} & The event. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00034_af1cfabf45bca3d7b50af45c7c0d0323a}{
+\index{JPPipelineSink-\/p@{JPPipelineSink-\/p}!exceptionCaught:withPipeline:withEvent:@{exceptionCaught:withPipeline:withEvent:}}
+\index{exceptionCaught:withPipeline:withEvent:@{exceptionCaught:withPipeline:withEvent:}!JPPipelineSink-p@{JPPipelineSink-\/p}}
+\subsubsection[{exceptionCaught:withPipeline:withEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) exceptionCaught: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf JPPipelineException} $\ast$)}]{anException}
+\item[{withPipeline:({\bf JPPipeline} $\ast$)}]{pipeline}
+\item[{withEvent:($<$ {\bf JPPipelineEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily  \mbox{[}required\mbox{]}}}}
+\label{a00034_af1cfabf45bca3d7b50af45c7c0d0323a}
+
+
+Invoked by \hyperlink{a00019}{JPPipeline} when an exception was raised while one of its Handlers process a Event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anException} & An \hyperlink{a00026}{JPPipelineException} that contains the exception information. \\
+\hline
+{\em pipeline} & The pipeline that send the event. \\
+\hline
+{\em e} & The event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPPipelineSink.h\end{DoxyCompactItemize}

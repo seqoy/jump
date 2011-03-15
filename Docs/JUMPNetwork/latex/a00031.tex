@@ -1,0 +1,70 @@
+\hypertarget{a00031}{
+\section{$<$JPPipelineMessageEvent$>$ Protocol Reference}
+\label{a00031}\index{JPPipelineMessageEvent-\/p@{JPPipelineMessageEvent-\/p}}
+}
+
+
+A \hyperlink{a00023}{JPPipelineEvent} which represents the transmission or reception of a \hyperlink{a00006}{message}.  
+
+
+
+
+{\ttfamily \#import $<$JPPipelineMessageEvent.h$>$}
+
+
+
+Inheritance diagram for $<$JPPipelineMessageEvent$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{a00143}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$JPPipelineMessageEvent$>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{a00144}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00031_abbb8960b1919e3c10b28399e6836ed7a}{
+(id) -\/ \hyperlink{a00031_abbb8960b1919e3c10b28399e6836ed7a}{getMessage}}
+\label{a00031_abbb8960b1919e3c10b28399e6836ed7a}
+
+\begin{DoxyCompactList}\small\item\em Returns the message. \item\end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{a00031_acf338a1e97066129630e13538ca904c3}{setMessage:}
+\begin{DoxyCompactList}\small\item\em Set the message. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{a00023}{JPPipelineEvent} which represents the transmission or reception of a \hyperlink{a00006}{message}. It can mean the notification of a \hyperlink{a00006}{received message} or the request for sending a \hyperlink{a00006}{message}, depending on whether it is an upstream event or a downstream event respectively. Refer to the \hyperlink{a00023}{JPPipelineEvent} Protocol documentation to find out what an upstream event and a downstream event are and what fundamental differences they have. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00031_acf338a1e97066129630e13538ca904c3}{
+\index{JPPipelineMessageEvent-\/p@{JPPipelineMessageEvent-\/p}!setMessage:@{setMessage:}}
+\index{setMessage:@{setMessage:}!JPPipelineMessageEvent-p@{JPPipelineMessageEvent-\/p}}
+\subsubsection[{setMessage:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setMessage: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{anMessage}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily  \mbox{[}required\mbox{]}}}}
+\label{a00031_acf338a1e97066129630e13538ca904c3}
+
+
+Set the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em An} & \hyperlink{a00006}{Event Message} to be transported by this event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPPipelineMessageEvent.h\end{DoxyCompactItemize}

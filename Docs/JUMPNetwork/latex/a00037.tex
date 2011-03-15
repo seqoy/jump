@@ -1,0 +1,94 @@
+\hypertarget{a00037}{
+\section{JPSimplePipelineDownstreamHandler Class Reference}
+\label{a00037}\index{JPSimplePipelineDownstreamHandler@{JPSimplePipelineDownstreamHandler}}
+}
+
+
+A \hyperlink{a00021}{JPPipelineDownstreamHandler} implementation which provides an individual handler method for each event type.  
+
+
+
+
+{\ttfamily \#import $<$JPSimplePipelineDownstreamHandler.h$>$}
+
+
+
+Inheritance diagram for JPSimplePipelineDownstreamHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00158}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for JPSimplePipelineDownstreamHandler:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{a00159}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{a00037_a609e49c4f7c71002a13003112c2f6349}{sendRequestedWithContext:withMessageEvent:}
+\begin{DoxyCompactList}\small\item\em Invoked when some Send data is requested. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00037_abb497c02fc2f0a33f471a4c88d623205}{
+(id) + \hyperlink{a00037_abb497c02fc2f0a33f471a4c88d623205}{init}}
+\label{a00037_abb497c02fc2f0a33f471a4c88d623205}
+
+\begin{DoxyCompactList}\small\item\em Init this handler. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{a00021}{JPPipelineDownstreamHandler} implementation which provides an individual handler method for each event type. This handler down-\/casts the received upstream event into more meaningful sub-\/type event and calls an appropriate handler method with the down-\/cast event. The names of the methods are identical to the upstream event names, as introduced in the \hyperlink{a00023}{JPPipelineEvent} documentation.
+
+Please use \hyperlink{a00038}{JPSimplePipelineHandler} if you need to implement both \hyperlink{a00035}{JPPipelineUpstreamHandler} and \hyperlink{a00021}{JPPipelineDownstreamHandler}.
+
+\subsubsection*{Overriding the handleContextDownstream method}
+
+You can override the {\bfseries handleContextDownstream:withEvent:} method just like overriding an ordinary Objective-\/C method. Please make sure to call {\bfseries super} so that other handler methods are invoked properly:
+
+
+\begin{DoxyCode}
+ // Override...
+ -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<
+      JPPipelineEvent>)e {
+         ...
+         [super handleContextDownstream:ctx withEvent:e];
+         ...
+ }
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00037_a609e49c4f7c71002a13003112c2f6349}{
+\index{JPSimplePipelineDownstreamHandler@{JPSimplePipelineDownstreamHandler}!sendRequestedWithContext:withMessageEvent:@{sendRequestedWithContext:withMessageEvent:}}
+\index{sendRequestedWithContext:withMessageEvent:@{sendRequestedWithContext:withMessageEvent:}!JPSimplePipelineDownstreamHandler@{JPSimplePipelineDownstreamHandler}}
+\subsubsection[{sendRequestedWithContext:withMessageEvent:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sendRequestedWithContext: 
+\begin{DoxyParamCaption}
+\item[{dummy($<$ {\bf JPPipelineHandlerContext} $>$)}]{ctx}
+\item[{withMessageEvent:($<$ {\bf JPPipelineMessageEvent} $>$)}]{e}
+\end{DoxyParamCaption}
+}}
+\label{a00037_a609e49c4f7c71002a13003112c2f6349}
+
+
+Invoked when some Send data is requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & An context. \\
+\hline
+{\em e} & The event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/Paulo/Projects/JUMP/JUMPNetwork/Headers/JPSimplePipelineDownstreamHandler.h\end{DoxyCompactItemize}
