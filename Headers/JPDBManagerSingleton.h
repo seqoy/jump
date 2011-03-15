@@ -1,1 +1,0 @@
-/Users/Paulo/Projects/JUMP/JUMPDatabase/Headers/JPDBManagerSingleton.h
