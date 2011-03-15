@@ -1,1 +1,0 @@
-/Users/Paulo/Projects/JUMP/JUMPCore/Headers/JPCore.h
