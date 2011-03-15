@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A2CE7E3131AF2D900ED5B5D /* libJUMPData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */; };
 		3A5E31D01321782B00970E2B /* libJUMPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E31CF1321782800970E2B /* libJUMPCore.a */; };
+		3A9178E2132EF93400506E72 /* JUMPHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9178E1132EF93400506E72 /* JUMPHeaders.h */; };
 		3AEF1A4713184CED00BC3759 /* libJUMPNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF19E713184C8B00BC3759 /* libJUMPNetwork.a */; };
-		3AEF1A6313184D7F00BC3759 /* JUMPFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF158D131829AC00BC3759 /* JUMPFramework.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 /* Begin PBXFileReference section */
 		3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPData.xcodeproj; path = JUMPData/JUMPData.xcodeproj; sourceTree = "<group>"; };
 		3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPCore.xcodeproj; path = JUMPCore/JUMPCore.xcodeproj; sourceTree = "<group>"; };
-		3AEF158D131829AC00BC3759 /* JUMPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPFramework.h; path = Headers/JUMPFramework.h; sourceTree = "<group>"; };
+		3A9178E1132EF93400506E72 /* JUMPHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPHeaders.h; path = Sources/JUMPHeaders.h; sourceTree = "<group>"; };
 		3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPNetwork.xcodeproj; path = JUMPNetwork/JUMPNetwork.xcodeproj; sourceTree = "<group>"; };
 		3AEF1A4013184CD300BC3759 /* libJUMPFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +91,7 @@
 		3A5E30D3132163FB00970E2B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3A9178E1132EF93400506E72 /* JUMPHeaders.h */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -106,7 +107,6 @@
 		3AEF14EF131826AD00BC3759 = {
 			isa = PBXGroup;
 			children = (
-				3AEF158D131829AC00BC3759 /* JUMPFramework.h */,
 				3A5E30D3132163FB00970E2B /* Sources */,
 				3AEF15821318293D00BC3759 /* Dependecies */,
 				3AEF1A4113184CD300BC3759 /* Products */,
@@ -146,7 +146,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AEF1A6313184D7F00BC3759 /* JUMPFramework.h in Headers */,
+				3A9178E2132EF93400506E72 /* JUMPHeaders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

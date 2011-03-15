@@ -273,7 +273,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>5</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -316,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPCore.h</string>
+								<string>JPFunctions.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,23 +325,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPCore.h</string>
+										<string>JPFunctions.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3AA51FD8132BE8B7002D989C</string>
+										<string>3A9178DD132EF84B00506E72</string>
 										<key>history</key>
 										<array>
 											<string>3A5E31AA1321779500970E2B</string>
-											<string>3A7844551325261500C3374A</string>
-											<string>3A7844571325261500C3374A</string>
-											<string>3A7844581325261500C3374A</string>
-											<string>3A7844591325261500C3374A</string>
-											<string>3A78445A1325261500C3374A</string>
-											<string>3A78445D1325266100C3374A</string>
-											<string>3A7844631325271600C3374A</string>
-											<string>3A78446F13252A2D00C3374A</string>
-											<string>3A78447313252CAE00C3374A</string>
+											<string>3A9178C5132EF81A00506E72</string>
+											<string>3A9178C6132EF81A00506E72</string>
+											<string>3A9178C7132EF81A00506E72</string>
+											<string>3A9178C8132EF81A00506E72</string>
+											<string>3A9178C9132EF81A00506E72</string>
+											<string>3A9178CA132EF81A00506E72</string>
+											<string>3A9178CB132EF81A00506E72</string>
+											<string>3A9178DB132EF84B00506E72</string>
+											<string>3A9178DC132EF84B00506E72</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -398,9 +399,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3AA51FD9132BE8B7002D989C</string>
+				<string>3A9178DE132EF84B00506E72</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3AA51FDA132BE8B7002D989C</string>
+				<string>3A9178DF132EF84B00506E72</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -619,7 +620,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>3A5E31371321733700970E2B</string>
-				<string>3AA51FDB132BE8B7002D989C</string>
+				<string>3A9178E0132EF84B00506E72</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
