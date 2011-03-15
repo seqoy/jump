@@ -1,22 +1,23 @@
 JUMP Framework
 ==============
 
-JUMP Framework is an collection of Objective-C Classes to accomplish a lot of tasks on iOS or Mac OS applications. 
-From Network Classes, Database Classes to User Interface Classes our collection is growing to make developers life 
-more easy on very complex and day by day tasks.
+
+JUMP Framework is a collection of classes in Objective-C to perform a series of tasks on iOS or
+Mac OS applications. From Network libraries until User Interface libraries. The framework have
+classes to accomplish day by day taks until very complex applications.  
 
 
 Modules
 -------
 
-JUMP Framework are divided on different modules _weakly coupled_ each other. You can import all modules or only
+JUMP Framework is divided on different _weakly coupled_ modules. You can import all modules or only
 the modules that you want to use on your project. See [JUMP Framework Start Guide](http://jump.github.com) to 
-lear more about it.
+learn more about it.
 
 Documentation
 -------------
 
-JUMP Framework Modules documentation are generated from code using [Doxygen](http://www.stack.nl/~dimitri/doxygen/). 
-Acess http://jump.github.com, many **Programming Guides** and **Code Snippets** for the different modules are
-provided to help you understand and easily start to use.
+JUMP Framework Modules documentation is generated from code using [Doxygen](http://www.stack.nl/~dimitri/doxygen/). 
+Acess [jump.github.com](http://jump.github.com) to learn more about it, many **Programming Guides** and **Code Snippets** for the different modules are
+provided to help you understand and start to use right away.
 
