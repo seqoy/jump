@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA51FCB132BE874002D989C /* JPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51FCA132BE874002D989C /* JPColor.m */; };
+		3AA51FCF132BE895002D989C /* JPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA51FCE132BE895002D989C /* JPColor.h */; };
+		3AA69086132BF7D200780D21 /* JPColorFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69080132BF7D100780D21 /* JPColorFunctions.h */; };
+		3AA69087132BF7D200780D21 /* JPColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69081132BF7D100780D21 /* JPColorFunctions.m */; };
+		3AA69088132BF7D200780D21 /* JPColorTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69082132BF7D100780D21 /* JPColorTypes.h */; };
+		3AA6908A132BF7D200780D21 /* JPColorConvertFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69084132BF7D100780D21 /* JPColorConvertFunctions.h */; };
+		3AA6908B132BF7D200780D21 /* JPColorConvertFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69085132BF7D100780D21 /* JPColorConvertFunctions.m */; };
+		3AA690DE132C019400780D21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA690DD132C019400780D21 /* CoreGraphics.framework */; };
+		3AA690E1132C019E00780D21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA690E0132C019E00780D21 /* UIKit.framework */; };
+		3AA690E4132C01A500780D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA690E3132C01A500780D21 /* Foundation.framework */; };
+		3AA690ED132C032100780D21 /* JUMPUserInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA690EC132C032100780D21 /* JUMPUserInterface.h */; };
+		3AA69921132D500500780D21 /* JPColorTemplates.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA6991F132D500500780D21 /* JPColorTemplates.h */; };
+		3AA69955132D52DE00780D21 /* JPColorTemplates.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69954132D52DE00780D21 /* JPColorTemplates.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPUserInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA51FCA132BE874002D989C /* JPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPColor.m; path = Sources/JPColor.m; sourceTree = "<group>"; };
+		3AA51FCE132BE895002D989C /* JPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPColor.h; path = Headers/JPColor.h; sourceTree = "<group>"; };
+		3AA69080132BF7D100780D21 /* JPColorFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPColorFunctions.h; path = Headers/JPColorFunctions.h; sourceTree = "<group>"; };
+		3AA69081132BF7D100780D21 /* JPColorFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPColorFunctions.m; path = Sources/JPColorFunctions.m; sourceTree = "<group>"; };
+		3AA69082132BF7D100780D21 /* JPColorTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPColorTypes.h; path = Headers/JPColorTypes.h; sourceTree = "<group>"; };
+		3AA69084132BF7D100780D21 /* JPColorConvertFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPColorConvertFunctions.h; path = Headers/JPColorConvertFunctions.h; sourceTree = "<group>"; };
+		3AA69085132BF7D100780D21 /* JPColorConvertFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPColorConvertFunctions.m; path = Sources/JPColorConvertFunctions.m; sourceTree = "<group>"; };
+		3AA690DD132C019400780D21 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3AA690E0132C019E00780D21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3AA690E3132C01A500780D21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3AA690EC132C032100780D21 /* JUMPUserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPUserInterface.h; path = Headers/JUMPUserInterface.h; sourceTree = "<group>"; };
+		3AA6991F132D500500780D21 /* JPColorTemplates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPColorTemplates.h; path = Headers/JPColorTemplates.h; sourceTree = "<group>"; };
+		3AA69954132D52DE00780D21 /* JPColorTemplates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPColorTemplates.m; path = Sources/JPColorTemplates.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA51FC1132BE80F002D989C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA690DE132C019400780D21 /* CoreGraphics.framework in Frameworks */,
+				3AA690E1132C019E00780D21 /* UIKit.framework in Frameworks */,
+				3AA690E4132C01A500780D21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AA51FB0132BE7E2002D989C = {
+			isa = PBXGroup;
+			children = (
+				3AA690EC132C032100780D21 /* JUMPUserInterface.h */,
+				3AA51FBE132BE800002D989C /* Sources */,
+				3AA51FBD132BE7FB002D989C /* Headers */,
+				3AA51FC4132BE80F002D989C /* Products */,
+				3AA690DC132C018C00780D21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA51FBD132BE7FB002D989C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3AA69080132BF7D100780D21 /* JPColorFunctions.h */,
+				3AA69082132BF7D100780D21 /* JPColorTypes.h */,
+				3AA69084132BF7D100780D21 /* JPColorConvertFunctions.h */,
+				3AA51FCE132BE895002D989C /* JPColor.h */,
+				3AA6991F132D500500780D21 /* JPColorTemplates.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		3AA51FBE132BE800002D989C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3AA69954132D52DE00780D21 /* JPColorTemplates.m */,
+				3AA69081132BF7D100780D21 /* JPColorFunctions.m */,
+				3AA69085132BF7D100780D21 /* JPColorConvertFunctions.m */,
+				3AA51FCA132BE874002D989C /* JPColor.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3AA51FC4132BE80F002D989C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA690DC132C018C00780D21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AA690DD132C019400780D21 /* CoreGraphics.framework */,
+				3AA690E0132C019E00780D21 /* UIKit.framework */,
+				3AA690E3132C01A500780D21 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3AA51FBF132BE80F002D989C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA51FCF132BE895002D989C /* JPColor.h in Headers */,
+				3AA69086132BF7D200780D21 /* JPColorFunctions.h in Headers */,
+				3AA69088132BF7D200780D21 /* JPColorTypes.h in Headers */,
+				3AA6908A132BF7D200780D21 /* JPColorConvertFunctions.h in Headers */,
+				3AA690ED132C032100780D21 /* JUMPUserInterface.h in Headers */,
+				3AA69921132D500500780D21 /* JPColorTemplates.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3AA51FC2132BE80F002D989C /* JUMPUserInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA51FC7132BE811002D989C /* Build configuration list for PBXNativeTarget "JUMPUserInterface" */;
+			buildPhases = (
+				3AA51FBF132BE80F002D989C /* Headers */,
+				3AA51FC0132BE80F002D989C /* Sources */,
+				3AA51FC1132BE80F002D989C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUMPUserInterface;
+			productName = JUMPUserInterface;
+			productReference = 3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA51FB2132BE7E2002D989C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3AA51FB5132BE7E2002D989C /* Build configuration list for PBXProject "JUMPUserInterface" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 3AA51FB0132BE7E2002D989C;
+			productRefGroup = 3AA51FC4132BE80F002D989C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA51FC2132BE80F002D989C /* JUMPUserInterface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA51FC0132BE80F002D989C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA51FCB132BE874002D989C /* JPColor.m in Sources */,
+				3AA69087132BF7D200780D21 /* JPColorFunctions.m in Sources */,
+				3AA6908B132BF7D200780D21 /* JPColorConvertFunctions.m in Sources */,
+				3AA69955132D52DE00780D21 /* JPColorTemplates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AA51FB3132BE7E2002D989C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3AA51FB4132BE7E2002D989C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		3AA51FC5132BE810002D989C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPUserInterface;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AA51FC6132BE810002D989C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPUserInterface;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA51FB5132BE7E2002D989C /* Build configuration list for PBXProject "JUMPUserInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA51FB3132BE7E2002D989C /* Debug */,
+				3AA51FB4132BE7E2002D989C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA51FC7132BE811002D989C /* Build configuration list for PBXNativeTarget "JUMPUserInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA51FC5132BE810002D989C /* Debug */,
+				3AA51FC6132BE810002D989C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA51FB2132BE7E2002D989C /* Project object */;
+}

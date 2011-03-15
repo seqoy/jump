@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2CE706131AE91A00ED5B5D /* LoggingExtra.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */; };
+		3A2CE707131AE91A00ED5B5D /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE704131AE91A00ED5B5D /* Logging.h */; };
+		3A2CE708131AE91A00ED5B5D /* Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CE705131AE91A00ED5B5D /* Logging.m */; };
+		3A2CE73F131AEC3500ED5B5D /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE736131AEC3500ED5B5D /* JSON.h */; };
+		3A2CE740131AEC3500ED5B5D /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */; };
+		3A2CE741131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */; };
+		3A2CE742131AEC3500ED5B5D /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE739131AEC3500ED5B5D /* SBJsonStreamParserState.h */; };
+		3A2CE743131AEC3500ED5B5D /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73A131AEC3500ED5B5D /* SBJsonStreamWriter.h */; };
+		3A2CE744131AEC3500ED5B5D /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73B131AEC3500ED5B5D /* SBJsonStreamWriterState.h */; };
+		3A2CE745131AEC3500ED5B5D /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73C131AEC3500ED5B5D /* SBJsonTokeniser.h */; };
+		3A2CE746131AEC3500ED5B5D /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73D131AEC3500ED5B5D /* SBJsonWriter.h */; };
+		3A2CE747131AEC3500ED5B5D /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CE73E131AEC3500ED5B5D /* libjson.a */; };
+		3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */; };
+		3A2CE79D131AF0DA00ED5B5D /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE79C131AF0DA00ED5B5D /* SBJsonParser.h */; };
+		3A2CE7A9131AF0F600ED5B5D /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE7A8131AF0F600ED5B5D /* SBJsonStreamParser.h */; };
+		3A2CE7FA131AF35900ED5B5D /* JPJSONProcesser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */; };
+		3A5E30F0132169E400970E2B /* JPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30EE132169E400970E2B /* JPMath.h */; };
+		3A5E30F1132169E400970E2B /* JPMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E30EF132169E400970E2B /* JPMath.m */; };
+		3A78449D1325332B00C3374A /* JUMPData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A78449C1325332B00C3374A /* JUMPData.h */; };
+		3AFF844A131FC26700A23032 /* JPDataConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFF8449131FC26700A23032 /* JPDataConverter.h */; };
+		3AFF844C131FC27200A23032 /* JPDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF844B131FC27200A23032 /* JPDataConverter.m */; };
+		AA747D9F0F9514B9006C5449 /* JUMPData_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JUMPData_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggingExtra.h; path = "../../../Work/libs/SEQOY Shortcuts/SEQOY Shorcuts/LoggingExtra.h"; sourceTree = SOURCE_ROOT; };
+		3A2CE704131AE91A00ED5B5D /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = ../../../Work/libs/MYUtilities/Logging.h; sourceTree = SOURCE_ROOT; };
+		3A2CE705131AE91A00ED5B5D /* Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logging.m; path = ../../../Work/libs/MYUtilities/Logging.m; sourceTree = SOURCE_ROOT; };
+		3A2CE736131AEC3500ED5B5D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		3A2CE739131AEC3500ED5B5D /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		3A2CE73A131AEC3500ED5B5D /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		3A2CE73B131AEC3500ED5B5D /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		3A2CE73C131AEC3500ED5B5D /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		3A2CE73D131AEC3500ED5B5D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3A2CE73E131AEC3500ED5B5D /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjson.a; sourceTree = "<group>"; };
+		3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPJSONProcesser.m; path = Sources/JPJSONProcesser.m; sourceTree = "<group>"; };
+		3A2CE79C131AF0DA00ED5B5D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3A2CE7A8131AF0F600ED5B5D /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONProcesser.h; path = Headers/JPJSONProcesser.h; sourceTree = "<group>"; };
+		3A5E30EE132169E400970E2B /* JPMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPMath.h; path = Headers/JPMath.h; sourceTree = "<group>"; };
+		3A5E30EF132169E400970E2B /* JPMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPMath.m; path = Sources/JPMath.m; sourceTree = "<group>"; };
+		3A78449C1325332B00C3374A /* JUMPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPData.h; path = Headers/JUMPData.h; sourceTree = "<group>"; };
+		3AFF8449131FC26700A23032 /* JPDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDataConverter.h; path = Headers/JPDataConverter.h; sourceTree = "<group>"; };
+		3AFF844B131FC27200A23032 /* JPDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPDataConverter.m; path = Sources/JPDataConverter.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* JUMPData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPData_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libJUMPData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				3A2CE747131AEC3500ED5B5D /* libjson.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libJUMPData.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* JUMPData */ = {
+			isa = PBXGroup;
+			children = (
+				3A78449C1325332B00C3374A /* JUMPData.h */,
+				3A2CE71B131AE99A00ED5B5D /* Third-Part */,
+				3A2CE702131AE91A00ED5B5D /* Logging */,
+				08FB77AEFE84172EC02AAC07 /* Sources */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = JUMPData;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E30EC132169D300970E2B /* Math */,
+				3AFF843F131FC24600A23032 /* Converters */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* JUMPData_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3A2CE702131AE91A00ED5B5D /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */,
+				3A2CE704131AE91A00ED5B5D /* Logging.h */,
+				3A2CE705131AE91A00ED5B5D /* Logging.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		3A2CE71B131AE99A00ED5B5D /* Third-Part */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE734131AEC3500ED5B5D /* JSON Framework */,
+			);
+			name = "Third-Part";
+			sourceTree = "<group>";
+		};
+		3A2CE734131AEC3500ED5B5D /* JSON Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE735131AEC3500ED5B5D /* Headers */,
+				3A2CE73E131AEC3500ED5B5D /* libjson.a */,
+			);
+			name = "JSON Framework";
+			path = "Third-Part Libraries/JSON Framework";
+			sourceTree = "<group>";
+		};
+		3A2CE735131AEC3500ED5B5D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE736131AEC3500ED5B5D /* JSON.h */,
+				3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */,
+				3A2CE79C131AF0DA00ED5B5D /* SBJsonParser.h */,
+				3A2CE7A8131AF0F600ED5B5D /* SBJsonStreamParser.h */,
+				3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */,
+				3A2CE739131AEC3500ED5B5D /* SBJsonStreamParserState.h */,
+				3A2CE73A131AEC3500ED5B5D /* SBJsonStreamWriter.h */,
+				3A2CE73B131AEC3500ED5B5D /* SBJsonStreamWriterState.h */,
+				3A2CE73C131AEC3500ED5B5D /* SBJsonTokeniser.h */,
+				3A2CE73D131AEC3500ED5B5D /* SBJsonWriter.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		3A5E30EC132169D300970E2B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E30EE132169E400970E2B /* JPMath.h */,
+				3A5E30EF132169E400970E2B /* JPMath.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		3AFF843E131FC23C00A23032 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */,
+				3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		3AFF843F131FC24600A23032 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF8440131FC24F00A23032 /* Data */,
+				3AFF843E131FC23C00A23032 /* JSON */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		3AFF8440131FC24F00A23032 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF8449131FC26700A23032 /* JPDataConverter.h */,
+				3AFF844B131FC27200A23032 /* JPDataConverter.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* JUMPData_Prefix.pch in Headers */,
+				3A2CE706131AE91A00ED5B5D /* LoggingExtra.h in Headers */,
+				3A2CE707131AE91A00ED5B5D /* Logging.h in Headers */,
+				3A2CE73F131AEC3500ED5B5D /* JSON.h in Headers */,
+				3A2CE740131AEC3500ED5B5D /* NSObject+JSON.h in Headers */,
+				3A2CE741131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h in Headers */,
+				3A2CE742131AEC3500ED5B5D /* SBJsonStreamParserState.h in Headers */,
+				3A2CE743131AEC3500ED5B5D /* SBJsonStreamWriter.h in Headers */,
+				3A2CE744131AEC3500ED5B5D /* SBJsonStreamWriterState.h in Headers */,
+				3A2CE745131AEC3500ED5B5D /* SBJsonTokeniser.h in Headers */,
+				3A2CE746131AEC3500ED5B5D /* SBJsonWriter.h in Headers */,
+				3A2CE79D131AF0DA00ED5B5D /* SBJsonParser.h in Headers */,
+				3A2CE7A9131AF0F600ED5B5D /* SBJsonStreamParser.h in Headers */,
+				3A2CE7FA131AF35900ED5B5D /* JPJSONProcesser.h in Headers */,
+				3AFF844A131FC26700A23032 /* JPDataConverter.h in Headers */,
+				3A5E30F0132169E400970E2B /* JPMath.h in Headers */,
+				3A78449D1325332B00C3374A /* JUMPData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* JUMPData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "JUMPData" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUMPData;
+			productName = JUMPData;
+			productReference = D2AAC07E0554694100DB518D /* libJUMPData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "JUMPData" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* JUMPData */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* JUMPData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2CE708131AE91A00ED5B5D /* Logging.m in Sources */,
+				3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */,
+				3AFF844C131FC27200A23032 /* JPDataConverter.m in Sources */,
+				3A5E30F1132169E400970E2B /* JPMath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/JUMPData.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JUMPData_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Third-Part Libraries/JSON Framework\"",
+				);
+				PRODUCT_NAME = JUMPData;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/JUMPData.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JUMPData_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Third-Part Libraries/JSON Framework\"",
+				);
+				PRODUCT_NAME = JUMPData;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "JUMPData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "JUMPData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

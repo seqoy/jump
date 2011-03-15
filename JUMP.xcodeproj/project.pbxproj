@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2CE7E3131AF2D900ED5B5D /* libJUMPData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */; };
+		3A5E31D01321782B00970E2B /* libJUMPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E31CF1321782800970E2B /* libJUMPCore.a */; };
+		3AEF1A4713184CED00BC3759 /* libJUMPNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEF19E713184C8B00BC3759 /* libJUMPNetwork.a */; };
+		3AEF1A6313184D7F00BC3759 /* JUMPFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF158D131829AC00BC3759 /* JUMPFramework.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A2CE7DF131AF2CB00ED5B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPData;
+		};
+		3A2CE7E1131AF2D500ED5B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JUMPData;
+		};
+		3A5E31CE1321782800970E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A5E31211321730100970E2B;
+			remoteInfo = JUMPCore;
+		};
+		3A5E31D11321783800970E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5E31201321730100970E2B;
+			remoteInfo = JUMPCore;
+		};
+		3AEF19E613184C8B00BC3759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPNetwork;
+		};
+		3AEF1A4513184CDA00BC3759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JUMPNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPData.xcodeproj; path = JUMPData/JUMPData.xcodeproj; sourceTree = "<group>"; };
+		3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPCore.xcodeproj; path = JUMPCore/JUMPCore.xcodeproj; sourceTree = "<group>"; };
+		3AEF158D131829AC00BC3759 /* JUMPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPFramework.h; path = Headers/JUMPFramework.h; sourceTree = "<group>"; };
+		3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPNetwork.xcodeproj; path = JUMPNetwork/JUMPNetwork.xcodeproj; sourceTree = "<group>"; };
+		3AEF1A4013184CD300BC3759 /* libJUMPFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AEF1A3E13184CD300BC3759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEF1A4713184CED00BC3759 /* libJUMPNetwork.a in Frameworks */,
+				3A2CE7E3131AF2D900ED5B5D /* libJUMPData.a in Frameworks */,
+				3A5E31D01321782B00970E2B /* libJUMPCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2CE7DC131AF2CB00ED5B5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A5E30D3132163FB00970E2B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3A5E31CB1321782800970E2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E31CF1321782800970E2B /* libJUMPCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEF14EF131826AD00BC3759 = {
+			isa = PBXGroup;
+			children = (
+				3AEF158D131829AC00BC3759 /* JUMPFramework.h */,
+				3A5E30D3132163FB00970E2B /* Sources */,
+				3AEF15821318293D00BC3759 /* Dependecies */,
+				3AEF1A4113184CD300BC3759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AEF15821318293D00BC3759 /* Dependecies */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */,
+				3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */,
+				3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */,
+			);
+			name = Dependecies;
+			sourceTree = "<group>";
+		};
+		3AEF19E313184C8B00BC3759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AEF19E713184C8B00BC3759 /* libJUMPNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEF1A4113184CD300BC3759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AEF1A4013184CD300BC3759 /* libJUMPFramework.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3AEF1A3C13184CD300BC3759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEF1A6313184D7F00BC3759 /* JUMPFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3AEF1A3F13184CD300BC3759 /* JUMPFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEF1A4413184CD400BC3759 /* Build configuration list for PBXNativeTarget "JUMPFramework" */;
+			buildPhases = (
+				3AEF1A3C13184CD300BC3759 /* Headers */,
+				3AEF1A3D13184CD300BC3759 /* Sources */,
+				3AEF1A3E13184CD300BC3759 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AEF1A4613184CDA00BC3759 /* PBXTargetDependency */,
+				3A2CE7E2131AF2D500ED5B5D /* PBXTargetDependency */,
+				3A5E31D21321783800970E2B /* PBXTargetDependency */,
+			);
+			name = JUMPFramework;
+			productName = JUMPFramework;
+			productReference = 3AEF1A4013184CD300BC3759 /* libJUMPFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AEF14F1131826AD00BC3759 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3AEF14F4131826AD00BC3759 /* Build configuration list for PBXProject "JUMP" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 3AEF14EF131826AD00BC3759;
+			productRefGroup = 3AEF1A4113184CD300BC3759 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3A5E31CB1321782800970E2B /* Products */;
+					ProjectRef = 3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 3A2CE7DC131AF2CB00ED5B5D /* Products */;
+					ProjectRef = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
+				},
+				{
+					ProductGroup = 3AEF19E313184C8B00BC3759 /* Products */;
+					ProjectRef = 3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3AEF1A3F13184CD300BC3759 /* JUMPFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPData.a;
+			remoteRef = 3A2CE7DF131AF2CB00ED5B5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A5E31CF1321782800970E2B /* libJUMPCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPCore.a;
+			remoteRef = 3A5E31CE1321782800970E2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AEF19E713184C8B00BC3759 /* libJUMPNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPNetwork.a;
+			remoteRef = 3AEF19E613184C8B00BC3759 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AEF1A3D13184CD300BC3759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A2CE7E2131AF2D500ED5B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPData;
+			targetProxy = 3A2CE7E1131AF2D500ED5B5D /* PBXContainerItemProxy */;
+		};
+		3A5E31D21321783800970E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPCore;
+			targetProxy = 3A5E31D11321783800970E2B /* PBXContainerItemProxy */;
+		};
+		3AEF1A4613184CDA00BC3759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPNetwork;
+			targetProxy = 3AEF1A4513184CDA00BC3759 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AEF14F2131826AD00BC3759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3AEF14F3131826AD00BC3759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		3AEF1A4213184CD400BC3759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPFramework;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AEF1A4313184CD400BC3759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPFramework;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AEF14F4131826AD00BC3759 /* Build configuration list for PBXProject "JUMP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEF14F2131826AD00BC3759 /* Debug */,
+				3AEF14F3131826AD00BC3759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AEF1A4413184CD400BC3759 /* Build configuration list for PBXNativeTarget "JUMPFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEF1A4213184CD400BC3759 /* Debug */,
+				3AEF1A4313184CD400BC3759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AEF14F1131826AD00BC3759 /* Project object */;
+}
