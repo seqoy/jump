@@ -24,7 +24,7 @@
  <b>JUMP Framework</b> is divided on different <i>weakly coupled</i> modules. You can import all 
  modules or only the modules that you want to use on your project.
  <p>
- This is are the main Modules:
+ These are the main Modules:
 	- <a href="../../JUMPDatabase/html/index.html">Database Module</a>
 	- <a href="../../JUMPNetwork/html/index.html">Network Module</a>
 	- <a href="../../JUMPData/html/index.html">Data Module</a>
