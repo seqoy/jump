@@ -1,0 +1,1063 @@
+TLog4CocoTouch
+v7
+r0
+t321904737.165778
+cCheck dependencies
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/AvailabilityMacros.h
+c000000004D4F7A2B0000000000007A5E
+t1297054251
+s31326
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/objc/message.h
+c000000004D54CB430000000000001F13
+t1297402691
+s7955
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m
+c000000004D7FA7F6000000000000133F
+t1300211702
+s4927
+i"NSDate-Calendar.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4AppenderAttachable.h
+c00000000498BAFEA00000000000002F5
+t1233891306
+s757
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4AppenderProtocols.h
+c00000000498BAFEA0000000000000CC7
+t1233891306
+s3271
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4AppenderSkeleton.h
+c00000000498BAFEA00000000000007A7
+t1233891306
+s1959
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4BasicConfigurator.h
+c00000000498BAFEA0000000000000184
+t1233891306
+s388
+i<Foundation/Foundation.h>
+i"L4PropertyConfigurator.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4ConsoleAppender.h
+c00000000498BAFEA000000000000074B
+t1233891306
+s1867
+i<Foundation/Foundation.h>
+i"L4WriterAppender.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h
+c000000004D7FA3A60000000000000C81
+t1300210598
+s3201
+i<Foundation/Foundation.h>
+i"L4FileAppender.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DenyAllFilter.h
+c00000000498B7F95000000000000019A
+t1233878933
+s410
+i<Foundation/Foundation.h>
+i"L4Filter.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4FileAppender.h
+c00000000498BAFEA0000000000000DF7
+t1233891306
+s3575
+i<Foundation/Foundation.h>
+i"L4WriterAppender.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Filter.h
+c00000000498B7F950000000000000624
+t1233878933
+s1572
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Layout.h
+c0000000049428E8100000000000005C0
+t1229098625
+s1472
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Level.h
+c00000000498B7F950000000000001211
+t1233878933
+s4625
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LevelMatchFilter.h
+c00000000498BAFEA00000000000007FA
+t1233891306
+s2042
+i<Foundation/Foundation.h>
+i"L4Filter.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LevelRangeFilter.h
+c00000000498BAFEA0000000000000A52
+t1233891306
+s2642
+i<Foundation/Foundation.h>
+i"L4Filter.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LogLog.h
+c00000000498E03DB0000000000000B63
+t1234043867
+s2915
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Logger.h
+c000000004A64B09700000000000026BC
+t1248112791
+s9916
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+i"L4LoggerProtocols.h"
+i"L4Level.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggerProtocols.h
+c00000000498BAFEA00000000000009C1
+t1233891306
+s2497
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggerStore.h
+c000000004A64B0970000000000000B9E
+t1248112791
+s2974
+i<Foundation/Foundation.h>
+i"L4LoggerProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Logging.h
+c000000004A64B097000000000000162F
+t1248112791
+s5679
+i<Foundation/Foundation.h>
+i"Log4CocoaDefines.h"
+i"L4Level.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h
+c00000000498BAFEA000000000000129B
+t1233891306
+s4763
+i<Foundation/Foundation.h>
+i"L4LoggerProtocols.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4PatternLayout.h
+c00000000498BAFEA0000000000003768
+t1233891306
+s14184
+i<Foundation/Foundation.h>
+i"L4Layout.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4Properties.h
+c00000000498BAFEA00000000000010F0
+t1233891306
+s4336
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4PropertyConfigurator.h
+c00000000498E03DB0000000000001834
+t1234043867
+s6196
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4RollingFileAppender.h
+c00000000498BAFEA000000000000140F
+t1233891306
+s5135
+i<Foundation/Foundation.h>
+i"L4FileAppender.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4RootLogger.h
+c000000004760283800000000000002CF
+t1197484088
+s719
+i<Foundation/Foundation.h>
+i"L4Logger.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4SimpleLayout.h
+c00000000475C4CEE000000000000026D
+t1197231342
+s621
+i<Foundation/Foundation.h>
+i"L4Layout.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4StringMatchFilter.h
+c00000000498E03DB00000000000007E0
+t1234043867
+s2016
+i<Foundation/Foundation.h>
+i"L4Filter.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4WriterAppender.h
+c00000000498BAFEA0000000000000E76
+t1233891306
+s3702
+i<Foundation/Foundation.h>
+i"L4AppenderProtocols.h"
+i"L4AppenderSkeleton.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/Log4CocoaDefines.h
+c00000000496CF711000000000000019E
+t1231877905
+s414
+i<AvailabilityMacros.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h
+c000000004D7FA6F300000000000008B2
+t1300211443
+s2226
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSObject+Log4Cocoa.h
+c000000004947C97600000000000005CD
+t1229441398
+s1485
+i<Foundation/Foundation.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m
+c000000004A64B0970000000000000BCA
+t1248112791
+s3018
+i"L4AppenderAttachable.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m
+c000000004A64B0970000000000002028
+t1248112791
+s8232
+i"L4AppenderSkeleton.h"
+i"L4Filter.h"
+i"L4Level.h"
+i"L4LoggingEvent.h"
+i"L4LogLog.h"
+i"L4Layout.h"
+i"L4Properties.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m
+c00000000498BAFEA0000000000000250
+t1233891306
+s592
+i"L4BasicConfigurator.h"
+i"L4Properties.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m
+c000000004A64B0970000000000000BC1
+t1248112791
+s3009
+i"L4ConsoleAppender.h"
+i"L4Layout.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m
+c000000004D7FA5DE0000000000002A60
+t1300211166
+s10848
+i"L4DailyRollingFileAppender.h"
+i"L4Layout.h"
+i"L4LogLog.h"
+i<math.h>
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m
+c00000000498B7F9500000000000000CB
+t1233878933
+s203
+i"L4DenyAllFilter.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m
+c000000004A64B0970000000000000D9D
+t1248112791
+s3485
+i"L4FileAppender.h"
+i"L4Layout.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m
+c000000004A64B0970000000000000251
+t1248112791
+s593
+i"L4Filter.h"
+i"L4LoggingEvent.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m
+c0000000049428E810000000000000253
+t1229098625
+s595
+i"L4Layout.h"
+i"L4SimpleLayout.h"
+i"L4LoggingEvent.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m
+c000000004A64B0970000000000001119
+t1248112791
+s4377
+i"L4Level.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m
+c00000000498E03DB000000000000073E
+t1234043867
+s1854
+i"L4LevelMatchFilter.h"
+i"L4LoggingEvent.h"
+i"L4Level.h"
+i"L4Properties.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m
+c00000000498E03DB000000000000079D
+t1234043867
+s1949
+i"L4LevelRangeFilter.h"
+i"L4LoggingEvent.h"
+i"L4Level.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m
+c00000000498BAFEA0000000000000A58
+t1233891306
+s2648
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m
+c000000004A64B0970000000000001D40
+t1248112791
+s7488
+i"L4Logger.h"
+i"L4AppenderAttachable.h"
+i"L4Level.h"
+i"L4LoggerStore.h"
+i"L4LoggingEvent.h"
+i"L4LogLog.h"
+i"L4RootLogger.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m
+c000000004D7FA7A3000000000000263B
+t1300211619
+s9787
+i"L4LoggerStore.h"
+i"L4Logger.h"
+i"L4Level.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m
+c000000004A64B0970000000000000334
+t1248112791
+s820
+i<objc/message.h>
+i"L4Logging.h"
+i"NSObject+Log4Cocoa.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m
+c000000004A64B0970000000000001078
+t1248112791
+s4216
+i"L4LoggingEvent.h"
+i"L4Logger.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m
+c000000004D7FA5230000000000004F76
+t1300210979
+s20342
+i<math.h>
+i"L4PatternLayout.h"
+i"L4Layout.h"
+i"L4LoggingEvent.h"
+i"L4Properties.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m
+c000000004A64B0970000000000001BB7
+t1248112791
+s7095
+i"L4Properties.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m
+c000000004A64B0970000000000001F8E
+t1248112791
+s8078
+i"L4PropertyConfigurator.h"
+i"L4AppenderProtocols.h"
+i"L4Level.h"
+i"L4LogLog.h"
+i"L4Properties.h"
+i"L4RootLogger.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m
+c000000004A64B0970000000000001961
+t1248112791
+s6497
+i"L4RollingFileAppender.h"
+i"L4Layout.h"
+i"L4LoggingEvent.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m
+c000000004A64B097000000000000020A
+t1248112791
+s522
+i"L4RootLogger.h"
+i"L4LogLog.h"
+i"L4Level.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m
+c00000000475C4CEE00000000000001CB
+t1197231342
+s459
+i"L4SimpleLayout.h"
+i"L4LoggingEvent.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m
+c00000000498E03DB000000000000062D
+t1234043867
+s1581
+i"L4StringMatchFilter.h"
+i"L4LoggingEvent.h"
+i"L4Properties.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m
+c000000004A64B0970000000000000FC3
+t1248112791
+s4035
+i"L4WriterAppender.h"
+i"L4Layout.h"
+i"L4LoggingEvent.h"
+i"L4LogLog.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m
+c00000000482A03FF0000000000000135
+t1210713087
+s309
+i"NSObject+Log4Cocoa.h"
+i"L4Logger.h"
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o
+t1300211935
+s18112
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o
+t1300211935
+s9028
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o
+t1300211935
+s15192
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o
+t1300211936
+s6472
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o
+t1300211936
+s17432
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o
+t1300211936
+s21132
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o
+t1300211936
+s16056
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o
+t1300211936
+s32064
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o
+t1300211936
+s7564
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o
+t1300211936
+s26276
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o
+t1300211936
+s27056
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o
+t1300211937
+s9332
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/Log4CocoTouch.LinkFileList
+c000000004D7FA8DF00000000000014C6
+t1300211935
+s5318
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o
+t2
+s0
+
+N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o
+t1300211937
+s7628
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies321904735#321904735#0(0"0(0#1#0"8247620834010738688#0"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.618271
+e321904735.983179
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@128"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m321904735#321904735#0(0"0(0#0#120"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m5777384339543708672#2421"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.638069
+e321904735.978462
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m:8:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@126"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m321904735#321904735#0(655"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m:8:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904735#144#184#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m321904735#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m269805591#8#0#8#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904735#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904735#328#163#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m321904735#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m269805591#8#0#8#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904735#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904735#491#164#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m321904735#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m269805591#8#0#8#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904735#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m8608389440#2417"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.639229
+e321904735.960706
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@127"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m321904735#321904735#0(0"0(0#0#119"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m8604917792#2419"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.640380
+e321904735.974258
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@125"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m321904735#321904735#0(0"0(0#0#117"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m8608001280#2415"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.960869
+e321904736.181096
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:5:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h:28: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:17: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender dealloc]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: 'lastRolloverDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: (Each undeclared identifier is reported only once
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: for each function it appears in.)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender setRollingFrequency:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:64: error: 'NSCalendarDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: At top level:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:114: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender lastRolloverDate]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:116: error: 'lastRolloverDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender setLastRolloverDate:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:122: error: 'lastRolloverDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender rollOver]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:132: error: 'NSCalendarDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:132: error: 'now' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:134: error: 'tempLastRolloverDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:135: error: 'tempCalendarDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:135: error: 'tempCalendarDate2' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:159: error: 'lastRolloverDate' undeclared (first use in this function)
+lSLF07#2@134"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321904735#321904736#0(4108"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:5:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h:28: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:17: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender dealloc]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: 'lastRolloverDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: (Each undeclared identifier is reported only once/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:50: error: for each function it appears in.)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender setRollingFrequency:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:64: error: 'NSCalendarDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: At top level:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:114: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender lastRolloverDate]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:116: error: 'lastRolloverDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender setLastRolloverDate:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:122: error: 'lastRolloverDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m: In function '-[L4DailyRollingFileAppender rollOver]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:132: error: 'NSCalendarDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:132: error: 'now' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:134: error: 'tempLastRolloverDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:135: error: 'tempCalendarDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:135: error: 'tempCalendarDate2' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m:159: error: 'lastRolloverDate' undeclared (first use in this function)14(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#152#196#2(7@148"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321904736#18446744073709551615#0#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#5#0#5#0#0"0(13@187"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h321904736#18446744073709551615#0#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h321903398#28#0#28#0#0"0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4DailyRollingFileAppender.h321903398#28#0#28#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#348#175#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#17#0#17#0#19"expected * before *0(4@58"'lastRolloverDate' undeclared (first use in this function)321904736#704#197#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#50#0#50#0#43"'*' undeclared (first use in this function)0(4@56"'NSCalendarDate' undeclared (first use in this function)321904736#1455#195#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#64#0#64#0#43"'*' undeclared (first use in this function)0(23@13"At top level:321904736#1650#142#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#0#0#0#0#0"0(4@36"Expected ')' before 'NSCalendarDate'321904736#1792#176#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#114#0#114#0#19"expected * before *0(4@58"'lastRolloverDate' undeclared (first use in this function)321904736#2158#198#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#116#0#116#0#43"'*' undeclared (first use in this function)0(4@58"'lastRolloverDate' undeclared (first use in this function)321904736#2550#198#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#122#0#122#0#43"'*' undeclared (first use in this function)0(4@56"'NSCalendarDate' undeclared (first use in this function)321904736#2930#196#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#132#0#132#0#43"'*' undeclared (first use in this function)0(4@45"'now' undeclared (first use in this function)321904736#3126#185#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#132#0#132#0#43"'*' undeclared (first use in this function)0(4@62"'tempLastRolloverDate' undeclared (first use in this function)321904736#3311#202#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#134#0#134#0#43"'*' undeclared (first use in this function)0(4@58"'tempCalendarDate' undeclared (first use in this function)321904736#3513#198#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#135#0#135#0#43"'*' undeclared (first use in this function)0(4@59"'tempCalendarDate2' undeclared (first use in this function)321904736#3711#199#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#135#0#135#0#43"'*' undeclared (first use in this function)0(4@58"'lastRolloverDate' undeclared (first use in this function)321904736#3910#198#0(6@126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321903966#159#0#159#0#43"'*' undeclared (first use in this function)0(0#0#126"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m8608526208#2433"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.974390
+e321904736.161171
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@123"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m321904735#321904736#0(0"0(0#0#115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m8607820960#2411"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.978624
+e321904736.201681
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@122"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m321904735#321904736#0(0"0(0#0#114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m8606223136#2409"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4FileAppender.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904735.983301
+e321904736.174187
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m:6:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m321904735#321904736#0(645"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m:6:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#134#184#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m269805591#6#0#6#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#318#163#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m269805591#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#481#164#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m269805591#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m8603536672#2397"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Filter.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.161312
+e321904736.355669
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m:7:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m321904736#321904736#0(645"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m:7:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#134#184#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m250791425#7#0#7#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#318#163#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m250791425#7#0#7#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#481#164#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m250791425#7#0#7#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m8609171392#2397"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Layout.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.174319
+e321904736.382912
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m321904736#321904736#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m8608229760#2395"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Level.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.181217
+e321904736.381305
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m:5:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@126"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m321904736#321904736#0(655"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m:5:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#144#184#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m255736667#5#0#5#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#328#163#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m255736667#5#0#5#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#491#164#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m255736667#5#0#5#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m8606625312#2417"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.201816
+e321904736.375694
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m:6:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@126"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m321904736#321904736#0(655"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m:6:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#144#184#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m255736667#6#0#6#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#328#163#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m255736667#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#491#164#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m321904736#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m255736667#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m8606144224#2417"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.550312
+e321904736.772600
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m321904736#321904736#0(0"0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m8608549824#2397"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LogLog.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.355776
+e321904736.550172
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m:9:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m: In function '-[L4Logger callAppenders:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m:155: error: 'for' loop initial declaration used outside C99 mode
+lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m321904736#321904736#0(971"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m:9:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m: In function '-[L4Logger callAppenders:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m:155: error: 'for' loop initial declaration used outside C99 mode4(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#134#184#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m269805591#9#0#9#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#318#163#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m269805591#9#0#9#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#481#164#2(7@130"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m321904736#18446744073709551615#0#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m269805591#9#0#9#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(4@52"'for' loop initial declaration used outside C99 mode321904736#797#174#0(6@108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m269805591#155#0#155#0#0"0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m8608927776#2397"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logger.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.375820
+e321904736.622167
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m321904736#321904736#0(0"0(0#0#113"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m8606607392#2407"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.381434
+e321904736.576219
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@117"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m321904736#321904736#0(0"0(0#0#109"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m8606070592#2399"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Logging.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.383019
+e321904736.574191
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:5:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent initialize]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: 'startTime' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: (Each undeclared identifier is reported only once
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: for each function it appears in.)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: 'NSCalendarDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: At top level:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:21: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent startTime]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:23: error: 'startTime' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent logger:level:lineNumber:fileName:methodName:message:exception:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:68: error: 'NSCalendarDate' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent initWithLogger:level:lineNumber:fileName:methodName:message:exception:eventTimestamp:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:101: error: 'timestamp' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent dealloc]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:112: error: 'timestamp' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: At top level:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:159: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent timestamp]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:161: error: 'timestamp' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent millisSinceStart]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:172: error: 'timestamp' undeclared (first use in this function)
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:172: error: 'startTime' undeclared (first use in this function)
+lSLF07#2@122"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m321904736#321904736#0(4631"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:5:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent initialize]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: 'startTime' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: (Each undeclared identifier is reported only once/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: for each function it appears in.)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:18: error: 'NSCalendarDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: At top level:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:21: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent startTime]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:23: error: 'startTime' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '+[L4LoggingEvent logger:level:lineNumber:fileName:methodName:message:exception:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:68: error: 'NSCalendarDate' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent initWithLogger:level:lineNumber:fileName:methodName:message:exception:eventTimestamp:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:101: error: 'timestamp' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent dealloc]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:112: error: 'timestamp' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: At top level:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:159: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent timestamp]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:161: error: 'timestamp' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m: In function '-[L4LoggingEvent millisSinceStart]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:172: error: 'timestamp' undeclared (first use in this function)/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m:172: error: 'startTime' undeclared (first use in this function)17(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#140#184#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#5#0#5#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#324#163#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#5#0#5#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#487#164#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#5#0#5#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(4@65"Expected '=', ',', ';', 'asm' or '__attribute__' before '*' token321904736#651#192#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#12#0#12#0#19"expected * before *0(4@51"'startTime' undeclared (first use in this function)321904736#1003#178#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#18#0#18#0#43"'*' undeclared (first use in this function)0(4@56"'NSCalendarDate' undeclared (first use in this function)321904736#1517#183#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#18#0#18#0#43"'*' undeclared (first use in this function)0(23@13"At top level:321904736#1700#130#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#0#0#0#0#0"0(4@36"Expected ')' before 'NSCalendarDate'321904736#1830#163#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#21#0#21#0#19"expected * before *0(4@51"'startTime' undeclared (first use in this function)321904736#2152#178#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#23#0#23#0#43"'*' undeclared (first use in this function)0(4@56"'NSCalendarDate' undeclared (first use in this function)321904736#2542#183#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#68#0#68#0#43"'*' undeclared (first use in this function)0(4@51"'timestamp' undeclared (first use in this function)321904736#2960#179#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#101#0#101#0#43"'*' undeclared (first use in this function)0(4@51"'timestamp' undeclared (first use in this function)321904736#3296#179#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#112#0#112#0#43"'*' undeclared (first use in this function)0(23@13"At top level:321904736#3475#130#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#0#0#0#0#0"0(4@36"Expected ')' before 'NSCalendarDate'321904736#3605#164#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#159#0#159#0#19"expected * before *0(4@51"'timestamp' undeclared (first use in this function)321904736#3928#179#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#161#0#161#0#43"'*' undeclared (first use in this function)0(4@51"'timestamp' undeclared (first use in this function)321904736#4273#179#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#172#0#172#0#43"'*' undeclared (first use in this function)0(4@51"'startTime' undeclared (first use in this function)321904736#4452#179#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m269805591#172#0#172#0#43"'*' undeclared (first use in this function)0(0#0#114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m8603360192#2409"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.574321
+e321904736.814180
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:8:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m: In function '-[L4PatternLayout convertTokenString:withLoggingEvent:intoString:]':
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: no '-descriptionWithCalendarFormat:' method found
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: (Messages without a matching method signature
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: will be assumed to return 'id' and accept
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: '...' as arguments.)
+lSLF07#2@123"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321904736#321904736#0(1530"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:8:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m: In function '-[L4PatternLayout convertTokenString:withLoggingEvent:intoString:]':/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: no '-descriptionWithCalendarFormat:' method found/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: (Messages without a matching method signature/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: will be assumed to return 'id' and accept/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m:379: warning: '...' as arguments.)5(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#141#184#2(7@137"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321904736#18446744073709551615#0#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321903779#8#0#8#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#325#163#2(7@137"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321904736#18446744073709551615#0#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321903779#8#0#8#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#488#164#2(7@137"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321904736#18446744073709551615#0#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321903779#8#0#8#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(22@49"No '-descriptionWithCalendarFormat:' method found321904736#851#180#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321903779#379#0#379#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)321904736#1031#176#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321903779#379#0#379#0#0"0(0#0#115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m8603166080#2411"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.576333
+e321904736.840045
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@120"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m321904736#321904736#0(0"0(0#0#112"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m8601372160#2405"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4Properties.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.622313
+e321904736.868436
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@130"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m321904736#321904736#0(0"0(0#0#122"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m8599821408#2425"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.772743
+e321904736.981409
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m:7:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@129"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m321904736#321904736#0(658"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m:7:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904736#147#184#2(7@143"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m321904736#18446744073709551615#0#0(6@121"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m269805591#7#0#7#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#331#163#2(7@143"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m321904736#18446744073709551615#0#0(6@121"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m269805591#7#0#7#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904736#494#164#2(7@143"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m321904736#18446744073709551615#0#0(6@121"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m269805591#7#0#7#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904736#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#121"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m8608398656#2423"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.814323
+e321904737.037765
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@120"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m321904736#321904737#0(0"0(0#0#112"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m8242266043724362752#2405"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4RootLogger.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o"0#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.840191
+e321904737.021411
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m:6:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@122"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m321904736#321904737#0(651"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m:6:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904737#140#184#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m218924142#6#0#6#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#324#163#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m218924142#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#487#164#2(7@136"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m218924142#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m8601436256#2409"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.868574
+e321904737.041498
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m:6:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@127"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m321904736#321904737#0(656"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m:6:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904737#145#184#2(7@141"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m321904737#18446744073709551615#0#0(6@119"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m255736667#6#0#6#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#329#163#2(7@141"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m321904737#18446744073709551615#0#0(6@119"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m255736667#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#492#164#2(7@141"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m321904737#18446744073709551615#0#0(6@119"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m255736667#6#0#6#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#119"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m8605401856#2419"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904736.981533
+e321904737.150727
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m:3:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'
+lSLF07#2@124"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m321904736#321904737#0(653"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m:3:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:18: error: expected specifier-qualifier-list before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:36: error: expected ')' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h:109: error: expected ')' before 'NSCalendarDate'3(4@57"Expected specifier-qualifier-list before 'NSCalendarDate'321904737#142#184#2(7@138"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m321904737#18446744073709551615#0#0(6@116"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m269805591#3#0#3#0#0"0(13@175"Expected specifier-qualifier-list before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#18#0#18#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#326#163#2(7@138"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m321904737#18446744073709551615#0#0(6@116"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m269805591#3#0#3#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#36#0#36#0#19"expected * before *0(4@36"Expected ')' before 'NSCalendarDate'321904737#489#164#2(7@138"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m321904737#18446744073709551615#0#0(6@116"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m269805591#3#0#3#0#0"0(13@154"Expected ')' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h321904737#18446744073709551615#0#0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#0"0(6@114"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/L4LoggingEvent.h255584106#109#0#109#0#19"expected * before *0(0#0#116"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m8605207200#2413"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904737.037910
+e321904737.063498
+r0
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m:35:
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NSCalendarDate'
+o/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h:38: error: cannot find interface declaration for 'NSDate'
+lSLF07#2@126"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321904737#321904737#0(519"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m:35:/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NSCalendarDate'/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h:38: error: cannot find interface declaration for 'NSDate'2(4@72"Expected '=', ',', ';', 'asm' or '__attribute__' before 'NSCalendarDate'321904737#145#200#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321904737#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321904502#35#0#35#0#0"0(13@191"Expected '=', ',', ';', 'asm' or '__attribute__' before 'NSCalendarDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904737#18446744073709551615#0#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904243#34#0#34#0#0"0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904243#34#0#34#0#19"expected * before *0(4@46"Cannot find interface declaration for 'NSDate'321904737#345#174#2(7@140"In file included from /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321904737#18446744073709551615#0#0(6@118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321904502#35#0#35#0#0"0(13@165"Cannot find interface declaration for 'NSDate' in /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904737#18446744073709551615#0#0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904243#38#0#38#0#0"0(6@115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Headers/NSDate-Calendar.h321904243#38#0#38#0#0"0(0#0#118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m8608228512#2414"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o"1#
+
+CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s321904737.021548
+e321904737.165699
+r1
+xCompileC
+xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o
+x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@126"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m321904737#321904737#0(0"0(0#0#118"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m8606448000#2417"    cd "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap" -iquote "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap" "-F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386" "-I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources" -c "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m" -o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o"0#
+
+CLibtool "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a" normal i386
+r0
+

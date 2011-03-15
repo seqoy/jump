@@ -1,0 +1,9 @@
+h1. Objective-C Categories!
+
+Have you patched Objective-C to work better for you? If so, then fork this repo and add them!
+
+Pass it along!
+
+h1. Log4Cocoa Modifications
+
+Added selectors and NSDate typedef to allow this category to fix issues with using log4cocoa in an iPhone project.

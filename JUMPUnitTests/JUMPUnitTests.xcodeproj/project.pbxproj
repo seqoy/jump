@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18448B0C132FF7420061513B /* JUMPLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLoggerTest.m */; };
+		18448B1C132FF99A0061513B /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18448B1B132FF99A0061513B /* libJUMPLogger.a */; };
 		3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6848D613241B1500F6D21A /* GHUnitIOS.framework */; };
 		3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68491E13241B7500F6D21A /* CoreGraphics.framework */; };
 		3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68492113241B8000F6D21A /* Foundation.framework */; };
@@ -24,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18448B06132FF6F50061513B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18647731132FF621002CBD59;
+			remoteInfo = JUMPLogger;
+		};
+		18448B08132FF7050061513B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18647730132FF621002CBD59;
+			remoteInfo = JUMPLogger;
+		};
 		3A68496413241E1700F6D21A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
@@ -42,19 +58,22 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */;
+			remoteGlobalIDString = 3AA51FC3132BE80F002D989C;
 			remoteInfo = JUMPUserInterface;
 		};
 		3AA6921E132C1EE500780D21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 3AA51FC2132BE80F002D989C /* JUMPUserInterface */;
+			remoteGlobalIDString = 3AA51FC2132BE80F002D989C;
 			remoteInfo = JUMPUserInterface;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPLogger.xcodeproj; path = ../JUMPLogger/JUMPLogger.xcodeproj; sourceTree = "<group>"; };
+		18448B0B132FF7420061513B /* JUMPLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLoggerTest.m; path = Sources/JUMPLoggerTest.m; sourceTree = "<group>"; };
+		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
 		3A6848CE132419FC00F6D21A /* JUMPDatabaseTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUMPDatabaseTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6848D1132419FD00F6D21A /* JUMPDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JUMPDatabaseTests-Info.plist"; sourceTree = "<group>"; };
 		3A6848D613241B1500F6D21A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
@@ -79,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18448B1C132FF99A0061513B /* libJUMPLogger.a in Frameworks */,
 				3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */,
 				3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */,
 				3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */,
@@ -92,6 +112,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18448AFC132FF6F50061513B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18448B07132FF6F50061513B /* libJUMPLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18448B0A132FF7240061513B /* JUMPLogger */ = {
+			isa = PBXGroup;
+			children = (
+				18448B0B132FF7420061513B /* JUMPLoggerTest.m */,
+			);
+			name = JUMPLogger;
+			sourceTree = "<group>";
+		};
 		3A6848BD132419D600F6D21A = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +151,7 @@
 		3A6848F713241B4C00F6D21A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18448B1B132FF99A0061513B /* libJUMPLogger.a */,
 				3A68494613241D0100F6D21A /* GHUnit */,
 				3A68491E13241B7500F6D21A /* CoreGraphics.framework */,
 				3A68492113241B8000F6D21A /* Foundation.framework */,
@@ -136,6 +173,7 @@
 		3A68494713241D1300F6D21A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				18448B0A132FF7240061513B /* JUMPLogger */,
 				3AA6920B132C1EAE00780D21 /* JUMPUserInterface */,
 				3A68494813241D1A00F6D21A /* JUMPDatabase */,
 			);
@@ -155,6 +193,7 @@
 		3A68494913241D2000F6D21A /* Dependecies */ = {
 			isa = PBXGroup;
 			children = (
+				18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */,
 				3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */,
 				3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */,
 			);
@@ -209,6 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				18448B09132FF7050061513B /* PBXTargetDependency */,
 				3A68496713241E1F00F6D21A /* PBXTargetDependency */,
 				3AA6921F132C1EE500780D21 /* PBXTargetDependency */,
 			);
@@ -241,6 +281,10 @@
 					ProjectRef = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
 				},
 				{
+					ProductGroup = 18448AFC132FF6F50061513B /* Products */;
+					ProjectRef = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
+				},
+				{
 					ProductGroup = 3AA6920E132C1EC600780D21 /* Products */;
 					ProjectRef = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
 				},
@@ -253,6 +297,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		18448B07132FF6F50061513B /* libJUMPLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPLogger.a;
+			remoteRef = 18448B06132FF6F50061513B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3A68496513241E1700F6D21A /* libJUMPDatabase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -291,12 +342,18 @@
 				3A684A421324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m in Sources */,
 				3A684A7213242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m in Sources */,
 				3AA69229132C1F0200780D21 /* JUMPColorTest.m in Sources */,
+				18448B0C132FF7420061513B /* JUMPLoggerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18448B09132FF7050061513B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPLogger;
+			targetProxy = 18448B08132FF7050061513B /* PBXContainerItemProxy */;
+		};
 		3A68496713241E1F00F6D21A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JUMPDatabase;
@@ -314,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 			};
 			name = Debug;
 		};
@@ -321,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 			};
 			name = Release;
 		};
@@ -341,6 +400,10 @@
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
 				INFOPLIST_FILE = "JUMPDatabaseTests-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -372,6 +435,10 @@
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
 				INFOPLIST_FILE = "JUMPDatabaseTests-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Log4CocoaTouch' target in the 'Log4CocoaTouch' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

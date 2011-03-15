@@ -1,0 +1,100 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = D2AAC07D0554694100DB518D /* JUMPDatabase */;
+		codeSenseManager = 18D05E95132FEDBF00813610 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					817,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 321908792;
+			PBXWorkspaceStateSaveDate = 321908792;
+		};
+		perUserProjectItems = {
+			18D05EC4132FF05200813610 /* PBXTextBookmark */ = 18D05EC4132FF05200813610 /* PBXTextBookmark */;
+			18D05EC5132FF05200813610 /* PBXTextBookmark */ = 18D05EC5132FF05200813610 /* PBXTextBookmark */;
+			18D05ECF132FF2B900813610 /* PBXTextBookmark */ = 18D05ECF132FF2B900813610 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 18D05E94132FEDBF00813610 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	18D05E94132FEDBF00813610 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	18D05E95132FEDBF00813610 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	18D05EC4132FF05200813610 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E3441132305F300970E2B /* JPDBManagerAction.h */;
+		name = "JPDBManagerAction.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2227;
+		vrLoc = 0;
+	};
+	18D05EC5132FF05200813610 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E3442132305F300970E2B /* JPDBManagerAction.m */;
+		rLen = 1;
+		rLoc = 159;
+		rType = 1;
+	};
+	18D05ECF132FF2B900813610 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E3442132305F300970E2B /* JPDBManagerAction.m */;
+		name = "JPDBManagerAction.m: 170";
+		rLen = 0;
+		rLoc = 7679;
+		rType = 0;
+		vrLen = 2554;
+		vrLoc = 6021;
+	};
+	3A5E3441132305F300970E2B /* JPDBManagerAction.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1181, 6760}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2227}";
+		};
+	};
+	3A5E3442132305F300970E2B /* JPDBManagerAction.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1727, 7163}}";
+			sepNavSelRange = "{7679, 0}";
+			sepNavVisRange = "{6021, 2554}";
+		};
+	};
+	D2AAC07D0554694100DB518D /* JUMPDatabase */ = {
+		activeExec = 0;
+	};
+}

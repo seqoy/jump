@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18647738132FF63E002CBD59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18647737132FF63E002CBD59 /* Foundation.framework */; };
+		18647741132FF661002CBD59 /* JPLog4JFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773C132FF661002CBD59 /* JPLog4JFactory.h */; };
+		18647742132FF661002CBD59 /* JPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773D132FF661002CBD59 /* JPLogger.h */; };
+		18647743132FF661002CBD59 /* JPLoggerFactoryInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */; };
+		18647744132FF661002CBD59 /* JPLoggerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773F132FF661002CBD59 /* JPLoggerInterface.h */; };
+		18647745132FF661002CBD59 /* JPLoggerShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 18647740132FF661002CBD59 /* JPLoggerShortcuts.h */; };
+		18647750132FF68F002CBD59 /* JPLog4JFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774E132FF68F002CBD59 /* JPLog4JFactory.m */; };
+		18647751132FF68F002CBD59 /* JPLog4JLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774F132FF68F002CBD59 /* JPLog4JLogger.m */; };
+		18647753132FF69C002CBD59 /* JPLog4JLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18647752132FF69C002CBD59 /* JPLog4JLogger.h */; };
+		18647761132FF6B4002CBD59 /* libLog4CocoTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18647760132FF6B3002CBD59 /* libLog4CocoTouch.a */; };
+		186477DA13300C10002CBD59 /* JPLoggerShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 186477D913300C10002CBD59 /* JPLoggerShortcuts.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1864775F132FF6B3002CBD59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1861E5DF132FE02F00F970A6;
+			remoteInfo = Log4CocoTouch;
+		};
+		18647762132FF6BB002CBD59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1861E5DE132FE02F00F970A6;
+			remoteInfo = Log4CocoTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18647731132FF621002CBD59 /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		18647737132FF63E002CBD59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1864773C132FF661002CBD59 /* JPLog4JFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLog4JFactory.h; sourceTree = "<group>"; };
+		1864773D132FF661002CBD59 /* JPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLogger.h; sourceTree = "<group>"; };
+		1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerFactoryInterface.h; sourceTree = "<group>"; };
+		1864773F132FF661002CBD59 /* JPLoggerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerInterface.h; sourceTree = "<group>"; };
+		18647740132FF661002CBD59 /* JPLoggerShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerShortcuts.h; sourceTree = "<group>"; };
+		1864774E132FF68F002CBD59 /* JPLog4JFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4JFactory.m; path = Sources/JPLog4JFactory.m; sourceTree = "<group>"; };
+		1864774F132FF68F002CBD59 /* JPLog4JLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4JLogger.m; path = Sources/JPLog4JLogger.m; sourceTree = "<group>"; };
+		18647752132FF69C002CBD59 /* JPLog4JLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLog4JLogger.h; sourceTree = "<group>"; };
+		18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Log4CocoaTouch.xcodeproj; path = Libraries/Log4CocoaTouch/Log4CocoaTouch.xcodeproj; sourceTree = "<group>"; };
+		186477D913300C10002CBD59 /* JPLoggerShortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLoggerShortcuts.m; path = Sources/JPLoggerShortcuts.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1864772F132FF621002CBD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18647738132FF63E002CBD59 /* Foundation.framework in Frameworks */,
+				18647761132FF6B4002CBD59 /* libLog4CocoTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18647721132FF60E002CBD59 = {
+			isa = PBXGroup;
+			children = (
+				18647757132FF6AB002CBD59 /* Third-Part */,
+				1864774C132FF677002CBD59 /* Sources */,
+				1864773B132FF661002CBD59 /* Headers */,
+				18647736132FF634002CBD59 /* Frameworks */,
+				18647732132FF621002CBD59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18647732132FF621002CBD59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18647731132FF621002CBD59 /* libJUMPLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18647736132FF634002CBD59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18647737132FF63E002CBD59 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1864773B132FF661002CBD59 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				18647746132FF665002CBD59 /* Interfaces */,
+				1864773C132FF661002CBD59 /* JPLog4JFactory.h */,
+				1864773D132FF661002CBD59 /* JPLogger.h */,
+				18647740132FF661002CBD59 /* JPLoggerShortcuts.h */,
+				18647752132FF69C002CBD59 /* JPLog4JLogger.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		18647746132FF665002CBD59 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */,
+				1864773F132FF661002CBD59 /* JPLoggerInterface.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		1864774C132FF677002CBD59 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				186477D913300C10002CBD59 /* JPLoggerShortcuts.m */,
+				1864774E132FF68F002CBD59 /* JPLog4JFactory.m */,
+				1864774F132FF68F002CBD59 /* JPLog4JLogger.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		18647757132FF6AB002CBD59 /* Third-Part */ = {
+			isa = PBXGroup;
+			children = (
+				18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */,
+			);
+			name = "Third-Part";
+			sourceTree = "<group>";
+		};
+		18647759132FF6B3002CBD59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18647760132FF6B3002CBD59 /* libLog4CocoTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1864772D132FF621002CBD59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18647741132FF661002CBD59 /* JPLog4JFactory.h in Headers */,
+				18647742132FF661002CBD59 /* JPLogger.h in Headers */,
+				18647743132FF661002CBD59 /* JPLoggerFactoryInterface.h in Headers */,
+				18647744132FF661002CBD59 /* JPLoggerInterface.h in Headers */,
+				18647745132FF661002CBD59 /* JPLoggerShortcuts.h in Headers */,
+				18647753132FF69C002CBD59 /* JPLog4JLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18647730132FF621002CBD59 /* JUMPLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18647735132FF622002CBD59 /* Build configuration list for PBXNativeTarget "JUMPLogger" */;
+			buildPhases = (
+				1864772D132FF621002CBD59 /* Headers */,
+				1864772E132FF621002CBD59 /* Sources */,
+				1864772F132FF621002CBD59 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18647763132FF6BB002CBD59 /* PBXTargetDependency */,
+			);
+			name = JUMPLogger;
+			productName = JUMPLogger;
+			productReference = 18647731132FF621002CBD59 /* libJUMPLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18647723132FF60E002CBD59 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 18647726132FF60E002CBD59 /* Build configuration list for PBXProject "JUMPLogger" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 18647721132FF60E002CBD59;
+			productRefGroup = 18647732132FF621002CBD59 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18647759132FF6B3002CBD59 /* Products */;
+					ProjectRef = 18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				18647730132FF621002CBD59 /* JUMPLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18647760132FF6B3002CBD59 /* libLog4CocoTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLog4CocoTouch.a;
+			remoteRef = 1864775F132FF6B3002CBD59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1864772E132FF621002CBD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18647750132FF68F002CBD59 /* JPLog4JFactory.m in Sources */,
+				18647751132FF68F002CBD59 /* JPLog4JLogger.m in Sources */,
+				186477DA13300C10002CBD59 /* JPLoggerShortcuts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18647763132FF6BB002CBD59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Log4CocoTouch;
+			targetProxy = 18647762132FF6BB002CBD59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18647724132FF60E002CBD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		18647725132FF60E002CBD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		18647733132FF622002CBD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Libraries/Log4CocoaTouch/Headers\"/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPLogger;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18647734132FF622002CBD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Libraries/Log4CocoaTouch/Headers\"/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPLogger;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18647726132FF60E002CBD59 /* Build configuration list for PBXProject "JUMPLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18647724132FF60E002CBD59 /* Debug */,
+				18647725132FF60E002CBD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18647735132FF622002CBD59 /* Build configuration list for PBXNativeTarget "JUMPLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18647733132FF622002CBD59 /* Debug */,
+				18647734132FF622002CBD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18647723132FF60E002CBD59 /* Project object */;
+}

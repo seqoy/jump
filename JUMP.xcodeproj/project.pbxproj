@@ -14,6 +14,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		181B72E1132FA44800433E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181B72DA132FA44800433E98 /* JUMPUserInterface.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AA51FC3132BE80F002D989C;
+			remoteInfo = JUMPUserInterface;
+		};
+		181B730B132FACF200433E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181B7303132FACF200433E98 /* JUMPDatabase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPDatabase;
+		};
 		3A2CE7DF131AF2CB00ED5B5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
@@ -59,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181B72DA132FA44800433E98 /* JUMPUserInterface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPUserInterface.xcodeproj; path = JUMPUserInterface/JUMPUserInterface.xcodeproj; sourceTree = "<group>"; };
+		181B7303132FACF200433E98 /* JUMPDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPDatabase.xcodeproj; path = JUMPDatabase/JUMPDatabase.xcodeproj; sourceTree = "<group>"; };
 		3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPData.xcodeproj; path = JUMPData/JUMPData.xcodeproj; sourceTree = "<group>"; };
 		3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPCore.xcodeproj; path = JUMPCore/JUMPCore.xcodeproj; sourceTree = "<group>"; };
 		3A9178E1132EF93400506E72 /* JUMPHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUMPHeaders.h; path = Sources/JUMPHeaders.h; sourceTree = "<group>"; };
@@ -80,6 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181B72DB132FA44800433E98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181B72E2132FA44800433E98 /* libJUMPUserInterface.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181B7304132FACF200433E98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181B730C132FACF200433E98 /* libJUMPDatabase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3A2CE7DC131AF2CB00ED5B5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +148,8 @@
 		3AEF15821318293D00BC3759 /* Dependecies */ = {
 			isa = PBXGroup;
 			children = (
+				181B7303132FACF200433E98 /* JUMPDatabase.xcodeproj */,
+				181B72DA132FA44800433E98 /* JUMPUserInterface.xcodeproj */,
 				3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */,
 				3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */,
 				3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */,
@@ -201,8 +235,16 @@
 					ProjectRef = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
 				},
 				{
+					ProductGroup = 181B7304132FACF200433E98 /* Products */;
+					ProjectRef = 181B7303132FACF200433E98 /* JUMPDatabase.xcodeproj */;
+				},
+				{
 					ProductGroup = 3AEF19E313184C8B00BC3759 /* Products */;
 					ProjectRef = 3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 181B72DB132FA44800433E98 /* Products */;
+					ProjectRef = 181B72DA132FA44800433E98 /* JUMPUserInterface.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -213,6 +255,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		181B72E2132FA44800433E98 /* libJUMPUserInterface.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPUserInterface.a;
+			remoteRef = 181B72E1132FA44800433E98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		181B730C132FACF200433E98 /* libJUMPDatabase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPDatabase.a;
+			remoteRef = 181B730B132FACF200433E98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;

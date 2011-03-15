@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	18647723132FF60E002CBD59 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 18647730132FF621002CBD59 /* JUMPLogger */;
+		addToTargets = (
+			18647730132FF621002CBD59 /* JUMPLogger */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 18647728132FF60E002CBD59 /* Code sense */;
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					765,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					658,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 321915213;
+			PBXWorkspaceStateSaveDate = 321915213;
+		};
+		perUserProjectItems = {
+			18647754132FF6A6002CBD59 /* PBXTextBookmark */ = 18647754132FF6A6002CBD59 /* PBXTextBookmark */;
+			18647783132FF7F1002CBD59 /* PBXTextBookmark */ = 18647783132FF7F1002CBD59 /* PBXTextBookmark */;
+			1864779813300636002CBD59 /* PBXTextBookmark */ = 1864779813300636002CBD59 /* PBXTextBookmark */;
+			1864779A13300636002CBD59 /* PBXTextBookmark */ = 1864779A13300636002CBD59 /* PBXTextBookmark */;
+			186477E913300D08002CBD59 /* PBXTextBookmark */ = 186477E913300D08002CBD59 /* PBXTextBookmark */;
+			186477EB13300D08002CBD59 /* PBXTextBookmark */ = 186477EB13300D08002CBD59 /* PBXTextBookmark */;
+			186477ED13300D08002CBD59 /* PBXTextBookmark */ = 186477ED13300D08002CBD59 /* PBXTextBookmark */;
+			186477FA13300E52002CBD59 /* PBXTextBookmark */ = 186477FA13300E52002CBD59 /* PBXTextBookmark */;
+			1864780113300F60002CBD59 /* PBXTextBookmark */ = 1864780113300F60002CBD59 /* PBXTextBookmark */;
+			18647825133011DF002CBD59 /* PBXTextBookmark */ = 18647825133011DF002CBD59 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 18647727132FF60E002CBD59 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	18647727132FF60E002CBD59 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	18647728132FF60E002CBD59 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	18647730132FF621002CBD59 /* JUMPLogger */ = {
+		activeExec = 0;
+	};
+	1864773D132FF661002CBD59 /* JPLogger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {971, 594}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1494}";
+		};
+	};
+	1864773F132FF661002CBD59 /* JPLoggerInterface.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {831, 1430}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1293}";
+		};
+	};
+	18647740132FF661002CBD59 /* JPLoggerShortcuts.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 767}}";
+			sepNavSelRange = "{2124, 0}";
+			sepNavVisRange = "{534, 2686}";
+		};
+	};
+	1864774E132FF68F002CBD59 /* JPLog4JFactory.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 1053}}";
+			sepNavSelRange = "{1176, 0}";
+			sepNavVisRange = "{262, 1570}";
+		};
+	};
+	1864774F132FF68F002CBD59 /* JPLog4JLogger.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 1196}}";
+			sepNavSelRange = "{1031, 0}";
+			sepNavVisRange = "{1482, 2207}";
+		};
+	};
+	18647752132FF69C002CBD59 /* JPLog4JLogger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 646}}";
+			sepNavSelRange = "{794, 0}";
+			sepNavVisRange = "{0, 794}";
+		};
+	};
+	18647754132FF6A6002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864773F132FF661002CBD59 /* JPLoggerInterface.h */;
+		name = "JPLoggerInterface.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 0;
+	};
+	18647783132FF7F1002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864773D132FF661002CBD59 /* JPLogger.h */;
+		name = "JPLogger.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1494;
+		vrLoc = 0;
+	};
+	1864779813300636002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 18647752132FF69C002CBD59 /* JPLog4JLogger.h */;
+		name = "JPLog4JLogger.h: 22";
+		rLen = 0;
+		rLoc = 794;
+		rType = 0;
+		vrLen = 794;
+		vrLoc = 0;
+	};
+	1864779A13300636002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864774F132FF68F002CBD59 /* JPLog4JLogger.m */;
+		name = "JPLog4JLogger.m: 27";
+		rLen = 0;
+		rLoc = 1031;
+		rType = 0;
+		vrLen = 2207;
+		vrLoc = 1482;
+	};
+	186477D913300C10002CBD59 /* JPLoggerShortcuts.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {971, 616}}";
+			sepNavSelRange = "{844, 0}";
+			sepNavVisRange = "{0, 1733}";
+		};
+	};
+	186477E913300D08002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186477EA13300D08002CBD59 /* JPPathFunctions.m */;
+		name = "JPPathFunctions.m: 29";
+		rLen = 0;
+		rLoc = 1484;
+		rType = 0;
+		vrLen = 1872;
+		vrLoc = 0;
+	};
+	186477EA13300D08002CBD59 /* JPPathFunctions.m */ = {
+		isa = PBXFileReference;
+		name = JPPathFunctions.m;
+		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPCore/Sources/JPPathFunctions.m;
+		sourceTree = "<absolute>";
+	};
+	186477EB13300D08002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186477EC13300D08002CBD59 /* JPPathFunctions.h */;
+		name = "JPPathFunctions.h: 56";
+		rLen = 59;
+		rLoc = 2020;
+		rType = 0;
+		vrLen = 1547;
+		vrLoc = 534;
+	};
+	186477EC13300D08002CBD59 /* JPPathFunctions.h */ = {
+		isa = PBXFileReference;
+		name = JPPathFunctions.h;
+		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPCore/Headers/JPPathFunctions.h;
+		sourceTree = "<absolute>";
+	};
+	186477ED13300D08002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864774E132FF68F002CBD59 /* JPLog4JFactory.m */;
+		name = "JPLog4JFactory.m: 32";
+		rLen = 0;
+		rLoc = 1176;
+		rType = 0;
+		vrLen = 1570;
+		vrLoc = 262;
+	};
+	186477FA13300E52002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186477D913300C10002CBD59 /* JPLoggerShortcuts.m */;
+		name = "JPLoggerShortcuts.m: 33";
+		rLen = 0;
+		rLoc = 1733;
+		rType = 0;
+		vrLen = 1208;
+		vrLoc = 0;
+	};
+	1864780113300F60002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 18647740132FF661002CBD59 /* JPLoggerShortcuts.h */;
+		name = "JPLoggerShortcuts.h: 44";
+		rLen = 0;
+		rLoc = 2124;
+		rType = 0;
+		vrLen = 2686;
+		vrLoc = 534;
+	};
+	18647825133011DF002CBD59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 186477D913300C10002CBD59 /* JPLoggerShortcuts.m */;
+		name = "JPLoggerShortcuts.m: 20";
+		rLen = 0;
+		rLoc = 844;
+		rType = 0;
+		vrLen = 1733;
+		vrLoc = 0;
+	};
+}

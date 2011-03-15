@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1861E5E2132FE04800F970A6 /* L4AppenderAttachable.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B748B132FDF0900433E98 /* L4AppenderAttachable.h */; };
+		1861E5E3132FE04800F970A6 /* L4AppenderProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B748C132FDF0900433E98 /* L4AppenderProtocols.h */; };
+		1861E5E4132FE04800F970A6 /* L4AppenderSkeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B748D132FDF0900433E98 /* L4AppenderSkeleton.h */; };
+		1861E5E5132FE04800F970A6 /* L4BasicConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B748E132FDF0900433E98 /* L4BasicConfigurator.h */; };
+		1861E5E6132FE04800F970A6 /* L4ConsoleAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B748F132FDF0900433E98 /* L4ConsoleAppender.h */; };
+		1861E5E7132FE04800F970A6 /* L4DailyRollingFileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7490132FDF0900433E98 /* L4DailyRollingFileAppender.h */; };
+		1861E5E8132FE04800F970A6 /* L4DenyAllFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7491132FDF0900433E98 /* L4DenyAllFilter.h */; };
+		1861E5E9132FE04800F970A6 /* L4FileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7492132FDF0900433E98 /* L4FileAppender.h */; };
+		1861E5EA132FE04800F970A6 /* L4Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7493132FDF0900433E98 /* L4Filter.h */; };
+		1861E5EB132FE04800F970A6 /* L4Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7494132FDF0900433E98 /* L4Layout.h */; };
+		1861E5EC132FE04800F970A6 /* L4Level.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7495132FDF0900433E98 /* L4Level.h */; };
+		1861E5ED132FE04800F970A6 /* L4LevelMatchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7496132FDF0900433E98 /* L4LevelMatchFilter.h */; };
+		1861E5EE132FE04800F970A6 /* L4LevelRangeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7497132FDF0900433E98 /* L4LevelRangeFilter.h */; };
+		1861E5EF132FE04800F970A6 /* L4Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7498132FDF0900433E98 /* L4Logger.h */; };
+		1861E5F0132FE04800F970A6 /* L4LoggerProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B7499132FDF0900433E98 /* L4LoggerProtocols.h */; };
+		1861E5F1132FE04800F970A6 /* L4LoggerStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749A132FDF0900433E98 /* L4LoggerStore.h */; };
+		1861E5F2132FE04800F970A6 /* L4Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749B132FDF0900433E98 /* L4Logging.h */; };
+		1861E5F3132FE04800F970A6 /* L4LoggingEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749C132FDF0900433E98 /* L4LoggingEvent.h */; };
+		1861E5F4132FE04800F970A6 /* L4LogLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749D132FDF0900433E98 /* L4LogLog.h */; };
+		1861E5F5132FE04800F970A6 /* L4PatternLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749E132FDF0900433E98 /* L4PatternLayout.h */; };
+		1861E5F6132FE04800F970A6 /* L4Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B749F132FDF0900433E98 /* L4Properties.h */; };
+		1861E5F7132FE04800F970A6 /* L4PropertyConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A0132FDF0900433E98 /* L4PropertyConfigurator.h */; };
+		1861E5F8132FE04800F970A6 /* L4RollingFileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A1132FDF0900433E98 /* L4RollingFileAppender.h */; };
+		1861E5F9132FE04800F970A6 /* L4RootLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A2132FDF0900433E98 /* L4RootLogger.h */; };
+		1861E5FA132FE04800F970A6 /* L4SimpleLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A3132FDF0900433E98 /* L4SimpleLayout.h */; };
+		1861E5FB132FE04800F970A6 /* L4StringMatchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A4132FDF0900433E98 /* L4StringMatchFilter.h */; };
+		1861E5FC132FE04800F970A6 /* L4WriterAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A5132FDF0900433E98 /* L4WriterAppender.h */; };
+		1861E5FD132FE04800F970A6 /* Log4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A6132FDF0900433E98 /* Log4Cocoa.h */; };
+		1861E5FE132FE04800F970A6 /* Log4CocoaDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A7132FDF0900433E98 /* Log4CocoaDefines.h */; };
+		1861E5FF132FE04800F970A6 /* NSDate-Calendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A8132FDF0900433E98 /* NSDate-Calendar.h */; };
+		1861E600132FE04800F970A6 /* NSObject+Log4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 181B74A9132FDF0900433E98 /* NSObject+Log4Cocoa.h */; };
+		1861E601132FE05300F970A6 /* L4AppenderAttachable.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74C9132FDF1200433E98 /* L4AppenderAttachable.m */; };
+		1861E602132FE05300F970A6 /* L4AppenderSkeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CA132FDF1200433E98 /* L4AppenderSkeleton.m */; };
+		1861E603132FE05300F970A6 /* L4BasicConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CB132FDF1200433E98 /* L4BasicConfigurator.m */; };
+		1861E604132FE05300F970A6 /* L4ConsoleAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CC132FDF1200433E98 /* L4ConsoleAppender.m */; };
+		1861E605132FE05300F970A6 /* L4DailyRollingFileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CD132FDF1200433E98 /* L4DailyRollingFileAppender.m */; };
+		1861E606132FE05300F970A6 /* L4DenyAllFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CE132FDF1200433E98 /* L4DenyAllFilter.m */; };
+		1861E607132FE05300F970A6 /* L4FileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74CF132FDF1200433E98 /* L4FileAppender.m */; };
+		1861E608132FE05300F970A6 /* L4Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D0132FDF1200433E98 /* L4Filter.m */; };
+		1861E609132FE05300F970A6 /* L4Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D1132FDF1200433E98 /* L4Layout.m */; };
+		1861E60A132FE05300F970A6 /* L4Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D2132FDF1200433E98 /* L4Level.m */; };
+		1861E60B132FE05300F970A6 /* L4LevelMatchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D3132FDF1200433E98 /* L4LevelMatchFilter.m */; };
+		1861E60C132FE05300F970A6 /* L4LevelRangeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D4132FDF1200433E98 /* L4LevelRangeFilter.m */; };
+		1861E60D132FE05300F970A6 /* L4Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D5132FDF1200433E98 /* L4Logger.m */; };
+		1861E60E132FE05300F970A6 /* L4LoggerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D6132FDF1200433E98 /* L4LoggerStore.m */; };
+		1861E60F132FE05300F970A6 /* L4Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D7132FDF1200433E98 /* L4Logging.m */; };
+		1861E610132FE05300F970A6 /* L4LoggingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D8132FDF1200433E98 /* L4LoggingEvent.m */; };
+		1861E611132FE05300F970A6 /* L4LogLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74D9132FDF1200433E98 /* L4LogLog.m */; };
+		1861E612132FE05300F970A6 /* L4PatternLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DA132FDF1200433E98 /* L4PatternLayout.m */; };
+		1861E613132FE05300F970A6 /* L4Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DB132FDF1200433E98 /* L4Properties.m */; };
+		1861E614132FE05300F970A6 /* L4PropertyConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DC132FDF1200433E98 /* L4PropertyConfigurator.m */; };
+		1861E615132FE05300F970A6 /* L4RollingFileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DD132FDF1200433E98 /* L4RollingFileAppender.m */; };
+		1861E616132FE05300F970A6 /* L4RootLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DE132FDF1200433E98 /* L4RootLogger.m */; };
+		1861E617132FE05300F970A6 /* L4SimpleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74DF132FDF1200433E98 /* L4SimpleLayout.m */; };
+		1861E618132FE05300F970A6 /* L4StringMatchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74E0132FDF1200433E98 /* L4StringMatchFilter.m */; };
+		1861E619132FE05300F970A6 /* L4WriterAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74E1132FDF1200433E98 /* L4WriterAppender.m */; };
+		1861E61A132FE05300F970A6 /* NSObject+Log4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74E2132FDF1200433E98 /* NSObject+Log4Cocoa.m */; };
+		1861E61B132FE05300F970A6 /* NSDate-Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B74FD132FDF5B00433E98 /* NSDate-Calendar.m */; };
+		1861E61E132FE05B00F970A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181B7393132FD7B800433E98 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181B7393132FD7B800433E98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		181B7397132FD7B800433E98 /* Log4CocoaTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Log4CocoaTouch-Prefix.pch"; sourceTree = "<group>"; };
+		181B748B132FDF0900433E98 /* L4AppenderAttachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4AppenderAttachable.h; path = Headers/L4AppenderAttachable.h; sourceTree = "<group>"; };
+		181B748C132FDF0900433E98 /* L4AppenderProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4AppenderProtocols.h; path = Headers/L4AppenderProtocols.h; sourceTree = "<group>"; };
+		181B748D132FDF0900433E98 /* L4AppenderSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4AppenderSkeleton.h; path = Headers/L4AppenderSkeleton.h; sourceTree = "<group>"; };
+		181B748E132FDF0900433E98 /* L4BasicConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4BasicConfigurator.h; path = Headers/L4BasicConfigurator.h; sourceTree = "<group>"; };
+		181B748F132FDF0900433E98 /* L4ConsoleAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4ConsoleAppender.h; path = Headers/L4ConsoleAppender.h; sourceTree = "<group>"; };
+		181B7490132FDF0900433E98 /* L4DailyRollingFileAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4DailyRollingFileAppender.h; path = Headers/L4DailyRollingFileAppender.h; sourceTree = "<group>"; };
+		181B7491132FDF0900433E98 /* L4DenyAllFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4DenyAllFilter.h; path = Headers/L4DenyAllFilter.h; sourceTree = "<group>"; };
+		181B7492132FDF0900433E98 /* L4FileAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4FileAppender.h; path = Headers/L4FileAppender.h; sourceTree = "<group>"; };
+		181B7493132FDF0900433E98 /* L4Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Filter.h; path = Headers/L4Filter.h; sourceTree = "<group>"; };
+		181B7494132FDF0900433E98 /* L4Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Layout.h; path = Headers/L4Layout.h; sourceTree = "<group>"; };
+		181B7495132FDF0900433E98 /* L4Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Level.h; path = Headers/L4Level.h; sourceTree = "<group>"; };
+		181B7496132FDF0900433E98 /* L4LevelMatchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LevelMatchFilter.h; path = Headers/L4LevelMatchFilter.h; sourceTree = "<group>"; };
+		181B7497132FDF0900433E98 /* L4LevelRangeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LevelRangeFilter.h; path = Headers/L4LevelRangeFilter.h; sourceTree = "<group>"; };
+		181B7498132FDF0900433E98 /* L4Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Logger.h; path = Headers/L4Logger.h; sourceTree = "<group>"; };
+		181B7499132FDF0900433E98 /* L4LoggerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LoggerProtocols.h; path = Headers/L4LoggerProtocols.h; sourceTree = "<group>"; };
+		181B749A132FDF0900433E98 /* L4LoggerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LoggerStore.h; path = Headers/L4LoggerStore.h; sourceTree = "<group>"; };
+		181B749B132FDF0900433E98 /* L4Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Logging.h; path = Headers/L4Logging.h; sourceTree = "<group>"; };
+		181B749C132FDF0900433E98 /* L4LoggingEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LoggingEvent.h; path = Headers/L4LoggingEvent.h; sourceTree = "<group>"; };
+		181B749D132FDF0900433E98 /* L4LogLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4LogLog.h; path = Headers/L4LogLog.h; sourceTree = "<group>"; };
+		181B749E132FDF0900433E98 /* L4PatternLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4PatternLayout.h; path = Headers/L4PatternLayout.h; sourceTree = "<group>"; };
+		181B749F132FDF0900433E98 /* L4Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4Properties.h; path = Headers/L4Properties.h; sourceTree = "<group>"; };
+		181B74A0132FDF0900433E98 /* L4PropertyConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4PropertyConfigurator.h; path = Headers/L4PropertyConfigurator.h; sourceTree = "<group>"; };
+		181B74A1132FDF0900433E98 /* L4RollingFileAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4RollingFileAppender.h; path = Headers/L4RollingFileAppender.h; sourceTree = "<group>"; };
+		181B74A2132FDF0900433E98 /* L4RootLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4RootLogger.h; path = Headers/L4RootLogger.h; sourceTree = "<group>"; };
+		181B74A3132FDF0900433E98 /* L4SimpleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4SimpleLayout.h; path = Headers/L4SimpleLayout.h; sourceTree = "<group>"; };
+		181B74A4132FDF0900433E98 /* L4StringMatchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4StringMatchFilter.h; path = Headers/L4StringMatchFilter.h; sourceTree = "<group>"; };
+		181B74A5132FDF0900433E98 /* L4WriterAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = L4WriterAppender.h; path = Headers/L4WriterAppender.h; sourceTree = "<group>"; };
+		181B74A6132FDF0900433E98 /* Log4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log4Cocoa.h; path = Headers/Log4Cocoa.h; sourceTree = "<group>"; };
+		181B74A7132FDF0900433E98 /* Log4CocoaDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log4CocoaDefines.h; path = Headers/Log4CocoaDefines.h; sourceTree = "<group>"; };
+		181B74A8132FDF0900433E98 /* NSDate-Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate-Calendar.h"; path = "Headers/NSDate-Calendar.h"; sourceTree = "<group>"; };
+		181B74A9132FDF0900433E98 /* NSObject+Log4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Log4Cocoa.h"; path = "Headers/NSObject+Log4Cocoa.h"; sourceTree = "<group>"; };
+		181B74C9132FDF1200433E98 /* L4AppenderAttachable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4AppenderAttachable.m; path = Sources/L4AppenderAttachable.m; sourceTree = "<group>"; };
+		181B74CA132FDF1200433E98 /* L4AppenderSkeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4AppenderSkeleton.m; path = Sources/L4AppenderSkeleton.m; sourceTree = "<group>"; };
+		181B74CB132FDF1200433E98 /* L4BasicConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4BasicConfigurator.m; path = Sources/L4BasicConfigurator.m; sourceTree = "<group>"; };
+		181B74CC132FDF1200433E98 /* L4ConsoleAppender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4ConsoleAppender.m; path = Sources/L4ConsoleAppender.m; sourceTree = "<group>"; };
+		181B74CD132FDF1200433E98 /* L4DailyRollingFileAppender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4DailyRollingFileAppender.m; path = Sources/L4DailyRollingFileAppender.m; sourceTree = "<group>"; };
+		181B74CE132FDF1200433E98 /* L4DenyAllFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4DenyAllFilter.m; path = Sources/L4DenyAllFilter.m; sourceTree = "<group>"; };
+		181B74CF132FDF1200433E98 /* L4FileAppender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4FileAppender.m; path = Sources/L4FileAppender.m; sourceTree = "<group>"; };
+		181B74D0132FDF1200433E98 /* L4Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Filter.m; path = Sources/L4Filter.m; sourceTree = "<group>"; };
+		181B74D1132FDF1200433E98 /* L4Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Layout.m; path = Sources/L4Layout.m; sourceTree = "<group>"; };
+		181B74D2132FDF1200433E98 /* L4Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Level.m; path = Sources/L4Level.m; sourceTree = "<group>"; };
+		181B74D3132FDF1200433E98 /* L4LevelMatchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4LevelMatchFilter.m; path = Sources/L4LevelMatchFilter.m; sourceTree = "<group>"; };
+		181B74D4132FDF1200433E98 /* L4LevelRangeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4LevelRangeFilter.m; path = Sources/L4LevelRangeFilter.m; sourceTree = "<group>"; };
+		181B74D5132FDF1200433E98 /* L4Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Logger.m; path = Sources/L4Logger.m; sourceTree = "<group>"; };
+		181B74D6132FDF1200433E98 /* L4LoggerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4LoggerStore.m; path = Sources/L4LoggerStore.m; sourceTree = "<group>"; };
+		181B74D7132FDF1200433E98 /* L4Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Logging.m; path = Sources/L4Logging.m; sourceTree = "<group>"; };
+		181B74D8132FDF1200433E98 /* L4LoggingEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4LoggingEvent.m; path = Sources/L4LoggingEvent.m; sourceTree = "<group>"; };
+		181B74D9132FDF1200433E98 /* L4LogLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4LogLog.m; path = Sources/L4LogLog.m; sourceTree = "<group>"; };
+		181B74DA132FDF1200433E98 /* L4PatternLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4PatternLayout.m; path = Sources/L4PatternLayout.m; sourceTree = "<group>"; };
+		181B74DB132FDF1200433E98 /* L4Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4Properties.m; path = Sources/L4Properties.m; sourceTree = "<group>"; };
+		181B74DC132FDF1200433E98 /* L4PropertyConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4PropertyConfigurator.m; path = Sources/L4PropertyConfigurator.m; sourceTree = "<group>"; };
+		181B74DD132FDF1200433E98 /* L4RollingFileAppender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4RollingFileAppender.m; path = Sources/L4RollingFileAppender.m; sourceTree = "<group>"; };
+		181B74DE132FDF1200433E98 /* L4RootLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4RootLogger.m; path = Sources/L4RootLogger.m; sourceTree = "<group>"; };
+		181B74DF132FDF1200433E98 /* L4SimpleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4SimpleLayout.m; path = Sources/L4SimpleLayout.m; sourceTree = "<group>"; };
+		181B74E0132FDF1200433E98 /* L4StringMatchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4StringMatchFilter.m; path = Sources/L4StringMatchFilter.m; sourceTree = "<group>"; };
+		181B74E1132FDF1200433E98 /* L4WriterAppender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = L4WriterAppender.m; path = Sources/L4WriterAppender.m; sourceTree = "<group>"; };
+		181B74E2132FDF1200433E98 /* NSObject+Log4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Log4Cocoa.m"; path = "Sources/NSObject+Log4Cocoa.m"; sourceTree = "<group>"; };
+		181B74FD132FDF5B00433E98 /* NSDate-Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate-Calendar.m"; path = "Categories/NSDate-Calendar.m"; sourceTree = "<group>"; };
+		1861E5DF132FE02F00F970A6 /* libLog4CocoTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLog4CocoTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1861E5DD132FE02F00F970A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1861E61E132FE05B00F970A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181B737F132FD69E00433E98 = {
+			isa = PBXGroup;
+			children = (
+				181B741A132FD91000433E98 /* Headers */,
+				181B7389132FD6E600433E98 /* Sources */,
+				181B7388132FD6DD00433E98 /* Categories */,
+				181B7395132FD7B800433E98 /* Log4CocoaTouch */,
+				181B7392132FD7B800433E98 /* Frameworks */,
+				181B7391132FD7B800433E98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181B7388132FD6DD00433E98 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		181B7389132FD6E600433E98 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				181B74C9132FDF1200433E98 /* L4AppenderAttachable.m */,
+				181B74CA132FDF1200433E98 /* L4AppenderSkeleton.m */,
+				181B74CB132FDF1200433E98 /* L4BasicConfigurator.m */,
+				181B74CC132FDF1200433E98 /* L4ConsoleAppender.m */,
+				181B74CD132FDF1200433E98 /* L4DailyRollingFileAppender.m */,
+				181B74CE132FDF1200433E98 /* L4DenyAllFilter.m */,
+				181B74CF132FDF1200433E98 /* L4FileAppender.m */,
+				181B74D0132FDF1200433E98 /* L4Filter.m */,
+				181B74D1132FDF1200433E98 /* L4Layout.m */,
+				181B74D2132FDF1200433E98 /* L4Level.m */,
+				181B74D3132FDF1200433E98 /* L4LevelMatchFilter.m */,
+				181B74D4132FDF1200433E98 /* L4LevelRangeFilter.m */,
+				181B74D5132FDF1200433E98 /* L4Logger.m */,
+				181B74D6132FDF1200433E98 /* L4LoggerStore.m */,
+				181B74D7132FDF1200433E98 /* L4Logging.m */,
+				181B74D8132FDF1200433E98 /* L4LoggingEvent.m */,
+				181B74D9132FDF1200433E98 /* L4LogLog.m */,
+				181B74DA132FDF1200433E98 /* L4PatternLayout.m */,
+				181B74DB132FDF1200433E98 /* L4Properties.m */,
+				181B74DC132FDF1200433E98 /* L4PropertyConfigurator.m */,
+				181B74DD132FDF1200433E98 /* L4RollingFileAppender.m */,
+				181B74DE132FDF1200433E98 /* L4RootLogger.m */,
+				181B74DF132FDF1200433E98 /* L4SimpleLayout.m */,
+				181B74E0132FDF1200433E98 /* L4StringMatchFilter.m */,
+				181B74E1132FDF1200433E98 /* L4WriterAppender.m */,
+				181B74E2132FDF1200433E98 /* NSObject+Log4Cocoa.m */,
+				181B74FD132FDF5B00433E98 /* NSDate-Calendar.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		181B7391132FD7B800433E98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1861E5DF132FE02F00F970A6 /* libLog4CocoTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181B7392132FD7B800433E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181B7393132FD7B800433E98 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		181B7395132FD7B800433E98 /* Log4CocoaTouch */ = {
+			isa = PBXGroup;
+			children = (
+				181B7396132FD7B800433E98 /* Supporting Files */,
+			);
+			path = Log4CocoaTouch;
+			sourceTree = "<group>";
+		};
+		181B7396132FD7B800433E98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				181B7397132FD7B800433E98 /* Log4CocoaTouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		181B741A132FD91000433E98 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				181B748B132FDF0900433E98 /* L4AppenderAttachable.h */,
+				181B748C132FDF0900433E98 /* L4AppenderProtocols.h */,
+				181B748D132FDF0900433E98 /* L4AppenderSkeleton.h */,
+				181B748E132FDF0900433E98 /* L4BasicConfigurator.h */,
+				181B748F132FDF0900433E98 /* L4ConsoleAppender.h */,
+				181B7490132FDF0900433E98 /* L4DailyRollingFileAppender.h */,
+				181B7491132FDF0900433E98 /* L4DenyAllFilter.h */,
+				181B7492132FDF0900433E98 /* L4FileAppender.h */,
+				181B7493132FDF0900433E98 /* L4Filter.h */,
+				181B7494132FDF0900433E98 /* L4Layout.h */,
+				181B7495132FDF0900433E98 /* L4Level.h */,
+				181B7496132FDF0900433E98 /* L4LevelMatchFilter.h */,
+				181B7497132FDF0900433E98 /* L4LevelRangeFilter.h */,
+				181B7498132FDF0900433E98 /* L4Logger.h */,
+				181B7499132FDF0900433E98 /* L4LoggerProtocols.h */,
+				181B749A132FDF0900433E98 /* L4LoggerStore.h */,
+				181B749B132FDF0900433E98 /* L4Logging.h */,
+				181B749C132FDF0900433E98 /* L4LoggingEvent.h */,
+				181B749D132FDF0900433E98 /* L4LogLog.h */,
+				181B749E132FDF0900433E98 /* L4PatternLayout.h */,
+				181B749F132FDF0900433E98 /* L4Properties.h */,
+				181B74A0132FDF0900433E98 /* L4PropertyConfigurator.h */,
+				181B74A1132FDF0900433E98 /* L4RollingFileAppender.h */,
+				181B74A2132FDF0900433E98 /* L4RootLogger.h */,
+				181B74A3132FDF0900433E98 /* L4SimpleLayout.h */,
+				181B74A4132FDF0900433E98 /* L4StringMatchFilter.h */,
+				181B74A5132FDF0900433E98 /* L4WriterAppender.h */,
+				181B74A6132FDF0900433E98 /* Log4Cocoa.h */,
+				181B74A7132FDF0900433E98 /* Log4CocoaDefines.h */,
+				181B74A8132FDF0900433E98 /* NSDate-Calendar.h */,
+				181B74A9132FDF0900433E98 /* NSObject+Log4Cocoa.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1861E5DB132FE02F00F970A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1861E5EF132FE04800F970A6 /* L4Logger.h in Headers */,
+				1861E5E2132FE04800F970A6 /* L4AppenderAttachable.h in Headers */,
+				1861E5E3132FE04800F970A6 /* L4AppenderProtocols.h in Headers */,
+				1861E5E4132FE04800F970A6 /* L4AppenderSkeleton.h in Headers */,
+				1861E5E5132FE04800F970A6 /* L4BasicConfigurator.h in Headers */,
+				1861E5E6132FE04800F970A6 /* L4ConsoleAppender.h in Headers */,
+				1861E5E7132FE04800F970A6 /* L4DailyRollingFileAppender.h in Headers */,
+				1861E5E8132FE04800F970A6 /* L4DenyAllFilter.h in Headers */,
+				1861E5E9132FE04800F970A6 /* L4FileAppender.h in Headers */,
+				1861E5EA132FE04800F970A6 /* L4Filter.h in Headers */,
+				1861E5EB132FE04800F970A6 /* L4Layout.h in Headers */,
+				1861E5EC132FE04800F970A6 /* L4Level.h in Headers */,
+				1861E5ED132FE04800F970A6 /* L4LevelMatchFilter.h in Headers */,
+				1861E5EE132FE04800F970A6 /* L4LevelRangeFilter.h in Headers */,
+				1861E5F0132FE04800F970A6 /* L4LoggerProtocols.h in Headers */,
+				1861E5F1132FE04800F970A6 /* L4LoggerStore.h in Headers */,
+				1861E5F2132FE04800F970A6 /* L4Logging.h in Headers */,
+				1861E5F3132FE04800F970A6 /* L4LoggingEvent.h in Headers */,
+				1861E5F4132FE04800F970A6 /* L4LogLog.h in Headers */,
+				1861E5F5132FE04800F970A6 /* L4PatternLayout.h in Headers */,
+				1861E5F6132FE04800F970A6 /* L4Properties.h in Headers */,
+				1861E5F7132FE04800F970A6 /* L4PropertyConfigurator.h in Headers */,
+				1861E5F8132FE04800F970A6 /* L4RollingFileAppender.h in Headers */,
+				1861E5F9132FE04800F970A6 /* L4RootLogger.h in Headers */,
+				1861E5FA132FE04800F970A6 /* L4SimpleLayout.h in Headers */,
+				1861E5FB132FE04800F970A6 /* L4StringMatchFilter.h in Headers */,
+				1861E5FC132FE04800F970A6 /* L4WriterAppender.h in Headers */,
+				1861E5FD132FE04800F970A6 /* Log4Cocoa.h in Headers */,
+				1861E5FE132FE04800F970A6 /* Log4CocoaDefines.h in Headers */,
+				1861E5FF132FE04800F970A6 /* NSDate-Calendar.h in Headers */,
+				1861E600132FE04800F970A6 /* NSObject+Log4Cocoa.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1861E5DE132FE02F00F970A6 /* Log4CocoTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1861E6AF132FE07200F970A6 /* Build configuration list for PBXNativeTarget "Log4CocoTouch" */;
+			buildPhases = (
+				1861E5DB132FE02F00F970A6 /* Headers */,
+				1861E5DC132FE02F00F970A6 /* Sources */,
+				1861E5DD132FE02F00F970A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Log4CocoTouch;
+			productName = Log4CocoTouch;
+			productReference = 1861E5DF132FE02F00F970A6 /* libLog4CocoTouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181B7381132FD69E00433E98 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 181B7384132FD69E00433E98 /* Build configuration list for PBXProject "Log4CocoaTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 181B737F132FD69E00433E98;
+			productRefGroup = 181B7391132FD7B800433E98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1861E5DE132FE02F00F970A6 /* Log4CocoTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1861E5DC132FE02F00F970A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1861E60D132FE05300F970A6 /* L4Logger.m in Sources */,
+				1861E601132FE05300F970A6 /* L4AppenderAttachable.m in Sources */,
+				1861E602132FE05300F970A6 /* L4AppenderSkeleton.m in Sources */,
+				1861E603132FE05300F970A6 /* L4BasicConfigurator.m in Sources */,
+				1861E604132FE05300F970A6 /* L4ConsoleAppender.m in Sources */,
+				1861E605132FE05300F970A6 /* L4DailyRollingFileAppender.m in Sources */,
+				1861E606132FE05300F970A6 /* L4DenyAllFilter.m in Sources */,
+				1861E607132FE05300F970A6 /* L4FileAppender.m in Sources */,
+				1861E608132FE05300F970A6 /* L4Filter.m in Sources */,
+				1861E609132FE05300F970A6 /* L4Layout.m in Sources */,
+				1861E60A132FE05300F970A6 /* L4Level.m in Sources */,
+				1861E60B132FE05300F970A6 /* L4LevelMatchFilter.m in Sources */,
+				1861E60C132FE05300F970A6 /* L4LevelRangeFilter.m in Sources */,
+				1861E60E132FE05300F970A6 /* L4LoggerStore.m in Sources */,
+				1861E60F132FE05300F970A6 /* L4Logging.m in Sources */,
+				1861E610132FE05300F970A6 /* L4LoggingEvent.m in Sources */,
+				1861E611132FE05300F970A6 /* L4LogLog.m in Sources */,
+				1861E612132FE05300F970A6 /* L4PatternLayout.m in Sources */,
+				1861E613132FE05300F970A6 /* L4Properties.m in Sources */,
+				1861E614132FE05300F970A6 /* L4PropertyConfigurator.m in Sources */,
+				1861E615132FE05300F970A6 /* L4RollingFileAppender.m in Sources */,
+				1861E616132FE05300F970A6 /* L4RootLogger.m in Sources */,
+				1861E617132FE05300F970A6 /* L4SimpleLayout.m in Sources */,
+				1861E618132FE05300F970A6 /* L4StringMatchFilter.m in Sources */,
+				1861E619132FE05300F970A6 /* L4WriterAppender.m in Sources */,
+				1861E61A132FE05300F970A6 /* NSObject+Log4Cocoa.m in Sources */,
+				1861E61B132FE05300F970A6 /* NSDate-Calendar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		181B7386132FD69E00433E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		181B7387132FD69E00433E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1861E5E0132FE02F00F970A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = Log4CocoTouch;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1861E5E1132FE02F00F970A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = Log4CocoTouch;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181B7384132FD69E00433E98 /* Build configuration list for PBXProject "Log4CocoaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181B7386132FD69E00433E98 /* Debug */,
+				181B7387132FD69E00433E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1861E6AF132FE07200F970A6 /* Build configuration list for PBXNativeTarget "Log4CocoTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1861E5E0132FE02F00F970A6 /* Debug */,
+				1861E5E1132FE02F00F970A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181B7381132FD69E00433E98 /* Project object */;
+}
