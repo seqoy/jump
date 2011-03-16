@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18448B0C132FF7420061513B /* JUMPLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLoggerTest.m */; };
-		18448B1C132FF99A0061513B /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18448B1B132FF99A0061513B /* libJUMPLogger.a */; };
+		18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */; };
+		1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */; };
+		18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18448B07132FF6F50061513B /* libJUMPLogger.a */; };
 		3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6848D613241B1500F6D21A /* GHUnitIOS.framework */; };
 		3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68491E13241B7500F6D21A /* CoreGraphics.framework */; };
 		3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68492113241B8000F6D21A /* Foundation.framework */; };
@@ -72,8 +73,9 @@
 
 /* Begin PBXFileReference section */
 		18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPLogger.xcodeproj; path = ../JUMPLogger/JUMPLogger.xcodeproj; sourceTree = "<group>"; };
-		18448B0B132FF7420061513B /* JUMPLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLoggerTest.m; path = Sources/JUMPLoggerTest.m; sourceTree = "<group>"; };
+		18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLog4CocoaTest.m; path = Sources/JUMPLog4CocoaTest.m; sourceTree = "<group>"; };
 		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
+		1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPNSLogTest.m; path = Sources/JUMPNSLogTest.m; sourceTree = "<group>"; };
 		3A6848CE132419FC00F6D21A /* JUMPDatabaseTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUMPDatabaseTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6848D1132419FD00F6D21A /* JUMPDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JUMPDatabaseTests-Info.plist"; sourceTree = "<group>"; };
 		3A6848D613241B1500F6D21A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18448B1C132FF99A0061513B /* libJUMPLogger.a in Frameworks */,
 				3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */,
 				3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */,
 				3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */,
@@ -106,6 +107,7 @@
 				3A684999132420BC00F6D21A /* CoreData.framework in Frameworks */,
 				3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */,
 				3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */,
+				18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +125,8 @@
 		18448B0A132FF7240061513B /* JUMPLogger */ = {
 			isa = PBXGroup;
 			children = (
-				18448B0B132FF7420061513B /* JUMPLoggerTest.m */,
+				18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */,
+				1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */,
 			);
 			name = JUMPLogger;
 			sourceTree = "<group>";
@@ -342,7 +345,8 @@
 				3A684A421324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m in Sources */,
 				3A684A7213242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m in Sources */,
 				3AA69229132C1F0200780D21 /* JUMPColorTest.m in Sources */,
-				18448B0C132FF7420061513B /* JUMPLoggerTest.m in Sources */,
+				18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */,
+				1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

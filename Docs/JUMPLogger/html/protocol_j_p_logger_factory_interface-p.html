@@ -91,6 +91,7 @@ function toggleVisibility(linkObj) {
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -118,53 +119,87 @@ function toggleVisibility(linkObj) {
 <a href="#_details">More...</a></p>
 
 <p><code>#import &lt;<a class="el" href="_j_p_logger_factory_interface_8h_source.html">JPLoggerFactoryInterface.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png"/> Inheritance diagram for &lt;JPLoggerFactoryInterface&gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="protocol_j_p_logger_factory_interface-p.png" usemap="#&lt;JPLoggerFactoryInterface&gt;_map" alt=""/>
+  <map id="&lt;JPLoggerFactoryInterface&gt;_map" name="&lt;JPLoggerFactoryInterface&gt;_map">
+<area href="interface_j_p_logger_abstract_factory.html" alt="JPLoggerAbstractFactory" shape="rect" coords="92,56,267,80"/>
+<area href="interface_j_p_log4_cocoa_factory.html" alt="JPLog4CocoaFactory" shape="rect" coords="0,112,175,136"/>
+<area href="interface_j_p_n_s_log_factory.html" alt="JPNSLogFactory" shape="rect" coords="185,112,360,136"/>
+</map>
+ </div></div>
 
 <p><a href="protocol_j_p_logger_factory_interface-p-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="member-group"></a>
 Required Methods</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29db269f2cc431bca3adc6950e4cc1c"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::getLogger" ref="af29db269f2cc431bca3adc6950e4cc1c" args="()" -->
-(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#af29db269f2cc431bca3adc6950e4cc1c">getLogger</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an configured instance of the logger. <br/></td></tr>
-<tr><td colspan="2"><h2><a name="member-group"></a>
-Optional Methods</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#ad6b72094059ebad021c4deee577fb4b8">configureLogger</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement on this method all configuration for the logger.  <a href="#ad6b72094059ebad021c4deee577fb4b8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#ad09745dacf85287e203217b9b23c0666">loadConfigurationFromFile:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">If the Logging Framework that you're using support load configuration from a file.  <a href="#ad09745dacf85287e203217b9b23c0666"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cf7f5fdc5b2649fae2f14c897ae7385"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::setLoggerClass:" ref="a1cf7f5fdc5b2649fae2f14c897ae7385" args="(Class&lt; JPLoggerInterface &gt; loggerClass)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">+ <b>setLoggerClass:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9328cc22d5116fe22e0ff7c428ed2968"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::loggerClass" ref="a9328cc22d5116fe22e0ff7c428ed2968" args="()" -->
+(Class)&#160;</td><td class="memItemRight" valign="bottom">+ <b>loggerClass</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id&lt; <a class="el" href="protocol_j_p_logger_interface-p.html">JPLoggerInterface</a> &gt;)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#a2392bd56af8e26662f887a4492080475">getLogger</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an configured instance of the logger.  <a href="#a2392bd56af8e26662f887a4492080475"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#a608939f8399f13e5865d7dd0071e709f">configureLogger</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement on this method all configuration for the logger.  <a href="#a608939f8399f13e5865d7dd0071e709f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_factory_interface-p.html#a4b7eca6a76eb423407fdfe0b5ebf41a9">configureWithFile:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">If the Logging Framework that you're using support load configuration from a file.  <a href="#a4b7eca6a76eb423407fdfe0b5ebf41a9"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Missing Docs. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ad6b72094059ebad021c4deee577fb4b8"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::configureLogger" ref="ad6b72094059ebad021c4deee577fb4b8" args="()" -->
+<a class="anchor" id="a2392bd56af8e26662f887a4492080475"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::getLogger" ref="a2392bd56af8e26662f887a4492080475" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (void) configureLogger </td>
+          <td class="memname">+ (id&lt;<a class="el" href="protocol_j_p_logger_interface-p.html">JPLoggerInterface</a>&gt;) getLogger </td>
           <td></td>
           <td class="paramname"></td>
-          <td><code> [static, optional]</code></td>
+          <td><code> [static, required]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get an configured instance of the logger. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An autorelesable instance of the logger. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a608939f8399f13e5865d7dd0071e709f"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::configureLogger" ref="a608939f8399f13e5865d7dd0071e709f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (BOOL) configureLogger </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td><code> [static, required]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Implement on this method all configuration for the logger. </p>
-<p>This method could be called before <a class="el" href="protocol_j_p_logger_factory_interface-p.html#af29db269f2cc431bca3adc6950e4cc1c" title="Get an configured instance of the logger.">getLogger</a> to configure all settings. </p>
+<p>This method should be called inside of <a class="el" href="protocol_j_p_logger_factory_interface-p.html#a2392bd56af8e26662f887a4492080475" title="Get an configured instance of the logger.">getLogger</a> to configure all settings. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>YES if configured succesfully. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad09745dacf85287e203217b9b23c0666"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::loadConfigurationFromFile:" ref="ad09745dacf85287e203217b9b23c0666" args="(NSString *anFileName)" -->
+<a class="anchor" id="a4b7eca6a76eb423407fdfe0b5ebf41a9"></a><!-- doxytag: member="JPLoggerFactoryInterface&#45;p::configureWithFile:" ref="a4b7eca6a76eb423407fdfe0b5ebf41a9" args="(NSString *anFileName)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (void) loadConfigurationFromFile: </td>
+          <td class="memname">+ (BOOL) configureWithFile: </td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
           <td class="paramname"><em>anFileName</em></td>
-          <td><code> [static, optional]</code></td>
+          <td><code> [static, required]</code></td>
         </tr>
       </table>
 </div>
@@ -178,6 +213,7 @@ Optional Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>YES if configured succesfully. </dd></dl>
 
 </div>
 </div>
@@ -194,7 +230,7 @@ Optional Methods</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

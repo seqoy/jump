@@ -17,29 +17,42 @@
 
 //// //// //// //// //// //// //// //// //// //// //// ///
 void JPLogIfYouCan( SEL method, NSString* message, NSException* anException  ) {
-	#ifdef JPLOGGER_FACTORY_CLASS
-		// Get Logger.
-		id logger = [JPLOGGER_FACTORY_CLASS getLogger];
 
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+	
+		// Get Factory Class.
+		Class loggerFactoryClass = [JUMPLoggerConfig loggerFactoryClass];
+	
 		//// //// //// //// /// //// //// //// //// ///
-		// If not defined.
-		if ( !logger )
-			[NSException raise:@"JPLoggerException" format:@"Factory doesn't return an logger!"];
-
+		// If not defined, do nothing.
+		if ( !loggerFactoryClass )
+			return;
+	
 		//// //// //// //// /// //// //// //// //// ///
 		// Must implement the Logger Factory Interface.
-		if ( ! [logger conformsToProtocol:@protocol(JPLoggerFactoryInterface)] ) {
-			[NSException raise:@"JPLoggerException" format:@"Logger Factory doesn't implement the 'JPLoggerFactoryInterface' protocol."];
+		if ( ! [loggerFactoryClass conformsToProtocol:@protocol(JPLoggerFactoryInterface)] ) {
+			[NSException raise:@"JPLoggerException"
+						format:@"Logger Factory doesn't implement the 'JPLoggerFactoryInterface' protocol."];
+		}
+			
+		//// //// //// //// /// //// //// //// //// ///
+		// Retrieve the logger.
+		id<JPLoggerInterface> logger = [loggerFactoryClass getLogger];
 	
+		//// //// //// //// /// //// //// //// //// ///
+		// If doesn't return an logger, do nothing.
+		if ( logger == nil )
+			return;
+		
 		//// //// //// //// //// //// ///
 		// Logger with Exception.
 		if (anException)
-			[logger performSelector:method withObject:message withObject:anException];
+			[[(id)logger class] performSelector:method withObject:anException withObject:message];
 
 		//// //// //// //// //// //// ///
 		// Logger without Exception.
 		else
-			[logger performSelector:method withObject:message];
+			[[(id)logger class] performSelector:method withObject:message];
 	#endif
-	// If isn't setted, do nothing.
 }

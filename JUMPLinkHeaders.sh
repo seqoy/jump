@@ -3,8 +3,11 @@
 # Automatically Link Header Files
 #
 
-echo "Creating Main Headers Directory..."
-mkdir Headers
+# if Headers Directory doesn't exist...
+if [ ! -d "Headers" ]; then
+    echo "Creating Main Headers Directory..."
+	mkdir Headers
+fi
 
 echo "Acessing Main Headers Directory..."
 cd Headers

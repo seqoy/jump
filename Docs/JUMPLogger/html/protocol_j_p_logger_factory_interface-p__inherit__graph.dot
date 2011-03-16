@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{\<JPLoggerFactoryInterface\>\n||* setLoggerClass:\l* loggerClass\l* getLogger\l* configureLogger\l* configureWithFile:\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node2 [label="{JPLoggerAbstractFactory\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_j_p_logger_abstract_factory.html",tooltip="JPLoggerAbstractFactory missing documentation."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node3 [label="{JPLog4JFactory\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_j_p_log4_j_factory.html",tooltip="JPLog4JFactory missing documentation."];
+}

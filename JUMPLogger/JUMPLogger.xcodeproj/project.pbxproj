@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		18647738132FF63E002CBD59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18647737132FF63E002CBD59 /* Foundation.framework */; };
-		18647741132FF661002CBD59 /* JPLog4JFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773C132FF661002CBD59 /* JPLog4JFactory.h */; };
+		18647741132FF661002CBD59 /* JPLog4CocoaFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773C132FF661002CBD59 /* JPLog4CocoaFactory.h */; };
 		18647742132FF661002CBD59 /* JPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773D132FF661002CBD59 /* JPLogger.h */; };
 		18647743132FF661002CBD59 /* JPLoggerFactoryInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */; };
 		18647744132FF661002CBD59 /* JPLoggerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1864773F132FF661002CBD59 /* JPLoggerInterface.h */; };
 		18647745132FF661002CBD59 /* JPLoggerShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 18647740132FF661002CBD59 /* JPLoggerShortcuts.h */; };
-		18647750132FF68F002CBD59 /* JPLog4JFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774E132FF68F002CBD59 /* JPLog4JFactory.m */; };
-		18647751132FF68F002CBD59 /* JPLog4JLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774F132FF68F002CBD59 /* JPLog4JLogger.m */; };
-		18647753132FF69C002CBD59 /* JPLog4JLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18647752132FF69C002CBD59 /* JPLog4JLogger.h */; };
+		18647750132FF68F002CBD59 /* JPLog4CocoaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */; };
+		18647751132FF68F002CBD59 /* JPLog4CocoaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864774F132FF68F002CBD59 /* JPLog4CocoaLogger.m */; };
+		18647753132FF69C002CBD59 /* JPLog4CocoaLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18647752132FF69C002CBD59 /* JPLog4CocoaLogger.h */; };
 		18647761132FF6B4002CBD59 /* libLog4CocoTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18647760132FF6B3002CBD59 /* libLog4CocoTouch.a */; };
 		186477DA13300C10002CBD59 /* JPLoggerShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 186477D913300C10002CBD59 /* JPLoggerShortcuts.m */; };
+		1879DF8F13312FC800CF3ED8 /* JPLogNSLogLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1879DF8D13312FC800CF3ED8 /* JPLogNSLogLogger.h */; };
+		1879DF9013312FC800CF3ED8 /* JPNSLogFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1879DF8E13312FC800CF3ED8 /* JPNSLogFactory.h */; };
+		1879DF9313312FD300CF3ED8 /* JPLogNSLogLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879DF9113312FD300CF3ED8 /* JPLogNSLogLogger.m */; };
+		1879DF9413312FD300CF3ED8 /* JPNSLogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879DF9213312FD300CF3ED8 /* JPNSLogFactory.m */; };
+		18BCB7011330F32600986778 /* JUMPLoggerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCB6881330EC3700986778 /* JUMPLoggerConfig.m */; };
+		18BCB7041330F34200986778 /* JUMPLoggerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BCB6871330EC3700986778 /* JUMPLoggerConfig.h */; };
+		18BCB8081330FC7A00986778 /* JPLoggerAbstractFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BCB8061330FC7A00986778 /* JPLoggerAbstractFactory.h */; };
+		18BCB8311331001600986778 /* JPLoggerAbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCB8071330FC7A00986778 /* JPLoggerAbstractFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +48,24 @@
 /* Begin PBXFileReference section */
 		18647731132FF621002CBD59 /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		18647737132FF63E002CBD59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1864773C132FF661002CBD59 /* JPLog4JFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLog4JFactory.h; sourceTree = "<group>"; };
+		1864773C132FF661002CBD59 /* JPLog4CocoaFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPLog4CocoaFactory.h; path = Headers/JPLog4CocoaFactory.h; sourceTree = "<group>"; };
 		1864773D132FF661002CBD59 /* JPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLogger.h; sourceTree = "<group>"; };
 		1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerFactoryInterface.h; sourceTree = "<group>"; };
 		1864773F132FF661002CBD59 /* JPLoggerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerInterface.h; sourceTree = "<group>"; };
 		18647740132FF661002CBD59 /* JPLoggerShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoggerShortcuts.h; sourceTree = "<group>"; };
-		1864774E132FF68F002CBD59 /* JPLog4JFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4JFactory.m; path = Sources/JPLog4JFactory.m; sourceTree = "<group>"; };
-		1864774F132FF68F002CBD59 /* JPLog4JLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4JLogger.m; path = Sources/JPLog4JLogger.m; sourceTree = "<group>"; };
-		18647752132FF69C002CBD59 /* JPLog4JLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLog4JLogger.h; sourceTree = "<group>"; };
+		1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4CocoaFactory.m; path = Sources/JPLog4CocoaFactory.m; sourceTree = "<group>"; };
+		1864774F132FF68F002CBD59 /* JPLog4CocoaLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLog4CocoaLogger.m; path = Sources/JPLog4CocoaLogger.m; sourceTree = "<group>"; };
+		18647752132FF69C002CBD59 /* JPLog4CocoaLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPLog4CocoaLogger.h; path = Headers/JPLog4CocoaLogger.h; sourceTree = "<group>"; };
 		18647758132FF6B3002CBD59 /* Log4CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Log4CocoaTouch.xcodeproj; path = Libraries/Log4CocoaTouch/Log4CocoaTouch.xcodeproj; sourceTree = "<group>"; };
 		186477D913300C10002CBD59 /* JPLoggerShortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLoggerShortcuts.m; path = Sources/JPLoggerShortcuts.m; sourceTree = "<group>"; };
+		1879DF8D13312FC800CF3ED8 /* JPLogNSLogLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPLogNSLogLogger.h; path = Headers/JPLogNSLogLogger.h; sourceTree = "<group>"; };
+		1879DF8E13312FC800CF3ED8 /* JPNSLogFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPNSLogFactory.h; path = Headers/JPNSLogFactory.h; sourceTree = "<group>"; };
+		1879DF9113312FD300CF3ED8 /* JPLogNSLogLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLogNSLogLogger.m; path = Sources/JPLogNSLogLogger.m; sourceTree = "<group>"; };
+		1879DF9213312FD300CF3ED8 /* JPNSLogFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPNSLogFactory.m; path = Sources/JPNSLogFactory.m; sourceTree = "<group>"; };
+		18BCB6871330EC3700986778 /* JUMPLoggerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPLoggerConfig.h; sourceTree = "<group>"; };
+		18BCB6881330EC3700986778 /* JUMPLoggerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLoggerConfig.m; path = Sources/JUMPLoggerConfig.m; sourceTree = "<group>"; };
+		18BCB8061330FC7A00986778 /* JPLoggerAbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPLoggerAbstractFactory.h; path = Headers/JPLoggerAbstractFactory.h; sourceTree = "<group>"; };
+		18BCB8071330FC7A00986778 /* JPLoggerAbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPLoggerAbstractFactory.m; path = Sources/JPLoggerAbstractFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,10 @@
 		1864773B132FF661002CBD59 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				18647746132FF665002CBD59 /* Interfaces */,
-				1864773C132FF661002CBD59 /* JPLog4JFactory.h */,
 				1864773D132FF661002CBD59 /* JPLogger.h */,
+				18647746132FF665002CBD59 /* Interfaces */,
 				18647740132FF661002CBD59 /* JPLoggerShortcuts.h */,
-				18647752132FF69C002CBD59 /* JPLog4JLogger.h */,
+				18BCB6871330EC3700986778 /* JUMPLoggerConfig.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -116,9 +131,11 @@
 		1864774C132FF677002CBD59 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				18BCB80A1330FCA200986778 /* Factories */,
+				1879DD2C1331102100CF3ED8 /* Log4Cocoa */,
+				1879DDB51331157100CF3ED8 /* NSLog */,
 				186477D913300C10002CBD59 /* JPLoggerShortcuts.m */,
-				1864774E132FF68F002CBD59 /* JPLog4JFactory.m */,
-				1864774F132FF68F002CBD59 /* JPLog4JLogger.m */,
+				18BCB6881330EC3700986778 /* JUMPLoggerConfig.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -139,6 +156,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1879DD2C1331102100CF3ED8 /* Log4Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				1864773C132FF661002CBD59 /* JPLog4CocoaFactory.h */,
+				1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */,
+				18647752132FF69C002CBD59 /* JPLog4CocoaLogger.h */,
+				1864774F132FF68F002CBD59 /* JPLog4CocoaLogger.m */,
+			);
+			name = Log4Cocoa;
+			sourceTree = "<group>";
+		};
+		1879DDB51331157100CF3ED8 /* NSLog */ = {
+			isa = PBXGroup;
+			children = (
+				1879DF8D13312FC800CF3ED8 /* JPLogNSLogLogger.h */,
+				1879DF9113312FD300CF3ED8 /* JPLogNSLogLogger.m */,
+				1879DF8E13312FC800CF3ED8 /* JPNSLogFactory.h */,
+				1879DF9213312FD300CF3ED8 /* JPNSLogFactory.m */,
+			);
+			name = NSLog;
+			sourceTree = "<group>";
+		};
+		18BCB80A1330FCA200986778 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				18BCB8061330FC7A00986778 /* JPLoggerAbstractFactory.h */,
+				18BCB8071330FC7A00986778 /* JPLoggerAbstractFactory.m */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -146,12 +194,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18647741132FF661002CBD59 /* JPLog4JFactory.h in Headers */,
+				18BCB7041330F34200986778 /* JUMPLoggerConfig.h in Headers */,
+				18647741132FF661002CBD59 /* JPLog4CocoaFactory.h in Headers */,
 				18647742132FF661002CBD59 /* JPLogger.h in Headers */,
 				18647743132FF661002CBD59 /* JPLoggerFactoryInterface.h in Headers */,
 				18647744132FF661002CBD59 /* JPLoggerInterface.h in Headers */,
 				18647745132FF661002CBD59 /* JPLoggerShortcuts.h in Headers */,
-				18647753132FF69C002CBD59 /* JPLog4JLogger.h in Headers */,
+				18647753132FF69C002CBD59 /* JPLog4CocoaLogger.h in Headers */,
+				18BCB8081330FC7A00986778 /* JPLoggerAbstractFactory.h in Headers */,
+				1879DF8F13312FC800CF3ED8 /* JPLogNSLogLogger.h in Headers */,
+				1879DF9013312FC800CF3ED8 /* JPNSLogFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18647750132FF68F002CBD59 /* JPLog4JFactory.m in Sources */,
-				18647751132FF68F002CBD59 /* JPLog4JLogger.m in Sources */,
+				18647750132FF68F002CBD59 /* JPLog4CocoaFactory.m in Sources */,
+				18647751132FF68F002CBD59 /* JPLog4CocoaLogger.m in Sources */,
+				18BCB8311331001600986778 /* JPLoggerAbstractFactory.m in Sources */,
+				18BCB7011330F32600986778 /* JUMPLoggerConfig.m in Sources */,
 				186477DA13300C10002CBD59 /* JPLoggerShortcuts.m in Sources */,
+				1879DF9313312FD300CF3ED8 /* JPLogNSLogLogger.m in Sources */,
+				1879DF9413312FD300CF3ED8 /* JPNSLogFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

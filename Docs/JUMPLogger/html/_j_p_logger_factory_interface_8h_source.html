@@ -91,6 +91,7 @@ function toggleVisibility(linkObj) {
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -128,7 +129,7 @@ function toggleVisibility(linkObj) {
 <a name="l00014"></a>00014 <span class="comment"> * limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment"> */</span>
 <a name="l00016"></a>00016 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
-<a name="l00017"></a>00017 
+<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;<a class="code" href="_j_p_logger_interface_8h.html">JPLoggerInterface.h</a>&quot;</span>
 <a name="l00018"></a>00018 
 <a name="l00023"></a><a class="code" href="protocol_j_p_logger_factory_interface-p.html">00023</a> <span class="keyword">@protocol </span><a class="code" href="protocol_j_p_logger_factory_interface-p.html" title="Missing Docs.">JPLoggerFactoryInterface</a>
 <a name="l00024"></a>00024 
@@ -136,15 +137,15 @@ function toggleVisibility(linkObj) {
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029 <span class="keyword">@required</span>
 <a name="l00030"></a>00030 
-<a name="l00034"></a>00034 +(id)<a class="code" href="protocol_j_p_logger_factory_interface-p.html#af29db269f2cc431bca3adc6950e4cc1c" title="Get an configured instance of the logger.">getLogger</a>;
-<a name="l00035"></a>00035 
-<a name="l00038"></a>00038 
+<a name="l00031"></a>00031 +(void)setLoggerClass:(Class&lt;<a class="code" href="protocol_j_p_logger_interface-p.html" title="JPLoggerInterface defines an common interface to logger tasks.">JPLoggerInterface</a>&gt;)loggerClass;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 +(Class)loggerClass;
+<a name="l00034"></a>00034 
+<a name="l00039"></a>00039 +(id&lt;<a class="code" href="protocol_j_p_logger_interface-p.html" title="JPLoggerInterface defines an common interface to logger tasks.">JPLoggerInterface</a>&gt;)<a class="code" href="protocol_j_p_logger_factory_interface-p.html#a2392bd56af8e26662f887a4492080475" title="Get an configured instance of the logger.">getLogger</a>;
 <a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="keyword">@optional</span>
-<a name="l00042"></a>00042 
-<a name="l00047"></a>00047 +(void)<a class="code" href="protocol_j_p_logger_factory_interface-p.html#ad6b72094059ebad021c4deee577fb4b8" title="Implement on this method all configuration for the logger.">configureLogger</a>;
-<a name="l00048"></a>00048 
-<a name="l00054"></a>00054  +(void)loadConfigurationFromFile:(NSString*)anFileName;
+<a name="l00046"></a>00046 +(BOOL)<a class="code" href="protocol_j_p_logger_factory_interface-p.html#a608939f8399f13e5865d7dd0071e709f" title="Implement on this method all configuration for the logger.">configureLogger</a>;
+<a name="l00047"></a>00047 
+<a name="l00054"></a>00054 +(BOOL)configureWithFile:(NSString*)anFileName ;
 <a name="l00055"></a>00055 
 <a name="l00057"></a>00057 <span class="keyword">@end</span>
 </pre></div></div>
@@ -157,7 +158,7 @@ function toggleVisibility(linkObj) {
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

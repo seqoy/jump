@@ -16,7 +16,6 @@
 #import <Foundation/Foundation.h>
 #import "JPLoggerInterface.h"
 
-
 /**
  * \nosubgrouping 
  * Missing Docs.
@@ -35,12 +34,14 @@
 
 /**
  * Get an configured instance of the logger. 
+ * @return An autorelesable instance of the logger.
  */
-+(id)getLogger;
++(id<JPLoggerInterface>)getLogger;
 
 /**
  * Implement on this method all configuration for the logger. 
- * This method could be called before #getLogger to configure all settings.
+ * This method should be called inside of #getLogger to configure all settings.
+ * @return YES if configured succesfully.
  */
 +(BOOL)configureLogger;
 
@@ -48,6 +49,7 @@
  * If the Logging Framework that you're using support load configuration from a file. You should
  * implement your logic on this method.
  * @param anFileName The configuration file name that should be included on the Application Bundle.
+ * @return YES if configured succesfully.
  */
 +(BOOL)configureWithFile:(NSString*)anFileName ;
 

@@ -91,6 +91,7 @@ function toggleVisibility(linkObj) {
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -119,41 +120,133 @@ function toggleVisibility(linkObj) {
 
 <p><code>#import &lt;<a class="el" href="_j_p_logger_interface_8h_source.html">JPLoggerInterface.h</a>&gt;</code></p>
 
+<p>Inherited by JPLog4CocoaLogger, and JPLogNSLogLogger.</p>
+
 <p><a href="protocol_j_p_logger_interface-p-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="member-group"></a>
+Level Methods</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a5d7a6c245af586fc2c7c2c9bd438044a">setLevel:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the log level.  <a href="#a5d7a6c245af586fc2c7c2c9bd438044a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#ab7ca8e0503715cfebe2b83f5b5410aba">currentLevel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve current log level.  <a href="#ab7ca8e0503715cfebe2b83f5b5410aba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a5d7a6c245af586fc2c7c2c9bd438044a">setLevel:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the log level.  <a href="#a5d7a6c245af586fc2c7c2c9bd438044a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#ab7ca8e0503715cfebe2b83f5b5410aba">currentLevel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve current log level.  <a href="#ab7ca8e0503715cfebe2b83f5b5410aba"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="member-group"></a>
 Log Methods</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a3cbfc4520c3476ca835058516219a7f8">debug:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Debug</b> level priority.  <a href="#a3cbfc4520c3476ca835058516219a7f8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a142bb31a454e967bef1e79e293e3f34d">info:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Info</b> level priority.  <a href="#a142bb31a454e967bef1e79e293e3f34d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#ad33ff5b02dad1b7c8ec4bf81773e9bbc">warn:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Warn</b> level priority.  <a href="#ad33ff5b02dad1b7c8ec4bf81773e9bbc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a1ba908cdfd8f0407f72461693ba77b44">error:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Error</b> level priority.  <a href="#a1ba908cdfd8f0407f72461693ba77b44"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a5a4a4120596593b606fa747f7715ba3c">fatal:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Fatal</b> level priority.  <a href="#a5a4a4120596593b606fa747f7715ba3c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#af83a55860a64dc034c3e7e9426c87ba7">debug:withException:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Debug</b> level priority, also accept an Exception.  <a href="#af83a55860a64dc034c3e7e9426c87ba7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a7a906ce5ee9b1a3e2e4148c236d9a299">info:withException:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Info</b> level priority, also accept an Exception.  <a href="#a7a906ce5ee9b1a3e2e4148c236d9a299"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#af6fb74dc1885d86d385806f2beabb649">warn:withException:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Warn</b> level priority, also accept an Exception.  <a href="#af6fb74dc1885d86d385806f2beabb649"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a0cb0e2fa09700f105d7a45cdb238c3ba">error:withException:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Error</b> level priority, also accept an Exception.  <a href="#a0cb0e2fa09700f105d7a45cdb238c3ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_j_p_logger_interface-p.html#a4672168b4b7ddee04b7c001bfb2ae2a4">fatal:withException:</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Fatal</b> level priority, also accept an Exception.  <a href="#a4672168b4b7ddee04b7c001bfb2ae2a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a3593a25b16352031a436458d0633bcbe">debug:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Debug</b> level priority.  <a href="#a3593a25b16352031a436458d0633bcbe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#aa6cdcc4757f1b7fcb1929c2fa0bc9206">info:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Info</b> level priority.  <a href="#aa6cdcc4757f1b7fcb1929c2fa0bc9206"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#ad2718c027e5d10fab29124b6f5e104f7">warn:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Warn</b> level priority.  <a href="#ad2718c027e5d10fab29124b6f5e104f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a2ba8c254dc72ad7d1721356b9ceff6ff">error:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Error</b> level priority.  <a href="#a2ba8c254dc72ad7d1721356b9ceff6ff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a781c867220bfededa86780c166841caa">fatal:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Fatal</b> level priority.  <a href="#a781c867220bfededa86780c166841caa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a2a99cb679a7a2c4f9fa0086eb034edcf">debugWithException:andMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Debug</b> level priority, also accept an Exception.  <a href="#a2a99cb679a7a2c4f9fa0086eb034edcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#ac9f17765dfe08446de3a613dcd29c226">infoWithException:andMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Info</b> level priority, also accept an Exception.  <a href="#ac9f17765dfe08446de3a613dcd29c226"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#aa382765379485e69b52552ce0ef34d04">warnWithException:andMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Warn</b> level priority, also accept an Exception.  <a href="#aa382765379485e69b52552ce0ef34d04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#ab761e3d5049338225ce17ecfc9401911">errorWithException:andMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Error</b> level priority, also accept an Exception.  <a href="#ab761e3d5049338225ce17ecfc9401911"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="protocol_j_p_logger_interface-p.html#a7b2d9983de7a84eb3083b335f8cf97e7">fatalWithException:andMessage:</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an message with <b>Fatal</b> level priority, also accept an Exception.  <a href="#a7b2d9983de7a84eb3083b335f8cf97e7"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="protocol_j_p_logger_interface-p.html" title="JPLoggerInterface defines an common interface to logger tasks.">JPLoggerInterface</a> defines an common interface to logger tasks. </p>
-<p>The nature of JPLogger Modules is to allow you to use any Logger library or framework that you want. So you can implement your own class with this protocol as a wrapper around your favorite logger. </p>
+<p>The nature of <b>JUMP Logger Module</b> is to allow you to use any Logger Library or Logger Framework that you want. So you can implement this protocol in your own class as an <a href="http://en.wikipedia.org/wiki/Adapter_pattern">Adapter</a> to your favorite logger. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a3cbfc4520c3476ca835058516219a7f8"></a><!-- doxytag: member="JPLoggerInterface&#45;p::debug:" ref="a3cbfc4520c3476ca835058516219a7f8" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION)" -->
+<a class="anchor" id="a5d7a6c245af586fc2c7c2c9bd438044a"></a><!-- doxytag: member="JPLoggerInterface&#45;p::setLevel:" ref="a5d7a6c245af586fc2c7c2c9bd438044a" args="(JPLoggerLevels anLevel)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) debug: </td>
+          <td class="memname">+ (void) setLevel: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>)&#160;</td>
+          <td class="paramname"><em>anLevel</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Define the log level. </p>
+<p>You must implement this method even if you Logging Framework support dynamically change the log level or not. If doesn't support, just leave the method empty. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="_j_p_logger_interface_8h.html#afe9c511796e65e37f999c63a2e6f5980">JPLoggerLevels</a> for more information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d7a6c245af586fc2c7c2c9bd438044a"></a><!-- doxytag: member="JPLoggerInterface&#45;p::setLevel:" ref="a5d7a6c245af586fc2c7c2c9bd438044a" args="(JPLoggerLevels anLevel)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setLevel: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>)&#160;</td>
+          <td class="paramname"><em>anLevel</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Define the log level. </p>
+<p>You must implement this method even if you Logging Framework support dynamically change the log level or not. If doesn't support, just leave the method empty. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="_j_p_logger_interface_8h.html#afe9c511796e65e37f999c63a2e6f5980">JPLoggerLevels</a> for more information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7ca8e0503715cfebe2b83f5b5410aba"></a><!-- doxytag: member="JPLoggerInterface&#45;p::currentLevel" ref="ab7ca8e0503715cfebe2b83f5b5410aba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>) currentLevel </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Retrieve current log level. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="_j_p_logger_interface_8h.html#afe9c511796e65e37f999c63a2e6f5980">JPLoggerLevels</a> for more information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7ca8e0503715cfebe2b83f5b5410aba"></a><!-- doxytag: member="JPLoggerInterface&#45;p::currentLevel" ref="ab7ca8e0503715cfebe2b83f5b5410aba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_j_p_logger_interface_8h.html#a884f39a33645a74a8eb8492bb89b486d">JPLoggerLevels</a>) currentLevel </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Retrieve current log level. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="_j_p_logger_interface_8h.html#afe9c511796e65e37f999c63a2e6f5980">JPLoggerLevels</a> for more information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3593a25b16352031a436458d0633bcbe"></a><!-- doxytag: member="JPLoggerInterface&#45;p::debug:" ref="a3593a25b16352031a436458d0633bcbe" args="(id variableList,[,]...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) debug: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -162,7 +255,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -183,12 +276,12 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a142bb31a454e967bef1e79e293e3f34d"></a><!-- doxytag: member="JPLoggerInterface&#45;p::info:" ref="a142bb31a454e967bef1e79e293e3f34d" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION)" -->
+<a class="anchor" id="aa6cdcc4757f1b7fcb1929c2fa0bc9206"></a><!-- doxytag: member="JPLoggerInterface&#45;p::info:" ref="aa6cdcc4757f1b7fcb1929c2fa0bc9206" args="(id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) info: </td>
+          <td class="memname">+ (void) info: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -197,7 +290,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -218,12 +311,12 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad33ff5b02dad1b7c8ec4bf81773e9bbc"></a><!-- doxytag: member="JPLoggerInterface&#45;p::warn:" ref="ad33ff5b02dad1b7c8ec4bf81773e9bbc" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION)" -->
+<a class="anchor" id="ad2718c027e5d10fab29124b6f5e104f7"></a><!-- doxytag: member="JPLoggerInterface&#45;p::warn:" ref="ad2718c027e5d10fab29124b6f5e104f7" args="(id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) warn: </td>
+          <td class="memname">+ (void) warn: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -232,7 +325,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,12 +346,12 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1ba908cdfd8f0407f72461693ba77b44"></a><!-- doxytag: member="JPLoggerInterface&#45;p::error:" ref="a1ba908cdfd8f0407f72461693ba77b44" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION)" -->
+<a class="anchor" id="a2ba8c254dc72ad7d1721356b9ceff6ff"></a><!-- doxytag: member="JPLoggerInterface&#45;p::error:" ref="a2ba8c254dc72ad7d1721356b9ceff6ff" args="(id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) error: </td>
+          <td class="memname">+ (void) error: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -267,7 +360,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,12 +381,12 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a4a4120596593b606fa747f7715ba3c"></a><!-- doxytag: member="JPLoggerInterface&#45;p::fatal:" ref="a5a4a4120596593b606fa747f7715ba3c" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION)" -->
+<a class="anchor" id="a781c867220bfededa86780c166841caa"></a><!-- doxytag: member="JPLoggerInterface&#45;p::fatal:" ref="a781c867220bfededa86780c166841caa" args="(id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) fatal: </td>
+          <td class="memname">+ (void) fatal: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -302,7 +395,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -323,12 +416,18 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af83a55860a64dc034c3e7e9426c87ba7"></a><!-- doxytag: member="JPLoggerInterface&#45;p::debug:withException:" ref="af83a55860a64dc034c3e7e9426c87ba7" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION,[withException] NSException *anException)" -->
+<a class="anchor" id="a2a99cb679a7a2c4f9fa0086eb034edcf"></a><!-- doxytag: member="JPLoggerInterface&#45;p::debugWithException:andMessage:" ref="a2a99cb679a7a2c4f9fa0086eb034edcf" args="(NSException *anException,[andMessage] id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) debug: </td>
+          <td class="memname">+ (void) debugWithException: </td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>anException</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andMessage:</td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -337,13 +436,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withException:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>anException</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -365,12 +458,18 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a906ce5ee9b1a3e2e4148c236d9a299"></a><!-- doxytag: member="JPLoggerInterface&#45;p::info:withException:" ref="a7a906ce5ee9b1a3e2e4148c236d9a299" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION,[withException] NSException *anException)" -->
+<a class="anchor" id="ac9f17765dfe08446de3a613dcd29c226"></a><!-- doxytag: member="JPLoggerInterface&#45;p::infoWithException:andMessage:" ref="ac9f17765dfe08446de3a613dcd29c226" args="(NSException *anException,[andMessage] id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) info: </td>
+          <td class="memname">+ (void) infoWithException: </td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>anException</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andMessage:</td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -379,13 +478,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withException:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>anException</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -407,12 +500,18 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af6fb74dc1885d86d385806f2beabb649"></a><!-- doxytag: member="JPLoggerInterface&#45;p::warn:withException:" ref="af6fb74dc1885d86d385806f2beabb649" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION,[withException] NSException *anException)" -->
+<a class="anchor" id="aa382765379485e69b52552ce0ef34d04"></a><!-- doxytag: member="JPLoggerInterface&#45;p::warnWithException:andMessage:" ref="aa382765379485e69b52552ce0ef34d04" args="(NSException *anException,[andMessage] id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) warn: </td>
+          <td class="memname">+ (void) warnWithException: </td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>anException</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andMessage:</td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -421,13 +520,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withException:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>anException</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,12 +542,18 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0cb0e2fa09700f105d7a45cdb238c3ba"></a><!-- doxytag: member="JPLoggerInterface&#45;p::error:withException:" ref="a0cb0e2fa09700f105d7a45cdb238c3ba" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION,[withException] NSException *anException)" -->
+<a class="anchor" id="ab761e3d5049338225ce17ecfc9401911"></a><!-- doxytag: member="JPLoggerInterface&#45;p::errorWithException:andMessage:" ref="ab761e3d5049338225ce17ecfc9401911" args="(NSException *anException,[andMessage] id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) error: </td>
+          <td class="memname">+ (void) errorWithException: </td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>anException</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andMessage:</td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -463,13 +562,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withException:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>anException</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -491,12 +584,18 @@ Log Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4672168b4b7ddee04b7c001bfb2ae2a4"></a><!-- doxytag: member="JPLoggerInterface&#45;p::fatal:withException:" ref="a4672168b4b7ddee04b7c001bfb2ae2a4" args="(id variableList,[,]...NS_REQUIRES_NIL_TERMINATION,[withException] NSException *anException)" -->
+<a class="anchor" id="a7b2d9983de7a84eb3083b335f8cf97e7"></a><!-- doxytag: member="JPLoggerInterface&#45;p::fatalWithException:andMessage:" ref="a7b2d9983de7a84eb3083b335f8cf97e7" args="(NSException *anException,[andMessage] id variableList,[,]...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) fatal: </td>
+          <td class="memname">+ (void) fatalWithException: </td>
+          <td></td>
+          <td class="paramtype">(NSException *)&#160;</td>
+          <td class="paramname"><em>anException</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andMessage:</td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>variableList</em></td>
@@ -505,13 +604,7 @@ Log Methods</h2></td></tr>
           <td class="paramkey">,</td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">withException:</td>
-          <td></td>
-          <td class="paramtype">(NSException *)&#160;</td>
-          <td class="paramname"><em>anException</em>&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -546,7 +639,7 @@ Log Methods</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

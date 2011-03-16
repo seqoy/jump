@@ -91,6 +91,7 @@ function toggleVisibility(linkObj) {
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -115,15 +116,8 @@ function toggleVisibility(linkObj) {
 
 <p>Collection of Macro-Functions to facilitate logger tasks.  
 <a href="#_details">More...</a></p>
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_j_p_logger_shortcuts_8h__dep__incl.png" border="0" usemap="#_2_users_2_viridian_mac_2_documents_2_projects_2_j_u_m_p_2_j_u_m_p_logger_2_headers_2_j_p_logger_shortcuts_8hdep" alt=""/></div>
-<map name="_2_users_2_viridian_mac_2_documents_2_projects_2_j_u_m_p_2_j_u_m_p_logger_2_headers_2_j_p_logger_shortcuts_8hdep" id="_2_users_2_viridian_mac_2_documents_2_projects_2_j_u_m_p_2_j_u_m_p_logger_2_headers_2_j_p_logger_shortcuts_8hdep">
-</map>
-</div>
+<div class="textblock"><code>#import &lt;Foundation/Foundation.h&gt;</code><br/>
+<code>#import &quot;JUMPLoggerConfig.h&quot;</code><br/>
 </div>
 <p><a href="_j_p_logger_shortcuts_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -131,26 +125,26 @@ function toggleVisibility(linkObj) {
 Defines</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Macros that log from objects</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e3bf3ac2a877c655d994bb1004e97de"></a><!-- doxytag: member="JPLoggerShortcuts.h::Debug" ref="a1e3bf3ac2a877c655d994bb1004e97de" args="(message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b>(message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b>(message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(debug:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ce0d4368335b6e9ce65cf688fe924e"></a><!-- doxytag: member="JPLoggerShortcuts.h::Info" ref="af0ce0d4368335b6e9ce65cf688fe924e" args="(message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Info</b>(message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS info:message, ##__VA_ARGS__];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Info</b>(message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(info:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8394ec7618266177b425e85e1aaaade"></a><!-- doxytag: member="JPLoggerShortcuts.h::Warn" ref="ab8394ec7618266177b425e85e1aaaade" args="(message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Warn</b>(message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS warn:message, ##__VA_ARGS__];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Warn</b>(message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(warn:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90c3a21a1168c5d0c46bf094007fda1b"></a><!-- doxytag: member="JPLoggerShortcuts.h::Error" ref="a90c3a21a1168c5d0c46bf094007fda1b" args="(message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b>(message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS error:message, ##__VA_ARGS__];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b>(message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(error:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3aa2799e3660f803671c2e2a2e9fcdc8"></a><!-- doxytag: member="JPLoggerShortcuts.h::Fatal" ref="a3aa2799e3660f803671c2e2a2e9fcdc8" args="(message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>Fatal</b>(message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS fatal:message, ##__VA_ARGS__];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Fatal</b>(message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(fatal:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Macros that log with an exception from objects</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88f4a194dc867aee4b87f425ec77d2a3"></a><!-- doxytag: member="JPLoggerShortcuts.h::DebugException" ref="a88f4a194dc867aee4b87f425ec77d2a3" args="(exception, message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DebugException</b>(exception, message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__ withException:exception];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DebugException</b>(exception, message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(debugWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e4fa9552cece3a8d3cb365802f3a8d0"></a><!-- doxytag: member="JPLoggerShortcuts.h::InfoException" ref="a0e4fa9552cece3a8d3cb365802f3a8d0" args="(exception, message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>InfoException</b>(exception, message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__ withException:exception];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>InfoException</b>(exception, message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(infoWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae75ec9cb5d17ec63304d009c1f5f93b"></a><!-- doxytag: member="JPLoggerShortcuts.h::WarnException" ref="aae75ec9cb5d17ec63304d009c1f5f93b" args="(exception, message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WarnException</b>(exception, message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__ withException:exception];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WarnException</b>(exception, message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(warnWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666fc1c229469af8d57fd52ba85ebfb6"></a><!-- doxytag: member="JPLoggerShortcuts.h::ErrorException" ref="a666fc1c229469af8d57fd52ba85ebfb6" args="(exception, message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorException</b>(exception, message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__ withException:exception];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorException</b>(exception, message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(errorWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e2028809a314f3d14a5ce9ee49d87dc"></a><!-- doxytag: member="JPLoggerShortcuts.h::FatalException" ref="a3e2028809a314f3d14a5ce9ee49d87dc" args="(exception, message,...)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FatalException</b>(exception, message,...)&#160;&#160;&#160;[JPLOGGER_MAINCLASS debug:message, ##__VA_ARGS__ withException:exception];</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FatalException</b>(exception, message,...)&#160;&#160;&#160;JPLogIfYouCan( @selector(fatalWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Collection of Macro-Functions to facilitate logger tasks. </p>
@@ -164,7 +158,7 @@ Defines</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">

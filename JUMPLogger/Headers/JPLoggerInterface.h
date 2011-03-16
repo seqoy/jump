@@ -16,14 +16,72 @@
 #import <Foundation/Foundation.h>
 
 /**
+ * \file JPLoggerInterface.h
+ */
+
+/*! <b>JUMP Logger</b> default logger levels. */
+typedef enum JPLoggerLevels {
+	/// Set the logger level to OFF.
+	JPLoggerOffLevel, 
+	/// Set the logger level to INFO.
+	JPLoggerInfoLevel,
+	/// Set the logger level to DEBUG.
+	JPLoggerDebugLevel,
+	/// Set the logger level to WARN.
+	JPLoggerWarnLevel,
+	/// Set the logger level to ERROR.
+	JPLoggerErrorLevel,
+	/// Set the logger level to FATAL.
+	JPLoggerFatalLevel,
+	/// Set the logger level to ALL.
+	JPLoggerAllLevel
+} JPLoggerLevels;
+
+/**
  * \nosubgrouping 
- * JPLoggerInterface defines an common interface to logger tasks. The nature of JPLogger Modules is
- * to allow you to use any Logger library or framework that you want. So you can implement
- * your own class with this protocol as a wrapper around your favorite logger.
+ * JPLoggerInterface defines an common interface to logger tasks. 
+ * The nature of <b>JUMP Logger Module</b> is to allow you to use any Logger Library or Logger Framework that you want. 
+ * So you can implement this protocol in your own class as an 
+ * <a href="http://en.wikipedia.org/wiki/Adapter_pattern">Adapter</a> to your favorite logger. 
  */
 @protocol JPLoggerInterface 
 @required
 
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Level Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+/** @name Level Methods
+ */
+///@{ 
+
+/**
+ * Define the log level. You must implement this method even if you Logging Framework support
+ * dynamically change the log level or not. If doesn't support, just leave the method empty.
+ * @see #JPLoggerLevels for more information.
+ */
++(void)setLevel:(JPLoggerLevels)anLevel;
+
+/**
+ * Define the log level. You must implement this method even if you Logging Framework support
+ * dynamically change the log level or not. If doesn't support, just leave the method empty.
+ * @see #JPLoggerLevels for more information.
+ */
+-(void)setLevel:(JPLoggerLevels)anLevel;
+
+/**
+ * Retrieve current log level.
+ * @see #JPLoggerLevels for more information.
+ */
++(JPLoggerLevels)currentLevel;
+
+/**
+ * Retrieve current log level.
+ * @see #JPLoggerLevels for more information.
+ */
+-(JPLoggerLevels)currentLevel;
+
+///@}
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 #pragma mark -
 #pragma mark Log Methods

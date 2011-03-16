@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="\<JPLoggerFactoryInterface\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocol_j_p_logger_factory_interface-p.html",tooltip="Missing Docs."];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="JPLoggerAbstractFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_j_p_logger_abstract_factory.html",tooltip="JPLoggerAbstractFactory missing documentation."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="JPLog4JFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_j_p_log4_j_factory.html",tooltip="JPLog4JFactory missing documentation."];
+}

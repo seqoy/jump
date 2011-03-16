@@ -215,7 +215,11 @@
 				<string>build-and-go</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
+				<string>clean</string>
+				<string>clean-target</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>servicesModuleRefactoring</string>
+				<string>servicesModulebreakpoints</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
 			<key>ControllerClassBaseName</key>
@@ -229,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,13 +279,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>53</integer>
-									<integer>33</integer>
+									<integer>12</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 358}, {246, 871}}</string>
+							<string>{{0, 107}, {246, 871}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -302,7 +304,7 @@
 							<real>246</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>399 128 1282 930 0 0 1920 1058 </string>
+						<string>638 128 1282 930 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,12 +315,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>L4PropertyConfigurator.m</string>
+								<string>L4Level.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>L4PropertyConfigurator.m</string>
+										<string>L4Level.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>186477B813300909002CBD59</string>
+										<string>1879E11113313E9B00CF3ED8</string>
 										<key>history</key>
 										<array>
 											<string>1861E6A7132FE07200F970A6</string>
@@ -344,7 +348,13 @@
 											<string>1864779113300627002CBD59</string>
 											<string>1864779213300627002CBD59</string>
 											<string>186477B2133008D9002CBD59</string>
-											<string>186477B3133008D9002CBD59</string>
+											<string>18BCB86F1331027E00986778</string>
+											<string>18BCB8701331027E00986778</string>
+											<string>18BCB8711331027E00986778</string>
+											<string>18BCB8721331027E00986778</string>
+											<string>1879E10E13313E9B00CF3ED8</string>
+											<string>1879E10F13313E9B00CF3ED8</string>
+											<string>1879E11013313E9B00CF3ED8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1014, 674}}</string>
+								<string>{{0, 0}, {1014, 664}}</string>
 								<key>RubberWindowFrame</key>
-								<string>399 128 1282 930 0 0 1920 1058 </string>
+								<string>638 128 1282 930 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>674pt</string>
+							<string>664pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -376,14 +386,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 679}, {1014, 210}}</string>
+								<string>{{0, 669}, {1014, 220}}</string>
 								<key>RubberWindowFrame</key>
-								<string>399 128 1282 930 0 0 1920 1058 </string>
+								<string>638 128 1282 930 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>210pt</string>
+							<string>220pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -402,9 +412,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>186477B5133008D9002CBD59</string>
+				<string>1879E11213313E9B00CF3ED8</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>186477B6133008D9002CBD59</string>
+				<string>1879E11313313E9B00CF3ED8</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -533,7 +543,7 @@
 	<key>ToolbarIsVisible</key>
 	<true/>
 	<key>ToolbarSizeMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>Type</key>
 	<string>Perspectives</string>
 	<key>UpdateMessage</key>
@@ -546,7 +556,7 @@
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Log4CocoaTouch.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>399 128 1282 930 0 0 1920 1058 </string>
+	<string>638 128 1282 930 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -623,7 +633,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1861E6A2132FE06700F970A6</string>
-				<string>186477B7133008D9002CBD59</string>
+				<string>1879E11413313E9B00CF3ED8</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

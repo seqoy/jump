@@ -3,17 +3,36 @@ var NAVTREE =
   [ "JUMPLogger", "index.html", [
     [ "JPLogger Module Programming Guide", "index.html", null ],
     [ "Class List", "annotated.html", [
+      [ "JPLog4CocoaFactory", "interface_j_p_log4_cocoa_factory.html", null ],
+      [ "JPLoggerAbstractFactory", "interface_j_p_logger_abstract_factory.html", null ],
       [ "<JPLoggerFactoryInterface>", "protocol_j_p_logger_factory_interface-p.html", null ],
-      [ "<JPLoggerInterface>", "protocol_j_p_logger_interface-p.html", null ]
+      [ "<JPLoggerInterface>", "protocol_j_p_logger_interface-p.html", null ],
+      [ "JPNSLogFactory", "interface_j_p_n_s_log_factory.html", null ]
     ] ],
     [ "Class Index", "classes.html", null ],
+    [ "Class Hierarchy", "hierarchy.html", [
+      [ "<JPLoggerFactoryInterface>", "protocol_j_p_logger_factory_interface-p.html", [
+        [ "JPLoggerAbstractFactory", "interface_j_p_logger_abstract_factory.html", [
+          [ "JPLog4CocoaFactory", "interface_j_p_log4_cocoa_factory.html", null ],
+          [ "JPNSLogFactory", "interface_j_p_n_s_log_factory.html", null ]
+        ] ]
+      ] ],
+      [ "<JPLoggerInterface>", "protocol_j_p_logger_interface-p.html", null ]
+    ] ],
     [ "Class Members", "functions.html", null ],
     [ "File List", "files.html", [
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLog4CocoaFactory.h", null, null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLog4CocoaLogger.h", null, null ],
       [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLogger.h", "_j_p_logger_8h.html", null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerAbstractFactory.h", null, null ],
       [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerFactoryInterface.h", null, null ],
-      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerInterface.h", null, null ],
-      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerShortcuts.h", "_j_p_logger_shortcuts_8h.html", null ]
-    ] ]
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerInterface.h", "_j_p_logger_interface_8h.html", null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerShortcuts.h", "_j_p_logger_shortcuts_8h.html", null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLogNSLogLogger.h", null, null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPNSLogFactory.h", null, null ],
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JUMPLoggerConfig.h", null, null ]
+    ] ],
+    [ "File Members", "globals.html", null ]
   ] ]
 ];
 
