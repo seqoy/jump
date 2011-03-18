@@ -18,5 +18,7 @@
 #import "JUMPLoggerConfig.h"
 #import "Log4Cocoa.h"
 
-@interface JPLog4CocoaLogger : NSObject <JPLoggerInterface> {}
+@interface JPLog4CocoaLogger : NSObject <JPLoggerInterface> {
+	Class keyForLog;
+}
 @end

@@ -15,11 +15,21 @@
  */
 #import <Foundation/Foundation.h>
 #import "JPLoggerAbstractFactory.h"
+#import "JPLoggerShortcuts.h"
 #import "JPLog4CocoaLogger.h"
 #import "Log4Cocoa.h"
+
+#import "L4NSLoggerAppender.h"
 
 /**
  * JPLog4CocoaFactory missing documentation.
  */
 @interface JPLog4CocoaFactory : JPLoggerAbstractFactory {}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+#pragma mark -
+#pragma mark Level Translation Methods.
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
++(JPLoggerLevels)convertL4Level:(L4Level*)anLevel;
++(L4Level*)convertJPLevel:(JPLoggerLevels)anLevel;
 @end

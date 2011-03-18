@@ -20,12 +20,23 @@
 
 // Static Logger Class.
 static BOOL configured;
+static JPLoggerLevels globalLevel;
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 // Default configuration for the logger.
 +(BOOL)configureLogger {
+	// If already configured, do nothing.
+	if ( configured )
+		return YES;
+	
 	// Default class.
 	[self setLoggerClass:[JPLogNSLogLogger class]];
+	
+	// Default level is INFO.
+	[self setGlobalLevel:JPLoggerInfoLevel];
+	
+	// Configured.
+	configured = YES;
 	
 	// No more configurations.. Is NSLog right? That's why Log Frameworks exist!
 	return YES;
@@ -38,5 +49,18 @@ static BOOL configured;
     return NO;
 }
 
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Level Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+//
++(void)setGlobalLevel:(JPLoggerLevels)desiredLevel {
+	globalLevel = desiredLevel;
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
++(JPLoggerLevels)globalLevel {
+	return globalLevel;
+}
 @end
 

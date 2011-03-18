@@ -39,6 +39,12 @@
 +(id<JPLoggerInterface>)getLogger;
 
 /**
+ * Get an configured instance of the logger. 
+ * @return An autorelesable instance of the logger.
+ */
++(id<JPLoggerInterface>)getLoggerForClass:(Class)anClass;
+
+/**
  * Implement on this method all configuration for the logger. 
  * This method should be called inside of #getLogger to configure all settings.
  * @return YES if configured succesfully.
@@ -52,6 +58,28 @@
  * @return YES if configured succesfully.
  */
 +(BOOL)configureWithFile:(NSString*)anFileName ;
+
+///@}
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Level Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+/** @name Level Methods
+ */
+///@{ 
+
+/**
+ * Define the log level. You must implement this method even if you Logging Framework support
+ * dynamically change the log level or not. If doesn't support, just leave the method empty.
+ * @see #JPLoggerLevels for more information.
+ */
++(void)setGlobalLevel:(JPLoggerLevels)anLevel;
+
+/**
+ * Retrieve current log level.
+ * @see #JPLoggerLevels for more information.
+ */
++(JPLoggerLevels)globalLevel;
 
 ///@}
 @end

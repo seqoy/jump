@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */; };
 		1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */; };
+		188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64871332B1A90069CB1C /* CFNetwork.framework */; };
+		188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64881332B1A90069CB1C /* SystemConfiguration.framework */; };
+		188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64891332B1A90069CB1C /* UIKit.framework */; };
 		18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18448B07132FF6F50061513B /* libJUMPLogger.a */; };
 		3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6848D613241B1500F6D21A /* GHUnitIOS.framework */; };
 		3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68491E13241B7500F6D21A /* CoreGraphics.framework */; };
@@ -76,6 +79,9 @@
 		18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLog4CocoaTest.m; path = Sources/JUMPLog4CocoaTest.m; sourceTree = "<group>"; };
 		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
 		1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPNSLogTest.m; path = Sources/JUMPNSLogTest.m; sourceTree = "<group>"; };
+		188F64871332B1A90069CB1C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /System/Library/Frameworks/CFNetwork.framework; sourceTree = "<absolute>"; };
+		188F64881332B1A90069CB1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		188F64891332B1A90069CB1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
 		3A6848CE132419FC00F6D21A /* JUMPDatabaseTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUMPDatabaseTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6848D1132419FD00F6D21A /* JUMPDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JUMPDatabaseTests-Info.plist"; sourceTree = "<group>"; };
 		3A6848D613241B1500F6D21A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
@@ -108,6 +114,9 @@
 				3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */,
 				3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */,
 				18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */,
+				188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */,
+				188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */,
+				188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +163,9 @@
 		3A6848F713241B4C00F6D21A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				188F64871332B1A90069CB1C /* CFNetwork.framework */,
+				188F64881332B1A90069CB1C /* SystemConfiguration.framework */,
+				188F64891332B1A90069CB1C /* UIKit.framework */,
 				18448B1B132FF99A0061513B /* libJUMPLogger.a */,
 				3A68494613241D0100F6D21A /* GHUnit */,
 				3A68491E13241B7500F6D21A /* CoreGraphics.framework */,
@@ -376,6 +388,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 			};
 			name = Debug;
 		};

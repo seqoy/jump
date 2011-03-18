@@ -28,7 +28,13 @@ static Class<JPLoggerFactoryInterface> loggerFactoryClass;
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 +(Class<JPLoggerFactoryInterface>)loggerFactoryClass {
-	return loggerFactoryClass;
+
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+		return loggerFactoryClass;
+	#else
+		return nil;
+	#endif
 }
 
 @end

@@ -37,9 +37,18 @@ static BOOL configured;
     
     // If can't, configure locally, using Default values.
     if ( !success) {
-		[[L4Logger rootLogger] setLevel:[L4Level debug]];
-		[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES
-																	  withLayout:[L4Layout simpleLayout]]];
+		// Custom Layout.
+		L4Layout *anLayout = [[[L4PatternLayout alloc] initWithConversionPattern:@"[%-5p]: %m%n"] autorelease];
+		
+		// Default level is INFO.
+		[[L4Logger rootLogger] setLevel:[L4Level info]];
+		
+		// Add Console Appender.
+		//[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout]];
+		
+		// Create Appender.
+		L4NSLoggerAppender *anAppender = [[L4NSLoggerAppender alloc] initWithLayout:anLayout];
+		[[L4Logger rootLogger] addAppender:anAppender];
 	}
     
 	// Set as configured.
@@ -68,5 +77,85 @@ static BOOL configured;
     return YES;
 }
 
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Level Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+//
++(void)setGlobalLevel:(JPLoggerLevels)desiredLevel {
+	// Level.
+	L4Level *anLevel = [JPLog4CocoaFactory convertJPLevel:desiredLevel];;
+	
+	// Set the log level on root logger.
+	[[L4Logger rootLogger] setLevel:anLevel];
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
++(JPLoggerLevels)globalLevel {
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+		
+		// Current level for root logger.
+		L4Level *anLevel = [[L4Logger rootLogger] level];
+		
+		// Convert and return.
+		return [JPLog4CocoaFactory convertL4Level:anLevel];
+		
+		///////////// ///////////// /////////
+	#else
+		return JPLoggerOffLevel;
+	#endif
+
+}
+
+///@}
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+#pragma mark -
+#pragma mark Level Translation Methods.
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
++(JPLoggerLevels)convertL4Level:(L4Level*)anLevel {
+	// Convert.
+	if      ( anLevel == [L4Level all] )   return JPLoggerAllLevel;
+	else if ( anLevel == [L4Level info] )  return JPLoggerInfoLevel;
+	else if ( anLevel == [L4Level debug] ) return JPLoggerDebugLevel;
+	else if ( anLevel == [L4Level warn] )  return JPLoggerWarnLevel;
+	else if ( anLevel == [L4Level error] ) return JPLoggerErrorLevel;
+	else if ( anLevel == [L4Level fatal] ) return JPLoggerFatalLevel;
+	else								   return JPLoggerOffLevel;
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////
++(L4Level*)convertJPLevel:(JPLoggerLevels)desiredLevel {
+	// Level.
+	L4Level *anLevel;
+	
+	switch (desiredLevel) {
+		case JPLoggerAllLevel:
+			anLevel = [L4Level all];
+			break;
+		case JPLoggerInfoLevel:
+			anLevel = [L4Level info];
+			break;
+		case JPLoggerDebugLevel:
+			anLevel = [L4Level debug];
+			break;
+		case JPLoggerWarnLevel:
+			anLevel = [L4Level warn];
+			break;
+		case JPLoggerErrorLevel:
+			anLevel = [L4Level error];
+			break;
+		case JPLoggerFatalLevel:
+			anLevel = [L4Level fatal];
+			break;
+		default:
+			anLevel = [L4Level off];
+			break;
+	}
+	
+	// Return the level.
+	return anLevel;
+}
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 @end
 

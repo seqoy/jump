@@ -60,26 +60,27 @@ typedef enum JPLoggerLevels {
  * dynamically change the log level or not. If doesn't support, just leave the method empty.
  * @see #JPLoggerLevels for more information.
  */
-+(void)setLevel:(JPLoggerLevels)anLevel;
-
-/**
- * Define the log level. You must implement this method even if you Logging Framework support
- * dynamically change the log level or not. If doesn't support, just leave the method empty.
- * @see #JPLoggerLevels for more information.
- */
 -(void)setLevel:(JPLoggerLevels)anLevel;
 
 /**
  * Retrieve current log level.
  * @see #JPLoggerLevels for more information.
  */
-+(JPLoggerLevels)currentLevel;
-
-/**
- * Retrieve current log level.
- * @see #JPLoggerLevels for more information.
- */
 -(JPLoggerLevels)currentLevel;
+
+///@}
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Log For Some Key Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+/** @name Log For Some Key Methods
+ */
+///@{ 
+
+-(id)getKeyForLog;
+
+////////// ////////// ////////// //////////
+-(void)setKeyForLog:(id)anKey;
 
 ///@}
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
@@ -94,31 +95,31 @@ typedef enum JPLoggerLevels {
  * Log an message with <b>Debug</b> level priority.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  */
-+(void)debug:(id)variableList, ... ;
+-(void)debug:(id)variableList, ... ;
 
 /**
  * Log an message with <b>Info</b> level priority.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  */
-+(void)info:(id)variableList, ... ; 
+-(void)info:(id)variableList, ... ; 
 
 /**
  * Log an message with <b>Warn</b> level priority.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  */
-+(void)warn:(id)variableList, ... ; 
+-(void)warn:(id)variableList, ... ; 
 
 /**
  * Log an message with <b>Error</b> level priority.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  */
-+(void)error:(id)variableList, ... ; 
+-(void)error:(id)variableList, ... ; 
 
 /**
  * Log an message with <b>Fatal</b> level priority.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  */
-+(void)fatal:(id)variableList, ... ;
+-(void)fatal:(id)variableList, ... ;
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 /**
@@ -126,35 +127,35 @@ typedef enum JPLoggerLevels {
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  * @param anException An NSException object with more information about hits log.
  */
-+(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
 
 /**
  * Log an message with <b>Info</b> level priority, also accept an Exception.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  * @param anException An NSException object with more information about hits log.
  */
-+(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
 
 /**
  * Log an message with <b>Warn</b> level priority, also accept an Exception.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  * @param anException An NSException object with more information about hits log.
  */
-+(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
 
 /**
  * Log an message with <b>Error</b> level priority, also accept an Exception.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  * @param anException An NSException object with more information about hits log.
  */
-+(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
 
 /**
  * Log an message with <b>Fatal</b> level priority, also accept an Exception.
  * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
  * @param anException An NSException object with more information about hits log.
  */
-+(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
 
 
 ///@}

@@ -16,7 +16,7 @@
 #import "JPLoggerShortcuts.h"
 
 //// //// //// //// //// //// //// //// //// //// //// ///
-void JPLogIfYouCan( SEL method, NSString* message, NSException* anException  ) {
+void JPLogIfYouCan( SEL method, NSString* message, NSException* anException, Class logToClass  ) {
 
 	// Compiler condition to disable all logs.
 	#ifndef JPLOGGER_DISABLE_ALL
@@ -44,15 +44,18 @@ void JPLogIfYouCan( SEL method, NSString* message, NSException* anException  ) {
 		// If doesn't return an logger, do nothing.
 		if ( logger == nil )
 			return;
-		
+
+		// Set log to specific class.
+		[logger setKeyForLog:logToClass];
+
 		//// //// //// //// //// //// ///
 		// Logger with Exception.
 		if (anException)
-			[[(id)logger class] performSelector:method withObject:anException withObject:message];
+			[(id)logger performSelector:method withObject:anException withObject:message];
 
 		//// //// //// //// //// //// ///
 		// Logger without Exception.
 		else
-			[[(id)logger class] performSelector:method withObject:message];
+			[(id)logger performSelector:method withObject:message];
 	#endif
 }

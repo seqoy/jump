@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2011 - SEQOY.org and Paulo Oliveira ( http://www.seqoy.org )
  *
@@ -14,134 +15,139 @@
  * limitations under the License.
  */
 #import "JPLog4CocoaLogger.h"
+#import "JPLog4CocoaFactory.h"
 
 @implementation JPLog4CocoaLogger
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)setLevel:(JPLoggerLevels)desiredLevel {
+#pragma mark -
+#pragma mark Getters and Setters.
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+-(id)getKeyForLog {
+	return keyForLog;
+}
+
+////////// ////////// ////////// //////////
+-(void)setKeyForLog:(id)anKey {
+	keyForLog = (Class)anKey;
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+-(void)setLevel:(JPLoggerLevels)desiredLevel {
+	
 	// Level.
-	L4Level *anLevel;
+	L4Level *anLevel = [JPLog4CocoaFactory convertJPLevel:desiredLevel];;
 	
-	switch (desiredLevel) {
-		case JPLoggerAllLevel:
-			anLevel = [L4Level all];
-			break;
-		case JPLoggerInfoLevel:
-			anLevel = [L4Level info];
-			break;
-		case JPLoggerDebugLevel:
-			anLevel = [L4Level debug];
-			break;
-		case JPLoggerWarnLevel:
-			anLevel = [L4Level warn];
-			break;
-		case JPLoggerErrorLevel:
-			anLevel = [L4Level error];
-			break;
-		case JPLoggerFatalLevel:
-			anLevel = [L4Level fatal];
-			break;
-		default:
-			anLevel = [L4Level off];
-			break;
-	}
-	
-	[[L4Logger rootLogger] setLevel:anLevel];
-}
--(void)setLevel:(JPLoggerLevels)anLevel {
-	[JPLog4CocoaLogger setLevel:anLevel];
+	// Set the log level for this specific class.
+	[[L4Logger loggerForClass:(Class)[self getKeyForLog]] setLevel:anLevel];
 }
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(JPLoggerLevels)currentLevel {
-	// Current level.
-	L4Level *anLevel = [[L4Logger rootLogger] level];
-	
-	// Convert.
-	if      ( anLevel == [L4Level all] ) return JPLoggerAllLevel;
-	else if ( anLevel == [L4Level info] ) return JPLoggerInfoLevel;
-	else if ( anLevel == [L4Level debug] ) return JPLoggerDebugLevel;
-	else if ( anLevel == [L4Level warn] ) return JPLoggerWarnLevel;
-	else if ( anLevel == [L4Level error] ) return JPLoggerErrorLevel;
-	else if ( anLevel == [L4Level fatal] ) return JPLoggerFatalLevel;
-	else if ( anLevel == [L4Level off] ) return JPLoggerOffLevel;
-	
-	// Nothing, return off.
-	return JPLoggerOffLevel;
-}
 -(JPLoggerLevels)currentLevel {
-	return [JPLog4CocoaLogger currentLevel];
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+		
+		// Current level for specific class.
+		L4Level *anLevel = [[L4Logger loggerForClass:(Class)[self getKeyForLog]] level];
+		
+		// Convert and return.
+		return [JPLog4CocoaFactory convertL4Level:anLevel];
+	
+	///////////// ///////////// /////////
+	#else
+		return JPLoggerOffLevel;
+	#endif
 }
 
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)debug:(id)variableList, ... { 
-    // Simply redirect parameters.
-    va_list args;
-    log4Debug( variableList, args );
-};
+// Compiler condition to disable all logs.
+#ifndef JPLOGGER_DISABLE_ALL
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)info:(id)variableList, ...  { 
-    // Simply redirect parameters.
+-(void)debug:(id)variableList, ... { 
     va_list args;
-    log4Info( variableList, args );
+	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isDebugEnabled]) 
+		log4Log(L4_LOG([L4Level debug], nil), variableList,args);
+
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)warn:(id)variableList, ...  { 
+-(void)info:(id)variableList, ...  { 
+    va_list args;
+	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isInfoEnabled]) 
+		log4Log(L4_LOG([L4Level info], nil), variableList,args);
+}; 
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+-(void)warn:(id)variableList, ...  { 
     // Simply redirect parameters.
     va_list args;
     log4Warn( variableList, args );
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)error:(id)variableList, ...  { 
+-(void)error:(id)variableList, ...  { 
     // Simply redirect parameters.
     va_list args;
     log4Error( variableList, args );
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)fatal:(id)variableList, ...  {  
+-(void)fatal:(id)variableList, ...  {  
     // Simply redirect parameters.
     va_list args;
     log4Fatal( variableList, args );
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
     // Simply redirect parameters.
     va_list args;
     log4DebugWithException( variableList, anException, args );
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
     // Simply redirect parameters.
     va_list args;
     log4InfoWithException( variableList, anException, args );
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
     // Simply redirect parameters.
     va_list args;
     log4WarnWithException( variableList, anException, args );
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
     // Simply redirect parameters.
     va_list args;
     log4ErrorWithException( variableList, anException, args );
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
     // Simply redirect parameters.
     va_list args;
     log4FatalWithException( variableList, anException, args );
 };
 
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+// Compiler condition to disable all logs.
+#else
+
+	-(void)debug:(id)variableList, ... { /// Disabled };
+	-(void)info:(id)variableList, ...  { /// Disabled }; 
+	-(void)warn:(id)variableList, ...  { /// Disabled }; 
+	-(void)error:(id)variableList, ...  { /// Disabled }; 
+	-(void)fatal:(id)variableList, ...  { /// Disabled };
+	-(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+	-(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+	-(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+	-(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+	-(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+
+#endif
 
 @end

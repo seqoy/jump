@@ -22,7 +22,17 @@
  * Collection of Macro-Functions to facilitate logger tasks.
  */
 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// 
+#pragma mark -
+#pragma mark Macros that define log levels.
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// 
+/** @name Macros that define log levels
+ */
+///@{ 
+#define SetGlobalLogLevel( _anlevel_ ) [[JUMPLoggerConfig loggerFactoryClass] setGlobalLevel:_anlevel_]
+#define SetClassLogLevel( _anlevel_ ) [[[JUMPLoggerConfig loggerFactoryClass] getLoggerForClass:[self class]] setLevel:_anlevel_]
 
+///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// 
 #pragma mark -
 #pragma mark Macros that log from objects.
@@ -31,11 +41,11 @@
  */
 ///@{ 
 
-#define Debug(message, ...) JPLogIfYouCan( @selector(debug:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)
-#define Info(message, ...) JPLogIfYouCan( @selector(info:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)
-#define Warn(message, ...) JPLogIfYouCan( @selector(warn:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)
-#define Error(message, ...) JPLogIfYouCan( @selector(error:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)
-#define Fatal(message, ...) JPLogIfYouCan( @selector(fatal:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil)
+#define Debug(message, ...) JPLogIfYouCan( @selector(debug:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil, [self class])
+#define Info(message, ...) JPLogIfYouCan( @selector(info:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil, [self class])
+#define Warn(message, ...) JPLogIfYouCan( @selector(warn:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil, [self class])
+#define Error(message, ...) JPLogIfYouCan( @selector(error:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil, [self class])
+#define Fatal(message, ...) JPLogIfYouCan( @selector(fatal:), [NSString stringWithFormat:message, ##__VA_ARGS__], nil, [self class])
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// 
@@ -46,14 +56,14 @@
  */
 ///@{ 
 
-#define DebugException(exception, message, ...) JPLogIfYouCan( @selector(debugWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)
-#define InfoException(exception, message, ...) JPLogIfYouCan( @selector(infoWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)
-#define WarnException(exception, message, ...) JPLogIfYouCan( @selector(warnWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)
-#define ErrorException(exception, message, ...) JPLogIfYouCan( @selector(errorWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)
-#define FatalException(exception, message, ...) JPLogIfYouCan( @selector(fatalWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception)
+#define DebugException(exception, message, ...) JPLogIfYouCan( @selector(debugWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception, [self class])
+#define InfoException(exception, message, ...) JPLogIfYouCan( @selector(infoWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception, [self class])
+#define WarnException(exception, message, ...) JPLogIfYouCan( @selector(warnWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception, [self class])
+#define ErrorException(exception, message, ...) JPLogIfYouCan( @selector(errorWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception, [self class])
+#define FatalException(exception, message, ...) JPLogIfYouCan( @selector(fatalWithException:andMessage:), [NSString stringWithFormat:message, ##__VA_ARGS__], exception, [self class])
 
 ///@}
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// 
 // Private Contidional Function.
-void JPLogIfYouCan( SEL method, NSString* message, NSException* anException );
+void JPLogIfYouCan( SEL method, NSString* message, NSException* anException, Class logToClass );

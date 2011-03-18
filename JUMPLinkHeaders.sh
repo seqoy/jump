@@ -27,6 +27,7 @@ ln -s ../JUMPNetwork/Headers/* .
 echo "Linking JUMPUserInterface Headers..."
 ln -s ../JUMPUserInterface/Headers/* .
 
-echo "Linking JUMPLogger Headers..."
+echo "Linking JUMPLogger Headers (Includes Log4CocoaTouch and NSLogger..."
 ln -s ../JUMPLogger/Headers/* .
 ln -s ../JUMPLogger/Libraries/Log4CocoaTouch/Headers/* .
+ln -s ../JUMPLogger/Libraries/NSLogger/Headers/* .

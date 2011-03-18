@@ -45,7 +45,7 @@
 
 -(void)testLogSomething {
 	// Set Level to All.
-	[[JPNSLogFactory getLogger] setLevel:JPLoggerAllLevel];
+	SetGlobalLogLevel(JPLoggerAllLevel);
 
     GHTestLog(@"Should log all levels messages below, please check...");
     Info( @"Logging something on INFO level!!");
@@ -56,7 +56,7 @@
 }
 
 -(void)testLogSomethingWithExceptions {
-	[[JPNSLogFactory getLogger] setLevel:JPLoggerAllLevel];
+	SetGlobalLogLevel(JPLoggerAllLevel);
     NSException *anException = [NSException exceptionWithName:@"testException" reason:@"Some reason" userInfo:nil];
     //
     GHTestLog(@"Should log all levels messages with exception below, please check...");
@@ -66,18 +66,19 @@
 
 -(void)testChangeLogLevel {
 	// Change Log Level to test.
-    [[JPNSLogFactory getLogger] setLevel:JPLoggerOffLevel];
+	SetClassLogLevel( JPLoggerOffLevel );
 	// Retrieve.
-	JPLoggerLevels currentLevel = [[JPNSLogFactory getLogger] currentLevel];
+	JPLoggerLevels currentLevel = [[JPNSLogFactory getLoggerForClass:[self class]] currentLevel];
 	GHAssertEquals( JPLoggerOffLevel, currentLevel, @"Level wasn't retrieved correctly!!" );
 	Debug(@"THIS MESSAGE CANT BE LOGGED!!");
-
+	
 	// Change Log Level to test.
-    [[JPNSLogFactory getLogger] setLevel:JPLoggerInfoLevel];
+	SetClassLogLevel( JPLoggerInfoLevel );
 	// Retrieve.
-	currentLevel = [[JPNSLogFactory getLogger] currentLevel];
+	currentLevel = [[JPNSLogFactory getLoggerForClass:[self class]] currentLevel];
 	GHAssertEquals( JPLoggerInfoLevel, currentLevel, @"Level wasn't retrieved correctly!!" );
 	Debug(@"THIS MESSAGE CANT BE LOGGED!!");
 	Info( @"Logging something on INFO level!!");
+
 }
 @end

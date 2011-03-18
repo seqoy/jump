@@ -1,7 +1,7 @@
 TLog4CocoTouch
 v7
 r0
-t321993770.987028
+t322148958.106875
 cCheck dependencies
 cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -281,8 +281,8 @@ i<Foundation/Foundation.h>
 i"L4Filter.h"
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Headers/L4WriterAppender.h
-c000000004D80B29E0000000000000E76
-t1300279966
+c000000004D826D310000000000000E76
+t1300393265
 s3702
 i<Foundation/Foundation.h>
 i"L4AppenderProtocols.h"
@@ -368,8 +368,8 @@ i"L4Filter.h"
 i"L4LoggingEvent.h"
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m
-c000000004D80B29E0000000000000253
-t1300279966
+c000000004D821F080000000000000253
+t1300373256
 s595
 i"L4Layout.h"
 i"L4SimpleLayout.h"
@@ -511,8 +511,8 @@ i"L4LoggingEvent.h"
 i"L4LogLog.h"
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m
-c000000004D80B29E0000000000000135
-t1300279966
+c000000004D8237D90000000000000135
+t1300379609
 s309
 i"NSObject+Log4Cocoa.h"
 i"L4Logger.h"
@@ -522,7 +522,7 @@ t1300279966
 s514136
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a
-t1300297828
+t1300393419
 s521728
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphoneos/Log4CocoTouch.build/Objects-normal/armv6/L4AppenderAttachable.o
@@ -639,116 +639,116 @@ t1300279966
 s7576
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o
-t1300297826
+t1300369056
 s18080
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o
-t1300297827
+t1300369056
 s29888
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o
-t1300297827
+t1300369056
 s8996
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o
-t1300297827
+t1300393419
 s15160
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o
-t1300297827
+t1300393419
 s24420
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o
-t1300297827
+t1300369056
 s6440
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o
-t1300297827
+t1300393419
 s17400
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o
-t1300297827
+t1300369057
 s10356
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o
-t1300297827
+t1300373256
 s10740
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o
-t1300297827
+t1300369057
 s21096
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o
-t1300297827
+t1300369057
 s14328
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o
-t1300297827
+t1300369057
 s14188
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o
-t1300297827
+t1300369057
 s16024
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o
-t1300297827
+t1300369056
 s39152
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o
-t1300297827
+t1300369057
 s32032
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o
-t1300297827
+t1300369057
 s7532
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o
-t1300297827
+t1300369057
 s24664
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o
-t1300297827
+t1300369057
 s41120
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o
-t1300297827
+t1300369057
 s26244
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o
-t1300297827
+t1300369057
 s27020
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o
-t1300297828
+t1300393419
 s22288
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o
-t1300297828
+t1300369057
 s9300
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o
-t1300297828
+t1300369057
 s8752
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o
-t1300297828
+t1300369057
 s13752
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o
-t1300297828
+t1300393419
 s25608
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/Log4CocoTouch.LinkFileList
-c000000004D80F862000000000000139D
-t1300297826
+c000000004D820EA0000000000000139D
+t1300369056
 s5021
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o
-t1300297828
+t1300369057
 s20004
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o
-t1300297828
+t1300379621
 s7596
 
 N/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m
@@ -1295,7 +1295,7 @@ s7576
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies321993770#321993771#0(0"0(0#1#0"8654352288#0"0#
+lSLF07#2@18"Check dependencies322148957#322148958#0(0"0(0#1#0"28429427921584240#0"0#
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphoneos/Log4CocoTouch.build/Objects-normal/armv6/L4AppenderAttachable.o "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s321905254.837505
@@ -1730,355 +1730,85 @@ CCompileC build/Log4CocoaTouch.build/Debug-iphoneos/Log4CocoTouch.build/Objects-
 r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990626.792177
-e321990626.994382
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@117"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m321990626#321990626#0(0"0(0#0#109"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m8651170016#2278"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderAttachable.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderAttachable.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990626.792932
-e321990627.029112
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m321990626#321990627#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m8650844416#2274"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4AppenderSkeleton.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4AppenderSkeleton.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990626.793872
-e321990627.014510
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m321990626#321990627#0(0"0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m8650303904#2276"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4BasicConfigurator.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4BasicConfigurator.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990626.994757
-e321990627.219016
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@114"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m321990626#321990627#0(0"0(0#0#106"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m8638723136#2272"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4ConsoleAppender.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4ConsoleAppender.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.014647
-e321990627.250401
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@123"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m321990627#321990627#0(0"0(0#0#115"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m8617072576#2290"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DailyRollingFileAppender.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DailyRollingFileAppender.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.029247
-e321990627.222203
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@112"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m321990627#321990627#0(0"0(0#0#104"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m8650988096#2268"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4DenyAllFilter.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4DenyAllFilter.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4FileAppender.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.056846
-e321990627.261895
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4FileAppender.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@111"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4FileAppender.m321990627#321990627#0(0"0(0#0#103"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4FileAppender.m8649534816#2266"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4FileAppender.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4FileAppender.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Filter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.219155
-e321990627.409830
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Filter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@105"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Filter.m321990627#321990627#0(0"0(0#0#97"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Filter.m8654524480#2254"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Filter.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Filter.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.222503
-e321990627.411562
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@105"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m321990627#321990627#0(0"0(0#0#97"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m8650988352#2254"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Layout.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Layout.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Level.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.250551
-e321990627.464956
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Level.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@104"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Level.m321990627#321990627#0(0"0(0#0#96"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Level.m8650026176#2252"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Level.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Level.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.262023
-e321990627.461790
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m321990627#321990627#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m8638283040#2274"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelMatchFilter.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelMatchFilter.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.410196
-e321990627.610130
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m321990627#321990627#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m8600883840#2274"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LevelRangeFilter.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LevelRangeFilter.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LogLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.610275
-e321990627.804002
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LogLog.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@105"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LogLog.m321990627#321990627#0(0"0(0#0#97"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LogLog.m8650882720#2254"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LogLog.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LogLog.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990626.791317
-e321990627.056494
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@105"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m321990626#321990627#0(0"0(0#0#97"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m8654412288#2254"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logger.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logger.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.411668
-e321990627.682055
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@110"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m321990627#321990627#0(0"0(0#0#102"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m8634825312#2264"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggerStore.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggerStore.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logging.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.461916
-e321990627.655040
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logging.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@106"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logging.m321990627#321990627#0(0"0(0#0#98"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logging.m8654887744#2256"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Logging.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Logging.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.465086
-e321990627.678015
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@111"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m321990627#321990627#0(0"0(0#0#103"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m8654601632#2266"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4LoggingEvent.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4LoggingEvent.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.655174
-e321990627.953340
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@112"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m321990627#321990627#0(0"0(0#0#104"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m8647784864#2268"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PatternLayout.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PatternLayout.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Properties.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.678155
-e321990627.916136
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Properties.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@109"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Properties.m321990627#321990627#0(0"0(0#0#101"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Properties.m8645673600#2262"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4Properties.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4Properties.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.682187
-e321990627.917792
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@119"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m321990627#321990627#0(0"0(0#0#111"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m8644287648#2282"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4PropertyConfigurator.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4PropertyConfigurator.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.804148
-e321990628.026031
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@118"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m321990627#321990628#0(0"0(0#0#110"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m8654926400#2280"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RollingFileAppender.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RollingFileAppender.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RootLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.916340
-e321990628.167393
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RootLogger.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@109"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RootLogger.m321990627#321990628#0(0"0(0#0#101"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RootLogger.m8649852128#2262"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4RootLogger.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4RootLogger.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.917907
-e321990628.147026
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@111"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m321990627#321990628#0(0"0(0#0#103"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m8648519264#2266"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4SimpleLayout.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4SimpleLayout.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990627.953463
-e321990628.215208
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@116"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m321990627#321990628#0(0"0(0#0#108"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m8644260352#2276"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4StringMatchFilter.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4StringMatchFilter.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990628.026165
-e321990628.246041
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@113"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m321990628#321990628#0(0"0(0#0#105"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m8622800384#2270"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/L4WriterAppender.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/L4WriterAppender.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990628.167529
-e321990628.332124
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m321990628#321990628#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m8648582784#2271"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Categories/NSDate-Calendar.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSDate-Calendar.o0#
+r0
 
 CCompileC build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s321990628.147171
-e321990628.303812
-r1
-xCompileC
-xbuild/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@115"Compile /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m321990628#321990628#0(0"0(0#0#107"/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m8650117024#2274"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-generated-files.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-own-target-headers.hmap -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-all-target-headers.hmap -iquote /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Log4CocoTouch-project-headers.hmap -F/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/include -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources/i386 -I/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/DerivedSources -c /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/Sources/NSObject+Log4Cocoa.m -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/NSObject+Log4Cocoa.o0#
+r0
 
 CLibtool "/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Third-Part Libraries/Log4CocoaTouch/build/Debug-iphoneos/libLog4CocoTouch.a" normal armv6
 s321905452.050572
@@ -2094,12 +1824,5 @@ CLibtool /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4Coc
 r0
 
 CLibtool /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a normal i386
-s321990628.332205
-e321990628.346581
-r1
-xLibtool
-x/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a
-xnormal
-xi386
-lSLF07#2@66"Libtool build/Debug-iphonesimulator/libLog4CocoTouch.a normal i386321990628#321990628#0(0"0(0#0#0"8654875616#919"    cd /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator -filelist /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimulator/Log4CocoTouch.build/Objects-normal/i386/Log4CocoTouch.LinkFileList -framework Foundation -o /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/Log4CocoaTouch/build/Debug-iphonesimulator/libLog4CocoTouch.a0#
+r0
 

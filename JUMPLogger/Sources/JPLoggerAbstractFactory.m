@@ -45,6 +45,18 @@ static Class loggerClass;
 }
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
++(id<JPLoggerInterface>)getLoggerForClass:(Class)anClass {
+	// Init the logger.
+	id<JPLoggerInterface> anLogger = [self getLogger];
+	
+	// Attach the class.
+	[anLogger setKeyForLog:anClass];
+	
+	// Return it.
+	return anLogger;
+}
+
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 // Default configuration for the logger. Must be implemented.
 +(BOOL)configureLogger {
 	AbstractClassError();
@@ -57,5 +69,18 @@ static Class loggerClass;
     return NO;
 }
 
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+#pragma mark -
+#pragma mark Level Methods
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
++(void)setGlobalLevel:(JPLoggerLevels)desiredLevel {
+	AbstractClassError();
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
++(JPLoggerLevels)globalLevel {
+	AbstractClassError();
+	return JPLoggerOffLevel;
+}
 @end
 

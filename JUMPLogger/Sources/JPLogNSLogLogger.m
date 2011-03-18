@@ -21,33 +21,44 @@
 static JPLoggerLevels loggerLevel = JPLoggerOffLevel;
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)setLevel:(JPLoggerLevels)desiredLevel {
-	loggerLevel = desiredLevel;
-}
--(void)setLevel:(JPLoggerLevels)anLevel {
-	[JPLogNSLogLogger setLevel:anLevel];
-}
-
+#pragma mark -
+#pragma mark Getters and Setters.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(JPLoggerLevels)currentLevel {
-	return loggerLevel;
+-(id)getKeyForLog {
+	return nil;
 }
+////////// ////////// ////////// //////////
+-(void)setKeyForLog:(id)anKey {
+	// Do nothing.
+}
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+-(void)setLevel:(JPLoggerLevels)desiredLevel {
+	SetGlobalLogLevel( desiredLevel );
+}
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 -(JPLoggerLevels)currentLevel {
-	return [JPLogNSLogLogger currentLevel];
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+		return [[JUMPLoggerConfig loggerFactoryClass] globalLevel];
+	#else
+		return JPLoggerOffLevel;
+	#endif
 }
-
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 #pragma mark -
 #pragma mark Private Methods.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)logWithLevel:(JPLoggerLevels)anLevel logKeyword:(NSString*)anKeyword message:(NSString*)anMessage {
-	// Only log authorized level.
-	if ( anLevel <= loggerLevel )
-		NSLog( @"%@: %@", anKeyword, anMessage);
+-(void)logWithLevel:(JPLoggerLevels)anLevel logKeyword:(NSString*)anKeyword message:(NSString*)anMessage {
+	// Compiler condition to disable all logs.
+	#ifndef JPLOGGER_DISABLE_ALL
+		// Only log authorized level.
+		if ( anLevel <= loggerLevel )
+			NSLog( @"%@: %@", anKeyword, anMessage);
+	#endif
 }
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(NSString*)formatExceptionMessage:(NSException*)anException {
+-(NSString*)formatExceptionMessage:(NSException*)anException {
 	return [NSString stringWithFormat:@"Exception: %@\nCause: %@\nMore Info:%@", [anException name], [anException reason], [anException userInfo]];
 }
 
@@ -55,66 +66,66 @@ static JPLoggerLevels loggerLevel = JPLoggerOffLevel;
 #pragma mark -
 #pragma mark Log Methods.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)debug:(id)variableList, ... { 
+-(void)debug:(id)variableList, ... { 
 	va_list args;
 	[self logWithLevel:JPLoggerDebugLevel logKeyword:@"DEBUG" message:[NSString stringWithFormat:@"%@", variableList, args]];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)info:(id)variableList, ...  { 
+-(void)info:(id)variableList, ...  { 
 	va_list args;
 	[self logWithLevel:JPLoggerInfoLevel logKeyword:@"INFO" message:[NSString stringWithFormat:@"%@", variableList, args]];
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)warn:(id)variableList, ...  { 
+-(void)warn:(id)variableList, ...  { 
 	va_list args;
 	[self logWithLevel:JPLoggerWarnLevel logKeyword:@"WARN" message:[NSString stringWithFormat:@"%@", variableList, args]];
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)error:(id)variableList, ...  { 
+-(void)error:(id)variableList, ...  { 
 	va_list args;
 	[self logWithLevel:JPLoggerErrorLevel logKeyword:@"ERROR" message:[NSString stringWithFormat:@"%@", variableList, args]];
 }; 
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)fatal:(id)variableList, ...  {  
+-(void)fatal:(id)variableList, ...  {  
 	va_list args;
 	[self logWithLevel:JPLoggerFatalLevel logKeyword:@"DEBUG" message:[NSString stringWithFormat:@"%@", variableList, args]];
 };
 
 #pragma mark -
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
 	va_list args;
 	NSString *message = [NSString stringWithFormat:@"%@\n%@", [NSString stringWithFormat:variableList, args], [self formatExceptionMessage:anException]];
 	[self logWithLevel:JPLoggerDebugLevel logKeyword:@"DEBUG" message:message];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
 	va_list args;
 	NSString *message = [NSString stringWithFormat:@"%@\n%@", [NSString stringWithFormat:variableList, args], [self formatExceptionMessage:anException]];
 	[self logWithLevel:JPLoggerInfoLevel logKeyword:@"INFO" message:message];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
 	va_list args;
 	NSString *message = [NSString stringWithFormat:@"%@\n%@", [NSString stringWithFormat:variableList, args], [self formatExceptionMessage:anException]];
 	[self logWithLevel:JPLoggerWarnLevel logKeyword:@"WARN" message:message];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
 	va_list args;
 	NSString *message = [NSString stringWithFormat:@"%@\n%@", [NSString stringWithFormat:variableList, args], [self formatExceptionMessage:anException]];
 	[self logWithLevel:JPLoggerErrorLevel logKeyword:@"ERROR" message:message];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
-+(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
+-(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
 	va_list args;
 	NSString *message = [NSString stringWithFormat:@"%@\n%@", [NSString stringWithFormat:variableList, args], [self formatExceptionMessage:anException]];
 	[self logWithLevel:JPLoggerFatalLevel logKeyword:@"FATAL" message:message];
