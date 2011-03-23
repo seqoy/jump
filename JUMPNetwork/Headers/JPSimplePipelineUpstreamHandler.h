@@ -21,7 +21,7 @@
 #import "JPPipelineMessageEvent.h"
 #import "JPPipelineExceptionEvent.h"
 
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 /**
  * @ingroup handlers_group
  

@@ -113,7 +113,7 @@
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 // Start Core Data Databases. Using an specific model.
 -(id)startCoreDataWithModel:(NSString*)modelName {
-	//LogWhereCommentTo(SEQOYDBManager, NSFormatString( @"Starting Core Data Using Model: [[%@]]", modelName) );
+	Info( @"Starting Core Data Using Model: [[%@]]", modelName );
 	
 	// Dealloc if needed and set.
 	if ( loadModelNamed ) [loadModelNamed release], loadModelNamed = nil;
@@ -163,7 +163,7 @@
 // Returns the managed object model merged.
 //
 - (NSManagedObjectModel *)createMissingRelationships:(NSManagedObjectModel *)model {
-	//LogWhereCommentTo(SEQOYDBManager, @"Create Missing Relationships Between Entities")
+	Debug( @"Create Missing Relationships Between Entities");
 	
 	// One List of all Entities (Tables).
 	NSDictionary *allTables = [model entitiesByName];
@@ -250,7 +250,7 @@
 // Returns the managed object model for the application.
 //
 - (NSManagedObjectModel *)managedObjectModel {
-	//LogWhereCommentTo(SEQOYDBManager, @"Init The Managed Object Model.")
+	Info( @"Init The Managed Object Model.");
 	
 	// Return Managed Object Model if is already started...
     if (managedObjectModel != nil) {
@@ -297,7 +297,7 @@
 // Returns the persistent store coordinator for the application.
 //
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-	//LogWhereCommentTo(SEQOYDBManager, @"Init Persitent Store Coordinator" )
+	Debug( @"Init Persitent Store Coordinator" );
 	
 	// Return Persistent Coordinator if is already started...
     if (persistentStoreCoordinator != nil) {
@@ -355,7 +355,7 @@
 // Returns the managed object context for the application.
 //
 - (NSManagedObjectContext*)managedObjectContext {
-	//LogWhereCommentTo(SEQOYDBManager, @"Init Managed Object Context")
+	Info( @"Initializing Managed Object Context");
 	
 	// Return Managed Object Context if is already started...
     if (managedObjectContext != nil) {
@@ -464,8 +464,8 @@
 		}
 	}
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-	//LogTo(SEQOYDBManagerOperations, @"%@", format);
-	/// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+	// Log
+	Debug(@"%@", format);
 		
 	/// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 	// If doesn't exist the Entity, return nothing.
@@ -584,7 +584,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 // Commit al pendent operations to the persistent store.
 -(void)commit {
-	//LogWhereCommentTo(SEQOYDBManager, @"Saving Changes To Database.")
+	Debug( @"Saving Changes To Database.");
 	
 	// Error Control.
 	NSError *anError = nil;
@@ -603,7 +603,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 // Create and return a new empty Record for specified Entity.
 -(id)createNewRecordForEntity:(NSString*)anEntityName {
-	//LogWhereCommentTo(SEQOYDBManager, NSFormatString( @"Creating New Record For Entity:[[%@]] %@", anEntityName, (commitAllTransactions ? @"[COMMIT]" : @"") ) )
+	Debug( @"Creating New Record For Entity:[[%@]] %@", anEntityName, (automaticallyCommit ? @"[COMMIT]" : @"") );
 	
 	// If not exist, return nothing.
 	if ( _NOT_ [self existEntity:anEntityName] ) 

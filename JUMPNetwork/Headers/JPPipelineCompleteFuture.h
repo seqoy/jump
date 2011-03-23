@@ -17,7 +17,7 @@
 #import "JPPipelineFuture.h"
 #import "JPPipelineFutureListener.h"
 #import "JPPipelineFutureListener.h"
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 @interface JPPipelineCompleteFuture : NSObject <JPPipelineFuture> {}
 

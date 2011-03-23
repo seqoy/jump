@@ -17,7 +17,7 @@
 #import "JPTransporterJSONRPCMessage.h"
 #import "JPDataProcessserJSON.h"
 #import "JPDataProcessserJSON.h"
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 /**
  * \ingroup jsonrpc_group

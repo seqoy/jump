@@ -12,7 +12,6 @@
 		188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64871332B1A90069CB1C /* CFNetwork.framework */; };
 		188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64881332B1A90069CB1C /* SystemConfiguration.framework */; };
 		188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64891332B1A90069CB1C /* UIKit.framework */; };
-		18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18448B07132FF6F50061513B /* libJUMPLogger.a */; };
 		3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6848D613241B1500F6D21A /* GHUnitIOS.framework */; };
 		3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68491E13241B7500F6D21A /* CoreGraphics.framework */; };
 		3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68492113241B8000F6D21A /* Foundation.framework */; };
@@ -30,20 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18448B06132FF6F50061513B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18647731132FF621002CBD59;
-			remoteInfo = JUMPLogger;
-		};
-		18448B08132FF7050061513B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 18647730132FF621002CBD59;
-			remoteInfo = JUMPLogger;
-		};
 		3A68496413241E1700F6D21A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
@@ -75,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPLogger.xcodeproj; path = ../JUMPLogger/JUMPLogger.xcodeproj; sourceTree = "<group>"; };
 		18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLog4CocoaTest.m; path = Sources/JUMPLog4CocoaTest.m; sourceTree = "<group>"; };
 		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
 		1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPNSLogTest.m; path = Sources/JUMPNSLogTest.m; sourceTree = "<group>"; };
@@ -113,7 +97,6 @@
 				3A684999132420BC00F6D21A /* CoreData.framework in Frameworks */,
 				3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */,
 				3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */,
-				18BCB6FC1330F2EC00986778 /* libJUMPLogger.a in Frameworks */,
 				188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */,
 				188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */,
 				188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */,
@@ -123,14 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18448AFC132FF6F50061513B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18448B07132FF6F50061513B /* libJUMPLogger.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		18448B0A132FF7240061513B /* JUMPLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +183,6 @@
 		3A68494913241D2000F6D21A /* Dependecies */ = {
 			isa = PBXGroup;
 			children = (
-				18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */,
 				3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */,
 				3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */,
 			);
@@ -263,7 +237,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				18448B09132FF7050061513B /* PBXTargetDependency */,
 				3A68496713241E1F00F6D21A /* PBXTargetDependency */,
 				3AA6921F132C1EE500780D21 /* PBXTargetDependency */,
 			);
@@ -296,10 +269,6 @@
 					ProjectRef = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
 				},
 				{
-					ProductGroup = 18448AFC132FF6F50061513B /* Products */;
-					ProjectRef = 18448AFB132FF6F50061513B /* JUMPLogger.xcodeproj */;
-				},
-				{
 					ProductGroup = 3AA6920E132C1EC600780D21 /* Products */;
 					ProjectRef = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
 				},
@@ -312,13 +281,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		18448B07132FF6F50061513B /* libJUMPLogger.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libJUMPLogger.a;
-			remoteRef = 18448B06132FF6F50061513B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		3A68496513241E1700F6D21A /* libJUMPDatabase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -365,11 +327,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18448B09132FF7050061513B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JUMPLogger;
-			targetProxy = 18448B08132FF7050061513B /* PBXContainerItemProxy */;
-		};
 		3A68496713241E1F00F6D21A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JUMPDatabase;

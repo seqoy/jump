@@ -17,7 +17,7 @@
 #import "JPPipelineMessageEvent.h"
 #import "JPPipelineListener.h"
 
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 /**
  * @ingroup events_group

@@ -21,6 +21,29 @@
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 #pragma mark -
+#pragma mark Private Methods.
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+-(void)logWithMetadata:(JPLoggerMetadata*)logData forType:(L4Level*)anLevel {
+	// Validate Metadata.
+	[logData validate];
+	
+	
+	/////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+	// Log.
+	log4Log(logData.caller,																	// Caller.
+			[logData.lineNumber intValue],													// Line Number.
+			[logData.fileName UTF8String],													// File Name.
+			[[logData prettyMethod] UTF8String],											// Pretty Formatted Method Name.
+			@selector(lineNumber:fileName:methodName:message:level:exception:),				// Selector.
+			anLevel,																		// Log Level.
+			logData.isAssertion,															// Is Assertion.
+			YES,																			// Assertion.
+			logData.exception,																// Exception.
+			logData.message);																// Message.
+}
+
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+#pragma mark -
 #pragma mark Getters and Setters.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 -(id)getKeyForLog {
@@ -59,94 +82,48 @@
 	#endif
 }
 
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 // Compiler condition to disable all logs.
 #ifndef JPLOGGER_DISABLE_ALL
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)debug:(id)variableList, ... { 
-    va_list args;
-	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isDebugEnabled]) 
-		log4Log(L4_LOG([L4Level debug], nil), variableList,args);
-
-}; 
+-(void)debugWithMetadata:(JPLoggerMetadata*)logData { 
+	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isDebugEnabled])
+		[self logWithMetadata:logData forType:[L4Level debug]];
+};
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)info:(id)variableList, ...  { 
-    va_list args;
+-(void)infoWithMetadata:(JPLoggerMetadata*)logData { 
 	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isInfoEnabled]) 
-		log4Log(L4_LOG([L4Level info], nil), variableList,args);
-}; 
-
+		[self logWithMetadata:logData forType:[L4Level info]];
+}
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)warn:(id)variableList, ...  { 
+-(void)warnWithMetadata:(JPLoggerMetadata*)logData {  
     // Simply redirect parameters.
-    va_list args;
-    log4Warn( variableList, args );
-}; 
-
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)error:(id)variableList, ...  { 
-    // Simply redirect parameters.
-    va_list args;
-    log4Error( variableList, args );
-}; 
-
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)fatal:(id)variableList, ...  {  
-    // Simply redirect parameters.
-    va_list args;
-    log4Fatal( variableList, args );
+	[self logWithMetadata:logData forType:[L4Level warn]];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)errorWithMetadata:(JPLoggerMetadata*)logData {  
     // Simply redirect parameters.
-    va_list args;
-    log4DebugWithException( variableList, anException, args );
+	[self logWithMetadata:logData forType:[L4Level error]];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { 
+-(void)fatalWithMetadata:(JPLoggerMetadata*)logData {  
     // Simply redirect parameters.
-    va_list args;
-    log4InfoWithException( variableList, anException, args );
-};
-
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
-    // Simply redirect parameters.
-    va_list args;
-    log4WarnWithException( variableList, anException, args );
-};
-
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
-    // Simply redirect parameters.
-    va_list args;
-    log4ErrorWithException( variableList, anException, args );
-};
-
-///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   {  
-    // Simply redirect parameters.
-    va_list args;
-    log4FatalWithException( variableList, anException, args );
+	[self logWithMetadata:logData forType:[L4Level fatal]];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 // Compiler condition to disable all logs.
 #else
 
-	-(void)debug:(id)variableList, ... { /// Disabled };
-	-(void)info:(id)variableList, ...  { /// Disabled }; 
-	-(void)warn:(id)variableList, ...  { /// Disabled }; 
-	-(void)error:(id)variableList, ...  { /// Disabled }; 
-	-(void)fatal:(id)variableList, ...  { /// Disabled };
-	-(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
-	-(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
-	-(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
-	-(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
-	-(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...   { /// Disabled };
+	-(void)debugWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
+	-(void)infoWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
+	-(void)warnWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
+	-(void)errorWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
+	-(void)fatalWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
 
 #endif
 

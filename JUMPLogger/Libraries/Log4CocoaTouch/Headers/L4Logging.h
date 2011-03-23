@@ -67,7 +67,7 @@ LOG4COCOA_EXTERN void log4Log(id object, int line, const char *file, const char 
 /* ********************************************************************* */
 #pragma mark Macro that log when an assertion is false from objects
 /* ********************************************************************* */
-#define log4Assert(assertion, message, ...) log4Log(L4_ASSERTION(assertion), message, ##__VA_ARGS__)
+#define log4Assert(assertion, message, ...) log4Log(L4_ASSERTION(assertion), message, ##__VA_ARGS__) 
 /* ********************************************************************* */
 #pragma mark Macro that log when an assertion is false from C functions
 /* ********************************************************************* */

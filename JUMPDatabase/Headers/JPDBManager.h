@@ -17,6 +17,9 @@
 #import <CoreData/CoreData.h>
 #import "JPDBManagerDefinitions.h"
 
+// Logger.
+#import "JPLogger.h"
+
 /**
  * \class JPDBManager
  * \nosubgrouping 

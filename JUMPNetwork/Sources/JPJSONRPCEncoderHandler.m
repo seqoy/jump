@@ -69,7 +69,7 @@
 		
 		/////////////////////////////////////////////////
 		// Log JSON String.
-		LogTo(JSONRPCEncoderHandler, @"Sending JSON: %@", [JSONProcesser convertToJSON:rpcData humanReadable:YES]);
+		Info( @"Sending JSON: %@", [JSONProcesser convertToJSON:rpcData humanReadable:YES]);
 	
 		// Convert JSON String to Binary Data.
 		NSData *postData = [JSONString dataUsingEncoding:NSUTF8StringEncoding];

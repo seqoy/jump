@@ -85,7 +85,7 @@
 	
 	/////////////////////////////////////////////////
 	// Log JSON String.
-	LogTo(JSONRPCDecoderHandler, @"Received JSON :: %@", [JSONProcesser convertToJSON:[JSONDecoded mutableCopy] humanReadable:YES] );
+	Info( @"Received JSON :: %@", [JSONProcesser convertToJSON:[JSONDecoded mutableCopy] humanReadable:YES] );
 	
 	//////// ////// ////// ////// ////// ////// ////// 
 	// Check if result some server Error.
@@ -109,7 +109,7 @@
 
 			//////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 			// Log.
-			LogTo(JSONRPCDecoderHandler, @"JSON Error Handled (%@) | Sending Error Upstream...", [JSONError localizedDescription] );
+			Info( @"JSON Error Handled (%@) | Sending Error Upstream...", [JSONError localizedDescription] );
 			
 			///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 			// Send Error Upstream.

@@ -69,13 +69,17 @@
 				[anMessage appendFormat:@"	   %@\n", item];
 	}
 	
+	// //////////// ///////////// //////////// ///////////// //////////// 
+	// Domain.
+	NSString *domain = [[[anEvent.logger name] stringByReplacingOccurrencesOfString:@"." withString:@"/"] lastPathComponent];
+	
 	//////////// //////////// ///////////// //////////// ///////////// //////////// 
 	// Log.
 	LogMessageToF_va(logger,								// NSLogger to log.
 					 [anEvent.fileName UTF8String],			// File Name.
 					 [anEvent.lineNumber intValue],			// Line Number.
 					 [anEvent.methodName UTF8String],		// Method Name.
-					 NULL,									// Domain (Class Name).  @Todo: something.
+					 domain,								// Domain (Class Name).  @Todo: something.
 					 nsloggerLogLevel,						// Log Level
 					 anMessage, nil);						// Formatted Message.
 }

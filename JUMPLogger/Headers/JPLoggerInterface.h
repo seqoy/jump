@@ -37,6 +37,7 @@ typedef enum JPLoggerLevels {
 	JPLoggerAllLevel
 } JPLoggerLevels;
 
+
 /**
  * \nosubgrouping 
  * JPLoggerInterface defines an common interface to logger tasks. 
@@ -44,6 +45,7 @@ typedef enum JPLoggerLevels {
  * So you can implement this protocol in your own class as an 
  * <a href="http://en.wikipedia.org/wiki/Adapter_pattern">Adapter</a> to your favorite logger. 
  */
+@class JPLoggerMetadata;		// Weakly link the class.
 @protocol JPLoggerInterface 
 @required
 
@@ -91,71 +93,36 @@ typedef enum JPLoggerLevels {
  */
 ///@{ 
 
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 /**
  * Log an message with <b>Debug</b> level priority.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
+ * @param logData An JPLoggerMetadata object with filled metadata about this log. 
  */
--(void)debug:(id)variableList, ... ;
+-(void)debugWithMetadata:(JPLoggerMetadata*)logData;
 
 /**
  * Log an message with <b>Info</b> level priority.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
+ * @param logData An JPLoggerMetadata object with filled metadata about this log. 
  */
--(void)info:(id)variableList, ... ; 
+-(void)infoWithMetadata:(JPLoggerMetadata*)logData;
 
 /**
  * Log an message with <b>Warn</b> level priority.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
+ * @param logData An JPLoggerMetadata object with filled metadata about this log. 
  */
--(void)warn:(id)variableList, ... ; 
+-(void)warnWithMetadata:(JPLoggerMetadata*)logData;
 
 /**
  * Log an message with <b>Error</b> level priority.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
+ * @param logData An JPLoggerMetadata object with filled metadata about this log. 
  */
--(void)error:(id)variableList, ... ; 
+-(void)errorWithMetadata:(JPLoggerMetadata*)logData;
 
 /**
  * Log an message with <b>Fatal</b> level priority.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
+ * @param logData An JPLoggerMetadata object with filled metadata about this log. 
  */
--(void)fatal:(id)variableList, ... ;
-
-////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
-/**
- * Log an message with <b>Debug</b> level priority, also accept an Exception.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
- * @param anException An NSException object with more information about hits log.
- */
--(void)debugWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
-
-/**
- * Log an message with <b>Info</b> level priority, also accept an Exception.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
- * @param anException An NSException object with more information about hits log.
- */
--(void)infoWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
-
-/**
- * Log an message with <b>Warn</b> level priority, also accept an Exception.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
- * @param anException An NSException object with more information about hits log.
- */
--(void)warnWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
-
-/**
- * Log an message with <b>Error</b> level priority, also accept an Exception.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
- * @param anException An NSException object with more information about hits log.
- */
--(void)errorWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
-
-/**
- * Log an message with <b>Fatal</b> level priority, also accept an Exception.
- * @param variableList An format string, and his paramteres. Similar to <tt>[NSString stringWithFormat:]</tt> method.
- * @param anException An NSException object with more information about hits log.
- */
--(void)fatalWithException:(NSException*)anException andMessage:(id)variableList, ...  ;
+-(void)fatalWithMetadata:(JPLoggerMetadata*)logData;
 
 
 ///@}

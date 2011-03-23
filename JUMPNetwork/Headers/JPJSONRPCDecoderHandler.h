@@ -18,7 +18,7 @@
 #import "JPDefaultPipelineExceptionEvent.h"
 #import "JPPipelineUpstreamMessageEvent.h"
 #import "JPDataProcessserJSON.h"
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 
 /**

@@ -23,7 +23,7 @@
 #import "JPPipelineUpstreamHandler.h"
 #import "JPPipelineDownstreamHandler.h"
 
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 /**
  * @ingroup handlers_group

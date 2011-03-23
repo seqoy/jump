@@ -16,6 +16,7 @@
 #import <Foundation/Foundation.h>
 #import "JPLoggerShortcuts.h"
 #import "JPLoggerInterface.h"
+#import "JPLoggerMetadata.h"
 #import "JUMPLoggerConfig.h"
 
 @interface JPLogNSLogLogger : NSObject <JPLoggerInterface> {}

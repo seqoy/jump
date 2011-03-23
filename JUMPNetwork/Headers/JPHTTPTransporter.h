@@ -21,7 +21,7 @@
 #import "JPTransporterHTTPMessage.h"
 
 // Logger.
-#import "LoggingExtra.h"
+#import "JPLogger.h"
 
 // Pipeline.
 #import "JPPipelineSink.h"

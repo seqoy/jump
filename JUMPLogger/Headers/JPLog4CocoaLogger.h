@@ -15,6 +15,7 @@
  */
 #import <Foundation/Foundation.h>
 #import "JPLoggerInterface.h"
+#import "JPLoggerMetadata.h"
 #import "JUMPLoggerConfig.h"
 #import "Log4Cocoa.h"
 

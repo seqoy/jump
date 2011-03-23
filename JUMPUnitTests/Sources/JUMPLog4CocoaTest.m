@@ -45,6 +45,7 @@
 
 -(void)testLogSomething {
 	// Set Level to All.
+	SetClassLogLevel( JPLoggerAllLevel );
 	SetGlobalLogLevel(JPLoggerAllLevel);
 
     GHTestLog(@"Should log all levels messages below, please check...");
@@ -70,7 +71,7 @@
 	// Retrieve.
 	JPLoggerLevels currentLevel = [[JPLog4CocoaFactory getLoggerForClass:[self class]] currentLevel];
 	GHAssertEquals( JPLoggerOffLevel, currentLevel, @"Level wasn't retrieved correctly!!" );
-	Debug(@"THIS MESSAGE CANT BE LOGGED!!");
+	Info(@"THIS MESSAGE CANT BE LOGGED!!");
 	
 	// Change Log Level to test.
 	SetClassLogLevel( JPLoggerInfoLevel );

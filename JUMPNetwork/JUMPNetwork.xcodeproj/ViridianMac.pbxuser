@@ -3,6 +3,9 @@
 	0867D690FE84028FC02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeTarget = D2AAC07D0554694100DB518D /* JUMPNetwork */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* JUMPNetwork */,
+		);
 		codeSenseManager = 18D05EB5132FEDDE00813610 /* Code sense */;
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -10,9 +13,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					686,
+					804,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -27,17 +30,143 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321908166;
-			PBXWorkspaceStateSaveDate = 321908166;
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					764,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322514168;
+			PBXWorkspaceStateSaveDate = 322514168;
 		};
 		perUserProjectItems = {
+			188D05CA13392E2A00A18A43 /* PBXTextBookmark */ = 188D05CA13392E2A00A18A43 /* PBXTextBookmark */;
+			188D061313392F0A00A18A43 /* PBXTextBookmark */ = 188D061313392F0A00A18A43 /* PBXTextBookmark */;
+			188D061413392F0A00A18A43 /* PBXTextBookmark */ = 188D061413392F0A00A18A43 /* PBXTextBookmark */;
+			188D061513392F0A00A18A43 /* PBXTextBookmark */ = 188D061513392F0A00A18A43 /* PBXTextBookmark */;
+			188D061613392F0A00A18A43 /* PBXTextBookmark */ = 188D061613392F0A00A18A43 /* PBXTextBookmark */;
+			188D061713392F0A00A18A43 /* PBXTextBookmark */ = 188D061713392F0A00A18A43 /* PBXTextBookmark */;
+			188D061913392F0A00A18A43 /* PBXTextBookmark */ = 188D061913392F0A00A18A43 /* PBXTextBookmark */;
+			188D063913392F1B00A18A43 /* PBXTextBookmark */ = 188D063913392F1B00A18A43 /* PBXTextBookmark */;
 			18D05EAE132FEDDE00813610 /* PBXTextBookmark */ = 18D05EAE132FEDDE00813610 /* PBXTextBookmark */;
-			18D05EAF132FEDDE00813610 /* PBXBookmark */ = 18D05EAF132FEDDE00813610 /* PBXBookmark */;
-			18D05EB0132FEDDE00813610 /* PBXTextBookmark */ = 18D05EB0132FEDDE00813610 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 18D05EB4132FEDDE00813610 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	188D05CA13392E2A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */;
+		name = "JPHTTPTransporter.h: 13";
+		rLen = 0;
+		rLoc = 604;
+		rType = 0;
+		vrLen = 2419;
+		vrLoc = 0;
+	};
+	188D060B13392EE200A18A43 /* JPHTTPTransporter.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = JPHTTPTransporter.m;
+		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/Sources/JPHTTPTransporter.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1412, 3731}}";
+			sepNavSelRange = "{5035, 0}";
+			sepNavVisRange = "{9331, 848}";
+		};
+	};
+	188D061313392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AEF180713183ED200BC3759 /* JPPipelineSimpleMessageEvent.h */;
+		name = "JPPipelineSimpleMessageEvent.h: 24";
+		rLen = 0;
+		rLoc = 797;
+		rType = 0;
+		vrLen = 2046;
+		vrLoc = 0;
+	};
+	188D061413392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AEF181913183ED200BC3759 /* JPSimplePipelineHandler.m */;
+		name = "JPSimplePipelineHandler.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 3098;
+		vrLoc = 0;
+	};
+	188D061513392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AEF181C13183ED200BC3759 /* JPSimplePipelineUpstreamHandler.m */;
+		name = "JPSimplePipelineUpstreamHandler.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 3126;
+		vrLoc = 0;
+	};
+	188D061613392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AEF17E113183ED200BC3759 /* JPJSONRPCDecoderHandler.h */;
+		name = "JPJSONRPCDecoderHandler.h: 21";
+		rLen = 20;
+		rLoc = 839;
+		rType = 0;
+		vrLen = 3164;
+		vrLoc = 0;
+	};
+	188D061713392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 188D061813392F0A00A18A43 /* JPLoggerShortcuts.h */;
+		name = "JPLoggerShortcuts.h: 45";
+		rLen = 131;
+		rLoc = 1906;
+		rType = 0;
+		vrLen = 3741;
+		vrLoc = 0;
+	};
+	188D061813392F0A00A18A43 /* JPLoggerShortcuts.h */ = {
+		isa = PBXFileReference;
+		name = JPLoggerShortcuts.h;
+		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerShortcuts.h;
+		sourceTree = "<absolute>";
+	};
+	188D061913392F0A00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 188D060B13392EE200A18A43 /* JPHTTPTransporter.m */;
+		name = "JPHTTPTransporter.m: 108";
+		rLen = 5;
+		rLoc = 4285;
+		rType = 0;
+		vrLen = 2199;
+		vrLoc = 2948;
+	};
+	188D063913392F1B00A18A43 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */;
+		name = "JPHTTPTransporter.m: 99";
+		rLen = 0;
+		rLoc = 4059;
+		rType = 0;
+		vrLen = 2199;
+		vrLoc = 2948;
 	};
 	18D05EAE132FEDDE00813610 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -47,20 +176,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 717;
-		vrLoc = 0;
-	};
-	18D05EAF132FEDDE00813610 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */;
-	};
-	18D05EB0132FEDDE00813610 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */;
-		name = "JPHTTPTransporter.m: 12";
-		rLen = 0;
-		rLoc = 494;
-		rType = 0;
-		vrLen = 1834;
 		vrLoc = 0;
 	};
 	18D05EB4132FEDDE00813610 /* Source Control */ = {
@@ -77,11 +192,46 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 1326}}";
+			sepNavSelRange = "{835, 0}";
+			sepNavVisRange = "{3, 873}";
+		};
+	};
 	3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1237, 3510}}";
-			sepNavSelRange = "{494, 0}";
-			sepNavVisRange = "{0, 1834}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 3575}}";
+			sepNavSelRange = "{4059, 0}";
+			sepNavVisRange = "{2948, 2199}";
+		};
+	};
+	3AEF17E113183ED200BC3759 /* JPJSONRPCDecoderHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 988}}";
+			sepNavSelRange = "{839, 20}";
+			sepNavVisRange = "{0, 3164}";
+		};
+	};
+	3AEF17E213183ED200BC3759 /* JPJSONRPCDecoderHandler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1258, 2054}}";
+			sepNavSelRange = "{4146, 0}";
+			sepNavVisRange = "{3463, 1284}";
+		};
+	};
+	3AEF17E313183ED200BC3759 /* JPJSONRPCEncoderHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 845}}";
+			sepNavSelRange = "{815, 0}";
+			sepNavVisRange = "{0, 1204}";
+		};
+	};
+	3AEF17E413183ED200BC3759 /* JPJSONRPCEncoderHandler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1183}}";
+			sepNavSelRange = "{3447, 0}";
+			sepNavVisRange = "{2700, 1150}";
 		};
 	};
 	3AEF17EF13183ED200BC3759 /* JPTransporterMessage.h */ = {
@@ -89,6 +239,69 @@
 			sepNavIntBoundsRect = "{{0, 0}, {600, 416}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 717}";
+		};
+	};
+	3AEF17FE13183ED200BC3759 /* JPPipeline.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 8541}}";
+			sepNavSelRange = "{998, 0}";
+			sepNavVisRange = "{0, 1191}";
+		};
+	};
+	3AEF180713183ED200BC3759 /* JPPipelineSimpleMessageEvent.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 840}}";
+			sepNavSelRange = "{797, 0}";
+			sepNavVisRange = "{0, 2046}";
+		};
+	};
+	3AEF181113183ED200BC3759 /* JPPipelineCompleteFuture.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 390}}";
+			sepNavSelRange = "{800, 0}";
+			sepNavVisRange = "{0, 1283}";
+		};
+	};
+	3AEF181713183ED200BC3759 /* JPPipelineDefaultFuture.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 585}}";
+			sepNavSelRange = "{546, 0}";
+			sepNavVisRange = "{0, 775}";
+		};
+	};
+	3AEF181913183ED200BC3759 /* JPSimplePipelineHandler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 3098}";
+		};
+	};
+	3AEF181A13183ED200BC3759 /* JPSimplePipelineHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 1391}}";
+			sepNavSelRange = "{952, 0}";
+			sepNavVisRange = "{0, 987}";
+		};
+	};
+	3AEF181B13183ED200BC3759 /* JPSimplePipelineUpstreamHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 1066}}";
+			sepNavSelRange = "{873, 0}";
+			sepNavVisRange = "{458, 1246}";
+		};
+	};
+	3AEF181C13183ED200BC3759 /* JPSimplePipelineUpstreamHandler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1027}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 3126}";
+		};
+	};
+	3AEF183413183ED200BC3759 /* JPPipelineNotification.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1352}}";
+			sepNavSelRange = "{3784, 0}";
+			sepNavVisRange = "{2950, 991}";
 		};
 	};
 	D2AAC07D0554694100DB518D /* JUMPNetwork */ = {

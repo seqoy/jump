@@ -18,6 +18,11 @@
 #import "JPDBManagerDefinitions.h"
 #import "JPDBManagerAction.h"
 
+#import "JPLog4CocoaLogger.h"
+#import "JPLog4CocoaFactory.h"
+#import "JPLoggerShortcuts.h"
+#import "JUMPLoggerConfig.h"
+
 /**
  * JUMP Database Module Unit Tests
  */
@@ -39,6 +44,10 @@
 
 // Run at start of all tests in the class
 - (void)setUpClass {
+	// Configure the Factory Class.
+	[JUMPLoggerConfig setLoggerFactoryClass:[JPLog4CocoaFactory class]];
+	SetGlobalLogLevel( JPLoggerAllLevel );
+	
 	entity = @"MyEntity";
 	attribute = @"name";
 	

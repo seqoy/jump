@@ -16,7 +16,6 @@
 
 #import "JPHTTPTransporter.h"
 
-
 @implementation JPHTTPTransporter
 @synthesize notification, requester, validatesSecureCertificate;
 
@@ -106,7 +105,7 @@
 	if ( [(id)event isKindOfClass:[JPDefaultCancelEvent class]] ) {
 		
 		// Log.
-		LogTo(HTTPTransporter, @"Cancel Event Handled. Cancelling...");
+		Info(@"Cancel Event Handled. Cancelling...");
 		
 		// If have one active requester.
 		if ( requester && [requester isExecuting] ) {
@@ -126,7 +125,7 @@
 		id<JPTransporterHTTPMessage> anMessage = (<JPTransporterHTTPMessage>)[event getMessage];
 		
 		// Log.
-		LogTo(HTTPTransporter, @"HTTP Event Handled. Processing...");
+		Info(@"HTTP Event Handled. Processing...");
 
 		// Configure Requester.
 		[self buildRequesterWithURL:[anMessage transportURL]];
@@ -234,7 +233,7 @@
 	NSError *error = [request error];
 
 	// Log.
-	LogTo(HTTPTransporter, @"HTTP Request Failed (%@)! Sending Error Upstream...", [error localizedDescription] );
+	Info(@"HTTP Request Failed (%@)! Sending Error Upstream...", [error localizedDescription] );
 	
 	// If error is because the request was cancelled. 
 	if ( [error.domain isEqual:NetworkRequestErrorDomain] && error.code == ASIRequestCancelledErrorType ) {

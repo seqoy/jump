@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188D05A513392D2900A18A43 /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 188D05A413392D1B00A18A43 /* libJUMPLogger.a */; };
 		3A7846E213268C9C00C3374A /* JPHTTPTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */; };
 		3A7846E313268C9C00C3374A /* JPHTTPTransporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */; };
 		3A7848281326AF7F00C3374A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848271326AF7F00C3374A /* CFNetwork.framework */; };
@@ -75,15 +76,26 @@
 		3AEF187813183ED200BC3759 /* JPPipelineHandlerContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF183113183ED200BC3759 /* JPPipelineHandlerContext.h */; };
 		3AEF187913183ED200BC3759 /* JPPipelineNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF183313183ED200BC3759 /* JPPipelineNotification.h */; };
 		3AEF187A13183ED200BC3759 /* JPPipelineNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF183413183ED200BC3759 /* JPPipelineNotification.m */; };
-		3AEF18EF13183FCD00BC3759 /* LoggingExtra.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF18EC13183FCD00BC3759 /* LoggingExtra.h */; };
-		3AEF18F013183FCD00BC3759 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF18ED13183FCD00BC3759 /* Logging.h */; };
-		3AEF18F113183FCD00BC3759 /* Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF18EE13183FCD00BC3759 /* Logging.m */; };
 		3AEF190D1318414F00BC3759 /* JPDataProcessserJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF190C1318414F00BC3759 /* JPDataProcessserJSON.h */; };
 		AA747D9F0F9514B9006C5449 /* JUMPNetwork_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JUMPNetwork_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		188D05A313392D1B00A18A43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18647731132FF621002CBD59 /* libJUMPLogger.a */;
+			remoteInfo = JUMPLogger;
+		};
+		188D05B013392D3400A18A43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18647730132FF621002CBD59 /* JUMPLogger */;
+			remoteInfo = JUMPLogger;
+		};
 		3A7849BD1326BC7900C3374A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A7849B61326BC7900C3374A /* AISHTTPRequestLibrary.xcodeproj */;
@@ -101,6 +113,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPLogger.xcodeproj; path = ../JUMPLogger/JUMPLogger.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPHTTPTransporter.h; path = ../Headers/JPHTTPTransporter.h; sourceTree = "<group>"; };
 		3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPHTTPTransporter.m; sourceTree = "<group>"; };
 		3A7848271326AF7F00C3374A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -169,9 +182,6 @@
 		3AEF183113183ED200BC3759 /* JPPipelineHandlerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineHandlerContext.h; path = ../Headers/JPPipelineHandlerContext.h; sourceTree = "<group>"; };
 		3AEF183313183ED200BC3759 /* JPPipelineNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineNotification.h; path = ../Headers/JPPipelineNotification.h; sourceTree = "<group>"; };
 		3AEF183413183ED200BC3759 /* JPPipelineNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPipelineNotification.m; sourceTree = "<group>"; };
-		3AEF18EC13183FCD00BC3759 /* LoggingExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggingExtra.h; path = "../../../Work/libs/SEQOY Shortcuts/SEQOY Shorcuts/LoggingExtra.h"; sourceTree = SOURCE_ROOT; };
-		3AEF18ED13183FCD00BC3759 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = ../../../Work/libs/MYUtilities/Logging.h; sourceTree = SOURCE_ROOT; };
-		3AEF18EE13183FCD00BC3759 /* Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logging.m; path = ../../../Work/libs/MYUtilities/Logging.m; sourceTree = SOURCE_ROOT; };
 		3AEF190C1318414F00BC3759 /* JPDataProcessserJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDataProcessserJSON.h; path = Headers/JPDataProcessserJSON.h; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* JUMPNetwork_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPNetwork_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -190,6 +200,7 @@
 				3A78482E1326AF9900C3374A /* CoreGraphics.framework in Frameworks */,
 				3A7848321326AFCE00C3374A /* libz.1.2.3.dylib in Frameworks */,
 				3A7849C11326BC8700C3374A /* libAISHTTPRequestLibrary.a in Frameworks */,
+				188D05A513392D2900A18A43 /* libJUMPLogger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				3A78481C1326AF6E00C3374A /* Dependencies */,
-				3AEF18EB13183FCD00BC3759 /* Logging */,
 				3AEF17D813183ED200BC3759 /* Sources */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -228,6 +238,14 @@
 				3A78482D1326AF9900C3374A /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188D059913392D1B00A18A43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188D05A413392D1B00A18A43 /* libJUMPLogger.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -251,6 +269,7 @@
 		3A78481C1326AF6E00C3374A /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */,
 				3A7849B61326BC7900C3374A /* AISHTTPRequestLibrary.xcodeproj */,
 			);
 			name = Dependencies;
@@ -479,16 +498,6 @@
 			name = Notifications;
 			sourceTree = "<group>";
 		};
-		3AEF18EB13183FCD00BC3759 /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				3AEF18EC13183FCD00BC3759 /* LoggingExtra.h */,
-				3AEF18ED13183FCD00BC3759 /* Logging.h */,
-				3AEF18EE13183FCD00BC3759 /* Logging.m */,
-			);
-			name = Logging;
-			sourceTree = "<group>";
-		};
 		3AEF18FA1318400500BC3759 /* Data Processers */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,8 +569,6 @@
 				3AEF187713183ED200BC3759 /* JPPipelineListenerNotification.h in Headers */,
 				3AEF187813183ED200BC3759 /* JPPipelineHandlerContext.h in Headers */,
 				3AEF187913183ED200BC3759 /* JPPipelineNotification.h in Headers */,
-				3AEF18EF13183FCD00BC3759 /* LoggingExtra.h in Headers */,
-				3AEF18F013183FCD00BC3759 /* Logging.h in Headers */,
 				3AEF190D1318414F00BC3759 /* JPDataProcessserJSON.h in Headers */,
 				3A7846E213268C9C00C3374A /* JPHTTPTransporter.h in Headers */,
 			);
@@ -582,6 +589,7 @@
 			);
 			dependencies = (
 				3A7849C01326BC8200C3374A /* PBXTargetDependency */,
+				188D05B113392D3400A18A43 /* PBXTargetDependency */,
 			);
 			name = JUMPNetwork;
 			productName = JUMPNetwork;
@@ -611,6 +619,10 @@
 					ProductGroup = 3A7849B71326BC7900C3374A /* Products */;
 					ProjectRef = 3A7849B61326BC7900C3374A /* AISHTTPRequestLibrary.xcodeproj */;
 				},
+				{
+					ProductGroup = 188D059913392D1B00A18A43 /* Products */;
+					ProjectRef = 188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -620,6 +632,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		188D05A413392D1B00A18A43 /* libJUMPLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPLogger.a;
+			remoteRef = 188D05A313392D1B00A18A43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3A7849BE1326BC7900C3374A /* libAISHTTPRequestLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -655,7 +674,6 @@
 				3AEF186713183ED200BC3759 /* JPSimplePipelineUpstreamHandler.m in Sources */,
 				3AEF186813183ED200BC3759 /* JPSimplePipelineDownstreamHandler.m in Sources */,
 				3AEF187A13183ED200BC3759 /* JPPipelineNotification.m in Sources */,
-				3AEF18F113183FCD00BC3759 /* Logging.m in Sources */,
 				3A7846E313268C9C00C3374A /* JPHTTPTransporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +681,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		188D05B113392D3400A18A43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPLogger;
+			targetProxy = 188D05B013392D3400A18A43 /* PBXContainerItemProxy */;
+		};
 		3A7849C01326BC8200C3374A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AISHTTPRequestLibrary;
@@ -684,7 +707,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = JUMPNetwork_Prefix.pch;
-				HEADER_SEARCH_PATHS = "./Libraries/AISHTTPRequestLibrary/Headers/**";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../Headers\"/**",
+					"./Libraries/AISHTTPRequestLibrary/Headers/**",
+				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = JUMPNetwork;
 			};
