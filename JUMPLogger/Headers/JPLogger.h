@@ -19,6 +19,10 @@
  * JPLogger main header. You only need to import this header to implement JPLogger on your project.
  */
 #import "JPLoggerShortcuts.h"
+#import "JUMPLoggerConfig.h"
+
+// Factories.
+#import "JPLog4CocoaFactory.h"
 
 /**
  * \mainpage JPLogger Module Programming Guide
