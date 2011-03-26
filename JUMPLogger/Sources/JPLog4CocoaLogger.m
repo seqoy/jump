@@ -16,8 +16,10 @@
  */
 #import "JPLog4CocoaLogger.h"
 #import "JPLog4CocoaFactory.h"
+#import <objc/message.h>
 
 @implementation JPLog4CocoaLogger
+@synthesize keyForLog;
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 #pragma mark -
@@ -26,7 +28,6 @@
 -(void)logWithMetadata:(JPLoggerMetadata*)logData forType:(L4Level*)anLevel {
 	// Validate Metadata.
 	[logData validate];
-	
 	
 	/////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Log.
@@ -42,27 +43,57 @@
 			logData.message);																// Message.
 }
 
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////
+-(L4Logger*)loggerForKey:(id)loggerKey {
+
+	// Set log for an Name (category or domain).
+	if ( [loggerKey isKindOfClass:[NSString class]] ) 
+		return [L4Logger loggerForName:loggerKey];
+	
+	///////////// ///////////// ///////////// ///	
+	// Set the log level for this specific class.
+	else if ( ! class_isMetaClass( loggerKey ) )
+		return [L4Logger loggerForClass:(Class)loggerKey];
+	
+	///////////// ///////////// ///////////// ///	
+	// Can't recognize, throw exception.
+	else 
+		[NSException raise:@"JPLoggerException" 
+					format:@"'keyForLog' property defined type '%@' isn't not allowed. You should use an 'NSString' or 'Class' type.", NSStringFromClass([self class]), NSStringFromClass([loggerKey class])];
+
+	////////// ///////////// ///////////// ///	
+	// Must return something.
+	return nil;
+}
+
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 #pragma mark -
-#pragma mark Getters and Setters.
+#pragma mark Memory Methods.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
--(id)getKeyForLog {
-	return keyForLog;
+-(void)dealloc {
+	// Only dealloc if isn't a class.
+	if ( class_isMetaClass( keyForLog ) )
+		[keyForLog release];
+
+	// Super.
+	[super dealloc];
 }
 
-////////// ////////// ////////// //////////
--(void)setKeyForLog:(id)anKey {
-	keyForLog = (Class)anKey;
-}
-
+///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
+#pragma mark -
+#pragma mark JPLoggerInterface Methods.
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 -(void)setLevel:(JPLoggerLevels)desiredLevel {
 	
 	// Level.
 	L4Level *anLevel = [JPLog4CocoaFactory convertJPLevel:desiredLevel];;
 	
-	// Set the log level for this specific class.
-	[[L4Logger loggerForClass:(Class)[self getKeyForLog]] setLevel:anLevel];
+	///////////// ///////////// ///////////// ///	
+	// Logger Key.
+	id loggerKey = [self getKeyForLog];
+	
+	// Set the log level.
+	[[self loggerForKey:loggerKey] setLevel:anLevel];
 }
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
@@ -70,8 +101,12 @@
 	// Compiler condition to disable all logs.
 	#ifndef JPLOGGER_DISABLE_ALL
 		
+		///////////// ///////////// ///////////// ///	
+		// Logger Key.
+		id loggerKey = [self getKeyForLog];
+
 		// Current level for specific class.
-		L4Level *anLevel = [[L4Logger loggerForClass:(Class)[self getKeyForLog]] level];
+		L4Level *anLevel = [[self loggerForKey:loggerKey] level];
 		
 		// Convert and return.
 		return [JPLog4CocoaFactory convertL4Level:anLevel];
@@ -88,13 +123,13 @@
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 -(void)debugWithMetadata:(JPLoggerMetadata*)logData { 
-	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isDebugEnabled])
+	if([[self loggerForKey:[self getKeyForLog]] isDebugEnabled])
 		[self logWithMetadata:logData forType:[L4Level debug]];
 };
 
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
 -(void)infoWithMetadata:(JPLoggerMetadata*)logData { 
-	if([[L4Logger loggerForClass:(Class)[self getKeyForLog]] isInfoEnabled]) 
+	if([[self loggerForKey:[self getKeyForLog]] isInfoEnabled]) 
 		[self logWithMetadata:logData forType:[L4Level info]];
 }
 ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// ///////////// 
@@ -126,5 +161,5 @@
 	-(void)fatalWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
 
 #endif
-
+		
 @end

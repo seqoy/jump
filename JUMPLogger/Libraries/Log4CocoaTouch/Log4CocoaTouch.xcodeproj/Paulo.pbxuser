@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	181B7381132FD69E00433E98 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 1861E5DE132FE02F00F970A6 /* Log4CocoTouch */;
+		codeSenseManager = 3A2155DC133E331A00642B3B /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					562,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322863533;
+			PBXWorkspaceStateSaveDate = 322863533;
+		};
+		perUserProjectItems = {
+			3A2155D2133E331A00642B3B /* PBXTextBookmark */ = 3A2155D2133E331A00642B3B /* PBXTextBookmark */;
+			3A2155D3133E331A00642B3B /* PBXTextBookmark */ = 3A2155D3133E331A00642B3B /* PBXTextBookmark */;
+			3A21562B133E3CB900642B3B /* PBXTextBookmark */ = 3A21562B133E3CB900642B3B /* PBXTextBookmark */;
+			3A21562C133E3CB900642B3B /* PBXTextBookmark */ = 3A21562C133E3CB900642B3B /* PBXTextBookmark */;
+			3A21562D133E3CB900642B3B /* PBXTextBookmark */ = 3A21562D133E3CB900642B3B /* PBXTextBookmark */;
+			3A21562E133E3CB900642B3B /* PBXTextBookmark */ = 3A21562E133E3CB900642B3B /* PBXTextBookmark */;
+			3A21562F133E3CB900642B3B /* PBXTextBookmark */ = 3A21562F133E3CB900642B3B /* PBXTextBookmark */;
+			3A215631133E3CB900642B3B /* PBXTextBookmark */ = 3A215631133E3CB900642B3B /* PBXTextBookmark */;
+			3A9C6E38133E81AF00D38923 /* PBXTextBookmark */ = 3A9C6E38133E81AF00D38923 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 3A2155DB133E331A00642B3B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	181B7498132FDF0900433E98 /* L4Logger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {782, 4173}}";
+			sepNavSelRange = "{7689, 0}";
+			sepNavVisRange = "{6300, 1791}";
+		};
+	};
+	181B749B132FDF0900433E98 /* L4Logging.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1370, 988}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2116, 3564}";
+		};
+	};
+	181B74D5132FDF1200433E98 /* L4Logger.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 4498}}";
+			sepNavSelRange = "{6724, 0}";
+			sepNavVisRange = "{6281, 879}";
+		};
+	};
+	181B74D6132FDF1200433E98 /* L4LoggerStore.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 4173}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1579}";
+		};
+	};
+	181B74D7132FDF1200433E98 /* L4Logging.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 530}}";
+			sepNavSelRange = "{378, 0}";
+			sepNavVisRange = "{0, 820}";
+		};
+	};
+	181B74D8132FDF1200433E98 /* L4LoggingEvent.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 2665}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 342}";
+		};
+	};
+	181B74D9132FDF1200433E98 /* L4LogLog.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {740, 1651}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 674}";
+		};
+	};
+	181B74DB132FDF1200433E98 /* L4Properties.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {565, 3107}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 460}";
+		};
+	};
+	1861E5DE132FE02F00F970A6 /* Log4CocoTouch */ = {
+		activeExec = 0;
+	};
+	3A2155D2133E331A00642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74DB132FDF1200433E98 /* L4Properties.m */;
+		name = "L4Properties.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 460;
+		vrLoc = 0;
+	};
+	3A2155D3133E331A00642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74D8132FDF1200433E98 /* L4LoggingEvent.m */;
+		name = "L4LoggingEvent.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 0;
+	};
+	3A2155DB133E331A00642B3B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	3A2155DC133E331A00642B3B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3A21562B133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74D9132FDF1200433E98 /* L4LogLog.m */;
+		name = "L4LogLog.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 674;
+		vrLoc = 0;
+	};
+	3A21562C133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74D6132FDF1200433E98 /* L4LoggerStore.m */;
+		name = "L4LoggerStore.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1579;
+		vrLoc = 0;
+	};
+	3A21562D133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B749B132FDF0900433E98 /* L4Logging.h */;
+		name = "L4Logging.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 3564;
+		vrLoc = 2116;
+	};
+	3A21562E133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74D7132FDF1200433E98 /* L4Logging.m */;
+		name = "L4Logging.m: 12";
+		rLen = 0;
+		rLoc = 378;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 0;
+	};
+	3A21562F133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B74D5132FDF1200433E98 /* L4Logger.m */;
+		name = "L4Logger.m: 312";
+		rLen = 0;
+		rLoc = 6724;
+		rType = 0;
+		vrLen = 879;
+		vrLoc = 6281;
+	};
+	3A215631133E3CB900642B3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B7498132FDF0900433E98 /* L4Logger.h */;
+		name = "L4Logger.h: 244";
+		rLen = 0;
+		rLoc = 7689;
+		rType = 0;
+		vrLen = 1791;
+		vrLoc = 6300;
+	};
+	3A9C6E38133E81AF00D38923 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 181B7498132FDF0900433E98 /* L4Logger.h */;
+		name = "L4Logger.h: 244";
+		rLen = 0;
+		rLoc = 7689;
+		rType = 0;
+		vrLen = 1791;
+		vrLoc = 6300;
+	};
+}

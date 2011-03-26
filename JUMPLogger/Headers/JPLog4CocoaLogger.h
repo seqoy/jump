@@ -20,6 +20,7 @@
 #import "Log4Cocoa.h"
 
 @interface JPLog4CocoaLogger : NSObject <JPLoggerInterface> {
-	Class keyForLog;
+	id keyForLog;
 }
+@property(retain, getter=getKeyForLog) id keyForLog;
 @end

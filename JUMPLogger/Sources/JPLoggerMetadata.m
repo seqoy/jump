@@ -17,7 +17,7 @@
 #import "JPLoggerMetadata.h"
 
 @implementation JPLoggerMetadata
-@synthesize message, fileName, className, methodName, lineNumber, exception, logLevel, assertion, caller;
+@synthesize message, fileName, domain, className, methodName, lineNumber, exception, logLevel, assertion, caller;
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 #pragma mark -
@@ -54,6 +54,7 @@
 	[fileName release];
 	[methodName release];
 	[exception release];
+	[domain release];
 	[super dealloc];
 }
 

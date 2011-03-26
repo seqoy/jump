@@ -28,8 +28,15 @@
 ///@{ 
 @required
 
+/**
+ * Set the Logger Class that this factory builds.
+ * @param loggerClass The logger class.
+ */
 +(void)setLoggerClass:(Class<JPLoggerInterface>)loggerClass;
 
+/**
+ * Get the logger Class that this factory builds.
+ */
 +(Class)loggerClass;
 
 /**
@@ -39,10 +46,18 @@
 +(id<JPLoggerInterface>)getLogger;
 
 /**
- * Get an configured instance of the logger. 
+ * Get an configured instance of the logger for specific class.
+ * @param anClass An logger for an specific class.
  * @return An autorelesable instance of the logger.
  */
 +(id<JPLoggerInterface>)getLoggerForClass:(Class)anClass;
+
+/**
+ * Get an configured instance of the logger for specific category.
+ * @param anCategory An logger for an specific category.
+ * @return An autorelesable instance of the logger.
+ */
++(id<JPLoggerInterface>)getLoggerForCategory:(NSString*)anCategory;
 
 /**
  * Implement on this method all configuration for the logger. 

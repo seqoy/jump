@@ -25,6 +25,7 @@
 	NSString* message;
 	
 	NSString* fileName;
+	NSString* domain;
 	NSString* className;
 	NSString* methodName;
 	NSNumber* lineNumber;
@@ -48,6 +49,12 @@
  * Object that call the log.
  */
 @property(retain) id caller;
+
+/**
+ * Log domain, used to specify some log category,
+ * rather than the Class that generate this log.
+ */
+@property(copy)  NSString* domain;
 
 /**
  * Class that generate the log.

@@ -49,8 +49,19 @@ static Class loggerClass;
 	// Init the logger.
 	id<JPLoggerInterface> anLogger = [self getLogger];
 	
-	// Attach the class.
+	// Attach the key, an class on this case.
 	[anLogger setKeyForLog:anClass];
+	
+	// Return it.
+	return anLogger;
+}
+
++(id<JPLoggerInterface>)getLoggerForCategory:(NSString*)anCategory {
+	// Init the logger.
+	id<JPLoggerInterface> anLogger = [self getLogger];
+
+	// Attach the key, an category on this case.
+	[anLogger setKeyForLog:anCategory];
 	
 	// Return it.
 	return anLogger;
