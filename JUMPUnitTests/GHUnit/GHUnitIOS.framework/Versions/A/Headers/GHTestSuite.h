@@ -107,6 +107,7 @@ extern NSString *GHUnitTest;
  */
 + (GHTestSuite *)suiteFromEnv;
 
+
 @end
 
 @interface GHTestSuite (JUnitXML)

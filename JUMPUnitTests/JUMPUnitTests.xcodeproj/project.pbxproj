@@ -12,11 +12,9 @@
 		188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64871332B1A90069CB1C /* CFNetwork.framework */; };
 		188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64881332B1A90069CB1C /* SystemConfiguration.framework */; };
 		188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64891332B1A90069CB1C /* UIKit.framework */; };
-		3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6848D613241B1500F6D21A /* GHUnitIOS.framework */; };
 		3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68491E13241B7500F6D21A /* CoreGraphics.framework */; };
 		3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68492113241B8000F6D21A /* Foundation.framework */; };
 		3A68492513241B8400F6D21A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68492413241B8400F6D21A /* UIKit.framework */; };
-		3A68492B13241C1400F6D21A /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68492A13241C1400F6D21A /* GHUnitIOSTestMain.m */; };
 		3A68497013241EA800F6D21A /* JUMPDatabaseManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68496F13241EA800F6D21A /* JUMPDatabaseManagerTests.m */; };
 		3A68498213241FB600F6D21A /* CoreDataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3A68498113241FB600F6D21A /* CoreDataModel.xcdatamodel */; };
 		3A6849871324200600F6D21A /* MyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6849861324200600F6D21A /* MyEntity.m */; };
@@ -24,8 +22,11 @@
 		3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68496513241E1700F6D21A /* libJUMPDatabase.a */; };
 		3A684A421324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A684A411324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m */; };
 		3A684A7213242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A684A7113242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m */; };
+		3A9C6DA3133E741200D38923 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9C6DA2133E741200D38923 /* GHUnitIOS.framework */; };
 		3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA69212132C1EC600780D21 /* libJUMPUserInterface.a */; };
 		3AA69229132C1F0200780D21 /* JUMPColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69228132C1F0200780D21 /* JUMPColorTest.m */; };
+		3AD0AE17133E5F8C00882023 /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0AE16133E5F8C00882023 /* GHUnitIOSTestMain.m */; };
+		3AD0AE31133E602700882023 /* JUMPTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0AE30133E602700882023 /* JUMPTestSuite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +69,9 @@
 		188F64891332B1A90069CB1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
 		3A6848CE132419FC00F6D21A /* JUMPDatabaseTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUMPDatabaseTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6848D1132419FD00F6D21A /* JUMPDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JUMPDatabaseTests-Info.plist"; sourceTree = "<group>"; };
-		3A6848D613241B1500F6D21A /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
 		3A68491E13241B7500F6D21A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3A68492113241B8000F6D21A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A68492413241B8400F6D21A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3A68492A13241C1400F6D21A /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTestMain.m; path = Sources/GHUnitIOSTestMain.m; sourceTree = "<group>"; };
 		3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPDatabase.xcodeproj; path = ../JUMPDatabase/JUMPDatabase.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3A68496F13241EA800F6D21A /* JUMPDatabaseManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerTests.m; path = Sources/JUMPDatabaseManagerTests.m; sourceTree = "<group>"; };
 		3A68498113241FB600F6D21A /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -81,8 +80,11 @@
 		3A684998132420BC00F6D21A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3A684A411324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerSingletonTest.m; path = Sources/JUMPDatabaseManagerSingletonTest.m; sourceTree = "<group>"; };
 		3A684A7113242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerActionTests.m; path = Sources/JUMPDatabaseManagerActionTests.m; sourceTree = "<group>"; };
+		3A9C6DA2133E741200D38923 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "../../GHUnit/Project-IPhone/build/Framework/GHUnitIOS.framework"; sourceTree = SOURCE_ROOT; };
 		3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPUserInterface.xcodeproj; path = ../JUMPUserInterface/JUMPUserInterface.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3AA69228132C1F0200780D21 /* JUMPColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPColorTest.m; path = Sources/JUMPColorTest.m; sourceTree = "<group>"; };
+		3AD0AE16133E5F8C00882023 /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTestMain.m; path = Sources/GHUnitIOSTestMain.m; sourceTree = "<group>"; };
+		3AD0AE30133E602700882023 /* JUMPTestSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPTestSuite.m; path = Sources/JUMPTestSuite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6848D713241B1500F6D21A /* GHUnitIOS.framework in Frameworks */,
 				3A68491F13241B7500F6D21A /* CoreGraphics.framework in Frameworks */,
 				3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */,
 				3A68492513241B8400F6D21A /* UIKit.framework in Frameworks */,
@@ -100,6 +101,7 @@
 				188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */,
 				188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */,
 				188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */,
+				3A9C6DA3133E741200D38923 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +156,8 @@
 		3A68494613241D0100F6D21A /* GHUnit */ = {
 			isa = PBXGroup;
 			children = (
-				3A6848D613241B1500F6D21A /* GHUnitIOS.framework */,
-				3A68492A13241C1400F6D21A /* GHUnitIOSTestMain.m */,
+				3A9C6DA2133E741200D38923 /* GHUnitIOS.framework */,
+				3AD0AE16133E5F8C00882023 /* GHUnitIOSTestMain.m */,
 			);
 			name = GHUnit;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 		3A68494713241D1300F6D21A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3AD0AE30133E602700882023 /* JUMPTestSuite.m */,
 				18448B0A132FF7240061513B /* JUMPLogger */,
 				3AA6920B132C1EAE00780D21 /* JUMPUserInterface */,
 				3A68494813241D1A00F6D21A /* JUMPDatabase */,
@@ -312,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A68492B13241C1400F6D21A /* GHUnitIOSTestMain.m in Sources */,
 				3A68497013241EA800F6D21A /* JUMPDatabaseManagerTests.m in Sources */,
 				3A68498213241FB600F6D21A /* CoreDataModel.xcdatamodel in Sources */,
 				3A6849871324200600F6D21A /* MyEntity.m in Sources */,
@@ -321,6 +323,8 @@
 				3AA69229132C1F0200780D21 /* JUMPColorTest.m in Sources */,
 				18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */,
 				1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */,
+				3AD0AE17133E5F8C00882023 /* GHUnitIOSTestMain.m in Sources */,
+				3AD0AE31133E602700882023 /* JUMPTestSuite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +370,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GHUnit\"",
+					"\"$(SRCROOT)/../../GHUnit/Project-IPhone/build/Framework\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -402,6 +407,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GHUnit\"",
+					"\"$(SRCROOT)/../../GHUnit/Project-IPhone/build/Framework\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -82,4 +82,15 @@
 	Info( @"Logging something on INFO level!!");
 
 }
+
+-(void)testLogCategory {
+	// Set Level to All.
+	SetGlobalLogLevel(JPLoggerAllLevel);
+	SetClassLogLevel( JPLoggerAllLevel );
+	SetCategoryLogLevel( @"customCategory", JPLoggerInfoLevel );
+	
+    Debug(@"Logging something on DEBUG level!!");
+	DebugTo( @"customCategory", @"THIS MESSAGE CANT BE LOGGED" );
+	WarnTo( @"customCategory", @"Logging something on WARN level!!");
+}
 @end
