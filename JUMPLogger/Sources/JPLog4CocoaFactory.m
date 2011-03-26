@@ -44,11 +44,11 @@ static BOOL configured;
 		[[L4Logger rootLogger] setLevel:[L4Level info]];
 		
 		// Add Console Appender.
-		//[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout]];
+		[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout]];
 		
 		// Create Appender.
-		L4NSLoggerAppender *anAppender = [[L4NSLoggerAppender alloc] initWithLayout:anLayout];
-		[[L4Logger rootLogger] addAppender:anAppender];
+//		L4NSLoggerAppender *anAppender = [[L4NSLoggerAppender alloc] initWithLayout:anLayout];
+//		[[L4Logger rootLogger] addAppender:anAppender];
 	}
     
 	// Set as configured.
