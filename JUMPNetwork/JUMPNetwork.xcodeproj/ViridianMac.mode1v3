@@ -233,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -272,22 +270,14 @@
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>3A78481C1326AF6E00C3374A</string>
 								<string>3AEF17D813183ED200BC3759</string>
-								<string>3A7846CC13268C4F00C3374A</string>
-								<string>3AEF17DA13183ED200BC3759</string>
-								<string>3AEF17F113183ED200BC3759</string>
-								<string>3AEF17FD13183ED200BC3759</string>
-								<string>3AEF183213183ED200BC3759</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>16</integer>
-									<integer>15</integer>
-									<integer>13</integer>
-									<integer>4</integer>
+									<integer>3</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -322,6 +312,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -339,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>180CF2A6134273FF00B90BDA</string>
+										<string>1888E10A134A3D0F00165C45</string>
 										<key>history</key>
 										<array>
 											<string>188D05CA13392E2A00A18A43</string>
@@ -355,7 +347,7 @@
 											<string>180CF2A2134273FF00B90BDA</string>
 											<string>180CF2A3134273FF00B90BDA</string>
 											<string>180CF2A4134273FF00B90BDA</string>
-											<string>180CF2A5134273FF00B90BDA</string>
+											<string>180CF2A6134273FF00B90BDA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -413,9 +405,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>180CF2A7134273FF00B90BDA</string>
+				<string>1888E10B134A3D0F00165C45</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>180CF2A8134273FF00B90BDA</string>
+				<string>1888E10C134A3D0F00165C45</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -553,7 +545,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>18D05EAA132FEDDE00813610</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/JUMPNetwork.xcodeproj</string>
 	</array>
@@ -596,8 +587,6 @@
 							<string>412pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -637,7 +626,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18D05EAA132FEDDE00813610</string>
-				<string>180CF2901342735300B90BDA</string>
+				<string>1888E10D134A3D0F00165C45</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

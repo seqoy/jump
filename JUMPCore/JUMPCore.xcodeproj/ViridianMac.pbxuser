@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	1888E333134A619100165C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E320B1321798200970E2B /* JPCore.h */;
+		name = "JPCore.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 0;
+	};
+	1888E334134A619100165C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E320B1321798200970E2B /* JPCore.h */;
+		name = "JPCore.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 0;
+	};
+	1888E33A134A619100165C45 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1888E33B134A619100165C45 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3A5E31201321730100970E2B /* JUMPCore */ = {
+		activeExec = 0;
+	};
+	3A5E320B1321798200970E2B /* JPCore.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1053, 496}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1291}";
+		};
+	};
+	3AEF14FF131826DD00BC3759 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 3A5E31201321730100970E2B /* JUMPCore */;
+		codeSenseManager = 1888E33B134A619100165C45 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					875,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 323641723;
+			PBXWorkspaceStateSaveDate = 323641723;
+		};
+		perUserProjectItems = {
+			1888E333134A619100165C45 /* PBXTextBookmark */ = 1888E333134A619100165C45 /* PBXTextBookmark */;
+			1888E334134A619100165C45 /* PBXTextBookmark */ = 1888E334134A619100165C45 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 1888E33A134A619100165C45 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}

@@ -52,8 +52,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 323121985;
-			PBXWorkspaceStateSaveDate = 323121985;
+			PBXPerProjectTemplateStateSaveDate = 323632241;
+			PBXWorkspaceStateSaveDate = 323632241;
 		};
 		perUserProjectItems = {
 			180CF29D134273FF00B90BDA /* PBXTextBookmark */ = 180CF29D134273FF00B90BDA /* PBXTextBookmark */;
@@ -64,8 +64,8 @@
 			180CF2A2134273FF00B90BDA /* PBXTextBookmark */ = 180CF2A2134273FF00B90BDA /* PBXTextBookmark */;
 			180CF2A3134273FF00B90BDA /* PBXTextBookmark */ = 180CF2A3134273FF00B90BDA /* PBXTextBookmark */;
 			180CF2A4134273FF00B90BDA /* PBXTextBookmark */ = 180CF2A4134273FF00B90BDA /* PBXTextBookmark */;
-			180CF2A5134273FF00B90BDA /* PBXTextBookmark */ = 180CF2A5134273FF00B90BDA /* PBXTextBookmark */;
 			180CF2A6134273FF00B90BDA /* PBXTextBookmark */ = 180CF2A6134273FF00B90BDA /* PBXTextBookmark */;
+			1888E10A134A3D0F00165C45 /* PBXTextBookmark */ = 1888E10A134A3D0F00165C45 /* PBXTextBookmark */;
 			188D05CA13392E2A00A18A43 /* PBXTextBookmark */ = 188D05CA13392E2A00A18A43 /* PBXTextBookmark */;
 			188D061313392F0A00A18A43 /* PBXTextBookmark */ = 188D061313392F0A00A18A43 /* PBXTextBookmark */;
 			188D061413392F0A00A18A43 /* PBXTextBookmark */ = 188D061413392F0A00A18A43 /* PBXTextBookmark */;
@@ -82,11 +82,6 @@
 		name = JUMPLog4CocoaTest.m;
 		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPUnitTests/Sources/JUMPLog4CocoaTest.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1013, 1326}}";
-			sepNavSelRange = "{1411, 3}";
-			sepNavVisRange = "{936, 1084}";
-		};
 	};
 	180CF29D134273FF00B90BDA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -168,16 +163,6 @@
 		vrLen = 2339;
 		vrLoc = 1823;
 	};
-	180CF2A5134273FF00B90BDA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3AEF183413183ED200BC3759 /* JPPipelineNotification.m */;
-		name = "JPPipelineNotification.m: 95";
-		rLen = 0;
-		rLoc = 3784;
-		rType = 0;
-		vrLen = 2088;
-		vrLoc = 1853;
-	};
 	180CF2A6134273FF00B90BDA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3AEF183413183ED200BC3759 /* JPPipelineNotification.m */;
@@ -187,6 +172,16 @@
 		rType = 0;
 		vrLen = 2088;
 		vrLoc = 1853;
+	};
+	1888E10A134A3D0F00165C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AEF183413183ED200BC3759 /* JPPipelineNotification.m */;
+		name = "JPPipelineNotification.m: 80";
+		rLen = 0;
+		rLoc = 3064;
+		rType = 0;
+		vrLen = 2711;
+		vrLoc = 0;
 	};
 	188D05CA13392E2A00A18A43 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -204,11 +199,6 @@
 		name = JPHTTPTransporter.m;
 		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/Sources/JPHTTPTransporter.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1412, 3601}}";
-			sepNavSelRange = "{4330, 0}";
-			sepNavVisRange = "{7921, 2258}";
-		};
 	};
 	188D061313392F0A00A18A43 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -256,11 +246,6 @@
 		name = JPLoggerShortcuts.h;
 		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Headers/JPLoggerShortcuts.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1013, 3731}}";
-			sepNavSelRange = "{2372, 0}";
-			sepNavVisRange = "{1778, 1865}";
-		};
 	};
 	18D05EB4132FEDDE00813610 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -405,8 +390,8 @@
 	3AEF183413183ED200BC3759 /* JPPipelineNotification.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1237, 1352}}";
-			sepNavSelRange = "{3784, 0}";
-			sepNavVisRange = "{1853, 2088}";
+			sepNavSelRange = "{3064, 0}";
+			sepNavVisRange = "{0, 2711}";
 		};
 	};
 	D2AAC07D0554694100DB518D /* JUMPNetwork */ = {

@@ -355,7 +355,6 @@
 // Returns the managed object context for the application.
 //
 - (NSManagedObjectContext*)managedObjectContext {
-	Info( @"Initializing Managed Object Context");
 	
 	// Return Managed Object Context if is already started...
     if (managedObjectContext != nil) {
@@ -363,7 +362,8 @@
     }
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
-	
+	Info( @"Initializing Managed Object Context");
+
 	// Grab the Coordinator.
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
 	
@@ -514,9 +514,9 @@
 
 	//// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// //// //// //// //// //// //// //// /
 	// Can't perform with no predicates.
-	else {
-		[self throwExceptionWithCause:NSFormatString( throwMessage, @"fetchRequest' or 'predicate" )];
-	}
+//	else {
+//		[self throwExceptionWithCause:NSFormatString( throwMessage, @"fetchRequest' or 'predicate" )];
+//	}
 	
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 	// Set Order if defined.
