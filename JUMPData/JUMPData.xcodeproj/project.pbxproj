@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2CE706131AE91A00ED5B5D /* LoggingExtra.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */; };
-		3A2CE707131AE91A00ED5B5D /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE704131AE91A00ED5B5D /* Logging.h */; };
-		3A2CE708131AE91A00ED5B5D /* Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CE705131AE91A00ED5B5D /* Logging.m */; };
 		3A2CE73F131AEC3500ED5B5D /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE736131AEC3500ED5B5D /* JSON.h */; };
 		3A2CE740131AEC3500ED5B5D /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */; };
 		3A2CE741131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */; };
@@ -33,9 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggingExtra.h; path = "../../../Work/libs/SEQOY Shortcuts/SEQOY Shorcuts/LoggingExtra.h"; sourceTree = SOURCE_ROOT; };
-		3A2CE704131AE91A00ED5B5D /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = ../../../Work/libs/MYUtilities/Logging.h; sourceTree = SOURCE_ROOT; };
-		3A2CE705131AE91A00ED5B5D /* Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logging.m; path = ../../../Work/libs/MYUtilities/Logging.m; sourceTree = SOURCE_ROOT; };
 		3A2CE736131AEC3500ED5B5D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
@@ -85,7 +79,6 @@
 			children = (
 				3A78449C1325332B00C3374A /* JUMPData.h */,
 				3A2CE71B131AE99A00ED5B5D /* Third-Part */,
-				3A2CE702131AE91A00ED5B5D /* Logging */,
 				08FB77AEFE84172EC02AAC07 /* Sources */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -117,16 +110,6 @@
 				AA747D9E0F9514B9006C5449 /* JUMPData_Prefix.pch */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		3A2CE702131AE91A00ED5B5D /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				3A2CE703131AE91A00ED5B5D /* LoggingExtra.h */,
-				3A2CE704131AE91A00ED5B5D /* Logging.h */,
-				3A2CE705131AE91A00ED5B5D /* Logging.m */,
-			);
-			name = Logging;
 			sourceTree = "<group>";
 		};
 		3A2CE71B131AE99A00ED5B5D /* Third-Part */ = {
@@ -208,8 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* JUMPData_Prefix.pch in Headers */,
-				3A2CE706131AE91A00ED5B5D /* LoggingExtra.h in Headers */,
-				3A2CE707131AE91A00ED5B5D /* Logging.h in Headers */,
 				3A2CE73F131AEC3500ED5B5D /* JSON.h in Headers */,
 				3A2CE740131AEC3500ED5B5D /* NSObject+JSON.h in Headers */,
 				3A2CE741131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h in Headers */,
@@ -277,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2CE708131AE91A00ED5B5D /* Logging.m in Sources */,
 				3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */,
 				3AFF844C131FC27200A23032 /* JPDataConverter.m in Sources */,
 				3A5E30F1132169E400970E2B /* JPMath.m in Sources */,

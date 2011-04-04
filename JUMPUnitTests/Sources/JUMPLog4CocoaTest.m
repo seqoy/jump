@@ -93,4 +93,10 @@
 	DebugTo( @"customCategory", @"THIS MESSAGE CANT BE LOGGED" );
 	WarnTo( @"customCategory", @"Logging something on WARN level!!");
 }
+
+-(void)testLoadConfigurationFromFile {
+	
+	
+}
+
 @end

@@ -86,14 +86,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 18647731132FF621002CBD59 /* libJUMPLogger.a */;
+			remoteGlobalIDString = 18647731132FF621002CBD59;
 			remoteInfo = JUMPLogger;
 		};
 		188D05B013392D3400A18A43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 188D059813392D1B00A18A43 /* JUMPLogger.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 18647730132FF621002CBD59 /* JUMPLogger */;
+			remoteGlobalIDString = 18647730132FF621002CBD59;
 			remoteInfo = JUMPLogger;
 		};
 		3A7849BD1326BC7900C3374A /* PBXContainerItemProxy */ = {

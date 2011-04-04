@@ -1,0 +1,151 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = D2AAC07D0554694100DB518D /* JUMPData */;
+		codeSenseManager = 180CF242134272E300B90BDA /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					908,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 323121881;
+			PBXWorkspaceStateSaveDate = 323121881;
+		};
+		perUserProjectItems = {
+			180CF2451342731800B90BDA /* PBXTextBookmark */ = 180CF2451342731800B90BDA /* PBXTextBookmark */;
+			180CF2461342731800B90BDA /* PBXTextBookmark */ = 180CF2461342731800B90BDA /* PBXTextBookmark */;
+			180CF2471342731800B90BDA /* PBXTextBookmark */ = 180CF2471342731800B90BDA /* PBXTextBookmark */;
+			180CF2481342731800B90BDA /* PBXTextBookmark */ = 180CF2481342731800B90BDA /* PBXTextBookmark */;
+			180CF2491342731800B90BDA /* PBXBookmark */ = 180CF2491342731800B90BDA /* PBXBookmark */;
+			180CF24A1342731800B90BDA /* PBXTextBookmark */ = 180CF24A1342731800B90BDA /* PBXTextBookmark */;
+		};
+		sourceControlManager = 180CF241134272E300B90BDA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	180CF241134272E300B90BDA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	180CF242134272E300B90BDA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	180CF2451342731800B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A78449C1325332B00C3374A /* JUMPData.h */;
+		name = "JUMPData.h: 4";
+		rLen = 0;
+		rLoc = 126;
+		rType = 0;
+		vrLen = 1391;
+		vrLoc = 0;
+	};
+	180CF2461342731800B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */;
+		name = "JPJSONProcesser.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1745;
+		vrLoc = 0;
+	};
+	180CF2471342731800B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AFF844B131FC27200A23032 /* JPDataConverter.m */;
+		name = "JPDataConverter.m: 146";
+		rLen = 0;
+		rLoc = 5559;
+		rType = 0;
+		vrLen = 2025;
+		vrLoc = 0;
+	};
+	180CF2481342731800B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E30EE132169E400970E2B /* JPMath.h */;
+		name = "JPMath.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1683;
+		vrLoc = 0;
+	};
+	180CF2491342731800B90BDA /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3A5E30EF132169E400970E2B /* JPMath.m */;
+	};
+	180CF24A1342731800B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E30EF132169E400970E2B /* JPMath.m */;
+		name = "JPMath.m: 41";
+		rLen = 0;
+		rLoc = 1353;
+		rType = 0;
+		vrLen = 1165;
+		vrLoc = 886;
+	};
+	3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {702, 615}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1745}";
+		};
+	};
+	3A5E30EE132169E400970E2B /* JPMath.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1086, 1092}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1683}";
+		};
+	};
+	3A5E30EF132169E400970E2B /* JPMath.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1086, 949}}";
+			sepNavSelRange = "{1353, 0}";
+			sepNavVisRange = "{886, 1165}";
+		};
+	};
+	3A78449C1325332B00C3374A /* JUMPData.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {992, 615}}";
+			sepNavSelRange = "{126, 0}";
+			sepNavVisRange = "{0, 1391}";
+		};
+	};
+	3AFF844B131FC27200A23032 /* JPDataConverter.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 2444}}";
+			sepNavSelRange = "{5559, 0}";
+			sepNavVisRange = "{0, 2025}";
+		};
+	};
+	D2AAC07D0554694100DB518D /* JUMPData */ = {
+		activeExec = 0;
+	};
+}

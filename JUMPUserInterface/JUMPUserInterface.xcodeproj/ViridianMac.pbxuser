@@ -1,0 +1,97 @@
+// !$*UTF8*$!
+{
+	180CF2561342732B00B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AA69954132D52DE00780D21 /* JPColorTemplates.m */;
+		name = "JPColorTemplates.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1230;
+		vrLoc = 0;
+	};
+	180CF2571342732B00B90BDA /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3AA51FCA132BE874002D989C /* JPColor.m */;
+	};
+	180CF2581342732B00B90BDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3AA51FCA132BE874002D989C /* JPColor.m */;
+		name = "JPColor.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2076;
+		vrLoc = 0;
+	};
+	180CF25E1342732B00B90BDA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	180CF25F1342732B00B90BDA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3AA51FB2132BE7E2002D989C /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 3AA51FC2132BE80F002D989C /* JUMPUserInterface */;
+		codeSenseManager = 180CF25F1342732B00B90BDA /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					602,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 323121954;
+			PBXWorkspaceStateSaveDate = 323121954;
+		};
+		perUserProjectItems = {
+			180CF2561342732B00B90BDA /* PBXTextBookmark */ = 180CF2561342732B00B90BDA /* PBXTextBookmark */;
+			180CF2571342732B00B90BDA /* PBXBookmark */ = 180CF2571342732B00B90BDA /* PBXBookmark */;
+			180CF2581342732B00B90BDA /* PBXTextBookmark */ = 180CF2581342732B00B90BDA /* PBXTextBookmark */;
+		};
+		sourceControlManager = 180CF25E1342732B00B90BDA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3AA51FC2132BE80F002D989C /* JUMPUserInterface */ = {
+		activeExec = 0;
+	};
+	3AA51FCA132BE874002D989C /* JPColor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 5226}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2076}";
+		};
+	};
+	3AA69954132D52DE00780D21 /* JPColorTemplates.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {780, 6045}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1230}";
+		};
+	};
+}

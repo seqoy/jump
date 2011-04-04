@@ -2,6 +2,7 @@
  * For copyright & license, see COPYRIGHT.txt.
  */
 
+#import "NSDate-Calendar.h"
 #import "L4LoggingEvent.h"
 #import "L4Logger.h"
 

@@ -35,13 +35,17 @@ static BOOL configured;
 	// Try to configure from file first.
     BOOL success = [self configureWithFile:@"JPLogger.properties"];
     
+	////////// ////////// ////////// ////////// /////////////// ////////// ////////// ////////// /////////////// ////////// ///////
     // If can't, configure locally, using Default values.
     if ( !success) {
 		// Custom Layout.
 		L4Layout *anLayout = [[[L4PatternLayout alloc] initWithConversionPattern:@"[%-5p]: %m%n"] autorelease];
 		
-		// Default level is INFO.
-		[[L4Logger rootLogger] setLevel:[L4Level info]];
+		// Get global level.
+		L4Level *globalLevel = [JPLog4CocoaFactory convertJPLevel:[JPLog4CocoaFactory globalLevel]];
+								
+		// Default level is global level.
+		[[L4Logger rootLogger] setLevel:globalLevel];
 		
 		// Add Console Appender.
 		[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout]];
