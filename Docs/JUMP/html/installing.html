@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/> 
-<title>JUMP Framework: JUMP Framework</title> 
+<title>JUMP: Installing JUMP</title> 
 <link href="search/search.css" rel="stylesheet" type="text/css"/> 
 <script type="text/javascript" src="search/search.js"></script> 
 <link href="navtree.css" rel="stylesheet" type="text/css"/> 
@@ -64,30 +64,45 @@ function toggleVisibility(linkObj) {
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('installing.html','');
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<h1>JUMP Framework </h1>  </div>
+<h1>Installing JUMP </h1>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p><b>JUMP Framework</b> is a collection of classes in Objective-C to perform a series of tasks on iOS or Mac OS applications. From Network libraries until User Interface libraries. The framework have classes to accomplish day by day taks until very complex applications. </p>
-<h1>JUMP Framework Modules</h1>
-<p><b>JUMP Framework</b> is divided on different <em>weakly coupled</em> modules. You can import all modules or only the modules that you want to use on your project. </p>
-<p>These are the main Modules:</p>
-<ul>
-<li><a href="../../JUMPDatabase/html/index.html">Database Module</a></li>
-<li><a href="../../JUMPNetwork/html/index.html">Network Module</a></li>
-<li><a href="../../JUMPData/html/index.html">Data Module</a></li>
-<li><a href="../../JUMPUserInterface/html/index.html">User Interface Module</a></li>
-</ul>
-<p><br/>
- <br/>
- </p>
+<div class="textblock"><p>Install JUMP is very ease, let's see some tutorial steps to see how we do that.</p>
+<h3>Clone the JUMP Library from GIT repository.</h3>
+<p>One good idea is to maintain JUMP on a common folder, so if you have many projects that use this library you doesn't have to maintain one individual copy for each project. </p>
+<p>So, here's how you clone the repository: </p>
+<div class="fragment"><pre class="fragment"> git clone xxx
+</pre></div><h3>Configuring</h3>
+<p>The next time is to configure it. JUMP comes with a configure script, basically what it does is create one 'Header' folder and <a href="http://en.wikipedia.org/wiki/Symbolic_link">create an symbolic link</a> of all JUMP headers inside of that. This is very useful and we'll se why later.</p>
+<p>To configure, execute this script inside the JUMP folder that you just cloned. </p>
+<div class="fragment"><pre class="fragment"> ./JUMPConfig.sh -configure
+</pre></div><p><em>Execute <code>./JUMPConfig.sh</code> without parameters to see all the options.</em> </p>
+<p>That's it. Is installed, now see <a class="el" href="importing_project.html">Importing JUMP Library on your XCode project</a>. </p>
 </div></div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
 <div id="nav-path" class="navpath"> 
     <ul> 
       <li class="footer"><div class="copyright">

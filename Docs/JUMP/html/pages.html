@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/> 
-<title>JUMP Framework: File List</title> 
+<title>JUMP: Related Pages</title> 
 <link href="search/search.css" rel="stylesheet" type="text/css"/> 
 <script type="text/javascript" src="search/search.js"></script> 
 <link href="navtree.css" rel="stylesheet" type="text/css"/> 
@@ -65,24 +65,41 @@ function toggleVisibility(linkObj) {
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('pages.html','');
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<h1>File List</h1>  </div>
+<h1>Related Pages</h1>  </div>
 </div>
 <div class="contents">
-<div class="textblock">Here is a list of all documented files with brief descriptions:</div><table>
-  <tr><td class="indexkey">/Users/Paulo/Projects/JUMP/Sources/<b>JUMPHeaders.h</b> <a href="_j_u_m_p_headers_8h_source.html">[code]</a></td><td class="indexvalue"></td></tr>
-</table>
+<div class="textblock">Here is a list of all related documentation pages:</div><ul>
+<li><a class="el" href="installing.html">Installing JUMP</a>
+</li>
+<li><a class="el" href="importing_project.html">Importing JUMP Library on your XCode project</a>
+</li>
+<li><a class="el" href="modules_dependecies.html">JUMP Module Dependecies</a>
+</li>
+</ul>
 </div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
 <div id="nav-path" class="navpath"> 
     <ul> 
       <li class="footer"><div class="copyright">

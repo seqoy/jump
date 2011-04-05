@@ -1,9 +1,14 @@
 var NAVTREE =
 [
-  [ "JUMP Framework", "index.html", [
-    [ "Main Page", "index.html", null ],
+  [ "JUMP", "index.html", [
+    [ "JUMP Common Library", "index.html", null ],
+    [ "Related Pages", "pages.html", [
+      [ "Installing JUMP", "installing.html", null ],
+      [ "Importing JUMP Library on your XCode project", "importing_project.html", null ],
+      [ "JUMP Module Dependecies", "modules_dependecies.html", null ]
+    ] ],
     [ "File List", "files.html", [
-      [ "/Users/Paulo/Projects/JUMP/Sources/JUMPHeaders.h", "_j_u_m_p_headers_8h.html", null ]
+      [ "/Users/ViridianMac/Documents/Projects/JUMP/Sources/JUMPHeaders.h", null, null ]
     ] ]
   ] ]
 ];
