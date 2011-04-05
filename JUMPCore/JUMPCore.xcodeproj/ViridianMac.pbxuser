@@ -10,16 +10,6 @@
 		vrLen = 1291;
 		vrLoc = 0;
 	};
-	1888E334134A619100165C45 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3A5E320B1321798200970E2B /* JPCore.h */;
-		name = "JPCore.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1291;
-		vrLoc = 0;
-	};
 	1888E33A134A619100165C45 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -34,12 +24,22 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	1888E35F134A653F00165C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E320B1321798200970E2B /* JPCore.h */;
+		name = "JPCore.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 0;
+	};
 	3A5E31201321730100970E2B /* JUMPCore */ = {
 		activeExec = 0;
 	};
 	3A5E320B1321798200970E2B /* JPCore.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1053, 496}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1053, 498}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1291}";
 		};
@@ -76,7 +76,7 @@
 		};
 		perUserProjectItems = {
 			1888E333134A619100165C45 /* PBXTextBookmark */ = 1888E333134A619100165C45 /* PBXTextBookmark */;
-			1888E334134A619100165C45 /* PBXTextBookmark */ = 1888E334134A619100165C45 /* PBXTextBookmark */;
+			1888E35F134A653F00165C45 /* PBXTextBookmark */ = 1888E35F134A653F00165C45 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1888E33A134A619100165C45 /* Source Control */;
 		userBuildSettings = {

@@ -296,7 +296,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>225 207 1322 785 0 0 1920 1058 </string>
+						<string>224 198 1322 785 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +324,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1888E334134A619100165C45</string>
+										<string>1888E35F134A653F00165C45</string>
 										<key>history</key>
 										<array>
 											<string>1888E333134A619100165C45</string>
@@ -339,14 +339,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1114, 528}}</string>
+								<string>{{0, 0}, {1114, 530}}</string>
 								<key>RubberWindowFrame</key>
-								<string>225 207 1322 785 0 0 1920 1058 </string>
+								<string>224 198 1322 785 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>528pt</string>
+							<string>530pt</string>
 						</dict>
 						<dict>
 							<key>BecomeActive</key>
@@ -361,14 +361,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 533}, {1114, 211}}</string>
+								<string>{{0, 535}, {1114, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>225 207 1322 785 0 0 1920 1058 </string>
+								<string>224 198 1322 785 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>211pt</string>
+							<string>209pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -531,7 +531,7 @@
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPCore/JUMPCore.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>225 207 1322 785 0 0 1920 1058 </string>
+	<string>224 198 1322 785 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

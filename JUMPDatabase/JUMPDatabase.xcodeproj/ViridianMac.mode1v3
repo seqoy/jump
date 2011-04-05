@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
+									<integer>6</integer>
 									<integer>5</integer>
 									<integer>4</integer>
 									<integer>0</integer>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPDBManager.m</string>
+								<string>JPDBManagerDefinitions.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,18 +329,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPDBManager.m</string>
+										<string>JPDBManagerDefinitions.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>180CF2761342733900B90BDA</string>
+										<string>18E00C69134BA88400824A64</string>
 										<key>history</key>
 										<array>
 											<string>18D05EC4132FF05200813610</string>
 											<string>188D06AB1339326400A18A43</string>
-											<string>188D06AD1339326400A18A43</string>
 											<string>18242D881339360000D82D0D</string>
-											<string>18C4945D133A902A00B1FBDC</string>
+											<string>18E00C33134BA13B00824A64</string>
+											<string>18E00C34134BA13B00824A64</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -398,9 +398,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>180CF2771342733900B90BDA</string>
+				<string>18E00C36134BA13B00824A64</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>180CF2781342733900B90BDA</string>
+				<string>18E00C37134BA13B00824A64</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -619,7 +619,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18D05E92132FEDBF00813610</string>
-				<string>180CF2791342733900B90BDA</string>
+				<string>18E00C38134BA13B00824A64</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

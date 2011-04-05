@@ -17,8 +17,8 @@ printHelp() {
 	echo '   JUMPConfig.sh <option>'
 	echo ''
 	echo '   -configure         Configure all JUMP Headers.'
-	echo '   -clean             Clean all configures JUMP Headers.'
-	echo '   -cleanconfigure    Clean all configures JUMP Headers and install again.'
+	echo '   -clean             Clean all configured JUMP Headers.'
+	echo '   -cleanconfigure    Clean all configured JUMP Headers and install again.'
 	echo ''
 }
 
