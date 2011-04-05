@@ -30,8 +30,8 @@
 	- <a href="../../JUMPData/html/index.html">Data Module</a>
 	- <a href="../../JUMPUserInterface/html/index.html">User Interface Module</a>
   
- <br>
- <b>Also check \ref installing to see how to install and use on your projects.
+ <h3>Installing and Importing</h3>
+ Check \ref installing and \ref importing_project to see how to install and use JUMP on your projects.
  <br>
  */
 
@@ -49,7 +49,7 @@
  <p>
  So, here's how you clone the repository:
  \code
- git clone xxx
+ git clone git@github.com:seqoy/jump.git
  \endcode
  
  <h3>Configuring</h3>

@@ -14,6 +14,27 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	18E00CCD134BB60E00824A64 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3A9178E1132EF93400506E72 /* JUMPHeaders.h */;
+	};
+	18E00CCE134BB60E00824A64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A9178E1132EF93400506E72 /* JUMPHeaders.h */;
+		name = "JUMPHeaders.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1889;
+		vrLoc = 262;
+	};
+	3A9178E1132EF93400506E72 /* JUMPHeaders.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {992, 1820}}";
+			sepNavSelRange = "{5462, 0}";
+			sepNavVisRange = "{958, 1786}";
+		};
+	};
 	3AEF14F1131826AD00BC3759 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeTarget = 3AEF1A3F13184CD300BC3759 /* JUMPFramework */;
@@ -26,7 +47,7 @@
 					20,
 					639,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -41,8 +62,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 323723279;
-			PBXWorkspaceStateSaveDate = 323723279;
+			PBXPerProjectTemplateStateSaveDate = 323729089;
+			PBXWorkspaceStateSaveDate = 323729089;
+		};
+		perUserProjectItems = {
+			18E00CCD134BB60E00824A64 = 18E00CCD134BB60E00824A64 /* PBXBookmark */;
+			18E00CCE134BB60E00824A64 = 18E00CCE134BB60E00824A64 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 18E00C2C134BA01000824A64 /* Source Control */;
 		userBuildSettings = {
