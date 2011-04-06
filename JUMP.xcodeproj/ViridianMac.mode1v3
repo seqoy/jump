@@ -311,6 +311,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -328,10 +330,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>18E00CCE134BB60E00824A64</string>
+										<string>18B13F2C134BB9CD00FCE6FA</string>
 										<key>history</key>
 										<array>
-											<string>18E00CCD134BB60E00824A64</string>
+											<string>18E00CCE134BB60E00824A64</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -343,18 +345,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {878, 636}}</string>
+								<string>{{0, 0}, {878, 720}}</string>
 								<key>RubberWindowFrame</key>
 								<string>230 140 1086 808 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>636pt</string>
+							<string>720pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -365,14 +365,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 641}, {878, 126}}</string>
+								<string>{{0, 725}, {878, 42}}</string>
 								<key>RubberWindowFrame</key>
 								<string>230 140 1086 808 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>126pt</string>
+							<string>42pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -391,9 +391,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>18E00CCF134BB60E00824A64</string>
+				<string>18B13F2D134BB9CD00FCE6FA</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>18E00CD0134BB60E00824A64</string>
+				<string>18B13F2E134BB9CD00FCE6FA</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -612,7 +612,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18E00C2A134BA01000824A64</string>
-				<string>18E00CD1134BB60E00824A64</string>
+				<string>18B13F2F134BB9CD00FCE6FA</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
