@@ -154,11 +154,12 @@
 // Compiler condition to disable all logs.
 #else
 
-	-(void)debugWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
-	-(void)infoWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
-	-(void)warnWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
-	-(void)errorWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
-	-(void)fatalWithMetadata:(JPLoggerMetadata*)logData { /// Disabled };
+	// Disable all.
+	-(void)debugWithMetadata:(JPLoggerMetadata*)logData {};
+	-(void)infoWithMetadata:(JPLoggerMetadata*)logData {};
+	-(void)warnWithMetadata:(JPLoggerMetadata*)logData {};
+	-(void)errorWithMetadata:(JPLoggerMetadata*)logData {};
+	-(void)fatalWithMetadata:(JPLoggerMetadata*)logData {};
 
 #endif
 		
