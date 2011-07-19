@@ -22,7 +22,7 @@ CGColorRef JPCreateRGBColor( float r, float g, float b, float alpha ) {
 	CGFloat rgba[ 4 ] = { JPPSToQuartz( r ), 
 						  JPPSToQuartz( g ), 
 						  JPPSToQuartz( b ),  
-						  JPConvertAlpha( alpha ) };
+						  JPPSAlphaToQuartz( alpha ) };
 	
 	// Create One Color Space.
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

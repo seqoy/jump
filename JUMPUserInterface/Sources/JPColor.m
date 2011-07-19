@@ -86,6 +86,24 @@
 	}
 	return self;
 }
+
+///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //////
+// Initializes and returns an JPColor from a UIColor object.
++(JPColor*)initWithUIColor:(UIColor*)anUIColorObject {
+
+	// Get the Color Reference.
+	CGColorRef colorref = [anUIColorObject CGColor];
+	
+	// Get the Color Components.
+	const CGFloat *components = CGColorGetComponents(colorref);
+
+	// Init and return.
+	return [JPColor initWithRed:JPQuartzToPS( components[0] )
+							  G:JPQuartzToPS( components[1] )
+							  B:JPQuartzToPS( components[2] )
+						opacity:JPQuartzAlphaToPS( components[3] )];
+}
+
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //////
 // Init object from one Dictionary.
 +(JPColor*)initWithDictionary:(NSDictionary*)anDictionary {

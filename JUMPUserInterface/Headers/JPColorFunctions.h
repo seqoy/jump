@@ -23,9 +23,14 @@
  */
 
 /**
+ * Convert a Photoshop-like Alpha Percent (0 - 100) to Quartz Alpha Percent (0.0 - 1.0).
+ */
+#define JPPSAlphaToQuartz(alpha) ( (float)alpha / 100.0 )
+
+/**
  * Convert a Quartz Alpha Percent (0.0 - 1.0) to Photoshop-like Alpha Percent (0 - 100).
  */
-#define JPConvertAlpha(alpha) ( (float)alpha / 100.0 )
+#define JPQuartzAlphaToPS(alpha) ( (float)alpha * 100.0 )
 
 /// Convert a Photoshop Color Percent (0 - 255) to a Quartz Color Percent (0.0 - 1.0).
 #define JPPSToQuartz(color) (float)( color / 255.0 )

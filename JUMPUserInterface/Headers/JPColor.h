@@ -148,6 +148,12 @@
 ///@{
 
 /**
+ * Initializes and returns an JPColor from a UIColor object.
+ * @param anUIColorObject An UIColor object.
+ */
++(JPColor*)initWithUIColor:(UIColor*)anUIColorObject;
+
+/**
  * Initializes and returns an JPColor from a NSDictionary.
  * The Dictionary must contain the follow structure:
  * \code
