@@ -11,3 +11,5 @@ JUMPLogger/Libraries/.DS_Store
 
 JUMPLogger/Libraries/Log4CocoaTouch/build/*
 JUMPLogger/.DS_Store
+
+Docs/*
