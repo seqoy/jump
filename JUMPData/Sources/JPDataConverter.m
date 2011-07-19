@@ -121,10 +121,7 @@ static NSMutableArray* _JPDataConverterKnowedDateFormats;
 		// Create an Scanner, the scaner will scan the string looking for specific type number.
 		NSScanner *stringScanner = [NSScanner scannerWithString:anObject];
 		
-		// Scan string looking for INT.
-		int aInt; 
-		if ( [stringScanner scanInt:&aInt] )
-			return [NSNumber numberWithInt:[anObject intValue]];
+		// NOTE: The order is very important ->-- 'float' after 'double' and then 'int'. 
 		
 		// Scan string looking for FLOAT.
 		float aFloat; 
@@ -135,6 +132,11 @@ static NSMutableArray* _JPDataConverterKnowedDateFormats;
 		double aDouble;
 		if ( [stringScanner scanDouble:&aDouble] ) 
 			return [NSNumber numberWithDouble:[anObject doubleValue]]; 
+
+		// Scan string looking for INT.
+		int aInt; 
+		if ( [stringScanner scanInt:&aInt] )
+			return [NSNumber numberWithInt:[anObject intValue]];
 	}		
 	
 	// Can't convert, return NIL.

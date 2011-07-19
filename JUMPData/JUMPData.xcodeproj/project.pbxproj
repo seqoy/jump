@@ -7,6 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18003122136F380F00C4B0A3 /* JPXMLParserXPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 18003121136F380F00C4B0A3 /* JPXMLParserXPath.h */; };
+		18003124136F381900C4B0A3 /* JPXMLParserXPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 18003123136F381900C4B0A3 /* JPXMLParserXPath.m */; };
+		1800326F1370404F00C4B0A3 /* JPAtomFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800325013703D7300C4B0A3 /* JPAtomFeedModel.m */; };
+		18003277137040EB00C4B0A3 /* JPAtomPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18003275137040EB00C4B0A3 /* JPAtomPersonModel.m */; };
+		18003281137041E500C4B0A3 /* JPAtomCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800327F137041E500C4B0A3 /* JPAtomCategoryModel.m */; };
+		1800328D137042F300C4B0A3 /* JPAtomLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800328B137042F300C4B0A3 /* JPAtomLinkModel.m */; };
+		180032E8137049E300C4B0A3 /* JPAtomTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032E6137049E300C4B0A3 /* JPAtomTextModel.m */; };
+		1800339213705A7D00C4B0A3 /* JPAtomCategoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800338C13705A7D00C4B0A3 /* JPAtomCategoryModel.h */; };
+		1800339313705A7D00C4B0A3 /* JPAtomEntryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800338D13705A7D00C4B0A3 /* JPAtomEntryModel.h */; };
+		1800339413705A7D00C4B0A3 /* JPAtomFeedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800338E13705A7D00C4B0A3 /* JPAtomFeedModel.h */; };
+		1800339513705A7D00C4B0A3 /* JPAtomLinkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800338F13705A7D00C4B0A3 /* JPAtomLinkModel.h */; };
+		1800339613705A7D00C4B0A3 /* JPAtomPersonModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800339013705A7D00C4B0A3 /* JPAtomPersonModel.h */; };
+		1800339713705A7D00C4B0A3 /* JPAtomTextModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1800339113705A7D00C4B0A3 /* JPAtomTextModel.h */; };
+		180033CA13705FE700C4B0A3 /* JPDataPopulatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 180033C913705FE700C4B0A3 /* JPDataPopulatorDelegate.h */; };
+		180035E2137087E300C4B0A3 /* JPAtomCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = 180035E1137087E300C4B0A3 /* JPAtomCollections.h */; };
+		180035EB137087F900C4B0A3 /* JPAtomCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 180035EA137087F900C4B0A3 /* JPAtomCollections.m */; };
+		1800384C13709F2800C4B0A3 /* JPAtomEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032A3137045B600C4B0A3 /* JPAtomEntryModel.m */; };
+		180039161371968900C4B0A3 /* JPRSSFeedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 180039151371968900C4B0A3 /* JPRSSFeedModel.h */; };
+		180039181371969700C4B0A3 /* JPRSSFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180039171371969700C4B0A3 /* JPRSSFeedModel.m */; };
+		180039251371987B00C4B0A3 /* JPRSSChannelModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 180039241371987B00C4B0A3 /* JPRSSChannelModel.h */; };
+		180039271371988400C4B0A3 /* JPRSSChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180039261371988400C4B0A3 /* JPRSSChannelModel.m */; };
+		180C4043135E0AF900D7B699 /* JPSyncConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C4042135E0AF900D7B699 /* JPSyncConfigModel.m */; };
+		180C4045135E0B1B00D7B699 /* JPSyncManagerConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C4044135E0B1B00D7B699 /* JPSyncManagerConfigurator.m */; };
+		180C4047135E0B3200D7B699 /* JPSyncConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 180C4046135E0B3200D7B699 /* JPSyncConfigModel.h */; };
+		182032CE138BE84F00957460 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 182032CC138BE84F00957460 /* GTMDefines.h */; };
+		182032CF138BE84F00957460 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 182032CD138BE84F00957460 /* GTMNSString+HTML.h */; };
+		182032D1138BE85800957460 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 182032D0138BE85800957460 /* GTMNSString+HTML.m */; };
+		182032E9138BE92700957460 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 182032E8138BE92700957460 /* NSString+HTML.h */; };
+		182032EB138BE92D00957460 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 182032EA138BE92D00957460 /* NSString+HTML.m */; };
+		1837D328135C79440014E7CC /* JPXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D326135C79440014E7CC /* JPXMLParser.m */; };
+		1837D32F135C795E0014E7CC /* JPXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D32D135C795E0014E7CC /* JPXMLParser.h */; };
+		1837D39E135C82280014E7CC /* JPXMLProcesser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D39D135C82280014E7CC /* JPXMLProcesser.h */; };
+		1837D3A0135C82310014E7CC /* JPXMLProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D39F135C82310014E7CC /* JPXMLProcesser.m */; };
+		1837D427135C9D7F0014E7CC /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D41E135C9D7F0014E7CC /* NSObject+JSON.m */; };
+		1837D428135C9D7F0014E7CC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D41F135C9D7F0014E7CC /* SBJsonParser.m */; };
+		1837D429135C9D7F0014E7CC /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D420135C9D7F0014E7CC /* SBJsonStreamParser.m */; };
+		1837D42A135C9D7F0014E7CC /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D421135C9D7F0014E7CC /* SBJsonStreamParserAdapter.m */; };
+		1837D42B135C9D7F0014E7CC /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D422135C9D7F0014E7CC /* SBJsonStreamParserState.m */; };
+		1837D42C135C9D7F0014E7CC /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D423135C9D7F0014E7CC /* SBJsonStreamWriter.m */; };
+		1837D42D135C9D7F0014E7CC /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D424135C9D7F0014E7CC /* SBJsonStreamWriterState.m */; };
+		1837D42E135C9D7F0014E7CC /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D425135C9D7F0014E7CC /* SBJsonTokeniser.m */; };
+		1837D42F135C9D7F0014E7CC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D426135C9D7F0014E7CC /* SBJsonWriter.m */; };
+		1837D5DD135CCEAC0014E7CC /* JPSyncManagerHandlerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D5DC135CCEAC0014E7CC /* JPSyncManagerHandlerEvent.h */; };
+		1837D5DF135CCEB60014E7CC /* JPSyncManagerConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D5DE135CCEB60014E7CC /* JPSyncManagerConfigurator.h */; };
+		1837D5E1135CCEC80014E7CC /* JPSyncManagerHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D5E0135CCEC80014E7CC /* JPSyncManagerHandlerDelegate.h */; };
+		1837D5E3135CCED40014E7CC /* JPPipelineSyncManagerEventMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D5E2135CCED40014E7CC /* JPPipelineSyncManagerEventMessage.h */; };
+		1837D5E7135CCEE80014E7CC /* JPSyncManagerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D5E6135CCEE80014E7CC /* JPSyncManagerHandler.m */; };
+		1837D5E9135CCEEF0014E7CC /* JPPipelineSyncManagerEventMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D5E8135CCEEF0014E7CC /* JPPipelineSyncManagerEventMessage.m */; };
+		1837D5EB135CCEFF0014E7CC /* JPSyncManagerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D5EA135CCEFF0014E7CC /* JPSyncManagerHandler.h */; };
+		183ADA831371C05700DABF60 /* JPRSSCategoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADA821371C05700DABF60 /* JPRSSCategoryModel.h */; };
+		183ADA851371C06100DABF60 /* JPRSSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADA841371C06100DABF60 /* JPRSSCategoryModel.m */; };
+		183ADA8D1371C12F00DABF60 /* JPRSSCloudModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADA8C1371C12F00DABF60 /* JPRSSCloudModel.h */; };
+		183ADA8F1371C13700DABF60 /* JPRSSCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADA8E1371C13700DABF60 /* JPRSSCloudModel.m */; };
+		183ADA951371C24D00DABF60 /* JPRSSImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADA941371C24D00DABF60 /* JPRSSImageModel.m */; };
+		183ADA971371C25500DABF60 /* JPRSSImageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADA961371C25500DABF60 /* JPRSSImageModel.h */; };
+		183ADA9B1371C4A800DABF60 /* JPRSSTextInputModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADA9A1371C4A800DABF60 /* JPRSSTextInputModel.h */; };
+		183ADA9D1371C4B000DABF60 /* JPRSSTextInputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADA9C1371C4B000DABF60 /* JPRSSTextInputModel.m */; };
+		183ADAB71371C5E500DABF60 /* JPRSSCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADAB61371C5E500DABF60 /* JPRSSCollections.h */; };
+		183ADAB91371C5EE00DABF60 /* JPRSSCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADAB81371C5EE00DABF60 /* JPRSSCollections.m */; };
+		183ADCBC1371DBC100DABF60 /* JPRSSItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADCBB1371DBC100DABF60 /* JPRSSItemModel.h */; };
+		183ADCBE1371DBCB00DABF60 /* JPRSSItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADCBD1371DBCB00DABF60 /* JPRSSItemModel.m */; };
+		183ADCCC1371DEF800DABF60 /* JPRSSEnclosureModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADCCB1371DEF800DABF60 /* JPRSSEnclosureModel.h */; };
+		183ADCCE1371DF0100DABF60 /* JPRSSEnclosureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADCCD1371DF0100DABF60 /* JPRSSEnclosureModel.m */; };
+		183ADCD71371DFD300DABF60 /* JPRSSGuidModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADCD61371DFD300DABF60 /* JPRSSGuidModel.h */; };
+		183ADCD91371DFDA00DABF60 /* JPRSSGuidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADCD81371DFDA00DABF60 /* JPRSSGuidModel.m */; };
+		183ADCE51371E0E100DABF60 /* JPRSSSourceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 183ADCE41371E0E100DABF60 /* JPRSSSourceModel.h */; };
+		183ADCE71371E0EB00DABF60 /* JPRSSSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ADCE61371E0EB00DABF60 /* JPRSSSourceModel.m */; };
+		184BE8A513731DA200C1C2C6 /* JPFeedAbstractModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 184BE8A413731DA200C1C2C6 /* JPFeedAbstractModel.h */; };
+		184BE8A713731DB600C1C2C6 /* JPFeedAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BE8A613731DB600C1C2C6 /* JPFeedAbstractModel.m */; };
+		184BE97A1373251A00C1C2C6 /* JPFeedPipelineHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 184BE9781373251A00C1C2C6 /* JPFeedPipelineHandler.h */; };
+		184BEA021373304200C1C2C6 /* JPFeedPipelineHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BEA011373304200C1C2C6 /* JPFeedPipelineHandler.m */; };
+		185F4B49135F0D660069C261 /* JPDataPopulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 185F4B48135F0D660069C261 /* JPDataPopulator.h */; };
+		185F4B4D135F0D7C0069C261 /* JPDataPopulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4B4C135F0D7C0069C261 /* JPDataPopulator.m */; };
 		3A2CE73F131AEC3500ED5B5D /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE736131AEC3500ED5B5D /* JSON.h */; };
 		3A2CE740131AEC3500ED5B5D /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */; };
 		3A2CE741131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */; };
@@ -15,7 +88,6 @@
 		3A2CE744131AEC3500ED5B5D /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73B131AEC3500ED5B5D /* SBJsonStreamWriterState.h */; };
 		3A2CE745131AEC3500ED5B5D /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73C131AEC3500ED5B5D /* SBJsonTokeniser.h */; };
 		3A2CE746131AEC3500ED5B5D /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE73D131AEC3500ED5B5D /* SBJsonWriter.h */; };
-		3A2CE747131AEC3500ED5B5D /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CE73E131AEC3500ED5B5D /* libjson.a */; };
 		3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */; };
 		3A2CE79D131AF0DA00ED5B5D /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE79C131AF0DA00ED5B5D /* SBJsonParser.h */; };
 		3A2CE7A9131AF0F600ED5B5D /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE7A8131AF0F600ED5B5D /* SBJsonStreamParser.h */; };
@@ -30,6 +102,79 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18003121136F380F00C4B0A3 /* JPXMLParserXPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPXMLParserXPath.h; path = Headers/JPXMLParserXPath.h; sourceTree = "<group>"; };
+		18003123136F381900C4B0A3 /* JPXMLParserXPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPXMLParserXPath.m; path = Sources/JPXMLParserXPath.m; sourceTree = "<group>"; };
+		1800325013703D7300C4B0A3 /* JPAtomFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomFeedModel.m; path = Sources/JPAtomFeedModel.m; sourceTree = "<group>"; };
+		18003275137040EB00C4B0A3 /* JPAtomPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomPersonModel.m; path = Sources/JPAtomPersonModel.m; sourceTree = "<group>"; };
+		1800327F137041E500C4B0A3 /* JPAtomCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomCategoryModel.m; path = Sources/JPAtomCategoryModel.m; sourceTree = "<group>"; };
+		1800328B137042F300C4B0A3 /* JPAtomLinkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomLinkModel.m; path = Sources/JPAtomLinkModel.m; sourceTree = "<group>"; };
+		180032A3137045B600C4B0A3 /* JPAtomEntryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomEntryModel.m; path = Sources/JPAtomEntryModel.m; sourceTree = "<group>"; };
+		180032E6137049E300C4B0A3 /* JPAtomTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomTextModel.m; path = Sources/JPAtomTextModel.m; sourceTree = "<group>"; };
+		1800338C13705A7D00C4B0A3 /* JPAtomCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomCategoryModel.h; path = Headers/JPAtomCategoryModel.h; sourceTree = "<group>"; };
+		1800338D13705A7D00C4B0A3 /* JPAtomEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomEntryModel.h; path = Headers/JPAtomEntryModel.h; sourceTree = "<group>"; };
+		1800338E13705A7D00C4B0A3 /* JPAtomFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomFeedModel.h; path = Headers/JPAtomFeedModel.h; sourceTree = "<group>"; };
+		1800338F13705A7D00C4B0A3 /* JPAtomLinkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomLinkModel.h; path = Headers/JPAtomLinkModel.h; sourceTree = "<group>"; };
+		1800339013705A7D00C4B0A3 /* JPAtomPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomPersonModel.h; path = Headers/JPAtomPersonModel.h; sourceTree = "<group>"; };
+		1800339113705A7D00C4B0A3 /* JPAtomTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomTextModel.h; path = Headers/JPAtomTextModel.h; sourceTree = "<group>"; };
+		180033C913705FE700C4B0A3 /* JPDataPopulatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDataPopulatorDelegate.h; path = Headers/JPDataPopulatorDelegate.h; sourceTree = "<group>"; };
+		180035E1137087E300C4B0A3 /* JPAtomCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPAtomCollections.h; path = Headers/JPAtomCollections.h; sourceTree = "<group>"; };
+		180035EA137087F900C4B0A3 /* JPAtomCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPAtomCollections.m; path = Sources/JPAtomCollections.m; sourceTree = "<group>"; };
+		180039151371968900C4B0A3 /* JPRSSFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSFeedModel.h; path = Headers/JPRSSFeedModel.h; sourceTree = "<group>"; };
+		180039171371969700C4B0A3 /* JPRSSFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSFeedModel.m; path = Sources/JPRSSFeedModel.m; sourceTree = "<group>"; };
+		180039241371987B00C4B0A3 /* JPRSSChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSChannelModel.h; path = Headers/JPRSSChannelModel.h; sourceTree = "<group>"; };
+		180039261371988400C4B0A3 /* JPRSSChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSChannelModel.m; path = Sources/JPRSSChannelModel.m; sourceTree = "<group>"; };
+		180C4042135E0AF900D7B699 /* JPSyncConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPSyncConfigModel.m; path = Sources/JPSyncConfigModel.m; sourceTree = "<group>"; };
+		180C4044135E0B1B00D7B699 /* JPSyncManagerConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPSyncManagerConfigurator.m; path = Sources/JPSyncManagerConfigurator.m; sourceTree = "<group>"; };
+		180C4046135E0B3200D7B699 /* JPSyncConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSyncConfigModel.h; path = Headers/JPSyncConfigModel.h; sourceTree = "<group>"; };
+		182032CC138BE84F00957460 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "Third-Part Libraries/Google Toolbox For Mac/Headers/GTMDefines.h"; sourceTree = "<group>"; };
+		182032CD138BE84F00957460 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Third-Part Libraries/Google Toolbox For Mac/Headers/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		182032D0138BE85800957460 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Third-Part Libraries/Google Toolbox For Mac/Source/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		182032E8138BE92700957460 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Headers/NSString+HTML.h"; sourceTree = "<group>"; };
+		182032EA138BE92D00957460 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Sources/NSString+HTML.m"; sourceTree = "<group>"; };
+		1837D326135C79440014E7CC /* JPXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPXMLParser.m; path = Sources/JPXMLParser.m; sourceTree = "<group>"; };
+		1837D32D135C795E0014E7CC /* JPXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPXMLParser.h; path = Headers/JPXMLParser.h; sourceTree = "<group>"; };
+		1837D39D135C82280014E7CC /* JPXMLProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPXMLProcesser.h; path = Headers/JPXMLProcesser.h; sourceTree = "<group>"; };
+		1837D39F135C82310014E7CC /* JPXMLProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPXMLProcesser.m; path = Sources/JPXMLProcesser.m; sourceTree = "<group>"; };
+		1837D41E135C9D7F0014E7CC /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JSON.m"; path = "Source/NSObject+JSON.m"; sourceTree = "<group>"; };
+		1837D41F135C9D7F0014E7CC /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = Source/SBJsonParser.m; sourceTree = "<group>"; };
+		1837D420135C9D7F0014E7CC /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = Source/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		1837D421135C9D7F0014E7CC /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = Source/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		1837D422135C9D7F0014E7CC /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = Source/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		1837D423135C9D7F0014E7CC /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = Source/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		1837D424135C9D7F0014E7CC /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = Source/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		1837D425135C9D7F0014E7CC /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = Source/SBJsonTokeniser.m; sourceTree = "<group>"; };
+		1837D426135C9D7F0014E7CC /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Source/SBJsonWriter.m; sourceTree = "<group>"; };
+		1837D5DC135CCEAC0014E7CC /* JPSyncManagerHandlerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSyncManagerHandlerEvent.h; path = Headers/JPSyncManagerHandlerEvent.h; sourceTree = "<group>"; };
+		1837D5DE135CCEB60014E7CC /* JPSyncManagerConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSyncManagerConfigurator.h; path = Headers/JPSyncManagerConfigurator.h; sourceTree = "<group>"; };
+		1837D5E0135CCEC80014E7CC /* JPSyncManagerHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSyncManagerHandlerDelegate.h; path = Headers/JPSyncManagerHandlerDelegate.h; sourceTree = "<group>"; };
+		1837D5E2135CCED40014E7CC /* JPPipelineSyncManagerEventMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineSyncManagerEventMessage.h; path = Headers/JPPipelineSyncManagerEventMessage.h; sourceTree = "<group>"; };
+		1837D5E6135CCEE80014E7CC /* JPSyncManagerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPSyncManagerHandler.m; path = Sources/JPSyncManagerHandler.m; sourceTree = "<group>"; };
+		1837D5E8135CCEEF0014E7CC /* JPPipelineSyncManagerEventMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPPipelineSyncManagerEventMessage.m; path = Sources/JPPipelineSyncManagerEventMessage.m; sourceTree = "<group>"; };
+		1837D5EA135CCEFF0014E7CC /* JPSyncManagerHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSyncManagerHandler.h; path = Headers/JPSyncManagerHandler.h; sourceTree = "<group>"; };
+		183ADA821371C05700DABF60 /* JPRSSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSCategoryModel.h; path = Headers/JPRSSCategoryModel.h; sourceTree = "<group>"; };
+		183ADA841371C06100DABF60 /* JPRSSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSCategoryModel.m; path = Sources/JPRSSCategoryModel.m; sourceTree = "<group>"; };
+		183ADA8C1371C12F00DABF60 /* JPRSSCloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSCloudModel.h; path = Headers/JPRSSCloudModel.h; sourceTree = "<group>"; };
+		183ADA8E1371C13700DABF60 /* JPRSSCloudModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSCloudModel.m; path = Sources/JPRSSCloudModel.m; sourceTree = "<group>"; };
+		183ADA941371C24D00DABF60 /* JPRSSImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSImageModel.m; path = Sources/JPRSSImageModel.m; sourceTree = "<group>"; };
+		183ADA961371C25500DABF60 /* JPRSSImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSImageModel.h; path = Headers/JPRSSImageModel.h; sourceTree = "<group>"; };
+		183ADA9A1371C4A800DABF60 /* JPRSSTextInputModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSTextInputModel.h; path = Headers/JPRSSTextInputModel.h; sourceTree = "<group>"; };
+		183ADA9C1371C4B000DABF60 /* JPRSSTextInputModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSTextInputModel.m; path = Sources/JPRSSTextInputModel.m; sourceTree = "<group>"; };
+		183ADAB61371C5E500DABF60 /* JPRSSCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSCollections.h; path = Headers/JPRSSCollections.h; sourceTree = "<group>"; };
+		183ADAB81371C5EE00DABF60 /* JPRSSCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSCollections.m; path = Sources/JPRSSCollections.m; sourceTree = "<group>"; };
+		183ADCBB1371DBC100DABF60 /* JPRSSItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSItemModel.h; path = Headers/JPRSSItemModel.h; sourceTree = "<group>"; };
+		183ADCBD1371DBCB00DABF60 /* JPRSSItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSItemModel.m; path = Sources/JPRSSItemModel.m; sourceTree = "<group>"; };
+		183ADCCB1371DEF800DABF60 /* JPRSSEnclosureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSEnclosureModel.h; path = Headers/JPRSSEnclosureModel.h; sourceTree = "<group>"; };
+		183ADCCD1371DF0100DABF60 /* JPRSSEnclosureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSEnclosureModel.m; path = Sources/JPRSSEnclosureModel.m; sourceTree = "<group>"; };
+		183ADCD61371DFD300DABF60 /* JPRSSGuidModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSGuidModel.h; path = Headers/JPRSSGuidModel.h; sourceTree = "<group>"; };
+		183ADCD81371DFDA00DABF60 /* JPRSSGuidModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSGuidModel.m; path = Sources/JPRSSGuidModel.m; sourceTree = "<group>"; };
+		183ADCE41371E0E100DABF60 /* JPRSSSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPRSSSourceModel.h; path = Headers/JPRSSSourceModel.h; sourceTree = "<group>"; };
+		183ADCE61371E0EB00DABF60 /* JPRSSSourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPRSSSourceModel.m; path = Sources/JPRSSSourceModel.m; sourceTree = "<group>"; };
+		184BE8A413731DA200C1C2C6 /* JPFeedAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPFeedAbstractModel.h; path = Headers/JPFeedAbstractModel.h; sourceTree = "<group>"; };
+		184BE8A613731DB600C1C2C6 /* JPFeedAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPFeedAbstractModel.m; path = Sources/JPFeedAbstractModel.m; sourceTree = "<group>"; };
+		184BE9781373251A00C1C2C6 /* JPFeedPipelineHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPFeedPipelineHandler.h; path = Headers/JPFeedPipelineHandler.h; sourceTree = "<group>"; };
+		184BEA011373304200C1C2C6 /* JPFeedPipelineHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPFeedPipelineHandler.m; path = Sources/JPFeedPipelineHandler.m; sourceTree = "<group>"; };
+		185F4B48135F0D660069C261 /* JPDataPopulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDataPopulator.h; path = Headers/JPDataPopulator.h; sourceTree = "<group>"; };
+		185F4B4C135F0D7C0069C261 /* JPDataPopulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPDataPopulator.m; path = Sources/JPDataPopulator.m; sourceTree = "<group>"; };
 		3A2CE736131AEC3500ED5B5D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		3A2CE737131AEC3500ED5B5D /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		3A2CE738131AEC3500ED5B5D /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
@@ -38,7 +183,6 @@
 		3A2CE73B131AEC3500ED5B5D /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
 		3A2CE73C131AEC3500ED5B5D /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
 		3A2CE73D131AEC3500ED5B5D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		3A2CE73E131AEC3500ED5B5D /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjson.a; sourceTree = "<group>"; };
 		3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPJSONProcesser.m; path = Sources/JPJSONProcesser.m; sourceTree = "<group>"; };
 		3A2CE79C131AF0DA00ED5B5D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		3A2CE7A8131AF0F600ED5B5D /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
@@ -59,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				3A2CE747131AEC3500ED5B5D /* libjson.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +220,7 @@
 		0867D691FE84028FC02AAC07 /* JUMPData */ = {
 			isa = PBXGroup;
 			children = (
+				180C416A135E127E00D7B699 /* Dependecies */,
 				3A78449C1325332B00C3374A /* JUMPData.h */,
 				3A2CE71B131AE99A00ED5B5D /* Third-Part */,
 				08FB77AEFE84172EC02AAC07 /* Sources */,
@@ -98,10 +242,253 @@
 		08FB77AEFE84172EC02AAC07 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				184BE89813731D6600C1C2C6 /* Feeds */,
+				1837D5BA135CCE400014E7CC /* Sync Manager */,
 				3A5E30EC132169D300970E2B /* Math */,
-				3AFF843F131FC24600A23032 /* Converters */,
+				185F4B3E135F0D1E0069C261 /* Data Populator */,
+				3AFF843F131FC24600A23032 /* Converters & Parsers */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		1800324D13703CD400C4B0A3 /* Atom */ = {
+			isa = PBXGroup;
+			children = (
+				1800338E13705A7D00C4B0A3 /* JPAtomFeedModel.h */,
+				1800325013703D7300C4B0A3 /* JPAtomFeedModel.m */,
+				180035E3137087E500C4B0A3 /* Collections */,
+				1800324E13703D5700C4B0A3 /* Models */,
+			);
+			name = Atom;
+			sourceTree = "<group>";
+		};
+		1800324E13703D5700C4B0A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1800339013705A7D00C4B0A3 /* JPAtomPersonModel.h */,
+				18003275137040EB00C4B0A3 /* JPAtomPersonModel.m */,
+				1800338C13705A7D00C4B0A3 /* JPAtomCategoryModel.h */,
+				1800327F137041E500C4B0A3 /* JPAtomCategoryModel.m */,
+				1800338F13705A7D00C4B0A3 /* JPAtomLinkModel.h */,
+				1800328B137042F300C4B0A3 /* JPAtomLinkModel.m */,
+				1800338D13705A7D00C4B0A3 /* JPAtomEntryModel.h */,
+				180032A3137045B600C4B0A3 /* JPAtomEntryModel.m */,
+				1800339113705A7D00C4B0A3 /* JPAtomTextModel.h */,
+				180032E6137049E300C4B0A3 /* JPAtomTextModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		180033BD13705FCD00C4B0A3 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				180033C913705FE700C4B0A3 /* JPDataPopulatorDelegate.h */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		180035E3137087E500C4B0A3 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				180035E1137087E300C4B0A3 /* JPAtomCollections.h */,
+				180035EA137087F900C4B0A3 /* JPAtomCollections.m */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
+		180039071371967800C4B0A3 /* RSS 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				180039151371968900C4B0A3 /* JPRSSFeedModel.h */,
+				180039171371969700C4B0A3 /* JPRSSFeedModel.m */,
+				183ADAA01371C5D200DABF60 /* Collections */,
+				1800391D1371986300C4B0A3 /* Models */,
+			);
+			name = "RSS 2.0";
+			sourceTree = "<group>";
+		};
+		1800391D1371986300C4B0A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180039241371987B00C4B0A3 /* JPRSSChannelModel.h */,
+				180039261371988400C4B0A3 /* JPRSSChannelModel.m */,
+				183ADA821371C05700DABF60 /* JPRSSCategoryModel.h */,
+				183ADA841371C06100DABF60 /* JPRSSCategoryModel.m */,
+				183ADA8C1371C12F00DABF60 /* JPRSSCloudModel.h */,
+				183ADA8E1371C13700DABF60 /* JPRSSCloudModel.m */,
+				183ADA961371C25500DABF60 /* JPRSSImageModel.h */,
+				183ADA941371C24D00DABF60 /* JPRSSImageModel.m */,
+				183ADA9A1371C4A800DABF60 /* JPRSSTextInputModel.h */,
+				183ADA9C1371C4B000DABF60 /* JPRSSTextInputModel.m */,
+				183ADCBB1371DBC100DABF60 /* JPRSSItemModel.h */,
+				183ADCBD1371DBCB00DABF60 /* JPRSSItemModel.m */,
+				183ADCCB1371DEF800DABF60 /* JPRSSEnclosureModel.h */,
+				183ADCCD1371DF0100DABF60 /* JPRSSEnclosureModel.m */,
+				183ADCD61371DFD300DABF60 /* JPRSSGuidModel.h */,
+				183ADCD81371DFDA00DABF60 /* JPRSSGuidModel.m */,
+				183ADCE41371E0E100DABF60 /* JPRSSSourceModel.h */,
+				183ADCE61371E0EB00DABF60 /* JPRSSSourceModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		180C3F86135DE52300D7B699 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180C4046135E0B3200D7B699 /* JPSyncConfigModel.h */,
+				180C4042135E0AF900D7B699 /* JPSyncConfigModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		180C416A135E127E00D7B699 /* Dependecies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependecies;
+			sourceTree = "<group>";
+		};
+		182032C4138BE7FC00957460 /* Google Toolbox for Mac */ = {
+			isa = PBXGroup;
+			children = (
+				182032CC138BE84F00957460 /* GTMDefines.h */,
+				182032CD138BE84F00957460 /* GTMNSString+HTML.h */,
+				182032D0138BE85800957460 /* GTMNSString+HTML.m */,
+			);
+			name = "Google Toolbox for Mac";
+			sourceTree = "<group>";
+		};
+		182032D4138BE89A00957460 /* HTML String Processers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "HTML String Processers";
+			sourceTree = "<group>";
+		};
+		182032E2138BE90600957460 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				182032E8138BE92700957460 /* NSString+HTML.h */,
+				182032EA138BE92D00957460 /* NSString+HTML.m */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		1837D31B135C792E0014E7CC /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				1837D39D135C82280014E7CC /* JPXMLProcesser.h */,
+				1837D39F135C82310014E7CC /* JPXMLProcesser.m */,
+				1837D396135C82170014E7CC /* Parser */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		1837D396135C82170014E7CC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				18003121136F380F00C4B0A3 /* JPXMLParserXPath.h */,
+				18003123136F381900C4B0A3 /* JPXMLParserXPath.m */,
+				1837D32D135C795E0014E7CC /* JPXMLParser.h */,
+				1837D326135C79440014E7CC /* JPXMLParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		1837D41A135C9D720014E7CC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1837D41E135C9D7F0014E7CC /* NSObject+JSON.m */,
+				1837D41F135C9D7F0014E7CC /* SBJsonParser.m */,
+				1837D420135C9D7F0014E7CC /* SBJsonStreamParser.m */,
+				1837D421135C9D7F0014E7CC /* SBJsonStreamParserAdapter.m */,
+				1837D422135C9D7F0014E7CC /* SBJsonStreamParserState.m */,
+				1837D423135C9D7F0014E7CC /* SBJsonStreamWriter.m */,
+				1837D424135C9D7F0014E7CC /* SBJsonStreamWriterState.m */,
+				1837D425135C9D7F0014E7CC /* SBJsonTokeniser.m */,
+				1837D426135C9D7F0014E7CC /* SBJsonWriter.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1837D5BA135CCE400014E7CC /* Sync Manager */ = {
+			isa = PBXGroup;
+			children = (
+				180C3F86135DE52300D7B699 /* Models */,
+				1837D5BB135CCE4B0014E7CC /* Interfaces */,
+				1837D5BE135CCE4B0014E7CC /* Events */,
+				1837D5EA135CCEFF0014E7CC /* JPSyncManagerHandler.h */,
+				1837D5E6135CCEE80014E7CC /* JPSyncManagerHandler.m */,
+				1837D5DE135CCEB60014E7CC /* JPSyncManagerConfigurator.h */,
+				180C4044135E0B1B00D7B699 /* JPSyncManagerConfigurator.m */,
+			);
+			name = "Sync Manager";
+			sourceTree = "<group>";
+		};
+		1837D5BB135CCE4B0014E7CC /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				1837D5E0135CCEC80014E7CC /* JPSyncManagerHandlerDelegate.h */,
+				1837D5DC135CCEAC0014E7CC /* JPSyncManagerHandlerEvent.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		1837D5BE135CCE4B0014E7CC /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1837D5E2135CCED40014E7CC /* JPPipelineSyncManagerEventMessage.h */,
+				1837D5E8135CCEEF0014E7CC /* JPPipelineSyncManagerEventMessage.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		183ADAA01371C5D200DABF60 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				183ADAB61371C5E500DABF60 /* JPRSSCollections.h */,
+				183ADAB81371C5EE00DABF60 /* JPRSSCollections.m */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
+		184BE89813731D6600C1C2C6 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				184BE89A13731D8500C1C2C6 /* Pipeline Handler */,
+				184BE89B13731D9000C1C2C6 /* Abstract */,
+				180039071371967800C4B0A3 /* RSS 2.0 */,
+				1800324D13703CD400C4B0A3 /* Atom */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		184BE89A13731D8500C1C2C6 /* Pipeline Handler */ = {
+			isa = PBXGroup;
+			children = (
+				184BE9781373251A00C1C2C6 /* JPFeedPipelineHandler.h */,
+				184BEA011373304200C1C2C6 /* JPFeedPipelineHandler.m */,
+			);
+			name = "Pipeline Handler";
+			sourceTree = "<group>";
+		};
+		184BE89B13731D9000C1C2C6 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				184BE8A413731DA200C1C2C6 /* JPFeedAbstractModel.h */,
+				184BE8A613731DB600C1C2C6 /* JPFeedAbstractModel.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		185F4B3E135F0D1E0069C261 /* Data Populator */ = {
+			isa = PBXGroup;
+			children = (
+				180033BD13705FCD00C4B0A3 /* Delegate */,
+				185F4B48135F0D660069C261 /* JPDataPopulator.h */,
+				185F4B4C135F0D7C0069C261 /* JPDataPopulator.m */,
+			);
+			name = "Data Populator";
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -115,18 +502,20 @@
 		3A2CE71B131AE99A00ED5B5D /* Third-Part */ = {
 			isa = PBXGroup;
 			children = (
-				3A2CE734131AEC3500ED5B5D /* JSON Framework */,
+				182032D4138BE89A00957460 /* HTML String Processers */,
+				182032C4138BE7FC00957460 /* Google Toolbox for Mac */,
+				3A2CE734131AEC3500ED5B5D /* JSON Library */,
 			);
 			name = "Third-Part";
 			sourceTree = "<group>";
 		};
-		3A2CE734131AEC3500ED5B5D /* JSON Framework */ = {
+		3A2CE734131AEC3500ED5B5D /* JSON Library */ = {
 			isa = PBXGroup;
 			children = (
+				1837D41A135C9D720014E7CC /* Source */,
 				3A2CE735131AEC3500ED5B5D /* Headers */,
-				3A2CE73E131AEC3500ED5B5D /* libjson.a */,
 			);
-			name = "JSON Framework";
+			name = "JSON Library";
 			path = "Third-Part Libraries/JSON Framework";
 			sourceTree = "<group>";
 		};
@@ -165,13 +554,15 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
-		3AFF843F131FC24600A23032 /* Converters */ = {
+		3AFF843F131FC24600A23032 /* Converters & Parsers */ = {
 			isa = PBXGroup;
 			children = (
+				182032E2138BE90600957460 /* HTML */,
 				3AFF8440131FC24F00A23032 /* Data */,
+				1837D31B135C792E0014E7CC /* XML */,
 				3AFF843E131FC23C00A23032 /* JSON */,
 			);
-			name = Converters;
+			name = "Converters & Parsers";
 			sourceTree = "<group>";
 		};
 		3AFF8440131FC24F00A23032 /* Data */ = {
@@ -205,6 +596,40 @@
 				3AFF844A131FC26700A23032 /* JPDataConverter.h in Headers */,
 				3A5E30F0132169E400970E2B /* JPMath.h in Headers */,
 				3A78449D1325332B00C3374A /* JUMPData.h in Headers */,
+				1837D32F135C795E0014E7CC /* JPXMLParser.h in Headers */,
+				1837D39E135C82280014E7CC /* JPXMLProcesser.h in Headers */,
+				1837D5DD135CCEAC0014E7CC /* JPSyncManagerHandlerEvent.h in Headers */,
+				1837D5DF135CCEB60014E7CC /* JPSyncManagerConfigurator.h in Headers */,
+				1837D5E1135CCEC80014E7CC /* JPSyncManagerHandlerDelegate.h in Headers */,
+				1837D5E3135CCED40014E7CC /* JPPipelineSyncManagerEventMessage.h in Headers */,
+				1837D5EB135CCEFF0014E7CC /* JPSyncManagerHandler.h in Headers */,
+				180C4047135E0B3200D7B699 /* JPSyncConfigModel.h in Headers */,
+				185F4B49135F0D660069C261 /* JPDataPopulator.h in Headers */,
+				18003122136F380F00C4B0A3 /* JPXMLParserXPath.h in Headers */,
+				1800339213705A7D00C4B0A3 /* JPAtomCategoryModel.h in Headers */,
+				1800339313705A7D00C4B0A3 /* JPAtomEntryModel.h in Headers */,
+				1800339413705A7D00C4B0A3 /* JPAtomFeedModel.h in Headers */,
+				1800339513705A7D00C4B0A3 /* JPAtomLinkModel.h in Headers */,
+				1800339613705A7D00C4B0A3 /* JPAtomPersonModel.h in Headers */,
+				1800339713705A7D00C4B0A3 /* JPAtomTextModel.h in Headers */,
+				180033CA13705FE700C4B0A3 /* JPDataPopulatorDelegate.h in Headers */,
+				180035E2137087E300C4B0A3 /* JPAtomCollections.h in Headers */,
+				180039161371968900C4B0A3 /* JPRSSFeedModel.h in Headers */,
+				180039251371987B00C4B0A3 /* JPRSSChannelModel.h in Headers */,
+				183ADA831371C05700DABF60 /* JPRSSCategoryModel.h in Headers */,
+				183ADA8D1371C12F00DABF60 /* JPRSSCloudModel.h in Headers */,
+				183ADA971371C25500DABF60 /* JPRSSImageModel.h in Headers */,
+				183ADA9B1371C4A800DABF60 /* JPRSSTextInputModel.h in Headers */,
+				183ADAB71371C5E500DABF60 /* JPRSSCollections.h in Headers */,
+				183ADCBC1371DBC100DABF60 /* JPRSSItemModel.h in Headers */,
+				183ADCCC1371DEF800DABF60 /* JPRSSEnclosureModel.h in Headers */,
+				183ADCD71371DFD300DABF60 /* JPRSSGuidModel.h in Headers */,
+				183ADCE51371E0E100DABF60 /* JPRSSSourceModel.h in Headers */,
+				184BE8A513731DA200C1C2C6 /* JPFeedAbstractModel.h in Headers */,
+				184BE97A1373251A00C1C2C6 /* JPFeedPipelineHandler.h in Headers */,
+				182032CE138BE84F00957460 /* GTMDefines.h in Headers */,
+				182032CF138BE84F00957460 /* GTMNSString+HTML.h in Headers */,
+				182032E9138BE92700957460 /* NSString+HTML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +683,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1837D3A0135C82310014E7CC /* JPXMLProcesser.m in Sources */,
 				3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */,
 				3AFF844C131FC27200A23032 /* JPDataConverter.m in Sources */,
+				1837D328135C79440014E7CC /* JPXMLParser.m in Sources */,
 				3A5E30F1132169E400970E2B /* JPMath.m in Sources */,
+				1837D427135C9D7F0014E7CC /* NSObject+JSON.m in Sources */,
+				1837D428135C9D7F0014E7CC /* SBJsonParser.m in Sources */,
+				1837D429135C9D7F0014E7CC /* SBJsonStreamParser.m in Sources */,
+				1837D42A135C9D7F0014E7CC /* SBJsonStreamParserAdapter.m in Sources */,
+				1837D42B135C9D7F0014E7CC /* SBJsonStreamParserState.m in Sources */,
+				1837D42C135C9D7F0014E7CC /* SBJsonStreamWriter.m in Sources */,
+				1837D42D135C9D7F0014E7CC /* SBJsonStreamWriterState.m in Sources */,
+				1837D42E135C9D7F0014E7CC /* SBJsonTokeniser.m in Sources */,
+				1837D42F135C9D7F0014E7CC /* SBJsonWriter.m in Sources */,
+				1837D5E7135CCEE80014E7CC /* JPSyncManagerHandler.m in Sources */,
+				1837D5E9135CCEEF0014E7CC /* JPPipelineSyncManagerEventMessage.m in Sources */,
+				180C4043135E0AF900D7B699 /* JPSyncConfigModel.m in Sources */,
+				180C4045135E0B1B00D7B699 /* JPSyncManagerConfigurator.m in Sources */,
+				185F4B4D135F0D7C0069C261 /* JPDataPopulator.m in Sources */,
+				18003124136F381900C4B0A3 /* JPXMLParserXPath.m in Sources */,
+				1800326F1370404F00C4B0A3 /* JPAtomFeedModel.m in Sources */,
+				18003277137040EB00C4B0A3 /* JPAtomPersonModel.m in Sources */,
+				18003281137041E500C4B0A3 /* JPAtomCategoryModel.m in Sources */,
+				1800328D137042F300C4B0A3 /* JPAtomLinkModel.m in Sources */,
+				180032E8137049E300C4B0A3 /* JPAtomTextModel.m in Sources */,
+				180035EB137087F900C4B0A3 /* JPAtomCollections.m in Sources */,
+				1800384C13709F2800C4B0A3 /* JPAtomEntryModel.m in Sources */,
+				180039181371969700C4B0A3 /* JPRSSFeedModel.m in Sources */,
+				180039271371988400C4B0A3 /* JPRSSChannelModel.m in Sources */,
+				183ADA851371C06100DABF60 /* JPRSSCategoryModel.m in Sources */,
+				183ADA8F1371C13700DABF60 /* JPRSSCloudModel.m in Sources */,
+				183ADA951371C24D00DABF60 /* JPRSSImageModel.m in Sources */,
+				183ADA9D1371C4B000DABF60 /* JPRSSTextInputModel.m in Sources */,
+				183ADAB91371C5EE00DABF60 /* JPRSSCollections.m in Sources */,
+				183ADCBE1371DBCB00DABF60 /* JPRSSItemModel.m in Sources */,
+				183ADCCE1371DF0100DABF60 /* JPRSSEnclosureModel.m in Sources */,
+				183ADCD91371DFDA00DABF60 /* JPRSSGuidModel.m in Sources */,
+				183ADCE71371E0EB00DABF60 /* JPRSSSourceModel.m in Sources */,
+				184BE8A713731DB600C1C2C6 /* JPFeedAbstractModel.m in Sources */,
+				184BEA021373304200C1C2C6 /* JPFeedPipelineHandler.m in Sources */,
+				182032D1138BE85800957460 /* GTMNSString+HTML.m in Sources */,
+				182032EB138BE92D00957460 /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +749,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Third-Part Libraries/JSON Framework\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = JUMPData;
 			};
