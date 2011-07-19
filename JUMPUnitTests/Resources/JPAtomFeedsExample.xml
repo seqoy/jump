@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+        <title>Example Feed</title>
+		
+        <author>
+                <name>John Doe</name>
+                <email>johndoe@example.com</email>
+        </author>
+		<author>
+                <name>Mark Marky</name>
+                <email>markmarky@example.com</email>
+        </author>
+
+        <link href="http://example.org/feed/" rel="self" />
+		<link href="http://example.org/feed/alternative" rel="self" />
+		
+		<category>
+			<term>Category Term</term>
+			<scheme>Category scheme</scheme>
+			<label>Category label</label>
+		</category>
+		<category>
+			<term>Category Term 2</term>
+			<scheme>Category scheme 2</scheme>
+			<label>Category label 2</label>
+		</category>
+
+		<contributor>
+                <name>John Doe</name>
+                <email>johndoe@example.com</email>
+		</contributor>
+		<contributor>
+                <name>Mark Marky</name>
+                <email>markmarky@example.com</email>
+		</contributor>
+ 
+        <entry>
+                <title>Atom-Powered Robots Run Amok</title>
+			    <author>
+					<name>John Doe</name>
+					<email>johndoe@example.com</email>
+			    </author>
+				<author>
+						<name>Mark Marky</name>
+						<email>markmarky@example.com</email>
+				</author>
+
+				<category>
+					<term>Category Term</term>
+					<scheme>Category scheme</scheme>
+					<label>Category label</label>
+				</category>
+				<category>
+					<term>Category Term 2</term>
+					<scheme>Category scheme 2</scheme>
+					<label>Category label 2</label>
+				</category>
+				
+				<link href="http://example.org/feed/" rel="self" />
+				<link href="http://example.org/feed/alternative" rel="self" />
+				
+				<contributor>
+						<name>John Doe</name>
+						<email>johndoe@example.com</email>
+				</contributor>
+				<contributor>
+						<name>Mark Marky</name>
+						<email>markmarky@example.com</email>
+				</contributor>
+        </entry>
+		<entry>
+                <title>Atom-Powered Robots Run Amok</title>
+			    <author>
+					<name>John Doe</name>
+					<email>johndoe@example.com</email>
+			    </author>
+				<author>
+						<name>Mark Marky</name>
+						<email>markmarky@example.com</email>
+				</author>
+
+				<category>
+					<term>Category Term</term>
+					<scheme>Category scheme</scheme>
+					<label>Category label</label>
+				</category>
+				<category>
+					<term>Category Term 2</term>
+					<scheme>Category scheme 2</scheme>
+					<label>Category label 2</label>
+				</category>
+				
+				<link href="http://example.org/feed/" rel="self" />
+				<link href="http://example.org/feed/alternative" rel="self" />
+				
+				<contributor>
+						<name>John Doe</name>
+						<email>johndoe@example.com</email>
+				</contributor>
+				<contributor>
+						<name>Mark Marky</name>
+						<email>markmarky@example.com</email>
+				</contributor>
+        </entry>
+
+ 
+</feed>

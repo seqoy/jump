@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+        <title>Example Feed</title>
+        <subtitle>A subtitle.</subtitle>
+        <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+        <rights>Copyright (c) 2009, some company</rights>
+        <updated>2003-12-13T18:30:02Z</updated>
+        <author>
+                <name>John Doe</name>
+                <email>johndoe@example.com</email>
+        </author>
+        <link href="http://example.org/feed/" rel="self" />
+		
+		<category>
+			<term>Category Term</term>
+			<scheme>Category scheme</scheme>
+			<label>Category label</label>
+		</category>
+
+		<contributor>
+                <name>John Doe</name>
+                <email>johndoe@example.com</email>
+		</contributor>
+ 
+        <entry>
+                <title>Atom-Powered Robots Run Amok</title>
+                <link rel="alternate" type="text/html" href="http://example.org/"/>
+                <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+                <updated>2003-12-13T18:30:02Z</updated>
+                <summary>Some text.</summary>
+				<content>Some content.</content>    
+			    <author>
+					<name>John Doe</name>
+					<email>johndoe@example.com</email>
+			    </author>
+				<category>
+					<term>Category Term</term>
+					<scheme>Category scheme</scheme>
+					<label>Category label</label>
+				</category>
+				<contributor>
+						<name>John Doe</name>
+						<email>johndoe@example.com</email>
+				</contributor>
+        </entry>
+ 
+</feed>

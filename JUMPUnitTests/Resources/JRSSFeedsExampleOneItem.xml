@@ -1,0 +1,55 @@
+<?xml version="1.0"?> 
+<rss version="2.0"> 
+   <channel> 
+      <title>Liftoff News</title> 
+      <link>http://liftoff.msfc.nasa.gov/</link> 
+      <description>Liftoff to Space Exploration.</description> 
+      <language>en-us</language> 
+      <pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate> 
+      <lastBuildDate>Tue, 10 Jun 2003 09:41:01 GMT</lastBuildDate> 
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+	  <copyright>Copyright 2007 Dallas Times-Herald</copyright>
+      <generator>Weblog Editor 2.0</generator> 
+      <managingEditor>editor@example.com</managingEditor> 
+      <webMaster>webmaster@example.com</webMaster> 
+	  <rating>An rating</rating>
+	  <ttl>30</ttl>
+	  <category domain="dmoz">News/Newspapers/Regional/United_States/Texas</category>
+	  <cloud domain="server.example.com" path="/rpc" port="80" protocol="xml-rpc" registerProcedure="cloud.notify" />
+	  <image>
+		  <link>http://dallas.example.com</link>
+		  <title>Dallas Times-Herald</title>
+		  <url>http://dallas.example.com/masthead.gif</url>
+		  <description>Read the Dallas Times-Herald</description>
+		  <height>32</height>
+		  <width>96</width>
+	  </image>
+	  <textInput>
+		  <description>Your aggregator supports the textInput element. What software are you using?</description>
+		  <link>http://www.cadenhead.org/textinput.php</link>
+		  <name>query</name>
+		  <title>TextInput Inquiry</title>
+	  </textInput>
+	  <skipDays>
+		  <day>Saturday</day>
+		  <day>Sunday</day>
+	  </skipDays>
+	  <skipHours>
+		  <hour>0</hour>
+		  <hour>1</hour>
+		  <hour>2</hour>
+	  </skipHours>
+      <item> 
+         <title>Star City</title> 
+		 <author>Liftoff News</author> 
+         <link>http://dallas.example.com/1983/05/06/joebob.htm</link>
+         <description>How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's &lt;a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm"&gt;Star City&lt;/a&gt;.</description> 
+         <guid>http://liftoff.msfc.nasa.gov/2003/06/03.html#item573</guid>
+		 <comments>http://dallas.example.com/feedback/1983/06/joebob.htm</comments> 
+		 <pubDate>Fri, 05 Oct 2007 09:00:00 CST</pubDate>
+		 <category>Media</category>
+		 <enclosure length="24986239" type="audio/mpeg" url="http://dallas.example.com/joebob_050689.mp3" />
+		 <source url="http://la.example.com/rss.xml">Los Angeles Herald-Examiner</source>
+      </item> 
+   </channel> 
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<!-- Maps Definitons //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+	<maps>
+		
+		<!-- File Map //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+		<map name="fileMap">
+			<mapDefinition>
+				<Name>fileName</Name>
+				<Type>fileType</Type>
+			</mapDefinition>
+		</map>
+		
+		
+		<!-- Folder Map //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+		<map name="folderMap">
+			<mapDefinition>
+				<Name>folderName</Name>
+			</mapDefinition>
+		</map>
+		
+	</maps>
+
+
+	<!-- Prefered Key Order to Process //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //////// -->
+	<preferedKeyOrder>
+	
+		<key>Folders</key>
+		<key>Files</key>
+		
+	</preferedKeyOrder>
+	
+	
+	<!-- Configurations //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+	<configuration>
+	
+		<!-- File //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// /////////// -->
+		<config key="Files" map="fileMap" toEntity="FileTable">
+			<deleteKey>fileName</deleteKey>
+		</config>
+		
+		<!-- Folder  //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //////// -->
+		<config key="Folders" map="folderMap" toEntity="FoldersTable"></config>
+		
+	</configuration>
+</root>

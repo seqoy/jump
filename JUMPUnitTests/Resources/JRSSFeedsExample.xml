@@ -1,0 +1,30 @@
+<?xml version="1.0"?> 
+<rss version="2.0"> 
+   <channel> 
+      <title>Liftoff News</title> 
+      <item> 
+         <title>Star City</title> 
+		 <author>Liftoff News</author> 
+         <link>http://dallas.example.com/1983/05/06/joebob.htm</link>
+         <description>How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's &lt;a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm"&gt;Star City&lt;/a&gt;.</description> 
+         <guid>http://liftoff.msfc.nasa.gov/2003/06/03.html#item573</guid>
+		 <comments>http://dallas.example.com/feedback/1983/06/joebob.htm</comments> 
+		 <pubDate>Fri, 05 Oct 2007 09:00:00 CST</pubDate>
+		 <category>Media</category>
+		 <enclosure length="24986239" type="audio/mpeg" url="http://dallas.example.com/joebob_050689.mp3" />
+		 <source url="http://la.example.com/rss.xml">Los Angeles Herald-Examiner</source>
+      </item> 
+      <item> 
+         <title>Star City</title> 
+		 <author>Liftoff News</author> 
+         <link>http://dallas.example.com/1983/05/06/joebob.htm</link>
+         <description>How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's &lt;a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm"&gt;Star City&lt;/a&gt;.</description> 
+         <guid>http://liftoff.msfc.nasa.gov/2003/06/03.html#item573</guid>
+		 <comments>http://dallas.example.com/feedback/1983/06/joebob.htm</comments> 
+		 <pubDate>Fri, 05 Oct 2007 09:00:00 CST</pubDate>
+		 <category>Media</category>
+		 <enclosure length="24986239" type="audio/mpeg" url="http://dallas.example.com/joebob_050689.mp3" />
+		 <source url="http://la.example.com/rss.xml">Los Angeles Herald-Examiner</source>
+      </item> 
+   </channel> 
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<!-- Maps Definitons //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+	<maps>
+		
+		<!-- File Map //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+		<map name="fileMap">
+			<mapDefinition>
+				<Name>fileName</Name>
+				<Type>fileType</Type>
+			</mapDefinition>
+		</map>
+	</maps>
+
+
+	<!-- Configurations //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// -->
+	<configuration>
+	
+		<!-- File //// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// /////////// -->
+		<config key="Files" map="fileMap" toEntity="FileTable">
+			<deleteKey>fileName</deleteKey>
+		</config>
+		
+	</configuration>
+</root>
