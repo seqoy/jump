@@ -18,75 +18,14 @@
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPJSONRPCDecoderHandler
 
-
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
-#pragma mark Init Methods. 
+#pragma mark Process Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-+(id)initWithJSONDecoderClass:(Class)anJSONProcesserClass {
-	return [[[self alloc] initWithJSONDecoderClass:anJSONProcesserClass] autorelease];
-}
+// When a JSON data is succesfully decoded this method will be called with the data. 
+// You can override this method on a subclass to do some custom processing.
+-(void)jsonDataDecoded:(NSDictionary*)JSONDecoded withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(id)initWithJSONDecoderClass:(Class)anJSONProcesserClass {
-	// Assert that responds to Protocol (interface).
-	if (! [(id)anJSONProcesserClass conformsToProtocol:@protocol(JPDataProcessserJSON)] )
-		[NSException raise:NSInvalidArgumentException
-					format:@"Processer Class must conform to JPDataProcessserJSON protocol."];
-
-	//// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// /
-	if (self != nil) {
-		JSONProcesser = anJSONProcesserClass;
-	}
-	return self;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///
-- (id) init {
-	[NSException raise:NSInternalInconsistencyException
-				format:@"You should use the 'initWithJSONDecoderClass:' method to init."];
-	return nil;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-// Invoked when a message object was received.
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)event {
-
-	// Response String.
-	NSString *stringResponse = [event getMessage];
-	
-	// Convert JSON String.
-	NSDictionary *JSONDecoded = [JSONProcesser convertFromJSON:stringResponse];
-	
-	// ////// ////// ////// ////// ////// ////// 
-	// If can't decode.
-	if ( JSONDecoded == nil ) {
-		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as JSON Object.\nProbably isn't an JSON String or is invalid."];
-		Warn( @"JPJSONRPCDecoderHandler :: %@. The response is: %@", errorReason, stringResponse );
-		
-		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-		// Send Error Upstream.
-		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
-																andError:[NSError errorWithDomain:NSStringFromClass([self class])
-																							 code:kJSONRPCCantDecode 
-																						 userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]
-																		  ]
-						   ]
-		 ];
-		
-		///////// ///////// ///////// ///////// ///////// ///////// /// ///////// ///////// 
-		// Send the Message Upstream too, maybe somebody knows what to do with that.
-		[ctx sendUpstream:event];
-		return;
-	}
-	
-	/////////////////////////////////////////////////
-	// Log JSON String.
-	Info( @"Received JSON :: %@", [JSONProcesser convertToJSON:[JSONDecoded mutableCopy] humanReadable:YES] );
-	
 	//////// ////// ////// ////// ////// ////// ////// 
 	// Check if result some server Error.
 	if( [JSONDecoded objectForKey:@"error"] ) {
@@ -100,13 +39,13 @@
 			// NSError User Info Dictionary.
 			NSDictionary *userInfo = [NSDictionary dictionaryWithObject:[anError objectForKey:@"message"] 
 																 forKey: NSLocalizedDescriptionKey];
-
+			
 			///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 			// Create an NSError.
 			NSError *JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
 													 code:[[anError objectForKey:@"code"] intValue]
 												 userInfo:userInfo];
-
+			
 			//////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 			// Log.
 			Info( @"JSON Error Handled (%@) | Sending Error Upstream...", [JSONError localizedDescription] );
@@ -126,7 +65,7 @@
 	if ( ! [JSONDecoded objectForKey:@"result"] ) {
 		NSString *errorReason = @"Invalid JSON-RPC data. JSON Object doesn't contain an 'result' entry.";
 		Warn( @"%@", errorReason );
-
+		
 		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 		// Send Error Upstream.
 		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
@@ -143,22 +82,10 @@
 	// Result Key.
 	NSDictionary *result = [JSONDecoded objectForKey:@"result"];
 	
-	
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-	// Set decoded Message on the event.
-	[event setMessage:result];
+	// Super Processing.
+	[self jsonDataDecoded:result withEvent:event andContext:ctx];
 	
-	// Send upstream.
-	[ctx sendUpstream:event];
 }
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[super dealloc];
-}
-
 
 @end

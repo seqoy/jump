@@ -55,6 +55,7 @@
 	// If already exist, cancel and release.
 	if ( requester ) {
 		[requester cancel]; 
+		[requester setDelegate:nil];
 		[requester release], requester = nil;
 	}
 	
@@ -83,7 +84,10 @@
 	// Add Data to HTTP Request.
 	[requester addRequestHeader:@"User-Agent" value:[e userAgent]];
 	[requester addRequestHeader:@"Content-Type" value:[e contentType]]; 
-	[requester appendPostData:[e dataToSend]];
+	
+	// Has data to send?
+	if ( e.dataToSend != nil )
+		[requester appendPostData:[e dataToSend]];
 	 
 	// Start to Load.
 	[requester startAsynchronous];
@@ -110,6 +114,7 @@
 		// If have one active requester.
 		if ( requester && [requester isExecuting] ) {
 			[requester cancel]; 
+			[requester setDelegate:nil];
 			[requester release], requester = nil;
 		}
 		
@@ -186,13 +191,13 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 - (void)requestStarted:(ASIHTTPRequest *)request {
 	// Create an notification.
-	self.notification = [JPPipelineNotification initWithName:JPPipelineNotify];
-	
-	// So started.
-	[notification setStarted];
-	
-	// Start all futures.
-	[self notifyFuturesWithSelector:@selector(setStarted)];
+//	self.notification = [JPPipelineNotification initWithName:JPPipelineNotify];
+//	
+//	// So started.
+//	[notification setStarted];
+//	
+//	// Start all futures.
+//	[self notifyFuturesWithSelector:@selector(setStarted)];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -262,11 +267,16 @@
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
-	if ( requester && [requester isExecuting] ) 
+	if ( requester ) 
 		[requester cancel];
+	
+	// Clean up requester delegate.
+	if ( requester ) 
+		[requester setDelegate:nil];
 	
 	// Release.
 	[requester release], requester = nil;
+
 	[notification release], notification = nil;
 	[futuresCollection release], futuresCollection = nil;
 	[super dealloc];

@@ -171,7 +171,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)initContextMapWithName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler  {
+-(void)buildContextMapWithName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler  {
 	JPDefaultHandlerContext* ctx = [JPDefaultHandlerContext initWithPreviousContext:nil
 																	 andNextContext:nil
 																			andName:anName
@@ -194,7 +194,7 @@
 // Inserts a Handler at the first position of this pipeline.
 -(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
 	if ( [contextObjectsMap count] == 0 ) {
-		[self initContextMapWithName:name andHandler:handler];
+		[self buildContextMapWithName:name andHandler:handler];
 	}
 	
 	else {
@@ -219,7 +219,7 @@
 // Appends a Handler at the last position of this pipeline.
 -(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
 	if ( [contextObjectsMap count] == 0 ) {
-		[self initContextMapWithName:name andHandler:handler];
+		[self buildContextMapWithName:name andHandler:handler];
 	}
 	
 	else {
@@ -356,7 +356,7 @@
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the last element."];
 	}
 	
-	JPDefaultHandlerContext *oldTail = tail;
+	JPDefaultHandlerContext *oldTail = [[tail retain] autorelease];
 	if (oldTail == nil) {
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the last element."];
 	}
@@ -577,6 +577,10 @@
 /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 // Notify Some Action.
 -(void)notifyListeners:(<JPPipelineListenerNotification>)notification {
+	
+	// If notification is null, do nothing.
+	if ( notification == nil ) 
+		return;
 	
 	// Assign ourselves to this notification.
 	[notification setObject:self];

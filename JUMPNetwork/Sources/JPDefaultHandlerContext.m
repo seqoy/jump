@@ -70,8 +70,9 @@
 		self.next		= nextCtx;
 
 		////////////////////////// ///////////////////// 
-		// Handle the Handler (daaah!)
-		handler			= [(id)anHandler retain];
+		// Handle the Handler (daaah!), release first if needed.
+        if ( handler ) [(id)handler release];
+		handler	= [(id)anHandler retain];
 		
 		// Copy values.
 		name = [anName copy];

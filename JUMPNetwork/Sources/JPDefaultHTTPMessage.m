@@ -46,12 +46,13 @@
 		// If Method defined, retain.
 		if ( anMethod ) 
 			self.requestMethod = anMethod;
+		else 
+			self.requestMethod = @"POST";
 		
 		// Retain Parameters.
 		self.dataToSend = anData;
 
 		// Default Data.
-		self.requestMethod = @"POST";
 		self.userAgent     = @"JUMP Network Transport Layer 1.0";
 
 		//// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// //// //// //// //// //// //// //// /

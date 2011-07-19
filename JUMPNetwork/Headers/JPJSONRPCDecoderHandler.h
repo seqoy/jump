@@ -13,13 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#import "JPSimplePipelineUpstreamHandler.h"
 #import "JPPipelineException.h"
 #import "JPDefaultPipelineExceptionEvent.h"
-#import "JPPipelineUpstreamMessageEvent.h"
 #import "JPDataProcessserJSON.h"
 #import "JPLogger.h"
-
+#import "JPJSONDecoderHandler.h"
 
 /**
  * \ingroup jsonrpc_group
@@ -32,7 +30,7 @@
  <p>
  If JPJSONRPCDecoderHandler can't decode to JSON Object or can't found the RPC properties 
  will send an JPDefaultPipelineExceptionEvent upstream as a warning error, you can catch this
- exception and process it as an decode error. Refer to #JPJSONRPCDecoderErrors to known the proper <b>error code</b>.
+ exception and process it as an decode error. Refer to #JPJSONDecoderErrors to known the proper <b>error code</b>.
  <p>
  You also can ignore this exception and let the next handler (if exist) continue the processing, because the unmodified
  \ref messages_page are sent upstream to the next handler even when an error ocurrs. This is useful if you have an 
@@ -47,33 +45,5 @@
  or you can implement your own.
  
  */
-@interface JPJSONRPCDecoderHandler : JPSimplePipelineUpstreamHandler {
-	Class<JPDataProcessserJSON> JSONProcesser;
-}
-
-/*! Default JSON-RPC Decoder Errors. You can use this errors codes when you are retrieving some exception from the pipeline.
- Look for the <tt>'JPJSONRPCDecoderHandler'</tt> domain an some of this errors constants. */
-typedef enum {
-	/*! Can't decode the Response String as JSON Object. Probably isn't an JSON String or is invalid. */
-    kJSONRPCCantDecode,  
-	/*! Invalid JSON-RPC data. Is an correct JSON String, but invalid RPC format. */
-    kJSONRPCInvalid	 
-} JPJSONRPCDecoderErrors;
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Init Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-/** @name Init Methods
- */
-///@{
-/**
- * Init the JSON Decoder Handler.
- * @param anJSONProcesserClass A <tt>Class</tt> of an custom JSON Processer that conforms with the JPDataProcessserJSON protocol.
- */
-+(id)initWithJSONDecoderClass:(Class<JPDataProcessserJSON>)anJSONProcesserClass;
-
--(id)initWithJSONDecoderClass:(Class<JPDataProcessserJSON>)anJSONProcesserClass;
-
-///@}
+@interface JPJSONRPCDecoderHandler : JPJSONDecoderHandler {}
 @end
