@@ -82,6 +82,7 @@
 	};
 	18647723132FF60E002CBD59 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
+		activeSDKPreference = iphoneos4.3;
 		activeTarget = 18647730132FF621002CBD59 /* JUMPLogger */;
 		addToTargets = (
 			18647730132FF621002CBD59 /* JUMPLogger */,
@@ -143,7 +144,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					725,
+					1044,
 					60,
 					20,
 					48,
@@ -160,8 +161,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 323632860;
-			PBXWorkspaceStateSaveDate = 323632860;
+			PBXPerProjectTemplateStateSaveDate = 326817441;
+			PBXWorkspaceStateSaveDate = 326817441;
 		};
 		perUserProjectItems = {
 			18242DF913393F8C00D82D0D /* PBXTextBookmark */ = 18242DF913393F8C00D82D0D /* PBXTextBookmark */;
@@ -183,7 +184,6 @@
 			1888E304134A54CF00165C45 /* PBXTextBookmark */ = 1888E304134A54CF00165C45 /* PBXTextBookmark */;
 			1888E305134A54CF00165C45 /* PBXTextBookmark */ = 1888E305134A54CF00165C45 /* PBXTextBookmark */;
 			1888E306134A54CF00165C45 /* PBXTextBookmark */ = 1888E306134A54CF00165C45 /* PBXTextBookmark */;
-			1888E307134A54CF00165C45 /* PBXBookmark */ = 1888E307134A54CF00165C45 /* PBXBookmark */;
 			1888E308134A54CF00165C45 /* PBXTextBookmark */ = 1888E308134A54CF00165C45 /* PBXTextBookmark */;
 			1888FF3A13324E1000FA965C /* PBXTextBookmark */ = 1888FF3A13324E1000FA965C /* PBXTextBookmark */;
 			1888FF3C13324E1000FA965C /* PBXTextBookmark */ = 1888FF3C13324E1000FA965C /* PBXTextBookmark */;
@@ -191,6 +191,7 @@
 			188F651C1332BB1B0069CB1C /* PBXTextBookmark */ = 188F651C1332BB1B0069CB1C /* PBXTextBookmark */;
 			188F654F1332BE2A0069CB1C /* PBXTextBookmark */ = 188F654F1332BE2A0069CB1C /* PBXTextBookmark */;
 			188F65521332BE2A0069CB1C /* PBXTextBookmark */ = 188F65521332BE2A0069CB1C /* PBXTextBookmark */;
+			18A4786E137ADAFD00D1094D /* PBXTextBookmark */ = 18A4786E137ADAFD00D1094D /* PBXTextBookmark */;
 			18C493DD133A8A9100B1FBDC /* PBXTextBookmark */ = 18C493DD133A8A9100B1FBDC /* PBXTextBookmark */;
 			18C493DE133A8A9100B1FBDC /* PBXTextBookmark */ = 18C493DE133A8A9100B1FBDC /* PBXTextBookmark */;
 		};
@@ -234,8 +235,8 @@
 	1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1262, 1300}}";
-			sepNavSelRange = "{2881, 0}";
-			sepNavVisRange = "{1096, 1964}";
+			sepNavSelRange = "{1322, 0}";
+			sepNavVisRange = "{1096, 1413}";
 			sepNavWindowFrame = "{{0, 70}, {969, 733}}";
 		};
 	};
@@ -501,10 +502,6 @@
 		vrLen = 1569;
 		vrLoc = 0;
 	};
-	1888E307134A54CF00165C45 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */;
-	};
 	1888E308134A54CF00165C45 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */;
@@ -609,6 +606,16 @@
 		rType = 0;
 		vrLen = 2381;
 		vrLoc = 817;
+	};
+	18A4786E137ADAFD00D1094D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864773E132FF661002CBD59 /* JPLoggerFactoryInterface.h */;
+		name = "JPLoggerFactoryInterface.h: 48";
+		rLen = 0;
+		rLoc = 1322;
+		rType = 0;
+		vrLen = 1413;
+		vrLoc = 1096;
 	};
 	18AA97421332A94D00C59F0E /* LoggerClient.m */ = {
 		uiCtxt = {

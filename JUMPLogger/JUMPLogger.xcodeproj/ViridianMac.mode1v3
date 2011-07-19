@@ -275,14 +275,14 @@
 								<string>1864773B132FF661002CBD59</string>
 								<string>18647746132FF665002CBD59</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>18A4786D137ADAFD00D1094D</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>20</integer>
-									<integer>18</integer>
+									<integer>3</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -306,7 +306,7 @@
 							<real>249</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>755 133 1594 919 0 0 1920 1058 </string>
+						<string>291 82 1594 919 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -336,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1888E308134A54CF00165C45</string>
+										<string>18A4786E137ADAFD00D1094D</string>
 										<key>history</key>
 										<array>
 											<string>186477E913300D08002CBD59</string>
@@ -366,7 +366,7 @@
 											<string>1888E304134A54CF00165C45</string>
 											<string>1888E305134A54CF00165C45</string>
 											<string>1888E306134A54CF00165C45</string>
-											<string>1888E307134A54CF00165C45</string>
+											<string>1888E308134A54CF00165C45</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -378,14 +378,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1323, 873}}</string>
+								<string>{{0, 0}, {1323, 611}}</string>
 								<key>RubberWindowFrame</key>
-								<string>755 133 1594 919 0 0 1920 1058 </string>
+								<string>291 82 1594 919 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>873pt</string>
+							<string>611pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -398,14 +398,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 878}, {1323, 0}}</string>
+								<string>{{0, 616}, {1323, 262}}</string>
 								<key>RubberWindowFrame</key>
-								<string>755 133 1594 919 0 0 1920 1058 </string>
+								<string>291 82 1594 919 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>262pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -424,9 +424,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1888E189134A3F7100165C45</string>
+				<string>18A47836137AD6AB00D1094D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1888E18A134A3F7100165C45</string>
+				<string>18A47837137AD6AB00D1094D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -568,7 +568,7 @@
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/JUMPLogger.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>755 133 1594 919 0 0 1920 1058 </string>
+	<string>291 82 1594 919 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -645,7 +645,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18647768132FF6C8002CBD59</string>
-				<string>1888E18B134A3F7100165C45</string>
+				<string>18A47838137AD6AB00D1094D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -8,3 +8,6 @@ JUMPLogger/Libraries/Log4CocoaTouch/build/Log4CocoaTouch.build/Debug-iphonesimul
 JUMPNetwork/Libraries/.DS_Store
 
 JUMPLogger/Libraries/.DS_Store
+
+JUMPLogger/Libraries/Log4CocoaTouch/build/*
+JUMPLogger/.DS_Store
