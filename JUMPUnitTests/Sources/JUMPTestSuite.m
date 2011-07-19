@@ -36,8 +36,8 @@
 	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPLog4CocoaTest" delegate:nil]]; 
 	
 	//////// ////// ////// ////// ////// ////// ////// ////// //
-//	[self addTestGroup:
-//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPNSLogTest" delegate:nil]]; 
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPNSLogTest" delegate:nil]]; 
 }	
 
 ////// //////////// //////////////// //////////// //////////
@@ -60,7 +60,34 @@
 	//////// ////// ////// ////// ////// ////// ////// ////// //
 	[self addTestGroup:
 	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDBManagerActionTests" delegate:nil]]; 
-}	
+}
+
+////// //////////// //////////////// //////////// //////////
+// JUMP Database Test Cases.
+-(void)jumpDataCase {
+//	[self addTestGroup:
+//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataXMLTests" delegate:nil]]; 
+	
+//	[self addTestGroup:
+//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataSyncConfiguratorTest" delegate:nil]];
+//	
+//	[self addTestGroup:
+//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataPopulator" delegate:nil]];
+//	
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataAtomFeedTests" delegate:nil]];
+
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataRSSFeedTests" delegate:nil]]; 
+
+}
+
+////// //////////// //////////////// //////////// //////////
+// JUMP Database Test Cases.
+-(void)jumpNetworkCase {
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPXMLDecoderTest" delegate:nil]]; 
+}
 
 //////////// //////////// //////////// //////////// //////////// //////////// //////////// //////////// //////////// //////////// //////////// 
 #pragma mark -
@@ -70,8 +97,16 @@
 	[super initWithName:name delegate:delegate];
 	if (self != nil) {
 		////// //////////// //////////////// //////////// //////////
+		// JUMP Data Test Cases.
+		[self jumpDataCase];
+
+		////// //////////// //////////////// //////////// //////////
+		// JUMP Network Test Cases.
+		//[self jumpNetworkCase];
+		
+		////// //////////// //////////////// //////////// //////////
 		// JUMP Logger Test Cases.
-		[self jumpLoggerCase];
+		//[self jumpLoggerCase];
 		
 		////// //////////// //////////////// //////////// //////////
 		// JUMP User Interface Test Cases.

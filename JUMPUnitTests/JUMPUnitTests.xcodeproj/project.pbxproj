@@ -7,7 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18003705137091CA00C4B0A3 /* JPAtomFeedsExampleOneItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18003704137091CA00C4B0A3 /* JPAtomFeedsExampleOneItem.xml */; };
+		180038EF137193C500C4B0A3 /* JRSSFeedsExampleOneItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180038EE137193C500C4B0A3 /* JRSSFeedsExampleOneItem.xml */; };
+		180038F1137193F200C4B0A3 /* JUMPDataRSSFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180038F0137193F200C4B0A3 /* JUMPDataRSSFeedTests.m */; };
+		180C42A6135E15AB00D7B699 /* libJUMPUserInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C42A5135E15A800D7B699 /* libJUMPUserInterface.a */; };
+		180C42BB135E193F00D7B699 /* libJUMPLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C42BA135E193D00D7B699 /* libJUMPLogger.a */; };
+		180C42D4135E196C00D7B699 /* libJUMPDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C42D3135E196A00D7B699 /* libJUMPDatabase.a */; };
+		180C42E7135E198100D7B699 /* libJUMPNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C42E6135E197F00D7B699 /* libJUMPNetwork.a */; };
+		180C439C135E1B1E00D7B699 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C439B135E1B1E00D7B699 /* libz.1.2.3.dylib */; };
+		180C43C4135E1B5700D7B699 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C43C3135E1B5700D7B699 /* MobileCoreServices.framework */; };
+		180C4413135E1C1800D7B699 /* libJUMPData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C440F135E1C1500D7B699 /* libJUMPData.a */; };
+		180C4426135E1D3200D7B699 /* JUMPDataSyncConfiguratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C4425135E1D3200D7B699 /* JUMPDataSyncConfiguratorTest.m */; };
+		180C4445135E1DB800D7B699 /* JPSyncConfiguration.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180C4444135E1DB800D7B699 /* JPSyncConfiguration.xml */; };
+		1837D3CA135C99CF0014E7CC /* JUMPDataXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D3C9135C99CF0014E7CC /* JUMPDataXMLTests.m */; };
+		183ADECA1371FAFF00DABF60 /* JRSSFeedsExample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 183ADEC91371FAFF00DABF60 /* JRSSFeedsExample.xml */; };
 		18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */; };
+		184BEA0C1373308200C1C2C6 /* JUMPDataAtomFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */; };
+		185F4BFC135F18B70069C261 /* JUMPDataPopulatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */; };
+		185F4D39135F3DD80069C261 /* JUMPXMLDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4D38135F3DD80069C261 /* JUMPXMLDecoderTest.m */; };
+		18791BA31366048200EFC991 /* JPSyncConfigurationOneItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18791BA21366048200EFC991 /* JPSyncConfigurationOneItem.xml */; };
+		18791C1D1366173A00EFC991 /* JPAtomFeedsExample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18791C1C1366173A00EFC991 /* JPAtomFeedsExample.xml */; };
 		1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */; };
 		188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64871332B1A90069CB1C /* CFNetwork.framework */; };
 		188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F64881332B1A90069CB1C /* SystemConfiguration.framework */; };
@@ -19,50 +38,110 @@
 		3A68498213241FB600F6D21A /* CoreDataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3A68498113241FB600F6D21A /* CoreDataModel.xcdatamodel */; };
 		3A6849871324200600F6D21A /* MyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6849861324200600F6D21A /* MyEntity.m */; };
 		3A684999132420BC00F6D21A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A684998132420BC00F6D21A /* CoreData.framework */; };
-		3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A68496513241E1700F6D21A /* libJUMPDatabase.a */; };
 		3A684A421324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A684A411324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m */; };
 		3A684A7213242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A684A7113242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m */; };
 		3A9C6DA3133E741200D38923 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9C6DA2133E741200D38923 /* GHUnitIOS.framework */; };
-		3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA69212132C1EC600780D21 /* libJUMPUserInterface.a */; };
 		3AA69229132C1F0200780D21 /* JUMPColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69228132C1F0200780D21 /* JUMPColorTest.m */; };
 		3AD0AE17133E5F8C00882023 /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0AE16133E5F8C00882023 /* GHUnitIOSTestMain.m */; };
 		3AD0AE31133E602700882023 /* JUMPTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0AE30133E602700882023 /* JUMPTestSuite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A68496413241E1700F6D21A /* PBXContainerItemProxy */ = {
+		180C42A4135E15A800D7B699 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = JUMPDatabase;
-		};
-		3A68496613241E1F00F6D21A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = JUMPDatabase;
-		};
-		3AA69211132C1EC600780D21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
+			containerPortal = 180C429D135E15A800D7B699 /* JUMPUserInterface.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3AA51FC3132BE80F002D989C;
 			remoteInfo = JUMPUserInterface;
 		};
-		3AA6921E132C1EE500780D21 /* PBXContainerItemProxy */ = {
+		180C42A7135E15B600D7B699 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
+			containerPortal = 180C429D135E15A800D7B699 /* JUMPUserInterface.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 3AA51FC2132BE80F002D989C;
 			remoteInfo = JUMPUserInterface;
 		};
+		180C42B9135E193D00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42AE135E193D00D7B699 /* JUMPLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18647731132FF621002CBD59;
+			remoteInfo = JUMPLogger;
+		};
+		180C42C0135E194E00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42AE135E193D00D7B699 /* JUMPLogger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18647730132FF621002CBD59;
+			remoteInfo = JUMPLogger;
+		};
+		180C42D2135E196A00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42C7135E196A00D7B699 /* JUMPDatabase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPDatabase;
+		};
+		180C42E5135E197F00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42DA135E197F00D7B699 /* JUMPNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPNetwork;
+		};
+		180C42F3135E199E00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42C7135E196A00D7B699 /* JUMPDatabase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JUMPDatabase;
+		};
+		180C42F5135E199E00D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C42DA135E197F00D7B699 /* JUMPNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JUMPNetwork;
+		};
+		180C440E135E1C1500D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C440A135E1C1500D7B699 /* JUMPData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JUMPData;
+		};
+		180C4419135E1C2200D7B699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180C440A135E1C1500D7B699 /* JUMPData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JUMPData;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18003704137091CA00C4B0A3 /* JPAtomFeedsExampleOneItem.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JPAtomFeedsExampleOneItem.xml; path = Resources/JPAtomFeedsExampleOneItem.xml; sourceTree = "<group>"; };
+		180038EE137193C500C4B0A3 /* JRSSFeedsExampleOneItem.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JRSSFeedsExampleOneItem.xml; path = Resources/JRSSFeedsExampleOneItem.xml; sourceTree = "<group>"; };
+		180038F0137193F200C4B0A3 /* JUMPDataRSSFeedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataRSSFeedTests.m; path = Sources/JUMPDataRSSFeedTests.m; sourceTree = "<group>"; };
+		180C429D135E15A800D7B699 /* JUMPUserInterface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPUserInterface.xcodeproj; path = ../JUMPUserInterface/JUMPUserInterface.xcodeproj; sourceTree = SOURCE_ROOT; };
+		180C42AE135E193D00D7B699 /* JUMPLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPLogger.xcodeproj; path = ../JUMPLogger/JUMPLogger.xcodeproj; sourceTree = SOURCE_ROOT; };
+		180C42C7135E196A00D7B699 /* JUMPDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPDatabase.xcodeproj; path = ../JUMPDatabase/JUMPDatabase.xcodeproj; sourceTree = SOURCE_ROOT; };
+		180C42DA135E197F00D7B699 /* JUMPNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPNetwork.xcodeproj; path = ../JUMPNetwork/JUMPNetwork.xcodeproj; sourceTree = SOURCE_ROOT; };
+		180C439B135E1B1E00D7B699 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		180C43C3135E1B5700D7B699 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		180C440A135E1C1500D7B699 /* JUMPData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPData.xcodeproj; path = ../JUMPData/JUMPData.xcodeproj; sourceTree = SOURCE_ROOT; };
+		180C4425135E1D3200D7B699 /* JUMPDataSyncConfiguratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataSyncConfiguratorTest.m; path = Sources/JUMPDataSyncConfiguratorTest.m; sourceTree = "<group>"; };
+		180C4444135E1DB800D7B699 /* JPSyncConfiguration.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JPSyncConfiguration.xml; path = Resources/JPSyncConfiguration.xml; sourceTree = "<group>"; };
+		1837D3C9135C99CF0014E7CC /* JUMPDataXMLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataXMLTests.m; path = Sources/JUMPDataXMLTests.m; sourceTree = "<group>"; };
+		183ADEC91371FAFF00DABF60 /* JRSSFeedsExample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JRSSFeedsExample.xml; path = Resources/JRSSFeedsExample.xml; sourceTree = "<group>"; };
 		18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLog4CocoaTest.m; path = Sources/JUMPLog4CocoaTest.m; sourceTree = "<group>"; };
 		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
+		184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataAtomFeedTests.m; path = Sources/JUMPDataAtomFeedTests.m; sourceTree = "<group>"; };
+		185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataPopulatorTest.m; path = Sources/JUMPDataPopulatorTest.m; sourceTree = "<group>"; };
+		185F4C15135F1BB50069C261 /* mockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockObject.h; path = Sources/mockObject.h; sourceTree = "<group>"; };
+		185F4D38135F3DD80069C261 /* JUMPXMLDecoderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPXMLDecoderTest.m; path = Sources/JUMPXMLDecoderTest.m; sourceTree = "<group>"; };
+		18791BA21366048200EFC991 /* JPSyncConfigurationOneItem.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JPSyncConfigurationOneItem.xml; path = Resources/JPSyncConfigurationOneItem.xml; sourceTree = "<group>"; };
+		18791C1C1366173A00EFC991 /* JPAtomFeedsExample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = JPAtomFeedsExample.xml; path = Resources/JPAtomFeedsExample.xml; sourceTree = "<group>"; };
 		1879DDE21331184400CF3ED8 /* JUMPNSLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPNSLogTest.m; path = Sources/JUMPNSLogTest.m; sourceTree = "<group>"; };
 		188F64871332B1A90069CB1C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /System/Library/Frameworks/CFNetwork.framework; sourceTree = "<absolute>"; };
 		188F64881332B1A90069CB1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
@@ -72,7 +151,6 @@
 		3A68491E13241B7500F6D21A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3A68492113241B8000F6D21A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A68492413241B8400F6D21A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPDatabase.xcodeproj; path = ../JUMPDatabase/JUMPDatabase.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3A68496F13241EA800F6D21A /* JUMPDatabaseManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerTests.m; path = Sources/JUMPDatabaseManagerTests.m; sourceTree = "<group>"; };
 		3A68498113241FB600F6D21A /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		3A6849851324200600F6D21A /* MyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyEntity.h; path = Sources/MyEntity.h; sourceTree = "<group>"; };
@@ -81,7 +159,6 @@
 		3A684A411324294600F6D21A /* JUMPDatabaseManagerSingletonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerSingletonTest.m; path = Sources/JUMPDatabaseManagerSingletonTest.m; sourceTree = "<group>"; };
 		3A684A7113242D0C00F6D21A /* JUMPDatabaseManagerActionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDatabaseManagerActionTests.m; path = Sources/JUMPDatabaseManagerActionTests.m; sourceTree = "<group>"; };
 		3A9C6DA2133E741200D38923 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "../../GHUnit/Project-IPhone/build/Framework/GHUnitIOS.framework"; sourceTree = SOURCE_ROOT; };
-		3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JUMPUserInterface.xcodeproj; path = ../JUMPUserInterface/JUMPUserInterface.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3AA69228132C1F0200780D21 /* JUMPColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPColorTest.m; path = Sources/JUMPColorTest.m; sourceTree = "<group>"; };
 		3AD0AE16133E5F8C00882023 /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTestMain.m; path = Sources/GHUnitIOSTestMain.m; sourceTree = "<group>"; };
 		3AD0AE30133E602700882023 /* JUMPTestSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPTestSuite.m; path = Sources/JUMPTestSuite.m; sourceTree = "<group>"; };
@@ -96,18 +173,105 @@
 				3A68492213241B8000F6D21A /* Foundation.framework in Frameworks */,
 				3A68492513241B8400F6D21A /* UIKit.framework in Frameworks */,
 				3A684999132420BC00F6D21A /* CoreData.framework in Frameworks */,
-				3A6849A51324213B00F6D21A /* libJUMPDatabase.a in Frameworks */,
-				3AA69213132C1ECC00780D21 /* libJUMPUserInterface.a in Frameworks */,
 				188F648A1332B1A90069CB1C /* CFNetwork.framework in Frameworks */,
 				188F648B1332B1A90069CB1C /* SystemConfiguration.framework in Frameworks */,
 				188F648C1332B1A90069CB1C /* UIKit.framework in Frameworks */,
 				3A9C6DA3133E741200D38923 /* GHUnitIOS.framework in Frameworks */,
+				180C42A6135E15AB00D7B699 /* libJUMPUserInterface.a in Frameworks */,
+				180C42BB135E193F00D7B699 /* libJUMPLogger.a in Frameworks */,
+				180C42D4135E196C00D7B699 /* libJUMPDatabase.a in Frameworks */,
+				180C42E7135E198100D7B699 /* libJUMPNetwork.a in Frameworks */,
+				180C439C135E1B1E00D7B699 /* libz.1.2.3.dylib in Frameworks */,
+				180C43C4135E1B5700D7B699 /* MobileCoreServices.framework in Frameworks */,
+				180C4413135E1C1800D7B699 /* libJUMPData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180038E5137193A800C4B0A3 /* Atom */ = {
+			isa = PBXGroup;
+			children = (
+				18791C1C1366173A00EFC991 /* JPAtomFeedsExample.xml */,
+				18003704137091CA00C4B0A3 /* JPAtomFeedsExampleOneItem.xml */,
+			);
+			name = Atom;
+			sourceTree = "<group>";
+		};
+		180038E6137193AF00C4B0A3 /* RSS */ = {
+			isa = PBXGroup;
+			children = (
+				180038EE137193C500C4B0A3 /* JRSSFeedsExampleOneItem.xml */,
+				183ADEC91371FAFF00DABF60 /* JRSSFeedsExample.xml */,
+			);
+			name = RSS;
+			sourceTree = "<group>";
+		};
+		180C429E135E15A800D7B699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180C42A5135E15A800D7B699 /* libJUMPUserInterface.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180C42AF135E193D00D7B699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180C42BA135E193D00D7B699 /* libJUMPLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180C42C8135E196A00D7B699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180C42D3135E196A00D7B699 /* libJUMPDatabase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180C42DB135E197F00D7B699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180C42E6135E197F00D7B699 /* libJUMPNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180C440B135E1C1500D7B699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180C440F135E1C1500D7B699 /* libJUMPData.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180C4443135E1DA200D7B699 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				180038E6137193AF00C4B0A3 /* RSS */,
+				180038E5137193A800C4B0A3 /* Atom */,
+				18791BA21366048200EFC991 /* JPSyncConfigurationOneItem.xml */,
+				180C4444135E1DB800D7B699 /* JPSyncConfiguration.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1837D3C2135C99BA0014E7CC /* JUMPData */ = {
+			isa = PBXGroup;
+			children = (
+				184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */,
+				180038F0137193F200C4B0A3 /* JUMPDataRSSFeedTests.m */,
+				185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */,
+				1837D3C9135C99CF0014E7CC /* JUMPDataXMLTests.m */,
+				180C4425135E1D3200D7B699 /* JUMPDataSyncConfiguratorTest.m */,
+				185F4C15135F1BB50069C261 /* mockObject.h */,
+			);
+			name = JUMPData;
+			sourceTree = "<group>";
+		};
 		18448B0A132FF7240061513B /* JUMPLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +281,18 @@
 			name = JUMPLogger;
 			sourceTree = "<group>";
 		};
+		185F4D33135F3D890069C261 /* JUMPNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				185F4D38135F3DD80069C261 /* JUMPXMLDecoderTest.m */,
+			);
+			name = JUMPNetwork;
+			sourceTree = "<group>";
+		};
 		3A6848BD132419D600F6D21A = {
 			isa = PBXGroup;
 			children = (
+				180C4443135E1DA200D7B699 /* Resources */,
 				3A68494913241D2000F6D21A /* Dependecies */,
 				3A68498013241F8C00F6D21A /* Core Data Entities */,
 				3A68494713241D1300F6D21A /* Tests */,
@@ -149,6 +322,8 @@
 				3A68492113241B8000F6D21A /* Foundation.framework */,
 				3A68492413241B8400F6D21A /* UIKit.framework */,
 				3A684998132420BC00F6D21A /* CoreData.framework */,
+				180C439B135E1B1E00D7B699 /* libz.1.2.3.dylib */,
+				180C43C3135E1B5700D7B699 /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,8 +341,10 @@
 			isa = PBXGroup;
 			children = (
 				3AD0AE30133E602700882023 /* JUMPTestSuite.m */,
+				1837D3C2135C99BA0014E7CC /* JUMPData */,
 				18448B0A132FF7240061513B /* JUMPLogger */,
 				3AA6920B132C1EAE00780D21 /* JUMPUserInterface */,
+				185F4D33135F3D890069C261 /* JUMPNetwork */,
 				3A68494813241D1A00F6D21A /* JUMPDatabase */,
 			);
 			name = Tests;
@@ -186,18 +363,13 @@
 		3A68494913241D2000F6D21A /* Dependecies */ = {
 			isa = PBXGroup;
 			children = (
-				3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */,
-				3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */,
+				180C440A135E1C1500D7B699 /* JUMPData.xcodeproj */,
+				180C42DA135E197F00D7B699 /* JUMPNetwork.xcodeproj */,
+				180C42C7135E196A00D7B699 /* JUMPDatabase.xcodeproj */,
+				180C42AE135E193D00D7B699 /* JUMPLogger.xcodeproj */,
+				180C429D135E15A800D7B699 /* JUMPUserInterface.xcodeproj */,
 			);
 			name = Dependecies;
-			sourceTree = "<group>";
-		};
-		3A68496113241E1700F6D21A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3A68496513241E1700F6D21A /* libJUMPDatabase.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3A68498013241F8C00F6D21A /* Core Data Entities */ = {
@@ -218,14 +390,6 @@
 			name = JUMPUserInterface;
 			sourceTree = "<group>";
 		};
-		3AA6920E132C1EC600780D21 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3AA69212132C1EC600780D21 /* libJUMPUserInterface.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,8 +404,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				3A68496713241E1F00F6D21A /* PBXTargetDependency */,
-				3AA6921F132C1EE500780D21 /* PBXTargetDependency */,
+				180C42A8135E15B600D7B699 /* PBXTargetDependency */,
+				180C42C1135E194E00D7B699 /* PBXTargetDependency */,
+				180C42F4135E199E00D7B699 /* PBXTargetDependency */,
+				180C42F6135E199E00D7B699 /* PBXTargetDependency */,
+				180C441A135E1C2200D7B699 /* PBXTargetDependency */,
 			);
 			name = JUMPUnitTests;
 			productName = JUMPDatabaseTests;
@@ -268,12 +435,24 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3A68496113241E1700F6D21A /* Products */;
-					ProjectRef = 3A68496013241E1700F6D21A /* JUMPDatabase.xcodeproj */;
+					ProductGroup = 180C440B135E1C1500D7B699 /* Products */;
+					ProjectRef = 180C440A135E1C1500D7B699 /* JUMPData.xcodeproj */;
 				},
 				{
-					ProductGroup = 3AA6920E132C1EC600780D21 /* Products */;
-					ProjectRef = 3AA6920D132C1EC600780D21 /* JUMPUserInterface.xcodeproj */;
+					ProductGroup = 180C42C8135E196A00D7B699 /* Products */;
+					ProjectRef = 180C42C7135E196A00D7B699 /* JUMPDatabase.xcodeproj */;
+				},
+				{
+					ProductGroup = 180C42AF135E193D00D7B699 /* Products */;
+					ProjectRef = 180C42AE135E193D00D7B699 /* JUMPLogger.xcodeproj */;
+				},
+				{
+					ProductGroup = 180C42DB135E197F00D7B699 /* Products */;
+					ProjectRef = 180C42DA135E197F00D7B699 /* JUMPNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 180C429E135E15A800D7B699 /* Products */;
+					ProjectRef = 180C429D135E15A800D7B699 /* JUMPUserInterface.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -284,18 +463,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3A68496513241E1700F6D21A /* libJUMPDatabase.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libJUMPDatabase.a;
-			remoteRef = 3A68496413241E1700F6D21A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3AA69212132C1EC600780D21 /* libJUMPUserInterface.a */ = {
+		180C42A5135E15A800D7B699 /* libJUMPUserInterface.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libJUMPUserInterface.a;
-			remoteRef = 3AA69211132C1EC600780D21 /* PBXContainerItemProxy */;
+			remoteRef = 180C42A4135E15A800D7B699 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180C42BA135E193D00D7B699 /* libJUMPLogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPLogger.a;
+			remoteRef = 180C42B9135E193D00D7B699 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180C42D3135E196A00D7B699 /* libJUMPDatabase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPDatabase.a;
+			remoteRef = 180C42D2135E196A00D7B699 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180C42E6135E197F00D7B699 /* libJUMPNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPNetwork.a;
+			remoteRef = 180C42E5135E197F00D7B699 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180C440F135E1C1500D7B699 /* libJUMPData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPData.a;
+			remoteRef = 180C440E135E1C1500D7B699 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -305,6 +505,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18791C1D1366173A00EFC991 /* JPAtomFeedsExample.xml in Resources */,
+				180C4445135E1DB800D7B699 /* JPSyncConfiguration.xml in Resources */,
+				18791BA31366048200EFC991 /* JPSyncConfigurationOneItem.xml in Resources */,
+				18003705137091CA00C4B0A3 /* JPAtomFeedsExampleOneItem.xml in Resources */,
+				180038EF137193C500C4B0A3 /* JRSSFeedsExampleOneItem.xml in Resources */,
+				183ADECA1371FAFF00DABF60 /* JRSSFeedsExample.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,21 +531,42 @@
 				1879DDE31331184400CF3ED8 /* JUMPNSLogTest.m in Sources */,
 				3AD0AE17133E5F8C00882023 /* GHUnitIOSTestMain.m in Sources */,
 				3AD0AE31133E602700882023 /* JUMPTestSuite.m in Sources */,
+				1837D3CA135C99CF0014E7CC /* JUMPDataXMLTests.m in Sources */,
+				180C4426135E1D3200D7B699 /* JUMPDataSyncConfiguratorTest.m in Sources */,
+				185F4BFC135F18B70069C261 /* JUMPDataPopulatorTest.m in Sources */,
+				185F4D39135F3DD80069C261 /* JUMPXMLDecoderTest.m in Sources */,
+				180038F1137193F200C4B0A3 /* JUMPDataRSSFeedTests.m in Sources */,
+				184BEA0C1373308200C1C2C6 /* JUMPDataAtomFeedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A68496713241E1F00F6D21A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JUMPDatabase;
-			targetProxy = 3A68496613241E1F00F6D21A /* PBXContainerItemProxy */;
-		};
-		3AA6921F132C1EE500780D21 /* PBXTargetDependency */ = {
+		180C42A8135E15B600D7B699 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JUMPUserInterface;
-			targetProxy = 3AA6921E132C1EE500780D21 /* PBXContainerItemProxy */;
+			targetProxy = 180C42A7135E15B600D7B699 /* PBXContainerItemProxy */;
+		};
+		180C42C1135E194E00D7B699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPLogger;
+			targetProxy = 180C42C0135E194E00D7B699 /* PBXContainerItemProxy */;
+		};
+		180C42F4135E199E00D7B699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPDatabase;
+			targetProxy = 180C42F3135E199E00D7B699 /* PBXContainerItemProxy */;
+		};
+		180C42F6135E199E00D7B699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPNetwork;
+			targetProxy = 180C42F5135E199E00D7B699 /* PBXContainerItemProxy */;
+		};
+		180C441A135E1C2200D7B699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JUMPData;
+			targetProxy = 180C4419135E1C2200D7B699 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
