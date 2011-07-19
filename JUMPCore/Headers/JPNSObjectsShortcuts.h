@@ -71,7 +71,7 @@
  * @param __anValue__ an <b>int</b> number
  * @return An retained NSNumber object.
  */
-#define NSAInt( __anValue__ )`[NSInt( __anValue__ ) autorelease]
+#define NSAInt( __anValue__ ) [NSInt( __anValue__ ) autorelease]
 
 /**
  * Shortcut to initiate an autoreleseable NSDouble.
