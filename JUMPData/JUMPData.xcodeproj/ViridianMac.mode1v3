@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1847EADD13E3233000B7FC54</string>
+										<string>1875F01B13E34716002BBEA1</string>
 										<key>history</key>
 										<array>
 											<string>180C3F97135E02A400D7B699</string>
@@ -421,11 +421,11 @@
 											<string>1844D88613D49C130020F6F3</string>
 											<string>1844D88713D49C130020F6F3</string>
 											<string>186E5D3E13E2044A004129B7</string>
-											<string>1847EA3213E310BF00B7FC54</string>
 											<string>1847EA5713E3127300B7FC54</string>
-											<string>1847EA5913E3127300B7FC54</string>
-											<string>1847EA6F13E313E800B7FC54</string>
-											<string>1847EA7013E313E800B7FC54</string>
+											<string>1875EF5213E33749002BBEA1</string>
+											<string>1875EF5313E33749002BBEA1</string>
+											<string>1875EFBF13E33E74002BBEA1</string>
+											<string>1875EFC013E33E74002BBEA1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -483,9 +483,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1847EA3713E310BF00B7FC54</string>
+				<string>1875EF5613E33749002BBEA1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1847EA3813E310BF00B7FC54</string>
+				<string>1875EF5713E33749002BBEA1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -624,8 +624,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>180CF24E1342731800B90BDA</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPData/JUMPData.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>110 169 1507 848 0 0 1920 1058 </string>
@@ -644,14 +644,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPSyncManagerConfigurator.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -707,7 +705,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>180CF24E1342731800B90BDA</string>
-				<string>1847E98313E30C4C00B7FC54</string>
+				<string>1875EF5813E33749002BBEA1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -969,7 +967,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>1847EA2F13E310B900B7FC54</string>
+				<string>1875EF5913E33749002BBEA1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

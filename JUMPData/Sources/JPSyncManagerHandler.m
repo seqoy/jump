@@ -62,6 +62,14 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+// Attach one Database Manager.
+-(void)attachMainDatabaseManager:(JPDBManager*)anManager {
+    if ( _mainThreadDatabaseManager )
+        [_mainThreadDatabaseManager release];
+    _mainThreadDatabaseManager = [anManager retain];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Private Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -281,6 +289,23 @@
 #pragma mark -
 #pragma mark Processing Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+// Merge the changes performed locally on the Database Manager to another Database Manager attached.
+- (void)mergeChanges:(NSNotification *)notification
+{
+    // If don't have an attached Database Manager to merge, do nothing.
+    if ( !_mainThreadDatabaseManager )
+        return;
+    
+    // Retrieve the Managed Object Context from the attached Database Manager.
+	NSManagedObjectContext *mainContext = _mainThreadDatabaseManager.managedObjectContext;
+	
+	// Merge changes into the main context on the main thread.
+	[mainContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)	
+                                  withObject:notification
+                               waitUntilDone:YES];	
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when the Sync Manager finish to process data.
 -(void)processDataFinished {
     
@@ -309,12 +334,23 @@
     
     // Create an local Database Manager.
     _backgroundThreadDatabaseManager = [[JPDBManager initAndStartCoreData] retain];
+    
+    // Set Core Data to merges conflicts between the persistent store’s version of the object 
+    // and the current in-memory version, giving priority to in-memory changes.
+    [_backgroundThreadDatabaseManager.managedObjectContext setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
 	
 	//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 	// Warn the delegate that will start to process.
 	if ( delegate )
 		if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcess)] )
 			 [delegate syncManagerWillStartToProcess];
+    
+    //////////// /////////// /////////// /////////// /////////// /////////// /////////// 
+    // Start to monitor when the Database Manager perform changes.
+	[[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(mergeChanges:)
+                                                 name:NSManagedObjectContextDidSaveNotification
+                                               object:_backgroundThreadDatabaseManager.managedObjectContext];
 	
 	Debug( @"Starting to process...");
 	
@@ -459,7 +495,7 @@
 							
 							// Grab from DB this object using the key.
 							NSArray *result = [JPLocalDBManager queryEntity:[self getConfigModelForKey:serverDataKey].toEntity
-															 withPredicate:query];
+                                                              withPredicate:query];
 							
 							// Data to Populate.
 							id coreDataRecord;
@@ -562,20 +598,24 @@
 	/////////// /////////// /////////// /////////// /////////// /////////// 
     // Commit all changes.
 	[_backgroundThreadDatabaseManager commit];
+    [_backgroundThreadDatabaseManager.managedObjectContext reset];
 	
-	//////////// /////////// /////////// /////////// /////////// /////////// ///////////
-	// Warn the delegate that will did finish to process.
-	if ( delegate )
-		if ( [(id)delegate respondsToSelector:@selector(syncManagerDidFinishToProcess)] )
-             [(id)delegate performSelectorOnMainThread:@selector(syncManagerDidFinishToProcess) 
-                                            withObject:nil
-                                         waitUntilDone:YES];
-    
     // Clean up the progress, no operation is running.
     [currentProgress release]; currentProgress = nil;
     
+    // Stop listening for notifications.
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     // Release the local Database Manager.
     [_backgroundThreadDatabaseManager release];
+    
+    //////////// /////////// /////////// /////////// /////////// /////////// ///////////
+	// Warn the delegate that did finish to process.
+	if ( delegate )
+		if ( [(id)delegate respondsToSelector:@selector(syncManagerDidFinishToProcess)] )
+             [(id)delegate performSelectorOnMainThread:@selector(syncManagerDidFinishToProcess) 
+                                           withObject:nil
+                                        waitUntilDone:NO];
     
     // Flush and release the Pool.
     [anPool release];
@@ -661,6 +701,7 @@
 	[readKeyOrder release], readKeyOrder = nil;
     [currentProgress release], currentProgress= nil;
     [_backgroundThreadDatabaseManager release], _backgroundThreadDatabaseManager = nil;
+    [_mainThreadDatabaseManager release];
 	[super dealloc];
 }
 

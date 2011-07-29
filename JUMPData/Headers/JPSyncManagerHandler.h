@@ -46,6 +46,9 @@
     // http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/CoreData/Articles/cdConcurrency.html
     //
     JPDBManager *_backgroundThreadDatabaseManager;
+    
+    // Main thread Database Manager is stored here, so we can merge the changes between the two Database Manager later.
+    JPDBManager *_mainThreadDatabaseManager;
 
     //// //// //// //// //// //// //// //// //// //// 
     // Current Progress of running task.
@@ -88,6 +91,13 @@
 
 +(id)initWithMaps:(NSMutableDictionary*)anMaps andConfigs:(NSMutableDictionary*)anConfigs;
 -(id)initWithMaps:(NSMutableDictionary*)anMaps andConfigs:(NSMutableDictionary*)anConfigs;
+
+/**
+ * Attach one Database Manager that will be merged 
+ * with all operations performed on the local Database Manager on the background 
+ * thread when finisehd.
+ */
+-(void)attachMainDatabaseManager:(JPDBManager*)anManager;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
