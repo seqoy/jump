@@ -59,9 +59,6 @@
 	// Set correct key order.
 	instance.readKeyOrder = readKeyOrder;
 	
-	// Set Database Manager.
-	instance.databaseManager = (JPDBManager*)self.databaseManager;
-	
 	// Return builded instance.
 	return instance;
 }

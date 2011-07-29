@@ -37,9 +37,23 @@
 	//// //// //// //// //// //// //// //// //// //// 
 	<JPSyncManagerHandlerDelegate> delegate;
 	
-	//// //// //// //// //// //// //// //// //// //// 
-	// Database Manager.
-	JPDBManager *databaseManager;
+    //// //// //// //// //// //// //// //// //// //// 
+    //
+	// Background thread Database Manager.
+    // Our handler uses an internal Database Manager in order to perform
+    // operations on a separated Thread.
+    // See this article for more info About Core Data and Multithread:
+    // http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/CoreData/Articles/cdConcurrency.html
+    //
+    JPDBManager *_backgroundThreadDatabaseManager;
+
+    //// //// //// //// //// //// //// //// //// //// 
+    // Current Progress of running task.
+    NSNumber *currentProgress;
+    
+    // Local storage.
+    id<JPPipelineHandlerContext> _context;
+    id<JPPipelineMessageEvent> _event;
 }
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark Properties.
@@ -49,7 +63,20 @@
 
 @property(assign) id<JPSyncManagerHandlerDelegate> delegate;
 
-@property(assign) JPDBManager* databaseManager;
+/**
+ * All Core Data operations of JPSyncManagerHandler is performed on a separated thread (background)
+ * in order to don't lock the Main Thread (or UI Thread). Our handler uses a internal 
+ * <b>Database Manager</b> (JPDBManager) to perform this operations. This property
+ * allows you to acess this <b>Database Manager</b>. You always should perform <b>Database Operations</b>
+ * using this <b>Database Manager</b>.
+ */
+@property(readonly) JPDBManager* databaseManager;
+
+/**
+ * Progress of current running task. This property contain values from 0 to 100 
+ * indicating the percentage completed or <tt>nil</tt> if no task is running.
+ */
+@property (readonly) NSNumber *currentProgress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

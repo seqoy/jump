@@ -60,15 +60,29 @@
  */
 - (void)didUpdateOrInsertTheObject:(id)object withData:(id)data forEntity:(NSString*)entity;
 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
+#pragma mark -
+#pragma mark Progress.
+
+/**
+ * Implement this method to keep progress of the sync operation. 
+ * This method will receive a float value from 0 to 100 informing the percentage
+ * completed of the sync task. <b>This method always will be called on the Main Thread.</b>
+ */
+-(void)syncOperationProgress:(NSNumber*)progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 #pragma mark -
 #pragma mark Unhandled Actions
 
-// Sync can't handle this action, can you?
+/**
+ * Sync can't handle this action, can you?
+ */
 - (void)unhandledAction:(NSString*)action withData:(id)data serverDataKey:(NSString*)serverKey;
 
-// Sync can't handle this key, can you?
+/**
+ * Sync can't handle this key, can you?
+ */
 - (void)unhandledServerKey:(NSString*)key withData:(id)data;
 
 @end
