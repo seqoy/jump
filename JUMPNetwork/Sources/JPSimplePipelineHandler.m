@@ -39,7 +39,10 @@
  * the down-casted event.
  */
 -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
-	
+    
+    // Starting so progress, is 0%.
+    ctx.progress = [NSNumber numberWithInt:0];
+
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
@@ -63,7 +66,11 @@
  * the down-casted event.
  */
 -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
-	///////// /////// /////// /////// /////// /////// /////// /////// 
+
+    // Starting so progress, is 0%.
+    ctx.progress = [NSNumber numberWithInt:0];
+
+    ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
 		[self sendRequestedWithContext:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
@@ -77,8 +84,11 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
 -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+    
+    // Finished, so progress is 100%.
+    ctx.progress = [NSNumber numberWithInt:100];
 	
-	// We doesn't do nothing here actually, just send upstream.
+	// We don't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.
 	[ctx sendUpstream:e];
 }
@@ -86,6 +96,9 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
 -(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+
+    // Finished, so progress is 100%.
+    ctx.progress = [NSNumber numberWithInt:100];
 
 	// We doesn't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.

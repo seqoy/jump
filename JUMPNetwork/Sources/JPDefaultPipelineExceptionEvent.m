@@ -43,6 +43,10 @@
 		// Store error if defined.
 		if ( anError )
 			error = [anError copy];
+        
+        // Future.
+        self.future = [JPPipelineFailedFuture initWithCause:[self getError]];
+
 	}
 	return self;
 }
@@ -64,11 +68,6 @@
 // Returns the stored error.
 -(NSError*)getError {
 	return error;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(<JPPipelineFuture>)getFuture {
-	return [JPPipelineSucceededFuture init];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

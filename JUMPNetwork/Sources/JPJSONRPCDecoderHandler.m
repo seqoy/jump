@@ -45,6 +45,9 @@
 			NSError *JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
 													 code:[[anError objectForKey:@"code"] intValue]
 												 userInfo:userInfo];
+            
+            // Fail the future.
+            [[event getFuture] setFailure:JSONError];
 			
 			//////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 			// Log.
@@ -65,16 +68,23 @@
 	if ( ! [JSONDecoded objectForKey:@"result"] ) {
 		NSString *errorReason = @"Invalid JSON-RPC data. JSON Object doesn't contain an 'result' entry.";
 		Warn( @"%@", errorReason );
+        
+        ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
+        // Create an NSError.
+        NSError *JSONError = [NSError errorWithDomain:NSStringFromClass([self class])
+                                                 code:kJSONRPCInvalid
+                                             userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+        
+        // Fail the future.
+        [[event getFuture] setFailure:JSONError];
 		
 		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 		// Send Error Upstream.
 		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
-																andError:[NSError errorWithDomain:NSStringFromClass([self class])
-																							 code:kJSONRPCInvalid 
-																						 userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]
-																		  ]
-						   ]
+																andError:JSONError]
 		 ];
+        
+        // Break.
 		return;
 	}
 	
@@ -84,8 +94,7 @@
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Super Processing.
-	[self jsonDataDecoded:result withEvent:event andContext:ctx];
-	
+	[super jsonDataDecoded:result withEvent:event andContext:ctx];
 }
 
 @end

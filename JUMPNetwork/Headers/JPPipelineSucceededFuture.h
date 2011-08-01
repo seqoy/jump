@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #import <Foundation/Foundation.h>
-#import "JPPipelineCompleteFuture.h"
+#import "JPPipelineCompletedFuture.h"
 
-@interface JPPipelineSucceededFuture : JPPipelineCompleteFuture {}
+@interface JPPipelineSucceededFuture : JPPipelineCompletedFuture {}
 @end

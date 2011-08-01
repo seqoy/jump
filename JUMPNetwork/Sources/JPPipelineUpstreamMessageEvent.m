@@ -20,13 +20,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (id) init {
-	return self;
+    self.future = [JPPipelineSucceededFuture init];
+    return self;
 }
-
-// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
-// Returns the Future Object which is associated with this event.
--(<JPPipelineFuture>)getFuture {
-	return [JPPipelineSucceededFuture init];
-}
-
 @end

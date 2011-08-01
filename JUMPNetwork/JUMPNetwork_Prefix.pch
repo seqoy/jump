@@ -3,5 +3,8 @@
 //
 
 #ifdef __OBJC__
+    #if !TARGET_OS_IPHONE 
+        #define NS_BUILD_32_LIKE_64 1
+    #endif
     #import <Foundation/Foundation.h>
 #endif

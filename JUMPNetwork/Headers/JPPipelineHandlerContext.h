@@ -111,4 +111,19 @@
  */
 -(void)sendDownstream:(<JPPipelineEvent>)e;
 
+/**
+ * The current progress that the JPPipelineHandler that this context is handling.
+ * This property should contain values from 0 to 100. If this value is <tt>nil</t>
+ * 100 will be assumed.
+ */
+-(NSNumber*)progress;
+
+/**
+ * Used by the JPPipelineHandler that this context is handling
+ * to set his current progress. This progress is used by the
+ * JPPipeline to calculate an overall progress of all operations
+ * on a pipeline call. This property should contain values from 0 to 100.
+ */
+-(void)setProgress:(NSNumber*)anValue;
+
 @end

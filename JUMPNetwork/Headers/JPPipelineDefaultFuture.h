@@ -14,13 +14,13 @@
 #import <Foundation/Foundation.h>
 #import "JPPipelineFutureListener.h"
 #import "JPPipelineFuture.h"
-#import "JPPipelineListener.h"
+#import "JPPipelineNotification.h"
 #import "JPLogger.h"
 
 @interface JPPipelineDefaultFuture : NSObject <JPPipelineFuture> {
-	<JPPipelineFutureListener>firstListener;
-	NSMutableArray* otherListeners;
+	NSMutableArray* listeners;
 
+    // Flalgs.
 	BOOL cancelled;
 	BOOL success;
 	BOOL started;

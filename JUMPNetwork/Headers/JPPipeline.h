@@ -23,7 +23,6 @@
 #import "JPPipelineUpstreamHandler.h"
 #import "JPPipelineExceptionEvent.h"
 #import "JPPipelineException.h"
-#import "JPPipelineListener.h"
 
 #import "JPLogger.h"
 
@@ -45,11 +44,12 @@
 	NSMutableSet *finalObjects;
 	
 	//// //// //// //// //// //// //// //// //// //// //// /
-	<JPPipelineSink>sink;
-		
-	//// //// //// //// //// //// //// //// //// //// //// /
-	// Internal Notification Center that distribute notifications to registered listeners.
-	NSNotificationCenter *notificationCenter;
+	id<JPPipelineSink> sink;
+		    
+    //// //// //// //// //// //// //// //// //// //// //// /
+	// Overall Progress of the pipeline processing.
+    NSNumber* progress;
+
 }
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark Properties.
@@ -57,7 +57,13 @@
  An \link transporter_page I|O Transporter\endlink implementation.
  \see JPPipelineSink and \ref transporter_page for more information.
  */
-@property (retain)<JPPipelineSink>sink;
+@property (retain) id<JPPipelineSink>sink;
+
+/**
+ * Overal progress of the all pipeline process. You can check the <tt>progress</tt> property of 
+ * some individual handler to see his progress.
+ */ 
+@property (readonly) NSNumber* progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -256,30 +262,13 @@
 ///@{
 
 /**
- * Adds one 
- * @param listener An JPPipelineListener to get information about the pipeline operations.
- */
--(void)addListener:(<JPPipelineListener>)listener;
-
-/**
- * Removes the specified listener
- * @param listener An JPPipelineListener to remove.
- */
--(void)removeListener:(<JPPipelineListener>)listener;
-
-/**
- * Notify Some Action.
- * @param notification An JPPipelineListenerNotification to send to all listeners.
- */
--(void)notifyListeners:(<JPPipelineListenerNotification>)notification;
-
-/**
  * Send an JPPipelineException when some exception is raised on a JPPipelineEvent.
  * @param exception the <tt>NSException</tt> raised.
  * @param e The JPPipelineEvent that raise this exception.
  */
 -(void)notifyHandlerException:(NSException*)exception withEvent:(<JPPipelineEvent>)e;
 
+///@}
 @end
 
 

@@ -13,9 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#import "JPPipelineListener.h"
 #import "JPPipelineFuture.h"
-#import "JPPipelineListenerNotification.h"
+
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+#pragma mark -
+#pragma mark Notifications.
+#define JPNofityPipelineFutureListener @"JPNofityPipelineFutureListener"
+#pragma mark -
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+@protocol JPPipelineListenerNotification;
 
 /**
  * @ingroup events_group
@@ -28,8 +35,8 @@
 @required
 
 /**
- * Invoked when the I/O operation has been completed.
+ * Invoked when some action ocurr.
  */
--(void)someActionOcurr:(<JPPipelineFuture>)anFuture;
+-(void)someActionOcurr:(<JPPipelineListenerNotification>)notification;
 
 @end

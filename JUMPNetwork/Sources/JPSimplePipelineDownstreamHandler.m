@@ -26,9 +26,9 @@
 	return [[[self alloc] init] autorelease];
 }
 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(NSString*)description {
 	return [NSString stringWithFormat:@"[%@]", NSStringFromClass([self class])];
-	
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -43,6 +43,10 @@
  * the down-casted event.
  */
 -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+
+    // Starting, so progress is 0%.
+    ctx.progress = [NSNumber numberWithInt:0];
+
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
@@ -57,8 +61,11 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
 -(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+    
+    // Finished, so progress is 100%.
+    ctx.progress = [NSNumber numberWithInt:100];
 	
-	// We doesn't do nothing here actually, just send upstream.
+	// We don't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.
 	[ctx sendDownstream:e];
 }

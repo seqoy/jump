@@ -36,6 +36,9 @@
 	
 	// Pipeline pointer.
 	JPPipeline* pipeline;
+    
+    // Progress.
+    NSNumber *progress;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -43,8 +46,11 @@
 @property (assign) JPDefaultHandlerContext* next;
 @property (assign) JPDefaultHandlerContext* prev;
 
-/// The pipeline this context belong to.
+/// The pipeline this context belongs to.
 @property (assign) JPPipeline* pipeline;
+
+/// The current progress that the JPPipelineHandler that this context is handling.
+@property (copy) NSNumber* progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

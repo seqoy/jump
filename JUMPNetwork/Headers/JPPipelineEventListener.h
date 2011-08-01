@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #import <Foundation/Foundation.h>
-#import "JPPipelineListener.h"
+#import "JPPipelineFutureListener.h"
 
 /**
  * @ingroup events_group
@@ -29,10 +29,10 @@
 /**
  * Retrieve the Event Listener Object.
  */
--(<JPPipelineListener>)getListener;
+-(<JPPipelineFutureListener>)getListener;
 
 /**
  * Set the Event Listener Object.
  */
--(void)setListener:(<JPPipelineListener>)anListener;
+-(void)setListener:(<JPPipelineFutureListener>)anListener;
 @end

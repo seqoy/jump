@@ -82,15 +82,20 @@
 	if ( JSONDecoded == nil ) {
 		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as JSON Object.\nProbably isn't an JSON String or is invalid."];
 		Warn( @"JPJSONDecoderHandler :: %@. The response is: %@", errorReason, stringResponse );
+        
+        ///////// /////// /////// /////// /////// /////// /////// /////// /////// ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
+        // Create the error.
+        NSError *anError = [NSError errorWithDomain:NSStringFromClass([self class])
+                                               code:kJSONCantDecode 
+                                           userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+        
+        // Fail the future.
+        [[event getFuture] setFailure:anError];
 		
 		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 		// Send Error Upstream.
 		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
-																andError:[NSError errorWithDomain:NSStringFromClass([self class])
-																							 code:kJSONRPCCantDecode 
-																						 userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]
-																		  ]
-						   ]
+																andError:anError]
 		 ];
 		
 		///////// ///////// ///////// ///////// ///////// ///////// /// ///////// ///////// 

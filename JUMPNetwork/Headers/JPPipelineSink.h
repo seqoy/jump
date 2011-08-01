@@ -40,4 +40,16 @@
  */
 -(void)exceptionCaught:(JPPipelineException*)anException withPipeline:(JPPipeline*)pipeline withEvent:(<JPPipelineEvent>)e;
 
+/**
+ * The current progress of the transporter provider task.
+ * This property should contain values from 0 to 100.
+ */
+-(NSNumber*)currentProgress;
+
+/**
+ * The current progress of the transporter provider task.
+ * This property should contain values from 0 to 100.
+ */
+-(void)setCurrentProgress:(NSNumber*)anValue;
+
 @end

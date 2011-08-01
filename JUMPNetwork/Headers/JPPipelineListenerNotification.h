@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 #import "JPPipelineFuture.h"
+#import "JPPipelineEvent.h"
 
-@protocol JPPipelineListenerNotification <JPPipelineFuture, NSCopying, NSCoding, NSObject>
+@protocol JPPipelineListenerNotification <NSCopying, NSCoding, NSObject>
 @required
 
 /**
@@ -23,5 +24,14 @@
  */
 -(void)setObject:(id)anObject;
 
+/**
+ * Returns the Future Object which is associated with this notification.
+ */
+-(<JPPipelineFuture>)getFuture;
+
+/**
+ * Returns the Event which is associated with this notification.
+ */
+-(<JPPipelineEvent>)getEvent;
 
 @end

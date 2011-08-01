@@ -15,7 +15,7 @@
  */
 #import "JPPipeline.h"
 @implementation JPPipeline
-@synthesize sink;
+@synthesize sink, progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -160,7 +160,6 @@
 	if (self != nil) {
 		// Init.
 		contextObjectsMap = [[NSMutableDictionary alloc] init];
-		notificationCenter = [NSNotificationCenter defaultCenter];
 	}
 	return self;
 }
@@ -188,7 +187,90 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
+#pragma mark Getters & Setters.
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)setSink:(id<JPPipelineSink>)anSink {
+    // If is equal, do nothing.
+    if (anSink == sink)
+        return;
+    
+    // If exist..
+    if (sink) {
+        // Remove the observer and release.
+        [(id)sink removeObserver:self forKeyPath:@"currentProgress"];
+        [(id)sink release];
+    }
+
+    // Set and retain.
+    sink = [(id)anSink retain];
+    
+    // Attach to track the progress.
+    [(id)sink addObserver:self
+                 forKeyPath:@"currentProgress"
+                    options:NSKeyValueObservingOptionNew
+                    context:NULL];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+#pragma mark -
+#pragma mark KVO Methods.
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+// Called when the value at the specified key path relative to the given object has changed. 
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+ 
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
+    // Sink Progress Observer.
+    if ([keyPath isEqual:@"currentProgress"]) {
+        // New value changed.
+        NSNumber* value = [change objectForKey:NSKeyValueChangeNewKey];
+        NSLog(@"Progress: %@", value);
+    }
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+#pragma mark -
 #pragma mark Methods. 
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+-(void)notifyHandlerException:(NSException*)anException withEvent:(<JPPipelineEvent>)e {
+	if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) { 
+		Warn(@"An exception was thrown by a user handler while handling an exception event (%@). %@", anException );
+	}
+    
+	// New Exception Instance.
+	JPPipelineException *newException;
+    
+	///////// ////// ////// ////// ////// 
+	// If already are one Pipeline Exception, assume it.
+	if ([anException isKindOfClass:[JPPipelineException class]]) {
+		newException = (JPPipelineException*) anException;
+	} 
+	
+	///////// ////// ////// ////// ////// 
+	// If doesn't assume the reason.
+	else {
+		newException = [JPPipelineException initWithReason:[anException reason]];
+	}
+	
+	///////// ////// ////// ////// ////// 
+	// Pass Exception to Sink End Processing.
+	@try {
+		[[self sink] exceptionCaught:newException 
+						withPipeline:self 
+						   withEvent:e];
+	} 
+	
+	// If sink can't handle. Throw again.
+	@catch (NSException *e1) {
+		Warn(@"An exception was thrown by an exception handler. Exception: %@", e1);
+		[e1 raise];
+	}
+	
+}
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Inserts a Handler at the first position of this pipeline.
@@ -522,73 +604,6 @@
 	return realCtx;
 }
 
-/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)notifyHandlerException:(NSException*)anException withEvent:(<JPPipelineEvent>)e {
-	if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) { 
-		Warn(@"An exception was thrown by a user handler while handling an exception event (%@). %@", anException );
-	}
-
-	// New Exception Instance.
-	JPPipelineException *newException;
-
-	///////// ////// ////// ////// ////// 
-	// If already are one Pipeline Exception, assume it.
-	if ([anException isKindOfClass:[JPPipelineException class]]) {
-		newException = (JPPipelineException*) anException;
-	} 
-	
-	///////// ////// ////// ////// ////// 
-	// If doesn't assume the reason.
-	else {
-		newException = [JPPipelineException initWithReason:[anException reason]];
-	}
-	
-	///////// ////// ////// ////// ////// 
-	// Pass Exception to Sink End Processing.
-	@try {
-		[[self sink] exceptionCaught:newException 
-						withPipeline:self 
-						   withEvent:e];
-	} 
-	
-	// If sink can't handle. Throw again.
-	@catch (NSException *e1) {
-		Warn(@"An exception was thrown by an exception handler. Exception: %@", e1);
-		[e1 raise];
-	}
-	
-}
-
-
-/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
-#pragma mark -
-/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
-// Adds one listener.
--(void)addListener:(<JPPipelineListener>)listener {
-	[notificationCenter addObserver:listener selector:@selector(pipelineActionOcurr:) name:JPPipelineNotify object:self];
-}
-
-/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
-// Removes the specified listener
--(void)removeListener:(<JPPipelineListener>)listener {
-	[notificationCenter removeObserver:listener];
-}
-
-/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
-// Notify Some Action.
--(void)notifyListeners:(<JPPipelineListenerNotification>)notification {
-	
-	// If notification is null, do nothing.
-	if ( notification == nil ) 
-		return;
-	
-	// Assign ourselves to this notification.
-	[notification setObject:self];
-	
-	// Post Notification.
-	[notificationCenter postNotification:notification];
-}
-
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Memory Management Methods. 
@@ -596,7 +611,12 @@
 - (void) dealloc {
 	[contextObjectsMap release], contextObjectsMap = nil;
 	[finalObjects release], finalObjects = nil;
+    
+    [(id)sink removeObserver:self forKeyPath:@"currentProgress"];
 	[(id)sink release], sink = nil;
+    
+    [progress release], progress = nil;
+
 	[super dealloc];
 }
 

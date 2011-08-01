@@ -53,9 +53,9 @@
  Look for the <tt>'JPJSONDecoderHandler'</tt> domain an some of this errors constants. */
 typedef enum {
 	/*! Can't decode the Response String as JSON Object. Probably isn't an JSON String or is invalid. */
-    kJSONRPCCantDecode,  
+    kJSONCantDecode,  
 	/*! Invalid JSON data. Is an correct JSON String, but invalid RPC format. */
-    kJSONRPCInvalid	 
+    kJSONRPCInvalid
 } JPJSONDecoderErrors;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

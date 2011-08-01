@@ -17,6 +17,7 @@
 #import "JPTransporterHTTPMessage.h"
 #import "JPPipelineDowstreamMessageEvent.h"
 #import "JPPipelineFuture.h"
+#import "JPPipelineEvent.h"
 
 /**
  * \ingroup transporter_group
@@ -45,7 +46,7 @@
  <br>
  <br>
  */
-@interface JPDefaultHTTPMessage : NSObject <JPTransporterHTTPMessage> {
+@interface JPDefaultHTTPMessage : NSObject <JPTransporterHTTPMessage, JPPipelineEvent> {
 	NSData *dataToSend;
 	NSString *userAgent;
 	NSString *requestMethod;
@@ -54,9 +55,17 @@
 	// Settings.
 	NSTimeInterval timeOutSeconds;
 	NSString* contentType;
+    
+    // Future.
+    id<JPPipelineFuture> future;
 }
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark Properties.
+/**
+ * Some Future Action associated with this event.
+ */
+@property (retain) id<JPPipelineFuture> future;
+
 /**
  * Data that this event transport.
  */

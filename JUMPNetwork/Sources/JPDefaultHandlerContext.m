@@ -18,7 +18,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 @implementation JPDefaultHandlerContext
-@synthesize next, prev, pipeline;
+@synthesize next, prev, pipeline, progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -60,7 +60,7 @@
 		canHandleDownstream = [(id)anHandler conformsToProtocol:@protocol( JPPipelineDownstreamHandler )]; 
 		
 		if (!canHandleUpstream && !canHandleDownstream) {
-			[NSException raise:@"IllegalArgumentException" format:@"Handler is must be conform to %@ or %@ protocols.", @"a", @"b" ];
+			[NSException raise:@"IllegalArgumentException" format:@"Handlers must be conform to %@ or %@ protocols.", @"a", @"b" ];
 		}
 
 		////////////////////////// ///////////////////// 
@@ -119,6 +119,14 @@
 	if (anNext != nil) {
 		[pipeline sendContextUpstream:anNext withEvent:e];
 	}
+    
+    //// //// //// //// //// //// //// //// //// //// 
+    // Last Handler. So finished.
+    else {
+        if ( ![[e getFuture] isDone] ) {
+              [[e getFuture] setSuccessWithEvent:e];
+        }
+    }
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
@@ -127,7 +135,7 @@
 	if (previous == nil) {
 		@try {
 			[[pipeline sink] eventSunk:pipeline withEvent:e];
-		} 
+		}
 		
 		@catch (NSException *exception) {
 			[pipeline notifyHandlerException:exception withEvent:e];
@@ -137,7 +145,6 @@
 	}
 }
 
-
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Memory Management Methods. 
@@ -145,9 +152,8 @@
 - (void) dealloc {
 	[(id)handler release];
 	[name release];
+    [progress release];
 	[super dealloc];
 }
-
-
 
 @end

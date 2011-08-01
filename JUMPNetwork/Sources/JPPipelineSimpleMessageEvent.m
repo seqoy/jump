@@ -18,7 +18,7 @@
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPPipelineSimpleMessageEvent
 @synthesize message;
-
+@synthesize future;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Pevent the initialization of the abstract class via the default initializer.
@@ -54,13 +54,26 @@
 	return self;
 }
 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anFuture {
+	self = [self initWithMessage:anMessage];
+	if (self != nil) {
+		// Set Future.
+		self.future = anFuture;
+	}
+	return self;
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
++(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anFuture {
+	return [[[self alloc] initWithMessage:anMessage andFuture:anFuture] autorelease];
+}
+
+
 // /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 // Returns the Future Object which is associated with this event. 
-// This method should be overrided before use.
 -(<JPPipelineFuture>)getFuture {
-	[NSException raise:NSInternalInconsistencyException 
-				format:@"You must override [%@ %@] before use it.", NSStringFromClass([self class]), NSStringFromSelector(_cmd)];
-	return nil;
+	return future;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -69,6 +82,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
 	[message release], message = nil;
+    [(id)future release], future = nil;
 	[super dealloc];
 }
 

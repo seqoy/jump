@@ -15,8 +15,6 @@
  */
 #import <Foundation/Foundation.h>
 #import "JPPipelineMessageEvent.h"
-#import "JPPipelineListener.h"
-
 #import "JPLogger.h"
 
 /**
@@ -30,6 +28,9 @@
 	
 	// Message.
 	id message;
+    
+    // Future.
+    <JPPipelineFuture>future;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -37,10 +38,24 @@
 /// The message associated with this event.
 @property (retain, getter=getMessage) id message;
 
+/// The JPPipelineFuture object associated with this event.
+@property (retain, getter=getFuture) <JPPipelineFuture>future;
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+/** @name Init Methods
+ */
+///@{ 
+
+/**
+ * Init this event with the Message to transport and an Future to receive information about the progress.
+ * @param anMessage An object that represent the message.
+ * @param anListener An JPPipelineFuture object to receive information about the progress.
+ */
++(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anListener;
+-(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anListener;
 
 /**
  * Init this event with an message.
@@ -48,5 +63,7 @@
  */
 +(id)initWithMessage:(id)anMessage;
 -(id)initWithMessage:(id)anMessage;
+
+///@}
 
 @end

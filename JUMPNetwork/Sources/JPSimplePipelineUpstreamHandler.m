@@ -41,6 +41,9 @@
  * the down-casted event.
  */
 -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+    
+    // Starting, so progress is 0%.
+    ctx.progress = [NSNumber numberWithInt:0];
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
@@ -61,6 +64,9 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
 -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+    
+    // Finishing, so progress is 100%.
+    ctx.progress = [NSNumber numberWithInt:100];
 	
 	// We doesn't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.

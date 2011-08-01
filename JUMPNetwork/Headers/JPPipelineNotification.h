@@ -16,6 +16,8 @@
 #import <Foundation/Foundation.h>
 #import "JPPipelineListenerNotification.h"
 
+#define JPPipelineNotificationEvent @"JPPipelineNotificationEvent"
+
 /**
  * JPPipelineNotification is an subclass of <tt>NSNotification</tt> that is used to receive information about
  * the JPPipeline operations. 
@@ -24,12 +26,6 @@
 	NSString *name;
 	id object;
 	NSDictionary *userInfo;
-	
-	// Boolean.
-	BOOL cancelled;
-	BOOL success;
-	BOOL started;
-	NSError *cause;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -37,8 +33,6 @@
 @property(copy)   NSString *name;
 @property(retain) id object;
 @property(retain) NSDictionary *userInfo;
-
-@property(retain, setter=setFailure, getter=getCause) NSError *cause;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

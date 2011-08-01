@@ -13,15 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#import "JPPipelineCompleteFuture.h"
+#import "JPPipelineCompletedFuture.h"
 
-@interface JPPipelineFailedFuture : JPPipelineCompleteFuture {
-	NSError *cause;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark Properties.
-@property(retain, setter=setFailure, getter=getCause) NSError *cause;
+@interface JPPipelineFailedFuture : JPPipelineCompletedFuture {}
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

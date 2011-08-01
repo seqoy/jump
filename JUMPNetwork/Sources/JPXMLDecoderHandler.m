@@ -75,15 +75,19 @@
 		
 		// Parser NSError.
 		NSError *parserError = [[e userInfo] objectForKey:@"parserError"];
+        
+        // Create error.
+        NSError *decodeError = [NSError errorWithDomain:parserError.domain
+                                                   code:parserError.code 
+                                               userInfo:[NSDictionary dictionaryWithObjectsAndKeys:errorReason, NSLocalizedDescriptionKey, parserError, @"parserError", nil]];
+        
+        // Fail the future.
+        [[event getFuture] setFailure:decodeError];
 		
 		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 		// Send Error Upstream.
 		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
-																andError:[NSError errorWithDomain:parserError.domain
-																							 code:parserError.code 
-																						 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:errorReason, NSLocalizedDescriptionKey, parserError, @"parserError", nil]
-																		  ]
-						   ]
+																andError:decodeError]
 		 ];
 		
 		///////// ///////// ///////// ///////// ///////// ///////// /// ///////// ///////// 

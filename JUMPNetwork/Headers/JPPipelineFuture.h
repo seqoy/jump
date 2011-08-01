@@ -13,7 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+@protocol JPPipelineEvent;
 @protocol JPPipelineFutureListener;
+
+/**
+ * JPPipelineFuture contains information about the progress and state of determined
+ * event navigating trough the Pipeline. You can ask this object directly about
+ * different states and also you can attach one object to receive nofitications
+ * about his different states.
+ */
 @protocol JPPipelineFuture	
 
 /**
@@ -68,6 +77,12 @@
  * listeners.
  */
 -(void)setSuccess;
+
+/**
+ * Marks this future as a success and attach the
+ * event succesfull finish.
+ */
+-(void)setSuccessWithEvent:(id<JPPipelineEvent>)anEvent;
 
 /**
  * Marks this future as started.

@@ -28,10 +28,6 @@
 
 /**
  * Returns the Future Object which is associated with this event.
- * If this event is an upstream event, this method will always return a
- * SucceededPipelineFuture because the event has occurred already.
- * If this event is a downstream event (i.e. I/O request), the returned
- * future will be notified when the I/O request succeeds or fails.
  */
 -(<JPPipelineFuture>)getFuture;
 

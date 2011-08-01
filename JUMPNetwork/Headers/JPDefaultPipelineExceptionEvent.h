@@ -15,16 +15,16 @@
  */
 #import <Foundation/Foundation.h>
 #import "JPPipelineExceptionEvent.h"
-#import "JPPipelineDowstreamMessageEvent.h"
+#import "JPPipelineUpstreamMessageEvent.h"
 #import "JPPipelineFuture.h"
-#import "JPPipelineSucceededFuture.h"
+#import "JPPipelineFailedFuture.h"
 
 /**
  * @ingroup events_group
  *
  * The default Pipeline Exception Event implementation.
  */
-@interface JPDefaultPipelineExceptionEvent : NSObject <JPPipelineExceptionEvent> {
+@interface JPDefaultPipelineExceptionEvent : JPPipelineUpstreamMessageEvent <JPPipelineExceptionEvent> {
 	NSException *cause;
 	NSError *error;
 }

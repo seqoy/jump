@@ -39,47 +39,44 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
-#pragma mark Private Methods. 
+#pragma mark Notification Methods. 
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)notifyListener:(<JPPipelineFutureListener>)anListener {
-	@try {
-		[anListener someActionOcurr:self];
-	} 
+-(void)eraseListeners {
+    for ( id listener in listeners )
+        [[NSNotificationCenter defaultCenter] removeObserver:listener];
+    [listeners removeAllObjects];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)notifyListenersAndErase:(BOOL)erase withEvent:(id<JPPipelineEvent>)anEvent {
+    
+    // Create one notification.
+    JPPipelineNotification* notification = [JPPipelineNotification initWithName:JPNofityPipelineFutureListener];
 	
-	@catch (NSException* anException) {
-		Warn( @"An exception was thrown by %@: %@", [(id)anListener class], anException );
- 	}
+	// Attach this future on the notification.
+	[notification setObject:self];
+    
+    // Attach the event on the User Dictionary, if needed.
+    if ( anEvent )
+        [notification setUserInfo:[NSDictionary dictionaryWithObject:anEvent forKey:JPPipelineNotificationEvent]];
+    
+	// Post Notification.
+	[[NSNotificationCenter defaultCenter] postNotification:notification];
+    
+    // Erase if asked.
+    if ( erase )
+        [self eraseListeners];
 }
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)notifyListenersAndErase:(BOOL)erase {
-	if (firstListener != nil) {
-		[self notifyListener:firstListener];
-		
-		// Erase if asked.
-		if ( erase ) 
-			[(id)firstListener release], firstListener = nil;
-		
-		if (otherListeners != nil) {
-			for ( <JPPipelineFutureListener> anListener in otherListeners ) {
-				[self notifyListener:anListener];
-			}
-			// Erase if asked.
-			if ( erase )
-				[otherListeners release], otherListeners = nil;
-		}
-	}
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)notifyListenersWithEvent:(id<JPPipelineEvent>)anEvent {
+	[self notifyListenersAndErase:YES withEvent:anEvent];
 }
-
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(void)notifyListeners {
-	[self notifyListenersAndErase:YES];
+	[self notifyListenersAndErase:YES withEvent:nil];
 }
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(void)addListener:(<JPPipelineFutureListener>)anListener {
@@ -87,56 +84,40 @@
 	if (anListener == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"An Listener is null."];
 	}
+    
+    //// //// //// //// //// //// //// ///// //// //// //// //// //// //// /
+    // Init array of listeners if needed.
+    if (!listeners) listeners = [NSMutableArray new];
 
+    // Add to array of listeners.
+    [listeners addObject:anListener];
+    
+    //// //// //// //// //// //// //// ///// //// //// //// //// //// //// /
+    // The notification only will be sent for listeners of this object.
+    [[NSNotificationCenter defaultCenter]  addObserver:anListener 
+                                              selector:@selector(someActionOcurr:) 
+                                                  name:JPNofityPipelineFutureListener
+                                                object:self];
+    
 	//// //// //// //// //// //// //// //// //// //// //// //// /
-	// Should notify now, start as false.
-	BOOL notifyNow = NO;
-	
-	//// //// //// //// //// //// //// //// //// //// //// //// /
-	// If is done, will notify now.
-	if ([self isDone]) {
-		notifyNow = YES;
-	} 
-	
-	//// //// //// //// //// //// //// //// //// //// //// //// /
-	// If isn't done, store the listener.
-	else {
-		if (firstListener == nil) {
-			firstListener = [(id)anListener retain];
-		} else {
-			if (otherListeners == nil) {
-				otherListeners = [[NSMutableArray alloc] init];
-			}
-			[otherListeners addObject:anListener];
-		}
-	}
-	
-	//// //// //// //// //// //// //// //// //// //// //// //// /
-	// Notify now !
-	if ( notifyNow ) {
-		[self notifyListener:anListener];
+	// Should Notify now !
+	if ( [self isDone] ) {
+		 [self notifyListeners];
 	}
 }
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
+/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
+// Removes the specified listener
 -(void)removeListener:(<JPPipelineFutureListener>)anListener {
 	// Check Parameters.
 	if (anListener == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"An Listener is null."];
 	}
-	
+
+    // Remove the listener, if is already done that is nothing to remove.
 	if ( ![self isDone] ) {
-		if (anListener == firstListener) {
-			if (otherListeners != nil && ![otherListeners count] == 0) {
-				[(id)firstListener release], firstListener = nil;
-				firstListener = [[otherListeners objectAtIndex:0] retain];
-				[otherListeners removeObjectAtIndex:0];
-			} else {
-				[(id)firstListener release], firstListener = nil;
-			}
-		} else if (otherListeners != nil) {
-			[otherListeners removeObject:anListener];
-		}
+        [[NSNotificationCenter defaultCenter] removeObserver:anListener];
+        [listeners removeObject:anListener];
 	}
 }
 
@@ -184,16 +165,16 @@
 	started = YES;
 	
 	// Notify Listeners.
-	[self notifyListenersAndErase:NO];
+	[self notifyListenersAndErase:NO withEvent:nil];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(void)setFailure:(NSError*)anCause {
 	// Allow only once.
-	// If done, can't set sucess.
+	// If done, can't set error.
 	if ( [self isDone] )
 		[NSException raise:@"JPPipelineNotificationException"
-					format:@"Can't set Failture! This action is Done."];
+					format:@"Can't set Failure! This action is Done."];
 	
 	// Release older cause.
 	[cause release], cause = nil;
@@ -205,16 +186,22 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
--(void)setSuccess {
+-(void)setSuccessWithEvent:(id<JPPipelineEvent>)anEvent {
 	// If done, can't set sucess.
 	if ( [self isDone] )
 		[NSException raise:@"JPPipelineNotificationException"
 					format:@"Can't set success! This action is Done."];
 	// Success.
 	success = YES;
-
+    
 	// Notify.
-	[self notifyListeners];
+	[self notifyListenersWithEvent:anEvent];
+    
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
+-(void)setSuccess {
+    [self setSuccessWithEvent:nil];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -222,8 +209,8 @@
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
-	[otherListeners release], otherListeners = nil;
-	[(id)firstListener release], firstListener = nil;
+    [self eraseListeners];
+	[listeners release], listeners = nil;
 	[super dealloc];
 }
 

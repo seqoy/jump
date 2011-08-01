@@ -17,7 +17,7 @@
 #import "JPHTTPTransporter.h"
 
 @implementation JPHTTPTransporter
-@synthesize notification, requester, validatesSecureCertificate;
+@synthesize requester, validatesSecureCertificate, currentProgress, future;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -30,8 +30,6 @@
 - (id) init {
 	self = [super init];
 	if (self != nil) {
-		// Initializations.
-		futuresCollection = [[NSMutableSet alloc] init];
 		
 		// Settings.
 		self.validatesSecureCertificate = YES;
@@ -62,6 +60,10 @@
 	//// //// //// //// //// //// //// //// //// //// ////
 	// Init HTTP requester.
 	self.requester = [ASIHTTPRequest requestWithURL:anURL];
+    
+    // Receive HTTP call progress.
+    [requester setShowAccurateProgress:YES];
+    [requester setDownloadProgressDelegate:self];
 	
 	// Set ourselves as delegate.
 	[requester setDelegate:self];
@@ -147,9 +149,12 @@
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// This event has some future?
 	if ( [event getFuture] ) {
-		
-		// Add to futures Set.
-		[futuresCollection addObject:[event getFuture]];
+
+		// If some future is defined.
+        if ( future ) [(id)future release];
+        
+		// Add as Future Object.
+        future = [(id)[event getFuture] retain];
 	}
 }
 
@@ -162,26 +167,10 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
-#pragma mark Listeners Private Methods.
-- (void)notifyFuturesWithSelector:(SEL)anSelector andObject:(id)anObject {
-	
-	// Notify pipeline listeners.
-	[pipeline notifyListeners:notification];
-	
-	// Call selector on all futures.
-	for ( id future in futuresCollection )
-		[future performSelector:anSelector withObject:anObject];
-	
-}
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void)notifyFuturesWithSelector:(SEL)anSelector {
-	
-	// Notify pipeline listeners.
-	[pipeline notifyListeners:notification];
-	
-	// Call selector on all futures.
-	for ( id future in futuresCollection )
-		[future performSelector:anSelector];
+#pragma mark ASIProgressDelegate Methods. 
+
+- (void)setProgress:(float)newProgress {
+    self.currentProgress = [NSNumber numberWithFloat:newProgress * 100.0];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -190,31 +179,20 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 - (void)requestStarted:(ASIHTTPRequest *)request {
-	// Create an notification.
-//	self.notification = [JPPipelineNotification initWithName:JPPipelineNotify];
-//	
-//	// So started.
-//	[notification setStarted];
-//	
-//	// Start all futures.
-//	[self notifyFuturesWithSelector:@selector(setStarted)];
+    [future setStarted];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 - (void)requestFinished:(ASIHTTPRequest *)request {
 	
+    // Create Upstream Message.
+    JPPipelineUpstreamMessageEvent *message = [JPPipelineUpstreamMessageEvent initWithMessage:[request responseString]];
+    
+    // Attach the future to go opposite direction.
+    message.future = future;
+    
 	// Send Request Returned Data Upstream.
-	[pipeline sendUpstream:[JPPipelineUpstreamMessageEvent initWithMessage:[request responseString]]];
-
-	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
-	// Finished.
-	[notification setSuccess];
-	
-	// Notify.
-	[self notifyFuturesWithSelector:@selector(setSuccess)];
-	
-	// Remove Event Listeners.
-	[futuresCollection removeAllObjects];
+	[pipeline sendUpstream:message];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -222,13 +200,7 @@
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Cancelled.
-	[notification cancel];
-	
-	// Notify.
-	[self notifyFuturesWithSelector:@selector(cancel)];	
-
-	// Remove Event Listeners.
-	[futuresCollection removeAllObjects];
+	[future cancel];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -245,21 +217,19 @@
 		[self requestCancelled:request];
 		return;
 	}
+    
+    // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
+    // Fail the future.
+    [future setFailure:error];
 	
+    // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
+    // Create Exception.
+    JPDefaultPipelineExceptionEvent* failedEvent = [JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:[error localizedDescription]]																
+                                                                            andError:error];
+    
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Send Request Error Data Upstream.
-	[pipeline sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:[error localizedDescription]]																
-																 andError:error]];
-	
-	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
-	// Failure.
-	[notification setFailure:error];
-	
-	// Notify all futures.
-	[self notifyFuturesWithSelector:@selector(setFailure:) andObject:error];
-	
-	// Remove Event Listeners.
-	[futuresCollection removeAllObjects];
+	[pipeline sendUpstream:failedEvent];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -276,9 +246,9 @@
 	
 	// Release.
 	[requester release], requester = nil;
+    [currentProgress release], currentProgress = nil;
 
-	[notification release], notification = nil;
-	[futuresCollection release], futuresCollection = nil;
+	[(id)future release], future = nil;
 	[super dealloc];
 }
 

@@ -16,6 +16,7 @@
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
 #import "ASIHTTPRequestDelegate.h"
+#import "ASIProgressDelegate.h"
 
 // Transport Interfaces.
 #import "JPTransporterHTTPMessage.h"
@@ -57,7 +58,7 @@
  @copydetails JPDefaultHTTPMessage
 
  */
-@interface JPHTTPTransporter : NSObject <JPPipelineSink, ASIHTTPRequestDelegate> {
+@interface JPHTTPTransporter : NSObject <JPPipelineSink, ASIHTTPRequestDelegate, ASIProgressDelegate> {
 	
 	// HTTP Requester.
 	ASIHTTPRequest *requester;
@@ -65,26 +66,29 @@
 	// Pipeline Pointer.
 	JPPipeline *pipeline;
 	
-	// An notification.
-	JPPipelineNotification *notification;
-	
-	// Event Listeners.
-	NSMutableSet *futuresCollection;
+	// Event listener.
+	id<JPPipelineFuture> future;
 	
 	// Should Validate Secure Certificate?
 	BOOL validatesSecureCertificate;
+    
+    // Progress.
+    NSNumber *currentProgress;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark Properties.
-/// Pipeline Notification.
-@property (retain) JPPipelineNotification *notification;
+/// Future being processed.
+@property (readonly) id<JPPipelineFuture> future;
 
 /// The HTTP Requester.
 @property (retain) ASIHTTPRequest *requester;
 
 /// Should validate any Security Certificate.
 @property (assign) BOOL validatesSecureCertificate;
+
+/// The current progress of the transporter provider task.
+@property (copy) NSNumber *currentProgress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
