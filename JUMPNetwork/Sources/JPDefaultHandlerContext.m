@@ -34,6 +34,7 @@
 														withPipeline:anPipeline] 
 			autorelease];
 }
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
 					 andName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler
@@ -88,6 +89,33 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
+#pragma mark Getters & Setters.
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)setProgress:(NSNumber*)anValue withEvent:(id<JPPipelineEvent>)anEvent {
+    // If no changes on progress, do nothing.
+    if ( progress == anValue )
+        return;
+    
+    // If defined, release.
+    if (progress) [progress release];
+    
+    // Set the value locally.
+    progress = [anValue copy];
+    
+    // Get the Pipeline overal progress.
+    NSNumber *overalProgress = pipeline.progress;
+    
+    //// //// //// //// //// //// //// //// //// //// //// ////// //// //// //// //// //// //// //// //// //// //// //
+    // Set on the future.
+    if ( [anEvent getFuture] ) {
+        if ( ![[anEvent getFuture] isDone] ) {
+            [[anEvent getFuture] setProgress:overalProgress];
+        }
+    }
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+#pragma mark -
 #pragma mark Methods. 
 -(NSString*)name {
 	return name;
@@ -95,7 +123,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 -(JPPipeline*)getPipeline {
-	return self.pipeline;
+	return pipeline;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //

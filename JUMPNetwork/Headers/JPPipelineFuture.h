@@ -57,6 +57,16 @@
 -(BOOL)isFailed;
 
 /**
+ * Current operation overall progress.
+ */
+-(NSNumber*)getProgress;
+
+/**
+ * Set this future current progress.
+ */
+-(void)setProgress:(NSNumber*)anValue;
+
+/**
  * Returns the cause of the failed I/O operation if the I/O operation has
  * failed.
  *

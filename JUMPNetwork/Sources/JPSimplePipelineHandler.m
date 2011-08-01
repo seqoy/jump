@@ -41,7 +41,7 @@
 -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
     
     // Starting so progress, is 0%.
-    ctx.progress = [NSNumber numberWithInt:0];
+    [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
 
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
@@ -68,7 +68,7 @@
 -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
 
     // Starting so progress, is 0%.
-    ctx.progress = [NSNumber numberWithInt:0];
+    [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
 
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
@@ -86,8 +86,8 @@
 -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
     
     // Finished, so progress is 100%.
-    ctx.progress = [NSNumber numberWithInt:100];
-	
+    [ctx setProgress:[NSNumber numberWithInt:100] withEvent:e];
+
 	// We don't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.
 	[ctx sendUpstream:e];
@@ -96,9 +96,6 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
 -(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
-
-    // Finished, so progress is 100%.
-    ctx.progress = [NSNumber numberWithInt:100];
 
 	// We doesn't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.

@@ -187,48 +187,19 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
-#pragma mark Getters & Setters.
+#pragma mark Progress Methods.
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)setSink:(id<JPPipelineSink>)anSink {
-    // If is equal, do nothing.
-    if (anSink == sink)
-        return;
-    
-    // If exist..
-    if (sink) {
-        // Remove the observer and release.
-        [(id)sink removeObserver:self forKeyPath:@"currentProgress"];
-        [(id)sink release];
+-(NSNumber*)progress {
+    float sectionedPercent = (100.0 / [[contextObjectsMap allValues] count] + 1 );
+    float calcProgress     = 0.0;
+    for (JPDefaultHandlerContext *context in [contextObjectsMap allValues]) {
+        calcProgress += sectionedPercent * ( [[context progress] floatValue] / 100 );
     }
-
-    // Set and retain.
-    sink = [(id)anSink retain];
+    // Add the Sink progress.
+    calcProgress += [[sink currentProgress] floatValue];
     
-    // Attach to track the progress.
-    [(id)sink addObserver:self
-                 forKeyPath:@"currentProgress"
-                    options:NSKeyValueObservingOptionNew
-                    context:NULL];
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark KVO Methods.
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-// Called when the value at the specified key path relative to the given object has changed. 
-- (void)observeValueForKeyPath:(NSString *)keyPath
-                      ofObject:(id)object
-                        change:(NSDictionary *)change
-                       context:(void *)context
-{
- 
-    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
-    // Sink Progress Observer.
-    if ([keyPath isEqual:@"currentProgress"]) {
-        // New value changed.
-        NSNumber* value = [change objectForKey:NSKeyValueChangeNewKey];
-        NSLog(@"Progress: %@", value);
-    }
+    // Return.
+    return [NSNumber numberWithFloat:calcProgress];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -612,7 +583,6 @@
 	[contextObjectsMap release], contextObjectsMap = nil;
 	[finalObjects release], finalObjects = nil;
     
-    [(id)sink removeObserver:self forKeyPath:@"currentProgress"];
 	[(id)sink release], sink = nil;
     
     [progress release], progress = nil;

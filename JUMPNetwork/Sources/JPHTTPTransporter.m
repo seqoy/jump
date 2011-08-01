@@ -170,7 +170,12 @@
 #pragma mark ASIProgressDelegate Methods. 
 
 - (void)setProgress:(float)newProgress {
+    // Set self progress.
     self.currentProgress = [NSNumber numberWithFloat:newProgress * 100.0];
+    
+    // Send overal progress to future.
+    if (future)
+        [future setProgress:[pipeline progress]];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

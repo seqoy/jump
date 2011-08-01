@@ -123,7 +123,9 @@
  * to set his current progress. This progress is used by the
  * JPPipeline to calculate an overall progress of all operations
  * on a pipeline call. This property should contain values from 0 to 100.
+ * You must pass the actual event been processing in order to send
+ * progress notification to his future (if defined).
  */
--(void)setProgress:(NSNumber*)anValue;
+-(void)setProgress:(NSNumber*)anValue withEvent:(id<JPPipelineEvent>)anEvent;
 
 @end

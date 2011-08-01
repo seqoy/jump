@@ -17,11 +17,20 @@
 
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPPipelineDefaultFuture
-@synthesize cause;
+@synthesize cause, progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Init Methods. 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+- (id) init {
+    self = [super init];
+    if (self != nil) {
+        progress = [NSNumber numberWithInt:0];
+    }
+    return self;
+}
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 + (id)init {
 	return [[[self alloc] init] autorelease];
@@ -169,6 +178,27 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
+-(void)setProgress:(NSNumber *)anValue {
+	// If done, can't set progress.
+	if ( [self isDone] )
+		[NSException raise:@"JPPipelineNotificationException"
+					format:@"Can't set progress! This action is Done."];
+
+    // If no changes, do nothing.
+    if ( anValue == progress )
+        return;
+    
+    // If setted, release.
+    if ( progress ) [progress release];
+    
+    // Set, copying.
+    progress = [anValue copy];
+    
+	// Notify.
+	[self notifyListenersAndErase:NO withEvent:nil];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(void)setFailure:(NSError*)anCause {
 	// Allow only once.
 	// If done, can't set error.
@@ -211,6 +241,7 @@
 - (void) dealloc {
     [self eraseListeners];
 	[listeners release], listeners = nil;
+    [progress release], progress = nil;
 	[super dealloc];
 }
 

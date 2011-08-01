@@ -50,7 +50,7 @@
 @property (assign) JPPipeline* pipeline;
 
 /// The current progress that the JPPipelineHandler that this context is handling.
-@property (copy) NSNumber* progress;
+@property (readonly) NSNumber* progress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
