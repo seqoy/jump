@@ -28,7 +28,7 @@
 	NSString* name;
 	
 	// Handler.
-	<JPPipelineHandler> handler;
+	id<JPPipelineHandler> handler;
 	
 	// Handlers logic.
 	BOOL canHandleUpstream;
@@ -39,6 +39,9 @@
     
     // Progress.
     NSNumber *progress;
+    
+    // Progress priority.
+    NSInteger progressPriority;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -51,6 +54,12 @@
 
 /// The current progress that the JPPipelineHandler that this context is handling.
 @property (readonly) NSNumber* progress;
+
+/**
+ * Retrieve the progress priority that the Handler attached to this Context
+ * has on the overall progress calcuation. Return a number from 0 to 10.
+ */
+@property (assign) NSInteger progressPriority;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

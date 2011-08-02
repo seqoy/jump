@@ -36,6 +36,7 @@
 	//// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// /
 	if (self != nil) {
 		JSONProcesser = anJSONProcesserClass;
+        self.progressPriority = 5;
 	}
 	return self;
 }

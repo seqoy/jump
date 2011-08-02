@@ -273,8 +273,14 @@
 								<string>3AEF17E813183ED200BC3759</string>
 								<string>3AEF17EE13183ED200BC3759</string>
 								<string>3AEF17EB13183ED200BC3759</string>
+								<string>3AEF17DA13183ED200BC3759</string>
+								<string>3AEF17E013183ED200BC3759</string>
+								<string>1889406B1381839B00EFAE98</string>
+								<string>3AEF17DD13183ED200BC3759</string>
+								<string>3AEF17DB13183ED200BC3759</string>
 								<string>3AEF17F113183ED200BC3759</string>
 								<string>3AEF18FA1318400500BC3759</string>
+								<string>3AEF190A131840E800BC3759</string>
 								<string>3AEF17FD13183ED200BC3759</string>
 								<string>3AEF181813183ED200BC3759</string>
 								<string>3AEF180513183ED200BC3759</string>
@@ -285,15 +291,17 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>53</integer>
-									<integer>19</integer>
-									<integer>15</integer>
+									<integer>20</integer>
+									<integer>18</integer>
+									<integer>16</integer>
+									<integer>14</integer>
+									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 100}, {340, 883}}</string>
+							<string>{{0, 0}, {340, 883}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -330,7 +338,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPDefaultHandlerContext.m</string>
+								<string>JPJSONDecoderHandler.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,11 +346,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPDefaultHandlerContext.m</string>
+										<string>JPJSONDecoderHandler.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1840653113EEEEBB004E6BC0</string>
+										<string>184065CE13EEEEBB004E6BC0</string>
 										<key>history</key>
 										<array>
 											<string>18405DE013EED428004E6BC0</string>
@@ -364,12 +372,10 @@
 											<string>1840616113EEEEBB004E6BC0</string>
 											<string>1840616413EEEEBB004E6BC0</string>
 											<string>184061C413EEEEBB004E6BC0</string>
-											<string>184061C513EEEEBB004E6BC0</string>
 											<string>184061C713EEEEBB004E6BC0</string>
 											<string>184061C813EEEEBB004E6BC0</string>
 											<string>184061FF13EEEEBB004E6BC0</string>
 											<string>1840629913EEEEBB004E6BC0</string>
-											<string>1840629A13EEEEBB004E6BC0</string>
 											<string>1840629C13EEEEBB004E6BC0</string>
 											<string>1840629E13EEEEBB004E6BC0</string>
 											<string>1840629F13EEEEBB004E6BC0</string>
@@ -385,7 +391,6 @@
 											<string>1840644D13EEEEBB004E6BC0</string>
 											<string>1840646113EEEEBB004E6BC0</string>
 											<string>1840646213EEEEBB004E6BC0</string>
-											<string>1840648513EEEEBB004E6BC0</string>
 											<string>1840648713EEEEBB004E6BC0</string>
 											<string>1840648813EEEEBB004E6BC0</string>
 											<string>1840648913EEEEBB004E6BC0</string>
@@ -395,7 +400,6 @@
 											<string>1840648D13EEEEBB004E6BC0</string>
 											<string>1840648E13EEEEBB004E6BC0</string>
 											<string>1840648F13EEEEBB004E6BC0</string>
-											<string>1840649013EEEEBB004E6BC0</string>
 											<string>1840649213EEEEBB004E6BC0</string>
 											<string>1840649313EEEEBB004E6BC0</string>
 											<string>184064A013EEEEBB004E6BC0</string>
@@ -409,11 +413,15 @@
 											<string>184064F613EEEEBB004E6BC0</string>
 											<string>184064F713EEEEBB004E6BC0</string>
 											<string>184064F813EEEEBB004E6BC0</string>
-											<string>184064FA13EEEEBB004E6BC0</string>
 											<string>184064FB13EEEEBB004E6BC0</string>
 											<string>184064FC13EEEEBB004E6BC0</string>
 											<string>1840650913EEEEBB004E6BC0</string>
-											<string>1840650A13EEEEBB004E6BC0</string>
+											<string>1840656A13EEEEBB004E6BC0</string>
+											<string>1840658913EEEEBB004E6BC0</string>
+											<string>1840658A13EEEEBB004E6BC0</string>
+											<string>1840658B13EEEEBB004E6BC0</string>
+											<string>1840658C13EEEEBB004E6BC0</string>
+											<string>1840658D13EEEEBB004E6BC0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -611,9 +619,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>18C16E9513DA2037005D64B1</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/JUMPNetwork.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -968,7 +976,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -47,6 +47,17 @@
  */ 
 @protocol JPPipelineHandler 
 
-	// No methods, maybe someday!
+/**
+ * Retrieve the Default progress priority that this has on the overall progress
+ * calculation. Return a number from 0 to 10. You can set a custom priority
+ * when you add the Handler to the Pipeline. Otherwise will use this value.
+ */
+-(NSInteger)progressPriority;
+
+/**
+ * Set the progress priority that this Handler
+ * has on the overall progress calcuation. Should be a number from 0 to 10.
+ */
+-(void)setProgressPriority:(NSInteger)anValue;
 
 @end

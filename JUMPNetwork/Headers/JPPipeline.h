@@ -95,12 +95,30 @@
 -(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
 
 /**
+ * Inserts a Handler at the first position of this pipeline.
+ *
+ * @param name     the name of the handler to insert first
+ * @param handler  the handler to insert first
+ * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
+ */
+-(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+
+/**
  * Appends a Handler at the last position of this pipeline.
  *
  * @param name     the name of the handler to append
  * @param handler  the handler to append
  */
 -(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+
+/**
+ * Appends a Handler at the last position of this pipeline.
+ *
+ * @param name     the name of the handler to append
+ * @param handler  the handler to append
+ * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
+ */
+-(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 /**
  * Inserts a JPPipelineHandler before an existing handler of this
@@ -114,6 +132,17 @@
 -(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
 
 /**
+ * Inserts a JPPipelineHandler before an existing handler of this
+ * pipeline.
+ *
+ * @param baseName  the name of the existing handler
+ * @param name      the name of the handler to insert before
+ * @param handler   the handler to insert before
+ * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
+ */
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+
+/**
  * Inserts a JPPipelineHandler after an existing handler of this
  * pipeline.
  *
@@ -123,6 +152,17 @@
  *
  */
 -(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+
+/**
+ * Inserts a JPPipelineHandler after an existing handler of this
+ * pipeline.
+ *
+ * @param baseName  the name of the existing handler
+ * @param name      the name of the handler to insert after
+ * @param handler   the handler to insert after
+ * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
+ */
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

@@ -170,7 +170,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)buildContextMapWithName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler  {
+-(JPDefaultHandlerContext*)buildContextMapWithName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler  {
 	JPDefaultHandlerContext* ctx = [JPDefaultHandlerContext initWithPreviousContext:nil
 																	 andNextContext:nil
 																			andName:anName
@@ -183,6 +183,8 @@
 	// Add to Context Map.
 	[contextObjectsMap removeAllObjects];
 	[contextObjectsMap setObject:ctx forKey:anName];
+    
+    return ctx;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -190,13 +192,13 @@
 #pragma mark Progress Methods.
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(NSNumber*)progress {
-    float sectionedPercent = (100.0 / [[contextObjectsMap allValues] count] + 1 );
+    float sectionedPercent = (100.0 / ( [[contextObjectsMap allValues] count] + 1 ));
     float calcProgress     = 0.0;
     for (JPDefaultHandlerContext *context in [contextObjectsMap allValues]) {
         calcProgress += sectionedPercent * ( [[context progress] floatValue] / 100 );
     }
     // Add the Sink progress.
-    calcProgress += [[sink currentProgress] floatValue];
+    calcProgress += sectionedPercent * ( [[sink currentProgress] floatValue] / 100 );
     
     // Return.
     return [NSNumber numberWithFloat:calcProgress];
@@ -246,33 +248,49 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Inserts a Handler at the first position of this pipeline.
 -(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+    [self addFirst:name withHandler:handler withProgressPriority:handler.progressPriority];
+}
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+-(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	if ( [contextObjectsMap count] == 0 ) {
-		[self buildContextMapWithName:name andHandler:handler];
+		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
+        [ctx setProgressPriority:priority];
 	}
 	
 	else {
 		// Check if already exists.
 		[self checkDuplicateName:name];
-
+        
 		// Change Heads.
 		JPDefaultHandlerContext *oldHead = head;
 		JPDefaultHandlerContext *newHead = [JPDefaultHandlerContext initWithPreviousContext:nil
 																			 andNextContext:oldHead
 																					andName:name
 																				 andHandler:handler
-																				withPipeline:self];
+                                                                               withPipeline:self];
 		oldHead.prev = newHead;
 		head = newHead;
-
+        
 		// Add to the Dictionary.
 		[contextObjectsMap setObject:newHead forKey:name];
+        
+        // Set the priority.
+        [newHead setProgressPriority:priority];
 	}
 }
+
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Appends a Handler at the last position of this pipeline.
 -(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+    [self addLast:name withHandler:handler withProgressPriority:handler.progressPriority];
+}
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+-(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	if ( [contextObjectsMap count] == 0 ) {
-		[self buildContextMapWithName:name andHandler:handler];
+		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
+        [ctx setProgressPriority:priority];
 	}
 	
 	else {
@@ -285,18 +303,26 @@
 																			 andNextContext:nil
 																					andName:name
 																				 andHandler:handler 
-																				withPipeline:self];
+                                                                               withPipeline:self];
 		oldTail.next = newTail;
 		tail = newTail;
 		
 		// Add to the Dictionary.
 		[contextObjectsMap setObject:newTail forKey:name];
+        
+        // Set the priority.
+        [newTail setProgressPriority:priority];
 	}
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Inserts a Handler before an existing handler of this.
 -(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+    [self addBefore:baseName withName:name withHandler:handler withProgressPriority:handler.progressPriority];
+}
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	
 	// Get Context.
 	JPDefaultHandlerContext *ctx = [self getContextByNameOrDie:baseName];
@@ -304,7 +330,7 @@
 	///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
 	// If on the head, insert first.
 	if (ctx == head) 
-		[self addFirst:baseName withHandler:handler];
+		[self addFirst:baseName withHandler:handler withProgressPriority:priority];
 	
 	////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
 	// If don't...
@@ -318,19 +344,27 @@
 																			andNextContext:ctx
 																				   andName:name
 																				andHandler:handler 
-																			   withPipeline:self];
+                                                                              withPipeline:self];
 		// Set contexts chain.
 		ctx.prev.next = newCtx;
 		ctx.prev = newCtx;
 		
 		// Add to the Dictionary.
 		[contextObjectsMap setObject:newCtx forKey:name ];
+        
+        // Set the priority.
+        [newCtx setProgressPriority:priority];
 	}
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Inserts a Handler after an existing handler of this.
 -(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler  {
+    [self addAfter:baseName withName:name withHandler:handler withProgressPriority:handler.progressPriority];
+}
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	
 	// Get Context.
 	JPDefaultHandlerContext *ctx = [self getContextByNameOrDie:baseName];
@@ -338,7 +372,7 @@
 	///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
 	// If on the tail, insert last.
 	if (ctx == tail) 
-		[self addLast:baseName withHandler:handler];
+		[self addLast:baseName withHandler:handler withProgressPriority:priority];
 	
 	////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
 	// If don't...
@@ -352,16 +386,18 @@
 																			andNextContext:ctx.next
 																				   andName:name
 																				andHandler:handler 
-																			   withPipeline:self];
+                                                                              withPipeline:self];
 		// Set contexts chain.
 		ctx.next.prev = newCtx;
 		ctx.next = newCtx;
 		
 		// Add to the Dictionary.
 		[contextObjectsMap setObject:newCtx forKey:name];
+        
+        // Set the priority.
+        [newCtx setProgressPriority:priority];
 	}
 }
-
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Removes the specified {@link ChannelHandler} from this pipeline.
 -(void)removeByHandler:(<JPPipelineHandler>)handler {

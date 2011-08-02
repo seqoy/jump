@@ -128,4 +128,16 @@
  */
 -(void)setProgress:(NSNumber*)anValue withEvent:(id<JPPipelineEvent>)anEvent;
 
+/**
+ * Retrieve the progress priority that the Handler attached to this Context
+ * has on the overall progress calcuation. Return a number from 0 to 10.
+ */
+-(NSInteger)progressPriority;
+
+/**
+ * Set the progress priority that the Handler attached to this Context
+ * has on the overall progress calcuation. Should be a number from 0 to 10.
+ */
+-(void)setProgressPriority:(NSInteger)priority;
+
 @end

@@ -36,6 +36,7 @@
 	//// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// /
 	if (self != nil) {
 		XMLProcesser = anXMLProcesserClass;
+        self.progressPriority = 7;
 	}
 	return self;
 }

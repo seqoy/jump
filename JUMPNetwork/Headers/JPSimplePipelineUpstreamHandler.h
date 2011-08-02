@@ -50,7 +50,22 @@
  
 
  */
-@interface JPSimplePipelineUpstreamHandler : NSObject <JPPipelineUpstreamHandler> {}
+@interface JPSimplePipelineUpstreamHandler : NSObject <JPPipelineUpstreamHandler> {
+    NSInteger progressPriority;
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+#pragma mark -
+#pragma mark Properties.
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+
+/**
+ * Progress priority that this has on the overall progress
+ * calculation. Return a number from 0 to 10. You can set a custom priority
+ * when you add the Handler to the Pipeline. Otherwise will use this value.
+ * <b>Default value is 10.</b> 
+ */
+@property (assign) NSInteger progressPriority;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

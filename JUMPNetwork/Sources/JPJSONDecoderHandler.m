@@ -37,6 +37,7 @@
 	//// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// / //// //// //// //// //// /
 	if (self != nil) {
 		JSONProcesser = anJSONProcesserClass;
+        self.progressPriority = 5;
 	}
 	return self;
 }
@@ -56,6 +57,9 @@
 // You can override this method on a subclass to do some custom processing.
 -(void)jsonDataDecoded:(NSDictionary*)result withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
 	
+    // Finishing, so progress is 100%.
+    [ctx setProgress:[NSNumber numberWithInt:100] withEvent:event];
+
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Set decoded Message on the event.
 	[event setMessage:result];
