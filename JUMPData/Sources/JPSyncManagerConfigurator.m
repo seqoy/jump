@@ -58,6 +58,9 @@
 
 	// Set correct key order.
 	instance.readKeyOrder = readKeyOrder;
+    
+    // Attach our Database Manager to be synced.
+    [instance attachMainDatabaseManager:(JPDBManager*)self.databaseManager];
 	
 	// Return builded instance.
 	return instance;

@@ -302,7 +302,7 @@
 	// Merge changes into the main context on the main thread.
 	[mainContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)	
                                   withObject:notification
-                               waitUntilDone:YES];	
+                               waitUntilDone:YES];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -316,13 +316,13 @@
         return;
     }
 
-    // Autorelease context and event.
-    [(id)_context autorelease];
-    [(id)_event autorelease];
-    
     ///// //// //// //// //// //// //// //// //// //// //// //// 
 	// Follow the chain.
 	[_context sendUpstream:_event];
+    
+    // Release local retained.
+    [(id)_context release];
+    [(id)_event release];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -560,6 +560,9 @@
                                                                    withObject:currentProgress
                                                                 waitUntilDone:NO];
                                 }
+                            
+                            // Inform to the context the progress of our handler.
+                            [_context setProgress:currentProgress withEvent:_event];
 						}
 						
 					}
@@ -598,7 +601,6 @@
 	/////////// /////////// /////////// /////////// /////////// /////////// 
     // Commit all changes.
 	[_backgroundThreadDatabaseManager commit];
-    [_backgroundThreadDatabaseManager.managedObjectContext reset];
 	
     // Clean up the progress, no operation is running.
     [currentProgress release]; currentProgress = nil;
@@ -620,6 +622,9 @@
     // Flush and release the Pool.
     [anPool release];
     
+    // Nullify after autorelease.
+    _backgroundThreadDatabaseManager = nil;
+    
     // Finish processing, so we'll pass the control to the next handler.
     [self processDataFinished];
 }
@@ -635,18 +640,36 @@
     _context = [(id)ctx retain];
     _event   = [(id)e retain];
 
+    // Message to process.
+    id message = [e getMessage];
+
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //////// //// //// //// //// //// //// ////
+    // If we're receiving a JSONRPC Model...
+    if ( [message isKindOfClass:[JPJSONRPCModel class]] ) {
+        JPJSONRPCModel *model = message;
+        
+        // If the model contain an ERROR, just pass to the next handler.
+        if ( model.error ) {
+            [self processDataFinished];
+            return;
+        }
+
+        // Get the RESULT from the Model and assign as message, we're discarding all other data.
+        message = model.result;
+    }
+    
     //// //// //// //// //// //// //// //// //// //// //// //// //// //// //////// //// //// //// //// //// //// ////
 	// Make sure we can handle the message.
-	if ([[e getMessage] isKindOfClass:[NSDictionary class]]) {
+	if ( [message isKindOfClass:[NSDictionary class]] ) {
         
         //// //// //// //// //// //// //// //// //// //// //// //// ////
         // Process Message Event Data in background if called from main.
         if ([NSThread currentThread] == [NSThread mainThread])
-            [self performSelectorInBackground:@selector(processData:) withObject:(NSDictionary*)[e getMessage]];
+            [self performSelectorInBackground:@selector(processData:) withObject:(NSDictionary*)message];
         
         // If we're on background, just process.
         else 
-            [self processData:(NSDictionary*)[e getMessage]];
+            [self processData:(NSDictionary*)message];
 	}
     
     //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
