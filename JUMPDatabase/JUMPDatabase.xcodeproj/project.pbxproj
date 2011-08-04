@@ -254,6 +254,7 @@
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = JUMPDatabase;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -269,6 +270,7 @@
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/../Headers/**";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = JUMPDatabase;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

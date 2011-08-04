@@ -107,13 +107,18 @@
 // Start Core Data Database.
 -(id)startCoreData {
 	[self managedObjectContext];
+    
+    // Set Core Data to merges conflicts between the persistent store’s version of the object 
+    // and the current in-memory version, giving priority to in-memory changes.
+    [managedObjectContext setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
+    
 	return self;
 }
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 // Start Core Data Databases. Using an specific model.
 -(id)startCoreDataWithModel:(NSString*)modelName {
-	Info( @"Starting Core Data Using Model: [[%@]]", modelName );
+	//Info( @"Starting Core Data Using Model: [[%@]]", modelName );
 	
 	// Dealloc if needed and set.
 	if ( loadModelNamed ) [loadModelNamed release], loadModelNamed = nil;
@@ -163,7 +168,7 @@
 // Returns the managed object model merged.
 //
 - (NSManagedObjectModel *)createMissingRelationships:(NSManagedObjectModel *)model {
-	Debug( @"Create Missing Relationships Between Entities");
+	//Debug( @"Create Missing Relationships Between Entities");
 	
 	// One List of all Entities (Tables).
 	NSDictionary *allTables = [model entitiesByName];
@@ -250,7 +255,7 @@
 // Returns the managed object model for the application.
 //
 - (NSManagedObjectModel *)managedObjectModel {
-	Info( @"Init The Managed Object Model.");
+	//Info( @"Init The Managed Object Model.");
 	
 	// Return Managed Object Model if is already started...
     if (managedObjectModel != nil) {
@@ -297,7 +302,7 @@
 // Returns the persistent store coordinator for the application.
 //
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-	Debug( @"Init Persitent Store Coordinator" );
+	//Debug( @"Init Persitent Store Coordinator" );
 	
 	// Return Persistent Coordinator if is already started...
     if (persistentStoreCoordinator != nil) {
@@ -362,7 +367,7 @@
     }
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
-	Info( @"Initializing Managed Object Context");
+	//Info( @"Initializing Managed Object Context");
 
 	// Grab the Coordinator.
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
@@ -465,7 +470,7 @@
 	}
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 	// Log
-	Debug(@"%@", format);
+	//Debug(@"%@", format);
 		
 	/// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 	// If doesn't exist the Entity, return nothing.
@@ -551,14 +556,23 @@
 		return queryResult;
 	}
 
-	// Return Data as NSFetchedResultsController.
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///// 
+	// Return Data as NSFetchedResultsController 
 	else {
-		return [[NSFetchedResultsController alloc] initWithFetchRequest:query 
+        
+        //// //// //// //// //// //// //// //// //// //// //// //// //// 
+        // Only iPhone.
+        #if TARGET_OS_IPHONE 
+            return [[[NSFetchedResultsController alloc] initWithFetchRequest:query 
 												   managedObjectContext:managedObjectContext
 													 sectionNameKeyPath:nil
-															  cacheName:nil];
+															  cacheName:nil] autorelease];
+        //// //// //// //// //// //// //// //// //// //// //// //// //// 
+        #else
+            return nil;
+        #endif
 	}
-	
+    //// //// //// //// //// //// //// //// //// //// //// //// //// 
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -570,10 +584,12 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Thread Safe Database Action.
 -(id)performThreadSafeDatabaseAction:(JPDBManagerAction*)anAction {
+    id object = nil;
 	// Syncronized call, so this is an thread safe operation.
 	@synchronized( anAction ) {
-		return [self performDatabaseActionInternally:anAction];
+		object = [self performDatabaseActionInternally:anAction];
 	}
+    return object;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -584,7 +600,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 // Commit al pendent operations to the persistent store.
 -(void)commit {
-	Debug( @"Saving Changes To Database.");
+	//Debug( @"Saving Changes To Database.");
 	
 	// Error Control.
 	NSError *anError = nil;
@@ -594,6 +610,7 @@
 	// the save: message to the Application's Managed Object Context.
 	if ( ! [[self managedObjectContext] save:&anError] ) {
 		//Warn( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
+        NSLog( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
 		
 		// Notificate the error.
 		[self notificateError:anError];
@@ -603,7 +620,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 // Create and return a new empty Record for specified Entity.
 -(id)createNewRecordForEntity:(NSString*)anEntityName {
-	Debug( @"Creating New Record For Entity:[[%@]] %@", anEntityName, (automaticallyCommit ? @"[COMMIT]" : @"") );
+	//Debug( @"Creating New Record For Entity:[[%@]] %@", anEntityName, (automaticallyCommit ? @"[COMMIT]" : @"") );
 	
 	// If not exist, return nothing.
 	if ( _NOT_ [self existEntity:anEntityName] ) 
