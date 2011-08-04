@@ -22,6 +22,7 @@
 #import "JPSyncManagerHandlerDelegate.h"
 #import "JPSyncManagerHandlerEvent.h"
 #import "JPJSONRPCEventFactory.h"
+#import "JPJSONRPCModel.h"
 
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 #define JPSyncManagerHandlerException @"JPSyncManagerHandlerException"

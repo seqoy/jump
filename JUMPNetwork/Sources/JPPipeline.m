@@ -154,8 +154,7 @@
 #pragma mark -
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (id) init
-{
+- (id) init {
 	self = [super init];
 	if (self != nil) {
 		// Init.
@@ -192,16 +191,95 @@
 #pragma mark Progress Methods.
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(NSNumber*)progress {
-    float sectionedPercent = (100.0 / ( [[contextObjectsMap allValues] count] + 1 ));
-    float calcProgress     = 0.0;
-    for (JPDefaultHandlerContext *context in [contextObjectsMap allValues]) {
-        calcProgress += sectionedPercent * ( [[context progress] floatValue] / 100 );
+    
+    // Retrieve the Array with All Contexts.
+    NSArray* allContexts = [contextObjectsMap allValues];
+    
+    // Total Progress will be calculated here.
+    float calcProgress = 0.0;
+    
+    // Loop processing...
+    for (int i=0; i < [sectionedProgress count]; i++) {
+        // Sectioned Percent.
+        float sectionedPercent = [[sectionedProgress objectAtIndex:i] floatValue];
+        
+        // First element is the Sink Object. 
+        if ( i==0 )
+            calcProgress += sectionedPercent * ( [[sink currentProgress] floatValue] / 100 );
+        
+        // The rest is Contexts.
+        else {
+            JPDefaultHandlerContext *context = [allContexts objectAtIndex:i-1];     // Index of Contexts is minus one, we're skipping the Sink.
+            calcProgress += sectionedPercent * ( [[context progress] floatValue] / 100 );
+        }
     }
-    // Add the Sink progress.
-    calcProgress += sectionedPercent * ( [[sink currentProgress] floatValue] / 100 );
     
     // Return.
     return [NSNumber numberWithFloat:calcProgress];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)calculateSectionedProgress {
+    if ( !sectionedProgress ) sectionedProgress = [NSMutableArray new];
+    [sectionedProgress removeAllObjects];
+
+    // Array with All Contexts.
+    NSArray* allContexts = [contextObjectsMap allValues];
+
+    // Control numbers.
+    float   maxPuntuaction              = 10;                           // Max puntuaction - Should be 0-10.
+    int     numberOfSections            = [allContexts count] + 1;      // How many sections we have (contexts) + one Sink.
+    float   planePercentage             = 100.0 / numberOfSections;     // Plane Percentage.
+    float   totalNormalizedPuntuaction  = 0.0;                          
+    float   normalizedPontuaction[numberOfSections];
+    
+    // The math algorithm behind Sectioned Progress involves:
+
+    //// //// //// //// //// //// //// //// //// 
+    //
+    //  A) Normalize the points (0-10) to a Plane Percentage manner (Product of 100 / <numberOfSections>).
+    //     If we have 4 elements we will have a base of 25. So we'll normalize 10 to 25, 5 to 12.5 and so on.
+    //     We're using the current formula:
+    //              = <planePercentage> / <maxPuntuaction> * Progress Priority
+    //
+    for (int i=0; i < numberOfSections; i++) {
+        
+        // Priority value.
+        NSInteger priority;
+        
+        // First object is the Sink.
+        if (i==0) {
+            priority = 5;       // TODO: Get sink priority.
+        }
+        
+        // Contexts..
+        else {
+            // Cast context...
+            JPDefaultHandlerContext *ctx = [allContexts objectAtIndex:i-1];     // Index of Contexts is minus one, we're skipping the Sink.
+            // Priority.
+            priority = ctx.progressPriority;
+        }
+
+        // Calc...
+        normalizedPontuaction[i]= planePercentage / maxPuntuaction * priority;
+        totalNormalizedPuntuaction+= normalizedPontuaction[i];
+    }
+    //// //// //// //// //// //// //// //// //// 
+    //
+    //  B) The normalization never will finish fill the 100% of our progress percentage.
+    //     What we do in this case is distribute the rest based on his importance (priority), not equally.
+    //     We're using the current formula to guess what we should increment to reach 100%:
+    //        a = ( 100 - <totalNormalizedPuntuaction> ) * <normalizedValue> / <totalNormalizedPuntuaction>
+    //
+    //        And finally apply no the normalized values.
+    //        b = a + <normalizedValue>;
+    //
+    for (int i=0; i < numberOfSections; i++) {    
+        // Calc..
+        float sectionValue = normalizedPontuaction[i] + ( (100 - totalNormalizedPuntuaction ) * normalizedPontuaction[i] / totalNormalizedPuntuaction );
+        // Store..
+        [sectionedProgress addObject:[NSNumber numberWithFloat:sectionValue]];
+    }
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -256,6 +334,8 @@
 	if ( [contextObjectsMap count] == 0 ) {
 		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
         [ctx setProgressPriority:priority];
+        [self calculateSectionedProgress];
+
 	}
 	
 	else {
@@ -277,6 +357,9 @@
         
         // Set the priority.
         [newHead setProgressPriority:priority];
+        
+        // Calc Sectioned Progress.
+        [self calculateSectionedProgress];
 	}
 }
 
@@ -291,6 +374,7 @@
 	if ( [contextObjectsMap count] == 0 ) {
 		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
         [ctx setProgressPriority:priority];
+        [self calculateSectionedProgress];
 	}
 	
 	else {
@@ -312,6 +396,10 @@
         
         // Set the priority.
         [newTail setProgressPriority:priority];
+        
+        // Calc Sectioned Progress.
+        [self calculateSectionedProgress];
+
 	}
 }
 
@@ -354,6 +442,10 @@
         
         // Set the priority.
         [newCtx setProgressPriority:priority];
+        
+        // Calc Sectioned Progress.
+        [self calculateSectionedProgress];
+
 	}
 }
 
@@ -396,6 +488,10 @@
         
         // Set the priority.
         [newCtx setProgressPriority:priority];
+        
+        // Calc Sectioned Progress.
+        [self calculateSectionedProgress];
+
 	}
 }
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
@@ -622,6 +718,7 @@
 	[(id)sink release], sink = nil;
     
     [progress release], progress = nil;
+    [sectionedProgress release], sectionedProgress = nil;
 
 	[super dealloc];
 }

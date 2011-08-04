@@ -63,6 +63,8 @@
 		1840607613EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840607513EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m */; };
 		1840608513EEEEBB004E6BC0 /* JPPipelineFailedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840608413EEEEBB004E6BC0 /* JPPipelineFailedFuture.m */; };
 		1840608713EEEEBB004E6BC0 /* JPPipelineFailedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840608613EEEEBB004E6BC0 /* JPPipelineFailedFuture.h */; };
+		185BE75813EB21F9003BA260 /* JPJSONRPCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 185BE75713EB21F9003BA260 /* JPJSONRPCModel.h */; };
+		185BE75A13EB220D003BA260 /* JPJSONRPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185BE75913EB220D003BA260 /* JPJSONRPCModel.m */; };
 		185F4D28135F38490069C261 /* JPXMLDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 185F4D27135F38490069C261 /* JPXMLDecoderHandler.h */; };
 		185F4D2A135F38530069C261 /* JPXMLDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4D29135F38530069C261 /* JPXMLDecoderHandler.m */; };
 		18894077138183B900EFAE98 /* JPJSONDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */; };
@@ -189,6 +191,8 @@
 		1840607513EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPipelineCompletedFuture.m; sourceTree = "<group>"; };
 		1840608413EEEEBB004E6BC0 /* JPPipelineFailedFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPipelineFailedFuture.m; sourceTree = "<group>"; };
 		1840608613EEEEBB004E6BC0 /* JPPipelineFailedFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineFailedFuture.h; path = Headers/JPPipelineFailedFuture.h; sourceTree = SOURCE_ROOT; };
+		185BE75713EB21F9003BA260 /* JPJSONRPCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONRPCModel.h; path = Headers/JPJSONRPCModel.h; sourceTree = SOURCE_ROOT; };
+		185BE75913EB220D003BA260 /* JPJSONRPCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJSONRPCModel.m; sourceTree = "<group>"; };
 		185F4D27135F38490069C261 /* JPXMLDecoderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPXMLDecoderHandler.h; path = Headers/JPXMLDecoderHandler.h; sourceTree = SOURCE_ROOT; };
 		185F4D29135F38530069C261 /* JPXMLDecoderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPXMLDecoderHandler.m; sourceTree = "<group>"; };
 		18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONDecoderHandler.h; path = Headers/JPJSONDecoderHandler.h; sourceTree = SOURCE_ROOT; };
@@ -421,6 +425,15 @@
 			name = Futures;
 			sourceTree = "<group>";
 		};
+		185BE74C13EB21DF003BA260 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				185BE75713EB21F9003BA260 /* JPJSONRPCModel.h */,
+				185BE75913EB220D003BA260 /* JPJSONRPCModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		185F4D1E135F38140069C261 /* XML Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +464,8 @@
 		1889406C1381839F00EFAE98 /* JSON-RPC */ = {
 			isa = PBXGroup;
 			children = (
+				185BE74C13EB21DF003BA260 /* Models */,
+				3AEF17DD13183ED200BC3759 /* Events */,
 				3AEF17E113183ED200BC3759 /* JPJSONRPCDecoderHandler.h */,
 				3AEF17E213183ED200BC3759 /* JPJSONRPCDecoderHandler.m */,
 				3AEF17E313183ED200BC3759 /* JPJSONRPCEncoderHandler.h */,
@@ -473,7 +488,7 @@
 				3AEF17EF13183ED200BC3759 /* JPTransporterMessage.h */,
 				3AEF17E813183ED200BC3759 /* HTTP Components */,
 				185F4D1E135F38140069C261 /* XML Components */,
-				3AEF17DA13183ED200BC3759 /* JSON-RPC Components */,
+				3AEF17DA13183ED200BC3759 /* JSON Components */,
 			);
 			name = "I|O Transporters";
 			sourceTree = "<group>";
@@ -496,15 +511,14 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		3AEF17DA13183ED200BC3759 /* JSON-RPC Components */ = {
+		3AEF17DA13183ED200BC3759 /* JSON Components */ = {
 			isa = PBXGroup;
 			children = (
 				3AEF17E513183ED200BC3759 /* Factories */,
 				3AEF17E013183ED200BC3759 /* Handlers */,
-				3AEF17DD13183ED200BC3759 /* Events */,
 				3AEF17DB13183ED200BC3759 /* Interfaces */,
 			);
-			name = "JSON-RPC Components";
+			name = "JSON Components";
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -528,8 +542,8 @@
 		3AEF17E013183ED200BC3759 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				1889406C1381839F00EFAE98 /* JSON-RPC */,
 				1889406B1381839B00EFAE98 /* JSON */,
+				1889406C1381839F00EFAE98 /* JSON-RPC */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -795,6 +809,7 @@
 				1840606313EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h in Headers */,
 				1840607413EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h in Headers */,
 				1840608713EEEEBB004E6BC0 /* JPPipelineFailedFuture.h in Headers */,
+				185BE75813EB21F9003BA260 /* JPJSONRPCModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +909,7 @@
 				1840606113EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m in Sources */,
 				1840607613EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m in Sources */,
 				1840608513EEEEBB004E6BC0 /* JPPipelineFailedFuture.m in Sources */,
+				185BE75A13EB220D003BA260 /* JPJSONRPCModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

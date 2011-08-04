@@ -36,10 +36,24 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // When a JSON data is succesfully decoded this method will be called with the data. 
 // You can override this method on a subclass to do some custom processing.
--(void)jsonDataDecoded:(NSDictionary*)JSONDecoded withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
+-(void)jsonDataDecoded:(id)JSONDecoded withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
 
+    ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
+    // If decoded is NIL. Probably we're handling some error, nothing to do here.
+    if ( JSONDecoded == nil ) {
+        [super jsonDataDecoded:JSONDecoded withEvent:event andContext:ctx];
+        return;
+    }
+    
+    ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
+	// Create an JSON-PRC Model Object.
+    JPJSONRPCModel *model = [JPJSONRPCModel init];
+    
+    // If some error, we store here.
+    NSError *JSONError;
+    
 	//////// ////// ////// ////// ////// ////// ////// 
-	// Check if result some server Error.
+	// Check if result some server Error. 
 	if( [JSONDecoded objectForKey:@"error"] ) {
 		
 		// If server error isn't NULL (REAL ERROR), process it.
@@ -49,64 +63,76 @@
 			NSDictionary *anError = [JSONDecoded objectForKey:@"error"];
 			
 			// NSError User Info Dictionary.
-			NSDictionary *userInfo = [NSDictionary dictionaryWithObject:[anError objectForKey:@"message"] 
-																 forKey: NSLocalizedDescriptionKey];
-			
+			NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:[anError objectForKey:@"message"] 
+                                                                               forKey: NSLocalizedDescriptionKey];
+            
+			///////// /////// /////// /////// /////// /////// /////// /////// /////// //// /////// 
+            // Assign extra JSON-RPC Metadata about this error to the userInfo dictionary.
+            
+            // Error Name, JSON-RPC 1.1 Compliant.
+            if ([anError objectForKey:@"name"]) 
+                [userInfo setObject:[anError objectForKey:@"name"] forKey:JPJSONRPCErrorName];    
+
+            // Object value that carries custom and application-specific error information. JSON-RPC 1.1 Compliant.
+            if ([anError objectForKey:@"error"]) 
+                [userInfo setObject:[anError objectForKey:@"error"] forKey:JPJSONRPCErrorMoreInfo];
+
+            // A Primitive or Structured value that contains additional information about the error. JSON-RPC 2.0 Compliant.
+            if ([anError objectForKey:@"data"]) 
+                [userInfo setObject:[anError objectForKey:@"data"] forKey:JPJSONRPCErrorData];
+
 			///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 			// Create an NSError.
-			NSError *JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
-													 code:[[anError objectForKey:@"code"] intValue]
-												 userInfo:userInfo];
+			JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
+                                            code:[[anError objectForKey:@"code"] intValue]
+                                        userInfo:userInfo];
             
-            // Fail the future.
-            [[event getFuture] setFailure:JSONError];
-			
 			//////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 			// Log.
 			Info( @"JSON Error Handled (%@) | Sending Error Upstream...", [JSONError localizedDescription] );
 			
-			///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-			// Send Error Upstream.
-			[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:[JSONError localizedDescription]]
-																	andError:JSONError]];
-			
-			// Break.
-			return;
 		}
 	}
 	
 	// ////// ////// ////// ////// ////// //////  ////// 
 	// JSON doesn't Contains RPC Results. It is invalid.
-	if ( ! [JSONDecoded objectForKey:@"result"] ) {
+	else if ( ! [JSONDecoded objectForKey:@"result"] ) {
 		NSString *errorReason = @"Invalid JSON-RPC data. JSON Object doesn't contain an 'result' entry.";
 		Warn( @"%@", errorReason );
         
         ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
         // Create an NSError.
-        NSError *JSONError = [NSError errorWithDomain:NSStringFromClass([self class])
-                                                 code:kJSONRPCInvalid
-                                             userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
-        
-        // Fail the future.
-        [[event getFuture] setFailure:JSONError];
-		
-		///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-		// Send Error Upstream.
-		[ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:errorReason]
-																andError:JSONError]
-		 ];
-        
-        // Break.
-		return;
+        JSONError = [NSError errorWithDomain:NSStringFromClass([self class])
+                                        code:kJSONRPCInvalid
+                                    userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
 	}
 	
+    // ////// ////// ////// ////// ////// //////  ////// 
+    // Some error formatted?
+    if ( JSONError ) {
+
+        // Fail the future.
+        [[event getFuture] setFailure:JSONError];
+
+        // Send Error Upstream.
+        [ctx sendUpstream:[JPDefaultPipelineExceptionEvent initWithCause:[JPPipelineException initWithReason:[JSONError localizedDescription]]
+                                                                andError:JSONError]];
+        
+        // We're sending a formatted error trough the pipeline. But also sending the full JSON-RPC Model with error and 
+        // other data below, maybe some another handler wants to known what to do with that.
+        
+    }
+        
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-	// Result Key.
-	NSDictionary *result = [JSONDecoded objectForKey:@"result"];
-	
+    // Assign data.
+    model.theId   = [JSONDecoded objectForKey:@"id"];
+    model.result  = [JSONDecoded objectForKey:@"result"];
+    model.error   = [JSONDecoded objectForKey:@"error"];
+    model.version = [JSONDecoded objectForKey:@"version"]; 
+    
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-	// Super Processing.
-	[super jsonDataDecoded:result withEvent:event andContext:ctx];
+	// Super Processing. (Send upstream).
+	[super jsonDataDecoded:model withEvent:event andContext:ctx];
 }
 
 @end

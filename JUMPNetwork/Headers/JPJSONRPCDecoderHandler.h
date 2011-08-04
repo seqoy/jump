@@ -16,8 +16,19 @@
 #import "JPPipelineException.h"
 #import "JPDefaultPipelineExceptionEvent.h"
 #import "JPDataProcessserJSON.h"
-#import "JPLogger.h"
 #import "JPJSONDecoderHandler.h"
+#import "JPJSONRPCModel.h"
+
+#import "JPLogger.h"
+
+/**
+ * Keys <tt>NSError.userInfo</tt>, for more data about JSON-RPC Errors decoded.<br>
+ * See <a href="http://json-rpc.org/wd/JSON-RPC-1-1-WD-20060807.html#ErrorObject">JSON-RPC 1.1 Error Object</a> definitions.<br>
+ * Also see <a href="http://groups.google.com/group/json-rpc/web/json-rpc-2-0">JSON-RPC 2.0 Error Object</a> definitions.
+ */
+FOUNDATION_EXPORT NSString *const JPJSONRPCErrorName;       // Compliant with JSON-RPC 1.1
+FOUNDATION_EXPORT NSString *const JPJSONRPCErrorMoreInfo;   // Compliant with JSON-RPC 1.1
+FOUNDATION_EXPORT NSString *const JPJSONRPCErrorData;       // Compliant with JSON-RPC 2.0
 
 /**
  * \ingroup jsonrpc_group

@@ -233,6 +233,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -270,31 +272,23 @@
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>3AEF17D813183ED200BC3759</string>
 								<string>3A7846CC13268C4F00C3374A</string>
-								<string>3AEF17E813183ED200BC3759</string>
-								<string>3AEF17EE13183ED200BC3759</string>
-								<string>3AEF17EB13183ED200BC3759</string>
 								<string>3AEF17DA13183ED200BC3759</string>
 								<string>3AEF17E013183ED200BC3759</string>
-								<string>1889406B1381839B00EFAE98</string>
+								<string>1889406C1381839F00EFAE98</string>
 								<string>3AEF17DD13183ED200BC3759</string>
-								<string>3AEF17DB13183ED200BC3759</string>
 								<string>3AEF17F113183ED200BC3759</string>
-								<string>3AEF18FA1318400500BC3759</string>
-								<string>3AEF190A131840E800BC3759</string>
 								<string>3AEF17FD13183ED200BC3759</string>
-								<string>3AEF181813183ED200BC3759</string>
-								<string>3AEF180513183ED200BC3759</string>
-								<string>1840603F13EEEEBB004E6BC0</string>
+								<string>3AEF181F13183ED200BC3759</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
-									<integer>18</integer>
-									<integer>16</integer>
-									<integer>14</integer>
+									<integer>12</integer>
+									<integer>11</integer>
+									<integer>9</integer>
+									<integer>7</integer>
 									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -331,14 +325,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPJSONDecoderHandler.m</string>
+								<string>JPJSONRPCMessage.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -346,14 +338,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPJSONDecoderHandler.m</string>
+										<string>JPJSONRPCMessage.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>184065CE13EEEEBB004E6BC0</string>
+										<string>185BE75613EB21EB003BA260</string>
 										<key>history</key>
 										<array>
-											<string>18405DE013EED428004E6BC0</string>
 											<string>18405DE313EED428004E6BC0</string>
 											<string>18405DEA13EED428004E6BC0</string>
 											<string>18405DEC13EED428004E6BC0</string>
@@ -368,17 +359,11 @@
 											<string>184060E413EEEEBB004E6BC0</string>
 											<string>184060E513EEEEBB004E6BC0</string>
 											<string>1840615413EEEEBB004E6BC0</string>
-											<string>1840616013EEEEBB004E6BC0</string>
-											<string>1840616113EEEEBB004E6BC0</string>
 											<string>1840616413EEEEBB004E6BC0</string>
-											<string>184061C413EEEEBB004E6BC0</string>
-											<string>184061C713EEEEBB004E6BC0</string>
 											<string>184061C813EEEEBB004E6BC0</string>
 											<string>184061FF13EEEEBB004E6BC0</string>
 											<string>1840629913EEEEBB004E6BC0</string>
 											<string>1840629C13EEEEBB004E6BC0</string>
-											<string>1840629E13EEEEBB004E6BC0</string>
-											<string>1840629F13EEEEBB004E6BC0</string>
 											<string>184062A213EEEEBB004E6BC0</string>
 											<string>1840632A13EEEEBB004E6BC0</string>
 											<string>1840644013EEEEBB004E6BC0</string>
@@ -389,7 +374,6 @@
 											<string>1840644913EEEEBB004E6BC0</string>
 											<string>1840644B13EEEEBB004E6BC0</string>
 											<string>1840644D13EEEEBB004E6BC0</string>
-											<string>1840646113EEEEBB004E6BC0</string>
 											<string>1840646213EEEEBB004E6BC0</string>
 											<string>1840648713EEEEBB004E6BC0</string>
 											<string>1840648813EEEEBB004E6BC0</string>
@@ -397,31 +381,41 @@
 											<string>1840648A13EEEEBB004E6BC0</string>
 											<string>1840648B13EEEEBB004E6BC0</string>
 											<string>1840648C13EEEEBB004E6BC0</string>
-											<string>1840648D13EEEEBB004E6BC0</string>
-											<string>1840648E13EEEEBB004E6BC0</string>
 											<string>1840648F13EEEEBB004E6BC0</string>
 											<string>1840649213EEEEBB004E6BC0</string>
-											<string>1840649313EEEEBB004E6BC0</string>
-											<string>184064A013EEEEBB004E6BC0</string>
-											<string>184064A213EEEEBB004E6BC0</string>
-											<string>184064A313EEEEBB004E6BC0</string>
-											<string>184064A613EEEEBB004E6BC0</string>
-											<string>184064F213EEEEBB004E6BC0</string>
-											<string>184064F313EEEEBB004E6BC0</string>
-											<string>184064F413EEEEBB004E6BC0</string>
-											<string>184064F513EEEEBB004E6BC0</string>
 											<string>184064F613EEEEBB004E6BC0</string>
-											<string>184064F713EEEEBB004E6BC0</string>
 											<string>184064F813EEEEBB004E6BC0</string>
 											<string>184064FB13EEEEBB004E6BC0</string>
 											<string>184064FC13EEEEBB004E6BC0</string>
-											<string>1840650913EEEEBB004E6BC0</string>
-											<string>1840656A13EEEEBB004E6BC0</string>
-											<string>1840658913EEEEBB004E6BC0</string>
-											<string>1840658A13EEEEBB004E6BC0</string>
 											<string>1840658B13EEEEBB004E6BC0</string>
 											<string>1840658C13EEEEBB004E6BC0</string>
-											<string>1840658D13EEEEBB004E6BC0</string>
+											<string>18AD643313E855B000E551C0</string>
+											<string>18AD643413E855B000E551C0</string>
+											<string>18AD643513E855B000E551C0</string>
+											<string>18AD643713E855B000E551C0</string>
+											<string>18AD643813E855B000E551C0</string>
+											<string>18AD643913E855B000E551C0</string>
+											<string>18AD643A13E855B000E551C0</string>
+											<string>18AD643B13E855B000E551C0</string>
+											<string>18AD643C13E855B000E551C0</string>
+											<string>18AD643D13E855B000E551C0</string>
+											<string>18AD643E13E855B000E551C0</string>
+											<string>18AD644413E855B000E551C0</string>
+											<string>18AD64F713E87DC200E551C0</string>
+											<string>18AD656C13E8AF8400E551C0</string>
+											<string>185BE72F13EB1B83003BA260</string>
+											<string>185BE73113EB1B83003BA260</string>
+											<string>185BE73213EB1B83003BA260</string>
+											<string>185BE73313EB1B83003BA260</string>
+											<string>185BE73513EB1B83003BA260</string>
+											<string>185BE74F13EB21EB003BA260</string>
+											<string>185BE75013EB21EB003BA260</string>
+											<string>185BE75113EB21EB003BA260</string>
+											<string>185BE75213EB21EB003BA260</string>
+											<string>185BE75313EB21EB003BA260</string>
+											<string>185BE75413EB21EB003BA260</string>
+											<string>185BE75513EB21EB003BA260</string>
+											<string>1840648E13EEEEBB004E6BC0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -479,9 +473,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1840632E13EEEEBB004E6BC0</string>
+				<string>185BE73A13EB1B83003BA260</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1840632F13EEEEBB004E6BC0</string>
+				<string>185BE73B13EB1B83003BA260</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -619,9 +613,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>18C16E9513DA2037005D64B1</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/JUMPNetwork.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -648,7 +640,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPSimplePipelineHandler.m</string>
+								<string>JPJSONRPCEncoderHandler.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -704,7 +696,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18C16E9513DA2037005D64B1</string>
-				<string>1840633013EEEEBB004E6BC0</string>
+				<string>185BE72E13EB1B6B003BA260</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -842,7 +834,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPSimplePipelineDownstreamHandler.h</string>
+										<string></string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -900,8 +892,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>1840649E13EEEEBB004E6BC0</string>
-				<string>1840649F13EEEEBB004E6BC0</string>
+				<string>18AD644F13E8790D00E551C0</string>
+				<string>18AD645013E8790D00E551C0</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
