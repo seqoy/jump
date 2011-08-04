@@ -61,47 +61,52 @@ configure() {
 	# if JUMPCore Directory exist...
 	if [ -d "../JUMPCore/Headers" ]; then
 		echo "Linking JUMPCore Headers..."
-		ln -s ../JUMPCore/Headers/* .
+		ln -s  ../JUMPCore/Headers/* .
+		echo "Linking Chameleon UIKit (For Mac OS Compatiblity)..."
+		ln -s  ../JUMPCore/Third-Part\ Libraries/UIKit.framework/Headers/* .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPData Directory exist...
 	if [ -d "../JUMPData/Headers" ]; then
 		echo "Linking JUMPData Headers (Includes JSON Libraries and Google Toolbox For Mac)..."
-		ln -s ../JUMPData/Headers/* .
-		ln -s ../JUMPData/Third-Part\ Libraries/Google\ Toolbox\ For\ Mac/Headers/* .
-		ln -s ../JUMPData/Third-Part\ Libraries/JSON\ Framework/Headers/* .
+		ln -s  ../JUMPData/Headers/* .
+		ln -s  ../JUMPData/Third-Part\ Libraries/Google\ Toolbox\ For\ Mac/Headers/* .
+		ln -s  ../JUMPData/Third-Part\ Libraries/JSON\ Framework/Headers/* .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPDatabase Directory exist...
 	if [ -d "../JUMPDatabase/Headers" ]; then
 		echo "Linking JUMPDatabase Headers..."
-		ln -s ../JUMPDatabase/Headers/* .
+		ln -s  ../JUMPDatabase/Headers/* .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPNetwork Directory exist...
 	if [ -d "../JUMPNetwork/Headers" ]; then
 		echo "Linking JUMPNetwork Headers (Includes AISHTTPRequestLibrary)..."
-		ln -s ../JUMPNetwork/Headers/* .
-		ln -s ../JUMPNetwork/Libraries/AISHTTPRequestLibrary/Headers/* .
+		ln -s  ../JUMPNetwork/Headers/* .
+		ln -s  ../JUMPNetwork/Libraries/AISHTTPRequestLibrary/Classes/*.h .
+        ln -s  ../JUMPNetwork/Libraries/AISHTTPRequestLibrary/Classes/CloudFiles/*.h .
+        ln -s  ../JUMPNetwork/Libraries/AISHTTPRequestLibrary/Classes/S3/*.h .
+        ln -s  ../JUMPNetwork/Libraries/AISHTTPRequestLibrary/External/Reachability/*.h .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPCore Directory exist...
 	if [ -d "../JUMPUserInterface/Headers" ]; then
 		echo "Linking JUMPUserInterface Headers..."
-		ln -s ../JUMPUserInterface/Headers/* .
+		ln -s  ../JUMPUserInterface/Headers/* .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPCore Directory exist...
 	if [ -d "../JUMPLogger/Headers" ]; then
 		echo "Linking JUMPLogger Headers (Includes Log4CocoaTouch and NSLogger)..."
-		ln -s ../JUMPLogger/Headers/* .
-		ln -s ../JUMPLogger/Libraries/Log4CocoaTouch/Headers/* .
-		ln -s ../JUMPLogger/Libraries/NSLogger/Headers/* .
+		ln -s  ../JUMPLogger/Headers/* .
+		ln -s  ../JUMPLogger/Libraries/Log4CocoaTouch/Headers/* .
+		ln -s  ../JUMPLogger/Libraries/NSLogger/Headers/* .
 	fi
 }
 
