@@ -15,6 +15,10 @@
  */
 #import "JPJSONRPCDecoderHandler.h"
 
+NSString * const JPJSONRPCErrorName     = @"JPJSONRPCErrorName";
+NSString * const JPJSONRPCErrorMoreInfo = @"JPJSONRPCErrorMoreInfo";
+NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
+
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPJSONRPCDecoderHandler
 

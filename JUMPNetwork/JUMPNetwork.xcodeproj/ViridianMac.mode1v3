@@ -233,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -274,19 +272,18 @@
 								<string>3A7846CC13268C4F00C3374A</string>
 								<string>3AEF17DA13183ED200BC3759</string>
 								<string>3AEF17E013183ED200BC3759</string>
+								<string>1889406B1381839B00EFAE98</string>
 								<string>1889406C1381839F00EFAE98</string>
-								<string>3AEF17DD13183ED200BC3759</string>
+								<string>185BE74C13EB21DF003BA260</string>
 								<string>3AEF17F113183ED200BC3759</string>
-								<string>3AEF17FD13183ED200BC3759</string>
-								<string>3AEF181F13183ED200BC3759</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>11</integer>
+									<integer>18</integer>
+									<integer>13</integer>
 									<integer>9</integer>
 									<integer>7</integer>
 									<integer>3</integer>
@@ -325,12 +322,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPJSONRPCMessage.m</string>
+								<string>JPJSONRPCDecoderHandler.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,11 +337,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPJSONRPCMessage.m</string>
+										<string>JPJSONRPCDecoderHandler.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>185BE75613EB21EB003BA260</string>
+										<string>185BE88C13EB33F1003BA260</string>
 										<key>history</key>
 										<array>
 											<string>18405DE313EED428004E6BC0</string>
@@ -393,7 +392,6 @@
 											<string>18AD643413E855B000E551C0</string>
 											<string>18AD643513E855B000E551C0</string>
 											<string>18AD643713E855B000E551C0</string>
-											<string>18AD643813E855B000E551C0</string>
 											<string>18AD643913E855B000E551C0</string>
 											<string>18AD643A13E855B000E551C0</string>
 											<string>18AD643B13E855B000E551C0</string>
@@ -404,18 +402,21 @@
 											<string>18AD64F713E87DC200E551C0</string>
 											<string>18AD656C13E8AF8400E551C0</string>
 											<string>185BE72F13EB1B83003BA260</string>
-											<string>185BE73113EB1B83003BA260</string>
 											<string>185BE73213EB1B83003BA260</string>
 											<string>185BE73313EB1B83003BA260</string>
 											<string>185BE73513EB1B83003BA260</string>
-											<string>185BE74F13EB21EB003BA260</string>
-											<string>185BE75013EB21EB003BA260</string>
 											<string>185BE75113EB21EB003BA260</string>
 											<string>185BE75213EB21EB003BA260</string>
-											<string>185BE75313EB21EB003BA260</string>
-											<string>185BE75413EB21EB003BA260</string>
-											<string>185BE75513EB21EB003BA260</string>
-											<string>1840648E13EEEEBB004E6BC0</string>
+											<string>185BE78713EB30E7003BA260</string>
+											<string>185BE78813EB30E7003BA260</string>
+											<string>185BE78A13EB30E7003BA260</string>
+											<string>185BE78B13EB30E7003BA260</string>
+											<string>185BE78D13EB30E7003BA260</string>
+											<string>185BE78E13EB30E7003BA260</string>
+											<string>185BE78F13EB30E7003BA260</string>
+											<string>185BE86913EB321D003BA260</string>
+											<string>185BE88813EB33B5003BA260</string>
+											<string>185BE88913EB33B5003BA260</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -427,14 +428,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1101, 896}}</string>
+								<string>{{0, 0}, {1101, 897}}</string>
 								<key>RubberWindowFrame</key>
 								<string>58 116 1463 942 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>896pt</string>
+							<string>897pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -473,9 +474,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>185BE73A13EB1B83003BA260</string>
+				<string>185BE86B13EB321D003BA260</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>185BE73B13EB1B83003BA260</string>
+				<string>185BE86C13EB321D003BA260</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -633,14 +634,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPJSONRPCEncoderHandler.h</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -696,7 +695,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18C16E9513DA2037005D64B1</string>
-				<string>185BE72E13EB1B6B003BA260</string>
+				<string>185BE86D13EB321D003BA260</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
