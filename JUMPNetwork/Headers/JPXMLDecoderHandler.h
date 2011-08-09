@@ -22,6 +22,11 @@
 
 
 /**
+ * Keys in the <tt>NSError.userInfo</tt> for more data about XML Errors when decoding.
+ */
+FOUNDATION_EXPORT NSString *const JPXMLDecoderParserError;       /// The Parser Error associated, if isn't available or isn't setted return <tt>nil</tt>.
+
+/**
  * \nosubgrouping 
 
  An simple XML Decoder Handler.

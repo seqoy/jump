@@ -20,7 +20,6 @@
 #import "JPDataProcessserJSON.h"
 #import "JPLogger.h"
 
-
 /**
  * \ingroup json_group
  * \nosubgrouping 
