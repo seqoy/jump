@@ -269,14 +269,17 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
-								<string>1837D5BA135CCE400014E7CC</string>
+								<string>184BE89813731D6600C1C2C6</string>
+								<string>184BE89A13731D8500C1C2C6</string>
+								<string>3AFF843F131FC24600A23032</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
+									<integer>8</integer>
 									<integer>6</integer>
+									<integer>5</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -301,7 +304,7 @@
 							<real>305</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>230 136 1657 890 0 0 1920 1058 </string>
+						<string>470 163 1657 890 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -319,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPSyncManagerHandler.m</string>
+								<string>JPFeedPipelineHandler.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,17 +330,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPSyncManagerHandler.m</string>
+										<string>JPFeedPipelineHandler.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>185BE7D913EB30F6003BA260</string>
+										<string>187255AC13F1AF7C00CFDBB0</string>
 										<key>history</key>
 										<array>
 											<string>180C3F97135E02A400D7B699</string>
 											<string>180C3F98135E02A400D7B699</string>
-											<string>180C44CF135E272300D7B699</string>
-											<string>180C4511135E2FBA00D7B699</string>
 											<string>180C4514135E2FBA00D7B699</string>
 											<string>185F4C41135F1D430069C261</string>
 											<string>18791E6C1368B69200EFC991</string>
@@ -388,11 +389,7 @@
 											<string>184BEA50137332EC00C1C2C6</string>
 											<string>184BEA51137332EC00C1C2C6</string>
 											<string>184BEAD3137338A200C1C2C6</string>
-											<string>18A4787A137ADBAC00D1094D</string>
 											<string>188946671383190A00EFAE98</string>
-											<string>188946681383190A00EFAE98</string>
-											<string>18955DFD13840D6D002E8167</string>
-											<string>1835162F1386EFC300754F87</string>
 											<string>183516301386EFC300754F87</string>
 											<string>183516321386EFC300754F87</string>
 											<string>183516341386EFC300754F87</string>
@@ -406,26 +403,32 @@
 											<string>182032F3138BEAE400957460</string>
 											<string>18203307138BEB6F00957460</string>
 											<string>185D86BD1396D466009030A0</string>
-											<string>185D86BE1396D466009030A0</string>
-											<string>18ECA41713A147670091D2F6</string>
 											<string>1831D17413AA9CAB00AB4D55</string>
-											<string>1831D24313AAA9B500AB4D55</string>
-											<string>1831D24513AAA9B500AB4D55</string>
 											<string>1870A67A13D0E3CF00A49862</string>
 											<string>1844D81713D48D460020F6F3</string>
 											<string>1844D88713D49C130020F6F3</string>
-											<string>186E5D3E13E2044A004129B7</string>
 											<string>1875EF5213E33749002BBEA1</string>
 											<string>1875EFBF13E33E74002BBEA1</string>
 											<string>185BE7D013EB30F6003BA260</string>
-											<string>185BE7D113EB30F6003BA260</string>
 											<string>185BE7D213EB30F6003BA260</string>
 											<string>185BE7D313EB30F6003BA260</string>
 											<string>185BE7D413EB30F6003BA260</string>
 											<string>185BE7D513EB30F6003BA260</string>
 											<string>185BE7D613EB30F6003BA260</string>
 											<string>185BE7D713EB30F6003BA260</string>
-											<string>185BE7D813EB30F6003BA260</string>
+											<string>184254FE13EC9522000581FB</string>
+											<string>184254FF13EC9522000581FB</string>
+											<string>1842550013EC9522000581FB</string>
+											<string>1842550113EC9522000581FB</string>
+											<string>1842550213EC9522000581FB</string>
+											<string>1842550313EC9522000581FB</string>
+											<string>1842550413EC9522000581FB</string>
+											<string>1842550513EC9522000581FB</string>
+											<string>1842550613EC9522000581FB</string>
+											<string>1842550713EC9522000581FB</string>
+											<string>1842550813EC9522000581FB</string>
+											<string>187255AA13F1AF7C00CFDBB0</string>
+											<string>187255AB13F1AF7C00CFDBB0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -439,7 +442,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1330, 844}}</string>
 								<key>RubberWindowFrame</key>
-								<string>230 136 1657 890 0 0 1920 1058 </string>
+								<string>470 163 1657 890 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -459,7 +462,7 @@
 								<key>Frame</key>
 								<string>{{0, 849}, {1330, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>230 136 1657 890 0 0 1920 1058 </string>
+								<string>470 163 1657 890 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -483,9 +486,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>185BE7DA13EB30F6003BA260</string>
+				<string>187255AD13F1AF7C00CFDBB0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>185BE7DB13EB30F6003BA260</string>
+				<string>187255AE13F1AF7C00CFDBB0</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -624,10 +627,11 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>180CF24E1342731800B90BDA</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPData/JUMPData.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>230 136 1657 890 0 0 1920 1058 </string>
+	<string>470 163 1657 890 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -704,7 +708,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>180CF24E1342731800B90BDA</string>
-				<string>185BE7DC13EB30F6003BA260</string>
+				<string>187255AF13F1AF7C00CFDBB0</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -966,7 +970,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>184065D813EEEEBB004E6BC0</string>
+				<string>187255B013F1AF7C00CFDBB0</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

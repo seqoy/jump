@@ -29,7 +29,6 @@
 		18AA97431332A94D00C59F0E /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA97421332A94D00C59F0E /* LoggerClient.m */; };
 		18AA974B1332A97700C59F0E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA974A1332A97700C59F0E /* CFNetwork.framework */; };
 		18AA974E1332A98300C59F0E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA974D1332A98300C59F0E /* SystemConfiguration.framework */; };
-		18AA976C1332A9F800C59F0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA976B1332A9F800C59F0E /* UIKit.framework */; };
 		18BCB7011330F32600986778 /* JUMPLoggerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCB6881330EC3700986778 /* JUMPLoggerConfig.m */; };
 		18BCB7041330F34200986778 /* JUMPLoggerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BCB6871330EC3700986778 /* JUMPLoggerConfig.h */; };
 		18BCB8081330FC7A00986778 /* JPLoggerAbstractFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BCB8061330FC7A00986778 /* JPLoggerAbstractFactory.h */; };
@@ -77,7 +76,6 @@
 		18AA97421332A94D00C59F0E /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerClient.m; path = Libraries/NSLogger/Source/LoggerClient.m; sourceTree = "<group>"; };
 		18AA974A1332A97700C59F0E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		18AA974D1332A98300C59F0E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		18AA976B1332A9F800C59F0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18BCB6871330EC3700986778 /* JUMPLoggerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPLoggerConfig.h; sourceTree = "<group>"; };
 		18BCB6881330EC3700986778 /* JUMPLoggerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLoggerConfig.m; path = Sources/JUMPLoggerConfig.m; sourceTree = "<group>"; };
 		18BCB8061330FC7A00986778 /* JPLoggerAbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPLoggerAbstractFactory.h; path = Headers/JPLoggerAbstractFactory.h; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				18647761132FF6B4002CBD59 /* libLog4CocoTouch.a in Frameworks */,
 				18AA974B1332A97700C59F0E /* CFNetwork.framework in Frameworks */,
 				18AA974E1332A98300C59F0E /* SystemConfiguration.framework in Frameworks */,
-				18AA976C1332A9F800C59F0E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +122,6 @@
 				18647737132FF63E002CBD59 /* Foundation.framework */,
 				18AA974A1332A97700C59F0E /* CFNetwork.framework */,
 				18AA974D1332A98300C59F0E /* SystemConfiguration.framework */,
-				18AA976B1332A9F800C59F0E /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,6 +345,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -357,6 +354,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -411,6 +409,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JPLOGGER_DISABLE_ALL;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution;
 		};
