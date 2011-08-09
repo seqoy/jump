@@ -56,15 +56,16 @@
     // Starting, so progress is 0%.
     [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
 	
+    ///////// /////// /////// /////// /////// /////// /////// /////// 
+	// Handle if is an Exception Event.
+	if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) 
+        [self exceptionCaughtWithContext:ctx withException:(<JPPipelineExceptionEvent>)e];
+    
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
-	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
+	else if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
 		[self messageReceived:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
 	
-	///////// /////// /////// /////// /////// /////// /////// /////// 
-	// Handle if is an Exception Event.
-	else if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) 
-		[self exceptionCaughtWithContext:ctx withException:(<JPPipelineExceptionEvent>)e];
 	
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// If can't handle, send Up Stream.
@@ -84,13 +85,13 @@
 	[ctx sendUpstream:e];
 }
 
-/**
- * Invoked when an exception was raised.
- */
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+// Invoked when an exception was raised.
 -(void)exceptionCaughtWithContext:(<JPPipelineHandlerContext>)ctx withException:(<JPPipelineExceptionEvent>)e {
 	if (self == [[ctx getPipeline] performSelector:@selector(last)] ) {
-		Warn( @"EXCEPTION, please implement [%@ exceptionCaughtWithContext:withException:] for proper handling: %@",
-			 NSStringFromClass([self class]), e);
+		Info( @"An exception was found and no Pipeline Handler was able to handle it.\n" 
+              @"You could implement exceptionCaughtWithContext:withException: on same handler if you want to deal with that.\n"
+              @"The unhandled exception are: %@", e);
 	}
 	
 	// Send Error Event Upstream.
