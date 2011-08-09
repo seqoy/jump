@@ -15,6 +15,8 @@
  */
 #import "JPXMLDecoderHandler.h"
 
+NSString * const JPXMLDecoderParserError     = @"parserError";
+
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPXMLDecoderHandler
 
@@ -74,13 +76,28 @@
 		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as XML Object.\nProbably isn't an XML String or is invalid.\nParser reason: %@.", e.reason];
 		Warn( @"JPXMLDecoderHandler :: %@\nThe XML that fails is: %@", errorReason, stringResponse );
 		
-		// Parser NSError.
+		// Retrieve the Parser Error.
 		NSError *parserError = [[e userInfo] objectForKey:@"parserError"];
         
+        // Get the Error Domain and Code from Parser Error if available, if isn't defined will assume default.
+        NSString  *errorDomain = ( parserError ? parserError.domain : @"JPXMLDecoderHandler" );
+        NSInteger errorCode    = ( parserError ? parserError.code   : -1 );
+        
+        // Create the User Info.
+        NSMutableDictionary *userInfo = [[NSMutableDictionary new] autorelease];
+        
+        // Assign the Parser Error in it, if available.
+        if ( parserError ) {
+            [userInfo setObject:parserError forKey:JPXMLDecoderParserError];
+        }
+        
+        // Assign the Error Reason (Description) in it.
+        [userInfo setObject:errorReason forKey:NSLocalizedDescriptionKey];
+        
         // Create error.
-        NSError *decodeError = [NSError errorWithDomain:parserError.domain
-                                                   code:parserError.code 
-                                               userInfo:[NSDictionary dictionaryWithObjectsAndKeys:errorReason, NSLocalizedDescriptionKey, parserError, @"parserError", nil]];
+        NSError *decodeError = [NSError errorWithDomain:errorDomain
+                                                   code:errorCode
+                                               userInfo:userInfo];
         
         // Fail the future.
         [[event getFuture] setFailure:decodeError];
