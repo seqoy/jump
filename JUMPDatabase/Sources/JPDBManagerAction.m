@@ -454,7 +454,7 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 		return;
 
 	/////////////////
-	NSSortDescriptor *found;
+	NSSortDescriptor *found = nil;
 	
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 	// Search him.
