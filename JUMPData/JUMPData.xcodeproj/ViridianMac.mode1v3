@@ -270,17 +270,13 @@
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
 								<string>184BE89813731D6600C1C2C6</string>
-								<string>184BE89A13731D8500C1C2C6</string>
-								<string>3AFF843F131FC24600A23032</string>
+								<string>1837D5BA135CCE400014E7CC</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>6</integer>
-									<integer>5</integer>
-									<integer>4</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -304,7 +300,7 @@
 							<real>305</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>470 163 1657 890 0 0 1920 1058 </string>
+						<string>153 154 1657 890 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -322,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPFeedPipelineHandler.m</string>
+								<string>JUMPData.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPFeedPipelineHandler.m</string>
+										<string>JUMPData.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>187255AC13F1AF7C00CFDBB0</string>
+										<string>1872563413F1BD3C00CFDBB0</string>
 										<key>history</key>
 										<array>
 											<string>180C3F97135E02A400D7B699</string>
@@ -405,9 +401,7 @@
 											<string>185D86BD1396D466009030A0</string>
 											<string>1831D17413AA9CAB00AB4D55</string>
 											<string>1870A67A13D0E3CF00A49862</string>
-											<string>1844D81713D48D460020F6F3</string>
 											<string>1844D88713D49C130020F6F3</string>
-											<string>1875EF5213E33749002BBEA1</string>
 											<string>1875EFBF13E33E74002BBEA1</string>
 											<string>185BE7D013EB30F6003BA260</string>
 											<string>185BE7D213EB30F6003BA260</string>
@@ -416,11 +410,8 @@
 											<string>185BE7D513EB30F6003BA260</string>
 											<string>185BE7D613EB30F6003BA260</string>
 											<string>185BE7D713EB30F6003BA260</string>
-											<string>184254FE13EC9522000581FB</string>
 											<string>184254FF13EC9522000581FB</string>
 											<string>1842550013EC9522000581FB</string>
-											<string>1842550113EC9522000581FB</string>
-											<string>1842550213EC9522000581FB</string>
 											<string>1842550313EC9522000581FB</string>
 											<string>1842550413EC9522000581FB</string>
 											<string>1842550513EC9522000581FB</string>
@@ -428,7 +419,9 @@
 											<string>1842550713EC9522000581FB</string>
 											<string>1842550813EC9522000581FB</string>
 											<string>187255AA13F1AF7C00CFDBB0</string>
-											<string>187255AB13F1AF7C00CFDBB0</string>
+											<string>1872563213F1BD3C00CFDBB0</string>
+											<string>1872563313F1BD3C00CFDBB0</string>
+											<string>1844D81713D48D460020F6F3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -442,7 +435,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1330, 844}}</string>
 								<key>RubberWindowFrame</key>
-								<string>470 163 1657 890 0 0 1920 1058 </string>
+								<string>153 154 1657 890 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -462,7 +455,7 @@
 								<key>Frame</key>
 								<string>{{0, 849}, {1330, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>470 163 1657 890 0 0 1920 1058 </string>
+								<string>153 154 1657 890 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -486,9 +479,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>187255AD13F1AF7C00CFDBB0</string>
+				<string>1872563513F1BD3C00CFDBB0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>187255AE13F1AF7C00CFDBB0</string>
+				<string>1872563613F1BD3C00CFDBB0</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -627,11 +620,10 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>180CF24E1342731800B90BDA</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPData/JUMPData.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>470 163 1657 890 0 0 1920 1058 </string>
+	<string>153 154 1657 890 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -708,7 +700,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>180CF24E1342731800B90BDA</string>
-				<string>187255AF13F1AF7C00CFDBB0</string>
+				<string>1872563713F1BD3C00CFDBB0</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
