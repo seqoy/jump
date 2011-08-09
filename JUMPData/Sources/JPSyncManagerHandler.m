@@ -156,7 +156,7 @@
 -(NSMutableDictionary*)createNewFullCopyOfDictionary:(NSMutableDictionary *)anDictionary {
 	
 	// Create a empty dictionary
-	NSMutableDictionary *copiedDictionary = [NSMutableDictionary dictionary];
+	NSMutableDictionary *copiedDictionary = [NSMutableDictionary new];
 	
 	// Loop on all elements.
 	for ( id key in anDictionary ) {
@@ -164,12 +164,14 @@
 		//// //// //// //// //// //// //// //// //// //// //// //
 		
 		// Test if this element are one class of Dictionary.
-		if ( [ [anDictionary objectForKey:key] isMemberOfClass: NSClassFromString( @"NSDictionary" ) ] ||
-			 [ [anDictionary objectForKey:key] isMemberOfClass: NSClassFromString( @"NSMutableDictionary" ) ] ||
-			 [ [anDictionary objectForKey:key] isMemberOfClass: NSClassFromString( @"NSCFDictionary" ) ] ) {
+		if ( [ [anDictionary objectForKey:key] isMemberOfClass: [NSDictionary class] ] ||
+			 [ [anDictionary objectForKey:key] isMemberOfClass: [NSMutableDictionary class] ] ) {
 			
 			// Call this same method to convert this class of Dictionary.
-			NSMutableDictionary *convertedObject = [self createNewFullCopyOfDictionary:[anDictionary objectForKey:key]]; 
+			NSMutableDictionary *convertedObject = [self createNewFullCopyOfDictionary:[anDictionary objectForKey:key]];
+
+            // Converted are autoreleseable.
+            [convertedObject autorelease];
 			
 			//// //// //// //// //// //// //// //// //// //// //// //
 			
@@ -180,7 +182,7 @@
 		} else {
 			
 			// Copy this element. 
-			[copiedDictionary setObject:[[anDictionary objectForKey:key] mutableCopy] forKey:key ]; 
+			[copiedDictionary setObject:[[[anDictionary objectForKey:key] mutableCopy] autorelease] forKey:key ]; 
 		}
 	}
 	
@@ -212,7 +214,7 @@
 	}
 	
 	// Return an copy.
-	return [self createNewFullCopyOfDictionary:[maps objectForKey:anMethodName]];
+	return [[self createNewFullCopyOfDictionary:[maps objectForKey:anMethodName]] autorelease];
 }
 
 
