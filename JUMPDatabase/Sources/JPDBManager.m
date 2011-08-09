@@ -235,9 +235,6 @@
 				// Release.
 				[inverseProperty release];
 			}
-			
-			// Release.
-			[workingRelationship release]; 
 		}
 	}
 	
