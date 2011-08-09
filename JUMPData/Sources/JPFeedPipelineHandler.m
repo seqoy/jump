@@ -112,7 +112,7 @@
 		 //// //// //// //// //// //// //// //// ////  //// //// //// //// //// //// //// //// ////  //// //// //// //// //// //// //// //// //// 
 		// If we can't identify. We just send the event upstream.
 		else {
-			Info( @"%@ :: Doesn't found an RSS 2.0 or Atom feed. Just sending event upstream...", NSStringFromClass([self class]) );
+			Warn( @"%@ :: Doesn't found an RSS 2.0 or Atom feed. Just sending event upstream...", NSStringFromClass([self class]) );
 		}
 	}
 	
