@@ -23,6 +23,15 @@
 +(id)convertFromXML:(NSString*)anXMLString {
 	// If some error ocurr will store here.
 	NSError *parseError = nil;
+    
+    // If is a NULL Object, can't process.
+    if ( [anXMLString isKindOfClass:[NSNull class]] ) {
+        NSException *exception = [NSException exceptionWithName:@"JPXMLProcesser"
+														 reason:@"XML string to process is a NULL Object. Can't parse."
+													   userInfo:nil]; 
+		[exception raise];
+        return nil;
+    }
 	
 	// Parse.
 	id result = [JPXMLParser convertFromXMLString:anXMLString error:&parseError];
