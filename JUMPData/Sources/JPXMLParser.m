@@ -276,8 +276,10 @@
 	
 	/////// //////// //////// //////// //////// //////// //////// //////// 
 	// If doesn't have data.
-	if ( data == nil ) 
-		[NSException raise:@"JPXMLReaderException" format:@"Can't process NULL data."];
+	if ( data == nil ) {
+        [NSException raise:@"JPXMLReaderException" format:@"Can't process NULL data."];
+        return nil;
+    }
 	
 	/////// //////// //////// //////// //////// //////// //////// //////// 
 	// Init.
@@ -285,16 +287,16 @@
 	
 	// Process.
 	BOOL success = [parserInstance parse];
-	
-	// Will autorelease the parser later.
+
+    // Will autorelease the parser later.
 	[parserInstance autorelease];
 	
 	// If some error.
-	if ( !success ) {
+	if ( !success && [parserInstance parserError]) {
 		*error = [parserInstance parserError];
 		return nil;
 	}
-	
+
 	// If ok, return processed...
     return [parserInstance parsedObject];
 }
