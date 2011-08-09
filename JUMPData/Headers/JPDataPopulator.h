@@ -78,12 +78,48 @@
  */
 +(id)populateObject:(id)anObject withJSONString:(NSString*)anJSONString usingMap:(NSDictionary*)anMap withDelegate:(id<JPDataPopulatorDelegate>)anDelegate;
 
+/**
+ * Populate the informed object with data from a second object. This method will populate the first object
+ * reading the properties of a second object following the instructions based on some map.
+ * @param anObject The object to populate.
+ * @param anSecondObject An object that contains data to populate the first object.
+ * @param usingMap An <tt>NSDictionary</tt> that represent an map that describe how to populate the object.
+ */
++(id)populateObject:(id)anObject withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap;
+
+/**
+ * Populate the informed object with data from a second object. This method will populate the first object
+ * reading the properties of a second object following the instructions based on some map.
+ * @param anObject The object to populate.
+ * @param anSecondObject An object that contains data to populate the first object.
+ * @param usingMap An <tt>NSDictionary</tt> that represent an map that describe how to populate the object.
+ * @param anDelegate to extend the JPDataPopulator class. See JPDataPopulatorDelegate documentation for more information.
+ */
++(id)populateObject:(id)anObject withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap withDelegate:(id<JPDataPopulatorDelegate>)anDelegate;
+
+/**
+ * Populate the informed dictionary with data from a second object. This method will populate the dictionary
+ * reading the properties of a second object following the instructions based on some map.
+ * @param anDictionary The dictionary to populate.
+ * @param anSecondObject An object that contains data to populate the first object.
+ * @param usingMap An <tt>NSDictionary</tt> that represent an map that describe how to populate the object.
+ * @param anDelegate to extend the JPDataPopulator class. See JPDataPopulatorDelegate documentation for more information.
+ */
++(id)populateDictionary:(NSMutableDictionary*)anDictionary withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap;
+
+/**
+ * Return an Dictionary with all properties of giving object. The dictionary contain
+ * keys for the properties names and values for every property value. This method
+ * only retrieve properties of 
+ * @param anObject An object to retrieve properties for.
+ */
++(NSDictionary*)retrievePropertiesFromObject:(id)anObject;
+
 ///@}
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// 
 #pragma mark -
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 /*
--(id)populateJSONDictionary:(NSMutableDictionary*)anMap withData:(NSArray*)data;
 -(id)populateObject:(id)anObject withData:(NSDictionary*)anDictionary usingMap:(NSDictionary*)anMap andRelationshipParameters:(NSMutableDictionary*)relationshipParameters;
 
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// 

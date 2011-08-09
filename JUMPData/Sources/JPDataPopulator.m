@@ -272,10 +272,92 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(id)populateDictionary:(NSMutableDictionary*)newPopulated withData:(NSDictionary*)data usingMap:(NSDictionary*)anMap {
+	
+	// Start an loop on the map.
+	for ( id key in [anMap allValues] ) {
+		
+		//// //// //// //// //// //// //// //// //// //// //// ////
+		// If the element is not nil, process.
+		if ( [data objectForKey:key] ) {
+			
+			// Transport elemnt.
+            [newPopulated setObject:[data objectForKey:key] forKey:key];
+		}
+	}
+	
+	// Return populated map (Dictionary).
+	return newPopulated;	
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
++(NSDictionary*)retrievePropertiesFromObject:(id)anObject {
+
+	///////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+    // Get a list of all properties of the Seconds Class.
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([anObject class], &outCount);
+    
+	///////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+    // Format a NSDictionary with this properties.
+    NSMutableDictionary *extractedData = [[NSMutableDictionary new] autorelease];
+    
+	///////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+    for(i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        
+        // Property Name.
+        const char *propName = property_getName(property);
+        NSString *propertyName = [NSString stringWithCString:propName encoding:NSUTF8StringEncoding];
+        
+        if(propName) {
+            // Assign to Dictionary.
+            [extractedData setObject:[anObject valueForKey:propertyName] forKey:propertyName];
+        }
+    }
+    // Free the properties.
+    free(properties);
+    
+    return extractedData;
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Populate Methods.
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
++(id)populateObject:(id)anObject withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap withDelegate:(id<JPDataPopulatorDelegate>)anDelegate {
+	// Create an instance.
+	JPDataPopulator *anInstance = [[[self alloc] init] autorelease];
+	// Set delegate.
+	anInstance.delegate = anDelegate;
+    
+	
+	///////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+	return [anInstance populateObject:anObject 
+							 withData:[self retrievePropertiesFromObject:anSecondObject]
+							 usingMap:anMap 
+			andRelationshipParameters:nil];
+}
 
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
++(id)populateDictionary:(NSMutableDictionary*)anDictionary withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap {
+	// Create an instance.
+	JPDataPopulator *anInstance = [[[self alloc] init] autorelease];
+	
+	/////////////
+	
+	return [anInstance populateDictionary:anDictionary 
+                                 withData:[self retrievePropertiesFromObject:anSecondObject]
+                                 usingMap:anMap];
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
++(id)populateObject:(id)anObject withPropertiesOfObject:(id)anSecondObject usingMap:(NSDictionary*)anMap {
+	return [JPDataPopulator populateObject:anObject withPropertiesOfObject:anSecondObject usingMap:anMap withDelegate:nil];    
+}
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)populateObject:(id)anObject withData:(NSDictionary*)anDictionary usingMap:(NSDictionary*)anMap withDelegate:(id<JPDataPopulatorDelegate>)anDelegate {
 	// Create an instance.
 	JPDataPopulator *anInstance = [[[self alloc] init] autorelease];
@@ -313,6 +395,5 @@
 }
 
 
-
-///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ////
 @end
+///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ////
