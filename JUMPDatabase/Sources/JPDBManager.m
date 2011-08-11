@@ -252,7 +252,6 @@
 // Returns the managed object model for the application.
 //
 - (NSManagedObjectModel *)managedObjectModel {
-	//Info( @"Init The Managed Object Model.");
 	
 	// Return Managed Object Model if is already started...
     if (managedObjectModel != nil) {
@@ -262,16 +261,18 @@
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	// If defined an Model Name, search for him on bundle.
 	if ( loadModelNamed ) {
-		NSString *modelPath = [[NSBundle mainBundle] pathForResource:[[loadModelNamed lastPathComponent] stringByDeletingPathExtension]
-															  ofType:[loadModelNamed  pathExtension]];
+		NSString *modelPath = NSFormatString( @"%@/%@", JPBundlePath(), loadModelNamed );
+        
 		////// ////// ////// ////// ////// ////// ////// ////// ////// //////
-		// If can't found, trhow error.
-		if ( _NOT_ modelPath ) {
+		// If file no exist, throw error.
+		if ( _NOT_ [[NSFileManager defaultManager] fileExistsAtPath:modelPath] ) {
 
 			// Error Message and Crash the System. 
 			[NSException raise:JPDBManagerStartException
-						format: @"Informed Model: %@.xcdatamodeld (mom/momd) **NOT FOUND on bundle.", loadModelNamed];
+						format: @"Informed Model: %@ **NOT FOUND on bundle. Full Path: ", loadModelNamed, modelPath];
 		}
+
+        //Info( @"Initializing The Managed Object Model: %@", modelPath);
 
 		////// ////// ////// ////// ////// ////// //////
 		// Alloc and Init.
@@ -288,6 +289,8 @@
 	// Return Managed Object Model.
     return managedObjectModel;
 }
+
+
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 //
@@ -309,7 +312,7 @@
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	
 	// Main Database Path.
-    NSURL *mainDatabase = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"mainDatabase.JPlite"]];
+    NSURL *mainDatabase = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"mainDatabase.SQlite"]];
 	
 	// Error Control.
 	NSError *error = nil;

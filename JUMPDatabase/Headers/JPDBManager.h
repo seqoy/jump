@@ -113,13 +113,13 @@
 -(id)startCoreData;
 
 /** 
- * Start Core Data elements (managedObjectModel, managedObjectContext, persistentStoreCoordinator) and
- * will merge ALL models in your bundle and try to recreate missed parameters. Database Manager initiate
+ * Start Core Data elements (managedObjectModel, managedObjectContext, persistentStoreCoordinator). Database Manager initiate
  * the Managed Object Context and set the <b>Merge Policy</b> to <tt><b>NSMergeByPropertyObjectTrumpMergePolicy</b></tt> in 
  * order to merge conflicts between the persistent store’s version of the object and the current in-memory 
  * version, giving priority to in-memory changes.<br>
+ * You should inform the Model that you want to use with name and extension. 
  * <br>
- * @param modelName Specific Model Name.
+ * @param modelName Specific Model Name including the extension. Usually the model has the extension .momd on the bundle.
  * @throw An \ref JPDBManagerStartException exception is raised if some error ocurrs. See \ref errors  for more informations.
  * @return Return itself.
  */ 
