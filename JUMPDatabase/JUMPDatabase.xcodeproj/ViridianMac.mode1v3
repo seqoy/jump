@@ -314,12 +314,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPDBManager.m</string>
+								<string>JPDBManager.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPDBManager.m</string>
+										<string>JPDBManager.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>18C31AAD13F448E5008B2783</string>
+										<string>18C31AB713F44992008B2783</string>
 										<key>history</key>
 										<array>
 											<string>180C44F0135E2C2600D7B699</string>
@@ -339,8 +341,8 @@
 											<string>1847EAE013E3233200B7FC54</string>
 											<string>18C319C013F426BB008B2783</string>
 											<string>18C31A1C13F434D7008B2783</string>
-											<string>18C31AAB13F448E5008B2783</string>
-											<string>18C31AAC13F448E5008B2783</string>
+											<string>18C31AB513F44992008B2783</string>
+											<string>18C31AB613F44992008B2783</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

@@ -106,12 +106,13 @@
 
 /** 
  * Start Core Data elements (managedObjectModel, managedObjectContext, persistentStoreCoordinator) and
- * will merge ALL models in your bundle and try to recreate missed parameters. Database Manager initiate
- * the Managed Object Context and set the <b>Merge Policy</b> to <tt><b>NSMergeByPropertyObjectTrumpMergePolicy</b></tt> in 
+ * <b>will merge ALL models</b> in your bundle.<br>
+ * Database Manager initiate the Managed Object Context and set the <b>Merge Policy</b>
+ * to <tt><b>NSMergeByPropertyObjectTrumpMergePolicy</b></tt> in 
  * order to merge conflicts between the persistent store’s version of the object and the current in-memory 
  * version, giving priority to in-memory changes.<br>
  * <br>
- * Use #startCoreDataWithModel: if you need to use an specific model.
+ * Use #startCoreDataWithModel: if you need to use an specific model or model version.
  * @throw An \ref JPDBManagerStartException exception is raised if some error ocurrs. See \ref errors  
  * for more informations.
  * @return Return itself.

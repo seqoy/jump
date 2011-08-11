@@ -162,88 +162,6 @@
 	
     return basePath;
 }
-////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
-//
-// Create missing relationships bewtween Entities. 
-//
-// Returns the managed object model merged.
-//
-- (NSManagedObjectModel *)createMissingRelationships:(NSManagedObjectModel *)model {
-	//Debug( @"Create Missing Relationships Between Entities");
-	
-	// One List of all Entities (Tables).
-	NSDictionary *allTables = [model entitiesByName];
-	
-	////// ////// ////// ////// ////// ////// ////// 
-	
-	// Loop on All Entities that is not from mainDatabase.
-	for (NSEntityDescription *entity in [model entitiesForConfiguration:@"moduleDatabase"]) {
-		
-		// Loop em todos os Relationships, se não tem não vai fazer nada.
-		for ( NSString *relationName in [entity relationshipsByName] ) {
-			
-			// Pega o Relationship que vamos trabalhar.
-			NSRelationshipDescription *workingRelationship = [[entity relationshipsByName] objectForKey:relationName];
-			
-			// Processa se esse Relationship está configurada para ser processado.
-			if ( [[workingRelationship userInfo] objectForKey:@"RelationshipWithEntity"] ) {
-				
-				// Pega a tabela que essa propriedade irá se relacionar.
-				NSEntityDescription *pointToTable = [allTables objectForKey:[[workingRelationship userInfo] objectForKey:@"RelationshipWithEntity"] ];
-				
-				// Se a tabela NAO EXISTE imprime erro e corta o programa.
-				if ( pointToTable == nil ) {
-					
-					// Handle error.
-					NSString *errorMessage = NSFormatString( @"Trying to create missing relationship on moduleDatabase: %@. Missing relationship tells to point to entity: %@. But this entity doesn't exist.", [entity name], [[workingRelationship userInfo] objectForKey:@"RelationshipWithEntity"]); 
-					
-					// Error Message and Crash the System. 
-					[NSException raise:JPDBManagerStartException format:@"%@", errorMessage];
-				}
-				
-				// Modifica a propriedade apontando a tabela correta.
-				[workingRelationship setDestinationEntity:pointToTable]; 
-				
-				////// ////// ////// ////// ////// ////// 
-				
-				// Prepara a versão inversa dessa propriedade para colocar na tabela que aponta.
-				NSRelationshipDescription *inverseProperty = [[NSRelationshipDescription alloc] init];
-				
-				[inverseProperty setName:[entity name]];
-				[inverseProperty setOptional:[workingRelationship isOptional]];
-				[inverseProperty setTransient:[workingRelationship isTransient]];
-				[inverseProperty setDestinationEntity:entity ];
-				[inverseProperty setInverseRelationship:workingRelationship ];
-				[inverseProperty setMaxCount:[workingRelationship maxCount]];
-				[inverseProperty setMinCount:[workingRelationship minCount]];
-				[inverseProperty setDeleteRule:NSNoActionDeleteRule];
-				
-				// Pega uma cópia mutável das propriedades já existentes e adiciona a que recém criamos.
-				NSMutableArray *mainTableExistingProperties = [[NSMutableArray alloc] initWithArray:[pointToTable properties] ];
-				[mainTableExistingProperties insertObject:inverseProperty atIndex:0];
-				
-				// Adiciona todas as propriedades de volta.
-				[pointToTable setProperties:mainTableExistingProperties ];
-				
-				// Release.
-				[mainTableExistingProperties release];
-				
-				////// ////// ////// ////// ////// ////// 
-				
-				// Modifica a propriedade apontando a tabela principal.
-				[workingRelationship setInverseRelationship:inverseProperty];
-				
-				// Release.
-				[inverseProperty release];
-			}
-		}
-	}
-	
-	// Retorna Modelo Montado.
-    return model;
-	
-}
-
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 //
@@ -282,9 +200,9 @@
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	// If isn't specified...
-	// Merge all models found in the application bundle. Will Create the missing Relation Between then if needed.
+	// Merge all models found in the application bundle. 
 	else {
-		managedObjectModel = [ [self createMissingRelationships:[NSManagedObjectModel mergedModelFromBundles:nil] ] retain];
+		managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
 	}
 	
 	// Return Managed Object Model.
