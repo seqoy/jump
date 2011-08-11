@@ -27,6 +27,7 @@
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// 
 @synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
 @synthesize automaticallyCommit;
+@synthesize loadedModelName;
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 #pragma mark -
@@ -68,7 +69,7 @@
 	[managedObjectContext release];
     [managedObjectModel release];
     [persistentStoreCoordinator release];
-	[loadModelNamed release];
+	[loadedModelName release];
 	[super dealloc];
 }
 
@@ -121,8 +122,8 @@
 	//Info( @"Starting Core Data Using Model: [[%@]]", modelName );
 	
 	// Dealloc if needed and set.
-	if ( loadModelNamed ) [loadModelNamed release], loadModelNamed = nil;
-	loadModelNamed = [modelName copy];
+	if ( loadedModelName ) [loadedModelName release], loadedModelName = nil;
+	loadedModelName = [modelName copy];
 	
 	// Continue.
 	[self startCoreData];
@@ -260,8 +261,8 @@
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	// If defined an Model Name, search for him on bundle.
-	if ( loadModelNamed ) {
-		NSString *modelPath = NSFormatString( @"%@/%@", JPBundlePath(), loadModelNamed );
+	if ( loadedModelName ) {
+		NSString *modelPath = NSFormatString( @"%@/%@", JPBundlePath(), loadedModelName );
         
 		////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 		// If file no exist, throw error.
@@ -269,7 +270,7 @@
 
 			// Error Message and Crash the System. 
 			[NSException raise:JPDBManagerStartException
-						format: @"Informed Model: %@ **NOT FOUND on bundle. Full Path: ", loadModelNamed, modelPath];
+						format: @"Informed Model: %@ **NOT FOUND on bundle. Full Path: ", loadedModelName, modelPath];
 		}
 
         //Info( @"Initializing The Managed Object Model: %@", modelPath);

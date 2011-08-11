@@ -40,7 +40,7 @@
 	// Automatically Commit.
 	BOOL automaticallyCommit;
 	
-	NSString *loadModelNamed;
+	NSString *loadedModelName;
 }
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark Properties.
@@ -59,6 +59,12 @@
  * Core Data Persistent Store Coordinator
  */
 @property(readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+/**
+ * Current full path of Loaded Model. If you don't specify one model manually using startCoreDataWithModel:
+ * this value will be <tt>nil</tt>.
+ */
+@property (readonly) NSString *loadedModelName;
 
 /**
  * Configure the manager to automatically commit every operation.
