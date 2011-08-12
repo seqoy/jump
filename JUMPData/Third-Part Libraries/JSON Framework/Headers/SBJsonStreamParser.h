@@ -1,4 +1,4 @@
-/**
+/*
  Copyright (c) 2010, Stig Brautaset.
  All rights reserved.
  
@@ -44,78 +44,150 @@ typedef enum {
 
 
 /**
- @brief Delegate for interacting directly with the stream parser
- 
- You will most likely find it much more convenient to implement the
- SBJsonStreamParserAdapterDelegate protocol instead.
+ @brief SBJsonStreamParserDelegate protocol adapter
+  
+ @see SBJsonStreamParser
  */
-@protocol SBJsonStreamParserDelegate<NSObject>
+@protocol SBJsonStreamParserDelegate
 
-@optional
-/// Called when object start is found
-- (void)parserFoundObjectStart:(SBJsonStreamParser*)parser;
+/**
+ @brief Called if a JSON array is found
+ 
+ This method is called if a JSON array is found.
+ 
+ */
+- (void)parser:(SBJsonStreamParser*)parser foundArray:(NSArray*)array;
 
-/// Called when object key is found
-- (void)parser:(SBJsonStreamParser*)parser foundObjectKey:(NSString*)key;
-
-/// Called when object end is found
-- (void)parserFoundObjectEnd:(SBJsonStreamParser*)parser;
-
-/// Called when array start is found
-- (void)parserFoundArrayStart:(SBJsonStreamParser*)parser;
-
-/// Called when array end is found
-- (void)parserFoundArrayEnd:(SBJsonStreamParser*)parser;
-
-/// Called when a boolean value is found
-- (void)parser:(SBJsonStreamParser*)parser foundBoolean:(BOOL)x;
-
-/// Called when a null value is found
-- (void)parserFoundNull:(SBJsonStreamParser*)parser;
-
-/// Called when a number is found
-- (void)parser:(SBJsonStreamParser*)parser foundNumber:(NSNumber*)num;
-
-/// Called when a string is found
-- (void)parser:(SBJsonStreamParser*)parser foundString:(NSString*)string;
+/**
+ @brief Called when a JSON object is found
+ 
+ This method is called if a JSON object is found.
+ */
+- (void)parser:(SBJsonStreamParser*)parser foundObject:(NSDictionary*)dict;
 
 @end
 
+typedef enum {
+	SBJsonStreamParserNone,
+	SBJsonStreamParserArray,
+	SBJsonStreamParserObject,
+} SBJsonStreamParserType;
 
 /**
- @brief JSON Stream-parser class
+ @brief Parse a stream of JSON data.
+ 
+ Using this class directly you can reduce the apparent latency for each
+ download/parse cycle of documents over a slow connection. You can start
+ parsing *and return chunks of the parsed document* before the entire
+ document is downloaded. Using this class is also useful to parse huge
+ documents on disk bit by bit so you don't have to keep them all in memory. 
+
+ The default behaviour is that the delegate only receives one call from
+ either the -parser:foundArray: or -parser:foundObject: method when the
+ document is fully parsed. However, if your inputs contains multiple JSON
+ documents and you set the parser's -supportMultipleDocuments property to YES
+ you will get one call for each full method.
+ 
+ @code
+ SBJsonStreamParser *parser = [[[SBJsonStreamParser alloc] init] autorelease];
+ parser.delegate = self;
+ parser.supportMultipleDocuments = YES;
+ 
+ // Note that this input contains multiple top-level JSON documents
+ NSData *json = [@"[]{}[]{}" dataWithEncoding:NSUTF8StringEncoding]; 
+ [parser parse:data];
+ @endcode
+ 
+ In the above example @p self will have the following sequence of methods called on it:
+ 
+ @li -parser:foundArray:
+ @li -parser:foundObject:
+ @li -parser:foundArray:
+ @li -parser:foundObject:
+ 
+ Often you won't have control over the input you're parsing, so can't make use of
+ this feature. But, all is not lost: this class will let you get the same effect by 
+ allowing you to skip one or more of the outer enclosing objects. Thus, the next
+ example results in the same sequence of -parser:foundArray: / -parser:foundObject:
+ being called on your delegate.
+ 
+ @code
+ SBJsonStreamParser *parser = [[[SBJsonStreamParser alloc] init] autorelease];
+ parser.delegate = self;
+ parser.levelsToSkip = 1;
+ 
+ // Note that this input contains A SINGLE top-level document
+ NSData *json = [@"[[],{},[],{}]" dataWithEncoding:NSUTF8StringEncoding]; 
+ [parser parse:data];
+ @endcode
+ 
+ @see SBJsonStreamParserDelegate
+ @see @ref objc2json
  
  */
 @interface SBJsonStreamParser : NSObject {
-	BOOL multi;
-	id<SBJsonStreamParserDelegate> delegate;
+@private
 	SBJsonTokeniser *tokeniser;
-	SBJsonStreamParserState **states;
-	NSUInteger depth, maxDepth;
-	NSString *error;
+
+	NSUInteger depth;
+    NSMutableArray *array;
+	NSMutableDictionary *dict;
+	NSMutableArray *keyStack;
+	NSMutableArray *stack;
+	
+	SBJsonStreamParserType currentType;
 }
+
+@property (nonatomic, assign) SBJsonStreamParserState *state; // Private
+@property (nonatomic, readonly, retain) NSMutableArray *stateStack; // Private
+
+
+/**
+ @brief How many levels to skip
+ 
+ This is useful for parsing huge JSON documents, or documents coming in over a very slow link.
+ 
+ If you set this to N it will skip the outer N levels and call the -parser:foundArray:
+ or -parser:foundObject: methods for each of the inner objects, as appropriate.
+ 
+ @see The StreamParserIntegrationTest.m file for examples
+ */
+@property NSUInteger levelsToSkip;
 
 /**
  @brief Expect multiple documents separated by whitespace
 
- If you set this property to true the parser will never return SBJsonStreamParserComplete.
- Once an object is completed it will expect another object to follow, separated only by whitespace.
+ Normally the @p -parse: method returns SBJsonStreamParserComplete when it's found a complete JSON document.
+ Attempting to parse any more data at that point is considered an error. ("Garbage after JSON".)
+ 
+ If you set this property to true the parser will never return SBJsonStreamParserComplete. Rather,
+ once an object is completed it will expect another object to immediately follow, separated
+ only by (optional) whitespace.
 
- @see The TwitterStream example project.
+ @see The TweetStream app in the Examples
  */
-@property BOOL multi;
+@property BOOL supportMultipleDocuments;
 
-/// Set this to the object you want to receive messages
+/**
+ @brief Delegate to receive messages
+
+ The object set here receives a series of messages as the parser breaks down the JSON stream
+ into valid tokens.
+
+ @note
+ Usually this should be an instance of SBJsonStreamParser, but you can
+ substitute your own implementation of the SBJsonStreamParserDelegate protocol if you need to. 
+ */
 @property (assign) id<SBJsonStreamParserDelegate> delegate;
 
-/// The current depth in the json document (each [ and { each count 1)
-@property (readonly) NSUInteger depth;
+/**
+ @brief The max parse depth
+ 
+ If the input is nested deeper than this the parser will halt parsing and return an error.
 
-/// The max depth to allow the parser to reach
+ Defaults to 32. 
+ */
 @property NSUInteger maxDepth;
-
-/// @internal
-@property (readonly) SBJsonStreamParserState **states;
 
 /// Holds the error after SBJsonStreamParserError was returned
 @property (copy) NSString *error;
@@ -124,7 +196,9 @@ typedef enum {
  @brief Parse some JSON
  
  The JSON is assumed to be UTF8 encoded. This can be a full JSON document, or a part of one.
- 
+
+ @param data An NSData object containing the next chunk of JSON
+
  @return 
  @li SBJsonStreamParserComplete if a full document was found
  @li SBJsonStreamParserWaitingForData if a partial document was found and more data is required to complete it

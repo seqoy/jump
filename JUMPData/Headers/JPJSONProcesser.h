@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #import <Foundation/Foundation.h>
-#import "JSON.h"
+#import "SBJson.h"
 #import "JPDataProcessserJSON.h"
 
 /**
