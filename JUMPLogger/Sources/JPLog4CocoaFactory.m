@@ -47,12 +47,14 @@ static BOOL configured;
 		// Default level is global level.
 		[[L4Logger rootLogger] setLevel:globalLevel];
 		
+        // Create Appender.
+        L4ConsoleAppender *appender = [[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout];
+        
 		// Add Console Appender.
-		[[L4Logger rootLogger] addAppender:[[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout] autorelease]];
-		
-		// Create Appender.
-//		L4NSLoggerAppender *anAppender = [[L4NSLoggerAppender alloc] initWithLayout:anLayout];
-//		[[L4Logger rootLogger] addAppender:anAppender];
+        [[L4Logger rootLogger] addAppender:appender];
+        
+        // Release appender.
+        [appender release];
 	}
     
 	// Set as configured.
@@ -74,8 +76,9 @@ static BOOL configured;
     }
 	
 	// If exist, configure with this file.
-	L4PropertyConfigurator *configurator = [[[L4PropertyConfigurator alloc] initWithFileName:filename] autorelease];
+	L4PropertyConfigurator *configurator = [[L4PropertyConfigurator alloc] initWithFileName:filename];
 	[configurator configure];
+    [configurator release];
 	
 	// Everything ok.
     return YES;
