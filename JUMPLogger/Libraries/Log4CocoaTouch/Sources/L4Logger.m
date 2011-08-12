@@ -25,7 +25,7 @@ static L4Level *_debug = nil;
 {
 	id rootLogger = [[L4RootLogger alloc] initWithLevel: [L4Level debug]];
 	_loggerRepository = [[L4LoggerStore alloc] initWithRoot: rootLogger];
-	[rootLogger autorelease];
+	[rootLogger release];
 
 	[L4LoggingEvent startTime];
 

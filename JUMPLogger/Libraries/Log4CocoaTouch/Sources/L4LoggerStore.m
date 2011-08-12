@@ -46,9 +46,10 @@
 }
 
 - (id) init
-{
-	// ### todo ??? [self autorelease];
-	return nil; // don't use this method
+{   // don't use this method
+	[NSException raise:NSInternalInconsistencyException 
+                format:@"Invalid initiator, please use [%@ initWithRoot:]", NSStringFromClass([self class])];
+	return nil; 
 }
 
 - (id) initWithRoot:(id) rootLogger
@@ -66,8 +67,6 @@
 
 		emittedNoAppenderWarning = NO;
 		emittedNoResourceBundleWarning = NO;
-	} else {
-		[rootLogger release];  // ### todo - ???
 	}
 	return self;
 }
