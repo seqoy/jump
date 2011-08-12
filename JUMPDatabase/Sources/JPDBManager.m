@@ -202,7 +202,7 @@
 	// If isn't specified...
 	// Merge all models found in the application bundle. 
 	else {
-		managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+		managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
 	}
 	
 	// Return Managed Object Model.

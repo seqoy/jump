@@ -48,7 +48,7 @@ static BOOL configured;
 		[[L4Logger rootLogger] setLevel:globalLevel];
 		
 		// Add Console Appender.
-		[[L4Logger rootLogger] addAppender:[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout]];
+		[[L4Logger rootLogger] addAppender:[[[L4ConsoleAppender alloc] initTarget:YES withLayout:anLayout] autorelease]];
 		
 		// Create Appender.
 //		L4NSLoggerAppender *anAppender = [[L4NSLoggerAppender alloc] initWithLayout:anLayout];
@@ -63,7 +63,7 @@ static BOOL configured;
 }
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
-// If the Logging Framework that you're using support load configuration from a file. You should
+// If the Logging Framework that you're using support load configuration from a file.
 +(BOOL)configureWithFile:(NSString*)anFileName {
 	// Format file path.
 	NSString *filename = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], anFileName];
@@ -74,7 +74,7 @@ static BOOL configured;
     }
 	
 	// If exist, configure with this file.
-	L4PropertyConfigurator *configurator = [[L4PropertyConfigurator alloc] initWithFileName:filename];
+	L4PropertyConfigurator *configurator = [[[L4PropertyConfigurator alloc] initWithFileName:filename] autorelease];
 	[configurator configure];
 	
 	// Everything ok.

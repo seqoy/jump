@@ -333,32 +333,10 @@
     //// //// //// //// //// //// //// //// //// //// //// //// ////
     // Create an Autorelease Pool.
     NSAutoreleasePool *anPool = [NSAutoreleasePool new];
-
-
-    /////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
+    
     // Create an local Database Manager.
-
-    // We have one specific model?
-    NSString *specificModel;
+    _backgroundThreadDatabaseManager = [[JPDBManager initAndStartCoreData] retain];
     
-    // We have an Main Database attached?
-    if ( _mainThreadDatabaseManager ) {
-        // Load the specific model of this manage...
-        specificModel = _mainThreadDatabaseManager.loadedModelName;
-    }
-    
-    // If we have one specific model, load him.
-    if ( specificModel ) {
-        _backgroundThreadDatabaseManager = [[JPDBManager init] retain];
-        [_backgroundThreadDatabaseManager startCoreDataWithModel:specificModel];
-    }
-    
-    // If don't, use default.
-    else 
-       _backgroundThreadDatabaseManager = [[JPDBManager initAndStartCoreData] retain];
-    
-    
-    /////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
     // Set Core Data to merges conflicts between the persistent store’s version of the object 
     // and the current in-memory version, giving priority to in-memory changes.
     [_backgroundThreadDatabaseManager.managedObjectContext setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
