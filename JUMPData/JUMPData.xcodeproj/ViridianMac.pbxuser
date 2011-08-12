@@ -78,8 +78,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 334615556;
-			PBXWorkspaceStateSaveDate = 334615556;
+			PBXPerProjectTemplateStateSaveDate = 334597718;
+			PBXWorkspaceStateSaveDate = 334597718;
 		};
 		perUserProjectItems = {
 			180032AA137045CA00C4B0A3 /* PBXTextBookmark */ = 180032AA137045CA00C4B0A3 /* PBXTextBookmark */;
@@ -125,14 +125,26 @@
 			183ADE691371F73400DABF60 /* PBXTextBookmark */ = 183ADE691371F73400DABF60 /* PBXTextBookmark */;
 			183ADE6B1371F73400DABF60 /* PBXTextBookmark */ = 183ADE6B1371F73400DABF60 /* PBXTextBookmark */;
 			183ADEE71371FC8300DABF60 /* PBXTextBookmark */ = 183ADEE71371FC8300DABF60 /* PBXTextBookmark */;
+<<<<<<< HEAD
 			184254FF13EC9522000581FB /* PBXTextBookmark */ = 184254FF13EC9522000581FB /* PBXTextBookmark */;
 			1842550013EC9522000581FB /* PBXTextBookmark */ = 1842550013EC9522000581FB /* PBXTextBookmark */;
+=======
+			184254FE13EC9522000581FB /* PBXTextBookmark */ = 184254FE13EC9522000581FB /* PBXTextBookmark */;
+			184254FF13EC9522000581FB /* PBXTextBookmark */ = 184254FF13EC9522000581FB /* PBXTextBookmark */;
+			1842550013EC9522000581FB /* PBXTextBookmark */ = 1842550013EC9522000581FB /* PBXTextBookmark */;
+			1842550113EC9522000581FB /* PBXTextBookmark */ = 1842550113EC9522000581FB /* PBXTextBookmark */;
+			1842550213EC9522000581FB /* PBXTextBookmark */ = 1842550213EC9522000581FB /* PBXTextBookmark */;
+>>>>>>> parent of f4d3125... - Memory Leak Fix.
 			1842550313EC9522000581FB /* PBXTextBookmark */ = 1842550313EC9522000581FB /* PBXTextBookmark */;
 			1842550413EC9522000581FB /* PBXTextBookmark */ = 1842550413EC9522000581FB /* PBXTextBookmark */;
 			1842550513EC9522000581FB /* PBXTextBookmark */ = 1842550513EC9522000581FB /* PBXTextBookmark */;
 			1842550613EC9522000581FB /* PBXTextBookmark */ = 1842550613EC9522000581FB /* PBXTextBookmark */;
 			1842550713EC9522000581FB /* PBXTextBookmark */ = 1842550713EC9522000581FB /* PBXTextBookmark */;
 			1842550813EC9522000581FB /* PBXTextBookmark */ = 1842550813EC9522000581FB /* PBXTextBookmark */;
+<<<<<<< HEAD
+=======
+			1844D81713D48D460020F6F3 /* PBXTextBookmark */ = 1844D81713D48D460020F6F3 /* PBXTextBookmark */;
+>>>>>>> parent of f4d3125... - Memory Leak Fix.
 			1844D88713D49C130020F6F3 /* PBXTextBookmark */ = 1844D88713D49C130020F6F3 /* PBXTextBookmark */;
 			184BEA45137332EC00C1C2C6 /* PBXTextBookmark */ = 184BEA45137332EC00C1C2C6 /* PBXTextBookmark */;
 			184BEA46137332EC00C1C2C6 /* PBXTextBookmark */ = 184BEA46137332EC00C1C2C6 /* PBXTextBookmark */;
@@ -154,11 +166,18 @@
 			185F4C41135F1D430069C261 /* PBXTextBookmark */ = 185F4C41135F1D430069C261 /* PBXTextBookmark */;
 			1870A67A13D0E3CF00A49862 /* PBXTextBookmark */ = 1870A67A13D0E3CF00A49862 /* PBXTextBookmark */;
 			187255AA13F1AF7C00CFDBB0 /* PBXTextBookmark */ = 187255AA13F1AF7C00CFDBB0 /* PBXTextBookmark */;
+<<<<<<< HEAD
 			1872589413F1E6A800CFDBB0 /* PBXTextBookmark */ = 1872589413F1E6A800CFDBB0 /* PBXTextBookmark */;
 			1872589513F1E6A800CFDBB0 /* PBXTextBookmark */ = 1872589513F1E6A800CFDBB0 /* PBXTextBookmark */;
 			1872589613F1E6A800CFDBB0 /* PBXTextBookmark */ = 1872589613F1E6A800CFDBB0 /* PBXTextBookmark */;
 			1872589713F1E6A800CFDBB0 /* PBXTextBookmark */ = 1872589713F1E6A800CFDBB0 /* PBXTextBookmark */;
 			1872589813F1E6A800CFDBB0 /* PBXTextBookmark */ = 1872589813F1E6A800CFDBB0 /* PBXTextBookmark */;
+=======
+			187255AB13F1AF7C00CFDBB0 /* PBXTextBookmark */ = 187255AB13F1AF7C00CFDBB0 /* PBXTextBookmark */;
+			187255AC13F1AF7C00CFDBB0 /* PBXTextBookmark */ = 187255AC13F1AF7C00CFDBB0 /* PBXTextBookmark */;
+			1875EF5213E33749002BBEA1 /* PBXTextBookmark */ = 1875EF5213E33749002BBEA1 /* PBXTextBookmark */;
+			1875EFBF13E33E74002BBEA1 /* PBXTextBookmark */ = 1875EFBF13E33E74002BBEA1 /* PBXTextBookmark */;
+>>>>>>> parent of f4d3125... - Memory Leak Fix.
 			18791E6C1368B69200EFC991 /* PBXTextBookmark */ = 18791E6C1368B69200EFC991 /* PBXTextBookmark */;
 			18791E6E1368B69200EFC991 /* PBXTextBookmark */ = 18791E6E1368B69200EFC991 /* PBXTextBookmark */;
 			18791E6F1368B69200EFC991 /* PBXTextBookmark */ = 18791E6F1368B69200EFC991 /* PBXTextBookmark */;
@@ -445,9 +464,15 @@
 	};
 	180C4044135E0B1B00D7B699 /* JPSyncManagerConfigurator.m */ = {
 		uiCtxt = {
+<<<<<<< HEAD
 			sepNavIntBoundsRect = "{{0, 0}, {1247, 3445}}";
 			sepNavSelRange = "{6987, 0}";
 			sepNavVisRange = "{6908, 1010}";
+=======
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 3445}}";
+			sepNavSelRange = "{2697, 0}";
+			sepNavVisRange = "{1204, 2366}";
+>>>>>>> parent of f4d3125... - Memory Leak Fix.
 			sepNavWindowFrame = "{{733, 83}, {1184, 854}}";
 		};
 	};
@@ -784,9 +809,9 @@
 	};
 	1837D5DE135CCEB60014E7CC /* JPSyncManagerConfigurator.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1269, 1482}}";
-			sepNavSelRange = "{1272, 0}";
-			sepNavVisRange = "{315, 2326}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1521}}";
+			sepNavSelRange = "{1182, 0}";
+			sepNavVisRange = "{81, 2210}";
 			sepNavWindowFrame = "{{736, 70}, {1184, 854}}";
 		};
 	};
@@ -807,8 +832,8 @@
 	1837D5E6135CCEE80014E7CC /* JPSyncManagerHandler.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1269, 9529}}";
-			sepNavSelRange = "{3137, 59}";
-			sepNavVisRange = "{1838, 2648}";
+			sepNavSelRange = "{981, 0}";
+			sepNavVisRange = "{0, 2929}";
 			sepNavWindowFrame = "{{736, 142}, {1184, 854}}";
 		};
 	};
@@ -1158,6 +1183,16 @@
 		vrLen = 2541;
 		vrLoc = 315;
 	};
+	184254FE13EC9522000581FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1837D5E6135CCEE80014E7CC /* JPSyncManagerHandler.m */;
+		name = "JPSyncManagerHandler.m: 22";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 2929;
+		vrLoc = 0;
+	};
 	184254FF13EC9522000581FB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3AFF8449131FC26700A23032 /* JPDataConverter.h */;
@@ -1176,6 +1211,26 @@
 		rLoc = 1002;
 		rType = 0;
 		vrLen = 1002;
+		vrLoc = 0;
+	};
+	1842550113EC9522000581FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1837D39F135C82310014E7CC /* JPXMLProcesser.m */;
+		name = "JPXMLProcesser.m: 17";
+		rLen = 0;
+		rLoc = 670;
+		rType = 0;
+		vrLen = 1780;
+		vrLoc = 0;
+	};
+	1842550213EC9522000581FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */;
+		name = "JPJSONProcesser.h: 34";
+		rLen = 0;
+		rLoc = 1338;
+		rType = 0;
+		vrLen = 1342;
 		vrLoc = 0;
 	};
 	1842550313EC9522000581FB /* PBXTextBookmark */ = {
@@ -1507,6 +1562,7 @@
 		vrLen = 4073;
 		vrLoc = 2530;
 	};
+<<<<<<< HEAD
 	1872589413F1E6A800CFDBB0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3A78449C1325332B00C3374A /* JUMPData.h */;
@@ -1546,6 +1602,37 @@
 		rType = 0;
 		vrLen = 2435;
 		vrLoc = 605;
+=======
+	187255AB13F1AF7C00CFDBB0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 184BEA011373304200C1C2C6 /* JPFeedPipelineHandler.m */;
+		name = "JPFeedPipelineHandler.m: 57";
+		rLen = 0;
+		rLoc = 2272;
+		rType = 0;
+		vrLen = 2940;
+		vrLoc = 1694;
+	};
+	187255AC13F1AF7C00CFDBB0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 184BEA011373304200C1C2C6 /* JPFeedPipelineHandler.m */;
+		name = "JPFeedPipelineHandler.m: 15";
+		rLen = 0;
+		rLoc = 642;
+		rType = 0;
+		vrLen = 2773;
+		vrLoc = 1605;
+	};
+	1875EF5213E33749002BBEA1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1837D5DE135CCEB60014E7CC /* JPSyncManagerConfigurator.h */;
+		name = "JPSyncManagerConfigurator.h: 30";
+		rLen = 0;
+		rLoc = 1182;
+		rType = 0;
+		vrLen = 2210;
+		vrLoc = 81;
+>>>>>>> parent of f4d3125... - Memory Leak Fix.
 	};
 	1872589813F1E6A800CFDBB0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1779,8 +1866,8 @@
 	};
 	3A78449C1325332B00C3374A /* JUMPData.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1269, 812}}";
-			sepNavSelRange = "{888, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 770}}";
+			sepNavSelRange = "{671, 16}";
 			sepNavVisRange = "{0, 1391}";
 		};
 	};

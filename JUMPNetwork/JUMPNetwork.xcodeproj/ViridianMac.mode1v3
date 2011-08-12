@@ -345,7 +345,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>187257FA13F1D40000CFDBB0</string>
+										<string>1872561113F1B5CA00CFDBB0</string>
 										<key>history</key>
 										<array>
 											<string>18405DE313EED428004E6BC0</string>
@@ -420,7 +420,7 @@
 											<string>1872555513F1915E00CFDBB0</string>
 											<string>187255D013F1B25100CFDBB0</string>
 											<string>1872560A13F1B54200CFDBB0</string>
-											<string>1872561113F1B5CA00CFDBB0</string>
+											<string>1872560B13F1B54200CFDBB0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -478,9 +478,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>187257FB13F1D40000CFDBB0</string>
+				<string>1872554013F18FA000CFDBB0</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>187257FC13F1D40000CFDBB0</string>
+				<string>1872554113F18FA000CFDBB0</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -618,8 +618,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>18C16E9513DA2037005D64B1</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/JUMPNetwork.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -700,7 +702,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18C16E9513DA2037005D64B1</string>
-				<string>187257F613F1D40000CFDBB0</string>
+				<string>1872554213F18FA000CFDBB0</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -855,12 +857,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>JPXMLDecoderHandler.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -881,8 +885,6 @@
 							<string>526pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -918,8 +920,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>187257F813F1D40000CFDBB0</string>
-				<string>187257F913F1D40000CFDBB0</string>
+				<string>1872554313F18FA000CFDBB0</string>
+				<string>1872554413F18FA000CFDBB0</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -928,7 +930,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

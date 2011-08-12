@@ -303,7 +303,7 @@
 							<real>416</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>196 118 1560 940 0 0 1920 1058 </string>
+						<string>195 98 1560 940 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPDBManager.h</string>
+								<string>JPDBManager.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPDBManager.h</string>
+										<string>JPDBManager.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>18C31AB713F44992008B2783</string>
+										<string>18C31AC313F44CDD008B2783</string>
 										<key>history</key>
 										<array>
 											<string>180C44F0135E2C2600D7B699</string>
@@ -341,8 +341,8 @@
 											<string>1847EAE013E3233200B7FC54</string>
 											<string>18C319C013F426BB008B2783</string>
 											<string>18C31A1C13F434D7008B2783</string>
+											<string>18C31AC213F44CDD008B2783</string>
 											<string>18C31AB513F44992008B2783</string>
-											<string>18C31AB613F44992008B2783</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,7 +356,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1122, 894}}</string>
 								<key>RubberWindowFrame</key>
-								<string>196 118 1560 940 0 0 1920 1058 </string>
+								<string>195 98 1560 940 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -376,7 +376,7 @@
 								<key>Frame</key>
 								<string>{{0, 899}, {1122, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>196 118 1560 940 0 0 1920 1058 </string>
+								<string>195 98 1560 940 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -545,7 +545,7 @@
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPDatabase/JUMPDatabase.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>196 118 1560 940 0 0 1920 1058 </string>
+	<string>195 98 1560 940 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
