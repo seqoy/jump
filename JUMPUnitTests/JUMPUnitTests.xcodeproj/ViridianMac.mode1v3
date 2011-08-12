@@ -276,8 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>7</integer>
+									<integer>5</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -320,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPLog4CocoaLogger.m</string>
+								<string>JUMPTestSuite.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPLog4CocoaLogger.m</string>
+										<string>JUMPTestSuite.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1834393113F5B43B004761D1</string>
+										<string>18343B9F13F5C84D004761D1</string>
 										<key>history</key>
 										<array>
 											<string>1888FE7C1332434A00FA965C</string>
@@ -364,11 +363,11 @@
 											<string>183514AB1385BFE800754F87</string>
 											<string>183516AF1386FFA900754F87</string>
 											<string>183438D313F5B123004761D1</string>
-											<string>183438D413F5B123004761D1</string>
 											<string>1834391B13F5B428004761D1</string>
 											<string>1834391C13F5B428004761D1</string>
 											<string>1834392D13F5B438004761D1</string>
-											<string>1834392F13F5B438004761D1</string>
+											<string>18343B3513F5C554004761D1</string>
+											<string>18343B4113F5C5CC004761D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -426,9 +425,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>183438D713F5B123004761D1</string>
+				<string>18343B9613F5C81D004761D1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>183438D813F5B123004761D1</string>
+				<string>18343B9713F5C81D004761D1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -566,12 +565,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1834392413F5B428004761D1</string>
-		<string>183438DB13F5B123004761D1</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>186476FB132FF397002CBD59</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPUnitTests/JUMPUnitTests.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -591,14 +586,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JUMPTestSuite.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -654,7 +647,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>186476FB132FF397002CBD59</string>
-				<string>183438C313F5B0F1004761D1</string>
+				<string>18343B9813F5C81D004761D1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -778,13 +771,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>183438C413F5B0F1004761D1</string>
+				<string>18343B9913F5C81D004761D1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>183438C513F5B0F1004761D1</string>
-				<string>183438C613F5B0F1004761D1</string>
-				<string>183438C713F5B0F1004761D1</string>
-				<string>183438C813F5B0F1004761D1</string>
-				<string>183438C913F5B0F1004761D1</string>
+				<string>18343B9A13F5C81D004761D1</string>
+				<string>18343B9B13F5C81D004761D1</string>
+				<string>18343B9C13F5C81D004761D1</string>
+				<string>18343B9D13F5C81D004761D1</string>
+				<string>18343B9E13F5C81D004761D1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
