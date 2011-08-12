@@ -57,7 +57,7 @@ void JPLogIfYouCan( SEL method, const char *file, NSString* domain, Class logToC
 
 		//// //// //// //// /// //// //// //// //// ///
 		// Create Log Metadata.
-		JPLoggerMetadata *metadata = [JPLoggerMetadata initWithMessage:message];
+		JPLoggerMetadata *metadata = [[JPLoggerMetadata initWithMessage:message] retain];
 	
 		metadata.caller		= caller;
 		metadata.domain		= domain;
@@ -70,5 +70,8 @@ void JPLogIfYouCan( SEL method, const char *file, NSString* domain, Class logToC
 		//// //// //// //// //// //// ///
 		// Log.
 		[(id)logger performSelector:method withObject:metadata];
+    
+        // Release metadata.
+        [metadata release];
 	#endif
 }
