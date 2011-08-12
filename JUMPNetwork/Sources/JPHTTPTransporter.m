@@ -40,6 +40,14 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Private Methods. 
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+-(void)cancelRequest {
+    if ( requester ) {
+        [requester cancel];
+    }
+}
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Init HTTP Requester.
 -(void)buildRequesterWithURL:(NSURL*)anURL {
@@ -50,12 +58,8 @@
 		return;
 	}
 	
-	// If already exist, cancel and release.
-	if ( requester ) {
-		[requester cancel]; 
-		[requester setDelegate:nil];
-		[requester release], requester = nil;
-	}
+	// Cancel any request.
+    [self cancelRequest];
 	
 	//// //// //// //// //// //// //// //// //// //// ////
 	// Init HTTP requester.
@@ -113,12 +117,8 @@
 		// Log.
 		Info(@"Cancel Event Handled. Cancelling...");
 		
-		// If have one active requester.
-		if ( requester && [requester isExecuting] ) {
-			[requester cancel]; 
-			[requester setDelegate:nil];
-			[requester release], requester = nil;
-		}
+		// Cancel.
+        [self cancelRequest];
 		
 		// No more process pal.
 		return;
@@ -202,6 +202,9 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 - (void)requestCancelled:(ASIHTTPRequest *)request {
+    
+    // Release after cancel.
+    [requester release], requester = nil;
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Cancelled.
@@ -242,13 +245,11 @@
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
-	if ( requester ) 
-		[requester cancel];
 	
-	// Clean up requester delegate.
+	// Clean up requester and cancel.
 	if ( requester ) 
-		[requester setDelegate:nil];
-	
+        [requester clearDelegatesAndCancel];
+
 	// Release.
 	[requester release], requester = nil;
     [currentProgress release], currentProgress = nil;

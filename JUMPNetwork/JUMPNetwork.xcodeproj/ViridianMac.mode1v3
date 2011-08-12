@@ -287,11 +287,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>39</integer>
-									<integer>35</integer>
-									<integer>32</integer>
-									<integer>30</integer>
-									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -333,7 +328,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPSimplePipelineUpstreamHandler.m</string>
+								<string>JPHTTPTransporter.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -341,11 +336,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPSimplePipelineUpstreamHandler.m</string>
+										<string>JPHTTPTransporter.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>187257FA13F1D40000CFDBB0</string>
+										<string>18343AEA13F5BF9C004761D1</string>
 										<key>history</key>
 										<array>
 											<string>18405DE313EED428004E6BC0</string>
@@ -354,7 +349,6 @@
 											<string>18405E2513EED593004E6BC0</string>
 											<string>18405E2613EED593004E6BC0</string>
 											<string>18405E2F13EED5EE004E6BC0</string>
-											<string>18405E3013EED5EE004E6BC0</string>
 											<string>1840604513EEEEBB004E6BC0</string>
 											<string>184060DC13EEEEBB004E6BC0</string>
 											<string>184060DF13EEEEBB004E6BC0</string>
@@ -386,7 +380,6 @@
 											<string>1840649213EEEEBB004E6BC0</string>
 											<string>184064F613EEEEBB004E6BC0</string>
 											<string>184064F813EEEEBB004E6BC0</string>
-											<string>184064FB13EEEEBB004E6BC0</string>
 											<string>1840658B13EEEEBB004E6BC0</string>
 											<string>18AD643313E855B000E551C0</string>
 											<string>18AD643413E855B000E551C0</string>
@@ -419,8 +412,10 @@
 											<string>1872555413F1915E00CFDBB0</string>
 											<string>1872555513F1915E00CFDBB0</string>
 											<string>187255D013F1B25100CFDBB0</string>
-											<string>1872560A13F1B54200CFDBB0</string>
-											<string>1872561113F1B5CA00CFDBB0</string>
+											<string>18343AB713F5BA11004761D1</string>
+											<string>18343AB813F5BA11004761D1</string>
+											<string>18343AE813F5BF9C004761D1</string>
+											<string>18343AE913F5BF9C004761D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -478,9 +473,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>187257FB13F1D40000CFDBB0</string>
+				<string>18343ABB13F5BA11004761D1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>187257FC13F1D40000CFDBB0</string>
+				<string>18343ABC13F5BA11004761D1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -618,7 +613,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>18C16E9513DA2037005D64B1</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPNetwork/JUMPNetwork.xcodeproj</string>
 	</array>
@@ -700,7 +694,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18C16E9513DA2037005D64B1</string>
-				<string>187257F613F1D40000CFDBB0</string>
+				<string>18343ABD13F5BA11004761D1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
