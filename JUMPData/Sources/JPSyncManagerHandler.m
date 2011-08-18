@@ -418,15 +418,15 @@
 		// Grab one map for the current server data packet.
 		NSDictionary *bridgetEntityMap = [self grabAnMapForKey:serverDataKey];
         
+        // Get Server Data Key Object Class.
+        id object = [resultData objectOnPath:serverDataKey];
+        
 		// /////////// /////////// /////////// /////////// /////////// 
 		// Try...
-		if ( bridgetEntityMap									// ...Has an one map for it.
-			&& [resultData objectOnPath:serverDataKey]			// ...Exist on Server Data Packet.
+		if ( bridgetEntityMap						// ...Has an one map for it.
+			&& object                               // ...Exist on Server Data Packet.
 			) 
 		{
-			// Get Server Data Key Object Class.
-			id object = [resultData objectOnPath:serverDataKey];
-			
 			// DB action.
 			NSDictionary *databaseActions;
 			
@@ -612,7 +612,7 @@
 		else {
 			if ( delegate )
 				if ( [(id)delegate respondsToSelector:@selector(unhandledServerKey:withData:)] )
-					[delegate unhandledServerKey:serverDataKey withData:[resultData objectOnPath:serverDataKey] ];
+					[delegate unhandledServerKey:serverDataKey withData:object];
 			
 		}
 	}

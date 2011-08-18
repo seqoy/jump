@@ -200,29 +200,24 @@
 		// Only process if found.
 		if ( dataKey ) {
 			
-			// Method Name for corresponding server key.
-			NSString *convertedMethodName = [NSString stringWithFormat:@"set%@:", [ self capitalizeFirstLetter:dataKey]];
-			
-			// Selector for this element.
-			SEL anSelector = NSSelectorFromString( convertedMethodName  );
-			
-			//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-			
-			if ( [anObject respondsToSelector:anSelector]												// Check if object responds to this SET selector.
-				
-				&&																					// ..AND..
-				
-				! [[anDictionary objectForKey:property] isKindOfClass:[NSNull class]] )			// Also check if the object is'nt a NULL value.
-				
-				//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-			{														    //// //// //// //// //// //// //// /// //// //// //// //
-				// First, convert from Java Util Date type, if needed.										
+            /////////// //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// 
+            // Proceed trying to set some value on this object.
+            @try {
+                
+                // First check if the object isn't a NULL value.
+                if ( [[anDictionary objectForKey:property] isKindOfClass:[NSNull class]]) {
+                    [NSException raise:NSStringFromClass([self class])
+                                format:@"Value for data server key (%@) is NULL. Ignoring...", property];
+                    return nil;
+                }
+            
+				// Second, convert from Java Util Date type, if needed.										
 				id serverData = [JPDataConverter convertFromJavaUtilDateIfNeeded:[anDictionary objectForKey:property]];	
 				
 				//// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 				// Check if Server Data has the same type of Core Data Object.
 				//// //// //// //// //// //// ///// //// // //// //// //// ///////
-				if ( ! [self checkIfObject:anObject   ofKey:dataKey		//
+				if ( ! [self checkIfObject:anObject       ofKey:dataKey		    //
 								 hasSameTypeOf:serverData ofKey:property] )     //
 				{														        //
 					//// //// //// //// //// ////// //////// /////////////////////
@@ -234,30 +229,31 @@
 					// Converted value, will be NIL if can't convert.						///// ////// ////// ////// ////// ////// ///
 					if ( serverData != nil )
 						Warn( @"Converted succesfully.");
-				}																			//
+				}																			
 				//// //// //// //// //// //// //// //// //// //////// //// //////// //// /////			
-				// Set Value if isn't NIL.  ↓
-				//// //// //// ////			↓	
+				// Set Value if isn't NIL. Will raise an exception if can't do it.
+				//// //// //// ////	
 				if ( serverData != nil ) {
-					[anObject performSelector:anSelector withObject:serverData];
+					[anObject setValue:serverData forKey:dataKey];
 				}
+            }
+            
+            //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// // 	
+            // Some Exception ocurr and WARNING.. will don't crash this time pal.		    //
+            @catch (NSException *exception) {
+                
+				//////  //// //// ////// //// ////// //// ///////////
+				// Error string.                                    //
+				NSString *errorMessage;                             //////// //// //// //// //// //// 
 				
-				
-				//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// // 	
-				// If not, error and WARNING.. will don't crash this time pal.					//
-			} else {																			//
-				//////  //// //// ////// //// ////// //// ////////
-				// Error string.			//
-				NSString *errorMessage;		//////// //// //// //// //// //// 
-				//
-				// Identify error.										   ////////////////////
-				if ( ! [anObject respondsToSelector:anSelector] ) {
-					errorMessage = [NSString stringWithFormat:@"Object (%@) doesn't respond to method (%@).", NSStringFromClass([anObject class]) , NSStringFromSelector(anSelector)];
-				}
-				
-				else {
-					errorMessage = [NSString stringWithFormat:@"Value for data server key (%@) is NULL. Ignoring...", property] ;
-				}
+                // Identify error.                                         
+				if ( [[exception name] isEqualToString:NSUndefinedKeyException] ) {
+					errorMessage = [NSString stringWithFormat:@"Can't set the key-value (%@) for Object (%@).\nMore Info: %@", dataKey, NSStringFromClass([anObject class]), [exception reason]];
+                } 
+                
+                else {
+                    errorMessage = [exception reason];
+                }
 				
 				// Print error.	
 				Warn( @"%@", errorMessage );
