@@ -104,10 +104,17 @@
 		
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 	// Has prefered Key Order?
-	NSArray *preferedKeyOrder = [root objectOnXMLPath:@"preferedKeyOrder/key"];
+	NSArray *preferedKeyOrder = [root objectOnPath:@"preferedKeyOrder/key"];
 	
 	if ( preferedKeyOrder ) {
 		Debug( @"Loading Prefered Key Order...");
+        
+        /////////// ////////////////////// ////////////////////// ////////////////////// ///////////
+		// If preferedKeyOrder is an String, only ONE order was defined. So convert to array.
+		if ( [preferedKeyOrder isKindOfClass:[NSString class]] ) {
+			// Convert to array.
+			preferedKeyOrder = [NSArray arrayWithObject:preferedKeyOrder];
+		}
 		
 		// Validate.
 		[self validateElement:preferedKeyOrder ofClass:[NSArray class]
@@ -121,7 +128,7 @@
 	
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 	// Has Maps?
-	id loadedMaps = [root objectOnXMLPath:@"maps/map"];
+	id loadedMaps = [root objectOnPath:@"maps/map"];
 
 	if ( loadedMaps ) {
 		Debug( @"Loading Maps...");
@@ -162,7 +169,7 @@
 	
 	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 	// Has Configurations?
-	id loadedConf = [root objectOnXMLPath:@"configuration/config"];
+	id loadedConf = [root objectOnPath:@"configuration/config"];
 	
 	if ( loadedConf ) {
 		Debug( @"Loading Configurations...");

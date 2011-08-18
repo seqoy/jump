@@ -394,14 +394,14 @@
 		
 		// Add Unordered at the bottom.
 		[loopProcessing addObjectsFromArray:actualKeys];
-	} 
+	}
 	
 	/////////// /////////// /////////// /////////// /////////// /////////// 
 	// If aren't defined, will process on any order:
 	//	  This is because the NSDictionary, doesn't maintain any particular order. 
 	//	  So, the order that come from server isn't respected at all
 	else {
-		loopProcessing = [resultData allKeys];
+		loopProcessing = [resultData allPaths];
 	}
 	
 	/////////// /////////// /////////// /////////// /////////// /////////// 
@@ -421,11 +421,11 @@
 		// /////////// /////////// /////////// /////////// /////////// 
 		// Try...
 		if ( bridgetEntityMap									// ...Has an one map for it.
-			&& [resultData objectForKey:serverDataKey]			// ...Exist on Server Data Packet.
+			&& [resultData objectOnPath:serverDataKey]			// ...Exist on Server Data Packet.
 			) 
 		{
 			// Get Server Data Key Object Class.
-			id object = [resultData objectForKey:serverDataKey];
+			id object = [resultData objectOnPath:serverDataKey];
 			
 			// DB action.
 			NSDictionary *databaseActions;
@@ -612,7 +612,7 @@
 		else {
 			if ( delegate )
 				if ( [(id)delegate respondsToSelector:@selector(unhandledServerKey:withData:)] )
-					[delegate unhandledServerKey:serverDataKey withData:[resultData objectForKey:serverDataKey] ];
+					[delegate unhandledServerKey:serverDataKey withData:[resultData objectOnPath:serverDataKey] ];
 			
 		}
 	}
