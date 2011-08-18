@@ -28,9 +28,9 @@
 	BOOL isAtom;
 	
 	// Does it have an 'feed' element?
-	isAtom = (nil != [data objectOnXMLPath:@"feed"]);
+	isAtom = (nil != [data objectOnPath:@"feed"]);
 	// Does it have an 'feed/xmlns' element?
-	isAtom = (nil != [data objectOnXMLPath:@"feed/xmlns"]);
+	isAtom = (nil != [data objectOnPath:@"feed/xmlns"]);
 	// Return test result.
 	return isAtom;
 }
@@ -39,11 +39,11 @@
 	BOOL isRSS = NO;
 	
 	// Does it have an RSS element?
-	isRSS = (nil != [data objectOnXMLPath:@"rss"]);
+	isRSS = (nil != [data objectOnPath:@"rss"]);
 	
 	// Does it? Let's check the version.
 	if ( isRSS ) {
-		NSString* version = [data objectOnXMLPath:@"rss/version"];
+		NSString* version = [data objectOnPath:@"rss/version"];
 		isRSS = (version != nil && [version isEqualToString:anVersion] );
 	}
 	
