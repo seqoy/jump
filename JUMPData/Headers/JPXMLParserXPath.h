@@ -35,11 +35,33 @@
  * </xml>
  * \encode
  * <p>
- * To retrieve the value of <tt><value</tt> item. You use:
+ * To retrieve the value of <tt><value></tt> item. You use:
  * \code
  * [result XMLObjectOnPath:@"xml/child/value"];
  * \endcode
  */
-- (id)objectOnXMLPath:(NSString*)basicPath;
+- (id)objectOnPath:(NSString*)basicPath;
+
+/**
+ * Deprecated, use objectOnPath: instead.
+ */
+- (id)objectOnPath:(NSString*)basicPath __attribute__((deprecated));
+
+/**
+ * Return one Array of Strings containing paths for all levels of this dictionary.
+ * For example for a dictionary like this:
+ \code
+ [NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObject:@"Value1" forKey:@"Level21"], @"Level11", @"Value2", @"Level12", nil];
+ \endcode
+ Will return an Array with those values:
+ \code
+ (
+     "Level12",
+     "Level11/Level21",
+     "Level11"
+ )
+ \endcode
+ */
+- (NSArray*)allPaths;
 
 @end

@@ -18,7 +18,7 @@
 //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// //////// 
 @implementation NSDictionary (JPXMLAdditions)
 
-- (id)objectOnXMLPath:(NSString*)basicPath {
+- (id)objectOnPath:(NSString*)basicPath {
 	// Divide Components.
 	NSArray *componentes = [basicPath componentsSeparatedByString:@"/"];
 	
@@ -45,6 +45,57 @@
 	// Return retrieved value.
 	return parseElement;
 	
+}
+
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+- (id)objectOnXMLPath:(NSString*)basicPath {
+    return [self objectOnPath:basicPath];
+}
+
+////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
+- (NSArray*)allPaths {
+    // All Paths.
+    NSMutableArray *allPaths = [[NSMutableArray alloc] init];
+    
+    // All Keys.
+    NSArray *allKeys = [self allKeys];
+    
+    //////////////////////////////////////////////////////////////////////////////////////////
+    // Loop All Keys.
+    for ( NSString* key in allKeys ) {
+        
+        // Key must be a String.
+        if ( ![key isKindOfClass:[NSString class]] ) {
+            [NSException raise:NSInternalInconsistencyException
+                        format:@"[%@ allPaths] can't process Dictionary *keys that isn't NSString.", NSStringFromClass([self class])];
+        }
+        
+        // Retrieve the value.
+        id value = [self objectForKey:key];
+        
+        //////////////////////////////
+        // Value is a Dictionary? 
+        if ( [value isKindOfClass:[NSDictionary class]] ) {
+            
+            // Process Paths inside the Dictionary.
+            NSArray *newKeys = [value allPaths];
+            
+            // Loop adding to our paths.
+            for ( NSString *newKey in newKeys ) {
+                NSString *formattedKey = [NSString stringWithFormat:@"%@/%@", key, newKey ];
+                [allPaths addObject:formattedKey]; 
+            }
+        }
+        
+        // Assign the plain key too.
+        [allPaths addObject:key];
+    }
+    
+    // Autorelease.
+    [allPaths autorelease];
+    
+    // Return.
+    return allPaths;
 }
 
 @end
