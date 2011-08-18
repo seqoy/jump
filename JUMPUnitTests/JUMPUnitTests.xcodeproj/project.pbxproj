@@ -23,6 +23,7 @@
 		183ADECA1371FAFF00DABF60 /* JRSSFeedsExample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 183ADEC91371FAFF00DABF60 /* JRSSFeedsExample.xml */; };
 		18448B0C132FF7420061513B /* JUMPLog4CocoaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */; };
 		184BEA0C1373308200C1C2C6 /* JUMPDataAtomFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */; };
+		185E7BA213FD6E630073F86E /* JUMPDataDictionaryXPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E7BA113FD6E630073F86E /* JUMPDataDictionaryXPathTests.m */; };
 		185F4BFC135F18B70069C261 /* JUMPDataPopulatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */; };
 		185F4D39135F3DD80069C261 /* JUMPXMLDecoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4D38135F3DD80069C261 /* JUMPXMLDecoderTest.m */; };
 		18791BA31366048200EFC991 /* JPSyncConfigurationOneItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18791BA21366048200EFC991 /* JPSyncConfigurationOneItem.xml */; };
@@ -137,6 +138,7 @@
 		18448B0B132FF7420061513B /* JUMPLog4CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPLog4CocoaTest.m; path = Sources/JUMPLog4CocoaTest.m; sourceTree = "<group>"; };
 		18448B1B132FF99A0061513B /* libJUMPLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJUMPLogger.a; sourceTree = SOURCE_ROOT; };
 		184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataAtomFeedTests.m; path = Sources/JUMPDataAtomFeedTests.m; sourceTree = "<group>"; };
+		185E7BA113FD6E630073F86E /* JUMPDataDictionaryXPathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataDictionaryXPathTests.m; path = Sources/JUMPDataDictionaryXPathTests.m; sourceTree = "<group>"; };
 		185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPDataPopulatorTest.m; path = Sources/JUMPDataPopulatorTest.m; sourceTree = "<group>"; };
 		185F4C15135F1BB50069C261 /* mockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockObject.h; path = Sources/mockObject.h; sourceTree = "<group>"; };
 		185F4D38135F3DD80069C261 /* JUMPXMLDecoderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUMPXMLDecoderTest.m; path = Sources/JUMPXMLDecoderTest.m; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		1837D3C2135C99BA0014E7CC /* JUMPData */ = {
 			isa = PBXGroup;
 			children = (
+				185E7BA113FD6E630073F86E /* JUMPDataDictionaryXPathTests.m */,
 				184BEA0A1373308200C1C2C6 /* JUMPDataAtomFeedTests.m */,
 				180038F0137193F200C4B0A3 /* JUMPDataRSSFeedTests.m */,
 				185F4BFB135F18B70069C261 /* JUMPDataPopulatorTest.m */,
@@ -537,6 +540,7 @@
 				185F4D39135F3DD80069C261 /* JUMPXMLDecoderTest.m in Sources */,
 				180038F1137193F200C4B0A3 /* JUMPDataRSSFeedTests.m in Sources */,
 				184BEA0C1373308200C1C2C6 /* JUMPDataAtomFeedTests.m in Sources */,
+				185E7BA213FD6E630073F86E /* JUMPDataDictionaryXPathTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

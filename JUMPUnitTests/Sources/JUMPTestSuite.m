@@ -65,20 +65,23 @@
 ////// //////////// //////////////// //////////// //////////
 // JUMP Database Test Cases.
 -(void)jumpDataCase {
-//	[self addTestGroup:
-//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataXMLTests" delegate:nil]]; 
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataXMLTests" delegate:nil]]; 
 	
-//	[self addTestGroup:
-//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataSyncConfiguratorTest" delegate:nil]];
-//	
-//	[self addTestGroup:
-//	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataPopulator" delegate:nil]];
-//	
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataSyncConfiguratorTest" delegate:nil]];
+	
+	[self addTestGroup:
+	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataPopulator" delegate:nil]];
+	
 	[self addTestGroup:
 	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataAtomFeedTests" delegate:nil]];
 
 	[self addTestGroup:
 	[GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataRSSFeedTests" delegate:nil]]; 
+
+	[self addTestGroup:
+    [GHTestGroup testGroupFromTestCaseClassName:@"JUMPDataDictionaryXPathTests" delegate:nil]]; 
 
 }
 
@@ -98,7 +101,7 @@
 	if (self != nil) {
 		////// //////////// //////////////// //////////// //////////
 		// JUMP Data Test Cases.
-		//[self jumpDataCase];
+		[self jumpDataCase];
 
 		////// //////////// //////////////// //////////// //////////
 		// JUMP Network Test Cases.
@@ -106,7 +109,7 @@
 		
 		////// //////////// //////////////// //////////// //////////
 		// JUMP Logger Test Cases.
-		[self jumpLoggerCase];
+		//[self jumpLoggerCase];
 		
 		////// //////////// //////////////// //////////// //////////
 		// JUMP User Interface Test Cases.
