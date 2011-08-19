@@ -88,32 +88,42 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(Class)grabTheClassOfProperty:(NSString*)firstKey onObject:(id)firstObject {
-	
 	//	///////////// 	///////////// 	///////////// 	///////////// 	///////////// 
 	/* 
 	 * To correct compile, you need to ADD the libobjc.A.dylib framework to your target. And also #import the <objc/runtime.h>
 	 */
-	
+
 	// Get the property (Method) attributes.
 	objc_property_t property = class_getProperty([firstObject class], [firstKey UTF8String]);
 	
 	// Test if some data was returned, first.
 	if ( property != NULL ) {
+        
+        // The attribute type will be filled as NSString.
+        NSString *type;
+        
+        //////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
+        // Figure out the type from attributes. Code from Apple Source: http://stackoverflow.com/questions/754824/get-an-object-attributes-list-in-objective-c
+        const char *attributes = property_getAttributes(property);
+        char buffer[1 + strlen(attributes)];
+        strcpy(buffer, attributes);
+        char *state = buffer, *attribute;
+        while ((attribute = strsep(&state, ",")) != NULL) {
+            if (attribute[0] == 'T') {
+                
+                // Convert to NSString.	
+                type = [[NSString alloc] initWithBytes:(attribute + 3) 
+                                                length:strlen(attribute) - 4 
+                                              encoding:NSUTF8StringEncoding];
+                break;
+            }
+        }
 		
-		// Attribute description. (http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ObjectiveC/Articles/ocProperties.html)
-		NSString *attributeDescripion = [NSString stringWithCString:property_getAttributes(property) encoding:[NSString defaultCStringEncoding]];
-		
-		// Debug.
-		//debug( @"Property Attributes: %@", attributeDescripion);
-		
-		// Isolate the Class of this property.
-		NSArray *elements = [attributeDescripion componentsSeparatedByString:@"\""];
-		
-		// Should have 3 elements, if doesn't we can't process.
-		if ( [elements count] != 3 ) return nil;
-		
-		// The second element is what we want... So transform him on a class.
-		Class firstKeyClass = NSClassFromString([elements objectAtIndex:1]);
+		// Convert type String to Class.
+		Class firstKeyClass = NSClassFromString(type);
+        
+        // Release string type.
+        [type release];
 		
 		// And return.
 		return firstKeyClass;
@@ -122,7 +132,6 @@
 	///////////// 	///////////// 	///////
 	// If can't decode, return nil.
 	return nil;
-	
 }
 
 ///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	///////////// 

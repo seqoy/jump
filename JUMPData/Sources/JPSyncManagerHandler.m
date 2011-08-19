@@ -333,9 +333,20 @@
     //// //// //// //// //// //// //// //// //// //// //// //// ////
     // Create an Autorelease Pool.
     NSAutoreleasePool *anPool = [NSAutoreleasePool new];
+
+    Debug( @"Starting to process...");
     
+	//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
+	// Warn the delegate that will start to process.
+	if ( delegate )
+		if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcess)] )
+            [delegate syncManagerWillStartToProcess];
+    
+
     /////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
     // Create an local Database Manager.
+    
+    Debug( @"Creating local Database Manager on background thread...");
 
     // We have one specific model?
     NSString *specificModel;
@@ -360,20 +371,12 @@
     // and the current in-memory version, giving priority to in-memory changes.
     [_backgroundThreadDatabaseManager.managedObjectContext setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
 	
-	//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
-	// Warn the delegate that will start to process.
-	if ( delegate )
-		if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcess)] )
-			 [delegate syncManagerWillStartToProcess];
-    
     //////////// /////////// /////////// /////////// /////////// /////////// /////////// 
     // Start to monitor when the Database Manager perform changes.
 	[[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(mergeChanges:)
                                                  name:NSManagedObjectContextDidSaveNotification
                                                object:_backgroundThreadDatabaseManager.managedObjectContext];
-	
-	Debug( @"Starting to process...");
 	
 	//// //// //// //// //// //// //// //// //// //// //// ////
 	id loopProcessing;
@@ -406,7 +409,7 @@
 	
 	/////////// /////////// /////////// /////////// /////////// /////////// 
 	// Update and Insert of new records, aren't commited at this point.
-	// Commit are an expensive processing to do every record.
+	// Commit are an expensive processing to do for every record.
 	// So we keep the changes on memory, and commit at the end of the loop.
 	_backgroundThreadDatabaseManager.automaticallyCommit = NO;
     
@@ -429,7 +432,9 @@
 		{
 			// DB action.
 			NSDictionary *databaseActions;
-			
+
+            NSLog(@"Processing %i lines", [object count]);
+
 			//// //// //// //// //// //// //// //// //// //// //// ////
 			// If Dictionary, we'll check if have an UPDATE / DELETE section.
 			if ( [object isKindOfClass:[NSDictionary class] ] ) {
@@ -455,6 +460,16 @@
 			//// //// //// //// //// //// //// //// //// //// //// ////
             // Actions to process.
             NSArray *actions = [databaseActions allKeys];
+            
+            //// //// //// //// //// //// //// //// //// //// //// //////// //// //// //// //// //// //// //// //// //// //// ////
+            // For optimization, we do a first query for all lines. 
+            // This Query is made using "fault", so we don't load every data to memory.
+            JPDBManagerAction *anAction = [_backgroundThreadDatabaseManager getDatabaseAction];
+            anAction.returnObjectsAsFault = YES;
+            NSArray *allData = [anAction queryAllDataFromEntity:[self getConfigModelForKey:serverDataKey].toEntity];
+            
+            // If the DB is empty, we don't wave to test for updates.
+            BOOL shouldQueryEveryRecord = [allData count] > 0;
             
 			//// //// //// //// //// //// //// //// //// //// //// ////
 			// Loop on DB Actions.
@@ -510,20 +525,44 @@
 							NSString *updateLocalKey = [self tryToGrabDataKey:updateKey
 															   fromBridgedMap:bridgetEntityMap];
 							
-							/////////// /////////// /////////// /////////// /////////// /////////// 
-							// Predicate to Query the DB.
-							NSPredicate *query = [NSPredicate predicateWithFormat:@"%K == %@", updateLocalKey, value];
-							
-							// Grab from DB this object using the key.
-							NSArray *result = [JPLocalDBManager queryEntity:[self getConfigModelForKey:serverDataKey].toEntity
-                                                              withPredicate:query];
-							
+                            
+                            ///// /////////// /////////// /////////// /////////// /////////// 
+                            // Result init as empty Array.
+                            NSArray *result = nil;
+                            
+                            ///// /////////// /////////// /////////// /////////// /////////// 
+                            // Should query to check updates?
+                            if ( shouldQueryEveryRecord ) {
+                                
+                                //// /////////// /////////// ////// /////////// /////////// // /////////// /////////// 
+                                // Believe or not is faster to do this kind of search that a Core Data Query.
+                                for ( id dataItem in allData ) {
+                                    BOOL found = [[dataItem valueForKey:updateLocalKey] isEqual:value];
+                                    if ( found ) {
+                                        result = [NSArray arrayWithObject:dataItem];
+                                        break;
+                                    }
+                                }
+                                
+                                /* We're not using this query anymore because is too slow.
+                                // Predicate to Query the DB.
+                                NSPredicate *query = [NSPredicate predicateWithFormat:@"%K == %@", updateLocalKey, value];
+                                
+                                // Grab from DB this object using the key.
+                                result = [JPLocalDBManager queryEntity:[self getConfigModelForKey:serverDataKey].toEntity
+                                                     withFetchTemplate:nil
+                                            replaceFetchWithDictionary:nil
+                                                arrayOfSortDescriptors:nil
+                                                       customPredicate:query];
+                                 */
+                            }
+                            
 							// Data to Populate.
 							id coreDataRecord;
 							
 							/////////// /////////// /////////// /////////// /////////// /////////// 
-							// If doens't exist, create New Record.
-							if ( [result count] == 0 ) {
+							// If dont't exist, create New Record.
+							if ( result == nil || [result count] == 0 ) {
 								
 								//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 								// Warn the delegate that will INSERT data.
@@ -536,9 +575,10 @@
 								// Create new Core Data record for this entity.
 								coreDataRecord = [JPLocalDBManager createNewRecordForEntity:[self getConfigModelForKey:serverDataKey].toEntity];
 								
-								//// //// //// //// //// //// //// //// 
-								// Else Just will update.
-							} else {
+							} 
+                            //// //// //// //// //// //// //// //// 
+                            // Else Just will update.
+							else {
 								
 								//// //// //// //// //// //// //// //// //// //// 
 								// Core Data is the one that was retrieved.
