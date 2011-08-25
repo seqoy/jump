@@ -433,8 +433,6 @@
 			// DB action.
 			NSDictionary *databaseActions;
 
-            NSLog(@"Processing %i lines", [object count]);
-
 			//// //// //// //// //// //// //// //// //// //// //// ////
 			// If Dictionary, we'll check if have an UPDATE / DELETE section.
 			if ( [object isKindOfClass:[NSDictionary class] ] ) {
@@ -474,6 +472,9 @@
 			//// //// //// //// //// //// //// //// //// //// //// ////
 			// Loop on DB Actions.
 			for ( NSString *action in actions ) {
+
+                Debug(@"Processing %i records from Server Key: %@", [object count], serverDataKey);
+                Debug(@"Exist %i records in the Entity: %@", [allData count], [self getConfigModelForKey:serverDataKey].toEntity);
                 
 				///////// 	///////// 	///////// 	///////// 	///////// 	///////// 	///////// ///////// 	///////// 	///////// 	///////// 	///////// 	///////// 	///////// 
 				// If action are UPDATE (INSERT).
