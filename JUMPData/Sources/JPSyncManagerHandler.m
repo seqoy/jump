@@ -340,7 +340,8 @@
 	// Warn the delegate that will start to process.
 	if ( delegate )
 		if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcess)] )
-            [delegate syncManagerWillStartToProcess];
+             [(id)delegate performSelectorOnMainThread:@selector(syncManagerWillStartToProcess)
+                                        withObject:nil waitUntilDone:NO];
     
 
     /////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
