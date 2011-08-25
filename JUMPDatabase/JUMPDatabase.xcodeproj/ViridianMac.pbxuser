@@ -94,18 +94,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 334867107;
-			PBXWorkspaceStateSaveDate = 334867107;
+			PBXPerProjectTemplateStateSaveDate = 335458360;
+			PBXWorkspaceStateSaveDate = 335458360;
 		};
 		perUserProjectItems = {
 			180C44F0135E2C2600D7B699 /* PBXTextBookmark */ = 180C44F0135E2C2600D7B699 /* PBXTextBookmark */;
 			1834385B13F5AAAA004761D1 /* PBXTextBookmark */ = 1834385B13F5AAAA004761D1 /* PBXTextBookmark */;
-			1834385C13F5AAAA004761D1 /* PBXTextBookmark */ = 1834385C13F5AAAA004761D1 /* PBXTextBookmark */;
-			1847EADF13E3233200B7FC54 /* PBXTextBookmark */ = 1847EADF13E3233200B7FC54 /* PBXTextBookmark */;
+			18412BCF13FEB04500CBCA7B /* PBXTextBookmark */ = 18412BCF13FEB04500CBCA7B /* PBXTextBookmark */;
+			18412BD013FEB04500CBCA7B /* PBXTextBookmark */ = 18412BD013FEB04500CBCA7B /* PBXTextBookmark */;
+			18412BD113FEB04500CBCA7B /* PBXTextBookmark */ = 18412BD113FEB04500CBCA7B /* PBXTextBookmark */;
 			1847EAE013E3233200B7FC54 /* PBXTextBookmark */ = 1847EAE013E3233200B7FC54 /* PBXTextBookmark */;
 			18C319C013F426BB008B2783 /* PBXTextBookmark */ = 18C319C013F426BB008B2783 /* PBXTextBookmark */;
 			18C31A1C13F434D7008B2783 /* PBXTextBookmark */ = 18C31A1C13F434D7008B2783 /* PBXTextBookmark */;
-			18C31AB513F44992008B2783 /* PBXTextBookmark */ = 18C31AB513F44992008B2783 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 18D05E94132FEDBF00813610 /* Source Control */;
 		userBuildSettings = {
@@ -131,25 +131,35 @@
 		vrLen = 2962;
 		vrLoc = 2314;
 	};
-	1834385C13F5AAAA004761D1 /* PBXTextBookmark */ = {
+	18412BCF13FEB04500CBCA7B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3A5E30A6132162CC00970E2B /* JPDBManager.m */;
-		name = "JPDBManager.m: 209";
+		name = "JPDBManager.m: 474";
 		rLen = 0;
-		rLoc = 9736;
+		rLoc = 21168;
 		rType = 0;
-		vrLen = 2620;
-		vrLoc = 7846;
+		vrLen = 3218;
+		vrLoc = 0;
 	};
-	1847EADF13E3233200B7FC54 /* PBXTextBookmark */ = {
+	18412BD013FEB04500CBCA7B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3A5E3442132305F300970E2B /* JPDBManagerAction.m */;
 		name = "JPDBManagerAction.m: 158";
 		rLen = 0;
 		rLoc = 7014;
 		rType = 0;
-		vrLen = 2554;
-		vrLoc = 6021;
+		vrLen = 3597;
+		vrLoc = 5416;
+	};
+	18412BD113FEB04500CBCA7B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3A5E3441132305F300970E2B /* JPDBManagerAction.h */;
+		name = "JPDBManagerAction.h: 46";
+		rLen = 17;
+		rLoc = 2248;
+		rType = 0;
+		vrLen = 2627;
+		vrLoc = 0;
 	};
 	1847EAE013E3233200B7FC54 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -188,16 +198,6 @@
 		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPCore/Headers/JPPathFunctions.h;
 		sourceTree = "<absolute>";
 	};
-	18C31AB513F44992008B2783 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3A5E30A6132162CC00970E2B /* JPDBManager.m */;
-		name = "JPDBManager.m: 209";
-		rLen = 0;
-		rLoc = 9736;
-		rType = 0;
-		vrLen = 2593;
-		vrLoc = 7867;
-	};
 	18D05E94132FEDBF00813610 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -214,9 +214,9 @@
 	};
 	3A5E30A6132162CC00970E2B /* JPDBManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1727, 7735}}";
-			sepNavSelRange = "{9727, 0}";
-			sepNavVisRange = "{7846, 2620}";
+			sepNavIntBoundsRect = "{{0, 0}, {1727, 7774}}";
+			sepNavSelRange = "{21168, 0}";
+			sepNavVisRange = "{0, 3218}";
 		};
 	};
 	3A5E31EC1321792700970E2B /* JPDBManager.h */ = {
@@ -242,16 +242,16 @@
 	};
 	3A5E3441132305F300970E2B /* JPDBManagerAction.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1237, 6513}}";
-			sepNavSelRange = "{14908, 0}";
-			sepNavVisRange = "{13863, 4161}";
+			sepNavIntBoundsRect = "{{0, 0}, {1727, 7020}}";
+			sepNavSelRange = "{2248, 17}";
+			sepNavVisRange = "{0, 2627}";
 		};
 	};
 	3A5E3442132305F300970E2B /* JPDBManagerAction.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1272, 7423}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1727, 7306}}";
 			sepNavSelRange = "{7014, 0}";
-			sepNavVisRange = "{6021, 2554}";
+			sepNavVisRange = "{5416, 3597}";
 		};
 	};
 	3A5E35281323312100970E2B /* JPDBManagerDefinitions.h */ = {
