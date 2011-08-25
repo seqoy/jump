@@ -36,7 +36,25 @@
 +(NSString*)convertToJSON:(NSDictionary*)anJSONDictionary humanReadable:(BOOL)humanReadable {
 	SBJsonWriter *anProcesser = [[[SBJsonWriter alloc] init] autorelease];
 	anProcesser.humanReadable = humanReadable;
-	return [anProcesser stringWithObject:anJSONDictionary];
+    
+    // Error Handler.
+    NSError *anError = nil;
+    
+    // Try to process.
+    id processed = [anProcesser stringWithObject:anJSONDictionary error:&anError];
+    
+    // If some error, will raise an Exception.
+    if (anError) {
+        NSException *e = [NSException exceptionWithName:NSStringFromClass([self class])
+                                                 reason:[anError localizedDescription]
+                                               userInfo:[NSDictionary dictionaryWithObject:anError forKey:@"parserError"]   // Store the NSError.
+                          ];
+        [e raise];
+        return nil;
+    }
+    
+    // Everythink ok.
+	return processed;
 }
 
 @end
