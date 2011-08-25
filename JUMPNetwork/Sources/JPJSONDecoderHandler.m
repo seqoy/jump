@@ -78,14 +78,22 @@
 	// Response String.
 	NSString *stringResponse = [event getMessage];
 	
-	// Convert JSON String.
-	NSDictionary *JSONDecoded = [JSONProcesser convertFromJSON:stringResponse];
-	
-	// ////// ////// ////// ////// ////// ////// 
+    // Data will be decoded as Dictionary.
+    NSDictionary *JSONDecoded;
+    
+	// ////// ////// ////// ////// ////// ////// // ////// ////// ////// ////// ////// ////// 
+    // Try to convert JSON String.
+    @try {
+         JSONDecoded = [JSONProcesser convertFromJSON:stringResponse];
+    }
+
+    // ////// ////// ////// ////// ////// ////// 
 	// If can't decode.
-	if ( JSONDecoded == nil ) {
-		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as JSON Object.\nProbably isn't an JSON String or is invalid."];
-		Warn( @"JPJSONDecoderHandler :: %@. The response is: %@", errorReason, stringResponse );
+    @catch (NSException * e) {
+		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as JSON Object.\n"
+                                                           @"Probably isn't an JSON String or is invalid.\n"
+                                                           @"Parser error: %@.\n", [[[e userInfo] objectForKey:@"parserError"] localizedDescription]];
+		Warn( @"JPJSONDecoderHandler :: %@\nThe HTTP Response is:\n%@", errorReason, stringResponse );
         
         ///////// /////// /////// /////// /////// /////// /////// /////// /////// ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
         // Create the error.
@@ -125,8 +133,3 @@
 }
 
 @end
-
-/**
- 11 oct + 4 !!
- 
- */
