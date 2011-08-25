@@ -26,7 +26,7 @@
 - (id) init {
     self = [super init];
     if (self != nil) {
-        progress = [NSNumber numberWithInt:0];
+        progress = [[NSNumber numberWithInt:0] retain];
     }
     return self;
 }
