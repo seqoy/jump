@@ -97,7 +97,10 @@
         return;
     
     // If defined, release.
-    if (progress) [progress release];
+    if (progress) {
+        [progress release];   
+        progress = nil;
+    }
     
     // Set the value locally.
     progress = [anValue copy];

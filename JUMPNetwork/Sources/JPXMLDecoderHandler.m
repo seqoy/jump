@@ -115,8 +115,8 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
 	}
 	
 	/////////////////////////////////////////////////
-	// Log XML String.
-	//Debug( @"Received XML :: %@", stringResponse );
+	// Log XML.
+	Debug( @"XML Received and Parsed :: %i bytes", [stringResponse length] );
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Set decoded Message on the event.

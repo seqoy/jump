@@ -94,6 +94,9 @@
 	// Has data to send?
 	if ( e.dataToSend != nil )
 		[requester appendPostData:[e dataToSend]];
+    
+    // Log.
+    Debug(@"Requesting HTTP Call : [Method: %@, URL: %@]", requester.requestMethod, [[e transportURL] absoluteString] );
 	 
 	// Start to Load.
 	[requester startAsynchronous];
