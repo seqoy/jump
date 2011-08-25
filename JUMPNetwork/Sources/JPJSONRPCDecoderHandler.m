@@ -65,32 +65,49 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
 			
 			// JSON Error Data.
 			NSDictionary *anError = [JSONDecoded objectForKey:@"error"];
-			
-			// NSError User Info Dictionary.
-			NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:[anError objectForKey:@"message"] 
-                                                                               forKey: NSLocalizedDescriptionKey];
             
-			///////// /////// /////// /////// /////// /////// /////// /////// /////// //// /////// 
-            // Assign extra JSON-RPC Metadata about this error to the userInfo dictionary.
+            ///////// /////// /////// /////// /////// /////// /////// /////// /////// //// /////// 
+            // Grab error Message.
+            id errorMessage = [anError objectForKey:@"message"];
+
+            // Error MUST be an String. 
+            if ( ![errorMessage isKindOfClass:[NSString class]] ) {
+                NSString *errorReason = @"Invalid JSON-RPC. Error 'message' key must be of STRING type.";
+                JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
+                                                code:kJSONRPCInvalid
+                                            userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+            }
             
-            // Error Name, JSON-RPC 1.1 Compliant.
-            if ([anError objectForKey:@"name"]) 
-                [userInfo setObject:[anError objectForKey:@"name"] forKey:JPJSONRPCErrorName];    
+            // /////// /////// /////// /////// /////// /////// /////// //// /////// // /////// /////// /////// /////// /////// /////// ////
+            // If error object is valid, process.
+            else {
+                
+                // NSError User Info Dictionary.
+                NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:errorMessage
+                                                                                   forKey:NSLocalizedDescriptionKey];
+                
+                ///////// /////// /////// /////// /////// /////// /////// /////// /////// //// /////// 
+                // Assign extra JSON-RPC Metadata about this error to the userInfo dictionary.
+                
+                // Error Name, JSON-RPC 1.1 Compliant.
+                if ([anError objectForKey:@"name"]) 
+                    [userInfo setObject:[anError objectForKey:@"name"] forKey:JPJSONRPCErrorName];    
+                
+                // Object value that carries custom and application-specific error information. JSON-RPC 1.1 Compliant.
+                if ([anError objectForKey:@"error"]) 
+                    [userInfo setObject:[anError objectForKey:@"error"] forKey:JPJSONRPCErrorMoreInfo];
+                
+                // A Primitive or Structured value that contains additional information about the error. JSON-RPC 2.0 Compliant.
+                if ([anError objectForKey:@"data"]) 
+                    [userInfo setObject:[anError objectForKey:@"data"] forKey:JPJSONRPCErrorData];
+                
+                ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
+                // Create an NSError.
+                JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
+                                                code:[[anError objectForKey:@"code"] intValue]
+                                            userInfo:userInfo];
+            }
 
-            // Object value that carries custom and application-specific error information. JSON-RPC 1.1 Compliant.
-            if ([anError objectForKey:@"error"]) 
-                [userInfo setObject:[anError objectForKey:@"error"] forKey:JPJSONRPCErrorMoreInfo];
-
-            // A Primitive or Structured value that contains additional information about the error. JSON-RPC 2.0 Compliant.
-            if ([anError objectForKey:@"data"]) 
-                [userInfo setObject:[anError objectForKey:@"data"] forKey:JPJSONRPCErrorData];
-
-			///////// /////// /////// /////// /////// /////// /////// /////// /////// 
-			// Create an NSError.
-			JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
-                                            code:[[anError objectForKey:@"code"] intValue]
-                                        userInfo:userInfo];
-            
 			//////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 			// Log.
 			Info( @"JSON Error Handled (%@) | Sending Error Upstream...", [JSONError localizedDescription] );
