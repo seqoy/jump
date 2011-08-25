@@ -19,10 +19,33 @@
 @implementation JPJSONProcesser
 
 ////////////// ////////////// ////////////// ////////////// 
++(void)raiseExceptionWithError:(NSError*)anError {
+    NSException *e = [NSException exceptionWithName:NSStringFromClass([self class])
+                                             reason:[anError localizedDescription]
+                                           userInfo:[NSDictionary dictionaryWithObject:anError forKey:@"parserError"]   // Store the NSError.
+                      ];
+    [e raise];
+}
+
+////////////// ////////////// ////////////// ////////////// 
 // Convert from JSON String to an Dictionary Object.
 +(id)convertFromJSON:(NSString*)anJSONString {
 	SBJsonParser *anProcesser = [[[SBJsonParser alloc] init] autorelease];
-	return [anProcesser objectWithString:anJSONString];
+    
+    // Error Handler.
+    NSError *anError = nil;
+    
+    // Try to process.
+    id processed = [anProcesser objectWithString:anJSONString error:&anError];
+    
+    // If some error, will raise an Exception.
+    if (anError) {
+        [self raiseExceptionWithError:anError];
+        return nil;
+    }
+    
+    // Everythink ok.
+	return processed;
 }
 
 ////////////// ////////////// ////////////// ////////////// 
@@ -45,11 +68,7 @@
     
     // If some error, will raise an Exception.
     if (anError) {
-        NSException *e = [NSException exceptionWithName:NSStringFromClass([self class])
-                                                 reason:[anError localizedDescription]
-                                               userInfo:[NSDictionary dictionaryWithObject:anError forKey:@"parserError"]   // Store the NSError.
-                          ];
-        [e raise];
+        [self raiseExceptionWithError:anError];
         return nil;
     }
     
