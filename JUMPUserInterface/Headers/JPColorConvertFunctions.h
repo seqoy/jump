@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
+#if !TARGET_OS_IPHONE 
+    #import <ApplicationServices/ApplicationServices.h>
+#else
+    #import <CoreGraphics/CoreGraphics.h>
+#endif
 #import "JPColorTypes.h"
 
 /**

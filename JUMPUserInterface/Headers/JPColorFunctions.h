@@ -15,8 +15,11 @@
  */
 #import "JPColorTypes.h"
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
-
+#if !TARGET_OS_IPHONE 
+    #import <ApplicationServices/ApplicationServices.h>
+#else
+    #import <CoreGraphics/CoreGraphics.h>
+#endif
 /**
  * \file JPColorFunctions.h
  * JPColor utility and helper functions.
