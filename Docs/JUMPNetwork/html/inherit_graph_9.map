@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$a00026.html" title="\&lt;JPPipelineEvent\&gt;" alt="" coords="260,56,388,85"/>
+<area shape="rect" id="node3" href="$a00013.html" title="JPDefaultHTTPMessage is an type of Event Message that encapsulate the HTTP data to be transported..." alt="" coords="505,110,660,138"/>
+<area shape="rect" id="node7" href="$a00030.html" title="A Event which represents the notification of an exception raised by a Handler." alt="" coords="748,4,932,33"/>
+<area shape="rect" id="node11" href="$a00035.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="494,56,671,85"/>
+<area shape="rect" id="node5" href="$a00020.html" title="JPJSONRPCMessage is an type of Event Message that encapsulate an JSON&#45;RPC data to be transported..." alt="" coords="774,138,906,166"/>
+<area shape="rect" id="node9" href="$a00014.html" title="The default Pipeline Exception Event implementation." alt="" coords="1259,31,1466,60"/>
+<area shape="rect" id="node13" href="$a00037.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="741,58,939,86"/>
+<area shape="rect" id="node15" href="$a00025.html" title="The default dowstream Message Event implementation." alt="" coords="987,110,1211,138"/>
+<area shape="rect" id="node19" href="$a00040.html" title="The default Upstream Message Event implementation." alt="" coords="991,56,1206,85"/>
+<area shape="rect" id="node17" href="$a00011.html" title="An Pipeline downstream Event that represent one &quot;cancel&quot; action." alt="" coords="1291,110,1435,138"/>
+<area shape="rect" id="node21" href="$a00046.html" title="A Event which represent the fundamental information to the I|O Transporter." alt="" coords="6,136,175,165"/>
+<area shape="rect" id="node23" href="$a00044.html" title="JPTransporterHTTPMessage is an special type of Event that encapsulate the HTTP data to be transported..." alt="" coords="224,136,424,165"/>
+<area shape="rect" id="node26" href="$a00045.html" title="A Event which represent the JSON RPC Encapsulated Data." alt="" coords="472,163,693,192"/>
+</map>

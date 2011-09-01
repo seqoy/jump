@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$a00012.html" title="{JPDefaultHandlerContext\n|+ next\l+ prev\l+ pipeline\l+ progress\l+ progressPriority\l# name\l# handler\l# canHandleUpstream\l# canHandleDownstream\l|* initWithPreviousContext:andNextContext:andName:andHandler:withPipeline:\l* initWithPreviousContext:andNextContext:andName:andHandler:withPipeline:\l}" alt="" coords="4,310,480,546"/>
+<area shape="rect" id="node4" href="$a00034.html" title="Enables a JPPipelineHandler to interact with its JPPipeline and other handlers." alt="" coords="149,5,336,259"/>
+</map>

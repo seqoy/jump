@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$a00025.html" title="The default dowstream Message Event implementation." alt="" coords="5,489,229,573"/>
+<area shape="rect" id="node11" href="$a00040.html" title="The default Upstream Message Event implementation." alt="" coords="253,489,467,573"/>
+<area shape="rect" id="node2" href="$a00035.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="150,139,327,240"/>
+<area shape="rect" id="node4" href="$a00026.html" title="{\&lt;JPPipelineEvent\&gt;\n||+ getFuture\l}" alt="" coords="175,6,301,90"/>
+<area shape="rect" id="node9" href="$a00011.html" title="An Pipeline downstream Event that represent one &quot;cancel&quot; action." alt="" coords="45,647,188,731"/>
+<area shape="rect" id="node13" href="$a00014.html" title="The default Pipeline Exception Event implementation." alt="" coords="256,622,463,757"/>
+</map>

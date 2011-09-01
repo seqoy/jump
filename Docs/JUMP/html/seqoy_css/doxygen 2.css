@@ -1,0 +1,753 @@
+
+/* The standard CSS for doxygen */
+
+body, table, div, p, dl {
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+
+/* @group Heading Levels */
+
+h1 {
+	text-align: left;
+	color: #257cb3;
+	font: 220% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h2 {
+	font: 170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #0076c4;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+dt {
+	font-weight: bold;
+}
+
+.headertitle {
+	padding-left: 20px;
+}
+div.multicol {
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+}
+
+p.startli, p.startdd {
+	margin-top: 2px;
+}
+
+p.endli {
+	margin-bottom: 0px;
+}
+
+p.enddd {
+	margin-bottom: 4px;
+}
+
+/* @end */
+
+caption {
+	font-weight: bold;
+}
+
+span.legend {
+        font-size: 70%;
+        text-align: center;
+}
+
+div.qindex, div.navtab{
+	background-color: #e8eef2;
+	border: 1px solid #84b0c7;
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+}
+
+div.qindex, div.navpath {
+	width: 100%;
+	line-height: 140%;
+}
+
+div.navtab {
+	margin-right: 15px;
+}
+
+/* @group Link Styling */
+
+a {
+	color: #000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.contents {
+	margin-left: 0;
+	position: relative;
+	padding-left: 20px;
+	top: 15px;
+}
+.contents a:visited {
+	
+	color: #000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #00ade7;
+}
+
+a.qindex {
+	font-weight: bold;
+}
+
+a.qindexHL {
+	font-weight: bold;
+	background-color: #6666cc;
+	color: #ffffff;
+	border: 1px double #9295C2;
+}
+
+.contents a.qindexHL:visited {
+        color: #ffffff;
+}
+
+a.el {
+	
+	color: #000;
+	font: bold 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	
+}
+
+a:hover.el {
+	color: #00ade7;
+}
+
+.contents {
+}
+a.elRef {
+}
+
+a.code {
+}
+
+a.codeRef {
+}
+
+/* @end */
+
+dl.el {
+	margin-left: -1cm;
+}
+
+.fragment {
+	font-family: monospace, fixed;
+	font-size: 105%;
+}
+
+pre.fragment {
+	border: 1px solid #CCCCCC;
+	background-color: #f5f5f5;
+	padding: 4px 6px;
+	margin: 4px 8px 4px 2px;
+}
+
+div.ah {
+	background-color: black;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 3px;
+	margin-top: 3px
+}
+
+div.groupHeader {
+	margin-left: 16px;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+div.groupText {
+	margin-left: 16px;
+	font-style: italic;
+}
+
+body {
+	
+	background: white;
+	color: black;
+	width: 100%;
+	margin: 0;
+	float: left;
+}
+
+
+td.indexkey {
+	
+	background-color: #efefef;
+	border: none;
+	padding-right: 22px;
+	padding-bottom: 0;
+	padding-left: 33px;
+}
+
+td.indexkey a {
+	font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #0071bc;
+	text-align: center;
+	padding-right: 22px;
+}
+td.indexvalue {
+	background-color: #FAFAFA;
+	border: none;
+	margin: 15px;
+	padding: 11px 22px 11px 11px;
+		font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+}
+
+.mdescLeft, .mdescRight {
+	padding: 0px 8px 4px 8px;
+	color: #555;
+}
+
+.memItemLeft, .memItemRight, .memTemplParams {
+	border-top: 1px solid #ccc;
+	padding: 1px;
+}
+
+tr.memlist {
+	background-color: #f0f0f0;
+}
+
+p.formulaDsp {
+	text-align: center;
+}
+
+img.formulaDsp {
+	
+}
+
+img.formulaInl {
+	vertical-align: middle;
+}
+
+div.center {
+	text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+}
+
+div.center img {
+	border: 0px;
+}
+
+img.footer {
+	border: 0px;
+	vertical-align: middle;
+}
+
+/* @group Code Colorization */
+
+span.keyword {
+	color: #008000
+}
+
+span.keywordtype {
+	color: #604020
+}
+
+span.keywordflow {
+	color: #e08000
+}
+
+span.comment {
+	color: #800000
+}
+
+span.preprocessor {
+	color: #806020
+}
+
+span.stringliteral {
+	color: #002080
+}
+
+span.charliteral {
+	color: #008080
+}
+
+span.vhdldigit { 
+	color: #ff00ff 
+}
+
+span.vhdlchar { 
+	color: #000000 
+}
+
+span.vhdlkeyword { 
+	color: #700070 
+}
+
+span.vhdllogic { 
+	color: #ff0000 
+}
+
+/* @end */
+
+.search {
+	color: #003399;
+	font-weight: bold;
+}
+
+form.search {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+input.search {
+	font-size: 75%;
+	color: #000080;
+	font-weight: normal;
+	background-color: #e8eef2;
+}
+
+td.tiny {
+	font-size: 75%;
+}
+
+.dirtab {
+	padding: 4px;
+	border-collapse: collapse;
+	border: 1px solid #84b0c7;
+}
+
+th.dirtab {
+	background: #e8eef2;
+	font-weight: bold;
+}
+
+hr {
+	height: 0;
+	border: none;
+	border-top: 1px solid #666;
+}
+
+/* @group Member Descriptions */
+
+.mdescLeft, .mdescRight,
+.memItemLeft, .memItemRight,
+.memTemplItemLeft, .memTemplItemRight, .memTemplParams {
+	background-color: #FAFAFA;
+	border: none;
+	margin: 15px;
+	padding: 1px 0 0 33px;
+}
+
+.mdescLeft, .mdescRight {
+	padding: 0px 8px 4px 8px;
+	color: #555;
+}
+
+.memItemLeft, .memItemRight, .memTemplParams {
+	border-top: 1px solid #ccc;
+	padding: 1px;
+}
+
+.memItemLeft, .memTemplItemLeft {
+        white-space: nowrap;
+}
+
+.memTemplParams {
+	color: #606060;
+        white-space: nowrap;
+}
+
+/* @end */
+
+/* @group Member Details */
+
+/* Styles for detailed member documentation */
+
+.memtemplate {
+	font-size: 80%;
+	color: #606060;
+	font-weight: normal;
+	margin-left: 3px;
+}
+
+.memnav {
+	background-color: #e8eef2;
+	border: 1px solid #84b0c7;
+	text-align: center;
+	margin: 2px;
+	margin-right: 15px;
+	padding: 2px;
+}
+
+.memitem {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.memname {
+	white-space: nowrap;
+	margin-left: 15px;
+	margin: 13px;
+	font:15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.memname a.el {
+	margin: 2px;
+	font:16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #744100;
+}
+
+
+.memproto {
+	border-top: 1px solid #909090;
+	border-bottom: 1px solid #909090;
+	padding: 0;
+	background-color: #f7f7f7;
+	font-weight: bold;
+}
+
+.memdoc {
+	background-color: #fff;
+	border-top-width: 0;
+	padding: 0 5px 25px 55px;
+}
+
+.memdoc a.el {
+	font-weight: normal;
+	font-style: normal;
+	color: #909090;
+}
+
+.memdoc b {
+	color: #008eed;
+}
+
+.memdoc dl dd table tr td em {
+	color: #780091;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.memdoc dl dd table tr td p {
+	padding: 0;
+	margin: 0;
+}
+
+
+.paramkey {
+	text-align: right;
+}
+
+.paramtype {
+	white-space: nowrap;
+	color: #004d7d;
+}
+
+.paramname {
+	color: #7036a5;
+	white-space: nowrap;
+	float: left;
+}
+.paramname em {
+	font-style: normal;
+}
+
+/* @end */
+
+/* @group Directory (tree) */
+
+/* for the tree view */
+
+.ftvtree {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #e4ebf7;
+
+	margin: 0 0 0 5px;
+}
+
+/* these are for tree view when used as main index */
+
+.directory {
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+.directory h3 {
+	margin: 0px;
+	margin-top: 1em;
+	font-size: 11pt;
+}
+
+/*
+The following two styles can be used to replace the root node title
+with an image of your choice.  Simply uncomment the next two styles,
+specify the name of your image and be sure to set 'height' to the
+proper pixel height of your image.
+*/
+
+/*
+.directory h3.swap {
+	height: 61px;
+	background-repeat: no-repeat;
+	background-image: url("yourimage.gif");
+}
+*/
+.directory h3.swap span {
+		color: #257cb3;
+
+	font: 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.directory > h3 {
+	margin-top: 0;
+}
+
+.directory p a.el {
+	margin-left: -22px;
+}
+
+.directory p {
+	white-space: nowrap;
+	margin: 0px 0px 0px 0;
+}
+
+.directory div {
+	display: none;
+	margin: 0px;
+}
+
+.directory img {
+	
+	vertical-align: -30%;
+}
+
+/* these are for tree view when not used as main index */
+
+.directory-alt {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.directory-alt h3 {
+	margin: 0px;
+	margin-top: 1em;
+	font-size: 11pt;
+}
+
+.directory-alt > h3 {
+	margin-top: 0;
+}
+
+.directory-alt p {
+	white-space: nowrap;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+
+
+.directory-alt div {
+	display: none;
+	margin: 0px;
+}
+
+.directory-alt img {
+	vertical-align: -30%;
+}
+
+/* @end */
+
+address {
+	font-style: normal;
+	color: #333;
+}
+
+/* tabs styles, based on http://www.alistapart.com/articles/slidingdoors */
+
+DIV.tabs, DIV.tabs2, .summary
+{
+	margin-left: -15px;
+	background-image: url(seqoy_images/button_bar_background.png);
+	font: 12px "Lucida Grande", Lucida, Verdana, sans-serif;
+	display: inline-block;
+	width: 100%;
+	border-width     : 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+ border-bottom    : 1px solid #84B0C7;
+	padding-left: 22px;
+	color: #000;
+}
+
+DIV.tabs, .summary {
+	height: 24px;
+}
+
+
+DIV.tabs UL, DIV.tabs2 UL, .summary UL
+{
+   margin           : 0px;
+   padding-left     : 10px;
+   list-style       : none;
+}
+
+DIV.tabs LI, DIV.tabs FORM, DIV.tabs2 FORM, DIV.tabs2 LI, .summary LI
+{
+   display          : inline;
+   margin           : 0px;
+   padding          : 0px;
+}
+
+DIV.tabs FORM, DIV.tabs2 FORM, .summary FORM
+{
+   float            : right;
+}
+
+DIV.tabs A, DIV.tabs2 A, .summary A
+{
+   float            : left;
+   font-size        : 80%;
+   text-decoration  : none;
+}
+
+.summary A {
+	padding-left: 18px;
+	padding-top: 5px;
+}
+
+DIV.tabs A:hover, DIV.tabs2 A:hover, .summary A:hover
+{
+   background-position: 100% -150px;
+}
+
+DIV.tabs A:link, DIV.tabs A:visited,
+DIV.tabs A:active, DIV.tabs A:hover
+{
+      
+}
+
+DIV.tabs2 A:link, DIV.tabs2 A:visited,
+DIV.tabs2 A:active, DIV.tabs2 A:hover
+{
+      
+}
+
+.summary A:link, .summary A:visited,
+.summary A:active, .summary A:hover
+{
+      
+}
+
+DIV.tabs SPAN, DIV.tabs2 SPAN, .summary SPAN
+{
+   float            : left;
+   display          : block;
+   padding          : 5px 9px;
+   white-space      : nowrap;
+}
+
+DIV.tabs #MSearchBox, DIV.tabs2 #MSearchBox
+{
+   float            : right;
+   display          : inline;
+   font-size        : 1em;
+}
+
+DIV.tabs TD, DIV.tabs2 TD, .summary TD
+{
+   font-size        : 80%;
+   font-weight      : bold;
+   text-decoration  : none;
+}
+
+
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+DIV.tabs SPAN, DIV.tabs2 SPAN, .summary SPAN 
+{float : none;}
+/* End IE5-Mac hack */
+
+DIV.tabs A:hover SPAN, DIV.tabs2 A:hover SPAN, .summary A:hover SPAN
+{
+   background-position: 0% -150px;
+}
+
+DIV.tabs LI.current A, DIV.tabs2 LI.current A, .summary LI.current A
+{
+	
+}
+
+DIV.tabs LI.current SPAN, DIV.tabs2 LI.current SPAN, .summary LI.current SPAN
+{
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+DIV.navpath
+{
+   background       : none;
+   border           : none;
+   border-bottom    : 1px solid #84B0C7;
+   text-align       : center;
+   margin           : 2px;
+   padding          : 2px;
+}
+
+.main_header {
+	position: relative;
+	background-image: url(seqoy_images/background-topo.jpg);
+	height: 40px;
+	width: 100%;
+}
+
+.logo_seqoy {
+	position: relative;
+	background: url(seqoy_images/logo-seqoy.png) no-repeat;
+	top: 10px;
+	width: 70px;
+	height: 20px;
+	left: 22px;
+}
+
+.footer {
+	position: relative;
+	background: #00befd;
+	left: -45px;
+	width: 105%;
+}
+#file_date {
+		color: #333;
+	font-size: 11px;
+	background-color: #d5d5d5;
+		text-align: left;
+	position: relative;
+	padding: 10px 0 10px 22px;
+}
+.copyright {
+	color: #fff;
+	font: 11px/17px "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: left;
+	position: relative;
+	padding-top: 10px;
+	margin-right: 22px;
+	margin-left: 22px;
+	padding-bottom: 10px;
+}
+.copyright a {
+	color: #fff;
+	text-decoration: underline;
+}

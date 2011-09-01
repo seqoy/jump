@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$a00040.html" title="The default Upstream Message Event implementation." alt="" coords="5,595,219,679"/>
+<area shape="rect" id="node4" href="$a00037.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="20,392,217,544"/>
+<area shape="rect" id="node6" href="$a00035.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="37,141,213,243"/>
+<area shape="rect" id="node8" href="$a00026.html" title="{\&lt;JPPipelineEvent\&gt;\n||+ getFuture\l}" alt="" coords="148,6,275,90"/>
+<area shape="rect" id="node10" href="$a00030.html" title="A Event which represents the notification of an exception raised by a Handler." alt="" coords="162,267,347,368"/>
+</map>

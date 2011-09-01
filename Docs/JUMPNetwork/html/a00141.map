@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$a00013.html" title="JPDefaultHTTPMessage is an type of Event Message that encapsulate the HTTP data to be transported..." alt="" coords="79,138,256,392"/>
+<area shape="rect" id="node7" href="$a00030.html" title="A Event which represents the notification of an exception raised by a Handler." alt="" coords="254,465,439,567"/>
+<area shape="rect" id="node11" href="$a00035.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="429,215,605,316"/>
+<area shape="rect" id="node5" href="$a00020.html" title="JPJSONRPCMessage is an type of Event Message that encapsulate an JSON&#45;RPC data to be transported..." alt="" coords="4,457,229,575"/>
+<area shape="rect" id="node9" href="$a00014.html" title="The default Pipeline Exception Event implementation." alt="" coords="315,774,521,909"/>
+<area shape="rect" id="node13" href="$a00037.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="463,440,660,592"/>
+<area shape="rect" id="node15" href="$a00025.html" title="The default dowstream Message Event implementation." alt="" coords="621,641,845,725"/>
+<area shape="rect" id="node19" href="$a00040.html" title="The default Upstream Message Event implementation." alt="" coords="383,641,597,725"/>
+<area shape="rect" id="node17" href="$a00011.html" title="An Pipeline downstream Event that represent one &quot;cancel&quot; action." alt="" coords="661,799,804,883"/>
+</map>

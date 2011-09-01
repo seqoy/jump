@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$interface_j_p_d_b_manager_action.html#ac566a65fcbfa1026f42954648d60e6b8" title="Delete specified Record from his Entity on the Database." alt="" coords="492,5,748,35"/>
+<area shape="rect" id="node5" href="$interface_j_p_d_b_manager_action.html#af85b28a738631615ad0e4030500ce71a" title="Delete all records queried by the specified Fetch Template." alt="" coords="390,59,850,90"/>
+<area shape="rect" id="node7" href="$interface_j_p_d_b_manager_action.html#a1a7a137d9a6617366523dca5a59174a0" title="Delete all Records from specified Entity." alt="" coords="898,59,1248,90"/>
+</map>
