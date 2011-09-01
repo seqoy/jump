@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181B923C14082F68002F7980 /* NSObjects Additions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSObjects Additions";
+			sourceTree = "<group>";
+		};
 		3A5E30F613216A5700970E2B /* Functions */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5E319D1321773C00970E2B /* Frameworks */,
+				181B923C14082F68002F7980 /* NSObjects Additions */,
 				3AEF15AC13182A1B00BC3759 /* Sources */,
 				3A5E31221321730100970E2B /* Products */,
 			);
