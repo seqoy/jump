@@ -37,7 +37,7 @@
  * <p>
  * To retrieve the value of <tt><value></tt> item. You use:
  * \code
- * [result XMLObjectOnPath:@"xml/child/value"];
+ * [result objectOnPath:@"xml/child/value"];
  * \endcode
  */
 - (id)objectOnPath:(NSString*)basicPath;
@@ -45,7 +45,7 @@
 /**
  * Deprecated, use objectOnPath: instead.
  */
-- (id)objectOnPath:(NSString*)basicPath __attribute__((deprecated));
+- (id)objectOnXMLPath:(NSString*)basicPath __attribute__((deprecated));
 
 /**
  * Return one Array of Strings containing paths for all levels of this dictionary.
