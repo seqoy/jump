@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$a00041.html" title="JPTransporterHTTPEventMessage is an special type of Events that encapsulate the HTTP data to be trans..." alt="" coords="5,185,248,394"/>
-<area shape="rect" id="node4" href="$a00019.html" title="The default dowstream Message Event implementation." alt="" coords="9,22,244,119"/>
-<area shape="rect" id="node6" href="$a00040.html" title="JPTransporterHTTPEvent is an special type of Events that encapsulate the HTTP data to be transported..." alt="" coords="269,6,453,135"/>
-<area shape="rect" id="node8" href="$a00028.html" title="A Event which represent the JSON RPC Encapsulated Data." alt="" coords="272,233,453,346"/>
-</map>

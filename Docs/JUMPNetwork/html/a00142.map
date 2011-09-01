@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$a00032.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="147,283,352,381"/>
-<area shape="rect" id="node2" href="$a00022.html" title="{\&lt;JPPipelineEvent\&gt;\n||+ getFuture\l}" alt="" coords="184,6,315,87"/>
-<area shape="rect" id="node7" href="$a00021.html" title="The default dowstream Message Event implementation." alt="" coords="5,430,240,527"/>
-<area shape="rect" id="node11" href="$a00035.html" title="The default Upstream Message Event implementation." alt="" coords="264,438,488,519"/>
-<area shape="rect" id="node9" href="$a00009.html" title="An Pipeline Downstream Event that represent one Cancel Event." alt="" coords="49,577,196,658"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$a00026.html" title="A Event which represents the notification of an exception raised by a Handler." alt="" coords="25,137,215,234"/>
-<area shape="rect" id="node7" href="$a00030.html" title="A JPPipelineEvent which represents the transmission or reception of a message." alt="" coords="244,137,431,234"/>
-<area shape="rect" id="node5" href="$a00012.html" title="The default Pipeline Exception Event implementation." alt="" coords="5,283,216,413"/>
-<area shape="rect" id="node9" href="$a00032.html" title="An Abstract Class that define many methods to one Default Message Event implementation." alt="" coords="240,299,445,397"/>
-<area shape="rect" id="node11" href="$a00021.html" title="The default dowstream Message Event implementation." alt="" coords="99,462,333,559"/>
-<area shape="rect" id="node15" href="$a00035.html" title="The default Upstream Message Event implementation." alt="" coords="357,470,581,551"/>
-<area shape="rect" id="node13" href="$a00009.html" title="An Pipeline Downstream Event that represent one Cancel Event." alt="" coords="143,609,289,690"/>
-</map>

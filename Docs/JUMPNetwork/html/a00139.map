@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$a00020.html" title="Handles or intercepts a downstream JPPipelineEvent, and sends a JPPipelineEvent to the next handler i..." alt="" coords="244,137,505,218"/>
-<area shape="rect" id="node11" href="$a00034.html" title="Handles or intercepts an upstream JPPipelineEvent, and sends a JPPipelineEvent to the next handler in..." alt="" coords="529,137,775,218"/>
-<area shape="rect" id="node5" href="$a00036.html" title="A JPPipelineDownstreamHandler implementation which provides an individual handler method for each eve..." alt="" coords="5,283,328,381"/>
-<area shape="rect" id="node9" href="$a00037.html" title="A JPPipelineHandler which provides an individual handler method for each event type." alt="" coords="352,267,675,397"/>
-<area shape="rect" id="node7" href="$a00015.html" title="An simple JSON&#45;RPC Encoder Handler." alt="" coords="69,446,264,543"/>
-<area shape="rect" id="node14" href="$a00038.html" title="A JPPipelineUpstreamHandler implementation which provides an individual handler method for each event..." alt="" coords="699,275,997,389"/>
-<area shape="rect" id="node16" href="$a00014.html" title="An simple JSON&#45;RPC Decoder Handler." alt="" coords="751,446,945,543"/>
-</map>

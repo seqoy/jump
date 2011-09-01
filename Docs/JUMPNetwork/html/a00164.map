@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node7" href="$a00015.html" title="An simple JSON&#45;RPC Decoder Handler." alt="" coords="57,430,252,527"/>
-<area shape="rect" id="node2" href="$a00035.html" title="Handles or intercepts an upstream JPPipelineEvent, and sends a JPPipelineEvent to the next handler in..." alt="" coords="32,137,277,218"/>
-<area shape="rect" id="node4" href="$a00029.html" title="Handles or intercepts a Event, and sends a Event to the next handler in a Pipeline." alt="" coords="83,6,227,87"/>
-</map>

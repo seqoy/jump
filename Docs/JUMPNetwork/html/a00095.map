@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$a00030.html" title="Enables a JPPipelineHandler to interact with its JPPipeline and other handlers." alt="" coords="57,6,247,183"/>
-<area shape="rect" id="node4" href="$a00029.html" title="Handles or intercepts a Event, and sends a Event to the next handler in a Pipeline." alt="" coords="271,54,415,135"/>
-</map>
