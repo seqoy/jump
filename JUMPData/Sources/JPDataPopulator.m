@@ -254,15 +254,9 @@
 				//////  //// //// ////// //// ////// //// ///////////
 				// Error string.                                    //
 				NSString *errorMessage;                             //////// //// //// //// //// //// 
-				
-                // Identify error.                                         
-				if ( [[exception name] isEqualToString:NSUndefinedKeyException] ) {
-					errorMessage = [NSString stringWithFormat:@"Can't set the key-value (%@) for Object (%@).\nMore Info: %@", dataKey, NSStringFromClass([anObject class]), [exception reason]];
-                } 
-                
-                else {
-                    errorMessage = [exception reason];
-                }
+
+				// Error Message.
+                errorMessage = [NSString stringWithFormat:@"Can't set the key-value (%@) for Object (%@).\nMore Info: %@", dataKey, NSStringFromClass([anObject class]), [exception reason]];
 				
 				// Print error.	
 				Warn( @"%@", errorMessage );
