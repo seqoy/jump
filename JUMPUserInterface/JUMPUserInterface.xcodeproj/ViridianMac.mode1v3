@@ -269,13 +269,14 @@
 							<array>
 								<string>3AA51FB0132BE7E2002D989C</string>
 								<string>3AA51FBE132BE800002D989C</string>
+								<string>18ECA41413A147610091D2F6</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>4</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -300,7 +301,7 @@
 							<real>329</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>729 181 1049 775 0 0 1920 1058 </string>
+						<string>124 187 1049 775 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JPColor.m</string>
+								<string>JPColorFunctions.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,20 +327,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPColor.m</string>
+										<string>JPColorFunctions.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>181BEDCD13B133AF00DAF744</string>
+										<string>18E4BD98140FD71C0060B41E</string>
 										<key>history</key>
 										<array>
 											<string>180CF2561342732B00B90BDA</string>
-											<string>18ECA3EA13A146620091D2F6</string>
 											<string>18ECA42413A147820091D2F6</string>
-											<string>18ECA49913A148320091D2F6</string>
 											<string>181BEDCA13B133AF00DAF744</string>
 											<string>181BEDCB13B133AF00DAF744</string>
-											<string>181BEDCC13B133AF00DAF744</string>
+											<string>18E4BC98140FD5BB0060B41E</string>
+											<string>18E4BD95140FD71C0060B41E</string>
+											<string>18E4BD96140FD71C0060B41E</string>
+											<string>18E4BD97140FD71C0060B41E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -351,14 +353,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {698, 729}}</string>
+								<string>{{0, 0}, {698, 510}}</string>
 								<key>RubberWindowFrame</key>
-								<string>729 181 1049 775 0 0 1920 1058 </string>
+								<string>124 187 1049 775 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>729pt</string>
+							<string>510pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -371,14 +373,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 734}, {698, 0}}</string>
+								<string>{{0, 515}, {698, 219}}</string>
 								<key>RubberWindowFrame</key>
-								<string>729 181 1049 775 0 0 1920 1058 </string>
+								<string>124 187 1049 775 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>219pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -397,9 +399,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>181BEDCE13B133AF00DAF744</string>
+				<string>18E4BC9B140FD5BB0060B41E</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>181BEDCF13B133AF00DAF744</string>
+				<string>18E4BC9C140FD5BB0060B41E</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -537,11 +539,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>180CF25C1342732B00B90BDA</string>
 		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMPUserInterface/JUMPUserInterface.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>729 181 1049 775 0 0 1920 1058 </string>
+	<string>124 187 1049 775 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -557,12 +560,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>JPColor.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -571,7 +576,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {736, 417}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1178 196 736 699 0 0 1920 1058 </string>
+								<string>940 148 736 699 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -595,7 +600,7 @@
 								<key>Frame</key>
 								<string>{{0, 422}, {736, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1178 196 736 699 0 0 1920 1058 </string>
+								<string>940 148 736 699 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -618,7 +623,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>180CF25C1342732B00B90BDA</string>
-				<string>181BEDD013B133AF00DAF744</string>
+				<string>18E4BC9D140FD5BB0060B41E</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -627,7 +632,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>1178 196 736 699 0 0 1920 1058 </string>
+			<string>940 148 736 699 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
 			<string>180CF25C1342732B00B90BDA</string>
 			<key>WindowToolIsVisible</key>
@@ -751,12 +756,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JPColorTypes.h</string>
+										<string>JPColorFunctions.h</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -777,8 +784,6 @@
 							<string>212pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -814,8 +819,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>186AE7F813AA505F004D43FA</string>
-				<string>186AE7F913AA505F004D43FA</string>
+				<string>18E4BD75140FD6720060B41E</string>
+				<string>18E4BD76140FD6720060B41E</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>

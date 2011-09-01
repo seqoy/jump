@@ -2,7 +2,8 @@
 {
 	0867D690FE84028FC02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeTarget = D2AAC07D0554694100DB518D /* JUMPDatabase */;
+		activeSDKPreference = macosx10.6;
+		activeTarget = 187E1D3B140FC5A2003D1652 /* JUMPDatabaseMacOS */;
 		addToTargets = (
 			D2AAC07D0554694100DB518D /* JUMPDatabase */,
 		);
@@ -94,8 +95,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 335458360;
-			PBXWorkspaceStateSaveDate = 335458360;
+			PBXPerProjectTemplateStateSaveDate = 336577949;
+			PBXWorkspaceStateSaveDate = 336577949;
 		};
 		perUserProjectItems = {
 			180C44F0135E2C2600D7B699 /* PBXTextBookmark */ = 180C44F0135E2C2600D7B699 /* PBXTextBookmark */;
@@ -104,7 +105,7 @@
 			18412BD013FEB04500CBCA7B /* PBXTextBookmark */ = 18412BD013FEB04500CBCA7B /* PBXTextBookmark */;
 			18412BD113FEB04500CBCA7B /* PBXTextBookmark */ = 18412BD113FEB04500CBCA7B /* PBXTextBookmark */;
 			1847EAE013E3233200B7FC54 /* PBXTextBookmark */ = 1847EAE013E3233200B7FC54 /* PBXTextBookmark */;
-			18C319C013F426BB008B2783 /* PBXTextBookmark */ = 18C319C013F426BB008B2783 /* PBXTextBookmark */;
+			187E1D59140FC5C4003D1652 /* PBXTextBookmark */ = 187E1D59140FC5C4003D1652 /* PBXTextBookmark */;
 			18C31A1C13F434D7008B2783 /* PBXTextBookmark */ = 18C31A1C13F434D7008B2783 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 18D05E94132FEDBF00813610 /* Source Control */;
@@ -171,15 +172,18 @@
 		vrLen = 2072;
 		vrLoc = 0;
 	};
-	18C319C013F426BB008B2783 /* PBXTextBookmark */ = {
+	187E1D3B140FC5A2003D1652 /* JUMPDatabaseMacOS */ = {
+		activeExec = 0;
+	};
+	187E1D59140FC5C4003D1652 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3A5E3441132305F300970E2B /* JPDBManagerAction.h */;
-		name = "JPDBManagerAction.h: 359";
+		name = "JPDBManagerAction.h: 15";
 		rLen = 0;
-		rLoc = 14908;
+		rLoc = 643;
 		rType = 0;
-		vrLen = 4161;
-		vrLoc = 13863;
+		vrLen = 2279;
+		vrLoc = 0;
 	};
 	18C31A1C13F434D7008B2783 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -242,9 +246,9 @@
 	};
 	3A5E3441132305F300970E2B /* JPDBManagerAction.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1727, 7020}}";
-			sepNavSelRange = "{2248, 17}";
-			sepNavVisRange = "{0, 2627}";
+			sepNavIntBoundsRect = "{{0, 0}, {1727, 6942}}";
+			sepNavSelRange = "{643, 0}";
+			sepNavVisRange = "{0, 2279}";
 		};
 	};
 	3A5E3442132305F300970E2B /* JPDBManagerAction.m */ = {

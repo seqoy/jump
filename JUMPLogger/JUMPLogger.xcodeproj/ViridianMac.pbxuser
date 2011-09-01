@@ -200,32 +200,12 @@
 		vrLen = 1195;
 		vrLoc = 937;
 	};
-	18343B1613F5C489004761D1 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */;
-		name = "JPLog4CocoaFactory.m: 77";
-		rLen = 16;
-		rLoc = 2844;
-		rType = 0;
-		vrLen = 2191;
-		vrLoc = 1659;
-	};
-	18343B1713F5C489004761D1 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */;
-		name = "JPLog4CocoaFactory.m: 60";
-		rLen = 0;
-		rLoc = 2166;
-		rType = 0;
-		vrLen = 2196;
-		vrLoc = 1153;
-	};
 	18647723132FF60E002CBD59 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeSDKPreference = iphoneos4.3;
 		activeTarget = 18647730132FF621002CBD59 /* JUMPLogger */;
 		addToTargets = (
-			18647730132FF621002CBD59 /* JUMPLogger */,
+			187E1E30140FC7E7003D1652 /* JUMPLoggerMacOS */,
 		);
 		breakpoints = (
 			183438F413F5B20D004761D1 /* JPLog4CocoaLogger.m:126 */,
@@ -301,7 +281,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1044,
+					837,
 					60,
 					20,
 					48,
@@ -318,8 +298,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 334872987;
-			PBXWorkspaceStateSaveDate = 334872987;
+			PBXPerProjectTemplateStateSaveDate = 336579154;
+			PBXWorkspaceStateSaveDate = 336579154;
 		};
 		perUserProjectItems = {
 			18242DF913393F8C00D82D0D /* PBXTextBookmark */ = 18242DF913393F8C00D82D0D /* PBXTextBookmark */;
@@ -333,11 +313,15 @@
 			183439DB13F5B590004761D1 /* PBXTextBookmark */ = 183439DB13F5B590004761D1 /* PBXTextBookmark */;
 			18343AFE13F5C1A5004761D1 /* PBXTextBookmark */ = 18343AFE13F5C1A5004761D1 /* PBXTextBookmark */;
 			18343B1513F5C489004761D1 /* PBXTextBookmark */ = 18343B1513F5C489004761D1 /* PBXTextBookmark */;
-			18343B1613F5C489004761D1 /* PBXTextBookmark */ = 18343B1613F5C489004761D1 /* PBXTextBookmark */;
-			18343B1713F5C489004761D1 /* PBXTextBookmark */ = 18343B1713F5C489004761D1 /* PBXTextBookmark */;
 			186477E913300D08002CBD59 /* PBXTextBookmark */ = 186477E913300D08002CBD59 /* PBXTextBookmark */;
 			186477EB13300D08002CBD59 /* PBXTextBookmark */ = 186477EB13300D08002CBD59 /* PBXTextBookmark */;
 			1879DD6D1331137A00CF3ED8 /* PBXTextBookmark */ = 1879DD6D1331137A00CF3ED8 /* PBXTextBookmark */;
+			187E1E0C140FC759003D1652 /* PBXTextBookmark */ = 187E1E0C140FC759003D1652 /* PBXTextBookmark */;
+			187E1E0F140FC759003D1652 /* PBXTextBookmark */ = 187E1E0F140FC759003D1652 /* PBXTextBookmark */;
+			187E1E1B140FC79B003D1652 /* PBXTextBookmark */ = 187E1E1B140FC79B003D1652 /* PBXTextBookmark */;
+			187E1E85140FC9A3003D1652 /* PBXTextBookmark */ = 187E1E85140FC9A3003D1652 /* PBXTextBookmark */;
+			187E1F3B140FCA0E003D1652 /* PBXTextBookmark */ = 187E1F3B140FCA0E003D1652 /* PBXTextBookmark */;
+			187E2009140FCAD1003D1652 /* PBXTextBookmark */ = 187E2009140FCAD1003D1652 /* PBXTextBookmark */;
 			188801ED1332982100FA965C /* PBXTextBookmark */ = 188801ED1332982100FA965C /* PBXTextBookmark */;
 			188802681332A5CF00FA965C /* PBXTextBookmark */ = 188802681332A5CF00FA965C /* PBXTextBookmark */;
 			1888026B1332A5CF00FA965C /* PBXTextBookmark */ = 1888026B1332A5CF00FA965C /* PBXTextBookmark */;
@@ -347,8 +331,6 @@
 			1888E304134A54CF00165C45 /* PBXTextBookmark */ = 1888E304134A54CF00165C45 /* PBXTextBookmark */;
 			1888FF3A13324E1000FA965C /* PBXTextBookmark */ = 1888FF3A13324E1000FA965C /* PBXTextBookmark */;
 			1888FF3C13324E1000FA965C /* PBXTextBookmark */ = 1888FF3C13324E1000FA965C /* PBXTextBookmark */;
-			188F64CA1332B5E60069CB1C /* PBXTextBookmark */ = 188F64CA1332B5E60069CB1C /* PBXTextBookmark */;
-			188F651C1332BB1B0069CB1C /* PBXTextBookmark */ = 188F651C1332BB1B0069CB1C /* PBXTextBookmark */;
 			188F654F1332BE2A0069CB1C /* PBXTextBookmark */ = 188F654F1332BE2A0069CB1C /* PBXTextBookmark */;
 			188F65521332BE2A0069CB1C /* PBXTextBookmark */ = 188F65521332BE2A0069CB1C /* PBXTextBookmark */;
 			18B7441A13F5A8F700995933 /* PBXTextBookmark */ = 18B7441A13F5A8F700995933 /* PBXTextBookmark */;
@@ -418,9 +400,9 @@
 	};
 	1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1055, 2132}}";
-			sepNavSelRange = "{2166, 0}";
-			sepNavVisRange = "{1153, 2196}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 2145}}";
+			sepNavSelRange = "{1565, 0}";
+			sepNavVisRange = "{1101, 1629}";
 			sepNavWindowFrame = "{{-1100, 121}, {1100, 937}}";
 		};
 	};
@@ -529,6 +511,83 @@
 			sepNavVisRange = "{81, 2078}";
 			sepNavWindowFrame = "{{15, 116}, {1100, 937}}";
 		};
+	};
+	187E1E0C140FC759003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1864774E132FF68F002CBD59 /* JPLog4CocoaFactory.m */;
+		name = "JPLog4CocoaFactory.m: 42";
+		rLen = 0;
+		rLoc = 1565;
+		rType = 0;
+		vrLen = 1629;
+		vrLoc = 1101;
+	};
+	187E1E0E140FC759003D1652 /* TargetConditionals.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = TargetConditionals.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/usr/include/TargetConditionals.h;
+		sourceTree = "<absolute>";
+	};
+	187E1E0F140FC759003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 187E1E10140FC759003D1652 /* TargetConditionals.h */;
+		name = "TargetConditionals.h: 92";
+		rLen = 43;
+		rLoc = 4230;
+		rType = 0;
+		vrLen = 1839;
+		vrLoc = 3353;
+	};
+	187E1E10140FC759003D1652 /* TargetConditionals.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = TargetConditionals.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/TargetConditionals.h;
+		sourceTree = "<absolute>";
+	};
+	187E1E1B140FC79B003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 187E1E0E140FC759003D1652 /* TargetConditionals.h */;
+		name = "TargetConditionals.h: 92";
+		rLen = 43;
+		rLoc = 4230;
+		rType = 0;
+		vrLen = 1579;
+		vrLoc = 11198;
+	};
+	187E1E30140FC7E7003D1652 /* JUMPLoggerMacOS */ = {
+		activeExec = 0;
+	};
+	187E1E85140FC9A3003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 188F64C21332B4DA0069CB1C /* LoggerClient.h */;
+		name = "LoggerClient.h: 69";
+		rLen = 0;
+		rLoc = 3244;
+		rType = 0;
+		vrLen = 1994;
+		vrLoc = 1522;
+	};
+	187E1F3B140FCA0E003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 18AA97421332A94D00C59F0E /* LoggerClient.m */;
+		name = "LoggerClient.m: 16";
+		rLen = 0;
+		rLoc = 485;
+		rType = 0;
+		vrLen = 2058;
+		vrLoc = 0;
+	};
+	187E2009140FCAD1003D1652 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 18AA97421332A94D00C59F0E /* LoggerClient.m */;
+		name = "LoggerClient.m: 6";
+		rLen = 0;
+		rLoc = 111;
+		rType = 0;
+		vrLen = 2553;
+		vrLoc = 0;
 	};
 	188801ED1332982100FA965C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -677,26 +736,6 @@
 		path = /Users/ViridianMac/Documents/Projects/JUMP/JUMPLogger/Libraries/NSLogger/Headers/LoggerClient.h;
 		sourceTree = "<absolute>";
 	};
-	188F64CA1332B5E60069CB1C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 188F64C21332B4DA0069CB1C /* LoggerClient.h */;
-		name = "LoggerClient.h: 203";
-		rLen = 170;
-		rLoc = 10406;
-		rType = 0;
-		vrLen = 3850;
-		vrLoc = 8091;
-	};
-	188F651C1332BB1B0069CB1C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 18AA97421332A94D00C59F0E /* LoggerClient.m */;
-		name = "LoggerClient.m: 314";
-		rLen = 0;
-		rLoc = 11902;
-		rType = 0;
-		vrLen = 1860;
-		vrLoc = 11120;
-	};
 	188F654F1332BE2A0069CB1C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1888FF561332510F00FA965C /* L4Layout.h */;
@@ -719,9 +758,9 @@
 	};
 	18AA97421332A94D00C59F0E /* LoggerClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1329, 28691}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1188}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 28314}}";
+			sepNavSelRange = "{111, 0}";
+			sepNavVisRange = "{0, 2553}";
 		};
 	};
 	18B7441A13F5A8F700995933 /* PBXTextBookmark */ = {

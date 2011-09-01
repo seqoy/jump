@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187E1BA8140FBD8B003D1652 /* JPFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30F713216A5700970E2B /* JPFunctions.h */; };
+		187E1BA9140FBD8B003D1652 /* JPPathFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30F813216A5700970E2B /* JPPathFunctions.h */; };
+		187E1BAA140FBD8B003D1652 /* JPCGFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30FA13216A5700970E2B /* JPCGFunctions.h */; };
+		187E1BAB140FBD8B003D1652 /* JPSynthetizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30FB13216A5700970E2B /* JPSynthetizeSingleton.h */; };
+		187E1BAC140FBD8B003D1652 /* JPNSObjectsShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E3156132173D400970E2B /* JPNSObjectsShortcuts.h */; };
+		187E1BAD140FBD8B003D1652 /* JPStringFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E315A1321755E00970E2B /* JPStringFunctions.h */; };
+		187E1BAE140FBD8B003D1652 /* JPOperatorsShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E31921321765D00970E2B /* JPOperatorsShortcuts.h */; };
+		187E1BAF140FBD8B003D1652 /* JPCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E320B1321798200970E2B /* JPCore.h */; };
+		187E1BB1140FBD8B003D1652 /* JPPathFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E30F913216A5700970E2B /* JPPathFunctions.m */; };
+		187E1BB3140FBD8B003D1652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E319E1321774500970E2B /* Foundation.framework */; };
 		3A5E31291321731200970E2B /* JPFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30F713216A5700970E2B /* JPFunctions.h */; };
 		3A5E312A1321731200970E2B /* JPPathFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30F813216A5700970E2B /* JPPathFunctions.h */; };
 		3A5E312B1321731200970E2B /* JPCGFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30FA13216A5700970E2B /* JPCGFunctions.h */; };
@@ -20,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187E1BB7140FBD8B003D1652 /* libJUMPCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5E30F713216A5700970E2B /* JPFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPFunctions.h; path = Headers/JPFunctions.h; sourceTree = "<group>"; };
 		3A5E30F813216A5700970E2B /* JPPathFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPathFunctions.h; path = Headers/JPPathFunctions.h; sourceTree = "<group>"; };
 		3A5E30F913216A5700970E2B /* JPPathFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPPathFunctions.m; path = Sources/JPPathFunctions.m; sourceTree = "<group>"; };
@@ -34,6 +45,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		187E1BB2140FBD8B003D1652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E1BB3140FBD8B003D1652 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5E311F1321730100970E2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5E31211321730100970E2B /* libJUMPCore.a */,
+				187E1BB7140FBD8B003D1652 /* libJUMPCore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +125,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		187E1BA7140FBD8B003D1652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E1BA8140FBD8B003D1652 /* JPFunctions.h in Headers */,
+				187E1BA9140FBD8B003D1652 /* JPPathFunctions.h in Headers */,
+				187E1BAA140FBD8B003D1652 /* JPCGFunctions.h in Headers */,
+				187E1BAB140FBD8B003D1652 /* JPSynthetizeSingleton.h in Headers */,
+				187E1BAC140FBD8B003D1652 /* JPNSObjectsShortcuts.h in Headers */,
+				187E1BAD140FBD8B003D1652 /* JPStringFunctions.h in Headers */,
+				187E1BAE140FBD8B003D1652 /* JPOperatorsShortcuts.h in Headers */,
+				187E1BAF140FBD8B003D1652 /* JPCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5E311D1321730100970E2B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,6 +158,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		187E1BA6140FBD8B003D1652 /* JUMPCoreMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187E1BB4140FBD8B003D1652 /* Build configuration list for PBXNativeTarget "JUMPCoreMacOS" */;
+			buildPhases = (
+				187E1BA7140FBD8B003D1652 /* Headers */,
+				187E1BB0140FBD8B003D1652 /* Sources */,
+				187E1BB2140FBD8B003D1652 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUMPCoreMacOS;
+			productName = JUMPCore;
+			productReference = 187E1BB7140FBD8B003D1652 /* libJUMPCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3A5E31201321730100970E2B /* JUMPCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A5E31251321730200970E2B /* Build configuration list for PBXNativeTarget "JUMPCore" */;
@@ -161,11 +213,20 @@
 			projectRoot = "";
 			targets = (
 				3A5E31201321730100970E2B /* JUMPCore */,
+				187E1BA6140FBD8B003D1652 /* JUMPCoreMacOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		187E1BB0140FBD8B003D1652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E1BB1140FBD8B003D1652 /* JPPathFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5E311E1321730100970E2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +238,43 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		187E1BB5140FBD8B003D1652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Third-Part Libraries\"/**";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPCore;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		187E1BB6140FBD8B003D1652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/Third-Part Libraries\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPCore;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		3A5E31231321730200970E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -223,6 +321,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		187E1BB4140FBD8B003D1652 /* Build configuration list for PBXNativeTarget "JUMPCoreMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187E1BB5140FBD8B003D1652 /* Debug */,
+				187E1BB6140FBD8B003D1652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A5E31251321730200970E2B /* Build configuration list for PBXNativeTarget "JUMPCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

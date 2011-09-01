@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E4BBED140FD54A0060B41E /* JPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA51FCE132BE895002D989C /* JPColor.h */; };
+		18E4BBEE140FD54A0060B41E /* JPColorFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69080132BF7D100780D21 /* JPColorFunctions.h */; };
+		18E4BBEF140FD54A0060B41E /* JPColorTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69082132BF7D100780D21 /* JPColorTypes.h */; };
+		18E4BBF0140FD54A0060B41E /* JPColorConvertFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA69084132BF7D100780D21 /* JPColorConvertFunctions.h */; };
+		18E4BBF1140FD54A0060B41E /* JUMPUserInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA690EC132C032100780D21 /* JUMPUserInterface.h */; };
+		18E4BBF2140FD54A0060B41E /* JPColorTemplates.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA6991F132D500500780D21 /* JPColorTemplates.h */; };
+		18E4BBF3140FD54A0060B41E /* JUMPUserInterface_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 18ECA41D13A1476A0091D2F6 /* JUMPUserInterface_Prefix.pch */; };
+		18E4BBF5140FD54A0060B41E /* JPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51FCA132BE874002D989C /* JPColor.m */; };
+		18E4BBF6140FD54A0060B41E /* JPColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69081132BF7D100780D21 /* JPColorFunctions.m */; };
+		18E4BBF7140FD54A0060B41E /* JPColorConvertFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69085132BF7D100780D21 /* JPColorConvertFunctions.m */; };
+		18E4BBF8140FD54A0060B41E /* JPColorTemplates.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69954132D52DE00780D21 /* JPColorTemplates.m */; };
+		18E4BBFC140FD54A0060B41E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA690E3132C01A500780D21 /* Foundation.framework */; };
+		18E4BC0A140FD5890060B41E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4BC09140FD5890060B41E /* UIKit.framework */; };
+		18E4BCA1140FD61A0060B41E /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4BCA0140FD61A0060B41E /* ApplicationServices.framework */; };
 		18ECA41E13A1476A0091D2F6 /* JUMPUserInterface_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 18ECA41D13A1476A0091D2F6 /* JUMPUserInterface_Prefix.pch */; };
 		3AA51FCB132BE874002D989C /* JPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51FCA132BE874002D989C /* JPColor.m */; };
 		3AA51FCF132BE895002D989C /* JPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA51FCE132BE895002D989C /* JPColor.h */; };
@@ -24,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18E4BC00140FD54A0060B41E /* libJUMPUserInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPUserInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E4BC09140FD5890060B41E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../Chameleon/UIKit.framework; sourceTree = SOURCE_ROOT; };
+		18E4BCA0140FD61A0060B41E /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		18ECA41D13A1476A0091D2F6 /* JUMPUserInterface_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPUserInterface_Prefix.pch; sourceTree = "<group>"; };
 		3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPUserInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA51FCA132BE874002D989C /* JPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPColor.m; path = Sources/JPColor.m; sourceTree = "<group>"; };
@@ -42,6 +59,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18E4BBF9140FD54A0060B41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E4BBFC140FD54A0060B41E /* Foundation.framework in Frameworks */,
+				18E4BC0A140FD5890060B41E /* UIKit.framework in Frameworks */,
+				18E4BCA1140FD61A0060B41E /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AA51FC1132BE80F002D989C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E4BC96140FD5B10060B41E /* Frameworks Mac OS */ = {
+			isa = PBXGroup;
+			children = (
+				18E4BC09140FD5890060B41E /* UIKit.framework */,
+				18E4BCA0140FD61A0060B41E /* ApplicationServices.framework */,
+			);
+			name = "Frameworks Mac OS";
+			sourceTree = "<group>";
+		};
 		18ECA41413A147610091D2F6 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +107,7 @@
 				3AA51FBD132BE7FB002D989C /* Headers */,
 				3AA51FC4132BE80F002D989C /* Products */,
 				18ECA41413A147610091D2F6 /* Other Sources */,
+				18E4BC96140FD5B10060B41E /* Frameworks Mac OS */,
 				3AA690DC132C018C00780D21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA51FC3132BE80F002D989C /* libJUMPUserInterface.a */,
+				18E4BC00140FD54A0060B41E /* libJUMPUserInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +157,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		18E4BBEC140FD54A0060B41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E4BBED140FD54A0060B41E /* JPColor.h in Headers */,
+				18E4BBEE140FD54A0060B41E /* JPColorFunctions.h in Headers */,
+				18E4BBEF140FD54A0060B41E /* JPColorTypes.h in Headers */,
+				18E4BBF0140FD54A0060B41E /* JPColorConvertFunctions.h in Headers */,
+				18E4BBF1140FD54A0060B41E /* JUMPUserInterface.h in Headers */,
+				18E4BBF2140FD54A0060B41E /* JPColorTemplates.h in Headers */,
+				18E4BBF3140FD54A0060B41E /* JUMPUserInterface_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AA51FBF132BE80F002D989C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +188,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		18E4BBEB140FD54A0060B41E /* JUMPUserInterfaceMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E4BBFD140FD54A0060B41E /* Build configuration list for PBXNativeTarget "JUMPUserInterfaceMacOS" */;
+			buildPhases = (
+				18E4BBEC140FD54A0060B41E /* Headers */,
+				18E4BBF4140FD54A0060B41E /* Sources */,
+				18E4BBF9140FD54A0060B41E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUMPUserInterfaceMacOS;
+			productName = JUMPUserInterface;
+			productReference = 18E4BC00140FD54A0060B41E /* libJUMPUserInterface.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3AA51FC2132BE80F002D989C /* JUMPUserInterface */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AA51FC7132BE811002D989C /* Build configuration list for PBXNativeTarget "JUMPUserInterface" */;
@@ -174,11 +243,23 @@
 			projectRoot = "";
 			targets = (
 				3AA51FC2132BE80F002D989C /* JUMPUserInterface */,
+				18E4BBEB140FD54A0060B41E /* JUMPUserInterfaceMacOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18E4BBF4140FD54A0060B41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E4BBF5140FD54A0060B41E /* JPColor.m in Sources */,
+				18E4BBF6140FD54A0060B41E /* JPColorFunctions.m in Sources */,
+				18E4BBF7140FD54A0060B41E /* JPColorConvertFunctions.m in Sources */,
+				18E4BBF8140FD54A0060B41E /* JPColorTemplates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AA51FC0132BE80F002D989C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +274,54 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		18E4BBFE140FD54A0060B41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Chameleon\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = JUMPUserInterface_Prefix.pch;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPUserInterface;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		18E4BBFF140FD54A0060B41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Chameleon\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = JUMPUserInterface;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		3AA51FB3132BE7E2002D989C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -248,6 +377,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18E4BBFD140FD54A0060B41E /* Build configuration list for PBXNativeTarget "JUMPUserInterfaceMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E4BBFE140FD54A0060B41E /* Debug */,
+				18E4BBFF140FD54A0060B41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3AA51FB5132BE7E2002D989C /* Build configuration list for PBXProject "JUMPUserInterface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

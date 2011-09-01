@@ -67,6 +67,132 @@
 		185BE75A13EB220D003BA260 /* JPJSONRPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185BE75913EB220D003BA260 /* JPJSONRPCModel.m */; };
 		185F4D28135F38490069C261 /* JPXMLDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 185F4D27135F38490069C261 /* JPXMLDecoderHandler.h */; };
 		185F4D2A135F38530069C261 /* JPXMLDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4D29135F38530069C261 /* JPXMLDecoderHandler.m */; };
+		187E201E140FCAE9003D1652 /* JUMPNetwork_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JUMPNetwork_Prefix.pch */; };
+		187E201F140FCAE9003D1652 /* JPTransporterJSONRPCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17DC13183ED200BC3759 /* JPTransporterJSONRPCMessage.h */; };
+		187E2020140FCAE9003D1652 /* JPJSONRPCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17DE13183ED200BC3759 /* JPJSONRPCMessage.h */; };
+		187E2021140FCAE9003D1652 /* JPJSONRPCDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17E113183ED200BC3759 /* JPJSONRPCDecoderHandler.h */; };
+		187E2022140FCAE9003D1652 /* JPJSONRPCEncoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17E313183ED200BC3759 /* JPJSONRPCEncoderHandler.h */; };
+		187E2023140FCAE9003D1652 /* JPJSONRPCEventFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17E613183ED200BC3759 /* JPJSONRPCEventFactory.h */; };
+		187E2024140FCAE9003D1652 /* JPDefaultHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17EC13183ED200BC3759 /* JPDefaultHTTPMessage.h */; };
+		187E2025140FCAE9003D1652 /* JPTransporterMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17EF13183ED200BC3759 /* JPTransporterMessage.h */; };
+		187E2026140FCAE9003D1652 /* JPTransporterHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17F013183ED200BC3759 /* JPTransporterHTTPMessage.h */; };
+		187E2027140FCAE9003D1652 /* JPPipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17FE13183ED200BC3759 /* JPPipeline.h */; };
+		187E2028140FCAE9003D1652 /* JPDefaultHandlerContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180013183ED200BC3759 /* JPDefaultHandlerContext.h */; };
+		187E2029140FCAE9003D1652 /* JPPipelineException.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180313183ED200BC3759 /* JPPipelineException.h */; };
+		187E202A140FCAE9003D1652 /* JPPipelineSimpleMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180713183ED200BC3759 /* JPPipelineSimpleMessageEvent.h */; };
+		187E202B140FCAE9003D1652 /* JPPipelineUpstreamMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180913183ED200BC3759 /* JPPipelineUpstreamMessageEvent.h */; };
+		187E202C140FCAE9003D1652 /* JPPipelineDowstreamMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180B13183ED200BC3759 /* JPPipelineDowstreamMessageEvent.h */; };
+		187E202D140FCAE9003D1652 /* JPDefaultPipelineExceptionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180D13183ED200BC3759 /* JPDefaultPipelineExceptionEvent.h */; };
+		187E202E140FCAE9003D1652 /* JPDefaultCancelEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF180F13183ED200BC3759 /* JPDefaultCancelEvent.h */; };
+		187E202F140FCAE9003D1652 /* JPPipelineDefaultFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF181713183ED200BC3759 /* JPPipelineDefaultFuture.h */; };
+		187E2030140FCAE9003D1652 /* JPSimplePipelineHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF181A13183ED200BC3759 /* JPSimplePipelineHandler.h */; };
+		187E2031140FCAE9003D1652 /* JPSimplePipelineUpstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF181B13183ED200BC3759 /* JPSimplePipelineUpstreamHandler.h */; };
+		187E2032140FCAE9003D1652 /* JPSimplePipelineDownstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF181E13183ED200BC3759 /* JPSimplePipelineDownstreamHandler.h */; };
+		187E2033140FCAE9003D1652 /* JPPipelineFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182113183ED200BC3759 /* JPPipelineFactory.h */; };
+		187E2034140FCAE9003D1652 /* JPPipelineEventFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182213183ED200BC3759 /* JPPipelineEventFactory.h */; };
+		187E2035140FCAE9003D1652 /* JPPipelineHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182413183ED200BC3759 /* JPPipelineHandler.h */; };
+		187E2036140FCAE9003D1652 /* JPPipelineUpstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182513183ED200BC3759 /* JPPipelineUpstreamHandler.h */; };
+		187E2037140FCAE9003D1652 /* JPPipelineDownstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182613183ED200BC3759 /* JPPipelineDownstreamHandler.h */; };
+		187E2038140FCAE9003D1652 /* JPPipelineEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182813183ED200BC3759 /* JPPipelineEventListener.h */; };
+		187E2039140FCAE9003D1652 /* JPPipelineEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182913183ED200BC3759 /* JPPipelineEvent.h */; };
+		187E203A140FCAE9003D1652 /* JPPipelineMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182A13183ED200BC3759 /* JPPipelineMessageEvent.h */; };
+		187E203B140FCAE9003D1652 /* JPPipelineExceptionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182B13183ED200BC3759 /* JPPipelineExceptionEvent.h */; };
+		187E203C140FCAE9003D1652 /* JPPipelineFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182C13183ED200BC3759 /* JPPipelineFuture.h */; };
+		187E203D140FCAE9003D1652 /* JPPipelineFutureListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182D13183ED200BC3759 /* JPPipelineFutureListener.h */; };
+		187E203E140FCAE9003D1652 /* JPPipelineSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF182E13183ED200BC3759 /* JPPipelineSink.h */; };
+		187E203F140FCAE9003D1652 /* JPPipelineListenerNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF183013183ED200BC3759 /* JPPipelineListenerNotification.h */; };
+		187E2040140FCAE9003D1652 /* JPPipelineHandlerContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF183113183ED200BC3759 /* JPPipelineHandlerContext.h */; };
+		187E2041140FCAE9003D1652 /* JPPipelineNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF183313183ED200BC3759 /* JPPipelineNotification.h */; };
+		187E2042140FCAE9003D1652 /* JPDataProcessserJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF190C1318414F00BC3759 /* JPDataProcessserJSON.h */; };
+		187E2043140FCAE9003D1652 /* JPHTTPTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */; };
+		187E2044140FCAE9003D1652 /* JPDataProcessserXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837D391135C80130014E7CC /* JPDataProcessserXML.h */; };
+		187E2045140FCAE9003D1652 /* JPXMLDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 185F4D27135F38490069C261 /* JPXMLDecoderHandler.h */; };
+		187E2046140FCAE9003D1652 /* JPJSONDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */; };
+		187E2047140FCAE9003D1652 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D3A13EED418004E6BC0 /* ASIAuthenticationDialog.h */; };
+		187E2048140FCAE9003D1652 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D3C13EED418004E6BC0 /* ASICacheDelegate.h */; };
+		187E2049140FCAE9003D1652 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D3D13EED418004E6BC0 /* ASIDataCompressor.h */; };
+		187E204A140FCAE9003D1652 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D3F13EED418004E6BC0 /* ASIDataDecompressor.h */; };
+		187E204B140FCAE9003D1652 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4113EED418004E6BC0 /* ASIDownloadCache.h */; };
+		187E204C140FCAE9003D1652 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4313EED418004E6BC0 /* ASIFormDataRequest.h */; };
+		187E204D140FCAE9003D1652 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4513EED418004E6BC0 /* ASIHTTPRequest.h */; };
+		187E204E140FCAE9003D1652 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4713EED418004E6BC0 /* ASIHTTPRequestConfig.h */; };
+		187E204F140FCAE9003D1652 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4813EED418004E6BC0 /* ASIHTTPRequestDelegate.h */; };
+		187E2050140FCAE9003D1652 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4913EED418004E6BC0 /* ASIInputStream.h */; };
+		187E2051140FCAE9003D1652 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4B13EED418004E6BC0 /* ASINetworkQueue.h */; };
+		187E2052140FCAE9003D1652 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D4D13EED418004E6BC0 /* ASIProgressDelegate.h */; };
+		187E2053140FCAE9003D1652 /* ASICloudFilesCDNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5213EED418004E6BC0 /* ASICloudFilesCDNRequest.h */; };
+		187E2054140FCAE9003D1652 /* ASICloudFilesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5413EED418004E6BC0 /* ASICloudFilesContainer.h */; };
+		187E2055140FCAE9003D1652 /* ASICloudFilesContainerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5613EED418004E6BC0 /* ASICloudFilesContainerRequest.h */; };
+		187E2056140FCAE9003D1652 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5813EED418004E6BC0 /* ASICloudFilesContainerXMLParserDelegate.h */; };
+		187E2057140FCAE9003D1652 /* ASICloudFilesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5A13EED418004E6BC0 /* ASICloudFilesObject.h */; };
+		187E2058140FCAE9003D1652 /* ASICloudFilesObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5C13EED418004E6BC0 /* ASICloudFilesObjectRequest.h */; };
+		187E2059140FCAE9003D1652 /* ASICloudFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D5E13EED418004E6BC0 /* ASICloudFilesRequest.h */; };
+		187E205A140FCAE9003D1652 /* ASINSXMLParserCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6113EED418004E6BC0 /* ASINSXMLParserCompat.h */; };
+		187E205B140FCAE9003D1652 /* ASIS3Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6213EED418004E6BC0 /* ASIS3Bucket.h */; };
+		187E205C140FCAE9003D1652 /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6413EED418004E6BC0 /* ASIS3BucketObject.h */; };
+		187E205D140FCAE9003D1652 /* ASIS3BucketRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6613EED418004E6BC0 /* ASIS3BucketRequest.h */; };
+		187E205E140FCAE9003D1652 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6813EED418004E6BC0 /* ASIS3ObjectRequest.h */; };
+		187E205F140FCAE9003D1652 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6A13EED418004E6BC0 /* ASIS3Request.h */; };
+		187E2060140FCAE9003D1652 /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6C13EED418004E6BC0 /* ASIS3ServiceRequest.h */; };
+		187E2061140FCAE9003D1652 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405E1213EED4A8004E6BC0 /* Reachability.h */; };
+		187E2062140FCAE9003D1652 /* JPPipelineSucceededFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840606213EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h */; };
+		187E2063140FCAE9003D1652 /* JPPipelineCompletedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840607313EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h */; };
+		187E2064140FCAE9003D1652 /* JPPipelineFailedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840608613EEEEBB004E6BC0 /* JPPipelineFailedFuture.h */; };
+		187E2065140FCAE9003D1652 /* JPJSONRPCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 185BE75713EB21F9003BA260 /* JPJSONRPCModel.h */; };
+		187E2067140FCAE9003D1652 /* JPJSONRPCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17DF13183ED200BC3759 /* JPJSONRPCMessage.m */; };
+		187E2068140FCAE9003D1652 /* JPJSONRPCDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17E213183ED200BC3759 /* JPJSONRPCDecoderHandler.m */; };
+		187E2069140FCAE9003D1652 /* JPJSONRPCEncoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17E413183ED200BC3759 /* JPJSONRPCEncoderHandler.m */; };
+		187E206A140FCAE9003D1652 /* JPJSONRPCEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17E713183ED200BC3759 /* JPJSONRPCEventFactory.m */; };
+		187E206B140FCAE9003D1652 /* JPDefaultHTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17ED13183ED200BC3759 /* JPDefaultHTTPMessage.m */; };
+		187E206C140FCAE9003D1652 /* JPPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17FF13183ED200BC3759 /* JPPipeline.m */; };
+		187E206D140FCAE9003D1652 /* JPDefaultHandlerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180113183ED200BC3759 /* JPDefaultHandlerContext.m */; };
+		187E206E140FCAE9003D1652 /* JPPipelineException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180413183ED200BC3759 /* JPPipelineException.m */; };
+		187E206F140FCAE9003D1652 /* JPPipelineSimpleMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180613183ED200BC3759 /* JPPipelineSimpleMessageEvent.m */; };
+		187E2070140FCAE9003D1652 /* JPPipelineUpstreamMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180813183ED200BC3759 /* JPPipelineUpstreamMessageEvent.m */; };
+		187E2071140FCAE9003D1652 /* JPPipelineDowstreamMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180A13183ED200BC3759 /* JPPipelineDowstreamMessageEvent.m */; };
+		187E2072140FCAE9003D1652 /* JPDefaultPipelineExceptionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180C13183ED200BC3759 /* JPDefaultPipelineExceptionEvent.m */; };
+		187E2073140FCAE9003D1652 /* JPDefaultCancelEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF180E13183ED200BC3759 /* JPDefaultCancelEvent.m */; };
+		187E2074140FCAE9003D1652 /* JPPipelineDefaultFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF181613183ED200BC3759 /* JPPipelineDefaultFuture.m */; };
+		187E2075140FCAE9003D1652 /* JPSimplePipelineHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF181913183ED200BC3759 /* JPSimplePipelineHandler.m */; };
+		187E2076140FCAE9003D1652 /* JPSimplePipelineUpstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF181C13183ED200BC3759 /* JPSimplePipelineUpstreamHandler.m */; };
+		187E2077140FCAE9003D1652 /* JPSimplePipelineDownstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF181D13183ED200BC3759 /* JPSimplePipelineDownstreamHandler.m */; };
+		187E2078140FCAE9003D1652 /* JPPipelineNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF183413183ED200BC3759 /* JPPipelineNotification.m */; };
+		187E2079140FCAE9003D1652 /* JPHTTPTransporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */; };
+		187E207A140FCAE9003D1652 /* JPXMLDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F4D29135F38530069C261 /* JPXMLDecoderHandler.m */; };
+		187E207B140FCAE9003D1652 /* JPJSONDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */; };
+		187E207C140FCAE9003D1652 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D3B13EED418004E6BC0 /* ASIAuthenticationDialog.m */; };
+		187E207D140FCAE9003D1652 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D3E13EED418004E6BC0 /* ASIDataCompressor.m */; };
+		187E207E140FCAE9003D1652 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4013EED418004E6BC0 /* ASIDataDecompressor.m */; };
+		187E207F140FCAE9003D1652 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4213EED418004E6BC0 /* ASIDownloadCache.m */; };
+		187E2080140FCAE9003D1652 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4413EED418004E6BC0 /* ASIFormDataRequest.m */; };
+		187E2081140FCAE9003D1652 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4613EED418004E6BC0 /* ASIHTTPRequest.m */; };
+		187E2082140FCAE9003D1652 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4A13EED418004E6BC0 /* ASIInputStream.m */; };
+		187E2083140FCAE9003D1652 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D4C13EED418004E6BC0 /* ASINetworkQueue.m */; };
+		187E2084140FCAE9003D1652 /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5313EED418004E6BC0 /* ASICloudFilesCDNRequest.m */; };
+		187E2085140FCAE9003D1652 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5513EED418004E6BC0 /* ASICloudFilesContainer.m */; };
+		187E2086140FCAE9003D1652 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5713EED418004E6BC0 /* ASICloudFilesContainerRequest.m */; };
+		187E2087140FCAE9003D1652 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5913EED418004E6BC0 /* ASICloudFilesContainerXMLParserDelegate.m */; };
+		187E2088140FCAE9003D1652 /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5B13EED418004E6BC0 /* ASICloudFilesObject.m */; };
+		187E2089140FCAE9003D1652 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5D13EED418004E6BC0 /* ASICloudFilesObjectRequest.m */; };
+		187E208A140FCAE9003D1652 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D5F13EED418004E6BC0 /* ASICloudFilesRequest.m */; };
+		187E208B140FCAE9003D1652 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6313EED418004E6BC0 /* ASIS3Bucket.m */; };
+		187E208C140FCAE9003D1652 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6513EED418004E6BC0 /* ASIS3BucketObject.m */; };
+		187E208D140FCAE9003D1652 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6713EED418004E6BC0 /* ASIS3BucketRequest.m */; };
+		187E208E140FCAE9003D1652 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6913EED418004E6BC0 /* ASIS3ObjectRequest.m */; };
+		187E208F140FCAE9003D1652 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6B13EED418004E6BC0 /* ASIS3Request.m */; };
+		187E2090140FCAE9003D1652 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6D13EED418004E6BC0 /* ASIS3ServiceRequest.m */; };
+		187E2091140FCAE9003D1652 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405E1313EED4A8004E6BC0 /* Reachability.m */; };
+		187E2092140FCAE9003D1652 /* JPPipelineSucceededFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840606013EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m */; };
+		187E2093140FCAE9003D1652 /* JPPipelineCompletedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840607513EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m */; };
+		187E2094140FCAE9003D1652 /* JPPipelineFailedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840608413EEEEBB004E6BC0 /* JPPipelineFailedFuture.m */; };
+		187E2095140FCAE9003D1652 /* JPJSONRPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185BE75913EB220D003BA260 /* JPJSONRPCModel.m */; };
+		187E2097140FCAE9003D1652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		187E2098140FCAE9003D1652 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848271326AF7F00C3374A /* CFNetwork.framework */; };
+		187E2099140FCAE9003D1652 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848291326AF8700C3374A /* SystemConfiguration.framework */; };
+		187E209A140FCAE9003D1652 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482B1326AF8E00C3374A /* MobileCoreServices.framework */; };
+		187E209B140FCAE9003D1652 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482D1326AF9900C3374A /* CoreGraphics.framework */; };
+		187E209C140FCAE9003D1652 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848311326AFCE00C3374A /* libz.1.2.3.dylib */; };
+		187E20B6140FCB17003D1652 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E20B5140FCB17003D1652 /* UIKit.framework */; };
 		18894077138183B900EFAE98 /* JPJSONDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */; };
 		18894079138183C700EFAE98 /* JPJSONDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */; };
 		3A7846E213268C9C00C3374A /* JPHTTPTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */; };
@@ -195,6 +321,8 @@
 		185BE75913EB220D003BA260 /* JPJSONRPCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJSONRPCModel.m; sourceTree = "<group>"; };
 		185F4D27135F38490069C261 /* JPXMLDecoderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPXMLDecoderHandler.h; path = Headers/JPXMLDecoderHandler.h; sourceTree = SOURCE_ROOT; };
 		185F4D29135F38530069C261 /* JPXMLDecoderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPXMLDecoderHandler.m; sourceTree = "<group>"; };
+		187E20A0140FCAE9003D1652 /* libJUMPNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPNetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		187E20B5140FCB17003D1652 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../Chameleon/UIKit.framework; sourceTree = SOURCE_ROOT; };
 		18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONDecoderHandler.h; path = Headers/JPJSONDecoderHandler.h; sourceTree = SOURCE_ROOT; };
 		18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJSONDecoderHandler.m; sourceTree = "<group>"; };
 		3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPHTTPTransporter.h; path = ../Headers/JPHTTPTransporter.h; sourceTree = "<group>"; };
@@ -264,6 +392,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		187E2096140FCAE9003D1652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E2097140FCAE9003D1652 /* Foundation.framework in Frameworks */,
+				187E2098140FCAE9003D1652 /* CFNetwork.framework in Frameworks */,
+				187E2099140FCAE9003D1652 /* SystemConfiguration.framework in Frameworks */,
+				187E209A140FCAE9003D1652 /* MobileCoreServices.framework in Frameworks */,
+				187E209B140FCAE9003D1652 /* CoreGraphics.framework in Frameworks */,
+				187E209C140FCAE9003D1652 /* libz.1.2.3.dylib in Frameworks */,
+				187E20B6140FCB17003D1652 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libJUMPNetwork.a */,
+				187E20A0140FCAE9003D1652 /* libJUMPNetwork.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,6 +446,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				187E20B5140FCB17003D1652 /* UIKit.framework */,
 				3A7848311326AFCE00C3374A /* libz.1.2.3.dylib */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				3A7848271326AF7F00C3374A /* CFNetwork.framework */,
@@ -734,6 +878,85 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		187E201D140FCAE9003D1652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E201E140FCAE9003D1652 /* JUMPNetwork_Prefix.pch in Headers */,
+				187E201F140FCAE9003D1652 /* JPTransporterJSONRPCMessage.h in Headers */,
+				187E2020140FCAE9003D1652 /* JPJSONRPCMessage.h in Headers */,
+				187E2021140FCAE9003D1652 /* JPJSONRPCDecoderHandler.h in Headers */,
+				187E2022140FCAE9003D1652 /* JPJSONRPCEncoderHandler.h in Headers */,
+				187E2023140FCAE9003D1652 /* JPJSONRPCEventFactory.h in Headers */,
+				187E2024140FCAE9003D1652 /* JPDefaultHTTPMessage.h in Headers */,
+				187E2025140FCAE9003D1652 /* JPTransporterMessage.h in Headers */,
+				187E2026140FCAE9003D1652 /* JPTransporterHTTPMessage.h in Headers */,
+				187E2027140FCAE9003D1652 /* JPPipeline.h in Headers */,
+				187E2028140FCAE9003D1652 /* JPDefaultHandlerContext.h in Headers */,
+				187E2029140FCAE9003D1652 /* JPPipelineException.h in Headers */,
+				187E202A140FCAE9003D1652 /* JPPipelineSimpleMessageEvent.h in Headers */,
+				187E202B140FCAE9003D1652 /* JPPipelineUpstreamMessageEvent.h in Headers */,
+				187E202C140FCAE9003D1652 /* JPPipelineDowstreamMessageEvent.h in Headers */,
+				187E202D140FCAE9003D1652 /* JPDefaultPipelineExceptionEvent.h in Headers */,
+				187E202E140FCAE9003D1652 /* JPDefaultCancelEvent.h in Headers */,
+				187E202F140FCAE9003D1652 /* JPPipelineDefaultFuture.h in Headers */,
+				187E2030140FCAE9003D1652 /* JPSimplePipelineHandler.h in Headers */,
+				187E2031140FCAE9003D1652 /* JPSimplePipelineUpstreamHandler.h in Headers */,
+				187E2032140FCAE9003D1652 /* JPSimplePipelineDownstreamHandler.h in Headers */,
+				187E2033140FCAE9003D1652 /* JPPipelineFactory.h in Headers */,
+				187E2034140FCAE9003D1652 /* JPPipelineEventFactory.h in Headers */,
+				187E2035140FCAE9003D1652 /* JPPipelineHandler.h in Headers */,
+				187E2036140FCAE9003D1652 /* JPPipelineUpstreamHandler.h in Headers */,
+				187E2037140FCAE9003D1652 /* JPPipelineDownstreamHandler.h in Headers */,
+				187E2038140FCAE9003D1652 /* JPPipelineEventListener.h in Headers */,
+				187E2039140FCAE9003D1652 /* JPPipelineEvent.h in Headers */,
+				187E203A140FCAE9003D1652 /* JPPipelineMessageEvent.h in Headers */,
+				187E203B140FCAE9003D1652 /* JPPipelineExceptionEvent.h in Headers */,
+				187E203C140FCAE9003D1652 /* JPPipelineFuture.h in Headers */,
+				187E203D140FCAE9003D1652 /* JPPipelineFutureListener.h in Headers */,
+				187E203E140FCAE9003D1652 /* JPPipelineSink.h in Headers */,
+				187E203F140FCAE9003D1652 /* JPPipelineListenerNotification.h in Headers */,
+				187E2040140FCAE9003D1652 /* JPPipelineHandlerContext.h in Headers */,
+				187E2041140FCAE9003D1652 /* JPPipelineNotification.h in Headers */,
+				187E2042140FCAE9003D1652 /* JPDataProcessserJSON.h in Headers */,
+				187E2043140FCAE9003D1652 /* JPHTTPTransporter.h in Headers */,
+				187E2044140FCAE9003D1652 /* JPDataProcessserXML.h in Headers */,
+				187E2045140FCAE9003D1652 /* JPXMLDecoderHandler.h in Headers */,
+				187E2046140FCAE9003D1652 /* JPJSONDecoderHandler.h in Headers */,
+				187E2047140FCAE9003D1652 /* ASIAuthenticationDialog.h in Headers */,
+				187E2048140FCAE9003D1652 /* ASICacheDelegate.h in Headers */,
+				187E2049140FCAE9003D1652 /* ASIDataCompressor.h in Headers */,
+				187E204A140FCAE9003D1652 /* ASIDataDecompressor.h in Headers */,
+				187E204B140FCAE9003D1652 /* ASIDownloadCache.h in Headers */,
+				187E204C140FCAE9003D1652 /* ASIFormDataRequest.h in Headers */,
+				187E204D140FCAE9003D1652 /* ASIHTTPRequest.h in Headers */,
+				187E204E140FCAE9003D1652 /* ASIHTTPRequestConfig.h in Headers */,
+				187E204F140FCAE9003D1652 /* ASIHTTPRequestDelegate.h in Headers */,
+				187E2050140FCAE9003D1652 /* ASIInputStream.h in Headers */,
+				187E2051140FCAE9003D1652 /* ASINetworkQueue.h in Headers */,
+				187E2052140FCAE9003D1652 /* ASIProgressDelegate.h in Headers */,
+				187E2053140FCAE9003D1652 /* ASICloudFilesCDNRequest.h in Headers */,
+				187E2054140FCAE9003D1652 /* ASICloudFilesContainer.h in Headers */,
+				187E2055140FCAE9003D1652 /* ASICloudFilesContainerRequest.h in Headers */,
+				187E2056140FCAE9003D1652 /* ASICloudFilesContainerXMLParserDelegate.h in Headers */,
+				187E2057140FCAE9003D1652 /* ASICloudFilesObject.h in Headers */,
+				187E2058140FCAE9003D1652 /* ASICloudFilesObjectRequest.h in Headers */,
+				187E2059140FCAE9003D1652 /* ASICloudFilesRequest.h in Headers */,
+				187E205A140FCAE9003D1652 /* ASINSXMLParserCompat.h in Headers */,
+				187E205B140FCAE9003D1652 /* ASIS3Bucket.h in Headers */,
+				187E205C140FCAE9003D1652 /* ASIS3BucketObject.h in Headers */,
+				187E205D140FCAE9003D1652 /* ASIS3BucketRequest.h in Headers */,
+				187E205E140FCAE9003D1652 /* ASIS3ObjectRequest.h in Headers */,
+				187E205F140FCAE9003D1652 /* ASIS3Request.h in Headers */,
+				187E2060140FCAE9003D1652 /* ASIS3ServiceRequest.h in Headers */,
+				187E2061140FCAE9003D1652 /* Reachability.h in Headers */,
+				187E2062140FCAE9003D1652 /* JPPipelineSucceededFuture.h in Headers */,
+				187E2063140FCAE9003D1652 /* JPPipelineCompletedFuture.h in Headers */,
+				187E2064140FCAE9003D1652 /* JPPipelineFailedFuture.h in Headers */,
+				187E2065140FCAE9003D1652 /* JPJSONRPCModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07A0554694100DB518D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -816,6 +1039,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		187E201C140FCAE9003D1652 /* JUMPNetworkMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187E209D140FCAE9003D1652 /* Build configuration list for PBXNativeTarget "JUMPNetworkMacOS" */;
+			buildPhases = (
+				187E201D140FCAE9003D1652 /* Headers */,
+				187E2066140FCAE9003D1652 /* Sources */,
+				187E2096140FCAE9003D1652 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUMPNetworkMacOS;
+			productName = JUMPNetwork;
+			productReference = 187E20A0140FCAE9003D1652 /* libJUMPNetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		D2AAC07D0554694100DB518D /* JUMPNetwork */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "JUMPNetwork" */;
@@ -854,11 +1094,66 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* JUMPNetwork */,
+				187E201C140FCAE9003D1652 /* JUMPNetworkMacOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		187E2066140FCAE9003D1652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E2067140FCAE9003D1652 /* JPJSONRPCMessage.m in Sources */,
+				187E2068140FCAE9003D1652 /* JPJSONRPCDecoderHandler.m in Sources */,
+				187E2069140FCAE9003D1652 /* JPJSONRPCEncoderHandler.m in Sources */,
+				187E206A140FCAE9003D1652 /* JPJSONRPCEventFactory.m in Sources */,
+				187E206B140FCAE9003D1652 /* JPDefaultHTTPMessage.m in Sources */,
+				187E206C140FCAE9003D1652 /* JPPipeline.m in Sources */,
+				187E206D140FCAE9003D1652 /* JPDefaultHandlerContext.m in Sources */,
+				187E206E140FCAE9003D1652 /* JPPipelineException.m in Sources */,
+				187E206F140FCAE9003D1652 /* JPPipelineSimpleMessageEvent.m in Sources */,
+				187E2070140FCAE9003D1652 /* JPPipelineUpstreamMessageEvent.m in Sources */,
+				187E2071140FCAE9003D1652 /* JPPipelineDowstreamMessageEvent.m in Sources */,
+				187E2072140FCAE9003D1652 /* JPDefaultPipelineExceptionEvent.m in Sources */,
+				187E2073140FCAE9003D1652 /* JPDefaultCancelEvent.m in Sources */,
+				187E2074140FCAE9003D1652 /* JPPipelineDefaultFuture.m in Sources */,
+				187E2075140FCAE9003D1652 /* JPSimplePipelineHandler.m in Sources */,
+				187E2076140FCAE9003D1652 /* JPSimplePipelineUpstreamHandler.m in Sources */,
+				187E2077140FCAE9003D1652 /* JPSimplePipelineDownstreamHandler.m in Sources */,
+				187E2078140FCAE9003D1652 /* JPPipelineNotification.m in Sources */,
+				187E2079140FCAE9003D1652 /* JPHTTPTransporter.m in Sources */,
+				187E207A140FCAE9003D1652 /* JPXMLDecoderHandler.m in Sources */,
+				187E207B140FCAE9003D1652 /* JPJSONDecoderHandler.m in Sources */,
+				187E207C140FCAE9003D1652 /* ASIAuthenticationDialog.m in Sources */,
+				187E207D140FCAE9003D1652 /* ASIDataCompressor.m in Sources */,
+				187E207E140FCAE9003D1652 /* ASIDataDecompressor.m in Sources */,
+				187E207F140FCAE9003D1652 /* ASIDownloadCache.m in Sources */,
+				187E2080140FCAE9003D1652 /* ASIFormDataRequest.m in Sources */,
+				187E2081140FCAE9003D1652 /* ASIHTTPRequest.m in Sources */,
+				187E2082140FCAE9003D1652 /* ASIInputStream.m in Sources */,
+				187E2083140FCAE9003D1652 /* ASINetworkQueue.m in Sources */,
+				187E2084140FCAE9003D1652 /* ASICloudFilesCDNRequest.m in Sources */,
+				187E2085140FCAE9003D1652 /* ASICloudFilesContainer.m in Sources */,
+				187E2086140FCAE9003D1652 /* ASICloudFilesContainerRequest.m in Sources */,
+				187E2087140FCAE9003D1652 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
+				187E2088140FCAE9003D1652 /* ASICloudFilesObject.m in Sources */,
+				187E2089140FCAE9003D1652 /* ASICloudFilesObjectRequest.m in Sources */,
+				187E208A140FCAE9003D1652 /* ASICloudFilesRequest.m in Sources */,
+				187E208B140FCAE9003D1652 /* ASIS3Bucket.m in Sources */,
+				187E208C140FCAE9003D1652 /* ASIS3BucketObject.m in Sources */,
+				187E208D140FCAE9003D1652 /* ASIS3BucketRequest.m in Sources */,
+				187E208E140FCAE9003D1652 /* ASIS3ObjectRequest.m in Sources */,
+				187E208F140FCAE9003D1652 /* ASIS3Request.m in Sources */,
+				187E2090140FCAE9003D1652 /* ASIS3ServiceRequest.m in Sources */,
+				187E2091140FCAE9003D1652 /* Reachability.m in Sources */,
+				187E2092140FCAE9003D1652 /* JPPipelineSucceededFuture.m in Sources */,
+				187E2093140FCAE9003D1652 /* JPPipelineCompletedFuture.m in Sources */,
+				187E2094140FCAE9003D1652 /* JPPipelineFailedFuture.m in Sources */,
+				187E2095140FCAE9003D1652 /* JPJSONRPCModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -916,6 +1211,58 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		187E209E140FCAE9003D1652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/JUMPNetwork.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Chameleon\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JUMPNetwork_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../Headers;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = JUMPNetwork;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		187E209F140FCAE9003D1652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/JUMPNetwork.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Chameleon\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JUMPNetwork_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../Headers;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = JUMPNetwork;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -990,6 +1337,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		187E209D140FCAE9003D1652 /* Build configuration list for PBXNativeTarget "JUMPNetworkMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187E209E140FCAE9003D1652 /* Debug */,
+				187E209F140FCAE9003D1652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "JUMPNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
