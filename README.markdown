@@ -16,10 +16,6 @@ Documentation
 -------------
 
 JUMP Framework Modules documentation is generated from code using [Doxygen](http://www.stack.nl/~dimitri/doxygen/). 
-<<<<<<< HEAD
-Acess [seqoy.github.com/jump](http://seqoy.github.com/jump) to learn more about it, many **Programming Guides** and **Code Snippets** for the different modules are
-=======
-Acess [seqoy.github.com/jump](http://seoy.github.com/jump) to learn more about it, many **Programming Guides** and **Code Snippets** for the different modules are
->>>>>>> origin/gh-pages
+Access [seqoy.github.com/jump](http://seoy.github.com/jump) to learn more about it, many **Programming Guides** and **Code Snippets** for the different modules are
 provided to help you understand and start to use right away.
 
