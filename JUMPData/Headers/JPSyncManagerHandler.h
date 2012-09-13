@@ -37,7 +37,7 @@
 	NSArray *readKeyOrder;
 
 	//// //// //// //// //// //// //// //// //// //// 
-	<JPSyncManagerHandlerDelegate> delegate;
+	id<JPSyncManagerHandlerDelegate> delegate;
 	
     //// //// //// //// //// //// //// //// //// //// 
     //

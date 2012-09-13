@@ -24,12 +24,12 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-+(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(<JPPipelineFuture>)anFuture {
++(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(id<JPPipelineFuture>)anFuture {
 	return [[[self alloc] initWithEntityKey:anKey withParameters:arrayOfParameters withFuture:anFuture] autorelease];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(<JPPipelineFuture>)anFuture {
+-(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(id<JPPipelineFuture>)anFuture {
 	self = [super initWithMessage:@"" andFuture:anFuture];
 	if (self != nil) {
 		// Check Parameters.

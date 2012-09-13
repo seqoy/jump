@@ -34,7 +34,7 @@
 #pragma mark -
 #pragma mark Init Methods. 
 +(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters;
-+(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(<JPPipelineFuture>)anFuture;
--(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(<JPPipelineFuture>)anFuture;
++(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(id<JPPipelineFuture>)anFuture;
+-(id)initWithEntityKey:(NSString*)anKey withParameters:(NSMutableArray*)arrayOfParameters withFuture:(id<JPPipelineFuture>)anFuture;
 
 @end
