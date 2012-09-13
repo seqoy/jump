@@ -57,19 +57,19 @@
 
 //// //// //// //// //// //// //// ////
 // Udenfine if needed.
-#ifdef Debug()
+#ifdef Debug
 	#undef Debug()
 #endif
-#ifdef Info()
+#ifdef Info
 	#undef Info()
 #endif
-#ifdef Warn()
+#ifdef Warn
 	#undef Warn()
 #endif
-#ifdef Error()
+#ifdef Error
 	#undef Error()
 #endif
-#ifdef Fatal()
+#ifdef Fatal
 	#undef Fatal()
 #endif
 
@@ -91,20 +91,20 @@
 
 //// //// //// //// //// //// //// ////
 // Udenfine if needed.
-#ifdef DebugTo()
-	#undef DebugTo()
+#ifdef DebugTo
+	#undef DebugTo
 #endif
-#ifdef InfoTo()
-	#undef InfoTo()
+#ifdef InfoTo
+	#undef InfoTo
 #endif
-#ifdef WarnTo()
-	#undef WarnTo()
+#ifdef WarnTo
+	#undef WarnTo
 #endif
-#ifdef ErrorTo()
-	#undef ErrorTo()
+#ifdef ErrorTo
+	#undef ErrorTo
 #endif
-#ifdef FatalTo()
-	#undef Fatal()
+#ifdef FatalTo
+	#undef Fatal
 #endif
 
 // Define.
@@ -125,19 +125,19 @@
 
 //// //// //// //// //// //// //// ////
 // Udenfine if needed.
-#ifdef DebugException()
+#ifdef DebugException
 	#undef DebugException()
 #endif
-#ifdef InfoException()
+#ifdef InfoException
 	#undef InfoException()
 #endif
-#ifdef WarnException()
+#ifdef WarnException
 	#undef WarnException()
 #endif
-#ifdef ErrorException()
+#ifdef ErrorException
 	#undef ErrorException()
 #endif
-#ifdef FatalException()
+#ifdef FatalException
 	#undef FatalException()
 #endif
 
@@ -159,19 +159,19 @@
 
 //// //// //// //// //// //// //// ////
 // Udenfine if needed.
-#ifdef DebugExceptionTo()
+#ifdef DebugExceptionTo
 	#undef DebugExceptionTo()
 #endif
-#ifdef InfoExceptionTo()
+#ifdef InfoExceptionTo
 	#undef InfoExceptionTo()
 #endif
-#ifdef WarnExceptionTo()
+#ifdef WarnExceptionTo
 	#undef WarnExceptionTo()
 #endif
-#ifdef ErrorExceptionTo()
+#ifdef ErrorExceptionTo
 	#undef ErrorExceptionTo()
 #endif
-#ifdef FatalExceptionTo()
+#ifdef FatalExceptionTo
 	#undef FatalExceptionTo()
 #endif
 
@@ -193,43 +193,43 @@
 
 //// //// //// //// //// //// //// ////
 // Udenfine if needed.
-#ifdef LogObject()
+#ifdef LogObject
 	#undef LogObject()
 #endif
-#ifdef LogObjectTo()
+#ifdef LogObjectTo
 	#undef LogObjectTo()
 #endif
-#ifdef LogInt()
+#ifdef LogInt
 	#undef LogInt()
 #endif
-#ifdef LogIntTo()
+#ifdef LogIntTo
 	#undef LogIntTo()
 #endif
-#ifdef LogFloat()
+#ifdef LogFloat
 	#undef LogFloatTo()
 #endif
-#ifdef LogRect()
+#ifdef LogRect
 	#undef LogRectTo()
 #endif
-#ifdef LogFloat()
+#ifdef LogFloat
 	#undef LogFloatTo()
 #endif
-#ifdef LogPoint()
+#ifdef LogPoint
 	#undef LogPointTo()
 #endif
-#ifdef LogSize()
+#ifdef LogSize
 	#undef LogSizeTo()
 #endif
-#ifdef LogSize()
+#ifdef LogSize
 	#undef LogSizeTo()
 #endif
-#ifdef LogSize()
+#ifdef LogSize
 	#undef LogSizeTo()
 #endif
-#ifdef LogBool()
+#ifdef LogBool
 	#undef LogBoolTo()
 #endif
-#ifdef LogIndexPath()
+#ifdef LogIndexPath
 	#undef LogIndexPathTo()
 #endif
 
