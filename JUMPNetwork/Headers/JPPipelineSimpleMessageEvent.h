@@ -30,7 +30,7 @@
 	id message;
     
     // Future.
-    <JPPipelineFuture>future;
+    id<JPPipelineFuture>future;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -39,7 +39,7 @@
 @property (retain, getter=getMessage) id message;
 
 /// The JPPipelineFuture object associated with this event.
-@property (retain, getter=getFuture) <JPPipelineFuture>future;
+@property (nonatomic, retain, getter=getFuture) id<JPPipelineFuture>future;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -54,8 +54,8 @@
  * @param anMessage An object that represent the message.
  * @param anListener An JPPipelineFuture object to receive information about the progress.
  */
-+(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anListener;
--(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anListener;
++(id)initWithMessage:(id)anMessage andFuture:(id<JPPipelineFuture>)anListener;
+-(id)initWithMessage:(id)anMessage andFuture:(id<JPPipelineFuture>)anListener;
 
 /**
  * Init this event with an message.

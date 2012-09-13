@@ -40,7 +40,7 @@
  \code
  
  // Override...
- -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+ -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	 ...
 	 [super handleContextUpstream:ctx withEvent:e];
 	 ...
@@ -86,13 +86,13 @@
  * @param ctx An context. 
  * @param e The event.
  */
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e;
+-(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e;
 
 /**
  * Invoked when an exception was raised.
  * @param ctx An context. 
  * @param e The event.
  */
--(void)exceptionCaughtWithContext:(<JPPipelineHandlerContext>)ctx withException:(<JPPipelineExceptionEvent>)e;
+-(void)exceptionCaughtWithContext:(id<JPPipelineHandlerContext>)ctx withException:(id<JPPipelineExceptionEvent>)e;
 
 @end

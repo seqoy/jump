@@ -95,7 +95,7 @@
  * @param name     the name of the handler to insert first
  * @param handler  the handler to insert first
  */
--(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+-(void)addFirst:(NSString*)name withHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Inserts a Handler at the first position of this pipeline.
@@ -104,7 +104,7 @@
  * @param handler  the handler to insert first
  * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
  */
--(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+-(void)addFirst:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 /**
  * Appends a Handler at the last position of this pipeline.
@@ -112,7 +112,7 @@
  * @param name     the name of the handler to append
  * @param handler  the handler to append
  */
--(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+-(void)addLast:(NSString*)name withHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Appends a Handler at the last position of this pipeline.
@@ -121,7 +121,7 @@
  * @param handler  the handler to append
  * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
  */
--(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+-(void)addLast:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 /**
  * Inserts a JPPipelineHandler before an existing handler of this
@@ -132,7 +132,7 @@
  * @param handler   the handler to insert before
  *
  */
--(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Inserts a JPPipelineHandler before an existing handler of this
@@ -143,7 +143,7 @@
  * @param handler   the handler to insert before
  * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
  */
--(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 /**
  * Inserts a JPPipelineHandler after an existing handler of this
@@ -154,7 +154,7 @@
  * @param handler   the handler to insert after
  *
  */
--(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler;
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Inserts a JPPipelineHandler after an existing handler of this
@@ -165,7 +165,7 @@
  * @param handler   the handler to insert after
  * @param priority  A number from 0 to 10 that defines what priority this handler has on the overall progress calculation.
  */
--(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -179,7 +179,7 @@
 /**
  * Removes the specified JPPipelineHandler from this pipeline.
  */
--(void)removeByHandler:(<JPPipelineHandler>)handler;
+-(void)removeByHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Removes the JPPipelineHandler with the specified name from this
@@ -187,7 +187,7 @@
  *
  * @return the removed handler
  */
--(<JPPipelineHandler>)removeByName:(NSString*)name;
+-(id<JPPipelineHandler>)removeByName:(NSString*)name;
 
 /**
  * Removes the first JPPipelineHandler in this pipeline.
@@ -195,7 +195,7 @@
  * @return the removed handler
  *
  */
--(<JPPipelineHandler>)removeFirst;
+-(id<JPPipelineHandler>)removeFirst;
 
 /**
  * Removes the last JPPipelineHandler in this pipeline.
@@ -203,7 +203,7 @@
  * @return the removed handler
  *
  */
--(<JPPipelineHandler>)removeLast;
+-(id<JPPipelineHandler>)removeLast;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -218,7 +218,7 @@
  * Replaces the specified JPPipelineHandler with a new handler in
  * this pipeline.
  */
--(void)replaceByHandler:(<JPPipelineHandler>)oldHandler withName:(NSString*)name andHandler:(<JPPipelineHandler>)handler;
+-(void)replaceByHandler:(id<JPPipelineHandler>)oldHandler withName:(NSString*)name andHandler:(id<JPPipelineHandler>)handler;
 
 /**
  * Replaces the JPPipelineHandler of the specified name with a new
@@ -227,7 +227,7 @@
  * @return the removed handler
  *
  */
--(<JPPipelineHandler>)replaceByName:(NSString*)oldName withName:(NSString*)newName andHandler:(<JPPipelineHandler>)newHandler;
+-(id<JPPipelineHandler>)replaceByName:(NSString*)oldName withName:(NSString*)newName andHandler:(id<JPPipelineHandler>)newHandler;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -243,14 +243,14 @@
  *
  * @return the first handler or <tt>nil</tt> if this pipeline is empty.
  */
--(<JPPipelineHandler>)first;
+-(id<JPPipelineHandler>)first;
 
 /**
  * Returns the last JPPipelineHandler in this pipeline.
  *
  * @return the last handler or <tt>nil</tt> if this pipeline is empty.
  */
--(<JPPipelineHandler>)last;
+-(id<JPPipelineHandler>)last;
 
 /**
  * Returns the JPPipelineHandler with the specified name in this
@@ -259,7 +259,7 @@
  * @return the handler with the specified name or <tt>nil</tt> if there's no such handler in this pipeline.
  *         
  */
--(<JPPipelineHandler>)get:(NSString*)name;
+-(id<JPPipelineHandler>)get:(NSString*)name;
 
 /**
  * Set handler as final, so he can't be removed or replaced.
@@ -284,16 +284,16 @@
  * Sends the specified JPPipelineEvent to the first JPPipelineUpstreamHandler in this pipeline.
  * @param e The JPPipelineEvent to send upstream.
  */
--(void)sendUpstream:(<JPPipelineEvent>)e;
+-(void)sendUpstream:(id<JPPipelineEvent>)e;
 
 /**
  * Sends the specified JPPipelineEvent to the last JPPipelineDownstreamHandler in this pipeline.
  * @param e The JPPipelineEvent to send downstream.
  */
--(void)sendDownstream:(<JPPipelineEvent>)e;
+-(void)sendDownstream:(id<JPPipelineEvent>)e;
 
--(void)sendContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e;
--(void)sendContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e;
+-(void)sendContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e;
+-(void)sendContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -309,7 +309,7 @@
  * @param exception the <tt>NSException</tt> raised.
  * @param e The JPPipelineEvent that raise this exception.
  */
--(void)notifyHandlerException:(NSException*)exception withEvent:(<JPPipelineEvent>)e;
+-(void)notifyHandlerException:(NSException*)exception withEvent:(id<JPPipelineEvent>)e;
 
 ///@}
 @end
@@ -465,7 +465,7 @@
  
  @implementation FirstHandler
  
- -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+ -(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
 	 // Remove this handler from the pipeline,
 	 [[ctx getPipeline] removeByHandler:self];
 	 // And let SecondHandler handle the current event.
@@ -518,7 +518,7 @@
  
  @implementation MyReadHandler
  
- -(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+ -(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
 	  id message = [e getMessage];
 	  // Do something with the received message.
 	  ...
@@ -535,7 +535,7 @@
  
  @implementation MyWriteHandler
  
- -(void)writeRequested:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+ -(void)writeRequested:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
 	  id message = [e getMessage];
 	  // Do something with the message to be written.
 	  ...

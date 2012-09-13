@@ -23,7 +23,7 @@
 /**
  * Returns a newly created Event.
  */
-+(<JPPipelineEvent>)getEvent;
++(id<JPPipelineEvent>)getEvent;
 
 /**
  * Set the Default Transport Layer URL

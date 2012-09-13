@@ -46,7 +46,7 @@
  * <tt>NSDictionary</tt> but could contain other JSON Objects returned by the server.
  * This member contains <tt>nil</tt> in case there was an error invoking the procedure.
  */
-@property (retain) id result;
+@property (nonatomic,retain) id result;
 
 /**
  * An <tt>NSError</tt> containing error information about the fault that occured before, 
@@ -56,7 +56,7 @@
  * See <a href="http://json-rpc.org/wd/JSON-RPC-1-1-WD-20060807.html#ErrorObject">JSON-RPC 1.1 Error Object</a> definitions
  * and <a href="http://groups.google.com/group/json-rpc/web/json-rpc-2-0">JSON-RPC 2.0 Error Object</a> definitions for more info.
  */
-@property (retain) NSError* error;
+@property (nonatomic,retain) NSError* error;
 
 /////// ////// ////// ////// ////// ////// ////// ////// ////// /////// ////// ////// ////// ////// ////// ////// ////// ////// 
 #pragma mark -

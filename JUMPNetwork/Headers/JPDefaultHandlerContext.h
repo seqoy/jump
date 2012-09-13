@@ -59,7 +59,7 @@
  * Retrieve the progress priority that the Handler attached to this Context
  * has on the overall progress calcuation. Return a number from 0 to 10.
  */
-@property (assign) NSInteger progressPriority;
+@property (nonatomic,assign) NSInteger progressPriority;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -70,10 +70,10 @@
 ///@{ 
 
 +(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
-					 andName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler withPipeline:(JPPipeline*)anPipeline;;
+					 andName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler withPipeline:(JPPipeline*)anPipeline;;
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
-					 andName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler withPipeline:(JPPipeline*)anPipeline;
+					 andName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler withPipeline:(JPPipeline*)anPipeline;
 	
 ///@}
 @end

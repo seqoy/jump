@@ -48,7 +48,7 @@
  
  @implementation MyHandler
  
- -(void)beforeAdd:(<JPPipelineHandlerContextct>)ctx {
+ -(void)beforeAdd:(id<JPPipelineHandlerContextct>)ctx {
 	savedCtx = ctx;
  }
  
@@ -78,7 +78,7 @@
  * Returns the JPPipelineHandler that this context object is
  * serving.
  */
--(<JPPipelineHandler>)handler;
+-(id<JPPipelineHandler>)handler;
 
 /**
  * Returns the Pipeline that this context belongs to.
@@ -102,14 +102,14 @@
  * JPPipelineUpstreamHandler which is placed in the closest upstream
  * from the handler associated with this context.
  */
--(void)sendUpstream:(<JPPipelineEvent>)e;
+-(void)sendUpstream:(id<JPPipelineEvent>)e;
 
 /**
  * Sends the specified JPPipelineEvent to the
  * JPPipelineDownstreamHandler which is placed in the closest
  * downstream from the handler associated with this context. 
  */
--(void)sendDownstream:(<JPPipelineEvent>)e;
+-(void)sendDownstream:(id<JPPipelineEvent>)e;
 
 /**
  * The current progress that the JPPipelineHandler that this context is handling.

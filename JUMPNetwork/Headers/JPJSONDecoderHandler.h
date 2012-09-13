@@ -87,7 +87,7 @@ typedef enum {
  * You can override this method on a subclass to do some custom processing. 
  * Make sure to call <tt>super</tt> if you want to preserve the original functionality.
  */
--(void)jsonDataDecoded:(id)JSONDecoded withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx;
+-(void)jsonDataDecoded:(id)JSONDecoded withEvent:(id<JPPipelineMessageEvent>)event andContext:(id<JPPipelineHandlerContext>)ctx;
 
 ///@}
 @end

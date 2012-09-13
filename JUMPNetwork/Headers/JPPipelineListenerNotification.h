@@ -27,11 +27,11 @@
 /**
  * Returns the Future Object which is associated with this notification.
  */
--(<JPPipelineFuture>)getFuture;
+-(id<JPPipelineFuture>)getFuture;
 
 /**
  * Returns the Event which is associated with this notification.
  */
--(<JPPipelineEvent>)getEvent;
+-(id<JPPipelineEvent>)getEvent;
 
 @end

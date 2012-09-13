@@ -37,7 +37,7 @@
  * @param anFuture An JPPipelineFuture object to get information about the progress of this event.
  */
 +(JPJSONRPCMessage*)newEventWithMethod:(NSString*)anMethod andParameters:(NSArray*)params
-											  andId:(NSNumber*)anID andFuture:(<JPPipelineFuture>)anFuture;
+											  andId:(NSNumber*)anID andFuture:(id<JPPipelineFuture>)anFuture;
 
 @end
 

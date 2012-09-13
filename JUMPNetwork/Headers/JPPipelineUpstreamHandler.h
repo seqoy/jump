@@ -36,14 +36,14 @@
  \code
  // Sending the event upstream (inbound)
  // Override...
- -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+ -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	 ...
 	 [ctx sendUpstream:e];
 	 ...
  }
  
  // Sending the event downstream (outbound)
-  -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+  -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	 ...
 	 [ctx sendDownstream:[DownstreamMessageEvent init(...)]];
 	 ...
@@ -58,5 +58,5 @@
  * @param ctx  The context object for this handler.
  * @param e    The downstream event to process or intercept.
  */
--(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e;
+-(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e;
 @end

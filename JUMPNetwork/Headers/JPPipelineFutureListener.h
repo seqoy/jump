@@ -37,6 +37,6 @@
 /**
  * Invoked when some action ocurr.
  */
--(void)someActionOcurr:(<JPPipelineListenerNotification>)notification;
+-(void)someActionOcurr:(id<JPPipelineListenerNotification>)notification;
 
 @end

@@ -111,7 +111,7 @@
  * done.  If this future is already
  * completed, the specified listener is notified immediately.
  */
--(void)addListener:(<JPPipelineFutureListener>)anListener;
+-(void)addListener:(id<JPPipelineFutureListener>)anListener;
 
 /**
  * Removes the specified listener from this future.
@@ -120,7 +120,7 @@
  * listener is not associated with this future, this method
  * does nothing and returns silently.
  */
--(void)removeListener:(<JPPipelineFutureListener>)anListener;
+-(void)removeListener:(id<JPPipelineFutureListener>)anListener;
 
 
 @end

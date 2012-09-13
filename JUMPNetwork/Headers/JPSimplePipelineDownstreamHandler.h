@@ -38,7 +38,7 @@
  \code
  
  // Override...
- -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+ -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	 ...
 	 [super handleContextDownstream:ctx withEvent:e];
 	 ...
@@ -84,6 +84,6 @@
  * @param ctx An context. 
  * @param e The event.
  */
--(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e;
+-(void)sendRequestedWithContext:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e;
 
 @end

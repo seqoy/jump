@@ -30,7 +30,7 @@
  * @param pipeline The pipeline that send the event.
  * @param e The event.
  */
--(void)eventSunk:(JPPipeline*)pipeline withEvent:(<JPPipelineEvent>)e;
+-(void)eventSunk:(JPPipeline*)pipeline withEvent:(id<JPPipelineEvent>)e;
 
 /**
  * Invoked by JPPipeline when an exception was raised while one of its Handlers process a Event.
@@ -38,7 +38,7 @@
  * @param pipeline The pipeline that send the event.
  * @param e The event.
  */
--(void)exceptionCaught:(JPPipelineException*)anException withPipeline:(JPPipeline*)pipeline withEvent:(<JPPipelineEvent>)e;
+-(void)exceptionCaught:(JPPipelineException*)anException withPipeline:(JPPipeline*)pipeline withEvent:(id<JPPipelineEvent>)e;
 
 /**
  * The current progress of the transporter provider task.

@@ -29,10 +29,10 @@
 /**
  * Retrieve the Event Listener Object.
  */
--(<JPPipelineFutureListener>)getListener;
+-(id<JPPipelineFutureListener>)getListener;
 
 /**
  * Set the Event Listener Object.
  */
--(void)setListener:(<JPPipelineFutureListener>)anListener;
+-(void)setListener:(id<JPPipelineFutureListener>)anListener;
 @end

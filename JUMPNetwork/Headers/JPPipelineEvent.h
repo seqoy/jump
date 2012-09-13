@@ -29,6 +29,6 @@
 /**
  * Returns the Future Object which is associated with this event.
  */
--(<JPPipelineFuture>)getFuture;
+-(id<JPPipelineFuture>)getFuture;
 
 @end
