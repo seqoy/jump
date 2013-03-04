@@ -62,6 +62,33 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 #pragma mark -
+#pragma mark Insert warnings.
+
+/**
+ * Warn that will insert some data. Optionally send the JPDBManager that this object was created.
+ * If you gonna update this object, if you gonna update this object you should use this manager, 
+ * because all operation is used on a separate DB Manager in the background thread.
+ */
+- (void)willInsertTheData:(id)object inEntity:(NSString*)entity inDatabaseManager:(JPDBManager*)dbManager;
+
+
+/**
+ * Warn that will update some data. Optionally send the JPDBManager that this object was created.
+ * If you gonna update this object, if you gonna update this object you should use this manager,
+ * because all operation is used on a separate DB Manager in the background thread.
+ */
+- (void)willUpdateTheData:(id)object inObject:(id)object forEntity:(NSString*)entity inDatabaseManager:(JPDBManager*)dbManager;
+
+/**
+ * Did Update or Insert some object. Optionally send the JPDBManager that this object was created.
+ * If you gonna update this object, if you gonna update this object you should use this manager,
+ * because all operation is used on a separate DB Manager in the background thread.
+ */
+- (void)didUpdateOrInsertTheObject:(id)object withData:(id)data forEntity:(NSString*)entity inDatabaseManager:(JPDBManager*)dbManager;
+
+
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
+#pragma mark -
 #pragma mark Progress.
 
 /**
