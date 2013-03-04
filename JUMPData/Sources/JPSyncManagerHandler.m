@@ -588,11 +588,17 @@
 								
 								//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 								// Warn the delegate that will UPDATE data.
-								if ( delegate )
+								if ( delegate ) {
 									if ( [(id)delegate respondsToSelector:@selector(willUpdateTheData:inObject:forEntity:)] )
 										[delegate willUpdateTheData:record
 														   inObject:coreDataRecord
 														  forEntity:[self getConfigModelForKey:serverDataKey].toEntity ];
+									if ( [(id)delegate respondsToSelector:@selector(willUpdateTheData:inObject:forEntity:inDatabaseManager:)] )
+										[delegate willUpdateTheData:record
+														   inObject:coreDataRecord
+														  forEntity:[self getConfigModelForKey:serverDataKey].toEntity
+                                                  inDatabaseManager:_backgroundThreadDatabaseManager];
+                                }
 								
 							}
 							
@@ -603,11 +609,18 @@
 							
 							//////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 							// Warn the delegate that will UPDATE data.
-							if ( delegate )
+							if ( delegate ) {
 								if ( [(id)delegate respondsToSelector:@selector(didUpdateOrInsertTheObject:withData:forEntity:)] )
 									 [delegate didUpdateOrInsertTheObject:coreDataRecord
 																withData:record
 															   forEntity:[self getConfigModelForKey:serverDataKey].toEntity ];
+                                if ( [(id)delegate respondsToSelector:@selector(didUpdateOrInsertTheObject:withData:forEntity:inDatabaseManager:)] )
+                                    [delegate didUpdateOrInsertTheObject:coreDataRecord
+																withData:record
+															   forEntity:[self getConfigModelForKey:serverDataKey].toEntity
+                                                       inDatabaseManager:_backgroundThreadDatabaseManager];
+
+                            }
                             
                             //////////// /////////// /////////// /////////// /////////// /////////// /////////// 
                             // Calculate the progress.
