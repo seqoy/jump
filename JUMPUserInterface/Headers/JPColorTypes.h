@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#if !TARGET_OS_IPHONE 
-    #import <ApplicationServices/ApplicationServices.h>
-#else
+//#if !TARGET_OS_IPHONE 
+//    #import <ApplicationServices/ApplicationServices.h>
+//#else
     #import <CoreGraphics/CoreGraphics.h>
-#endif
+//#endif
 /**
  * \file JPColorTypes.h
  * JPColor Data Type Structure for different color spaces.

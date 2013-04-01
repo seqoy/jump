@@ -326,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -333,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -354,7 +356,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = JUMPUserInterface;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -370,6 +372,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = JUMPUserInterface;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;

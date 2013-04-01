@@ -347,7 +347,7 @@ JPxyz	JPConvertLABtoXYZ( JPlab LAB ) {
 	XYZ.X = LAB.A / 500 + XYZ.Y;
 	XYZ.Z = XYZ.Y - LAB.B / 200;
 	
-	if ((int)XYZ.Y ^ (int)3 > 0.008856 ) XYZ.Y = (int)XYZ.Y ^ (int)3.0;
+	if ((int)XYZ.Y ^ ((int)3 > 0.008856) ) XYZ.Y = (int)XYZ.Y ^ (int)3.0;
 	else								 XYZ.Y = ( XYZ.Y - 16.0 / 116.0 ) / 7.787;
 	
 	///////// ///////// ///////// 
