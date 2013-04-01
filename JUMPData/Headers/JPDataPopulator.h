@@ -18,6 +18,7 @@
 #import "JPDataConverter.h"
 #import "JPJSONProcesser.h"
 #import "JPDataPopulatorDelegate.h"
+#import "JPPropertyDescriptor.h"
 
 /**
  * \nosubgrouping 
@@ -109,11 +110,26 @@
 
 /**
  * Return an Dictionary with all properties of giving object. The dictionary contain
- * keys for the properties names and values for every property value. This method
- * only retrieve properties of 
+ * keys for the properties names and values for every property value. If the 
+ * value of some property is 'nil' or can't be decoded will 
  * @param anObject An object to retrieve properties for.
  */
 +(NSDictionary*)retrievePropertiesFromObject:(id)anObject;
+
+/**
+ * Return the <tt>Class</tt> of an specified property of the informed object.
+ * @param anProperty The name of the property.
+ * @param anObject The object that contain the property to retrieve.
+ * @return The <tt>Class</tt> of specified property, or <tt>nil</tt> if some error ocurr.
+ */
++(Class)grabTheClassOfProperty:(NSString*)anProperty onObject:(id)anObject;
+
+/**
+ * Return an <tt>JPPropertyDescriptor</tt> instance filled with properties data.
+ * @param anProperty The name of the property.
+ * @param anObject The object that contain the property to retrieve.
+ */
++(JPPropertyDescriptor*)grabDescriptorOfProperty:(NSString*)anProperty onObject:(id)anObject;
 
 ///@}
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// 

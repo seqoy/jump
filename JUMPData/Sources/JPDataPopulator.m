@@ -86,15 +86,29 @@
 	
 }
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(Class)grabTheClassOfProperty:(NSString*)firstKey onObject:(id)firstObject {
-	//	///////////// 	///////////// 	///////////// 	///////////// 	///////////// 
-	/* 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
++(Class)grabTheClassOfProperty:(NSString*)anProperty onObject:(id)anObject {
+	///////////// 	///////////// 	///////
+	// Return Property Class.
+	return [[JPDataPopulator grabDescriptorOfProperty:anProperty onObject:anObject] propertyClass];
+}
+
+///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	/////////////
++(JPPropertyDescriptor*)grabDescriptorOfProperty:(NSString*)anProperty onObject:(id)anObject {
+    JPPropertyDescriptor *anDescriptor = [[[JPPropertyDescriptor alloc] init] autorelease];
+    
+    // Property Name.
+    anDescriptor.propertyName = anProperty;
+    
+    //	///////////// 	///////////// 	///////////// 	///////////// 	/////////////
+	/*
 	 * To correct compile, you need to ADD the libobjc.A.dylib framework to your target. And also #import the <objc/runtime.h>
 	 */
+    
+    Class propertyClass;
 
 	// Get the property (Method) attributes.
-	objc_property_t property = class_getProperty([firstObject class], [firstKey UTF8String]);
+	objc_property_t property = class_getProperty([anObject class], [anProperty UTF8String]);
 	
 	// Test if some data was returned, first.
 	if ( property != NULL ) {
@@ -102,39 +116,58 @@
         // The attribute type will be filled as NSString.
         NSString *type;
         
-        //////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
+        //////// ////// ////// ////// ////// ////// ////// ////// ////// //////
         // Figure out the type from attributes. Code from Apple Source: http://stackoverflow.com/questions/754824/get-an-object-attributes-list-in-objective-c
         const char *attributes = property_getAttributes(property);
         char buffer[1 + strlen(attributes)];
+        char encode[1 + strlen(attributes)];
         strcpy(buffer, attributes);
+        strcpy(encode, attributes);
         char *state = buffer, *attribute;
+        
+        //////////// ///////// ///////// ///////// /////////
+        // Set attribute.
+        char *attr     = encode;
+        char *stripped = strsep(&attr, ",");
+        int len = strlen(stripped);
+        
+        anDescriptor.propertyEncode = [NSData dataWithBytes:(void*)stripped length:len];
+
+        //////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// /////////
         while ((attribute = strsep(&state, ",")) != NULL) {
             if (attribute[0] == 'T') {
                 
-                // Convert to NSString.	
-                type = [[NSString alloc] initWithBytes:(attribute + 3) 
-                                                length:strlen(attribute) - 4 
+                // Convert to NSString.
+                type = [[NSString alloc] initWithBytes:(attribute + 3)
+                                                length:strlen(attribute) - 4
                                               encoding:NSUTF8StringEncoding];
                 break;
             }
         }
 		
 		// Convert type String to Class.
-		Class firstKeyClass = NSClassFromString(type);
+		propertyClass = NSClassFromString(type);
         
         // Release string type.
         [type release];
-		
-		// And return.
-		return firstKeyClass;
 	}
+    
+    // Set Class.
+    anDescriptor.propertyClass = propertyClass;
+    
+    // Set value.
+    anDescriptor.propertyValue = [anObject valueForKey:anProperty];
 	
 	///////////// 	///////////// 	///////
-	// If can't decode, return nil.
-	return nil;
+	return anDescriptor;
 }
 
-///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	///////////// 
+///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	/////////////
+-(Class)grabTheClassOfProperty:(NSString*)firstKey onObject:(id)firstObject {
+    return [JPDataPopulator grabTheClassOfProperty:firstKey onObject:firstObject];
+}
+
+///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	/////////////
 // Check if the *firstKey* (Method) type of the Object **anObject** (Class) is the same that the secondKey (Method) secondObject (Class).
 -(BOOL)checkIfObject:(id)firstObject ofKey:(NSString*)firstKey
 	   hasSameTypeOf:(id)secondObject ofKey:(NSString*)secondKey {
@@ -310,8 +343,14 @@
         NSString *propertyName = [NSString stringWithCString:propName encoding:NSUTF8StringEncoding];
         
         if(propName) {
+            // Property value.
+            id anValue = [anObject valueForKey:propertyName];
+            
+            // If value is 'nil', replace for NSNull object.
+            anValue = ( anValue == nil ? [NSNull null] : anValue);
+            
             // Assign to Dictionary.
-            [extractedData setObject:[anObject valueForKey:propertyName] forKey:propertyName];
+            [extractedData setObject:anValue forKey:propertyName];
         }
     }
     // Free the properties.

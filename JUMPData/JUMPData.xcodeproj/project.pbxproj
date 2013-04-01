@@ -170,6 +170,8 @@
 		187E1C9E140FC0AB003D1652 /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 187E1C91140FC0AB003D1652 /* SBJsonUTF8Stream.h */; };
 		187E1C9F140FC0AB003D1652 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 187E1C92140FC0AB003D1652 /* SBJsonWriter.h */; };
 		187E1D1D140FC448003D1652 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E1D1C140FC448003D1652 /* SBJson.framework */; };
+		3A25932716FA38E40088AC29 /* JPPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A25932516FA38E40088AC29 /* JPPropertyDescriptor.m */; };
+		3A25932916FA38FD0088AC29 /* JPPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A25932816FA38FD0088AC29 /* JPPropertyDescriptor.h */; };
 		3A2CE75A131AED1600ED5B5D /* JPJSONProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */; };
 		3A2CE7FA131AF35900ED5B5D /* JPJSONProcesser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */; };
 		3A5E30F0132169E400970E2B /* JPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E30EE132169E400970E2B /* JPMath.h */; };
@@ -273,6 +275,8 @@
 		187E1C91140FC0AB003D1652 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
 		187E1C92140FC0AB003D1652 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		187E1D1C140FC448003D1652 /* SBJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SBJson.framework; path = "Third-Part Libraries/JSON Framework/MacOS Framework/SBJson.framework"; sourceTree = "<group>"; };
+		3A25932516FA38E40088AC29 /* JPPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPPropertyDescriptor.m; path = Sources/JPPropertyDescriptor.m; sourceTree = "<group>"; };
+		3A25932816FA38FD0088AC29 /* JPPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPropertyDescriptor.h; path = Headers/JPPropertyDescriptor.h; sourceTree = "<group>"; };
 		3A2CE758131AED1600ED5B5D /* JPJSONProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPJSONProcesser.m; path = Sources/JPJSONProcesser.m; sourceTree = "<group>"; };
 		3A2CE7F9131AF35900ED5B5D /* JPJSONProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONProcesser.h; path = Headers/JPJSONProcesser.h; sourceTree = "<group>"; };
 		3A5E30EE132169E400970E2B /* JPMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPMath.h; path = Headers/JPMath.h; sourceTree = "<group>"; };
@@ -589,6 +593,8 @@
 				180033BD13705FCD00C4B0A3 /* Delegate */,
 				185F4B48135F0D660069C261 /* JPDataPopulator.h */,
 				185F4B4C135F0D7C0069C261 /* JPDataPopulator.m */,
+				3A25932816FA38FD0088AC29 /* JPPropertyDescriptor.h */,
+				3A25932516FA38E40088AC29 /* JPPropertyDescriptor.m */,
 			);
 			name = "Data Populator";
 			sourceTree = "<group>";
@@ -784,6 +790,7 @@
 				187E1C9D140FC0AB003D1652 /* SBJsonTokeniser.h in Headers */,
 				187E1C9E140FC0AB003D1652 /* SBJsonUTF8Stream.h in Headers */,
 				187E1C9F140FC0AB003D1652 /* SBJsonWriter.h in Headers */,
+				3A25932916FA38FD0088AC29 /* JPPropertyDescriptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,6 +950,7 @@
 				187E1C6A140FC089003D1652 /* SBJsonTokeniser.m in Sources */,
 				187E1C6B140FC089003D1652 /* SBJsonUTF8Stream.m in Sources */,
 				187E1C6C140FC089003D1652 /* SBJsonWriter.m in Sources */,
+				3A25932716FA38E40088AC29 /* JPPropertyDescriptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,6 +1036,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = JUMPData;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1047,6 +1056,7 @@
 					"\"$(SRCROOT)/Third-Part Libraries/JSON Framework\"",
 				);
 				PRODUCT_NAME = JUMPData;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1060,6 +1070,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1072,6 +1083,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
