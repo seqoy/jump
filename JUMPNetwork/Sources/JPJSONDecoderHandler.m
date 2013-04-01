@@ -55,7 +55,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // When a JSON data is succesfully decoded this method will be called with the data. 
 // You can override this method on a subclass to do some custom processing.
--(void)jsonDataDecoded:(id)result withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
+-(void)jsonDataDecoded:(id)result withEvent:(id<JPPipelineMessageEvent>)event andContext:(id<JPPipelineHandlerContext>)ctx {
 	
     // Finishing, so progress is 100%.
     [ctx setProgress:[NSNumber numberWithInt:100] withEvent:event];
@@ -73,7 +73,7 @@
 #pragma mark Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)event {
+-(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)event {
 
 	// Response String.
 	NSString *stringResponse = [event getMessage];

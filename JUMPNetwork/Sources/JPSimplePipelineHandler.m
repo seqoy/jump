@@ -49,7 +49,7 @@
  * meaningful sub-type event and calls an appropriate handler method with
  * the down-casted event.
  */
--(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
     
     // Starting so progress, is 0%.
     [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
@@ -57,12 +57,12 @@
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
-		[self messageReceived:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
+		[self messageReceived:ctx withMessageEvent:(id<JPPipelineMessageEvent>)e];
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Exception Event.
 	else if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) 
-		[self exceptionCaughtWithContext:ctx withException:(<JPPipelineExceptionEvent>)e];
+		[self exceptionCaughtWithContext:ctx withException:(id<JPPipelineExceptionEvent>)e];
 	
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// If can't handle, send Up Stream.
@@ -76,7 +76,7 @@
  * meaningful sub-type event and calls an appropriate handler method with
  * the down-casted event.
  */
--(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 
     // Starting so progress, is 0%.
     [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
@@ -84,7 +84,7 @@
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
-		[self sendRequestedWithContext:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
+		[self sendRequestedWithContext:ctx withMessageEvent:(id<JPPipelineMessageEvent>)e];
 	
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// If can't handle, send Down Stream.
@@ -94,7 +94,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+-(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
     
     // Finished, so progress is 100%.
     [ctx setProgress:[NSNumber numberWithInt:100] withEvent:e];
@@ -106,7 +106,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
--(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+-(void)sendRequestedWithContext:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
 
 	// We doesn't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.
@@ -116,7 +116,7 @@
 /**
  * Invoked when an exception was raised.
  */
--(void)exceptionCaughtWithContext:(<JPPipelineHandlerContext>)ctx withException:(<JPPipelineExceptionEvent>)e {
+-(void)exceptionCaughtWithContext:(id<JPPipelineHandlerContext>)ctx withException:(id<JPPipelineExceptionEvent>)e {
 	if (self == [[ctx getPipeline] performSelector:@selector(last)] ) {
 		Warn( @"EXCEPTION, please implement [%@ exceptionCaughtWithContext:withException:] for proper handling: %@",
 			 NSStringFromClass([self class]), e);

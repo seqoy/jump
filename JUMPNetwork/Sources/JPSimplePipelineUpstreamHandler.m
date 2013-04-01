@@ -51,7 +51,7 @@
  * meaningful sub-type event and calls an appropriate handler method with
  * the down-casted event.
  */
--(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
     
     // Starting, so progress is 0%.
     [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
@@ -59,12 +59,12 @@
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Exception Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) 
-        [self exceptionCaughtWithContext:ctx withException:(<JPPipelineExceptionEvent>)e];
+        [self exceptionCaughtWithContext:ctx withException:(id<JPPipelineExceptionEvent>)e];
     
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	else if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
-		[self messageReceived:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
+		[self messageReceived:ctx withMessageEvent:(id<JPPipelineMessageEvent>)e];
 	
 	
     ///////// /////// /////// /////// /////// /////// /////// /////// 
@@ -75,7 +75,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+-(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
     
     // Finishing, so progress is 100%.
     [ctx setProgress:[NSNumber numberWithInt:100] withEvent:e];
@@ -87,7 +87,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when an exception was raised.
--(void)exceptionCaughtWithContext:(<JPPipelineHandlerContext>)ctx withException:(<JPPipelineExceptionEvent>)e {
+-(void)exceptionCaughtWithContext:(id<JPPipelineHandlerContext>)ctx withException:(id<JPPipelineExceptionEvent>)e {
 	if (self == [[ctx getPipeline] performSelector:@selector(last)] ) {
 		Info( @"An exception was found and no Pipeline Handler was able to handle it.\n" 
               @"You could implement exceptionCaughtWithContext:withException: on same handler if you want to deal with that.\n"

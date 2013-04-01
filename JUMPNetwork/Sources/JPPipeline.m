@@ -45,7 +45,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Get Context By Handler.
--(JPDefaultHandlerContext*)getContextByHandler:(<JPPipelineHandler>)handler {
+-(JPDefaultHandlerContext*)getContextByHandler:(id<JPPipelineHandler>)handler {
 	if (handler == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"Handler is nil"];
 	}
@@ -78,7 +78,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Get Context By Handler, throw exception if doesn't found.
--(JPDefaultHandlerContext*)getContextByHandlerOrDie:(<JPPipelineHandler>)handler {
+-(JPDefaultHandlerContext*)getContextByHandlerOrDie:(id<JPPipelineHandler>)handler {
 	JPDefaultHandlerContext* ctx = [self getContextByHandler:handler];
 	if (ctx == nil) 
 		[NSException raise:@"NoSuchElementException" format:@"%@", NSStringFromClass( [(id)handler class] )];
@@ -114,7 +114,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Replace By Context.
--(<JPPipelineHandler>)replaceByContext:(JPDefaultHandlerContext*)ctx withName:(NSString*)newName andHandler:(<JPPipelineHandler>)newHandler {
+-(id<JPPipelineHandler>)replaceByContext:(JPDefaultHandlerContext*)ctx withName:(NSString*)newName andHandler:(id<JPPipelineHandler>)newHandler {
 	// If context is final. Raise exception.
 	[self checkIfIsFinalObject:ctx];
 	
@@ -169,7 +169,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(JPDefaultHandlerContext*)buildContextMapWithName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler  {
+-(JPDefaultHandlerContext*)buildContextMapWithName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler  {
 	JPDefaultHandlerContext* ctx = [JPDefaultHandlerContext initWithPreviousContext:nil
 																	 andNextContext:nil
 																			andName:anName
@@ -287,9 +287,9 @@
 #pragma mark Methods. 
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)notifyHandlerException:(NSException*)anException withEvent:(<JPPipelineEvent>)e {
+-(void)notifyHandlerException:(NSException*)anException withEvent:(id<JPPipelineEvent>)e {
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineExceptionEvent )]) { 
-		Warn(@"An exception was thrown by a user handler while handling an exception event (%@). %@", anException );
+		Warn(@"An exception was thrown by a user handler while handling an exception event (%@).", anException );
 	}
     
 	// New Exception Instance.
@@ -325,12 +325,12 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Inserts a Handler at the first position of this pipeline.
--(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+-(void)addFirst:(NSString*)name withHandler:(id<JPPipelineHandler>)handler {
     [self addFirst:name withHandler:handler withProgressPriority:handler.progressPriority];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)addFirst:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
+-(void)addFirst:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	if ( [contextObjectsMap count] == 0 ) {
 		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
         [ctx setProgressPriority:priority];
@@ -365,12 +365,12 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Appends a Handler at the last position of this pipeline.
--(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+-(void)addLast:(NSString*)name withHandler:(id<JPPipelineHandler>)handler {
     [self addLast:name withHandler:handler withProgressPriority:handler.progressPriority];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)addLast:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
+-(void)addLast:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	if ( [contextObjectsMap count] == 0 ) {
 		JPDefaultHandlerContext *ctx = [self buildContextMapWithName:name andHandler:handler];
         [ctx setProgressPriority:priority];
@@ -405,12 +405,12 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Inserts a Handler before an existing handler of this.
--(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler {
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler {
     [self addBefore:baseName withName:name withHandler:handler withProgressPriority:handler.progressPriority];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
+-(void)addBefore:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	
 	// Get Context.
 	JPDefaultHandlerContext *ctx = [self getContextByNameOrDie:baseName];
@@ -451,12 +451,12 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Inserts a Handler after an existing handler of this.
--(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler  {
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler  {
     [self addAfter:baseName withName:name withHandler:handler withProgressPriority:handler.progressPriority];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
+-(void)addAfter:(NSString*)baseName withName:(NSString*)name withHandler:(id<JPPipelineHandler>)handler withProgressPriority:(NSInteger)priority {
 	
 	// Get Context.
 	JPDefaultHandlerContext *ctx = [self getContextByNameOrDie:baseName];
@@ -496,19 +496,19 @@
 }
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Removes the specified {@link ChannelHandler} from this pipeline.
--(void)removeByHandler:(<JPPipelineHandler>)handler {
+-(void)removeByHandler:(id<JPPipelineHandler>)handler {
 	[self removeByContext:[self getContextByHandlerOrDie:handler]];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Removes the {@link ChannelHandler} with the specified name from this pipeline.
--(<JPPipelineHandler>)removeByName:(NSString*)name {
+-(id<JPPipelineHandler>)removeByName:(NSString*)name {
 	return [[self removeByContext:[self getContextByNameOrDie:name]] handler];
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Removes the first {@link ChannelHandler} in this pipeline.
--(<JPPipelineHandler>)removeFirst {
+-(id<JPPipelineHandler>)removeFirst {
 	if ([contextObjectsMap count] == 0) {
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the first element."];
 	}
@@ -536,7 +536,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Removes the last {@link ChannelHandler} in this pipeline.
--(<JPPipelineHandler>)removeLast {
+-(id<JPPipelineHandler>)removeLast {
 	if ([contextObjectsMap count] == 0) {
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the last element."];
 	}
@@ -563,7 +563,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Replaces the specified {@link ChannelHandler} with a new handler in this pipeline.
--(void)replaceByHandler:(<JPPipelineHandler>)oldHandler withName:(NSString*)name andHandler:(<JPPipelineHandler>)handler {
+-(void)replaceByHandler:(id<JPPipelineHandler>)oldHandler withName:(NSString*)name andHandler:(id<JPPipelineHandler>)handler {
 	[self replaceByContext:[self getContextByHandlerOrDie:oldHandler]
 				  withName:name
 				andHandler:handler];
@@ -571,7 +571,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Replaces the {@link ChannelHandler} of the specified name with a new handler in this pipeline.
--(<JPPipelineHandler>)replaceByName:(NSString*)oldName withName:(NSString*)newName andHandler:(<JPPipelineHandler>)newHandler {
+-(id<JPPipelineHandler>)replaceByName:(NSString*)oldName withName:(NSString*)newName andHandler:(id<JPPipelineHandler>)newHandler {
 	return [self replaceByContext:[self getContextByNameOrDie:oldName]
 				  withName:newName
 				andHandler:newHandler];
@@ -594,7 +594,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Returns the first {@link ChannelHandler} in this pipeline.
--(<JPPipelineHandler>)first {
+-(id<JPPipelineHandler>)first {
 	JPDefaultHandlerContext* anHead = head;
 	if (anHead == nil) {
 		return nil;
@@ -604,7 +604,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Returns the last {@link ChannelHandler} in this pipeline.
--(<JPPipelineHandler>)last {
+-(id<JPPipelineHandler>)last {
 	JPDefaultHandlerContext* anTail = tail;
 	if (anTail == nil) {
 		return nil;
@@ -614,7 +614,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Returns the {@link ChannelHandler} with the specified name in this
--(<JPPipelineHandler>)get:(NSString*)name {
+-(id<JPPipelineHandler>)get:(NSString*)name {
 	JPDefaultHandlerContext* ctx = [contextObjectsMap objectForKey:name];
 	if (ctx == nil) {
 		return nil;
@@ -625,7 +625,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Sends the specified {@link ChannelEvent} to the first {@link ChannelDownstreamHandler} in this pipeline.
--(void)sendUpstream:(<JPPipelineEvent>)e {
+-(void)sendUpstream:(id<JPPipelineEvent>)e {
 	JPDefaultHandlerContext* anHead = [self getActualUpstreamContext:head];
 	if (anHead == nil) {
 		Warn( @"The pipeline contains no upstream handlers; discarding: %@", e);
@@ -635,9 +635,9 @@
 }
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)sendContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)sendContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	@try {
-		[(<JPPipelineUpstreamHandler>)[ctx handler] handleContextUpstream:ctx withEvent:e]; 
+		[(id<JPPipelineUpstreamHandler>)[ctx handler] handleContextUpstream:ctx withEvent:e];
 	} 
 	
 	@catch (NSException *exception) {
@@ -647,7 +647,7 @@
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Sends the specified {@link ChannelEvent} to the last {@link ChannelDownstreamHandler} in this pipeline.
--(void)sendDownstream:(<JPPipelineEvent>)e {
+-(void)sendDownstream:(id<JPPipelineEvent>)e {
 	JPDefaultHandlerContext* anTail = [self getActualDownstreamContext:tail];
 	if (anTail == nil) {
 		@try {
@@ -665,9 +665,9 @@
 }	
 
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
--(void)sendContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)sendContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 	@try {
-		[(<JPPipelineDownstreamHandler>)[ctx handler] handleContextDownstream:ctx withEvent:e]; 
+		[(id<JPPipelineDownstreamHandler>)[ctx handler] handleContextDownstream:ctx withEvent:e];
 	} 
 	
 	@catch (NSException *exception) {

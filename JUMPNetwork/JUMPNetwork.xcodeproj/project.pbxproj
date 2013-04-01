@@ -191,17 +191,17 @@
 		187E2099140FCAE9003D1652 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848291326AF8700C3374A /* SystemConfiguration.framework */; };
 		187E209A140FCAE9003D1652 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482B1326AF8E00C3374A /* MobileCoreServices.framework */; };
 		187E209B140FCAE9003D1652 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482D1326AF9900C3374A /* CoreGraphics.framework */; };
-		187E209C140FCAE9003D1652 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848311326AFCE00C3374A /* libz.1.2.3.dylib */; };
 		187E20B6140FCB17003D1652 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E20B5140FCB17003D1652 /* UIKit.framework */; };
 		18894077138183B900EFAE98 /* JPJSONDecoderHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */; };
 		18894079138183C700EFAE98 /* JPJSONDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */; };
+		18B7C88716026ADB00E4E68A /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */; };
+		18B7C88916026AF900E4E68A /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */; };
 		3A7846E213268C9C00C3374A /* JPHTTPTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */; };
 		3A7846E313268C9C00C3374A /* JPHTTPTransporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */; };
 		3A7848281326AF7F00C3374A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848271326AF7F00C3374A /* CFNetwork.framework */; };
 		3A78482A1326AF8700C3374A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848291326AF8700C3374A /* SystemConfiguration.framework */; };
 		3A78482C1326AF8E00C3374A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482B1326AF8E00C3374A /* MobileCoreServices.framework */; };
 		3A78482E1326AF9900C3374A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A78482D1326AF9900C3374A /* CoreGraphics.framework */; };
-		3A7848321326AFCE00C3374A /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848311326AFCE00C3374A /* libz.1.2.3.dylib */; };
 		3AEF183513183ED200BC3759 /* JPTransporterJSONRPCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17DC13183ED200BC3759 /* JPTransporterJSONRPCMessage.h */; };
 		3AEF183613183ED200BC3759 /* JPJSONRPCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF17DE13183ED200BC3759 /* JPJSONRPCMessage.h */; };
 		3AEF183713183ED200BC3759 /* JPJSONRPCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF17DF13183ED200BC3759 /* JPJSONRPCMessage.m */; };
@@ -325,6 +325,8 @@
 		187E20B5140FCB17003D1652 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../Chameleon/UIKit.framework; sourceTree = SOURCE_ROOT; };
 		18894076138183B900EFAE98 /* JPJSONDecoderHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPJSONDecoderHandler.h; path = Headers/JPJSONDecoderHandler.h; sourceTree = SOURCE_ROOT; };
 		18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJSONDecoderHandler.m; sourceTree = "<group>"; };
+		18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.1.2.5.dylib; sourceTree = DEVELOPER_DIR; };
 		3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPHTTPTransporter.h; path = ../Headers/JPHTTPTransporter.h; sourceTree = "<group>"; };
 		3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPHTTPTransporter.m; sourceTree = "<group>"; };
 		3A7848271326AF7F00C3374A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -396,12 +398,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B7C88916026AF900E4E68A /* libz.1.2.5.dylib in Frameworks */,
 				187E2097140FCAE9003D1652 /* Foundation.framework in Frameworks */,
 				187E2098140FCAE9003D1652 /* CFNetwork.framework in Frameworks */,
 				187E2099140FCAE9003D1652 /* SystemConfiguration.framework in Frameworks */,
 				187E209A140FCAE9003D1652 /* MobileCoreServices.framework in Frameworks */,
 				187E209B140FCAE9003D1652 /* CoreGraphics.framework in Frameworks */,
-				187E209C140FCAE9003D1652 /* libz.1.2.3.dylib in Frameworks */,
 				187E20B6140FCB17003D1652 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,12 +412,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B7C88716026ADB00E4E68A /* libz.1.2.5.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				3A7848281326AF7F00C3374A /* CFNetwork.framework in Frameworks */,
 				3A78482A1326AF8700C3374A /* SystemConfiguration.framework in Frameworks */,
 				3A78482C1326AF8E00C3374A /* MobileCoreServices.framework in Frameworks */,
 				3A78482E1326AF9900C3374A /* CoreGraphics.framework in Frameworks */,
-				3A7848321326AFCE00C3374A /* libz.1.2.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +436,8 @@
 		0867D691FE84028FC02AAC07 /* JUMPNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */,
+				18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */,
 				3A78481C1326AF6E00C3374A /* Libraries */,
 				3AEF17D813183ED200BC3759 /* Sources */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -1287,6 +1291,7 @@
 				);
 				PRODUCT_NAME = JUMPNetwork;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1307,6 +1312,7 @@
 				);
 				PRODUCT_NAME = JUMPNetwork;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1320,6 +1326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1332,6 +1339,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

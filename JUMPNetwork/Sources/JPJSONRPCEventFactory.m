@@ -27,7 +27,7 @@ static NSURL* transportURL;
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(JPJSONRPCMessage*)newEventWithMethod:(NSString*)anMethod andParameters:(NSArray*)params 
-											  andId:(NSNumber*)anID andFuture:(<JPPipelineFuture>)anFuture {
+											  andId:(NSNumber*)anID andFuture:(id<JPPipelineFuture>)anFuture {
 	// Get New Event.
 	JPJSONRPCMessage *event = (JPJSONRPCMessage*)[self getEvent];
 	
@@ -43,7 +43,7 @@ static NSURL* transportURL;
 
 /// /// /// ////// ////// ////// ////// ////// /////
 // Returns a newly created Event.
-+(<JPPipelineEvent>)getEvent {
++(id<JPPipelineEvent>)getEvent {
 
 	// /// ////// ////// ////// ////// ////// /////
 	// Create new HTTP Event Message.

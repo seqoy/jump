@@ -36,7 +36,7 @@
 	return [[[self alloc] init] autorelease];
 }
 
-+(id)initWithListener:(<JPPipelineFutureListener>)anListener {
++(id)initWithListener:(id<JPPipelineFutureListener>)anListener {
 	JPPipelineDefaultFuture *instance = [self init];
 	
 	// Set Listener.
@@ -88,7 +88,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(void)addListener:(<JPPipelineFutureListener>)anListener {
+-(void)addListener:(id<JPPipelineFutureListener>)anListener {
 	// Check Parameters.
 	if (anListener == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"An Listener is null."];
@@ -117,7 +117,7 @@
 
 /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 // Removes the specified listener
--(void)removeListener:(<JPPipelineFutureListener>)anListener {
+-(void)removeListener:(id<JPPipelineFutureListener>)anListener {
 	// Check Parameters.
 	if (anListener == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"An Listener is null."];

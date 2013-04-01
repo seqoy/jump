@@ -40,7 +40,7 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // When a JSON data is succesfully decoded this method will be called with the data. 
 // You can override this method on a subclass to do some custom processing.
--(void)jsonDataDecoded:(id)JSONDecoded withEvent:(<JPPipelineMessageEvent>)event andContext:(<JPPipelineHandlerContext>)ctx {
+-(void)jsonDataDecoded:(id)JSONDecoded withEvent:(id<JPPipelineMessageEvent>)event andContext:(id<JPPipelineHandlerContext>)ctx {
 
     ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
     // If decoded is NIL. Probably we're handling some error, nothing to do here.

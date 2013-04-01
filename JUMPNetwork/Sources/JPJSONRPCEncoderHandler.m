@@ -50,14 +50,14 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
--(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)event {
+-(void)sendRequestedWithContext:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)event {
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an JSON RPC Message.
 	if ([[event getMessage] conformsToProtocol:@protocol( JPTransporterJSONRPCMessage )]) {
 		
 		// Cast Message.
-		<JPTransporterJSONRPCMessage>rpcMessage = (<JPTransporterJSONRPCMessage>)[event getMessage];
+		id<JPTransporterJSONRPCMessage>rpcMessage = (id<JPTransporterJSONRPCMessage>)[event getMessage];
 	
 		// ////// ////// ////// ////// ////// ////// ////// ////// ///
 		// Create Dictionary with RPC Data.

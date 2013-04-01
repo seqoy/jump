@@ -75,7 +75,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Handle HTTP Event.
--(void)handleHTTPMessage:(<JPTransporterHTTPMessage>)e {
+-(void)handleHTTPMessage:(id<JPTransporterHTTPMessage>)e {
 	
 	// Assign HTTP Method.
 	requester.requestMethod = [e requestMethod];
@@ -108,7 +108,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked by Pipeline when a downstream Event has reached its terminal (the head of the pipeline).
--(void)eventSunk:(JPPipeline*)anPipeline withEvent:(<JPPipelineMessageEvent>)event {
+-(void)eventSunk:(JPPipeline*)anPipeline withEvent:(id<JPPipelineMessageEvent>)event {
 	
 	// Store the pipeline.
 	pipeline = anPipeline;
@@ -132,7 +132,7 @@
 	if ([[event getMessage] conformsToProtocol:@protocol( JPTransporterHTTPMessage )]) {
 		
 		// Cast the Message.
-		id<JPTransporterHTTPMessage> anMessage = (<JPTransporterHTTPMessage>)[event getMessage];
+		id<JPTransporterHTTPMessage> anMessage = (id<JPTransporterHTTPMessage>)[event getMessage];
 		
 		// Log.
 		Info(@"HTTP Event Handled. Processing...");
@@ -163,7 +163,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked by Pipeline when an exception was raised while one of its Handlers process a Event.
--(void)exceptionCaught:(JPPipelineException*)anException withPipeline:(JPPipeline*)pipeline withEvent:(<JPPipelineEvent>)e {
+-(void)exceptionCaught:(JPPipelineException*)anException withPipeline:(JPPipeline*)pipeline withEvent:(id<JPPipelineEvent>)e {
 	// Raise the exception.
 	[anException raise];
 }

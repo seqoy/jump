@@ -55,7 +55,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
--(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anFuture {
+-(id)initWithMessage:(id)anMessage andFuture:(id<JPPipelineFuture>)anFuture {
 	self = [self initWithMessage:anMessage];
 	if (self != nil) {
 		// Set Future.
@@ -65,14 +65,14 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-+(id)initWithMessage:(id)anMessage andFuture:(<JPPipelineFuture>)anFuture {
++(id)initWithMessage:(id)anMessage andFuture:(id<JPPipelineFuture>)anFuture {
 	return [[[self alloc] initWithMessage:anMessage andFuture:anFuture] autorelease];
 }
 
 
 // /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 // Returns the Future Object which is associated with this event. 
--(<JPPipelineFuture>)getFuture {
+-(id<JPPipelineFuture>)getFuture {
 	return future;
 }
 

@@ -55,7 +55,7 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
 #pragma mark Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when a message object was received.
--(void)messageReceived:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)event {
+-(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)event {
 
 	// Response String.
 	NSString *stringResponse = [event getMessage];
@@ -116,7 +116,7 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
 	
 	/////////////////////////////////////////////////
 	// Log XML.
-	Debug( @"XML Received and Parsed :: %i bytes", [stringResponse length] );
+	Debug( @"XML Received and Parsed :: %i bytes", (int)[stringResponse length] );
 	
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Set decoded Message on the event.

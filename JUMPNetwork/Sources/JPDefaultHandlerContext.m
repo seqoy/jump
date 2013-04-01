@@ -25,7 +25,7 @@
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
-					 andName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler
+					 andName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler
 				withPipeline:(JPPipeline*)anPipeline {
 	return [[[JPDefaultHandlerContext alloc] initWithPreviousContext:previousCtx
 													 andNextContext:nextCtx
@@ -37,7 +37,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
-					 andName:(NSString*)anName andHandler:(<JPPipelineHandler>)anHandler
+					 andName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler
 				withPipeline:(JPPipeline*)anPipeline {
 	//////////////////////
 	self = [super init];
@@ -152,7 +152,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
--(void)sendUpstream:(<JPPipelineEvent>)e {
+-(void)sendUpstream:(id<JPPipelineEvent>)e {
 	JPDefaultHandlerContext* anNext = [pipeline getActualUpstreamContext:self.next];
 	if (anNext != nil) {
 		[pipeline sendContextUpstream:anNext withEvent:e];
@@ -168,7 +168,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
--(void)sendDownstream:(<JPPipelineEvent>)e {
+-(void)sendDownstream:(id<JPPipelineEvent>)e {
 	JPDefaultHandlerContext* previous = [pipeline getActualDownstreamContext:self.prev];
 	if (previous == nil) {
 		@try {

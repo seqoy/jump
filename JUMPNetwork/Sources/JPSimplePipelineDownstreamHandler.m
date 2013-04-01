@@ -52,7 +52,7 @@
  * meaningful sub-type event and calls an appropriate handler method with
  * the down-casted event.
  */
--(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(<JPPipelineEvent>)e {
+-(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 
     // Starting, so progress is 0%.
     [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
@@ -60,7 +60,7 @@
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
 	if ([(id)e conformsToProtocol:@protocol( JPPipelineMessageEvent )])
-		[self sendRequestedWithContext:ctx withMessageEvent:(<JPPipelineMessageEvent>)e];
+		[self sendRequestedWithContext:ctx withMessageEvent:(id<JPPipelineMessageEvent>)e];
 	
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// If can't handle, send Down Stream.
@@ -70,7 +70,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Invoked when some Send data is requested.
--(void)sendRequestedWithContext:(<JPPipelineHandlerContext>)ctx withMessageEvent:(<JPPipelineMessageEvent>)e {
+-(void)sendRequestedWithContext:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
     
     // Finished, so progress is 100%.
     [ctx setProgress:[NSNumber numberWithInt:100] withEvent:e];

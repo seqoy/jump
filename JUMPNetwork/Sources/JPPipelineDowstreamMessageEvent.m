@@ -29,7 +29,7 @@
 // /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 // Returns the Future Object which is associated with this event. 
 // This method should be overrided before use.
--(<JPPipelineFuture>)getFuture {
+-(id<JPPipelineFuture>)getFuture {
 	return future;
 }
 
