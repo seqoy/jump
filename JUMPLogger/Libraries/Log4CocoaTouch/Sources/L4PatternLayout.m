@@ -435,7 +435,7 @@ NSString* const L4InvalidBraceClauseException = @"L4InvalidBraceClauseException"
 						case 'r':
 							// skip the 'r'
 							charsToSkip++;
-							tempString = [NSString stringWithFormat: @"%d", [logEvent millisSinceStart]];
+							tempString = [NSString stringWithFormat: @"%ld", [logEvent millisSinceStart]];
 							break;
 						
 						case '%':

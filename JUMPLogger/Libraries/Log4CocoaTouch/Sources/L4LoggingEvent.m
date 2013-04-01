@@ -142,7 +142,7 @@ static NSDate *startTime = nil;
 	if((fileName == nil) && (rawFileName != NO_FILE_NAME)) {
 		fileName = [[NSString stringWithCString: rawFileName encoding: NSUTF8StringEncoding] retain];
 	} else if (rawFileName == NO_FILE_NAME) {
-		fileName = [[NSString stringWithString: @"No file name!"] retain];
+		fileName = [@"No file name!" retain];
 	}
 	return fileName;
 }
@@ -152,7 +152,7 @@ static NSDate *startTime = nil;
 	if((methodName == nil) && (rawMethodName != NO_METHOD_NAME)) {
 		methodName = [[NSString stringWithCString: rawMethodName encoding: NSUTF8StringEncoding] retain];
 	} else if (rawMethodName == NO_METHOD_NAME) {
-		methodName = [[NSString stringWithString: @"No method name!"] retain];
+		methodName = [@"No method name!" retain];
 	}
 	return methodName;
 }

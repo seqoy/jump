@@ -28,6 +28,41 @@
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = JUMPDatabase;
 		};
+		189B052D1598F16500F36E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5E31CA1321782800970E2B /* JUMPCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 187E1BB7140FBD8B003D1652 /* libJUMPCore.a */;
+			remoteInfo = JUMPCoreMacOS;
+		};
+		189B05301598F16500F36E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 187E1C32140FBE01003D1652 /* libJUMPData.a */;
+			remoteInfo = JUMPDataMacOS;
+		};
+		189B05341598F16500F36E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181B7303132FACF200433E98 /* JUMPDatabase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 187E1D4E140FC5A2003D1652 /* libJUMPDatabase.a */;
+			remoteInfo = JUMPDatabaseMacOS;
+		};
+		189B05371598F16500F36E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AEF19E213184C8B00BC3759 /* JUMPNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 187E20A0140FCAE9003D1652 /* libJUMPNetwork.a */;
+			remoteInfo = JUMPNetworkMacOS;
+		};
+		189B053B1598F16500F36E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181B72DA132FA44800433E98 /* JUMPUserInterface.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18E4BC00140FD54A0060B41E /* libJUMPUserInterface.a */;
+			remoteInfo = JUMPUserInterfaceMacOS;
+		};
 		3A2CE7DF131AF2CB00ED5B5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A2CE7DB131AF2CB00ED5B5D /* JUMPData.xcodeproj */;
@@ -100,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				181B72E2132FA44800433E98 /* libJUMPUserInterface.a */,
+				189B053C1598F16500F36E7D /* libJUMPUserInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				181B730C132FACF200433E98 /* libJUMPDatabase.a */,
+				189B05351598F16500F36E7D /* libJUMPDatabase.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */,
+				189B05311598F16500F36E7D /* libJUMPData.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5E31CF1321782800970E2B /* libJUMPCore.a */,
+				189B052E1598F16500F36E7D /* libJUMPCore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				3AEF19E713184C8B00BC3759 /* libJUMPNetwork.a */,
+				189B05381598F16500F36E7D /* libJUMPNetwork.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +307,41 @@
 			fileType = archive.ar;
 			path = libJUMPDatabase.a;
 			remoteRef = 181B730B132FACF200433E98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189B052E1598F16500F36E7D /* libJUMPCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPCore.a;
+			remoteRef = 189B052D1598F16500F36E7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189B05311598F16500F36E7D /* libJUMPData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPData.a;
+			remoteRef = 189B05301598F16500F36E7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189B05351598F16500F36E7D /* libJUMPDatabase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPDatabase.a;
+			remoteRef = 189B05341598F16500F36E7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189B05381598F16500F36E7D /* libJUMPNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPNetwork.a;
+			remoteRef = 189B05371598F16500F36E7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189B053C1598F16500F36E7D /* libJUMPUserInterface.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJUMPUserInterface.a;
+			remoteRef = 189B053B1598F16500F36E7D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3A2CE7E0131AF2CB00ED5B5D /* libJUMPData.a */ = {

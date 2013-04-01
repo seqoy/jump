@@ -41,7 +41,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A5E31D51321785800970E2B /* JUMPCore.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 187E1BB7140FBD8B003D1652 /* libJUMPCore.a */;
+			remoteGlobalIDString = 187E1BB7140FBD8B003D1652;
 			remoteInfo = JUMPCoreMacOS;
 		};
 		3A5E31D91321785800970E2B /* PBXContainerItemProxy */ = {
@@ -51,7 +51,7 @@
 			remoteGlobalIDString = 3A5E31211321730100970E2B;
 			remoteInfo = JUMPCore;
 		};
-		3A5E31DB1321786300970E2B /* PBXContainerItemProxy */ = {
+		3AEF6BD716E0545F009F0F4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A5E31D51321785800970E2B /* JUMPCore.xcodeproj */;
 			proxyType = 1;
@@ -234,7 +234,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3A5E31DC1321786300970E2B /* PBXTargetDependency */,
+				3AEF6BD816E0545F009F0F4D /* PBXTargetDependency */,
 			);
 			name = JUMPDatabase;
 			productName = JUMPDatabase;
@@ -319,10 +319,10 @@
 			name = JUMPCore;
 			targetProxy = 187E1D3D140FC5A2003D1652 /* PBXContainerItemProxy */;
 		};
-		3A5E31DC1321786300970E2B /* PBXTargetDependency */ = {
+		3AEF6BD816E0545F009F0F4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JUMPCore;
-			targetProxy = 3A5E31DB1321786300970E2B /* PBXContainerItemProxy */;
+			targetProxy = 3AEF6BD716E0545F009F0F4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +411,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -425,6 +426,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

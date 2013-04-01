@@ -333,6 +333,9 @@
 /* Begin PBXProject section */
 		181B7381132FD69E00433E98 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
 			buildConfigurationList = 181B7384132FD69E00433E98 /* Build configuration list for PBXProject "Log4CocoaTouch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -391,12 +394,14 @@
 		181B7386132FD69E00433E98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		181B7387132FD69E00433E98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -408,7 +413,6 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				PREBINDING = NO;
 				PRODUCT_NAME = Log4CocoTouch;
 				SDKROOT = iphoneos;
 			};
@@ -421,8 +425,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PREBINDING = NO;
 				PRODUCT_NAME = Log4CocoTouch;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;

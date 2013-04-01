@@ -331,10 +331,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>18975B34134D0E6E00DF9DF0</string>
+										<string>189B05281598F16500F36E7D</string>
 										<key>history</key>
 										<array>
-											<string>18B13F2C134BB9CD00FCE6FA</string>
+											<string>18975B34134D0E6E00DF9DF0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,14 +346,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {955, 781}}</string>
+								<string>{{0, 0}, {955, 780}}</string>
 								<key>RubberWindowFrame</key>
 								<string>173 143 1209 864 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>781pt</string>
+							<string>780pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -366,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 786}, {955, 37}}</string>
+								<string>{{0, 785}, {955, 38}}</string>
 								<key>RubberWindowFrame</key>
 								<string>173 143 1209 864 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>37pt</string>
+							<string>38pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -392,9 +392,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>18975B35134D0E6E00DF9DF0</string>
+				<string>189B05291598F16500F36E7D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>18975B36134D0E6E00DF9DF0</string>
+				<string>189B052A1598F16500F36E7D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -533,6 +533,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>18E00C2A134BA01000824A64</string>
+		<string>/Users/ViridianMac/Documents/Projects/JUMP/JUMP.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>173 143 1209 864 0 0 1920 1058 </string>
@@ -612,7 +613,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>18E00C2A134BA01000824A64</string>
-				<string>18975B37134D0E6E00DF9DF0</string>
+				<string>189B052B1598F16500F36E7D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

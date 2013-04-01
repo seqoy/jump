@@ -224,7 +224,7 @@
                         pathExtension = [tempLastRolloverDate descriptionWithCalendarFormat: @"%Y-%m" timeZone: nil locale: nil];
                         break;
                     case weekly:
-                        pathExtension = [tempLastRolloverDate descriptionWithCalendarFormat: [@"%Y-%m-" stringByAppendingString: [NSString stringWithFormat: @"%d", floor([tempCalendarDate dayOfYear] / 7)]] timeZone: nil locale: nil];
+                        pathExtension = [tempLastRolloverDate descriptionWithCalendarFormat: [@"%Y-%m-" stringByAppendingString: [NSString stringWithFormat: @"%f", floor([tempCalendarDate dayOfYear] / 7)]] timeZone: nil locale: nil];
                         break;
                     case daily:
                         pathExtension = [tempLastRolloverDate descriptionWithCalendarFormat: @"%Y-%m-%d" timeZone: nil locale: nil];

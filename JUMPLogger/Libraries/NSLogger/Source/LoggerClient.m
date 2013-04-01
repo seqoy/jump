@@ -39,9 +39,10 @@
 	#import <sys/types.h>
 	#import <sys/sysctl.h>
 	#import <dlfcn.h>
-	#import <UIKit/UIKit.h>
+#elif ALLOW_COCOA_USE
 #endif
 #import <fcntl.h>
+#import <UIKit/UIKit.h>
 
 #import "LoggerClient.h"
 #import "LoggerCommon.h"

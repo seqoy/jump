@@ -59,7 +59,7 @@
 	// Can't recognize, throw exception.
 	else 
 		[NSException raise:@"JPLoggerException" 
-					format:@"'keyForLog' property defined type '%@' isn't not allowed. You should use an 'NSString' or 'Class' type.", NSStringFromClass([self class]), NSStringFromClass([loggerKey class])];
+					format:@"'keyForLog' property defined type '%@' isn't not allowed. You should use an 'NSString' or 'Class' type.", NSStringFromClass([self class])];
 
 	////////// ///////////// ///////////// ///	
 	// Must return something.
