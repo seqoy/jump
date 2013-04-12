@@ -84,12 +84,22 @@
 /**
  * Take an <b>NSNumber</b> or <b>NSString</b> Object and try to convert to <b>NSDate</b>.
  * The convertion is performed using the "Date Format" parameter informed.
- * 
+ *
  * @param anObject An <b>NSNumber</b> or <b>NSString</b> Object and try to convert to <b>NSDate</b>.
  * @param anDateFormatter An date format.
  * @return Converted object or if an conversion isn't possible will return <b>nil</b>.
  */
 +(NSDate*)convertToNSDateThisObject:(id)anObject withDateFormat:(NSString*)anDateFormatter;
+
+/**
+ * Take an <b>NSString</b> Object that suppoed to be a Internet Date and Time string (RFC822 or RFC3339)
+ * and try to convert to <b>NSDate</b>.
+ * More info of this date formats at RFC822  http://www.ietf.org/rfc/rfc822.txt 
+ * and RFC3339 http://www.ietf.org/rfc/rfc3339.txt
+ * @param anDateString An <b>NSString</b> Object and try to convert to <b>NSDate</b>.
+ * @return Converted object or if an conversion isn't possible will return <b>nil</b>.
+ */
++(NSDate*)convertToNSDateThisInternetDateTimeString:(NSString *)anDateString;
 
 /**
  * Take an <b>NSString</b> Object and try to convert to <b>NSNumber</b>.
