@@ -20,7 +20,7 @@
 /**
  * Default implementation of the <b>JPDataProcessserJSON</b> protocol. This header is part of the
  * <b>JUMP Network module</b>, check the documentation of this module to learn more about it.
- * This class is an wrapper to the <b>JSON Framework from Stit</b>: https://github.com/stig/json-framework
+ * This class is an wrapper to the <b>JSON Framework from Stig's</b>: https://github.com/stig/json-framework
  * and is included with this module.
  */
 @interface JPJSONProcesser : NSObject <JPDataProcessserJSON> {}
