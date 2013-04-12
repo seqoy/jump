@@ -61,7 +61,7 @@
 		canHandleDownstream = [(id)anHandler conformsToProtocol:@protocol( JPPipelineDownstreamHandler )]; 
 		
 		if (!canHandleUpstream && !canHandleDownstream) {
-			[NSException raise:@"IllegalArgumentException" format:@"Handlers must be conform to %@ or %@ protocols.", @"a", @"b" ];
+			[NSException raise:@"IllegalArgumentException" format:@"Handlers must be conform to %@ or %@ protocols.", @"JPPipelineUpstreamHandler", @"JPPipelineDownstreamHandler" ];
 		}
 
 		////////////////////////// ///////////////////// 
