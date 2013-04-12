@@ -23,9 +23,34 @@
 -(void)syncManagerWillStartToProcess;
 
 /**
+ * Advise that the Sync Manager Will Start to Process some specific server key.
+ */
+-(void)syncManagerWillStartToProcessTheKey:(NSString*)anKey;
+
+/**
+ * Advise that the Sync Manager Will Start to Process some specific server key.
+ * If you gonna update some object or commit some change you should use this manager,
+ * because all operation is used on a separate DB Manager in the background thread.
+ */
+-(void)syncManagerWillStartToProcessTheKey:(NSString*)anKey inDatabaseManager:(JPDBManager*)dbManager;
+
+/**
  * Advise that the Sync Manager did Finish to Process.
  */
 -(void)syncManagerDidFinishToProcess;
+
+/**
+ * Advise that the Sync Manager did Finish to Process some specific server key.
+ */
+-(void)syncManagerDidFinishToProcessTheKey:(NSString*)anKey;
+
+/**
+ * Advise that the Sync Manager Will Start to Process some specific server key.
+ * If you gonna update some object or commit some change you should use this manager,
+ * because all operation is used on a separate DB Manager in the background thread.
+ */
+-(void)syncManagerDidFinishToProcessTheKey:(NSString*)anKey inDatabaseManager:(JPDBManager*)dbManager;
+
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 #pragma mark -
@@ -66,15 +91,14 @@
 
 /**
  * Warn that will insert some data. Optionally send the JPDBManager that this object was created.
- * If you gonna update this object, if you gonna update this object you should use this manager, 
+ * If you gonna update this object you should use this manager, 
  * because all operation is used on a separate DB Manager in the background thread.
  */
 - (void)willInsertTheData:(id)object inEntity:(NSString*)entity inDatabaseManager:(JPDBManager*)dbManager;
 
-
 /**
  * Warn that will update some data. Optionally send the JPDBManager that this object was created.
- * If you gonna update this object, if you gonna update this object you should use this manager,
+ * If you gonna update this object you should use this manager,
  * because all operation is used on a separate DB Manager in the background thread.
  */
 - (void)willUpdateTheData:(id)object inObject:(id)object forEntity:(NSString*)entity inDatabaseManager:(JPDBManager*)dbManager;

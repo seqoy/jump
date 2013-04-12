@@ -431,6 +431,17 @@
 			&& object                               // ...Exist on Server Data Packet.
 			) 
 		{
+            
+            // Advise that the Sync Manager Will Start to Process some specific server key.
+            if ( delegate ) {
+                if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcessTheKey:)] ) {
+                    [delegate syncManagerWillStartToProcessTheKey:serverDataKey];
+                }
+                if ( [(id)delegate respondsToSelector:@selector(syncManagerWillStartToProcessTheKey:inDatabaseManager:)] ) {
+                    [delegate syncManagerWillStartToProcessTheKey:serverDataKey inDatabaseManager:_backgroundThreadDatabaseManager];
+                }
+            }
+
 			// DB action.
 			NSDictionary *databaseActions;
 
@@ -660,9 +671,20 @@
 										serverDataKey:serverDataKey];
 				}
 			}
-		}	
+            
+            // Advise that the Sync Manager Did Finish to Process some specific server key.
+            if ( delegate ) {
+                if ( [(id)delegate respondsToSelector:@selector(syncManagerDidFinishToProcessTheKey:)] ) {
+                    [delegate syncManagerDidFinishToProcessTheKey:serverDataKey];
+                }
+                
+                if ( [(id)delegate respondsToSelector:@selector(syncManagerDidFinishToProcessTheKey:inDatabaseManager:)] ) {
+                    [delegate syncManagerDidFinishToProcessTheKey:serverDataKey inDatabaseManager:_backgroundThreadDatabaseManager];
+                }
+            }
+		}
 		
-		////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
+		////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// /////////
 		// Maybe the delegate can handle it...
 		else {
 			if ( delegate )
@@ -689,11 +711,12 @@
     
     //////////// /////////// /////////// /////////// /////////// /////////// ///////////
 	// Warn the delegate that did finish to process.
-	if ( delegate )
+	if ( delegate ) {
 		if ( [(id)delegate respondsToSelector:@selector(syncManagerDidFinishToProcess)] )
              [(id)delegate performSelectorOnMainThread:@selector(syncManagerDidFinishToProcess) 
                                            withObject:nil
                                         waitUntilDone:NO];
+    }
     
     // Flush and release the Pool.
     [anPool release];
