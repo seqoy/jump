@@ -280,7 +280,7 @@
         [NSException raise:@"JPXMLReaderException" format:@"Can't process NULL data."];
         return nil;
     }
-	
+		
 	/////// //////// //////// //////// //////// //////// //////// //////// 
 	// Init.
 	JPXMLParser *parserInstance = [[JPXMLParser alloc] initWithData:data];
