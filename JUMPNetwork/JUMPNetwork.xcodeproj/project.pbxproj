@@ -55,8 +55,8 @@
 		18405DBA13EED418004E6BC0 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6B13EED418004E6BC0 /* ASIS3Request.m */; };
 		18405DBB13EED418004E6BC0 /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6C13EED418004E6BC0 /* ASIS3ServiceRequest.h */; };
 		18405DBC13EED418004E6BC0 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6D13EED418004E6BC0 /* ASIS3ServiceRequest.m */; };
-		18405E1413EED4A8004E6BC0 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405E1213EED4A8004E6BC0 /* Reachability.h */; };
-		18405E1513EED4A8004E6BC0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405E1313EED4A8004E6BC0 /* Reachability.m */; };
+		18405E1413EED4A8004E6BC0 /* JUMP_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405E1213EED4A8004E6BC0 /* JUMP_Reachability.h */; };
+		18405E1513EED4A8004E6BC0 /* JUMP_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405E1313EED4A8004E6BC0 /* JUMP_Reachability.m */; };
 		1840606113EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840606013EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m */; };
 		1840606313EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840606213EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h */; };
 		1840607413EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840607313EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h */; };
@@ -134,7 +134,7 @@
 		187E205E140FCAE9003D1652 /* ASIS3ObjectRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6813EED418004E6BC0 /* ASIS3ObjectRequest.h */; };
 		187E205F140FCAE9003D1652 /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6A13EED418004E6BC0 /* ASIS3Request.h */; };
 		187E2060140FCAE9003D1652 /* ASIS3ServiceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405D6C13EED418004E6BC0 /* ASIS3ServiceRequest.h */; };
-		187E2061140FCAE9003D1652 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405E1213EED4A8004E6BC0 /* Reachability.h */; };
+		187E2061140FCAE9003D1652 /* JUMP_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 18405E1213EED4A8004E6BC0 /* JUMP_Reachability.h */; };
 		187E2062140FCAE9003D1652 /* JPPipelineSucceededFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840606213EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h */; };
 		187E2063140FCAE9003D1652 /* JPPipelineCompletedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840607313EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h */; };
 		187E2064140FCAE9003D1652 /* JPPipelineFailedFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840608613EEEEBB004E6BC0 /* JPPipelineFailedFuture.h */; };
@@ -181,7 +181,7 @@
 		187E208E140FCAE9003D1652 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6913EED418004E6BC0 /* ASIS3ObjectRequest.m */; };
 		187E208F140FCAE9003D1652 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6B13EED418004E6BC0 /* ASIS3Request.m */; };
 		187E2090140FCAE9003D1652 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405D6D13EED418004E6BC0 /* ASIS3ServiceRequest.m */; };
-		187E2091140FCAE9003D1652 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405E1313EED4A8004E6BC0 /* Reachability.m */; };
+		187E2091140FCAE9003D1652 /* JUMP_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18405E1313EED4A8004E6BC0 /* JUMP_Reachability.m */; };
 		187E2092140FCAE9003D1652 /* JPPipelineSucceededFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840606013EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m */; };
 		187E2093140FCAE9003D1652 /* JPPipelineCompletedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840607513EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m */; };
 		187E2094140FCAE9003D1652 /* JPPipelineFailedFuture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840608413EEEEBB004E6BC0 /* JPPipelineFailedFuture.m */; };
@@ -309,8 +309,8 @@
 		18405D6B13EED418004E6BC0 /* ASIS3Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Request.m; sourceTree = "<group>"; };
 		18405D6C13EED418004E6BC0 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ServiceRequest.h; sourceTree = "<group>"; };
 		18405D6D13EED418004E6BC0 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
-		18405E1213EED4A8004E6BC0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		18405E1313EED4A8004E6BC0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		18405E1213EED4A8004E6BC0 /* JUMP_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMP_Reachability.h; sourceTree = "<group>"; };
+		18405E1313EED4A8004E6BC0 /* JUMP_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUMP_Reachability.m; sourceTree = "<group>"; };
 		1840606013EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPipelineSucceededFuture.m; sourceTree = "<group>"; };
 		1840606213EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineSucceededFuture.h; path = Headers/JPPipelineSucceededFuture.h; sourceTree = SOURCE_ROOT; };
 		1840607313EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPPipelineCompletedFuture.h; path = Headers/JPPipelineCompletedFuture.h; sourceTree = SOURCE_ROOT; };
@@ -551,8 +551,8 @@
 		18405E1113EED4A8004E6BC0 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				18405E1213EED4A8004E6BC0 /* Reachability.h */,
-				18405E1313EED4A8004E6BC0 /* Reachability.m */,
+				18405E1213EED4A8004E6BC0 /* JUMP_Reachability.h */,
+				18405E1313EED4A8004E6BC0 /* JUMP_Reachability.m */,
 			);
 			name = Reachability;
 			path = Libraries/AISHTTPRequestLibrary/External/Reachability;
@@ -953,7 +953,7 @@
 				187E205E140FCAE9003D1652 /* ASIS3ObjectRequest.h in Headers */,
 				187E205F140FCAE9003D1652 /* ASIS3Request.h in Headers */,
 				187E2060140FCAE9003D1652 /* ASIS3ServiceRequest.h in Headers */,
-				187E2061140FCAE9003D1652 /* Reachability.h in Headers */,
+				187E2061140FCAE9003D1652 /* JUMP_Reachability.h in Headers */,
 				187E2062140FCAE9003D1652 /* JPPipelineSucceededFuture.h in Headers */,
 				187E2063140FCAE9003D1652 /* JPPipelineCompletedFuture.h in Headers */,
 				187E2064140FCAE9003D1652 /* JPPipelineFailedFuture.h in Headers */,
@@ -1032,7 +1032,7 @@
 				18405DB713EED418004E6BC0 /* ASIS3ObjectRequest.h in Headers */,
 				18405DB913EED418004E6BC0 /* ASIS3Request.h in Headers */,
 				18405DBB13EED418004E6BC0 /* ASIS3ServiceRequest.h in Headers */,
-				18405E1413EED4A8004E6BC0 /* Reachability.h in Headers */,
+				18405E1413EED4A8004E6BC0 /* JUMP_Reachability.h in Headers */,
 				1840606313EEEEBB004E6BC0 /* JPPipelineSucceededFuture.h in Headers */,
 				1840607413EEEEBB004E6BC0 /* JPPipelineCompletedFuture.h in Headers */,
 				1840608713EEEEBB004E6BC0 /* JPPipelineFailedFuture.h in Headers */,
@@ -1153,7 +1153,7 @@
 				187E208E140FCAE9003D1652 /* ASIS3ObjectRequest.m in Sources */,
 				187E208F140FCAE9003D1652 /* ASIS3Request.m in Sources */,
 				187E2090140FCAE9003D1652 /* ASIS3ServiceRequest.m in Sources */,
-				187E2091140FCAE9003D1652 /* Reachability.m in Sources */,
+				187E2091140FCAE9003D1652 /* JUMP_Reachability.m in Sources */,
 				187E2092140FCAE9003D1652 /* JPPipelineSucceededFuture.m in Sources */,
 				187E2093140FCAE9003D1652 /* JPPipelineCompletedFuture.m in Sources */,
 				187E2094140FCAE9003D1652 /* JPPipelineFailedFuture.m in Sources */,
@@ -1207,7 +1207,7 @@
 				18405DB813EED418004E6BC0 /* ASIS3ObjectRequest.m in Sources */,
 				18405DBA13EED418004E6BC0 /* ASIS3Request.m in Sources */,
 				18405DBC13EED418004E6BC0 /* ASIS3ServiceRequest.m in Sources */,
-				18405E1513EED4A8004E6BC0 /* Reachability.m in Sources */,
+				18405E1513EED4A8004E6BC0 /* JUMP_Reachability.m in Sources */,
 				1840606113EEEEBB004E6BC0 /* JPPipelineSucceededFuture.m in Sources */,
 				1840607613EEEEBB004E6BC0 /* JPPipelineCompletedFuture.m in Sources */,
 				1840608513EEEEBB004E6BC0 /* JPPipelineFailedFuture.m in Sources */,
