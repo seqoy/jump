@@ -22,7 +22,23 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
-#pragma mark Init Methods. 
+#pragma mark Init Methods.
+-(id)init {
+    self = [super init];
+    if ( self != nil ) {
+        // Default Data.
+        self.userAgent     = @"JUMP Network Transport Layer 1.0";
+
+        //// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// //// //// //// //// //// //// //// /
+        // Default Settings.
+        self.timeOutSeconds	 = 60 * 5;
+        self.contentType     = @"text/plain";
+
+        self.requestMethod = @"POST";
+    }
+    return self;
+}
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 +(id)initWithMethod:(NSString*)anMethod {
 	return [[[self alloc] initWithData:nil withMethod:anMethod] autorelease];
@@ -46,19 +62,9 @@
 		// If Method defined, retain.
 		if ( anMethod ) 
 			self.requestMethod = anMethod;
-		else 
-			self.requestMethod = @"POST";
-		
+
 		// Retain Parameters.
 		self.dataToSend = anData;
-
-		// Default Data.
-		self.userAgent     = @"JUMP Network Transport Layer 1.0";
-
-		//// //// //// //// //// //// //// //// //// //// //// ///// //// //// //// //// //// //// //// //// //// //// /
-		// Default Settings.
-		self.timeOutSeconds	 = 60 * 5;
-		self.contentType     = @"text/plain";
 	}
 	return self;
 }
