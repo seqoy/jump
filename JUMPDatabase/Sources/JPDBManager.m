@@ -519,9 +519,9 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
 // Commit al pendent operations to the persistent store.
 -(void)commit {
-	//Debug( @"Saving Changes To Database.");
+	NSLog( @"Saving Changes To Database.");
 	
-	// Error Control.
+	// Error Control.                              x
 	NSError *anError = nil;
 	
 	//// //// //// //// //// //// //// /////// //// //// //// //// //// //// ///

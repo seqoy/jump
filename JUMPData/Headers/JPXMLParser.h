@@ -17,8 +17,8 @@
 #import "JPXMLParser.h"
 
 typedef struct JPXMLParserElement {
-	id object;
-	NSString* name;
+	__unsafe_unretained id object;
+	__unsafe_unretained NSString* name;
 } JPXMLParserElement;
 
 /**
@@ -62,7 +62,7 @@ typedef struct JPXMLParserElement {
  * <br>
  */
 @interface JPXMLParser : NSXMLParser <NSXMLParserDelegate> {
-    NSError **errorPointer;
+    NSError * __autoreleasing *errorPointer;
 	
 	id              _parsedObject;
 	
