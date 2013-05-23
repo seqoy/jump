@@ -257,6 +257,9 @@
 /// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// ///// 
 #define LogIndexPath( arg ) Debug( @"Section: %i, Row: %i", arg.section, arg.row )
 #define LogIndexPathTo( category,arg ) DebugTo( category,@"Section: %i, Row: %i", arg.section, arg.row )
+/// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// ///// /// /// /// ////// /////
+#define LogWhere() Debug( @"[%@ %@]", NSStringFromClass( [self class] ), NSStringFromSelector( _cmd ) )
+#define LogWhereTo( category ) DebugTo( category,@"[%@ %@]", NSStringFromClass( [self class] ), NSStringFromSelector( _cmd ) )
 
 
 ///@}
