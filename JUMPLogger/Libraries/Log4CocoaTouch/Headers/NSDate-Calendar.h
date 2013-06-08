@@ -32,7 +32,7 @@
 //  THE SOFTWARE.
 #import <Foundation/Foundation.h>
 
-typedef NSDate NSCalendarDate;
+//typedef NSDate NSCalendarDate;
 
 @interface NSDate(Calendar)
 

@@ -138,7 +138,7 @@
  * You can do it after, but the manager will recreate every sort key again.
  * Default value is <b>YES</b>.
  */
-@property(assign) BOOL ascendingOrder;
+@property(assign,nonatomic) BOOL ascendingOrder;
 
 /**
  * Set if the Result of this action should be an <b>NSArray</b> or an <b>NSFetchedResultsController</b> object.<br>

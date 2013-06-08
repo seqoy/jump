@@ -182,11 +182,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187E1D3F140FC5A2003D1652 /* JUMPDatabase_Prefix.pch in Headers */,
-				187E1D40140FC5A2003D1652 /* JPDBManager.h in Headers */,
-				187E1D41140FC5A2003D1652 /* JPDBManagerSingleton.h in Headers */,
-				187E1D42140FC5A2003D1652 /* JPDBManagerAction.h in Headers */,
 				187E1D43140FC5A2003D1652 /* JPDBManagerDefinitions.h in Headers */,
+				187E1D40140FC5A2003D1652 /* JPDBManager.h in Headers */,
+				187E1D42140FC5A2003D1652 /* JPDBManagerAction.h in Headers */,
+				187E1D41140FC5A2003D1652 /* JPDBManagerSingleton.h in Headers */,
+				187E1D3F140FC5A2003D1652 /* JUMPDatabase_Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				187E1D45140FC5A2003D1652 /* JPDBManager.m in Sources */,
-				187E1D46140FC5A2003D1652 /* JPDBManagerSingleton.m in Sources */,
 				187E1D47140FC5A2003D1652 /* JPDBManagerAction.m in Sources */,
+				187E1D46140FC5A2003D1652 /* JPDBManagerSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

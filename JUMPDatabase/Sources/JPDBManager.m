@@ -192,7 +192,7 @@
 
 			// Error Message and Crash the System. 
 			[NSException raise:JPDBManagerStartException
-						format: @"Informed Model: %@ **NOT FOUND on bundle. Full Path: ", loadedModelName, modelPath];
+						format: @"Informed Model: %@ **NOT FOUND on bundle. Full Path: %@", loadedModelName, modelPath];
 		}
 
         //Info( @"Initializing The Managed Object Model: %@", modelPath);
