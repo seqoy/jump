@@ -139,6 +139,10 @@
 	////// ////// ////// ////// ////// ////// ////// ////// ////// 
 	// Commit data.
 	[self commit];
+    
+    [managedObjectModel release]; managedObjectModel = nil;
+	[managedObjectContext release]; managedObjectContext = nil;
+	[persistentStoreCoordinator release]; persistentStoreCoordinator = nil;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

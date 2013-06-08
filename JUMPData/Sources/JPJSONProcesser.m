@@ -44,7 +44,7 @@
         return nil;
     }
     
-    // Everythink ok.
+    // Everything ok.
 	return processed;
 }
 
