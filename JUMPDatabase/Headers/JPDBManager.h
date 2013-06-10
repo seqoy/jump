@@ -167,6 +167,11 @@
  */
 -(JPDBManagerAction*)getDatabaseAction;
 
+/**
+ * Return an NSURL object that contains where the SQLite file is located.
+ */
+-(NSURL*)SQLiteFilePath;
+
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

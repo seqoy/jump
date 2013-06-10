@@ -167,6 +167,11 @@
     return basePath;
 }
 
+// Return an NSURL object that contains where the SQLite file is located.
+-(NSURL*)SQLiteFilePath {
+    return [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"mainDatabase.SQlite"]];
+}
+
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 //
 // Managed Object Model Accessor. If the model doesn't already exist, it is created by merging all of
@@ -235,7 +240,7 @@
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	
 	// Main Database Path.
-    NSURL *mainDatabase = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"mainDatabase.SQlite"]];
+    NSURL *mainDatabase = [self SQLiteFilePath];
 	
 	// Error Control.
 	NSError *error = nil;
