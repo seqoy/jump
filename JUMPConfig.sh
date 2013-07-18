@@ -78,8 +78,9 @@ configure() {
 	######## ######## ######## ######## ######## ######## ########  
 	# if JUMPDatabase Directory exist...
 	if [ -d "../JUMPDatabase/Headers" ]; then
-		echo "Linking JUMPDatabase Headers..."
+		echo "Linking JUMPDatabase Headers... (Includes 'coredata-threadsafe' headers)..."
 		ln -s  ../JUMPDatabase/Headers/* .
+		ln -s  ../JUMPDatabase/Libraries/coredata-threadsafe/IAThreadSafeCoreData/IAThreadSafeCoreData/*.h .
 	fi
 
 	######## ######## ######## ######## ######## ######## ########  
