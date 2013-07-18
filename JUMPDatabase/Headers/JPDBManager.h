@@ -20,6 +20,10 @@
 // Logger.
 #import "JPLogger.h"
 
+// Thread Safe Extension
+#import "IAThreadSafeContext.h"
+#import "IAThreadSafeManagedObject.h"
+
 /**
  * \class JPDBManager
  * \nosubgrouping 
@@ -73,6 +77,15 @@
  */
 //See \ref commit_operation for more information.<br>
 @property(assign) BOOL automaticallyCommit;
+
+/**
+ * Set as 'YES' to enable thread safe operation in the Database Manager. This method will use 'coredata-threadsafe' extension to
+ * Core Data that provides drop-in replacements for the standard (non-thread-safe) classes.
+ * 
+ * If you enabled this option, you should be aware that at least some caveats/limitations have been identified.
+ * Please refer to https://github.com/adam-roth/coredata-threadsafe documentation.
+ */
+@property(assign) BOOL enableThreadSafeOperation;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -

@@ -27,7 +27,7 @@
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// 
 @synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
 @synthesize automaticallyCommit;
-@synthesize loadedModelName;
+@synthesize loadedModelName, enableThreadSafeOperation;
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 #pragma mark -
@@ -304,7 +304,9 @@
     if (coordinator != nil) {
 		
 		// Alloc and Start.
-        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        managedObjectContext = enableThreadSafeOperation ?
+                                                [[IAThreadSafeContext alloc] init] :
+                                                [[NSManagedObjectContext alloc] init];
         [managedObjectContext setPersistentStoreCoordinator: coordinator];
     }
 	
@@ -530,7 +532,7 @@
 -(void)commit {
 	NSLog( @"Saving Changes To Database.");
 	
-	// Error Control.                              x
+	// Error Control.                              
 	NSError *anError = nil;
 	
 	//// //// //// //// //// //// //// /////// //// //// //// //// //// //// ///

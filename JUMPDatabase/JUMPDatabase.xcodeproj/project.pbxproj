@@ -25,6 +25,14 @@
 		3A5E3443132305F300970E2B /* JPDBManagerAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E3441132305F300970E2B /* JPDBManagerAction.h */; };
 		3A5E3444132305F300970E2B /* JPDBManagerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E3442132305F300970E2B /* JPDBManagerAction.m */; };
 		3A5E35291323312100970E2B /* JPDBManagerDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5E35281323312100970E2B /* JPDBManagerDefinitions.h */; };
+		3AF9A2F6179823FE001E61A6 /* IAThreadSafeContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9A2F2179823FE001E61A6 /* IAThreadSafeContext.h */; };
+		3AF9A2F7179823FE001E61A6 /* IAThreadSafeContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9A2F2179823FE001E61A6 /* IAThreadSafeContext.h */; };
+		3AF9A2F8179823FE001E61A6 /* IAThreadSafeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9A2F3179823FE001E61A6 /* IAThreadSafeContext.m */; };
+		3AF9A2F9179823FE001E61A6 /* IAThreadSafeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9A2F3179823FE001E61A6 /* IAThreadSafeContext.m */; };
+		3AF9A2FA179823FE001E61A6 /* IAThreadSafeManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9A2F4179823FE001E61A6 /* IAThreadSafeManagedObject.h */; };
+		3AF9A2FB179823FE001E61A6 /* IAThreadSafeManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9A2F4179823FE001E61A6 /* IAThreadSafeManagedObject.h */; };
+		3AF9A2FC179823FE001E61A6 /* IAThreadSafeManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9A2F5179823FE001E61A6 /* IAThreadSafeManagedObject.m */; };
+		3AF9A2FD179823FE001E61A6 /* IAThreadSafeManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9A2F5179823FE001E61A6 /* IAThreadSafeManagedObject.m */; };
 		AA747D9F0F9514B9006C5449 /* JUMPDatabase_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JUMPDatabase_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +79,10 @@
 		3A5E3441132305F300970E2B /* JPDBManagerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDBManagerAction.h; path = Headers/JPDBManagerAction.h; sourceTree = "<group>"; };
 		3A5E3442132305F300970E2B /* JPDBManagerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPDBManagerAction.m; path = Sources/JPDBManagerAction.m; sourceTree = "<group>"; };
 		3A5E35281323312100970E2B /* JPDBManagerDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPDBManagerDefinitions.h; path = Headers/JPDBManagerDefinitions.h; sourceTree = "<group>"; };
+		3AF9A2F2179823FE001E61A6 /* IAThreadSafeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAThreadSafeContext.h; path = "Libraries/coredata-threadsafe/IAThreadSafeCoreData/IAThreadSafeCoreData/IAThreadSafeContext.h"; sourceTree = "<group>"; };
+		3AF9A2F3179823FE001E61A6 /* IAThreadSafeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAThreadSafeContext.m; path = "Libraries/coredata-threadsafe/IAThreadSafeCoreData/IAThreadSafeCoreData/IAThreadSafeContext.m"; sourceTree = "<group>"; };
+		3AF9A2F4179823FE001E61A6 /* IAThreadSafeManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAThreadSafeManagedObject.h; path = "Libraries/coredata-threadsafe/IAThreadSafeCoreData/IAThreadSafeCoreData/IAThreadSafeManagedObject.h"; sourceTree = "<group>"; };
+		3AF9A2F5179823FE001E61A6 /* IAThreadSafeManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAThreadSafeManagedObject.m; path = "Libraries/coredata-threadsafe/IAThreadSafeCoreData/IAThreadSafeCoreData/IAThreadSafeManagedObject.m"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* JUMPDatabase_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMPDatabase_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libJUMPDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUMPDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5E31B51321780300970E2B /* Dependencies */,
+				3AF9A2EF17982342001E61A6 /* Libraries */,
 				08FB77AEFE84172EC02AAC07 /* Sources */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -175,6 +188,25 @@
 			name = "Database Manager";
 			sourceTree = "<group>";
 		};
+		3AF9A2EF17982342001E61A6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3AF9A2F1179823EA001E61A6 /* Thread Safe Core Data */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3AF9A2F1179823EA001E61A6 /* Thread Safe Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				3AF9A2F2179823FE001E61A6 /* IAThreadSafeContext.h */,
+				3AF9A2F3179823FE001E61A6 /* IAThreadSafeContext.m */,
+				3AF9A2F4179823FE001E61A6 /* IAThreadSafeManagedObject.h */,
+				3AF9A2F5179823FE001E61A6 /* IAThreadSafeManagedObject.m */,
+			);
+			name = "Thread Safe Core Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -187,6 +219,8 @@
 				187E1D42140FC5A2003D1652 /* JPDBManagerAction.h in Headers */,
 				187E1D41140FC5A2003D1652 /* JPDBManagerSingleton.h in Headers */,
 				187E1D3F140FC5A2003D1652 /* JUMPDatabase_Prefix.pch in Headers */,
+				3AF9A2F7179823FE001E61A6 /* IAThreadSafeContext.h in Headers */,
+				3AF9A2FB179823FE001E61A6 /* IAThreadSafeManagedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +233,8 @@
 				3A5E32CC13217F5800970E2B /* JPDBManagerSingleton.h in Headers */,
 				3A5E3443132305F300970E2B /* JPDBManagerAction.h in Headers */,
 				3A5E35291323312100970E2B /* JPDBManagerDefinitions.h in Headers */,
+				3AF9A2F6179823FE001E61A6 /* IAThreadSafeContext.h in Headers */,
+				3AF9A2FA179823FE001E61A6 /* IAThreadSafeManagedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +334,8 @@
 				187E1D45140FC5A2003D1652 /* JPDBManager.m in Sources */,
 				187E1D47140FC5A2003D1652 /* JPDBManagerAction.m in Sources */,
 				187E1D46140FC5A2003D1652 /* JPDBManagerSingleton.m in Sources */,
+				3AF9A2F9179823FE001E61A6 /* IAThreadSafeContext.m in Sources */,
+				3AF9A2FD179823FE001E61A6 /* IAThreadSafeManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +346,8 @@
 				3A5E30A8132162CC00970E2B /* JPDBManager.m in Sources */,
 				3A5E32D01321821600970E2B /* JPDBManagerSingleton.m in Sources */,
 				3A5E3444132305F300970E2B /* JPDBManagerAction.m in Sources */,
+				3AF9A2F8179823FE001E61A6 /* IAThreadSafeContext.m in Sources */,
+				3AF9A2FC179823FE001E61A6 /* IAThreadSafeManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +448,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -423,6 +464,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
