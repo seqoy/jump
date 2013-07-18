@@ -1760,7 +1760,7 @@ static void	LoggerPushClientInfoToFrontOfQueue(Logger *logger)
 		{
 			NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 			UIDevice *device = [UIDevice currentDevice];
-			LoggerMessageAddString(encoder, (CFStringRef)device.uniqueIdentifier, PART_KEY_UNIQUEID);
+			LoggerMessageAddString(encoder, (CFStringRef)@"", PART_KEY_UNIQUEID);
 			LoggerMessageAddString(encoder, (CFStringRef)device.systemVersion, PART_KEY_OS_VERSION);
 			LoggerMessageAddString(encoder, (CFStringRef)device.systemName, PART_KEY_OS_NAME);
 			LoggerMessageAddString(encoder, (CFStringRef)device.model, PART_KEY_CLIENT_MODEL);
