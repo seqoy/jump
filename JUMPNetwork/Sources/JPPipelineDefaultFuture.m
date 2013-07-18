@@ -181,8 +181,7 @@
 -(void)setProgress:(NSNumber *)anValue {
 	// If done, can't set progress.
 	if ( [self isDone] )
-		[NSException raise:@"JPPipelineNotificationException"
-					format:@"Can't set progress! This action is Done."];
+        Warn( @"Can't set progress! This action is Done." );
 
     // If no changes, do nothing.
     if ( anValue == progress )
