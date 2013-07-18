@@ -112,7 +112,7 @@ static NSMutableArray* _JPDataConverterKnowedDateFormats;
 }
 
 ////////////// ////////////// ////////////// //////////////
-// Take an <b>NSString</b> Object that suppoed to be a Internet Date and Time string (RFC822 or RFC3339)
+// Take an <b>NSString</b> Object that supposed to be a Internet Date and Time string (RFC822 or RFC3339)
 // and try to convert to <b>NSDate</b>
 +(NSDate*)convertToNSDateThisInternetDateTimeString:(NSString *)anDateString {
 	

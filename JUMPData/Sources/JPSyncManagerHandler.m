@@ -357,16 +357,20 @@
         // Load the specific model of this manager...
         specificModel = _mainThreadDatabaseManager.loadedModelName;
     }
+
+    // Create local Database Manager.
+    _backgroundThreadDatabaseManager = [[JPDBManager init] retain];
     
+    // Main Database is using Thread Safe Context?
+    _backgroundThreadDatabaseManager.enableThreadSafeOperation = _mainThreadDatabaseManager && _mainThreadDatabaseManager.enableThreadSafeOperation;
+    
+    // Start Engine.
     // If we have one specific model, load him.
     if ( specificModel ) {
-        _backgroundThreadDatabaseManager = [[JPDBManager init] retain];
         [_backgroundThreadDatabaseManager startCoreDataWithModel:specificModel];
+    } else {
+        [_backgroundThreadDatabaseManager startCoreData];
     }
-    
-    // If don't, use default.
-    else 
-        _backgroundThreadDatabaseManager = [[JPDBManager initAndStartCoreData] retain];
     
     // Set Core Data to merges conflicts between the persistent store’s version of the object 
     // and the current in-memory version, giving priority to in-memory changes.
@@ -557,7 +561,7 @@
                                     }
                                 }
                                 
-                                /* We're not using this query anymore because is too slow.
+                                /* We're not using this query anym  ore because is too slow.
                                 // Predicate to Query the DB.
                                 NSPredicate *query = [NSPredicate predicateWithFormat:@"%K == %@", updateLocalKey, value];
                                 
@@ -687,10 +691,15 @@
 		////////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// /////////
 		// Maybe the delegate can handle it...
 		else {
-			if ( delegate )
-				if ( [(id)delegate respondsToSelector:@selector(unhandledServerKey:withData:)] )
-					[delegate unhandledServerKey:serverDataKey withData:object];
-			
+			if ( delegate ) {
+				if ( [(id)delegate respondsToSelector:@selector(unhandledServerKey:withData:)] ) {
+					 [delegate unhandledServerKey:serverDataKey withData:object];
+                }
+
+                if ( [(id)delegate respondsToSelector:@selector(unhandledServerKey:withData:inDatabaseManager:)] ) {
+                     [delegate unhandledServerKey:serverDataKey withData:object inDatabaseManager:_backgroundThreadDatabaseManager];
+                }
+            }
 		}
 	}
 	

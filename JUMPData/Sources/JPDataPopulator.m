@@ -26,7 +26,7 @@
 ///////////// 	///////////// 	///////////// 	///////////// 	///////////// 	///////////// // 	///////////// 	///////////// 
 -(NSString*)capitalizeFirstLetter:(NSString*)anString {
 	
-	NSString *firstLetter = [ [anString substringWithRange:NSMakeRange(0, 1)] uppercaseString]; // <#NSUInteger loc#>, <#NSUInteger len#>
+	NSString *firstLetter = [ [anString substringWithRange:NSMakeRange(0, 1)] uppercaseString];
 	NSString *rest		  = [anString substringFromIndex:1];
 	
 	// Return formatted String.
@@ -269,19 +269,20 @@
 									 toTheSameClassOf:anObject      ofKey:dataKey   withDateFormat:nil];							  //
 																																	  //
 					// Converted value, will be NIL if can't convert.						///// ////// ////// ////// ////// ////// ///
-					if ( serverData != nil )
-						Warn( @"Converted succesfully.");
-				}																			
-				//// //// //// //// //// //// //// //// //// //////// //// //////// //// /////			
+					if ( serverData != nil )                                                //
+						Warn( @"Converted succesfully.");                                   //
+				}                                                                           //
+				//// //// //// //// //// //// //// //// //// //////// //// //////// //// /////
 				// Set Value if isn't NIL. Will raise an exception if can't do it.
-				//// //// //// ////	
-				if ( serverData != nil ) {
-					[anObject setValue:serverData forKey:dataKey];
-				}
-            }
-            
+				//// //// //// ////// //// //// //// //// //// //////// //// //////// //// ///
+				if ( serverData != nil ) {                                                  //
+					[anObject setValue:serverData forKey:dataKey];                          //
+				}                                                                           //
+            }                                                                               //
+                                                                                            //
             //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// // 	
-            // Some Exception ocurr and WARNING.. will don't crash this time pal.		    //
+            // Some Exception ocurr and WARNING.. will don't crash this time pal.
+            //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// // 	
             @catch (NSException *exception) {
                 
 				//////  //// //// ////// //// ////// //// ///////////

@@ -135,5 +135,6 @@
  * Sync can't handle this key, can you?
  */
 - (void)unhandledServerKey:(NSString*)key withData:(id)data;
+- (void)unhandledServerKey:(NSString*)key withData:(id)data inDatabaseManager:(JPDBManager*)dbManager;
 
 @end
