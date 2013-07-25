@@ -1,0 +1,3 @@
+[submodule "JUMPDatabase/Libraries/coredata-threadsafe"]
+	path = JUMPDatabase/Libraries/coredata-threadsafe
+	url = git@github.com:adam-roth/coredata-threadsafe.git
