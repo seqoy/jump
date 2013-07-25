@@ -42,8 +42,25 @@ cleanAll() {
 }
 
 ###### ###### ###### ###### ###### ###### ###### ###### 
+# update libs.
+update_libs() {
+	echo ""
+	echo "Initializing GIT submodules..."
+	git submodule init
+	echo ''
+
+	######## ######## ######## ######## ######## ######## ########  
+	echo "Cloning (updating) GIT submodules..."
+	git submodule update
+	echo ''
+}
+
+###### ###### ###### ###### ###### ###### ###### ###### 
 # Configure
 configure() {
+
+	update_libs
+
 	# if Headers Directory doesn't exist...
 	if [ ! -d "Headers" ]; then
 		echo "Creating Main Headers Directory..."
