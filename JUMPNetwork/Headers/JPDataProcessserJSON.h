@@ -27,6 +27,14 @@
  */
 +(id)convertFromJSON:(NSString*)anJSONString;
 
+
+/**
+ * Convert from JSON Data (NSData) to an Object.
+ * @param anJSONData An NSData object with the JSON to be converted.
+ * @return Could be a string, number, boolean, null, array or dictionary.
+ */
++(id)convertFromJSONData:(NSData*)anJSONData;
+
 /**
  * Convert an Dictionary to an JSON String. Not human readable.
  * @param anJSONDictionary An dictionary to be converted.

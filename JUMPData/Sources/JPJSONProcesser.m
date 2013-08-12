@@ -48,6 +48,29 @@
 	return processed;
 }
 
+////////////// ////////////// ////////////// //////////////
+// Convert from JSON Data to an Dictionary Object.
++(id)convertFromJSONData:(NSData *)anJSONData {
+	SBJsonParser *anProcesser = [[[SBJsonParser alloc] init] autorelease];
+    
+    // Try to process.
+    id processed = [anProcesser objectWithData:anJSONData];
+    
+    // If some error, will raise an Exception.
+    if (anProcesser.error) {
+        
+        // Create error object.
+        NSDictionary *ui = [NSDictionary dictionaryWithObjectsAndKeys:anProcesser.error, NSLocalizedDescriptionKey, nil];
+        NSError *error_ = [NSError errorWithDomain:NSStringFromClass([self class]) code:0 userInfo:ui];
+        
+        [self raiseExceptionWithError:error_];
+        return nil;
+    }
+    
+    // Everything ok.
+	return processed;
+}
+
 ////////////// ////////////// ////////////// ////////////// 
 // Convert to an Dictionary to an JSON String. Not human readable.
 +(NSString*)convertToJSON:(NSDictionary*)anJSONDictionary {
