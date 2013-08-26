@@ -39,7 +39,7 @@ static BOOL configured;
     // If can't, configure locally, using Default values.
     if ( !success) {
 		// Custom Layout.
-		L4Layout *anLayout = [[[L4PatternLayout alloc] initWithConversionPattern:@"[%-5p]: %m%n"] autorelease];
+		L4Layout *anLayout = [[L4PatternLayout alloc] initWithConversionPattern:@"[%-5p]: %m%n"];
 		
 		// Get global level.
 		L4Level *globalLevel = [JPLog4CocoaFactory convertJPLevel:[JPLog4CocoaFactory globalLevel]];
@@ -54,7 +54,6 @@ static BOOL configured;
         [[L4Logger rootLogger] addAppender:appender];
         
         // Release appender.
-        [appender release];
 	}
     
 	// Set as configured.
@@ -78,7 +77,6 @@ static BOOL configured;
 	// If exist, configure with this file.
 	L4PropertyConfigurator *configurator = [[L4PropertyConfigurator alloc] initWithFileName:filename];
 	[configurator configure];
-    [configurator release];
 	
 	// Everything ok.
     return YES;

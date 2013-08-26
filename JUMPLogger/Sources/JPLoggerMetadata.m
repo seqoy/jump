@@ -34,7 +34,7 @@
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 +(id)init {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
@@ -48,15 +48,6 @@
 }
 
 ////////// ////////// ////////// //
-- (void) dealloc {
-	[caller release];
-	[message release];
-	[fileName release];
-	[methodName release];
-	[exception release];
-	[domain release];
-	[super dealloc];
-}
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 #pragma mark -
@@ -65,7 +56,7 @@
 -(void)setMessage:(id)variableList, ... {
 	// Release if defined.
 	if ( message ) 
-		[message release], message = nil;
+		message = nil;
 	
 	// If nil, doesn't set.
 	if ( variableList == nil ) 
@@ -73,7 +64,7 @@
 	
 	// Set Message formatted.
 	va_list args;
-	message = [[NSString stringWithFormat:variableList, args] retain];
+	message = [NSString stringWithFormat:variableList, args];
 }
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////

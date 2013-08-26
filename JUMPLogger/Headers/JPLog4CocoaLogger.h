@@ -22,5 +22,5 @@
 @interface JPLog4CocoaLogger : NSObject <JPLoggerInterface> {
 	id keyForLog;
 }
-@property(retain, getter=getKeyForLog) id keyForLog;
+@property(strong, getter=getKeyForLog) id keyForLog;
 @end

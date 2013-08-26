@@ -22,7 +22,7 @@
 @interface JPLoggerMetadata : NSObject {
 	id caller;
 	
-	NSString* message;
+	NSString* __weak message;
 	
 	NSString* fileName;
 	NSString* domain;
@@ -48,7 +48,7 @@
 /**
  * Object that call the log.
  */
-@property(retain) id caller;
+@property(strong) id caller;
 
 /**
  * Log domain, used to specify some log category,
@@ -74,7 +74,7 @@
 /**
  * Exception associated with this log.
  */
-@property(retain)  NSException* exception;
+@property(strong)  NSException* exception;
 
 /**
  * Log level.
@@ -89,7 +89,7 @@
 /**
  * Log message.
  */
-@property(readonly)  NSString* message;
+@property(weak, readonly)  NSString* message;
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 #pragma mark -

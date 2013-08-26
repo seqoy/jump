@@ -41,7 +41,7 @@ static Class loggerClass;
 	[self configureLogger];
 	
 	// Return it.
-	return [[[[self loggerClass] alloc] init] autorelease];
+	return [[[self loggerClass] alloc] init];
 }
 
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
