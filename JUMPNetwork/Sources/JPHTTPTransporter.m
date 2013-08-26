@@ -196,6 +196,9 @@
     // Create Upstream Message.
     JPPipelineUpstreamMessageEvent *message = [JPPipelineUpstreamMessageEvent initWithMessage:[request responseString]];
     
+    // Future is finished.
+    [future setSuccess];
+
     // Attach the future to go opposite direction.
     message.future = future;
     

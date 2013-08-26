@@ -202,8 +202,7 @@
 	// Allow only once.
 	// If done, can't set error.
 	if ( [self isDone] )
-		[NSException raise:@"JPPipelineNotificationException"
-					format:@"Can't set Failure! This action is Done."];
+		Warn(@"Can't set Failure! This action is Done.");
 	
 	// Release older cause.
 	[cause release], cause = nil;
@@ -218,8 +217,8 @@
 -(void)setSuccessWithEvent:(id<JPPipelineEvent>)anEvent {
 	// If done, can't set sucess.
 	if ( [self isDone] )
-		[NSException raise:@"JPPipelineNotificationException"
-					format:@"Can't set success! This action is Done."];
+		Warn(@"Can't set success! This action is Done.");
+    
 	// Success.
 	success = YES;
     
