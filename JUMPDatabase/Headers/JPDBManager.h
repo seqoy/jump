@@ -38,7 +38,7 @@
 	
 	// Core Data Objects.
 	NSManagedObjectModel *managedObjectModel;
-	NSManagedObjectContext *__weak managedObjectContext;		
+	NSManagedObjectContext *managedObjectContext;		
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 	// Automatically Commit.
@@ -57,7 +57,7 @@
 /**
  * Core Data Managed Object Context
  */
-@property(weak, readonly) NSManagedObjectContext *managedObjectContext;		
+@property(readonly) NSManagedObjectContext *managedObjectContext;		
 
 /**
  * Core Data Persistent Store Coordinator
@@ -149,6 +149,11 @@
  * Close Core Data Databases, commit pendent updates and release resources.
  */ 
 -(void)closeCoreData;
+
+/**
+ * Close Core Data and remove the persistent store.
+ */
+-(void)removePersistentStore;
 
 ///@}
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 

@@ -66,11 +66,11 @@
 
 	//// //// //// //// //// //// //// //// //// /
 	// Action Data.
-	NSString *__weak entity;
-	NSString *__weak fetchTemplate;
-	NSMutableDictionary* __weak variablesListAndValues;
-	NSMutableArray* __weak sortDescriptors;
-	NSPredicate *__weak predicate;
+	NSString *entity;
+	NSString *fetchTemplate;
+	NSMutableDictionary *variablesListAndValues;
+	NSMutableArray *sortDescriptors;
+	NSPredicate  *predicate;
 }
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
@@ -102,18 +102,18 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 /// The entity to perform this action.
-@property(weak, readonly) NSString *entity;
+@property(readonly) NSString *entity;
 
 /// The Fetch Template to perform this action.
-@property(weak, readonly) NSString *fetchTemplate;
+@property(readonly) NSString *fetchTemplate;
 
 /// Values to replace on the pre formatted Fetch Template.
-@property(weak, readonly) NSMutableDictionary* variablesListAndValues;
+@property(readonly) NSMutableDictionary* variablesListAndValues;
 
 /// Array of Sort Descriptors (<b>NSSortDescriptor</b>) to sort the result of this acion.
-@property(weak, readonly) NSMutableArray* sortDescriptors;
+@property(readonly) NSMutableArray* sortDescriptors;
 
-@property(weak, readonly) NSPredicate *predicate;
+@property(readonly) NSPredicate *predicate;
 
 /**
  * Instance of the Manager to perform this Database Action.

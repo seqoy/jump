@@ -137,6 +137,23 @@
 	persistentStoreCoordinator = nil;
 }
 
+////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
+-(void)removePersistentStore {
+
+    // Error control.
+    NSError *anError = nil;
+    
+    // The Database Manager only cares about one store, but for consistency let's loop all.
+    for (NSPersistentStore *store in [persistentStoreCoordinator persistentStores]) {
+        [persistentStoreCoordinator removePersistentStore:store error:&anError];
+    }
+
+    // Close it.
+    managedObjectModel = nil;
+	managedObjectContext = nil;
+	persistentStoreCoordinator = nil;
+}
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(JPDBManagerAction*)getDatabaseAction {
 	JPDBManagerAction *instance = [JPDBManagerAction initWithManager:self];

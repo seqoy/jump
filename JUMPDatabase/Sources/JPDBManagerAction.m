@@ -104,18 +104,6 @@
 	[NSException raise:JPDBManagerActionException format:@"%@", anCause];
 }
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///
--(void)setProperty:(NSObject**)property withValue:(id)newValue {
-	// If the same, do nothing.
-	if ( *property == newValue ) {
-		return;
-	}
-	
-	// Store Data.
-	*property = newValue;
-}
-
-
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Memory Management Methods. 
@@ -338,22 +326,19 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id)applyEntity:(NSString*)anEntity {
-    NSString *localEntity = anEntity;
-	[self setProperty:&localEntity withValue:[anEntity copy]];
+    entity = [anEntity copy];
 	return self;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyFetchTemplate:(NSString*)anFetchRequest {
-    NSString *localFetchRequest = anFetchRequest;
-	[self setProperty:&localFetchRequest withValue:[anFetchRequest copy]];
+    fetchTemplate = anFetchRequest;
 	return self;
 }
-	 
+
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyFetchReplaceWithDictionary:(NSDictionary*)anDictionary {
-    NSMutableDictionary *localVariablesListAndValues = variablesListAndValues;
-	[self setProperty:&localVariablesListAndValues withValue:anDictionary];
+    variablesListAndValues = [anDictionary mutableCopy];
 	return self;
 }
 
@@ -369,8 +354,7 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyPredicate:(NSPredicate*)anPredicate {
-    NSPredicate *localPredicate = anPredicate;
-	[self setProperty:&localPredicate withValue:anPredicate];
+    predicate = anPredicate;
 	return self;
 }
 
@@ -405,8 +389,7 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 	}
 	
 	//// //// ////// //// //// //// //// ////// //// //// //// //// //
-    NSMutableArray *localSortDescriptors = sortDescriptors;
-	[self setProperty:&localSortDescriptors withValue:anArray];
+    sortDescriptors = [anArray mutableCopy];
 	return self;
 }
 
