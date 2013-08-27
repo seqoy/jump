@@ -75,7 +75,7 @@
 	// Create an Notification.
 	NSNotification *anNotification = [NSNotification notificationWithName:JPDBManagerErrorNotification 
 																   object:anError 
-																 userInfo:[NSDictionary dictionaryWithObject:self forKey:JPDBManagerErrorNotification]];
+																 userInfo:@{JPDBManagerErrorNotification: self}];
 	// Post notification.
 	[[NSNotificationCenter defaultCenter] postNotification:anNotification];
 }
@@ -154,7 +154,7 @@
 - (NSString *)applicationDocumentsDirectory {
 	
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    NSString *basePath = ([paths count] > 0) ? paths[0] : nil;
 	
     return basePath;
 }
@@ -245,13 +245,10 @@
 	//
 	// Options to pass to persistent store. http://developer.apple.com/iphone/library/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/vmMappingOverview.html
 	//
-	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
-			 
-			  // Automatically attempt to migrate versioned stores.				 
-			 [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,	
+	NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @YES,	
 							 
 			 // Attempt to create the mapping model automatically.
-			 [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+			 NSInferMappingModelAutomaticallyOption: @YES};
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	// Add JPL to the Persistent, control error above.
@@ -341,7 +338,7 @@
 	NSEntityDescription *entity = [NSEntityDescription entityForName:anEntityName inManagedObjectContext:managedObjectContext];
 	
 	// Test if exist this attribute.
-	if ( _NOT_ [ [entity attributesByName] objectForKey:anAttributeName] ) {	
+	if ( _NOT_ [entity attributesByName][anAttributeName] ) {	
 		//Warn( @"JPDatabaseManager : The Attribute/Key '%@' doesn't exist in Entity '%@'.", anAttributeName, anEntityName );
 		return NO;
 	}
