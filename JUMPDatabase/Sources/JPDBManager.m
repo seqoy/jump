@@ -47,7 +47,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 // Init Autoreleseable.
 +(id)init {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ///
@@ -65,13 +65,6 @@
 #pragma mark -
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[managedObjectContext release];
-    [managedObjectModel release];
-    [persistentStoreCoordinator release];
-	[loadedModelName release];
-	[super dealloc];
-}
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 #pragma mark -
@@ -122,7 +115,6 @@
 	//Info( @"Starting Core Data Using Model: [[%@]]", modelName );
 	
 	// Dealloc if needed and set.
-	if ( loadedModelName ) [loadedModelName release], loadedModelName = nil;
 	loadedModelName = [modelName copy];
 	
 	// Continue.
@@ -140,9 +132,9 @@
 	// Commit data.
 	[self commit];
     
-    [managedObjectModel release]; managedObjectModel = nil;
-	[managedObjectContext release]; managedObjectContext = nil;
-	[persistentStoreCoordinator release]; persistentStoreCoordinator = nil;
+    managedObjectModel = nil;
+	managedObjectContext = nil;
+	persistentStoreCoordinator = nil;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -211,7 +203,7 @@
 	// If isn't specified...
 	// Merge all models found in the application bundle. 
 	else {
-		managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+		managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
 	}
 	
 	// Return Managed Object Model.
@@ -416,7 +408,7 @@
 	
 	//// //// //// //// //// //// //// //// //// //// //// /
 	// Create the Fetch Request.
-	NSFetchRequest *query = [[[NSFetchRequest alloc] init] autorelease];
+	NSFetchRequest *query = [[NSFetchRequest alloc] init];
 
 	//// //// //// //// //// //// //// //// //// //// //// /	
 	// Try to use an Fetch Template, if defined.
@@ -493,10 +485,10 @@
         //// //// //// //// //// //// //// //// //// //// //// //// //// 
         // Only iPhone.
         #if TARGET_OS_IPHONE 
-            return [[[NSFetchedResultsController alloc] initWithFetchRequest:query 
+            return [[NSFetchedResultsController alloc] initWithFetchRequest:query
 												   managedObjectContext:managedObjectContext
 													 sectionNameKeyPath:nil
-															  cacheName:nil] autorelease];
+                                                                   cacheName:nil];
         //// //// //// //// //// //// //// //// //// //// //// //// //// 
         #else
             return nil;

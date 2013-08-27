@@ -46,7 +46,7 @@
 @interface JPDBManagerAction : NSObject {
 	
 	// Manager Instance.
-	JPDBManager *manager;
+	JPDBManager *__weak manager;
 	
 	// Fetch Limits.
 	int fetchOffset;
@@ -66,11 +66,11 @@
 
 	//// //// //// //// //// //// //// //// //// /
 	// Action Data.
-	NSString *entity;
-	NSString *fetchTemplate;
-	NSMutableDictionary* variablesListAndValues;
-	NSMutableArray* sortDescriptors;
-	NSPredicate *predicate;
+	NSString *__weak entity;
+	NSString *__weak fetchTemplate;
+	NSMutableDictionary* __weak variablesListAndValues;
+	NSMutableArray* __weak sortDescriptors;
+	NSPredicate *__weak predicate;
 }
 
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
@@ -102,23 +102,23 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 /// The entity to perform this action.
-@property(readonly) NSString *entity;
+@property(weak, readonly) NSString *entity;
 
 /// The Fetch Template to perform this action.
-@property(readonly) NSString *fetchTemplate;
+@property(weak, readonly) NSString *fetchTemplate;
 
 /// Values to replace on the pre formatted Fetch Template.
-@property(readonly) NSMutableDictionary* variablesListAndValues;
+@property(weak, readonly) NSMutableDictionary* variablesListAndValues;
 
 /// Array of Sort Descriptors (<b>NSSortDescriptor</b>) to sort the result of this acion.
-@property(readonly) NSMutableArray* sortDescriptors;
+@property(weak, readonly) NSMutableArray* sortDescriptors;
 
-@property(readonly) NSPredicate *predicate;
+@property(weak, readonly) NSPredicate *predicate;
 
 /**
  * Instance of the Manager to perform this Database Action.
  */
-@property(assign) JPDBManager *manager;
+@property(weak) JPDBManager *manager;
 
 /**
  * Set if the Manager should commit this transaction immediatelly or not.<br>

@@ -36,7 +36,7 @@
 #pragma mark Init Methods.
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 +(id)initWithManager:(JPDBManager*)anManager {
-	return [[[self alloc] initWithManager:anManager] autorelease];
+	return [[self alloc] initWithManager:anManager];
 }
 ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// 
 -(id)initWithManager:(JPDBManager*)anManager {
@@ -71,11 +71,8 @@
 															 selector:sorter.selector]];
 	}
 	
-	// Release old sorters.
-	[sortDescriptors release];
-	
 	// Store new sorters.
-	sortDescriptors = [newSorters retain];
+	sortDescriptors = newSorters;
 	
 	// New General value.
 	ascendingOrder = newValue;
@@ -111,13 +108,8 @@
 -(void)setProperty:(NSObject**)property withValue:(id)newValue {
 	// If the same, do nothing.
 	if ( *property == newValue ) {
-		[newValue release];
 		return;
 	}
-	
-	// If defined, release first.
-	if ( *property ) 
-		[*property release];
 	
 	// Store Data.
 	*property = newValue;
@@ -128,20 +120,12 @@
 #pragma mark -
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[entity release];
-	[fetchTemplate release];
-	[variablesListAndValues release];
-	[sortDescriptors release];
-	[predicate release];
-	[super dealloc];
-}
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 
 #define JPDatabaseCreateArrayOfKeys( ____listName, ____arrayName, ____entityName  ) \
-												NSMutableArray *____arrayName = [[[NSMutableArray alloc] init] autorelease];\
+												NSMutableArray *____arrayName = [[NSMutableArray alloc] init];\
 												va_list args;\
 												va_start(args, ____listName);\
 												for (id arg = ____listName; arg != nil; arg = va_arg(args, id))\
@@ -150,7 +134,7 @@
 												{	\
 													[self throwExceptionWithCause:NSFormatString( @"The attribute '%@' doesn't exist on '%@' Entity.", arg, ____entityName)];\
 												}\
-												[____arrayName addObject:[[[NSSortDescriptor alloc] initWithKey:arg ascending:ascendingOrder] autorelease]];\
+												[____arrayName addObject:[[NSSortDescriptor alloc] initWithKey:arg ascending:ascendingOrder]];\
 												}\
 												va_end(args);\
 
@@ -158,7 +142,7 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 #define JPDatabaseCreateDictionaryOfVariables( ____listName, ____dictionaryName  ) \
-												NSMutableDictionary *____dictionaryName = [[[NSMutableDictionary alloc] init] autorelease];\
+												NSMutableDictionary *____dictionaryName = [[NSMutableDictionary alloc] init];\
 												id value = nil;\
 												va_list args;\
 												va_start(args, ____listName);\
@@ -354,19 +338,22 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id)applyEntity:(NSString*)anEntity {
-	[self setProperty:&entity withValue:[anEntity copy]];
+    NSString *localEntity = anEntity;
+	[self setProperty:&localEntity withValue:[anEntity copy]];
 	return self;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyFetchTemplate:(NSString*)anFetchRequest {
-	[self setProperty:&fetchTemplate withValue:[anFetchRequest copy]];
+    NSString *localFetchRequest = anFetchRequest;
+	[self setProperty:&localFetchRequest withValue:[anFetchRequest copy]];
 	return self;
 }
 	 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyFetchReplaceWithDictionary:(NSDictionary*)anDictionary {
-	[self setProperty:&variablesListAndValues withValue:[anDictionary retain]];
+    NSMutableDictionary *localVariablesListAndValues = variablesListAndValues;
+	[self setProperty:&localVariablesListAndValues withValue:anDictionary];
 	return self;
 }
 
@@ -382,7 +369,8 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 -(id)applyPredicate:(NSPredicate*)anPredicate {
-	[self setProperty:&predicate withValue:[anPredicate retain]];
+    NSPredicate *localPredicate = anPredicate;
+	[self setProperty:&localPredicate withValue:anPredicate];
 	return self;
 }
 
@@ -417,7 +405,8 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 	}
 	
 	//// //// ////// //// //// //// //// ////// //// //// //// //// //
-	[self setProperty:&sortDescriptors withValue:[anArray retain]];
+    NSMutableArray *localSortDescriptors = sortDescriptors;
+	[self setProperty:&localSortDescriptors withValue:anArray];
 	return self;
 }
 
@@ -438,7 +427,7 @@ replaceFetchWithDictionary:(NSDictionary*)anDictionary  arrayOfSortDescriptors:(
 
 	// Alloc if needed it.
 	if ( _NOT_ sortDescriptors ) 
-		sortDescriptors = [[NSMutableDictionary dictionary] retain];
+		sortDescriptors = [NSMutableDictionary dictionary];
 	
 	// Add it.
 	[sortDescriptors addObject:[NSSortDescriptor sortDescriptorWithKey:anKey ascending:ascendingOrder]];

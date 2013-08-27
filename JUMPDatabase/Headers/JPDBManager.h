@@ -38,7 +38,7 @@
 	
 	// Core Data Objects.
 	NSManagedObjectModel *managedObjectModel;
-	NSManagedObjectContext *managedObjectContext;		
+	NSManagedObjectContext *__weak managedObjectContext;		
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 	// Automatically Commit.
@@ -57,7 +57,7 @@
 /**
  * Core Data Managed Object Context
  */
-@property(readonly) NSManagedObjectContext *managedObjectContext;		
+@property(weak, readonly) NSManagedObjectContext *managedObjectContext;		
 
 /**
  * Core Data Persistent Store Coordinator
