@@ -54,16 +54,14 @@
 #pragma mark Methods.
 ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// ////////// 
 -(void)setMessage:(id)variableList, ... {
-	// Release if defined.
-	if ( message ) 
-		message = nil;
-	
+    // Arguments.
+    va_list args;
+    
 	// If nil, doesn't set.
-	if ( variableList == nil ) 
+	if ( variableList == nil || args == nil)
 		return;
 	
 	// Set Message formatted.
-	va_list args;
 	message = [NSString stringWithFormat:variableList, args];
 }
 
