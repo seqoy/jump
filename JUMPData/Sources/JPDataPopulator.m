@@ -61,9 +61,7 @@
 		else {
 			Warn( @"Object (%@) doesn't respond to Relationship add method (%@).", NSStringFromClass([anObject class]) , NSStringFromSelector(anSelector) );
 		}
-		
 	}
-	
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -288,7 +286,7 @@
 				//////  //// //// ////// //// ////// //// ///////////
 				// Error string.                                    //
 				NSString *errorMessage;                             //////// //// //// //// //// //// 
-
+                                                                                                   //
 				// Error Message.
                 errorMessage = [NSString stringWithFormat:@"Can't set the key-value (%@) for Object (%@).\nMore Info: %@", dataKey, NSStringFromClass([anObject class]), [exception reason]];
 				
@@ -432,7 +430,6 @@
 +(id)populateObject:(id)anObject withJSONString:(NSString*)anJSONString usingMap:(NSDictionary*)anMap {
 	return [self populateObject:anObject withJSONString:anJSONString usingMap:anMap withDelegate:nil];
 }
-
 
 @end
 ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ////

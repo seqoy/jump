@@ -299,7 +299,7 @@
 	[aLogger setParent:parent];  // found a parent, set it for this logger
 }
 
-- (void) updateChildren:(NSMutableArray *) node withParent:(L4Logger *) newLogger
+- (void) updateChildren:(NSMutableArray *)node withParent:(L4Logger *) newLogger
 {
 	int i;
 	int last = [node count];
@@ -311,7 +311,6 @@
 		// If the child's parent's name starts with the name of the new logger then its a child of the new logger leave the child alone, we'll get
 		// to the child's parent in this list.  Otherwise the parent is higher & insert the new logger.  All children that go through this same
 		// middle node, that don't have an already lower parent, should all point to the same higher parent.  If not, something is wrong.
-		//
 		if( ![[[child parent] name] hasPrefix:[newLogger name]] ) {
 			[newLogger setParent:[child parent]];
 			[child setParent:newLogger];
@@ -320,4 +319,3 @@
 }
 
 @end
-

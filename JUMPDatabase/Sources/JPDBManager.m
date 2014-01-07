@@ -245,6 +245,14 @@
     if (persistentStoreCoordinator != nil) {
         return persistentStoreCoordinator;
     }
+    
+    //
+    // We're waiting until Protected Data is Available before try to start the Core Data environment.
+    // More info here: http://stackoverflow.com/questions/12845790/how-to-debug-handle-intermittent-authorization-denied-and-disk-i-o-errors-wh
+    //
+    while(![[UIApplication sharedApplication] isProtectedDataAvailable]) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5f]];
+    }
 	
 	////// ////// ////// ////// ////// ////// ////// ////// ////// ////// //////
 	
@@ -534,23 +542,28 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
-// Commit al pendent operations to the persistent store.
+// Commit all pendent operations to the persistent store.
 -(void)commit {
-	NSLog( @"Saving Changes To Database.");
-	
-	// Error Control.                              
-	NSError *anError = nil;
-	
-	//// //// //// //// //// //// //// /////// //// //// //// //// //// //// ///
-	// Performs the commit action for the application, which is to send
-	// the save: message to the Application's Managed Object Context.
-	if ( ! [[self managedObjectContext] save:&anError] ) {
-		//Warn( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
-        NSLog( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
-		
-		// Notificate the error.
-		[self notificateError:anError];
-	}
+    
+    // We need to have the full environment working to commit.
+    if ( managedObjectModel && managedObjectContext && persistentStoreCoordinator) {
+
+        NSLog( @"Saving Changes To Database.");
+        
+        // Error Control.
+        NSError *anError = nil;
+        
+        //// //// //// //// //// //// //// /////// //// //// //// //// //// //// ///
+        // Performs the commit action for the application, which is to send
+        // the save: message to the Application's Managed Object Context.
+        if ( ! [[self managedObjectContext] save:&anError] ) {
+            //Warn( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
+            NSLog( @"Commit Error: %@.\n\n. Full Error Description:\n\n %@", [anError localizedDescription], anError );
+            
+            // Notificate the error.
+            [self notificateError:anError];
+        }
+    }
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //
