@@ -1,0 +1,3 @@
+[submodule "coredata-threadsafe"]
+	path = coredata-threadsafe
+	url = git@github.com:seqoy/coredata-threadsafe.git
