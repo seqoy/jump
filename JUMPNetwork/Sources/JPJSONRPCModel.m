@@ -24,7 +24,7 @@
 #pragma mark Init Methods.
 /////// ////// ////// ////// ////// ////// ////// ////// ////// /////// ////// ////// ////// ////// ////// ////// ////// ////// 
 + (id) init {
-    return [[[self alloc] init] autorelease];
+    return [[self alloc] init];
 }
 
 /////// ////// ////// ////// ////// ////// ////// ////// ////// /////// ////// ////// ////// ////// ////// ////// ////// ////// 
@@ -36,11 +36,8 @@
     if ( anError == error )
         return;
     
-    // If exist, release.
-    if ( error ) [error release];
-    
     // Assign new value, retaining.
-    error = [anError retain];
+    error = anError;
     
     // If is no nil, invalidate the result.
     if ( anError != nil )
@@ -52,29 +49,13 @@
     // No changes.
     if ( anResult == result )
         return;
-    
-    // If exist, release.
-    if ( result ) [result release];
-    
+        
     // Assign new value, retaining.
-    result = [anResult retain];
+    result = anResult;
     
     // If is no nil, invalidate the error.
     if ( anResult != nil )
         [self setError:nil];
-}
-
-/////// ////// ////// ////// ////// ////// ////// ////// ////// /////// ////// ////// ////// ////// ////// ////// ////// ////// 
-#pragma mark -
-#pragma mark Memory Methods.
-/////// ////// ////// ////// ////// ////// ////// ////// ////// /////// ////// ////// ////// ////// ////// ////// ////// ////// 
-- (void) dealloc
-{
-    [theId release];
-    [version release];
-    [result release];
-    [error release];
-    [super dealloc];
 }
 
 @end

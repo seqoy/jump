@@ -25,7 +25,7 @@
 		urlString = [NSString stringWithFormat:@"%@/%@%@", [ASICloudFilesRequest storageURL], containerName, queryString];
 	}
 
-	ASICloudFilesContainerRequest *request = [[[ASICloudFilesContainerRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesContainerRequest *request = [[ASICloudFilesContainerRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	return request;
@@ -88,7 +88,7 @@
 		return xmlParserDelegate.containerObjects;
 	}
 	
-	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:[self responseData]] autorelease];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[self responseData]];
 	if (xmlParserDelegate == nil) {
 		xmlParserDelegate = [[ASICloudFilesContainerXMLParserDelegate alloc] init];
 	}
@@ -118,17 +118,6 @@
 + (id)deleteContainerRequest:(NSString *)containerName {
 	ASICloudFilesContainerRequest *request = [ASICloudFilesContainerRequest storageRequestWithMethod:@"DELETE" containerName:containerName queryString:@""];
 	return request;
-}
-
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc {
-	[currentElement release];
-	[currentContent release];
-	[currentObject release];
-	[xmlParserDelegate release];
-	[super dealloc];
 }
 
 @end

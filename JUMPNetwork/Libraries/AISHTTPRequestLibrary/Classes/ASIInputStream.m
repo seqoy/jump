@@ -23,7 +23,7 @@ static NSLock *readLock = nil;
 
 + (id)inputStreamWithFileAtPath:(NSString *)path request:(ASIHTTPRequest *)theRequest
 {
-	ASIInputStream *theStream = [[[self alloc] init] autorelease];
+	ASIInputStream *theStream = [[self alloc] init];
 	[theStream setRequest:theRequest];
 	[theStream setStream:[NSInputStream inputStreamWithFileAtPath:path]];
 	return theStream;
@@ -31,16 +31,10 @@ static NSLock *readLock = nil;
 
 + (id)inputStreamWithData:(NSData *)data request:(ASIHTTPRequest *)theRequest
 {
-	ASIInputStream *theStream = [[[self alloc] init] autorelease];
+	ASIInputStream *theStream = [[self alloc] init];
 	[theStream setRequest:theRequest];
 	[theStream setStream:[NSInputStream inputStreamWithData:data]];
 	return theStream;
-}
-
-- (void)dealloc
-{
-	[stream release];
-	[super dealloc];
 }
 
 // Called when CFNetwork wants to read more of our request body

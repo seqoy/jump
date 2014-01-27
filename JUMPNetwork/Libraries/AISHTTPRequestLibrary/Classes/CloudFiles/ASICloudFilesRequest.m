@@ -52,7 +52,7 @@ static NSRecursiveLock *accessDetailsLock = nil;
 + (id)authenticationRequest
 {
 	[accessDetailsLock lock];
-	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:rackspaceCloudAuthURL]] autorelease];
+	ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:rackspaceCloudAuthURL]];
 	[request addRequestHeader:@"X-Auth-User" value:username];
 	[request addRequestHeader:@"X-Auth-Key" value:apiKey];
 	[accessDetailsLock unlock];
@@ -89,8 +89,7 @@ static NSRecursiveLock *accessDetailsLock = nil;
 + (void)setUsername:(NSString *)newUsername
 {
 	[accessDetailsLock lock];
-	[username release];
-	username = [newUsername retain];
+	username = newUsername;
 	[accessDetailsLock unlock];
 }
 
@@ -101,8 +100,7 @@ static NSRecursiveLock *accessDetailsLock = nil;
 + (void)setApiKey:(NSString *)newApiKey
 {
 	[accessDetailsLock lock];
-	[apiKey release];
-	apiKey = [newApiKey retain];
+    apiKey = newApiKey;
 	[accessDetailsLock unlock];
 }
 
@@ -117,8 +115,8 @@ static NSRecursiveLock *accessDetailsLock = nil;
 	NSMutableDictionary *threadDict = [[NSThread currentThread] threadDictionary];
 	NSDateFormatter *dateFormatter = [threadDict objectForKey:@"ASICloudFilesResponseDateFormatter"];
 	if (dateFormatter == nil) {
-		dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-		[dateFormatter setLocale:[[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"] autorelease]];
+		dateFormatter = [[NSDateFormatter alloc] init];
+		[dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
 		// example: 2009-11-04T19:46:20.192723
 		[dateFormatter setDateFormat:@"yyyy-MM-dd'T'H:mm:ss.SSSSSS"];
 		[threadDict setObject:dateFormatter forKey:@"ASICloudFilesResponseDateFormatter"];

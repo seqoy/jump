@@ -19,7 +19,7 @@
 
 + (id)decompressor
 {
-	ASIDataDecompressor *decompressor = [[[self alloc] init] autorelease];
+	ASIDataDecompressor *decompressor = [[self alloc] init];
 	[decompressor setupStream];
 	return decompressor;
 }
@@ -29,7 +29,7 @@
 	if (streamReady) {
 		[self closeStream];
 	}
-	[super dealloc];
+	
 }
 
 - (NSError *)setupStream
@@ -121,7 +121,7 @@
 
 + (BOOL)uncompressDataFromFile:(NSString *)sourcePath toFile:(NSString *)destinationPath error:(NSError **)err
 {
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	// Create an empty file at the destination path
 	if (![fileManager createFileAtPath:destinationPath contents:[NSData data] attributes:nil]) {

@@ -13,21 +13,11 @@
 
 + (id)objectWithBucket:(NSString *)theBucket
 {
-	ASIS3BucketObject *object = [[[self alloc] init] autorelease];
+	ASIS3BucketObject *object = [[self alloc] init];
 	[object setBucket:theBucket];
 	return object;
 }
 
-- (void)dealloc
-{
-	[bucket release];
-	[key release];
-	[lastModified release];
-	[ETag release];
-	[ownerID release];
-	[ownerName release];
-	[super dealloc];
-}
 
 - (ASIS3ObjectRequest *)GETRequest
 {

@@ -41,17 +41,17 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 +(id)initWithMethod:(NSString*)anMethod {
-	return [[[self alloc] initWithData:nil withMethod:anMethod] autorelease];
+	return [[self alloc] initWithData:nil withMethod:anMethod];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 +(id)initWithData:(NSData*)anData {
-	return [[[self alloc] initWithData:anData withMethod:nil] autorelease];
+	return [[self alloc] initWithData:anData withMethod:nil];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 +(id)initWithData:(NSData*)anData withMethod:(NSString*)anMethod {
-	return [[[self alloc] initWithData:anData withMethod:anMethod] autorelease];
+	return [[self alloc] initWithData:anData withMethod:anMethod];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -75,19 +75,6 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id<JPPipelineFuture>)getFuture {
     return future;
-}
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[requestMethod release], requestMethod = nil;
-	[userAgent release], userAgent = nil;
-	[dataToSend release], dataToSend = nil;
-	[transportURL release], transportURL = nil;
-	[contentType release], contentType = nil;
-    [(id)future release], future = nil;
-	[super dealloc];
 }
 
 @end

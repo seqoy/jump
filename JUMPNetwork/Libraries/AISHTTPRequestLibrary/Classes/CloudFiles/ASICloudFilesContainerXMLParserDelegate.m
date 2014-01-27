@@ -58,15 +58,4 @@
 	[self setCurrentContent:[[self currentContent] stringByAppendingString:string]];
 }
 
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc {
-	[containerObjects release];
-	[currentElement release];
-	[currentContent release];
-	[currentObject release];
-	[super dealloc];
-}
-
 @end

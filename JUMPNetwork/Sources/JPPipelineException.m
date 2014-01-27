@@ -21,7 +21,7 @@
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)initWithReason:(NSString*)anReason {
-	return [[[self alloc] initWithName:@"PipelineException"
-							   reason:anReason userInfo:nil] autorelease];
+	return [[self alloc] initWithName:@"PipelineException"
+							   reason:anReason userInfo:nil];
 }
 @end

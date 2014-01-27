@@ -24,7 +24,7 @@
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)init {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (id) init {
@@ -154,10 +154,10 @@
 	if ( [event getFuture] ) {
 
 		// If some future is defined.
-        if ( future ) [(id)future release];
+        if ( future ) future = nil;
         
 		// Add as Future Object.
-        future = [(id)[event getFuture] retain];
+        future = (id)[event getFuture];
 	}
 }
 
@@ -210,7 +210,7 @@
 - (void)requestCancelled:(ASIHTTPRequest *)request {
     
     // Release after cancel.
-    [requester release], requester = nil;
+    requester = nil;
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Cancelled.
@@ -251,17 +251,11 @@
 #pragma mark Memory Management Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
-	
+    
 	// Clean up requester and cancel.
 	if ( requester ) 
         [requester clearDelegatesAndCancel];
 
-	// Release.
-	[requester release], requester = nil;
-    [currentProgress release], currentProgress = nil;
-
-	[(id)future release], future = nil;
-	[super dealloc];
 }
 
 

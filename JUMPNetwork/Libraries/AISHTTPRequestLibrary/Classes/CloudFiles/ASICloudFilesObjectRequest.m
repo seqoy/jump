@@ -18,7 +18,7 @@
 
 + (id)storageRequestWithMethod:(NSString *)method containerName:(NSString *)containerName {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@", [ASICloudFilesRequest storageURL], containerName];
-	ASICloudFilesObjectRequest *request = [[[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesObjectRequest *request = [[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	request.containerName = containerName;
@@ -27,7 +27,7 @@
 
 + (id)storageRequestWithMethod:(NSString *)method containerName:(NSString *)containerName queryString:(NSString *)queryString {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@%@", [ASICloudFilesRequest storageURL], containerName, queryString];
-	ASICloudFilesObjectRequest *request = [[[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesObjectRequest *request = [[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	request.containerName = containerName;
@@ -36,7 +36,7 @@
 
 + (id)storageRequestWithMethod:(NSString *)method containerName:(NSString *)containerName objectPath:(NSString *)objectPath {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@/%@", [ASICloudFilesRequest storageURL], containerName, objectPath];
-	ASICloudFilesObjectRequest *request = [[[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesObjectRequest *request = [[ASICloudFilesObjectRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	request.containerName = containerName;
@@ -100,9 +100,9 @@
 	if (objects) {
 		return objects;
 	}
-	objects = [[[NSMutableArray alloc] init] autorelease];
+	objects = [[NSMutableArray alloc] init];
 	
-	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:[self responseData]] autorelease];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[self responseData]];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
 	[parser setShouldReportNamespacePrefixes:NO];
@@ -244,18 +244,6 @@
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
 	[self setCurrentContent:[[self currentContent] stringByAppendingString:string]];
-}
-
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc {
-	[currentElement release];
-	[currentContent release];
-	[currentObject release];
-	[accountName release];
-	[containerName release];
-	[super dealloc];
 }
 
 @end

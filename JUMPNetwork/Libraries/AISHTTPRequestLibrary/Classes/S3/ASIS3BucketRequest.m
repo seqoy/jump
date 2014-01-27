@@ -23,21 +23,21 @@
 - (id)initWithURL:(NSURL *)newURL
 {
 	self = [super initWithURL:newURL];
-	[self setObjects:[[[NSMutableArray alloc] init] autorelease]];
-	[self setCommonPrefixes:[[[NSMutableArray alloc] init] autorelease]];
+	[self setObjects:[[NSMutableArray alloc] init]];
+	[self setCommonPrefixes:[[NSMutableArray alloc] init]];
 	return self;
 }
 
 + (id)requestWithBucket:(NSString *)theBucket
 {
-	ASIS3BucketRequest *request = [[[self alloc] initWithURL:nil] autorelease];
+	ASIS3BucketRequest *request = [[self alloc] initWithURL:nil];
 	[request setBucket:theBucket];
 	return request;
 }
 
 + (id)requestWithBucket:(NSString *)theBucket subResource:(NSString *)theSubResource
 {
-	ASIS3BucketRequest *request = [[[self alloc] initWithURL:nil] autorelease];
+	ASIS3BucketRequest *request = [[self alloc] initWithURL:nil];
 	[request setBucket:theBucket];
 	[request setSubResource:theSubResource];
 	return request;
@@ -58,18 +58,6 @@
 	return request;
 }
 
-- (void)dealloc
-{
-	[currentObject release];
-	[objects release];
-	[commonPrefixes release];
-	[prefix release];
-	[marker release];
-	[delimiter release];
-	[subResource release];
-	[bucket release];
-	[super dealloc];
-}
 
 - (NSString *)canonicalizedResource
 {
@@ -87,7 +75,7 @@
 	} else {
 		baseURL = [NSString stringWithFormat:@"%@://%@.%@",[self requestScheme],[self bucket],[[self class] S3Host]];
 	}
-	NSMutableArray *queryParts = [[[NSMutableArray alloc] init] autorelease];
+	NSMutableArray *queryParts = [[NSMutableArray alloc] init];
 	if ([self prefix]) {
 		[queryParts addObject:[NSString stringWithFormat:@"prefix=%@",[[self prefix] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
 	}

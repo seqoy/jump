@@ -37,7 +37,7 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 	self = [super init];
 	[self setShouldRespectCacheControlHeaders:YES];
 	[self setDefaultCachePolicy:ASIUseDefaultCachePolicy];
-	[self setAccessLock:[[[NSRecursiveLock alloc] init] autorelease]];
+	[self setAccessLock:[[NSRecursiveLock alloc] init]];
 	return self;
 }
 
@@ -54,17 +54,10 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 	return sharedCache;
 }
 
-- (void)dealloc
-{
-	[storagePath release];
-	[accessLock release];
-	[super dealloc];
-}
-
 - (NSString *)storagePath
 {
 	[[self accessLock] lock];
-	NSString *p = [[storagePath retain] autorelease];
+	NSString *p = storagePath;
 	[[self accessLock] unlock];
 	return p;
 }
@@ -74,10 +67,9 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 {
 	[[self accessLock] lock];
 	[self clearCachedResponsesForStoragePolicy:ASICacheForSessionDurationCacheStoragePolicy];
-	[storagePath release];
-	storagePath = [path retain];
+	storagePath = path;
 
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	BOOL isDirectory = NO;
 	NSArray *directories = [NSArray arrayWithObjects:path,[path stringByAppendingPathComponent:sessionCacheFolder],[path stringByAppendingPathComponent:permanentCacheFolder],nil];
@@ -176,7 +168,6 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
             [manager removeItemAtPath:dataPath error:&error];
         }
         [manager copyItemAtPath:[request downloadDestinationPath] toPath:dataPath error:&error];
-        [manager release];
 	}
 	[[self accessLock] unlock];
 }
@@ -231,7 +222,7 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 		return nil;
 	}
 
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	// Look in the session store
 	NSString *dataPath = [[[self storagePath] stringByAppendingPathComponent:sessionCacheFolder] stringByAppendingPathComponent:file];
@@ -293,7 +284,7 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 		[[self accessLock] unlock];
 		return;
 	}
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	NSString *path = [self pathToCachedResponseHeadersForURL:url];
 	if (path) {
@@ -400,7 +391,7 @@ static NSArray *fileExtensionsToHandleAsHTML = nil;
 	}
 	NSString *path = [[self storagePath] stringByAppendingPathComponent:(storagePolicy == ASICacheForSessionDurationCacheStoragePolicy ? sessionCacheFolder : permanentCacheFolder)];
 
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	BOOL isDirectory = NO;
 	BOOL exists = [fileManager fileExistsAtPath:path isDirectory:&isDirectory];

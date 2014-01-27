@@ -95,8 +95,8 @@
 	/////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// /////////// 
 	if (head == tail) {
 		// Release Head and Tail.
-		[head release], head = nil;
-		[tail release], tail = nil;
+        head = nil;
+        tail = nil;
 		[contextObjectsMap removeAllObjects];
 	} else if (ctx == head) {
 		[self removeFirst];
@@ -165,7 +165,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)init {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -541,7 +541,7 @@
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the last element."];
 	}
 	
-	JPDefaultHandlerContext *oldTail = [[tail retain] autorelease];
+	JPDefaultHandlerContext *oldTail = tail;
 	if (oldTail == nil) {
 		[NSException raise:@"NoSuchElementException" format:@"Trying to remove the last element."];
 	}
@@ -705,22 +705,6 @@
 		}
 	}
 	return realCtx;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[contextObjectsMap release], contextObjectsMap = nil;
-	[finalObjects release], finalObjects = nil;
-    
-	[(id)sink release], sink = nil;
-    
-    [progress release], progress = nil;
-    [sectionedProgress release], sectionedProgress = nil;
-
-	[super dealloc];
 }
 
 @end

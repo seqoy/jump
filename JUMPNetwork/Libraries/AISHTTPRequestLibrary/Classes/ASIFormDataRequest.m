@@ -30,7 +30,7 @@
 #pragma mark utilities
 - (NSString*)encodeURL:(NSString *)string
 {
-	NSString *newString = [NSMakeCollectable(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)string, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding([self stringEncoding]))) autorelease];
+	NSString *newString = CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)string, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding([self stringEncoding])));
 	if (newString) {
 		return newString;
 	}
@@ -41,7 +41,7 @@
 
 + (id)requestWithURL:(NSURL *)newURL
 {
-	return [[[self alloc] initWithURL:newURL] autorelease];
+	return [[self alloc] initWithURL:newURL];
 }
 
 - (id)initWithURL:(NSURL *)newURL
@@ -53,16 +53,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-#if DEBUG_FORM_DATA_REQUEST
-	[debugBodyString release]; 
-#endif
-	
-	[postData release];
-	[fileData release];
-	[super dealloc];
-}
 
 #pragma mark setup request
 
@@ -103,7 +93,7 @@
 - (void)addFile:(NSString *)filePath withFileName:(NSString *)fileName andContentType:(NSString *)contentType forKey:(NSString *)key
 {
 	BOOL isDirectory = NO;
-	BOOL fileExists = [[[[NSFileManager alloc] init] autorelease] fileExistsAtPath:filePath isDirectory:&isDirectory];
+	BOOL fileExists = [[[NSFileManager alloc] init] fileExistsAtPath:filePath isDirectory:&isDirectory];
 	if (!fileExists || isDirectory) {
 		[self failWithError:[NSError errorWithDomain:NetworkRequestErrorDomain code:ASIInternalErrorWhileBuildingRequestType userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"No file exists at %@",filePath],NSLocalizedDescriptionKey,nil]]];
 	}
@@ -224,7 +214,7 @@
 	
 	// We don't bother to check if post data contains the boundary, since it's pretty unlikely that it does.
 	CFUUIDRef uuid = CFUUIDCreate(nil);
-	NSString *uuidString = [(NSString*)CFUUIDCreateString(nil, uuid) autorelease];
+	NSString *uuidString = (NSString*)CFBridgingRelease(CFUUIDCreateString(nil, uuid));
 	CFRelease(uuid);
 	NSString *stringBoundary = [NSString stringWithFormat:@"0xKhTmLbOuNdArY-%@",uuidString];
 	
@@ -321,7 +311,7 @@
 - (void)appendPostDataFromFile:(NSString *)file
 {
 	NSError *err = nil;
-	unsigned long long fileSize = [[[[[[NSFileManager alloc] init] autorelease] attributesOfItemAtPath:file error:&err] objectForKey:NSFileSize] unsignedLongLongValue];
+	unsigned long long fileSize = [[[[[NSFileManager alloc] init] attributesOfItemAtPath:file error:&err] objectForKey:NSFileSize] unsignedLongLongValue];
 	if (err) {
 		[self addToDebugBody:[NSString stringWithFormat:@"[Error: Failed to obtain the size of the file at '%@']",file]];
 	} else {
@@ -344,8 +334,8 @@
 - (id)copyWithZone:(NSZone *)zone
 {
 	ASIFormDataRequest *newRequest = [super copyWithZone:zone];
-	[newRequest setPostData:[[[self postData] mutableCopyWithZone:zone] autorelease]];
-	[newRequest setFileData:[[[self fileData] mutableCopyWithZone:zone] autorelease]];
+	[newRequest setPostData:[[self postData] mutableCopyWithZone:zone]];
+	[newRequest setFileData:[[self fileData] mutableCopyWithZone:zone]];
 	[newRequest setPostFormat:[self postFormat]];
 	[newRequest setStringEncoding:[self stringEncoding]];
 	[newRequest setRequestMethod:[self requestMethod]];

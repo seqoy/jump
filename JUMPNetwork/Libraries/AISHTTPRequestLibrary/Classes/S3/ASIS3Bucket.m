@@ -13,20 +13,12 @@
 
 + (id)bucketWithOwnerID:(NSString *)anOwnerID ownerName:(NSString *)anOwnerName
 {
-	ASIS3Bucket *bucket = [[[self alloc] init] autorelease];
+	ASIS3Bucket *bucket = [[self alloc] init];
 	[bucket setOwnerID:anOwnerID];
 	[bucket setOwnerName:anOwnerName];
 	return bucket;
 }
 
-- (void)dealloc
-{
-	[name release];
-	[creationDate release];
-	[ownerID release];
-	[ownerName release];
-	[super dealloc];
-}
 
 - (NSString *)description
 {

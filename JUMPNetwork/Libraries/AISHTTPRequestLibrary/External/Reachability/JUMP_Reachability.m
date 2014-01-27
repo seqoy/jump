@@ -209,8 +209,6 @@ static void logNetworkStatus_(const char *name, int line, NetworkStatus status) 
 	
 	self.key = nil;
 	
-	[super dealloc];
-	
 } // dealloc
 
 
@@ -251,24 +249,21 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
 	#pragma unused (target, flags)
 	NSCAssert(info, @"info was NULL in ReachabilityCallback");
-	NSCAssert([(NSObject*) info isKindOfClass: [JUMP_Reachability class]], @"info was the wrong class in ReachabilityCallback");
 	
 	//We're on the main RunLoop, so an NSAutoreleasePool is not necessary, but is added defensively
 	// in case someone uses the Reachablity object in a different thread.
-	NSAutoreleasePool* pool = [NSAutoreleasePool new];
 	
 	// Post a notification to notify the client that the network reachability changed.
 	[[NSNotificationCenter defaultCenter] postNotificationName: kReachabilityChangedNotification 
-														object: (JUMP_Reachability *) info];
+														object: (__bridge JUMP_Reachability *) info];
 	
-	[pool release];
 
 } // ReachabilityCallback()
 
 
 - (BOOL) startNotifier {
 	
-	SCNetworkReachabilityContext	context = {0, self, NULL, NULL, NULL};
+	SCNetworkReachabilityContext	context = {0, CFBridgingRetain(self), NULL, NULL, NULL};
 	
 	if(SCNetworkReachabilitySetCallback(reachabilityRef, ReachabilityCallback, &context)) {
 		
@@ -313,7 +308,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	
 	if (ref) {
 		
-		JUMP_Reachability *r = [[[self alloc] initWithReachabilityRef: ref] autorelease];
+		JUMP_Reachability *r = [[self alloc] initWithReachabilityRef: ref];
 		
 		r.key = hostName;
 
@@ -351,7 +346,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
 	if (ref) {
 		
-		JUMP_Reachability *r = [[[self alloc] initWithReachabilityRef: ref] autorelease];
+		JUMP_Reachability *r = [[self alloc] initWithReachabilityRef: ref];
 		
 		r.key = [self makeAddressKey: hostAddress->sin_addr.s_addr];
 		

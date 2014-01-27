@@ -21,25 +21,17 @@
 
 + (id)serviceRequest
 {
-	ASIS3ServiceRequest *request = [[[self alloc] initWithURL:nil] autorelease];
+	ASIS3ServiceRequest *request = [[self alloc] initWithURL:nil];
 	return request;
 }
 
 - (id)initWithURL:(NSURL *)newURL
 {
 	self = [super initWithURL:newURL];
-	[self setBuckets:[[[NSMutableArray alloc] init] autorelease]];
+	[self setBuckets:[[NSMutableArray alloc] init]];
 	return self;
 }
 
-- (void)dealloc
-{
-	[buckets release];
-	[currentBucket release];
-	[ownerID release];
-	[ownerName release];
-	[super dealloc];
-}
 
 - (void)buildURL
 {

@@ -23,7 +23,7 @@ NSString *const ASIS3StorageClassReducedRedundancy = @"REDUCED_REDUNDANCY";
 
 + (id)requestWithBucket:(NSString *)theBucket key:(NSString *)theKey
 {
-	ASIS3ObjectRequest *newRequest = [[[self alloc] initWithURL:nil] autorelease];
+	ASIS3ObjectRequest *newRequest = [[self alloc] initWithURL:nil];
 	[newRequest setBucket:theBucket];
 	[newRequest setKey:theKey];
 	return newRequest;
@@ -31,7 +31,7 @@ NSString *const ASIS3StorageClassReducedRedundancy = @"REDUCED_REDUNDANCY";
 
 + (id)requestWithBucket:(NSString *)theBucket key:(NSString *)theKey subResource:(NSString *)theSubResource
 {
-	ASIS3ObjectRequest *newRequest = [[[self alloc] initWithURL:nil] autorelease];
+	ASIS3ObjectRequest *newRequest = [[self alloc] initWithURL:nil];
 	[newRequest setSubResource:theSubResource];
 	[newRequest setBucket:theBucket];
 	[newRequest setKey:theKey];
@@ -90,18 +90,6 @@ NSString *const ASIS3StorageClassReducedRedundancy = @"REDUCED_REDUNDANCY";
 	[newRequest setSubResource:[self subResource]];
 	[newRequest setStorageClass:[self storageClass]];
 	return newRequest;
-}
-
-- (void)dealloc
-{
-	[bucket release];
-	[key release];
-	[mimeType release];
-	[sourceKey release];
-	[sourceBucket release];
-	[subResource release];
-	[storageClass release];
-	[super dealloc];
 }
 
 - (void)buildURL

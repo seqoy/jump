@@ -33,22 +33,11 @@
 	
 	// Retain values.
 	method     = [anMethod copy];
-	parameters = [params retain];
+	parameters = params;
 	rpcID	   = [anID copy];
 	
 	// Content Type Setting.
 	self.contentType = @"application/json";
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[method release], method = nil;
-	[parameters release], parameters = nil;
-	[rpcID release], rpcID = nil;
-	[super dealloc];
 }
 
 

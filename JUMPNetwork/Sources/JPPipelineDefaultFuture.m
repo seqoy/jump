@@ -26,14 +26,14 @@
 - (id) init {
     self = [super init];
     if (self != nil) {
-        progress = [[NSNumber numberWithInt:0] retain];
+        progress = @(0);
     }
     return self;
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 + (id)init {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 +(id)initWithListener:(id<JPPipelineFutureListener>)anListener {
@@ -187,11 +187,8 @@
     if ( anValue == progress )
         return;
     
-    // If setted, release.
-    if ( progress ) [progress release];
-    
     // Set, copying.
-    progress = [anValue copy];
+    progress = anValue;
     
 	// Notify.
 	[self notifyListenersAndErase:NO withEvent:nil];
@@ -204,10 +201,8 @@
 	if ( [self isDone] )
 		Warn(@"Can't set Failure! This action is Done.");
 	
-	// Release older cause.
-	[cause release], cause = nil;
 	// Retain new cause.
-	cause = [anCause retain];
+	cause = anCause;
 
 	// Notify.
 	[self notifyListeners];
@@ -238,9 +233,6 @@
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 - (void) dealloc {
     [self eraseListeners];
-	[listeners release], listeners = nil;
-    [progress release], progress = nil;
-	[super dealloc];
 }
 
 @end

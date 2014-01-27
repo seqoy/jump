@@ -20,7 +20,7 @@
 
 + (id)compressor
 {
-	ASIDataCompressor *compressor = [[[self alloc] init] autorelease];
+	ASIDataCompressor *compressor = [[self alloc] init];
 	[compressor setupStream];
 	return compressor;
 }
@@ -30,7 +30,6 @@
 	if (streamReady) {
 		[self closeStream];
 	}
-	[super dealloc];
 }
 
 - (NSError *)setupStream
@@ -125,7 +124,7 @@
 
 + (BOOL)compressDataFromFile:(NSString *)sourcePath toFile:(NSString *)destinationPath error:(NSError **)err
 {
-	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
 	// Create an empty file at the destination path
 	if (![fileManager createFileAtPath:destinationPath contents:[NSData data] attributes:nil]) {

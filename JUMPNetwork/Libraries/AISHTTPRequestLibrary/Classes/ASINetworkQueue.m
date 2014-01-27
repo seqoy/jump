@@ -29,7 +29,7 @@
 
 + (id)queue
 {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 - (void)dealloc
@@ -38,8 +38,6 @@
 	for (ASIHTTPRequest *request in [self operations]) {
 		[request setQueue:nil];
 	}
-	[userInfo release];
-	[super dealloc];
 }
 
 - (void)setSuspended:(BOOL)suspend
@@ -318,7 +316,7 @@
 	[newQueue setDownloadProgressDelegate:[self downloadProgressDelegate]];
 	[newQueue setShouldCancelAllRequestsOnFailure:[self shouldCancelAllRequestsOnFailure]];
 	[newQueue setShowAccurateProgress:[self showAccurateProgress]];
-	[newQueue setUserInfo:[[[self userInfo] copyWithZone:zone] autorelease]];
+	[newQueue setUserInfo:[[self userInfo] copyWithZone:zone]];
 	return newQueue;
 }
 

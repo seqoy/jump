@@ -14,7 +14,7 @@
 
 + (id)cdnRequestWithMethod:(NSString *)method query:(NSString *)query {
 	NSString *urlString = [NSString stringWithFormat:@"%@%@", [ASICloudFilesRequest cdnManagementURL], query];
-	ASICloudFilesCDNRequest *request = [[[ASICloudFilesCDNRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesCDNRequest *request = [[ASICloudFilesCDNRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	return request;
@@ -22,7 +22,7 @@
 
 + (id)cdnRequestWithMethod:(NSString *)method containerName:(NSString *)containerName {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@", [ASICloudFilesRequest cdnManagementURL], containerName];
-	ASICloudFilesCDNRequest *request = [[[ASICloudFilesCDNRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	ASICloudFilesCDNRequest *request = [[ASICloudFilesCDNRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	[request setRequestMethod:method];
 	[request addRequestHeader:@"X-Auth-Token" value:[ASICloudFilesRequest authToken]];
 	request.containerName = containerName;
@@ -101,7 +101,7 @@
 		return xmlParserDelegate.containerObjects;
 	}
 	
-	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:[self responseData]] autorelease];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[self responseData]];
 	if (xmlParserDelegate == nil) {
 		xmlParserDelegate = [[ASICloudFilesContainerXMLParserDelegate alloc] init];
 	}
@@ -152,16 +152,6 @@
 	}
 	[request addRequestHeader:@"X-CDN-Enabled" value:cdnEnabled ? @"True" : @"False"];
 	return request;
-}
-
-#pragma mark -
-#pragma mark Memory Management
-
--(void)dealloc {
-	[accountName release];
-	[containerName release];
-	[xmlParserDelegate release];
-	[super dealloc];
 }
 
 @end

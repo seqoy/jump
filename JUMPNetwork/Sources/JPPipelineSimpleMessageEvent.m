@@ -26,7 +26,6 @@
 // When you subclass, make sure to doesn't call [super init].
 - (id)init {
 	[self doesNotRecognizeSelector:_cmd];
-	[self release];
 	return nil;
 }
 
@@ -35,7 +34,7 @@
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)initWithMessage:(id)anMessage {
-	return [[[self alloc] initWithMessage:anMessage] autorelease];
+	return [[self alloc] initWithMessage:anMessage];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -66,7 +65,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)initWithMessage:(id)anMessage andFuture:(id<JPPipelineFuture>)anFuture {
-	return [[[self alloc] initWithMessage:anMessage andFuture:anFuture] autorelease];
+	return [[self alloc] initWithMessage:anMessage andFuture:anFuture];
 }
 
 
@@ -74,16 +73,6 @@
 // Returns the Future Object which is associated with this event. 
 -(id<JPPipelineFuture>)getFuture {
 	return future;
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[message release], message = nil;
-    [(id)future release], future = nil;
-	[super dealloc];
 }
 
 

@@ -27,12 +27,11 @@
 +(id)initWithPreviousContext:(JPDefaultHandlerContext*)previousCtx andNextContext:(JPDefaultHandlerContext*)nextCtx 
 					 andName:(NSString*)anName andHandler:(id<JPPipelineHandler>)anHandler
 				withPipeline:(JPPipeline*)anPipeline {
-	return [[[JPDefaultHandlerContext alloc] initWithPreviousContext:previousCtx
+	return [[JPDefaultHandlerContext alloc] initWithPreviousContext:previousCtx
 													 andNextContext:nextCtx
 															andName:anName
 														 andHandler:anHandler
-														withPipeline:anPipeline] 
-			autorelease];
+														withPipeline:anPipeline];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -72,8 +71,7 @@
 
 		////////////////////////// ///////////////////// 
 		// Handle the Handler (daaah!), release first if needed.
-        if ( handler ) [(id)handler release];
-		handler	= [(id)anHandler retain];
+		handler	= (id)anHandler;
 		
 		// Copy values.
 		name = [anName copy];
@@ -98,7 +96,6 @@
     
     // If defined, release.
     if (progress) {
-        [progress release];   
         progress = nil;
     }
     
@@ -183,15 +180,5 @@
 	}
 }
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-	[(id)handler release];
-	[name release];
-    [progress release];
-	[super dealloc];
-}
 
 @end

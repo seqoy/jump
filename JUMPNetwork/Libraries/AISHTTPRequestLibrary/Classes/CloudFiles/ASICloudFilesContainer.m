@@ -16,16 +16,8 @@
 @synthesize cdnEnabled, ttl, cdnURL, logRetention, referrerACL, useragentACL;
 
 + (id)container {
-	ASICloudFilesContainer *container = [[[self alloc] init] autorelease];
+	ASICloudFilesContainer *container = [[self alloc] init];
 	return container;
-}
-
--(void) dealloc {
-	[name release];
-	[cdnURL release];
-	[referrerACL release];
-	[useragentACL release];
-	[super dealloc];
 }
 
 @end

@@ -436,8 +436,6 @@
 		0867D691FE84028FC02AAC07 /* JUMPNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */,
-				18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */,
 				3A78481C1326AF6E00C3374A /* Libraries */,
 				3AEF17D813183ED200BC3759 /* Sources */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -644,6 +642,8 @@
 		3A78481C1326AF6E00C3374A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */,
+				18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */,
 				18405E1113EED4A8004E6BC0 /* Reachability */,
 				18405D3913EED418004E6BC0 /* AISHTTPRequestLibrary */,
 			);
@@ -1276,6 +1276,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/JUMPNetwork.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1300,6 +1301,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/JUMPNetwork.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -25,7 +25,7 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
 #pragma mark Init Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)initWithXMLDecoderClass:(Class)anXMLProcesserClass {
-	return [[[self alloc] initWithXMLDecoderClass:anXMLProcesserClass] autorelease];
+	return [[self alloc] initWithXMLDecoderClass:anXMLProcesserClass];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -84,7 +84,7 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
         NSInteger errorCode    = ( parserError ? parserError.code   : -1 );
         
         // Create the User Info.
-        NSMutableDictionary *userInfo = [[NSMutableDictionary new] autorelease];
+        NSMutableDictionary *userInfo = [NSMutableDictionary new];
         
         // Assign the Parser Error in it, if available.
         if ( parserError ) {
