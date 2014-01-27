@@ -4568,7 +4568,8 @@ static NSOperationQueue *sharedQueue = nil;
 	for (NSNumber *bytes in bandwidthUsageTracker) {
 		totalBytes += [bytes unsignedLongValue];
 	}
-	averageBandwidthUsedPerSecond = totalBytes/measurements;		
+	if (measurements > 0)
+		averageBandwidthUsedPerSecond = totalBytes/measurements;
 }
 
 + (unsigned long)averageBandwidthUsedPerSecond
@@ -4866,7 +4867,15 @@ static NSOperationQueue *sharedQueue = nil;
   
 	// RFC 2612 says max-age must override any Expires header
 	if (maxAge) {
-		return [[NSDate date] addTimeInterval:maxAge];
+		NSDate *date = [NSDate date];
+		if ([date respondsToSelector:@selector(dateByAddingTimeInterval:)]) {
+			return [date dateByAddingTimeInterval:maxAge];
+		} else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+			return [date addTimeInterval:maxAge];
+#pragma clang diagnostic pop
+        }
 	} else {
 		NSString *expires = [responseHeaders objectForKey:@"Expires"];
 		if (expires) {
