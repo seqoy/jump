@@ -12,6 +12,19 @@ JUMP Framework is divided on different _weakly coupled_ modules. You can import 
 the modules that you want to use on your project. See [JUMP Framework Start Guide](http://seqoy.github.com/jump) to 
 learn more about it.
 
+JUMP Network Module and AFNetworking
+------------------------------------
+The JUMP Network Module was updated to start to use [AFNetworking](http://afnetworking.com/) instead of [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest/). This update introduce ARC to this module, modern Objective-C code and a more robust
+HTTP Request engine.
+
+However, when you update this you should change some minor tricks to your project:
+	- You must import the Pods.xcodeproj into your main project. It is located at JUMP/JUMPNetwork/Pods.
+	- If you use JUMP_Reachability, you must use Reachability from AFNetworking.
+	- If you use any ASIHTTPRequest error constants. You need to update to NSURLErrorDomain error constants.
+	
+Yes, a little effort. But I'm sure that worths the deal.
+
+
 Documentation
 -------------
 
