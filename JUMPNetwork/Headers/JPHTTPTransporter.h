@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 #import <Foundation/Foundation.h>
-#import "ASIHTTPRequest.h"
-#import "ASIHTTPRequestDelegate.h"
-#import "ASIProgressDelegate.h"
+#import "AFHTTPRequestOperation.h"
 
 // Transport Interfaces.
 #import "JPTransporterHTTPMessage.h"
@@ -58,10 +56,7 @@
  @copydetails JPDefaultHTTPMessage
 
  */
-@interface JPHTTPTransporter : NSObject <JPPipelineSink, ASIHTTPRequestDelegate, ASIProgressDelegate> {
-	
-	// HTTP Requester.
-	ASIHTTPRequest *requester;
+@interface JPHTTPTransporter : NSObject <JPPipelineSink> {
 	
 	// Pipeline Pointer.
 	JPPipeline *pipeline;
@@ -82,7 +77,7 @@
 @property (readonly) id<JPPipelineFuture> future;
 
 /// The HTTP Requester.
-@property (retain) ASIHTTPRequest *requester;
+@property (retain) AFHTTPRequestOperation *requester;
 
 /// Should validate any Security Certificate.
 @property (assign) BOOL validatesSecureCertificate;

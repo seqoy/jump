@@ -61,7 +61,7 @@
 	
 		// ////// ////// ////// ////// ////// ////// ////// ////// ///
 		// Create Dictionary with RPC Data.
-		NSMutableDictionary *rpcData = [NSDictionary dictionaryWithObjectsAndKeys:
+		NSMutableDictionary *rpcData = (NSMutableDictionary*)[NSDictionary dictionaryWithObjectsAndKeys:
 												[rpcMessage method]	   , @"method",
 												[rpcMessage rpcID]	   , @"id",
 												[rpcMessage parameters], @"params", nil];

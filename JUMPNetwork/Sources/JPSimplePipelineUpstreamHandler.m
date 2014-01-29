@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 #import "JPSimplePipelineUpstreamHandler.h"
+#import "JPPipeline.h"
 
 /// /// /// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ////// ///
 @implementation JPSimplePipelineUpstreamHandler

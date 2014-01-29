@@ -98,10 +98,6 @@
 		18894079138183C700EFAE98 /* JPJSONDecoderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */; };
 		18B7C88716026ADB00E4E68A /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */; };
 		18B7C88916026AF900E4E68A /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */; };
-		3A1D88C718993E4500FE883F /* JUMP_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1D88C518993E4500FE883F /* JUMP_Reachability.h */; };
-		3A1D88C818993E4500FE883F /* JUMP_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1D88C518993E4500FE883F /* JUMP_Reachability.h */; };
-		3A1D88C918993E4500FE883F /* JUMP_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D88C618993E4500FE883F /* JUMP_Reachability.m */; };
-		3A1D88CA18993E4500FE883F /* JUMP_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D88C618993E4500FE883F /* JUMP_Reachability.m */; };
 		3A7846E213268C9C00C3374A /* JPHTTPTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */; };
 		3A7846E313268C9C00C3374A /* JPHTTPTransporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */; };
 		3A7848281326AF7F00C3374A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7848271326AF7F00C3374A /* CFNetwork.framework */; };
@@ -186,8 +182,6 @@
 		18894078138183C700EFAE98 /* JPJSONDecoderHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJSONDecoderHandler.m; sourceTree = "<group>"; };
 		18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.1.2.5.dylib; sourceTree = DEVELOPER_DIR; };
-		3A1D88C518993E4500FE883F /* JUMP_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUMP_Reachability.h; sourceTree = "<group>"; };
-		3A1D88C618993E4500FE883F /* JUMP_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUMP_Reachability.m; sourceTree = "<group>"; };
 		3A7846E013268C9C00C3374A /* JPHTTPTransporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPHTTPTransporter.h; path = ../Headers/JPHTTPTransporter.h; sourceTree = "<group>"; };
 		3A7846E113268C9C00C3374A /* JPHTTPTransporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPHTTPTransporter.m; sourceTree = "<group>"; };
 		3A7848271326AF7F00C3374A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -412,16 +406,6 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		3A1D88C418993E4500FE883F /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				3A1D88C518993E4500FE883F /* JUMP_Reachability.h */,
-				3A1D88C618993E4500FE883F /* JUMP_Reachability.m */,
-			);
-			name = Reachability;
-			path = Libraries/Reachability;
-			sourceTree = "<group>";
-		};
 		3A7846CC13268C4F00C3374A /* I|O Transporters */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,7 +420,6 @@
 		3A78481C1326AF6E00C3374A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				3A1D88C418993E4500FE883F /* Reachability */,
 				18B7C88816026AF900E4E68A /* libz.1.2.5.dylib */,
 				18B7C88616026ADB00E4E68A /* libz.1.2.5.dylib */,
 			);
@@ -712,7 +695,6 @@
 				187E203C140FCAE9003D1652 /* JPPipelineFuture.h in Headers */,
 				187E203D140FCAE9003D1652 /* JPPipelineFutureListener.h in Headers */,
 				187E203E140FCAE9003D1652 /* JPPipelineSink.h in Headers */,
-				3A1D88C818993E4500FE883F /* JUMP_Reachability.h in Headers */,
 				187E203F140FCAE9003D1652 /* JPPipelineListenerNotification.h in Headers */,
 				187E2040140FCAE9003D1652 /* JPPipelineHandlerContext.h in Headers */,
 				187E2041140FCAE9003D1652 /* JPPipelineNotification.h in Headers */,
@@ -765,7 +747,6 @@
 				3AEF187313183ED200BC3759 /* JPPipelineFuture.h in Headers */,
 				3AEF187413183ED200BC3759 /* JPPipelineFutureListener.h in Headers */,
 				3AEF187513183ED200BC3759 /* JPPipelineSink.h in Headers */,
-				3A1D88C718993E4500FE883F /* JUMP_Reachability.h in Headers */,
 				3AEF187713183ED200BC3759 /* JPPipelineListenerNotification.h in Headers */,
 				3AEF187813183ED200BC3759 /* JPPipelineHandlerContext.h in Headers */,
 				3AEF187913183ED200BC3759 /* JPPipelineNotification.h in Headers */,
@@ -897,7 +878,6 @@
 				187E206E140FCAE9003D1652 /* JPPipelineException.m in Sources */,
 				187E206F140FCAE9003D1652 /* JPPipelineSimpleMessageEvent.m in Sources */,
 				187E2070140FCAE9003D1652 /* JPPipelineUpstreamMessageEvent.m in Sources */,
-				3A1D88CA18993E4500FE883F /* JUMP_Reachability.m in Sources */,
 				187E2071140FCAE9003D1652 /* JPPipelineDowstreamMessageEvent.m in Sources */,
 				187E2072140FCAE9003D1652 /* JPDefaultPipelineExceptionEvent.m in Sources */,
 				187E2073140FCAE9003D1652 /* JPDefaultCancelEvent.m in Sources */,
@@ -930,7 +910,6 @@
 				3AEF185113183ED200BC3759 /* JPPipelineException.m in Sources */,
 				3AEF185213183ED200BC3759 /* JPPipelineSimpleMessageEvent.m in Sources */,
 				3AEF185413183ED200BC3759 /* JPPipelineUpstreamMessageEvent.m in Sources */,
-				3A1D88C918993E4500FE883F /* JUMP_Reachability.m in Sources */,
 				3AEF185613183ED200BC3759 /* JPPipelineDowstreamMessageEvent.m in Sources */,
 				3AEF185813183ED200BC3759 /* JPDefaultPipelineExceptionEvent.m in Sources */,
 				3AEF185A13183ED200BC3759 /* JPDefaultCancelEvent.m in Sources */,
@@ -1021,6 +1000,7 @@
 				GCC_PREFIX_HEADER = JUMPNetwork_Prefix.pch;
 				HEADER_SEARCH_PATHS = ../Headers;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1044,6 +1024,7 @@
 				GCC_PREFIX_HEADER = JUMPNetwork_Prefix.pch;
 				HEADER_SEARCH_PATHS = ../Headers;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 #import "JPSimplePipelineHandler.h"
+#import "JPPipeline.h"
 
 @implementation JPSimplePipelineHandler
 @synthesize progressPriority;

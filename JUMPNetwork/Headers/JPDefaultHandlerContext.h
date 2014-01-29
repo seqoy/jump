@@ -23,8 +23,6 @@
  * @copydoc JPPipelineHandlerContext
  */
 @interface JPDefaultHandlerContext : NSObject <JPPipelineHandlerContext> {
-	JPDefaultHandlerContext* next;
-	JPDefaultHandlerContext* prev;
 	NSString* name;
 	
 	// Handler.
@@ -34,9 +32,6 @@
 	BOOL canHandleUpstream;
 	BOOL canHandleDownstream;
 	
-	// Pipeline pointer.
-	JPPipeline* pipeline;
-    
     // Progress.
     NSNumber *progress;
     

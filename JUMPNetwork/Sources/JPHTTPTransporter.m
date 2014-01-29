@@ -49,64 +49,73 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-// Init HTTP Requester.
--(void)buildRequesterWithURL:(NSURL*)anURL {
-	
-	// URL can't be null.
+// Handle HTTP Event.
+-(void)handleHTTPMessage:(id<JPTransporterHTTPMessage>)e {
+    
+    // Get the URL.
+    NSURL *anURL = [e transportURL];
+    
+    // URL can't be null.
 	if ( anURL == nil ) {
 		[NSException raise:@"JPHTTPTransporterException" format:@"Can't build an HTTP Requester, URL is not defined!"];
 		return;
 	}
-	
-	// Cancel any request.
-    [self cancelRequest];
-	
-	//// //// //// //// //// //// //// //// //// //// ////
-	// Init HTTP requester.
-	self.requester = [ASIHTTPRequest requestWithURL:anURL];
     
-    // Receive HTTP call progress.
-    [requester setShowAccurateProgress:YES];
-    [requester setDownloadProgressDelegate:self];
-	
-	// Set ourselves as delegate.
-	[requester setDelegate:self];
-}
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-// Handle HTTP Event.
--(void)handleHTTPMessage:(id<JPTransporterHTTPMessage>)e {
+    //// //// //// //// //// //// //// //// //// //// ////
+    // Create NSURLRequester
+    NSMutableURLRequest *urlRequester = [[NSMutableURLRequest alloc] initWithURL:anURL];
 	
 	// Assign HTTP Method.
-	requester.requestMethod = [e requestMethod];
-	
+    [urlRequester setHTTPMethod:[e requestMethod]];
+    
 	// Time out for connection.
-	requester.timeOutSeconds = [e timeOutSeconds];
+    [urlRequester setTimeoutInterval:[e timeOutSeconds]];
 
-	//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// //// 
-	// Validate Secure Certificate?
-	requester.validatesSecureCertificate = self.validatesSecureCertificate;
-	
 	// Add Data to HTTP Request.
-	[requester addRequestHeader:@"User-Agent" value:[e userAgent]];
-	[requester addRequestHeader:@"Content-Type" value:[e contentType]]; 
-	
+    [urlRequester setValue:[e userAgent] forKey:@"User-Agent"];
+    [urlRequester setValue:[e contentType] forKey:@"Content-Type"];
+    
 	// Has data to send?
 	if ( e.dataToSend != nil )
-		[requester appendPostData:[e dataToSend]];
+        [urlRequester setHTTPBody:[e dataToSend]];
     
     // Log.
-    Debug(@"Requesting HTTP Call : [Method: %@, URL: %@]", requester.requestMethod, [[e transportURL] absoluteString] );
-	 
+    Debug(@"Requesting HTTP Call : [Method: %@, URL: %@]", e.requestMethod, [[e transportURL] absoluteString] );
+
+    
+
+    //// //// //// //// //// //// //// //// //// //// ////
+	// Init AF Networking HTTP requester.
+	self.requester = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequester];
+
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
+	// Validate Secure Certificate?
+//	requester.validatesSecureCertificate = self.validatesSecureCertificate;
+
+    [self.requester setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+        [self requestFinished:operation];
+
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    
+        [self requestFailed:operation];
+        
+    }];
+    
 	// Start to Load.
-	[requester startAsynchronous];
+	[[NSOperationQueue mainQueue] addOperation:self.requester];
+    
+    [self cancelRequest];
+    
+    // Warn the started.
+    //[self requestStarted:self.requester];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
 #pragma mark Methods. 
 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
+//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// ////
 // Invoked by Pipeline when a downstream Event has reached its terminal (the head of the pipeline).
 -(void)eventSunk:(JPPipeline*)anPipeline withEvent:(id<JPPipelineMessageEvent>)event {
 	
@@ -137,9 +146,6 @@
 		// Log.
 		Info(@"HTTP Event Handled. Processing...");
 
-		// Configure Requester.
-		[self buildRequesterWithURL:[anMessage transportURL]];
-		
 		// Handle as HTTP.
 		[self handleHTTPMessage:anMessage];
 	}
@@ -186,12 +192,12 @@
 #pragma mark ASIHTTPRequest Methods. 
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
-- (void)requestStarted:(ASIHTTPRequest *)request {
+- (void)requestStarted:(AFHTTPRequestOperation *)request {
     [future setStarted];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
-- (void)requestFinished:(ASIHTTPRequest *)request {
+- (void)requestFinished:(AFHTTPRequestOperation *)request {
 	
     // Create Upstream Message.
     JPPipelineUpstreamMessageEvent *message = [JPPipelineUpstreamMessageEvent initWithMessage:[request responseString]];
@@ -207,10 +213,10 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
-- (void)requestCancelled:(ASIHTTPRequest *)request {
+- (void)requestCancelled:(AFHTTPRequestOperation *)request {
     
     // Release after cancel.
-    requester = nil;
+    self.requester = nil;
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Cancelled.
@@ -218,7 +224,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
-- (void)requestFailed:(ASIHTTPRequest *)request {
+- (void)requestFailed:(AFHTTPRequestOperation *)request {
 	
 	// Failed Error Reason.
 	NSError *error = [request error];
@@ -227,10 +233,10 @@
 	Info(@"HTTP Request Failed (%@)! Sending Error Upstream...", [error localizedDescription] );
 	
 	// If error is because the request was cancelled. 
-	if ( [error.domain isEqual:NetworkRequestErrorDomain] && error.code == ASIRequestCancelledErrorType ) {
-		[self requestCancelled:request];
-		return;
-	}
+//	if ( [error.domain isEqual:NetworkRequestErrorDomain] && error.code == ASIRequestCancelledErrorType ) {
+//		[self requestCancelled:request];
+//		return;
+//	}
     
     // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
     // Fail the future.
@@ -245,18 +251,5 @@
 	// Send Request Error Data Upstream.
 	[pipeline sendUpstream:failedEvent];
 }
-
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Memory Management Methods. 
-//// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-- (void) dealloc {
-    
-	// Clean up requester and cancel.
-	if ( requester ) 
-        [requester clearDelegatesAndCancel];
-
-}
-
 
 @end
