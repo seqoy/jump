@@ -72,8 +72,8 @@
     [urlRequester setTimeoutInterval:[e timeOutSeconds]];
 
 	// Add Data to HTTP Request.
-    [urlRequester setValue:[e userAgent] forKey:@"User-Agent"];
-    [urlRequester setValue:[e contentType] forKey:@"Content-Type"];
+    [urlRequester setValue:[e userAgent] forHTTPHeaderField:@"User-Agent"];
+    [urlRequester setValue:[e contentType] forHTTPHeaderField:@"Content-Type"];
     
 	// Has data to send?
 	if ( e.dataToSend != nil )
@@ -82,16 +82,15 @@
     // Log.
     Debug(@"Requesting HTTP Call : [Method: %@, URL: %@]", e.requestMethod, [[e transportURL] absoluteString] );
 
-    
-
     //// //// //// //// //// //// //// //// //// //// ////
 	// Init AF Networking HTTP requester.
 	self.requester = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequester];
 
     //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
 	// Validate Secure Certificate?
-//	requester.validatesSecureCertificate = self.validatesSecureCertificate;
-
+    self.requester.securityPolicy.allowInvalidCertificates = !self.validatesSecureCertificate;
+    
+    // Completion poiting to correct methods.
     [self.requester setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
 
         [self requestFinished:operation];
@@ -105,10 +104,8 @@
 	// Start to Load.
 	[[NSOperationQueue mainQueue] addOperation:self.requester];
     
-    [self cancelRequest];
-    
-    // Warn the started.
-    //[self requestStarted:self.requester];
+    // Warn that started.
+    [self requestStarted:self.requester];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -233,10 +230,10 @@
 	Info(@"HTTP Request Failed (%@)! Sending Error Upstream...", [error localizedDescription] );
 	
 	// If error is because the request was cancelled. 
-//	if ( [error.domain isEqual:NetworkRequestErrorDomain] && error.code == ASIRequestCancelledErrorType ) {
-//		[self requestCancelled:request];
-//		return;
-//	}
+	if ( [error.domain isEqual:NSURLErrorDomain] && error.code == NSURLErrorCancelled ) {
+		[self requestCancelled:request];
+		return;
+	}
     
     // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
     // Fail the future.
