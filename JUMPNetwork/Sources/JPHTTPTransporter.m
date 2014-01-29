@@ -20,8 +20,7 @@
 @synthesize requester, validatesSecureCertificate, currentProgress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Init Methods. 
+#pragma mark - Init Methods.
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 +(id)init {
 	return [[self alloc] init];
@@ -38,8 +37,7 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark Private Methods. 
+#pragma mark - Private Methods.
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(void)cancelRequest {
@@ -89,29 +87,47 @@
     //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
 	// Validate Secure Certificate?
     self.requester.securityPolicy.allowInvalidCertificates = !self.validatesSecureCertificate;
+ 
+    //
+    //  Avoid capturing self in blocks, more info:
+    //      http://stackoverflow.com/questions/7853915/how-do-i-avoid-capturing-self-in-blocks-when-implementing-an-api
+    //
+    __weak JPHTTPTransporter *weakSelf = self;
     
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
     // Completion poiting to correct methods.
-    [self.requester setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self.requester
+     
+         setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [weakSelf requestFinished:operation];
 
-        [self requestFinished:operation];
-
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    
-        [self requestFailed:operation];
-        
-    }];
-    
-    // Follow the progress..
-    [self.requester setDownloadProgressBlock:^( NSUInteger bytesRead , long long totalBytesRead , long long totalBytesExpectedToRead ) {
-        
-        if ( totalBytesExpectedToRead < 0 ) {
-            Warn(@"%@", @"Download progress is returning -1. Probably the server does not set the 'Content-Length' HTTP header in the response.");
-            totalBytesExpectedToRead = 0;
         }
-        float progress = (float)totalBytesRead / totalBytesExpectedToRead;
-        [self setProgress:progress];
-    }];
+         
+        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [weakSelf requestFailed:operation];
+        }
+     
+    ];
     
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
+    // Follow the progress...
+    [self.requester
+     
+         setDownloadProgressBlock:^( NSUInteger bytesRead , long long totalBytesRead , long long totalBytesExpectedToRead ) {
+            
+            if ( totalBytesExpectedToRead < 0 ) {
+                Warn(@"%@", @"Download progress is returning -1. Probably the server does not set the 'Content-Length' HTTP header in the response.");
+                totalBytesExpectedToRead = 0;
+            }
+            
+            float progress = (float)totalBytesRead / totalBytesExpectedToRead;
+            [weakSelf setProgress:progress];
+        
+        }
+     
+    ];
+    
+    //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /// //// //// ////
 	// Start to Load.
 	[[NSOperationQueue mainQueue] addOperation:self.requester];
     
