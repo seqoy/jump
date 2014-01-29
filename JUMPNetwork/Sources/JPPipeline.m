@@ -22,7 +22,7 @@
 #pragma mark Private Methods. 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(void)checkDuplicateName:(NSString*)name {
-	if ( [contextObjectsMap objectForKey:name] ) {
+	if ( contextObjectsMap[name] ) {
 		[NSException raise:@"IllegalArgumentException" format:@"Duplicate handler name: %@.", name];
 	}
 }
@@ -40,7 +40,7 @@
 	if (name == nil) {
 		[NSException raise:NSInvalidArgumentException format:@"Name is nil"];
 	}
-	return [contextObjectsMap objectForKey:name];
+	return contextObjectsMap[name];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -143,7 +143,7 @@
 		
 		if (!sameName) {
 			[contextObjectsMap removeObjectForKey:[ctx name]];
-			[contextObjectsMap setObject:newCtx forKey:newName];
+			contextObjectsMap[newName] = newCtx;
 		}
 	}
 	
@@ -181,7 +181,7 @@
 	
 	// Add to Context Map.
 	[contextObjectsMap removeAllObjects];
-	[contextObjectsMap setObject:ctx forKey:anName];
+	contextObjectsMap[anName] = ctx;
     
     return ctx;
 }
@@ -201,7 +201,7 @@
     // Loop processing...
     for (int i=0; i < [sectionedProgress count]; i++) {
         // Sectioned Percent.
-        float sectionedPercent = [[sectionedProgress objectAtIndex:i] floatValue];
+        float sectionedPercent = [sectionedProgress[i] floatValue];
         
         // First element is the Sink Object. 
         if ( i==0 )
@@ -209,13 +209,13 @@
         
         // The rest is Contexts.
         else {
-            JPDefaultHandlerContext *context = [allContexts objectAtIndex:i-1];     // Index of Contexts is minus one, we're skipping the Sink.
+            JPDefaultHandlerContext *context = allContexts[i-1];     // Index of Contexts is minus one, we're skipping the Sink.
             calcProgress += sectionedPercent * ( [[context progress] floatValue] / 100 );
         }
     }
     
     // Return.
-    return [NSNumber numberWithFloat:calcProgress];
+    return @(calcProgress);
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
@@ -255,7 +255,7 @@
         // Contexts..
         else {
             // Cast context...
-            JPDefaultHandlerContext *ctx = [allContexts objectAtIndex:i-1];     // Index of Contexts is minus one, we're skipping the Sink.
+            JPDefaultHandlerContext *ctx = allContexts[i-1];     // Index of Contexts is minus one, we're skipping the Sink.
             // Priority.
             priority = ctx.progressPriority;
         }
@@ -278,7 +278,7 @@
         // Calc..
         float sectionValue = normalizedPontuaction[i] + ( (100 - totalNormalizedPuntuaction ) * normalizedPontuaction[i] / totalNormalizedPuntuaction );
         // Store..
-        [sectionedProgress addObject:[NSNumber numberWithFloat:sectionValue]];
+        [sectionedProgress addObject:@(sectionValue)];
     }
 }
 
@@ -353,7 +353,7 @@
 		head = newHead;
         
 		// Add to the Dictionary.
-		[contextObjectsMap setObject:newHead forKey:name];
+		contextObjectsMap[name] = newHead;
         
         // Set the priority.
         [newHead setProgressPriority:priority];
@@ -392,7 +392,7 @@
 		tail = newTail;
 		
 		// Add to the Dictionary.
-		[contextObjectsMap setObject:newTail forKey:name];
+		contextObjectsMap[name] = newTail;
         
         // Set the priority.
         [newTail setProgressPriority:priority];
@@ -438,7 +438,7 @@
 		ctx.prev = newCtx;
 		
 		// Add to the Dictionary.
-		[contextObjectsMap setObject:newCtx forKey:name ];
+		contextObjectsMap[name] = newCtx;
         
         // Set the priority.
         [newCtx setProgressPriority:priority];
@@ -484,7 +484,7 @@
 		ctx.next = newCtx;
 		
 		// Add to the Dictionary.
-		[contextObjectsMap setObject:newCtx forKey:name];
+		contextObjectsMap[name] = newCtx;
         
         // Set the priority.
         [newCtx setProgressPriority:priority];
@@ -615,7 +615,7 @@
 /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 // Returns the {@link ChannelHandler} with the specified name in this
 -(id<JPPipelineHandler>)get:(NSString*)name {
-	JPDefaultHandlerContext* ctx = [contextObjectsMap objectForKey:name];
+	JPDefaultHandlerContext* ctx = contextObjectsMap[name];
 	if (ctx == nil) {
 		return nil;
 	} else {

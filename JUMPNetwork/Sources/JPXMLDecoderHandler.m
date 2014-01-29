@@ -77,7 +77,7 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
 		Warn( @"JPXMLDecoderHandler :: %@\nThe XML that fails is: %@", errorReason, stringResponse );
 		
 		// Retrieve the Parser Error.
-		NSError *parserError = [[e userInfo] objectForKey:@"parserError"];
+		NSError *parserError = [e userInfo][@"parserError"];
         
         // Get the Error Domain and Code from Parser Error if available, if isn't defined will assume default.
         NSString  *errorDomain = ( parserError ? parserError.domain : @"JPXMLDecoderHandler" );
@@ -88,11 +88,11 @@ NSString * const JPXMLDecoderParserError     = @"parserError";
         
         // Assign the Parser Error in it, if available.
         if ( parserError ) {
-            [userInfo setObject:parserError forKey:JPXMLDecoderParserError];
+            userInfo[JPXMLDecoderParserError] = parserError;
         }
         
         // Assign the Error Reason (Description) in it.
-        [userInfo setObject:errorReason forKey:NSLocalizedDescriptionKey];
+        userInfo[NSLocalizedDescriptionKey] = errorReason;
         
         // Create error.
         NSError *decodeError = [NSError errorWithDomain:errorDomain

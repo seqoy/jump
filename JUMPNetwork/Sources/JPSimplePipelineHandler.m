@@ -53,7 +53,7 @@
 -(void)handleContextUpstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
     
     // Starting so progress, is 0%.
-    [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
+    [ctx setProgress:@0 withEvent:e];
 
 	///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
@@ -80,7 +80,7 @@
 -(void)handleContextDownstream:(JPDefaultHandlerContext*)ctx withEvent:(id<JPPipelineEvent>)e {
 
     // Starting so progress, is 0%.
-    [ctx setProgress:[NSNumber numberWithInt:0] withEvent:e];
+    [ctx setProgress:@0 withEvent:e];
 
     ///////// /////// /////// /////// /////// /////// /////// /////// 
 	// Handle if is an Message Event.
@@ -98,7 +98,7 @@
 -(void)messageReceived:(id<JPPipelineHandlerContext>)ctx withMessageEvent:(id<JPPipelineMessageEvent>)e {
     
     // Finished, so progress is 100%.
-    [ctx setProgress:[NSNumber numberWithInt:100] withEvent:e];
+    [ctx setProgress:@100 withEvent:e];
 
 	// We don't do nothing here actually, just send upstream.
 	// This method is intended to be subclassed.

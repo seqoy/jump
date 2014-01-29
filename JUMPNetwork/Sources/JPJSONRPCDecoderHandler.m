@@ -58,24 +58,24 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
     
 	//////// ////// ////// ////// ////// ////// ////// 
 	// Check if result some server Error. 
-	if( [JSONDecoded objectForKey:@"error"] ) {
+	if( JSONDecoded[@"error"] ) {
 		
 		// If server error isn't NULL (REAL ERROR), process it.
-		if ( [JSONDecoded objectForKey:@"error"] != [NSNull null] ) {
+		if ( JSONDecoded[@"error"] != [NSNull null] ) {
 			
 			// JSON Error Data.
-			NSDictionary *anError = [JSONDecoded objectForKey:@"error"];
+			NSDictionary *anError = JSONDecoded[@"error"];
             
             ///////// /////// /////// /////// /////// /////// /////// /////// /////// //// /////// 
             // Grab error Message.
-            id errorMessage = [anError objectForKey:@"message"];
+            id errorMessage = anError[@"message"];
 
             // Error MUST be an String. 
             if ( ![errorMessage isKindOfClass:[NSString class]] ) {
                 NSString *errorReason = @"Invalid JSON-RPC. Error 'message' key must be of STRING type.";
                 JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
                                                 code:kJSONRPCInvalid
-                                            userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+                                            userInfo:@{NSLocalizedDescriptionKey: errorReason}];
             }
             
             // /////// /////// /////// /////// /////// /////// /////// //// /////// // /////// /////// /////// /////// /////// /////// ////
@@ -90,21 +90,21 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
                 // Assign extra JSON-RPC Metadata about this error to the userInfo dictionary.
                 
                 // Error Name, JSON-RPC 1.1 Compliant.
-                if ([anError objectForKey:@"name"]) 
-                    [userInfo setObject:[anError objectForKey:@"name"] forKey:JPJSONRPCErrorName];    
+                if (anError[@"name"]) 
+                    userInfo[JPJSONRPCErrorName] = anError[@"name"];    
                 
                 // Object value that carries custom and application-specific error information. JSON-RPC 1.1 Compliant.
-                if ([anError objectForKey:@"error"]) 
-                    [userInfo setObject:[anError objectForKey:@"error"] forKey:JPJSONRPCErrorMoreInfo];
+                if (anError[@"error"]) 
+                    userInfo[JPJSONRPCErrorMoreInfo] = anError[@"error"];
                 
                 // A Primitive or Structured value that contains additional information about the error. JSON-RPC 2.0 Compliant.
-                if ([anError objectForKey:@"data"]) 
-                    [userInfo setObject:[anError objectForKey:@"data"] forKey:JPJSONRPCErrorData];
+                if (anError[@"data"]) 
+                    userInfo[JPJSONRPCErrorData] = anError[@"data"];
                 
                 ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
                 // Create an NSError.
                 JSONError = [NSError errorWithDomain:@"JPJSONRPCDecoderHandler"
-                                                code:[[anError objectForKey:@"code"] intValue]
+                                                code:[anError[@"code"] intValue]
                                             userInfo:userInfo];
             }
 
@@ -117,7 +117,7 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
 	
 	// ////// ////// ////// ////// ////// //////  ////// 
 	// JSON doesn't Contains RPC Results. It is invalid.
-	else if ( ! [JSONDecoded objectForKey:@"result"] ) {
+	else if ( ! JSONDecoded[@"result"] ) {
 		NSString *errorReason = @"Invalid JSON-RPC data. JSON Object doesn't contain an 'result' entry.";
 		Warn( @"%@", errorReason );
         
@@ -125,7 +125,7 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
         // Create an NSError.
         JSONError = [NSError errorWithDomain:NSStringFromClass([self class])
                                         code:kJSONRPCInvalid
-                                    userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+                                    userInfo:@{NSLocalizedDescriptionKey: errorReason}];
 	}
 	
     // ////// ////// ////// ////// ////// //////  ////// 
@@ -146,10 +146,10 @@ NSString * const JPJSONRPCErrorData     = @"JPJSONRPCErrorData";
         
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
     // Assign data.
-    model.theId   = [JSONDecoded objectForKey:@"id"];
-    model.result  = [JSONDecoded objectForKey:@"result"];
-    model.error   = [JSONDecoded objectForKey:@"error"];
-    model.version = [JSONDecoded objectForKey:@"version"]; 
+    model.theId   = JSONDecoded[@"id"];
+    model.result  = JSONDecoded[@"result"];
+    model.error   = JSONDecoded[@"error"];
+    model.version = JSONDecoded[@"version"]; 
     
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Super Processing. (Send upstream).

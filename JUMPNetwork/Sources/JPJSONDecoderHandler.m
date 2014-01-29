@@ -58,7 +58,7 @@
 -(void)jsonDataDecoded:(id)result withEvent:(id<JPPipelineMessageEvent>)event andContext:(id<JPPipelineHandlerContext>)ctx {
 	
     // Finishing, so progress is 100%.
-    [ctx setProgress:[NSNumber numberWithInt:100] withEvent:event];
+    [ctx setProgress:@100 withEvent:event];
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Set decoded Message on the event.
@@ -92,14 +92,14 @@
     @catch (NSException * e) {
 		NSString *errorReason = [NSString stringWithFormat:@"Can't decode the Response String as JSON Object.\n"
                                                            @"Probably isn't an JSON String or is invalid.\n"
-                                                           @"Parser error: %@.\n", [[[e userInfo] objectForKey:@"parserError"] localizedDescription]];
+                                                           @"Parser error: %@.\n", [[e userInfo][@"parserError"] localizedDescription]];
 		Warn( @"JPJSONDecoderHandler :: %@\nThe HTTP Response is:\n%@", errorReason, stringResponse );
         
         ///////// /////// /////// /////// /////// /////// /////// /////// /////// ///////// /////// /////// /////// /////// /////// /////// /////// /////// 
         // Create the error.
         NSError *anError = [NSError errorWithDomain:NSStringFromClass([self class])
                                                code:kJSONCantDecode 
-                                           userInfo:[NSDictionary dictionaryWithObject:errorReason forKey:NSLocalizedDescriptionKey]];
+                                           userInfo:@{NSLocalizedDescriptionKey: errorReason}];
         
         // Fail the future.
         [[event getFuture] setFailure:anError];

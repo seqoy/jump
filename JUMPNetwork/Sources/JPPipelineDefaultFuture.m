@@ -68,7 +68,7 @@
     
     // Attach the event on the User Dictionary, if needed.
     if ( anEvent )
-        [notification setUserInfo:[NSDictionary dictionaryWithObject:anEvent forKey:JPPipelineNotificationEvent]];
+        [notification setUserInfo:@{JPPipelineNotificationEvent: anEvent}];
     
 	// Post Notification.
 	[[NSNotificationCenter defaultCenter] postNotification:notification];

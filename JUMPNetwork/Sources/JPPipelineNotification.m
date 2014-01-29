@@ -46,7 +46,7 @@
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 -(id<JPPipelineEvent>)getEvent {
-    return [userInfo objectForKey:JPPipelineNotificationEvent];
+    return userInfo[JPPipelineNotificationEvent];
 }
 
 @end

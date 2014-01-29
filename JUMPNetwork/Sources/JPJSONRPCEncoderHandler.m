@@ -61,10 +61,9 @@
 	
 		// ////// ////// ////// ////// ////// ////// ////// ////// ///
 		// Create Dictionary with RPC Data.
-		NSMutableDictionary *rpcData = (NSMutableDictionary*)[NSDictionary dictionaryWithObjectsAndKeys:
-												[rpcMessage method]	   , @"method",
-												[rpcMessage rpcID]	   , @"id",
-												[rpcMessage parameters], @"params", nil];
+		NSMutableDictionary *rpcData = (NSMutableDictionary*)@{@"method": [rpcMessage method],
+												@"id": [rpcMessage rpcID],
+												@"params": [rpcMessage parameters]};
 		// Encode as JSON String.
 		NSString *JSONString = [JSONProcesser convertToJSON:rpcData];
 		
