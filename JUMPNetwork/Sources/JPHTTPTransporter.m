@@ -17,7 +17,7 @@
 #import "JPHTTPTransporter.h"
 
 @implementation JPHTTPTransporter
-@synthesize requester, validatesSecureCertificate, currentProgress, future;
+@synthesize requester, validatesSecureCertificate, currentProgress;
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
 #pragma mark -
@@ -101,6 +101,17 @@
         
     }];
     
+    // Follow the progress..
+    [self.requester setDownloadProgressBlock:^( NSUInteger bytesRead , long long totalBytesRead , long long totalBytesExpectedToRead ) {
+        
+        if ( totalBytesExpectedToRead < 0 ) {
+            Warn(@"%@", @"Download progress is returning -1. Probably the server does not set the 'Content-Length' HTTP header in the response.");
+            totalBytesExpectedToRead = 0;
+        }
+        float progress = (float)totalBytesRead / totalBytesExpectedToRead;
+        [self setProgress:progress];
+    }];
+    
 	// Start to Load.
 	[[NSOperationQueue mainQueue] addOperation:self.requester];
     
@@ -156,11 +167,8 @@
 	// This event has some future?
 	if ( [event getFuture] ) {
 
-		// If some future is defined.
-        if ( future ) future = nil;
-        
 		// Add as Future Object.
-        future = (id)[event getFuture];
+        _future = (id)[event getFuture];
 	}
 }
 
@@ -172,25 +180,23 @@
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark ASIProgressDelegate Methods. 
+#pragma mark - Progress Methods.
 
 - (void)setProgress:(float)newProgress {
     // Set self progress.
     self.currentProgress = [NSNumber numberWithFloat:newProgress * 100.0];
     
     // Send overal progress to future.
-    if (future)
-        [future setProgress:[pipeline progress]];
+    if (self.future)
+       [self.future setProgress:[pipeline progress]];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// 
-#pragma mark -
-#pragma mark ASIHTTPRequest Methods. 
+#pragma mark - Result Methods.
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
 - (void)requestStarted:(AFHTTPRequestOperation *)request {
-    [future setStarted];
+    [self.future setStarted];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -200,10 +206,10 @@
     JPPipelineUpstreamMessageEvent *message = [JPPipelineUpstreamMessageEvent initWithMessage:[request responseString]];
     
     // Future is finished.
-    [future setSuccess];
+    [self.future setSuccess];
 
     // Attach the future to go opposite direction.
-    message.future = future;
+    message.future = self.future;
     
 	// Send Request Returned Data Upstream.
 	[pipeline sendUpstream:message];
@@ -217,7 +223,7 @@
 
 	///////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// 
 	// Cancelled.
-	[future cancel];
+	[self.future cancel];
 }
 
 //// //// //// //// //// //// //// //// //// //// //// //// //// //// //// /
@@ -237,7 +243,7 @@
     
     // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
     // Fail the future.
-    [future setFailure:error];
+    [self.future setFailure:error];
 	
     // /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// // /////// /////// /////// /////// /////// 
     // Create Exception.

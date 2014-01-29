@@ -61,9 +61,6 @@
 	// Pipeline Pointer.
 	JPPipeline *pipeline;
 	
-	// Event listener.
-	id<JPPipelineFuture> future;
-	
 	// Should Validate Secure Certificate?
 	BOOL validatesSecureCertificate;
     
